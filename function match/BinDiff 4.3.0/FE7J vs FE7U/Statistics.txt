@@ -1,0 +1,59 @@
+name                                                        value   
+----                                                        -----   
+basicBlock matches (library)                                0       
+basicBlock matches (non-library)                            40344   
+basicBlocks primary (library)                               0       
+basicBlocks primary (non-library)                           41003   
+basicBlocks secondary (library)                             0       
+basicBlocks secondary (non-library)                         43006   
+flowGraph edge matches (library)                            0       
+flowGraph edge matches (non-library)                        49907   
+flowGraph edges primary (library)                           0       
+flowGraph edges primary (non-library)                       51075   
+flowGraph edges secondary (library)                         0       
+flowGraph edges secondary (non-library)                     54011   
+function matches (library)                                  0       
+function matches (non-library)                              7670    
+functions primary (library)                                 0       
+functions primary (non-library)                             7742    
+functions secondary (library)                               0       
+functions secondary (non-library)                           7820    
+instruction matches (library)                               0       
+instruction matches (non-library)                           313631  
+instructions primary (library)                              0       
+instructions primary (non-library)                          321234  
+instructions secondary (library)                            0       
+instructions secondary (non-library)                        330654  
+basicBlock: MD index matching (bottom up)                   23      
+basicBlock: MD index matching (top down)                    450     
+basicBlock: call reference matching                         208     
+basicBlock: edges Lengauer Tarjan dominated                 2       
+basicBlock: edges MD index (bottom up)                      28      
+basicBlock: edges MD index (top down)                       813     
+basicBlock: edges prime product                             33163   
+basicBlock: entry point matching                            48      
+basicBlock: exit point matching                             26      
+basicBlock: hash matching (4 instructions minimum)          2901    
+basicBlock: instruction count matching                      9       
+basicBlock: jump sequence matching                          547     
+basicBlock: loop entry matching                             37      
+basicBlock: prime matching (0 instructions minimum)         34      
+basicBlock: prime matching (4 instructions minimum)         2003    
+basicBlock: propagation (size==1)                           49      
+basicBlock: relaxed MD index matching                       3       
+function: MD index matching (callGraph MD index, bottom up) 6       
+function: MD index matching (callGraph MD index, top down)  164     
+function: MD index matching (flowgraph MD index, bottom up) 2       
+function: MD index matching (flowgraph MD index, top down)  319     
+function: address sequence                                  1182    
+function: call reference matching                           1607    
+function: call sequence matching(exact)                     13      
+function: call sequence matching(sequence)                  48      
+function: edges callgraph MD index                          1004    
+function: edges flowgraph MD index                          939     
+function: hash matching                                     942     
+function: instruction count                                 24      
+function: loop count matching                               4       
+function: prime signature matching                          1416    
+confidence                                                  0.987975
+similarity                                                  0.953830

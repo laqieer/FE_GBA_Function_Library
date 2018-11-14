@@ -1,0 +1,62 @@
+name                                                        value   
+----                                                        -----   
+basicBlock matches (library)                                0       
+basicBlock matches (non-library)                            26107   
+basicBlocks primary (library)                               0       
+basicBlocks primary (non-library)                           41003   
+basicBlocks secondary (library)                             0       
+basicBlocks secondary (non-library)                         32226   
+flowGraph edge matches (library)                            0       
+flowGraph edge matches (non-library)                        28351   
+flowGraph edges primary (library)                           0       
+flowGraph edges primary (non-library)                       51075   
+flowGraph edges secondary (library)                         0       
+flowGraph edges secondary (non-library)                     40078   
+function matches (library)                                  0       
+function matches (non-library)                              5827    
+functions primary (library)                                 0       
+functions primary (non-library)                             7742    
+functions secondary (library)                               0       
+functions secondary (non-library)                           6027    
+instruction matches (library)                               0       
+instruction matches (non-library)                           186551  
+instructions primary (library)                              0       
+instructions primary (non-library)                          321234  
+instructions secondary (library)                            0       
+instructions secondary (non-library)                        268855  
+basicBlock: MD index matching (bottom up)                   155     
+basicBlock: MD index matching (top down)                    1156    
+basicBlock: call reference matching                         775     
+basicBlock: edges Lengauer Tarjan dominated                 133     
+basicBlock: edges MD index (bottom up)                      482     
+basicBlock: edges MD index (top down)                       3292    
+basicBlock: edges prime product                             15585   
+basicBlock: entry point matching                            516     
+basicBlock: exit point matching                             388     
+basicBlock: hash matching (4 instructions minimum)          1047    
+basicBlock: instruction count matching                      34      
+basicBlock: jump sequence matching                          380     
+basicBlock: loop entry matching                             90      
+basicBlock: prime matching (0 instructions minimum)         183     
+basicBlock: prime matching (4 instructions minimum)         1316    
+basicBlock: propagation (size==1)                           495     
+basicBlock: relaxed MD index matching                       76      
+basicBlock: self loop matching                              4       
+function: MD index matching (callGraph MD index, bottom up) 11      
+function: MD index matching (callGraph MD index, top down)  71      
+function: MD index matching (flowgraph MD index, bottom up) 4       
+function: MD index matching (flowgraph MD index, top down)  349     
+function: address sequence                                  1282    
+function: call reference matching                           1046    
+function: call sequence matching(exact)                     58      
+function: call sequence matching(sequence)                  586     
+function: call sequence matching(topology)                  5       
+function: edges callgraph MD index                          516     
+function: edges flowgraph MD index                          668     
+function: hash matching                                     366     
+function: instruction count                                 28      
+function: loop count matching                               23      
+function: prime signature matching                          813     
+function: relaxed MD index matching                         1       
+confidence                                                  0.962244
+similarity                                                  0.696478
