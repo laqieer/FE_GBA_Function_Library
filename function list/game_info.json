@@ -1,0 +1,42 @@
+{
+	"FE6" : {
+	"title" : "FIREEMBLEM6", 
+	"code" : "AFEJ", 
+	"boundary" : "0x809FAC0", 
+	"RAM_func_start" : "0x8000228", 
+	"RAM_func_end" : "0x8000A20", 
+	"RAM_func_copyTo" : "0x3002D80"
+	},
+	"FE7J" : {
+	"title" : "FIREEMBLEM7", 
+	"code" : "AE7J", 
+	"boundary" : "0x80C0C50", 
+	"RAM_func_start" : "0x8000228", 
+	"RAM_func_end" : "0x8000A20", 
+	"RAM_func_copyTo" : "0x3002E60"
+	},
+	"FE7U" : {
+	"title" : "FIREEMBLEME", 
+	"code" : "AE7E", 
+	"boundary" : "0x80C57E0", 
+	"RAM_func_start" : "0x8000228", 
+	"RAM_func_end" : "0x80009FC", 
+	"RAM_func_copyTo" : "0x3002F40"
+	},
+	"FE8J" : {
+	"title" : "FIREEMBLEM8", 
+	"code" : "BE8J", 
+	"boundary" : "0x80DC104", 
+	"RAM_func_start" : "0x8000228", 
+	"RAM_func_end" : "0x8000A20", 
+	"RAM_func_copyTo" : "0x30036F0"
+	},
+	"FE8U" : {
+	"title" : "FIREEMBLEM2E", 
+	"code" : "BE8E", 
+	"boundary" : "0x80D74D0", 
+	"RAM_func_start" : "0x8000228", 
+	"RAM_func_end" : "0x8000A20", 
+	"RAM_func_copyTo" : "0x3003750"
+	}
+}
