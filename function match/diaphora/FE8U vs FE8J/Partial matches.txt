@@ -1,0 +1,51 @@
+Line  Address  Name        Address 2 Name 2      Ratio BBlocks 1 BBlocks 2 Description                                       
+----  -------  ----        --------- ------      ----- --------- --------- -----------                                       
+00008 08056974 sub_8056974 080578fc  sub_80578FC 0.990 27        26        Same rare constant                                
+00038 08038ba4 sub_8038BA4 08038c1c  sub_8038C1C 0.990 1         1         Pseudo-code fuzzy hash                            
+00041 0808f8b4 sub_808F8B4 08091b88  sub_8091B88 0.990 68        69        Pseudo-code fuzzy hash                            
+00043 080994c4 sub_80994C4 0809b79c  sub_809B79C 0.990 1         1         Pseudo-code fuzzy hash                            
+00047 0801b618 sub_801B618 0801b2f4  sub_801B2F4 0.990 40        39        Strongly connected components small-primes-product
+00013 0807e4d0 sub_807E4D0 08080810  sub_8080810 0.980 1         1         Same rare constant                                
+00040 08067aa0 sub_8067AA0 08069dd0  sub_8069DD0 0.980 1         1         Pseudo-code fuzzy hash                            
+00015 08060ed8 sub_8060ED8 08061fe6  sub_8061FE6 0.973 4         4         Same MD Index and constants                       
+00012 0807de80 sub_807DE80 080801c0  sub_80801C0 0.970 1         1         Same rare constant                                
+00037 080295e8 sub_80295E8 08029590  sub_8029590 0.970 1         1         Pseudo-code fuzzy hash                            
+00039 08058bc8 sub_8058BC8 080599f8  sub_80599F8 0.970 216       210       Pseudo-code fuzzy hash                            
+00009 08060514 sub_8060514 08061614  sub_8061614 0.960 1         1         Same rare constant                                
+00010 080622a0 sub_80622A0 080633a0  sub_80633A0 0.960 1         1         Same rare constant                                
+00011 08067f64 sub_8067F64 0806a294  sub_806A294 0.960 1         1         Same rare constant                                
+00042 080922f0 sub_80922F0 080945e8  sub_80945E8 0.960 89        87        Pseudo-code fuzzy hash                            
+00006 0806b3b8 sub_806B3B8 0806d750  sub_806D750 0.945 11        11        Same rare MD Index                                
+00036 0801c090 sub_801C090 0801bd20  sub_801BD20 0.940 1         1         Mnemonics and names                               
+00021 080384bc sub_80384BC 080385e8  sub_80385E8 0.930 11        10        Same constants                                    
+00034 080a5290 sub_80A5290 080a9ca8  sub_80A9CA8 0.930 1         1         Same constants                                    
+00025 0801c448 sub_801C448 0801c0d4  sub_801C0D4 0.920 9         7         Same constants                                    
+00007 08000b10 sub_8000B10 08000ae8  sub_8000AE8 0.910 1         1         Same rare constant                                
+00019 080a72ec sub_80A72EC 080abd04  sub_80ABD04 0.910 1         1         Same constants                                    
+00026 080a72b0 sub_80A72B0 080abcc8  sub_80ABCC8 0.910 1         1         Same constants                                    
+00020 080a5274 sub_80A5274 080a9c8c  sub_80A9C8C 0.900 1         1         Same constants                                    
+00017 080c8d30 sub_80C8D30 080cdccc  sub_80CDCCC 0.880 15        19        Same constants                                    
+00048 08056ff8 sub_8056FF8 08057f80  sub_8057F80 0.860 265       236       Strongly connected components small-primes-product
+00014 080c6204 sub_80C6204 080cb114  sub_80CB114 0.840 4         8         Same rare constant                                
+00024 0801be28 sub_801BE28 0801baec  sub_801BAEC 0.830 19        11        Same constants                                    
+00046 08045f48 sub_8045F48 08045eec  sub_8045EEC 0.830 36        34        Strongly connected components small-primes-product
+00032 08087184 sub_8087184 0808941c  sub_808941C 0.820 21        16        Same constants                                    
+00033 08048e84 sub_8048E84 08049c94  sub_8049C94 0.820 1         1         Same constants                                    
+00016 0800224c sub_800224C 08086ac4  sub_8086AC4 0.800 1         1         Same constants                                    
+00023 08001c78 sub_8001C78 08001bd0  sub_8001BD0 0.800 6         5         Same constants                                    
+00030 080be35c sub_80BE35C 080c3144  sub_80C3144 0.760 1         1         Same constants                                    
+00031 08063c40 sub_8063C40 08064d40  sub_8064D40 0.720 18        17        Same constants                                    
+00022 0800d198 sub_800D198 080bd548  sub_80BD548 0.670 3         1         Same constants                                    
+00044 0800d6e4 sub_800D6E4 0800d97c  sub_800D97C 0.670 11        11        Topological sort hash                             
+00035 08077c54 sub_8077C54 0807a078  sub_807A078 0.580 1         1         Same constants                                    
+00018 08083dcc sub_8083DCC 0800c390  sub_800C390 0.570 1         1         Same constants                                    
+00027 08055a34 sub_8055A34 080569cc  sub_80569CC 0.570 1         1         Same constants                                    
+00028 08008a00 sub_8008A00 0801153c  sub_801153C 0.570 1         1         Same constants                                    
+00029 0804fd28 sub_804FD28 08050abc  sub_8050ABC 0.570 1         1         Same constants                                    
+00045 08079be0 sub_8079BE0 0807bff4  sub_807BFF4 0.530 16        15        Strongly connected components small-primes-product
+00000 080cbdd8 sub_80CBDD8 080aec20  sub_80AEC20 0.470 5         5         Same rare KOKA hash                               
+00001 0800baa8 sub_800BAA8 0803780c  sub_803780C 0.470 7         7         Same rare KOKA hash                               
+00005 080c3124 sub_80C3124 0806f5b8  sub_806F5B8 0.450 9         9         Same rare KOKA hash                               
+00002 08052788 sub_8052788 08073f94  sub_8073F94 0.360 8         8         Same rare KOKA hash                               
+00004 08010644 sub_8010644 080da650  sub_80DA650 0.360 14        14        Same rare KOKA hash                               
+00003 0805d8b4 sub_805D8B4 08022644  sub_8022644 0.300 5         5         Same rare KOKA hash                               

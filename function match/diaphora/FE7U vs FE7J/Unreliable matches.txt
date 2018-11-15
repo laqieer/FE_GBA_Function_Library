@@ -1,0 +1,21 @@
+Line  Address  Name        Address 2 Name 2      Ratio BBlocks 1 BBlocks 2 Description                                       
+----  -------  ----        --------- ------      ----- --------- --------- -----------                                       
+00005 0803f710 sub_803F710 0803fcac  sub_803FCAC 0.490 28        50        Same constants                                    
+00012 080a6b4c sub_80A6B4C 080a7bb4  sub_80A7BB4 0.490 39        26        Same constants                                    
+00003 08042c58 sub_8042C58 0803ed34  sub_803ED34 0.470 1         1         Same constants                                    
+00011 080bbe50 sub_80BBE50 080b511c  sub_80B511C 0.440 1         1         Same constants                                    
+00001 08031a98 sub_8031A98 0804acc8  sub_804ACC8 0.370 8         12        Same constants                                    
+00014 08082308 sub_8082308 08013488  sub_8013488 0.350 14        14        Strongly connected components small-primes-product
+00008 080bce20 sub_80BCE20 08010028  sub_8010028 0.340 1         1         Same constants                                    
+00002 080b721c sub_80B721C 08090f14  sub_8090F14 0.290 1         5         Same constants                                    
+00015 0803f2f8 sub_803F2F8 08043390  sub_8043390 0.280 19        24        Strongly connected components small-primes-product
+00004 08002cf4 sub_8002CF4 0800a3c8  sub_800A3C8 0.250 6         29        Same constants                                    
+00013 080c4814 sub_80C4814 0803f788  sub_803F788 0.230 43        21        Strongly connected components small-primes-product
+00016 08012cbc sub_8012CBC 08088d08  sub_8088D08 0.230 22        58        Strongly connected components small-primes-product
+00017 08088380 sub_8088380 08013374  sub_8013374 0.220 59        23        Strongly connected components small-primes-product
+00000 08031900 sub_8031900 08021a28  sub_8021A28 0.200 1         1         Same constants                                    
+00006 0800a50c sub_800A50C 080bbd28  sub_80BBD28 0.190 3         1         Same constants                                    
+00010 08050808 sub_8050808 080119ec  sub_80119EC 0.180 1         4         Same constants                                    
+00007 0808204c sub_808204C 080832e0  sub_80832E0 0.140 1         1         Same constants                                    
+00018 080c2f30 sub_80C2F30 080b07ec  sub_80B07EC 0.110 18        12        Strongly connected components small-primes-product
+00009 08012f14 sub_8012F14 08013b44  sub_8013B44 0.060 16        1         Same constants                                    

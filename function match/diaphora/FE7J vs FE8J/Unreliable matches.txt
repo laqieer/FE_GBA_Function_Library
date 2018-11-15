@@ -1,0 +1,187 @@
+Line  Address  Name        Address 2 Name 2      Ratio BBlocks 1 BBlocks 2 Description                                       
+----  -------  ----        --------- ------      ----- --------- --------- -----------                                       
+00007 0807f590 sub_807F590 0806b1b4  sub_806B1B4 0.500 4         3         Same constants                                    
+00089 0808f970 sub_808F970 08024bf0  sub_8024BF0 0.490 12        12        Topological sort hash                             
+00125 0803becc sub_803BECC 080244ac  sub_80244AC 0.490 13        11        Strongly connected components small-primes-product
+00074 0800ec84 sub_800EC84 0801153c  sub_801153C 0.460 1         1         Same constants                                    
+00106 0800f188 sub_800F188 08011e44  sub_8011E44 0.460 11        11        Strongly connected components small-primes-product
+00140 0800cf2c sub_800CF2C 080c77f8  sub_80C77F8 0.450 15        16        Strongly connected components small-primes-product
+00025 0802e380 sub_802E380 0800ca94  sub_800CA94 0.440 1         3         Same constants                                    
+00033 080be04c sub_80BE04C 080b40f0  sub_80B40F0 0.440 4         3         Same constants                                    
+00039 0800ec40 sub_800EC40 08086870  sub_8086870 0.440 3         1         Same constants                                    
+00040 08010f48 sub_8010F48 08062b64  sub_8062B64 0.430 1         3         Same constants                                    
+00148 0807931c sub_807931C 08086acc  sub_8086ACC 0.430 16        11        Strongly connected components small-primes-product
+00182 0802ae44 sub_802AE44 0802b970  sub_802B970 0.430 40        24        Strongly connected components small-primes-product
+00061 080563c8 sub_80563C8 080d2c48  sub_80D2C48 0.420 3         7         Same constants                                    
+00109 080bdebc sub_80BDEBC 0800f7b0  sub_800F7B0 0.420 11        13        Strongly connected components small-primes-product
+00155 080a8b98 sub_80A8B98 080a5048  sub_80A5048 0.420 18        14        Strongly connected components small-primes-product
+00032 08033fe8 sub_8033FE8 0800de3c  sub_800DE3C 0.410 12        15        Same constants                                    
+00084 0806d3f8 sub_806D3F8 08023f20  sub_8023F20 0.410 11        11        Topological sort hash                             
+00116 080ac324 sub_80AC324 08012430  sub_8012430 0.410 12        11        Strongly connected components small-primes-product
+00119 0804a360 sub_804A360 08001570  sub_8001570 0.410 12        17        Strongly connected components small-primes-product
+00131 08075584 sub_8075584 0800ac34  sub_800AC34 0.410 14        11        Strongly connected components small-primes-product
+00023 08000e98 sub_8000E98 08000cb4  sub_8000CB4 0.400 1         1         Same constants                                    
+00068 080b15f0 sub_80B15F0 08070bec  sub_8070BEC 0.400 1         1         Same constants                                    
+00115 0807ef7c sub_807EF7C 08018ac4  sub_8018AC4 0.390 12        14        Strongly connected components small-primes-product
+00145 08029224 sub_8029224 0808ffe0  sub_808FFE0 0.390 16        16        Strongly connected components small-primes-product
+00008 08069e64 sub_8069E64 080100cc  sub_80100CC 0.380 5         14        Same constants                                    
+00047 0807a6a4 sub_807A6A4 080d2f44  sub_80D2F44 0.380 1         8         Same constants                                    
+00049 08010028 sub_8010028 080c3f28  sub_80C3F28 0.380 1         1         Same constants                                    
+00129 0808ebec sub_808EBEC 08001fd8  sub_8001FD8 0.380 13        13        Strongly connected components small-primes-product
+00133 080055dc sub_80055DC 0807c8dc  sub_807C8DC 0.380 14        18        Strongly connected components small-primes-product
+00141 08093948 sub_8093948 08033168  sub_8033168 0.380 15        19        Strongly connected components small-primes-product
+00171 0800b2cc sub_800B2CC 080b2744  sub_80B2744 0.380 24        12        Strongly connected components small-primes-product
+00045 0800ea9c sub_800EA9C 080b68cc  sub_80B68CC 0.370 4         9         Same constants                                    
+00076 0800e160 sub_800E160 08085ddc  sub_8085DDC 0.370 8         11        Same constants                                    
+00085 080878a8 sub_80878A8 080bd70c  sub_80BD70C 0.370 11        11        Topological sort hash                             
+00091 080a02ec sub_80A02EC 080c252c  sub_80C252C 0.370 13        13        Topological sort hash                             
+00158 08017420 sub_8017420 0807e8ac  sub_807E8AC 0.370 19        12        Strongly connected components small-primes-product
+00181 08038a0c sub_8038A0C 080d13f0  sub_80D13F0 0.370 37        52        Strongly connected components small-primes-product
+00088 0803bff4 sub_803BFF4 080b7a18  sub_80B7A18 0.360 12        12        Topological sort hash                             
+00117 08024774 sub_8024774 08018b44  sub_8018B44 0.360 12        14        Strongly connected components small-primes-product
+00150 080b7a74 sub_80B7A74 0801856c  sub_801856C 0.360 17        18        Strongly connected components small-primes-product
+00078 080015fc sub_80015FC 0806e478  sub_806E478 0.350 11        8         Same constants                                    
+00105 080b7b4c sub_80B7B4C 0804fcfc  sub_804FCFC 0.350 11        13        Strongly connected components small-primes-product
+00120 0807ebcc sub_807EBCC 0806582c  sub_806582C 0.350 12        16        Strongly connected components small-primes-product
+00121 0806c850 sub_806C850 08009840  sub_8009840 0.350 13        26        Strongly connected components small-primes-product
+00159 080789ec sub_80789EC 08016a30  sub_8016A30 0.350 19        11        Strongly connected components small-primes-product
+00098 080b127c sub_80B127C 08017a5c  sub_8017A5C 0.340 11        19        Strongly connected components small-primes-product
+00136 0807e854 sub_807E854 0802bffc  sub_802BFFC 0.340 14        26        Strongly connected components small-primes-product
+00178 0806f0c4 sub_806F0C4 0808baac  sub_808BAAC 0.340 31        11        Strongly connected components small-primes-product
+00005 0806dd40 sub_806DD40 0806b13c  sub_806B13C 0.330 2         3         Same constants                                    
+00006 0806dd6c sub_806DD6C 0806b178  sub_806B178 0.330 2         3         Same constants                                    
+00035 0808e5c8 sub_808E5C8 08089088  sub_8089088 0.330 3         1         Same constants                                    
+00044 0800ea7c sub_800EA7C 08086e64  sub_8086E64 0.330 1         1         Same constants                                    
+00110 080020cc sub_80020CC 08032cbc  sub_8032CBC 0.330 12        11        Strongly connected components small-primes-product
+00113 0807df88 sub_807DF88 08030d50  sub_8030D50 0.330 12        15        Strongly connected components small-primes-product
+00126 0807a44c sub_807A44C 080c18f8  sub_80C18F8 0.330 13        19        Strongly connected components small-primes-product
+00146 08079250 sub_8079250 0806e584  sub_806E584 0.330 16        11        Strongly connected components small-primes-product
+00153 08018cc4 sub_8018CC4 0804195c  sub_804195C 0.330 18        32        Strongly connected components small-primes-product
+00160 080a87a4 sub_80A87A4 080019f8  sub_80019F8 0.330 20        18        Strongly connected components small-primes-product
+00170 08029fac sub_8029FAC 080af964  sub_80AF964 0.330 23        12        Strongly connected components small-primes-product
+00130 08003054 sub_8003054 0800a118  sub_800A118 0.320 14        13        Strongly connected components small-primes-product
+00138 0807ed8c sub_807ED8C 080cb720  sub_80CB720 0.320 14        15        Strongly connected components small-primes-product
+00149 0809c0c8 sub_809C0C8 0809c938  sub_809C938 0.320 17        18        Strongly connected components small-primes-product
+00152 0800cfa8 sub_800CFA8 080d3110  sub_80D3110 0.320 18        17        Strongly connected components small-primes-product
+00164 08029b10 sub_8029B10 0801254c  sub_801254C 0.320 21        15        Strongly connected components small-primes-product
+00024 08021a28 sub_8021A28 0800c964  sub_800C964 0.310 1         1         Same constants                                    
+00058 080b8260 sub_80B8260 080d6aa0  sub_80D6AA0 0.310 5         6         Same constants                                    
+00065 08039620 sub_8039620 0805c4d4  sub_805C4D4 0.310 1         3         Same constants                                    
+00081 08029040 sub_8029040 08079c04  sub_8079C04 0.310 11        11        Topological sort hash                             
+00087 0800c9f8 sub_800C9F8 08090aec  sub_8090AEC 0.310 12        12        Topological sort hash                             
+00104 080b04ec sub_80B04EC 080109f0  sub_80109F0 0.310 11        13        Strongly connected components small-primes-product
+00151 0806096c sub_806096C 08025a14  sub_8025A14 0.310 17        13        Strongly connected components small-primes-product
+00175 08038c64 sub_8038C64 080bb620  sub_80BB620 0.310 27        20        Strongly connected components small-primes-product
+00183 080a64e0 sub_80A64E0 080103f4  sub_80103F4 0.310 55        55        Strongly connected components small-primes-product
+00020 0807bc68 sub_807BC68 0805e9b4  sub_805E9B4 0.300 1         5         Same constants                                    
+00079 0800d8fc sub_800D8FC 080c0b0c  sub_80C0B0C 0.300 11        11        Topological sort hash                             
+00094 080be2a8 sub_80BE2A8 080c916c  sub_80C916C 0.300 14        14        Topological sort hash                             
+00100 08077d1c sub_8077D1C 080170a0  sub_80170A0 0.300 11        20        Strongly connected components small-primes-product
+00102 08030340 sub_8030340 08003e0c  sub_8003E0C 0.300 11        11        Strongly connected components small-primes-product
+00103 080a715c sub_80A715C 08003f28  sub_8003F28 0.300 11        12        Strongly connected components small-primes-product
+00134 08017c58 sub_8017C58 0801f6e4  sub_801F6E4 0.300 14        20        Strongly connected components small-primes-product
+00142 0800efd4 sub_800EFD4 08041384  sub_8041384 0.300 15        21        Strongly connected components small-primes-product
+00147 080792c4 sub_80792C4 08078338  sub_8078338 0.300 16        24        Strongly connected components small-primes-product
+00166 0806bbf8 sub_806BBF8 080ad368  sub_80AD368 0.300 22        16        Strongly connected components small-primes-product
+00004 080452f8 sub_80452F8 08009db4  sub_8009DB4 0.290 3         6         Same constants                                    
+00018 0800b0d4 sub_800B0D4 08004140  sub_8004140 0.290 3         1         Same constants                                    
+00019 0805be90 sub_805BE90 0805c814  sub_805C814 0.290 5         13        Same constants                                    
+00083 0806c4a0 sub_806C4A0 08078ef4  sub_8078EF4 0.290 11        11        Topological sort hash                             
+00107 0807b32c sub_807B32C 080d2260  sub_80D2260 0.290 11        16        Strongly connected components small-primes-product
+00154 080390f8 sub_80390F8 08088b0c  sub_8088B0C 0.290 18        15        Strongly connected components small-primes-product
+00162 0800f0cc sub_800F0CC 0803daf0  sub_803DAF0 0.290 20        17        Strongly connected components small-primes-product
+00177 08089bdc sub_8089BDC 0808639c  sub_808639C 0.290 30        41        Strongly connected components small-primes-product
+00021 080990a4 sub_80990A4 080a0424  sub_80A0424 0.280 7         7         Same constants                                    
+00037 080122dc sub_80122DC 0808278c  sub_808278C 0.280 9         3         Same constants                                    
+00050 0800ff74 sub_800FF74 08037f34  sub_8037F34 0.280 7         1         Same constants                                    
+00082 080669e8 sub_80669E8 0807b7b8  sub_807B7B8 0.280 11        11        Topological sort hash                             
+00001 0806d2e4 sub_806D2E4 0800e8c8  sub_800E8C8 0.270 25        13        Same constants                                    
+00028 0807ee34 sub_807EE34 08011730  sub_8011730 0.270 16        4         Same constants                                    
+00041 08001d2c sub_8001D2C 080c2a10  sub_80C2A10 0.270 1         1         Same constants                                    
+00051 0801012c sub_801012C 08037f5c  sub_8037F5C 0.270 13        1         Same constants                                    
+00060 080b4bb0 sub_80B4BB0 08073f88  sub_8073F88 0.270 3         1         Same constants                                    
+00063 08050fe4 sub_8050FE4 080c0018  sub_80C0018 0.270 1         1         Same constants                                    
+00118 08034ac4 sub_8034AC4 080386ac  sub_80386AC 0.270 12        15        Strongly connected components small-primes-product
+00143 080124bc sub_80124BC 0806e860  sub_806E860 0.270 15        12        Strongly connected components small-primes-product
+00156 0803bbb0 sub_803BBB0 080378d8  sub_80378D8 0.270 18        15        Strongly connected components small-primes-product
+00011 08016fbc sub_8016FBC 0804a094  sub_804A094 0.260 10        3         Same constants                                    
+00014 080a1d80 sub_80A1D80 08024390  sub_8024390 0.260 8         20        Same constants                                    
+00042 08009e30 sub_8009E30 080c11e8  sub_80C11E8 0.260 3         1         Same constants                                    
+00043 08079bc8 sub_8079BC8 080349ac  sub_80349AC 0.260 10        1         Same constants                                    
+00066 0808edd0 sub_808EDD0 0801183c  sub_801183C 0.260 1         1         Same constants                                    
+00080 0801b718 sub_801B718 0802b258  sub_802B258 0.260 11        11        Topological sort hash                             
+00099 080b27d8 sub_80B27D8 080da36c  sub_80DA36C 0.260 11        12        Strongly connected components small-primes-product
+00139 0806fea0 sub_806FEA0 08029150  sub_8029150 0.260 15        36        Strongly connected components small-primes-product
+00165 080b6250 sub_80B6250 0802ce84  sub_802CE84 0.260 22        22        Strongly connected components small-primes-product
+00167 0806caf8 sub_806CAF8 08059678  sub_8059678 0.260 22        22        Strongly connected components small-primes-product
+00168 0802788c sub_802788C 0807de88  sub_807DE88 0.260 22        13        Strongly connected components small-primes-product
+00172 08012bc0 sub_8012BC0 080afa40  sub_80AFA40 0.260 27        15        Strongly connected components small-primes-product
+00057 080b81b4 sub_80B81B4 08074b88  sub_8074B88 0.250 11        53        Same constants                                    
+00092 080bb29c sub_80BB29C 080c3618  sub_80C3618 0.250 13        13        Topological sort hash                             
+00112 0804acc8 sub_804ACC8 0807acbc  sub_807ACBC 0.250 12        16        Strongly connected components small-primes-product
+00124 0800d5e8 sub_800D5E8 0800a9dc  sub_800A9DC 0.250 13        12        Strongly connected components small-primes-product
+00144 0802ad58 sub_802AD58 0806ddf0  sub_806DDF0 0.250 15        11        Strongly connected components small-primes-product
+00012 0801759c sub_801759C 0804a0b4  sub_804A0B4 0.240 4         3         Same constants                                    
+00030 0809fac0 sub_809FAC0 080d067c  sub_80D067C 0.240 1         18        Same constants                                    
+00086 08087c6c sub_8087C6C 080a8aec  sub_80A8AEC 0.240 11        11        Topological sort hash                             
+00096 080a13e8 sub_80A13E8 08079cc0  sub_8079CC0 0.240 21        21        Topological sort hash                             
+00097 080bbdd0 sub_80BBDD0 080aa1ac  sub_80AA1AC 0.240 29        29        Topological sort hash                             
+00179 080b3f48 sub_80B3F48 0808214c  sub_808214C 0.240 33        19        Strongly connected components small-primes-product
+00009 0807a124 sub_807A124 08051a00  sub_8051A00 0.230 8         1         Same constants                                    
+00022 08010c5c sub_8010C5C 080b7e4c  sub_80B7E4C 0.230 7         1         Same constants                                    
+00059 080b4b58 sub_80B4B58 080688bc  sub_80688BC 0.230 7         1         Same constants                                    
+00077 08001534 sub_8001534 0806dc64  sub_806DC64 0.230 11        13        Same constants                                    
+00095 0807e1e8 sub_807E1E8 080d0854  sub_80D0854 0.230 20        20        Topological sort hash                             
+00108 080b8ff4 sub_80B8FF4 0800d110  sub_800D110 0.230 11        20        Strongly connected components small-primes-product
+00114 0807e0d4 sub_807E0D4 0800aca8  sub_800ACA8 0.230 12        32        Strongly connected components small-primes-product
+00161 080b7e60 sub_80B7E60 0802bb48  sub_802BB48 0.230 20        24        Strongly connected components small-primes-product
+00093 0805480c sub_805480C 080251cc  sub_80251CC 0.220 14        14        Topological sort hash                             
+00137 08080e04 sub_8080E04 0806e6bc  sub_806E6BC 0.220 14        12        Strongly connected components small-primes-product
+00010 08007428 sub_8007428 0805c5ac  sub_805C5AC 0.210 1         3         Same constants                                    
+00054 08067ebc sub_8067EBC 08037f78  sub_8037F78 0.210 1         1         Same constants                                    
+00173 0807f258 sub_807F258 0808d488  sub_808D488 0.210 27        67        Strongly connected components small-primes-product
+00180 0807ea0c sub_807EA0C 08012780  sub_8012780 0.210 34        13        Strongly connected components small-primes-product
+00027 080b044c sub_80B044C 0800ce7c  sub_800CE7C 0.200 9         1         Same constants                                    
+00069 08003d7c sub_8003D7C 080bf950  sub_80BF950 0.200 4         1         Same constants                                    
+00029 080747f4 sub_80747F4 080c572c  sub_80C572C 0.190 8         9         Same constants                                    
+00017 0800dc94 sub_800DC94 08072048  sub_8072048 0.180 5         1         Same constants                                    
+00101 080873b4 sub_80873B4 0800a34c  sub_800A34C 0.180 11        13        Strongly connected components small-primes-product
+00135 0806d53c sub_806D53C 080c68b4  sub_80C68B4 0.180 14        12        Strongly connected components small-primes-product
+00157 08029cc8 sub_8029CC8 08016994  sub_8016994 0.180 19        15        Strongly connected components small-primes-product
+00003 080452dc sub_80452DC 0800219c  sub_800219C 0.170 3         1         Same constants                                    
+00071 08004e4c sub_8004E4C 080088fc  sub_80088FC 0.170 7         1         Same constants                                    
+00090 080290f8 sub_80290F8 080aab30  sub_80AAB30 0.170 13        13        Topological sort hash                             
+00111 080b07ec sub_80B07EC 08037c44  sub_8037C44 0.170 12        13        Strongly connected components small-primes-product
+00122 0807755c sub_807755C 0807d074  sub_807D074 0.170 13        57        Strongly connected components small-primes-product
+00123 08016c80 sub_8016C80 0800a874  sub_800A874 0.170 13        12        Strongly connected components small-primes-product
+00128 08079a94 sub_8079A94 080d1a50  sub_80D1A50 0.170 13        28        Strongly connected components small-primes-product
+00132 08013488 sub_8013488 0800b2bc  sub_800B2BC 0.170 14        33        Strongly connected components small-primes-product
+00163 080532f0 sub_80532F0 0802bc98  sub_802BC98 0.170 20        24        Strongly connected components small-primes-product
+00052 080a7584 sub_80A7584 08014cec  sub_8014CEC 0.160 1         16        Same constants                                    
+00062 080b2904 sub_80B2904 08016b3c  sub_8016B3C 0.160 5         5         Same constants                                    
+00064 0807d328 sub_807D328 08051a2c  sub_8051A2C 0.160 1         19        Same constants                                    
+00075 080be0cc sub_80BE0CC 08006600  sub_8006600 0.160 11        1         Same constants                                    
+00016 08008dfc sub_8008DFC 08008808  sub_8008808 0.150 16        5         Same constants                                    
+00026 080a1050 sub_80A1050 0800cac4  sub_800CAC4 0.150 11        3         Same constants                                    
+00031 0800dd08 sub_800DD08 0800d844  sub_800D844 0.150 10        1         Same constants                                    
+00055 08067ec8 sub_8067EC8 08037f90  sub_8037F90 0.150 1         1         Same constants                                    
+00174 080a6cd0 sub_80A6CD0 08051fb8  sub_8051FB8 0.150 27        122       Strongly connected components small-primes-product
+00046 080441d0 sub_80441D0 080caef4  sub_80CAEF4 0.140 1         15        Same constants                                    
+00067 0809b2fc sub_809B2FC 080569cc  sub_80569CC 0.140 1         1         Same constants                                    
+00169 0800282c sub_800282C 08091b88  sub_8091B88 0.140 23        69        Strongly connected components small-primes-product
+00184 0804cd2c sub_804CD2C 0807f274  sub_807F274 0.140 118       19        Strongly connected components small-primes-product
+00070 0808e644 sub_808E644 0800e574  sub_800E574 0.130 1         8         Same constants                                    
+00127 0804a4cc sub_804A4CC 0802ac00  sub_802AC00 0.130 13        11        Strongly connected components small-primes-product
+00176 0808a0f4 sub_808A0F4 08058e44  sub_8058E44 0.130 29        19        Strongly connected components small-primes-product
+00000 08007a00 sub_8007A00 0800d860  sub_800D860 0.120 1         15        Same constants                                    
+00015 0800844c sub_800844C 08007890  sub_8007890 0.110 89        14        Same constants                                    
+00038 0801233c sub_801233C 08092518  sub_8092518 0.110 1         10        Same constants                                    
+00056 080842f8 sub_80842F8 0800d798  sub_800D798 0.110 56        1         Same constants                                    
+00073 0809deec sub_809DEEC 080c4ff4  sub_80C4FF4 0.110 4         3         Same constants                                    
+00034 0804ef58 sub_804EF58 08052f0c  sub_8052F0C 0.100 8         1         Same constants                                    
+00002 080858b0 sub_80858B0 080c3bc0  sub_80C3BC0 0.090 1         9         Same constants                                    
+00053 08068634 sub_8068634 080bd108  sub_80BD108 0.070 70        1         Same constants                                    
+00036 080b1a8c sub_80B1A8C 0806aee0  sub_806AEE0 0.060 1         31        Same constants                                    
+00013 08017610 sub_8017610 0805c5d8  sub_805C5D8 0.050 1         18        Same constants                                    
+00048 0800a7d0 sub_800A7D0 080bfc20  sub_80BFC20 0.050 1         12        Same constants                                    
+00072 08009e6c sub_8009E6C 0804ef40  sub_804EF40 0.040 1         9         Same constants                                    
