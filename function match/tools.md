@@ -27,7 +27,7 @@ Included in Radare2.
 [link](https://github.com/McGill-DMaS/Kam1n0-Community)
 Open Source.
 Requires IDA Pro (>6.7).
-I failed in making it to work for me.
+I fail in 6.8 and succeed in 7.0.
 
 # Turbodiff
 [link](https://www.secureauth.com/labs/open-source-tools/turbodiff)
