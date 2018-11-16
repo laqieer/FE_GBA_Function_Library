@@ -113,3 +113,6 @@ ida/
 # diaphora results
 *.sqlite
 *.diaphora
+
+# Relyze libraries
+*.rlz
