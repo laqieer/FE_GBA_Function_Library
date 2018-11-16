@@ -1,4 +1,4 @@
-# mark functions in ida
+# list functions in IDA
 # by laqieer
 # 2018-11-14
 
