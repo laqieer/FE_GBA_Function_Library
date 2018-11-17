@@ -1,0 +1,4 @@
+Identical functions:   6585
+Matched functions:     61
+Unmatched functions 1: 979
+Unmatched functions 2: 1043
