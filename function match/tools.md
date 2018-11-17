@@ -16,7 +16,6 @@ Requires IDA 6.9 to 7.2, and also supports Radare2. Support for Binary Ninja is 
 [link](http://www.darungrim.org/)
 Open Source.
 Requires IDA 5.6.
-It is for PE format binary, especially Microsoft security patch.
 
 # Radiff2
 [link](https://r2wiki.readthedocs.io/en/latest/tools/radiff2/)

@@ -116,3 +116,8 @@ ida/
 
 # Relyze libraries
 *.rlz
+
+# DarunGrim Results
+function match/DarunGrim 2/*.dgf
+function match/DarunGrim 4/FE?.dgf
+function match/DarunGrim 4/FE??.dgf
