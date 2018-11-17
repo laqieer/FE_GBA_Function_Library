@@ -1,13 +1,19 @@
 #!/usr/bin/python
 
 # Merge function matching results
-# Usage: merge_match_results.py >../functions.md
+# Usage: merge_match_results.py threhold(0-1,default:0.8) >../functions.md
 # by laqieer
 # 2018/11/17
 
+import sys
+
 result = []
 
-threhold = 0.8
+# get threhold to balance Accuracy and Recall
+if len(sys.argv) == 1:
+	threhold = 0.8
+else:
+	threhold = sys.argv[1]
 
 def insert_pair_to_result(pair):
 	"insert a matching pair to result"
