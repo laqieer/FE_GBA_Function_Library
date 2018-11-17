@@ -121,3 +121,6 @@ ida/
 function match/DarunGrim 2/*.dgf
 function match/DarunGrim 4/FE?.dgf
 function match/DarunGrim 4/FE??.dgf
+
+# turbodiff results
+function match/turbodiff
