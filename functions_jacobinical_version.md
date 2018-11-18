@@ -2,13 +2,15 @@
 
 |FE6|FE7J|FE7U|FE8J|FE8U|Name|Declaration|Comment|
 |----|----|----|----|----|----|----|----|
+|8000000|8000000|8000000|8000000|8000000|_start|void _start()|Entry Point|
+|80000FC|80000FC|80000FC|80000FC|80000FC|intr_main|void intr_main()|Interrupt Branch Process (Drawing from table)|
+|8000A20|8000A20|8000A50|8000A20|8000A20|AgbMain|void AgbMain()|Main Function of a GBA Game|
+|8000AFC|8000AF4|8000B1C|8000AE8|8000B10|print_build_version|void print_build_version(char *buffer)|print version infomation on this build of the game|
 |8000304|8000304|8000304|8000304|8000304|ARM_ClearOAMBuffer|_DWORD *ARM_ClearOAMBuffer(_DWORD *result, unsigned int a2)||
 |8000360|8000360|8000360|8000360|8000360|ARM_ComputeChecksum32|int ARM_ComputeChecksum32(unsigned __int16 *a1, int a2)||
 |80003A8|80003A8|80003A8|80003A8|80003A8|ARM_FillRect|_WORD *ARM_FillRect(_WORD *result, int a2, int a3, __int16 a4)||
 |80003E0|80003E0|80003E0|80003E0|80003E0||||
 |800043C|800043C|800043C|800043C|800043C||||
-|8000000|8000000|8000000|8000000|8000000|_start|void start(int a1, int a2, const char **a3)||
-|80000FC|80000FC|80000FC|80000FC|80000FC|GlobalIRQHandler|unsigned int GlobalIRQHandler()||
 |8000234|8000234|8000234|8000234|8000234||||
 |8000494|8000494|8000494|8000494|8000494|ARM_PushToHiOAM|int ARM_PushToHiOAM(int result, unsigned __int16 a2, _WORD *a3, __int16 a4)||
 |8000534|8000534|8000534|8000534|8000534|ARM_PushToLoOAM|void ARM_PushToLoOAM()||
@@ -10212,7 +10214,6 @@
 |0|8061F04|806171C|0|0||||
 |0|8079B38|8079368|0|0||||
 |0|8079B80|80793B0|0|0||||
-|0|8000A20|8000A50|0|0|AgbMain|void AgbMain(int a1, int a2, int a3, int a4, char a5)||
 |0|8048ED0|80486E4|0|0||||
 |0|8091D38|80913FC|0|0||||
 |0|8095830|8094FE4|0|0||||
