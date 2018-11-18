@@ -2,7 +2,10 @@
 
 |FE6|FE7J|FE7U|FE8J|FE8U|Name|Declaration|Comment|
 |----|----|----|----|----|----|----|----|
-|80000FC|80000FC|80000FC|80000FC|80000FC|GlobalIRQHandler|unsigned int GlobalIRQHandler()||
+|8000000|8000000|8000000|8000000|8000000|_start|void _start()|Entry Point|
+|80000FC|80000FC|80000FC|80000FC|80000FC|intr_main|void intr_main()|Interrupt Branch Process (Drawing from table)|
+|8000A20|8000A20|8000A50|8000A20|8000A20|AgbMain|void AgbMain()|Main Function of a GBA Game|
+|8000AFC|8000AF4|8000B1C|8000AE8|8000B10|print_build_version|void print_build_version(char *buffer)|print version infomation on this build of the game|
 |0|80042FC|8004420|8002B58|8002C08|InitProcSystem|int InitProcSystem()||
 |0|8004460|8004584|8002CBC|8002D6C|EndProc|int EndProc(int a1)||
 |8003E44|800456C|8004690|8002DD4|8002E84|ExecProc|int ExecProc(int a1)||
@@ -1452,7 +1455,6 @@
 |8013E8C|8013870|8013350|80131F0|8013138||||
 |3002D8C|3002E6C|3002F4C|30036FC|300375C||||
 |8000234|8000234|8000234|8000234|8000234||||
-|8000000|8000000|8000000|8000000|8000000|_start|void start(int a1, int a2, const char **a3)||
 |0|80049A0|8004AC4|8003220|80032D4|ProcInst0F_Mark|signed int ProcInst0F_Mark(int a1)||
 |8082ABC|8004B20|8004C44|80033A0|8003454||||
 |0|8004B2C|8004C50|80033AC|8003460||||
@@ -4335,7 +4337,6 @@
 |8005768|8005320|8005450|8003C68|8003D38|SetFont|int SetFont(int a1)||
 |8018620|8019108|8018D20|801911C|8019444|GetClassData|const void *GetClassData(int classIndex)||
 |80354F0|803CA0C|803C558|804195C|80419DC|OnSerialCommunication|int OnSerialCommunication()||
-|0|8000A20|8000A50|8000A20|0|AgbMain|void AgbMain(int a1, int a2, int a3, int a4, char a5)||
 |0|80AE584|80AD660|80B5E00|80B11E4||||
 |0|80A5980|80A4C94|80AEDF0|80AA30C||||
 |0|8079910|8079140|80A96F8|80A4CB4||||
@@ -6379,7 +6380,6 @@
 |0|0|0|8084E0C|8082AD4||||
 |0|0|0|8084E64|8082B2C||||
 |0|0|0|808B824|80895B4||||
-|0|0|0|8000AE8|8000B10||||
 |0|0|0|800142C|8001470|StartKeyStatusSetter|int StartKeyStatusSetter(__int16 a1)||
 |0|0|0|80014A4|80014E8||||
 |800285C|8002C24|8002D48|8001C00|8001CB0||||
@@ -9418,7 +9418,6 @@
 |0|8078474|8077CA4|0|0||||
 |0|807B304|807A890|0|0||||
 |0|80A466C|80A39F8|0|0||||
-|8000AFC|8000AF4|8000B1C|0|0||||
 |0|8001D2C|8001D54|0|0||||
 |800285C|8002C24|8002D48|0|0||||
 |0|8004110|8004234|0|0||||

@@ -16,6 +16,31 @@ if len(sys.argv) == 1:
 else:
 	threhold = sys.argv[1]
 
+def read_basic_info():
+	"read basic info provided by user"
+	with open(r'../basic_info.md') as f1:
+		line = f1.readlines()
+		for i in range(5,len(line)):
+			info = line[i].split("|")
+			item = {}
+			if not info[1] == "":
+				item["FE6"] = int(info[1], 16)
+			if not info[2] == "":
+				item["FE7J"] = int(info[2], 16)
+			if not info[3] == "":
+				item["FE7U"] = int(info[3], 16)
+			if not info[4] == "":
+				item["FE8J"] = int(info[4], 16)
+			if not info[5] == "":
+				item["FE8U"] = int(info[5], 16)
+			if not info[6] == "":
+				item["name"] = info[6]
+			if not info[7] == "":
+				item["decl"] = info[7]
+			if not info[8] == "":
+				item["comment"] = info[8]
+			result.append(item)
+	
 def insert_pair_to_result(pair):
 	"insert a matching pair to result"
 	for i in result:
@@ -84,6 +109,8 @@ def add_func_info(game):
 					break
 #			if "inserted" not in info:
 #				result.append({ game : int(info[1], 16), "name" : info[2], "decl" : info[3], "comment" : info[4] })
+
+read_basic_info()
 
 # Merge results of BinDiff 4.3.0
 				
