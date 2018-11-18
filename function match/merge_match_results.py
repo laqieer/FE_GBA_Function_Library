@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
 # Merge function matching results
 # Usage: merge_match_results.py threhold(0-1,default:0.8) >../functions.md
@@ -56,14 +57,37 @@ def read_diaphora_result(first, second):
 def output_table():
 	"output table in markdown format"
 	print "# Functions in GBAFE\n"
-	print "|FE6|FE7J|FE7U|FE8J|FE8U|Name|Comment|"
-	print "|----|----|----|----|----|----|----|"
+	print "|FE6|FE7J|FE7U|FE8J|FE8U|Name|Declaration|Comment|"
+	print "|----|----|----|----|----|----|----|----|"
 	for i in result:
 		#TODO merge function infomation like name and comment
-		print("|%X|%X|%X|%X|%X|||" % (i.get("FE6", 0), i.get("FE7J", 0), i.get("FE7U", 0), i.get("FE8J", 0), i.get("FE8U", 0)))
+		print("|%X|%X|%X|%X|%X|%s|%s|%s|" % (i.get("FE6", 0), i.get("FE7J", 0), i.get("FE7U", 0), i.get("FE8J", 0), i.get("FE8U", 0), i.get("name", ""), i.get("decl", ""), i.get("comment", "")))
+
+def add_func_info(game):
+	"read function infomation and add to result"
+	with open(r'../function info/func_info_'+game+'.md') as f1:
+		line = f1.readlines()
+		for i in range(4,len(line)):
+			info = line[i].split("|")
+			for j in result:
+				for k1, v1 in j.items():
+					if k1 == game and v1 == int(info[1], 16):
+						if not j.has_key("name"):
+							j["name"] = info[2]
+						if not j.has_key("decl"):
+							j["decl"] = info[3]
+						if not j.has_key("comment"):
+							j["comment"] = info[4]
+						info.append("inserted")
+						break
+				if "inserted" in info:
+					break
+#			if "inserted" not in info:
+#				result.append({ game : int(info[1], 16), "name" : info[2], "decl" : info[3], "comment" : info[4] })
 
 # Merge results of BinDiff 4.3.0
-
+				
+# print("Merging results of BinDiff 4.3.0 ...")
 read_bindiff_result("FE8J", "FE7J")
 read_bindiff_result("FE8J", "FE8U")
 read_bindiff_result("FE7J", "FE7U")
@@ -71,9 +95,16 @@ read_bindiff_result("FE7J", "FE6")
 
 # Merge results of diaphora
 
+# print("Merging results of diaphora ...")
 read_diaphora_result("FE7J", "FE8J")
 read_diaphora_result("FE8U", "FE8J")
 read_diaphora_result("FE7U", "FE7J")
 read_diaphora_result("FE6", "FE7J")
+
+# Add function detailed infomation
+
+#print("Adding function detailed infomation ...")
+add_func_info("FE8U")
+add_func_info("FE7J")
 			
 output_table()
