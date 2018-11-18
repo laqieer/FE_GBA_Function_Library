@@ -11,6 +11,7 @@ This project analyze functions in Fire Emblem Series on Gameboy Advance:
 ![Code Size](https://raw.githubusercontent.com/laqieer/FE_GBA_Function_Library/master/img/Code%20Size.png)
 
 It is obvious that they share some source code. Here is my analysis result:
+
 ![Similar Functions](https://raw.github.com/laqieer/FE_GBA_Function_Library/master/img/Similar%20Functions.png)
 
 Stan works on reverse engineering of FE8U and I work on FE7J mostly. I combine them with the function similarity analysis result above.
