@@ -59,7 +59,11 @@ def make_macro(f, game):
 	f.write("#ifdef " + game + "\n")
 	for item in data:
 		if item.has_key("name") and item.has_key(game):
-			f.write("%s = 0x%s;\n" % (item["name"], item[game]))
+			name = item["name"].split("(")
+			if len(name) > 1 and name[-1] == "ARM)":
+				f.write("%s = 0x%s;\n" % (name[0], item[game]))
+			else:
+				f.write("%s = 0x%s + 1;\n" % (name[0], item[game]))
 	f.write("#endif\n\n")
 			
 # make linker script

@@ -2,17 +2,17 @@
 
 |Address|Name|Declaration|Comment|
 |----|----|----|----|
-|8000000|_start|void start(int a1, int a2, const char **a3)||
-|80000FC|GlobalIRQHandler|unsigned int GlobalIRQHandler()||
-|8000304|ARM_ClearOAMBuffer|_DWORD *ARM_ClearOAMBuffer(_DWORD *result, unsigned int a2)||
-|8000360|ARM_ComputeChecksum32|int ARM_ComputeChecksum32(unsigned __int16 *a1, int a2)||
-|80003A8|ARM_FillRect|_WORD *ARM_FillRect(_WORD *result, int a2, int a3, __int16 a4)||
-|8000494|ARM_PushToHiOAM|int ARM_PushToHiOAM(int result, unsigned __int16 a2, _WORD *a3, __int16 a4)||
-|8000534|ARM_PushToLoOAM|void ARM_PushToLoOAM()||
-|8000564|ARM_Draw1DTileTextGlyphCore|int ARM_Draw1DTileTextGlyphCore(int result, _DWORD *a2, _DWORD *a3, int a4)||
-|80006E4|ARM_HuffmanTextDecomp|unsigned __int8 *ARM_HuffmanTextDecomp(unsigned __int8 *result, _WORD *a2, unsigned int a3)||
-|8000784|ARM_Func5|int ARM_Func5(int result, int a2, int a3)||
-|8000874|ARM_FillMovementMapCore|char *ARM_FillMovementMapCore()||
+|8000000|_start(ARM)|void start(int a1, int a2, const char **a3)||
+|80000FC|GlobalIRQHandler(ARM)|unsigned int GlobalIRQHandler()||
+|8000304|ARM_ClearOAMBuffer(ARM)|_DWORD *ARM_ClearOAMBuffer(_DWORD *result, unsigned int a2)||
+|8000360|ARM_ComputeChecksum32(ARM)|int ARM_ComputeChecksum32(unsigned __int16 *a1, int a2)||
+|80003A8|ARM_FillRect(ARM)|_WORD *ARM_FillRect(_WORD *result, int a2, int a3, __int16 a4)||
+|8000494|ARM_PushToHiOAM(ARM)|int ARM_PushToHiOAM(int result, unsigned __int16 a2, _WORD *a3, __int16 a4)||
+|8000534|ARM_PushToLoOAM(ARM)|void ARM_PushToLoOAM()||
+|8000564|ARM_Draw1DTileTextGlyphCore(ARM)|int ARM_Draw1DTileTextGlyphCore(int result, _DWORD *a2, _DWORD *a3, int a4)||
+|80006E4|ARM_HuffmanTextDecomp(ARM)|unsigned __int8 *ARM_HuffmanTextDecomp(unsigned __int8 *result, _WORD *a2, unsigned int a3)||
+|8000784|ARM_Func5(ARM)|int ARM_Func5(int result, int a2, int a3)||
+|8000874|ARM_FillMovementMapCore(ARM)|char *ARM_FillMovementMapCore()||
 |8000A20|AgbMain|int AgbMain(int argc, const char **argv, const char **envp)||
 |8000B34|StoreIRQToIRAM|int StoreIRQToIRAM()||
 |8000B74|IRQDummy|void IRQDummy()||

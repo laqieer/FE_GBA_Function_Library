@@ -2,13 +2,13 @@
 
 |Address|Name|Declaration|Comment|
 |----|----|----|----|
-|8000000|_start|||
-|80000FC|intr_main|unsigned int intr_main()||
-|8000304|Store160To80Structs|int Store160To80Structs(int result, unsigned int a2)||
-|8000360|ARM_ComputeChecksum32|int ARM_ComputeChecksum32(unsigned __int16 *a1, int a2)||
-|80003A8|ARM_FillRect|_WORD *ARM_FillRect(_WORD *result, int a2, int a3, __int16 a4)||
-|8000494|IRAMARM_CopyToSecondaryOAM|unsigned int IRAMARM_CopyToSecondaryOAM(unsigned int result, int a2, _WORD *a3, __int16 a4)||
-|8000534|IRAMARM_CopyToPrimaryOAM|void IRAMARM_CopyToPrimaryOAM()||
+|8000000|_start(ARM)|||
+|80000FC|intr_main(ARM)|unsigned int intr_main()||
+|8000304|Store160To80Structs(ARM)|int Store160To80Structs(int result, unsigned int a2)||
+|8000360|ARM_ComputeChecksum32(ARM)|int ARM_ComputeChecksum32(unsigned __int16 *a1, int a2)||
+|80003A8|ARM_FillRect(ARM)|_WORD *ARM_FillRect(_WORD *result, int a2, int a3, __int16 a4)||
+|8000494|IRAMARM_CopyToSecondaryOAM(ARM)|unsigned int IRAMARM_CopyToSecondaryOAM(unsigned int result, int a2, _WORD *a3, __int16 a4)||
+|8000534|IRAMARM_CopyToPrimaryOAM(ARM)|void IRAMARM_CopyToPrimaryOAM()||
 |8000A20|AgbMain|void AgbMain(int a1, int a2, int a3, int a4, char a5)||
 |8000BB8|generateRN65536|int generateRN65536()|生成一个0-65535的随机整数|
 |8000D4C|readRNFromWRAMToIRAM|void readRNFromWRAMToIRAM(int a1)||

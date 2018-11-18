@@ -44,6 +44,9 @@ if __name__ == "__main__":
 					decl = decl.replace("__cdecl ", "")
 					decl = decl.replace("__usrcall ", "")
 					decl = decl.replace("__noreturn ", "")
+					# mark ARM functions
+					if idc.get_sreg(func_ea, "T") == 0:
+						name = name + "(ARM)"
 					os.write(table, "|%X|%s|%s|%s|\n" % (func_ea, name, decl, comment))
 			os.close(table)
 			print("Function infomation has been exported to " + file)

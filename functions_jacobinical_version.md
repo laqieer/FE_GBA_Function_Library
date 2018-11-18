@@ -2,18 +2,18 @@
 
 |FE6|FE7J|FE7U|FE8J|FE8U|Name|Declaration|Comment|
 |----|----|----|----|----|----|----|----|
-|8000000|8000000|8000000|8000000|8000000|_start|void _start()|Entry Point|
-|80000FC|80000FC|80000FC|80000FC|80000FC|intr_main|void intr_main()|Interrupt Branch Process (Drawing from table)|
+|8000000|8000000|8000000|8000000|8000000|_start(ARM)|void _start()|Entry Point|
+|80000FC|80000FC|80000FC|80000FC|80000FC|intr_main(ARM)|void intr_main()|Interrupt Branch Process (Drawing from table)|
 |8000A20|8000A20|8000A50|8000A20|8000A20|AgbMain|void AgbMain()|Main Function of a GBA Game|
 |8000AFC|8000AF4|8000B1C|8000AE8|8000B10|print_build_version|void print_build_version(char *buffer)|print version infomation on this build of the game|
-|8000304|8000304|8000304|8000304|8000304|ARM_ClearOAMBuffer|_DWORD *ARM_ClearOAMBuffer(_DWORD *result, unsigned int a2)||
-|8000360|8000360|8000360|8000360|8000360|ARM_ComputeChecksum32|int ARM_ComputeChecksum32(unsigned __int16 *a1, int a2)||
-|80003A8|80003A8|80003A8|80003A8|80003A8|ARM_FillRect|_WORD *ARM_FillRect(_WORD *result, int a2, int a3, __int16 a4)||
+|8000304|8000304|8000304|8000304|8000304|ARM_ClearOAMBuffer(ARM)|_DWORD *ARM_ClearOAMBuffer(_DWORD *result, unsigned int a2)||
+|8000360|8000360|8000360|8000360|8000360|ARM_ComputeChecksum32(ARM)|int ARM_ComputeChecksum32(unsigned __int16 *a1, int a2)||
+|80003A8|80003A8|80003A8|80003A8|80003A8|ARM_FillRect(ARM)|_WORD *ARM_FillRect(_WORD *result, int a2, int a3, __int16 a4)||
 |80003E0|80003E0|80003E0|80003E0|80003E0||||
 |800043C|800043C|800043C|800043C|800043C||||
 |8000234|8000234|8000234|8000234|8000234||||
-|8000494|8000494|8000494|8000494|8000494|ARM_PushToHiOAM|int ARM_PushToHiOAM(int result, unsigned __int16 a2, _WORD *a3, __int16 a4)||
-|8000534|8000534|8000534|8000534|8000534|ARM_PushToLoOAM|void ARM_PushToLoOAM()||
+|8000494|8000494|8000494|8000494|8000494|ARM_PushToHiOAM(ARM)|int ARM_PushToHiOAM(int result, unsigned __int16 a2, _WORD *a3, __int16 a4)||
+|8000534|8000534|8000534|8000534|8000534|ARM_PushToLoOAM(ARM)|void ARM_PushToLoOAM()||
 |3002D8C|3002E6C|3002F4C|30036FC|300375C||||
 |3002E5C|3002F3C|300301C|30037CC|0||||
 |3002EB8|3002F98|3003078|3003828|3003888||||
