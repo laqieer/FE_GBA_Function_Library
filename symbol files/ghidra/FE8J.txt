@@ -1,5 +1,5 @@
-_start(ARM) 0x8000000
-intr_main(ARM) 0x80000FC
+_start 0x8000000
+intr_main 0x80000FC
 AgbMain 0x8000A20
 print_build_version 0x8000AE8
 InitProcSystem 0x8002B58
@@ -576,11 +576,11 @@ InitBattleUnitFromUnit 0x802A4F0
 BattleLoadCrit 0x802AB88
 TryRemoveUnitFromBallista 0x8037B04
 SMS_SyncDirect 0x8026ED0
-ARM_PushToHiOAM(ARM) 0x8000494
-ARM_PushToLoOAM(ARM) 0x8000534
+ARM_PushToHiOAM 0x8000494
+ARM_PushToLoOAM 0x8000534
 GetPositionRangeWeight 0x803AE5C
 GetEffectiveTileMovCost 0x803DA98
-ARM_FillRect(ARM) 0x80003A8
+ARM_FillRect 0x80003A8
 ProcInst00_End 0x8003038
 ProcInst02_CallRoutine 0x8003054
 ProcInst16_CallRoutine2 0x8003068
@@ -902,8 +902,8 @@ ekrBattle_MakePopups 0x80519C4
 ExecAllAIS 0x805B798
 MU_ManualUpdate 0x807A8FC
 EvCheck06_VILL 0x8085CB0
-ARM_ClearOAMBuffer(ARM) 0x8000304
-ARM_ComputeChecksum32(ARM) 0x8000360
+ARM_ClearOAMBuffer 0x8000304
+ARM_ComputeChecksum32 0x8000360
 AddUnitToTargetListIfAllied 0x80256A0
 TryAddUnitToRescueStaffTargetList 0x8026044
 TryAddUnitToWarpTargetList 0x8026200
