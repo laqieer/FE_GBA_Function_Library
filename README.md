@@ -1,5 +1,7 @@
 # FE GBA Function Library
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 This project analyze functions in Fire Emblem Series on Gameboy Advance:
 * FE6: 封印の剣 / Binding Blade
 * FE7J: 烈火の剣
@@ -24,4 +26,4 @@ I also make a function library to release your C source code to all those games 
 
 **Feel free to contribute**
 
-Edit [this](https://github.com/laqieer/FE_GBA_Function_Library/blob/master/basic_info.md) to add or modify function information and Pull Request.
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://kcd.im/pull-request)
