@@ -2,7 +2,7 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-This project analyze functions in Fire Emblem Series on Gameboy Advance:
+This project is to analyse functions in Fire Emblem Series on Gameboy Advance:
 * FE6: 封印の剣 / Binding Blade
 * FE7J: 烈火の剣
 * FE7U: Blazing Sword
