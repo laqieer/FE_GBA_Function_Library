@@ -6,7 +6,7 @@ This project analyze functions in Fire Emblem Series on Gameboy Advance:
 * FE6: 封印の剣 / Binding Blade
 * FE7J: 烈火の剣
 * FE7U: Blazing Sword
-* FE8J:　聖魔の光石
+* FE8J: 聖魔の光石
 * FE8U: The Sacred Stones
 
 ![Function Quantity](https://raw.github.com/laqieer/FE_GBA_Function_Library/master/img/Function%20Quantity.png)
