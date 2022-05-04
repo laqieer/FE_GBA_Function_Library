@@ -105,24 +105,24 @@
 |80169E4|8016C54|80167F4|8016968|8016BC0|EquipUnitItemSlot|[void EquipUnitItemSlot(struct Unit* unit, int itemSlot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L510)||
 |0|8016F80|8016B2C|8016D24|8016F7C|CanUnitUse_unused|[s8 CanUnitUse_unused(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L771)||
 |8016D58|80171B4|8016D60|8016E28|8017080|IsItemHammernable|[s8 IsItemHammernable(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L826)||
-|8017364|80178C8|80174D8|801756C|80177C4|ClearUnits|[void ClearUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L207)||
-|80173D8|801793C|801754C|80175E0|8017838|GetFreeUnit|[struct Unit* GetFreeUnit(int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L232)||
-|80174CC|8017A78|8017688|801772C|8017984|UnitRemoveInvalidItems|[void UnitRemoveInvalidItems(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L437)||
-|0|8017CE4|80178F4|8017B18|8017DF8|UnitLoadItemsFromDefinition|[void UnitLoadItemsFromDefinition(struct Unit* unit, const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L687)||
-|8017928|8017F70|8017B80|8017E3C|8018120|UnitAutolevel|[void UnitAutolevel(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L814)||
-|8017ABC|8018124|8017D34|8017FB0|801829C|GetUnitFromCharId|[struct Unit* GetUnitFromCharId(int charId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L870)||
-|0|8018160|8017D70|8017FEC|80182D8|GetUnitFromCharIdAndFaction|[struct Unit* GetUnitFromCharIdAndFaction(int charId, int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L883)||
-|8017AF8|80181A4|8017DB4|8018030|801831C|CanUnitRescue|[s8 CanUnitRescue(struct Unit* actor, struct Unit* target) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L896)||
-|0|8018658|8018268|80184D4|80187C0|ClearActiveFactionGrayedStates|[void ClearActiveFactionGrayedStates(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1099)||
-|801809C|80187E4|80183F4|8018670|801895C|SetAllUnitNotBackSprite|[void SetAllUnitNotBackSprite(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1169)||
-|80180D8|801881C|801842C|80186A8|8018994|UnitUpdateUsedItem|[void UnitUpdateUsedItem(struct Unit* unit, int itemSlot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1180)||
-|80180FC|8018840|8018450|80186CC|80189B8|GetUnitAid|[int GetUnitAid(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1187)||
-|0|80188F4|8018504|8018790|8018A7C|sub_8018A7C|[void sub_8018A7C(struct Unit* unit, int x, int y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1221)||
-|0|8018A14|8018624|80188B4|8018BA0|GetCombinedEnemyWeaponUsabilityBits|[int GetCombinedEnemyWeaponUsabilityBits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1288)||
-|8018388|8018E60|8018A70|8018E64|8019150|GetUnitCurrentHp|[inline int GetUnitCurrentHp(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L266)||
-|8018548|8019030|8018C40|8019040|8019368|SetUnitHp|[inline void SetUnitHp(struct Unit* unit, int value) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L340)||
-|8018584|801906C|8018C7C|801907C|80193A4|AddUnitHp|[inline void AddUnitHp(struct Unit* unit, int amount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L347)||
-|8018670|8019150|8018D68|8019174|801949C|CanUnitCrossTerrain|[inline s8 CanUnitCrossTerrain(struct Unit* unit, int terrain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L983)||
+|8017364|80178C8|80174D8|801756C|80177C4|ClearUnits|[void ClearUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L209)||
+|80173D8|801793C|801754C|80175E0|8017838|GetFreeUnit|[struct Unit* GetFreeUnit(int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L234)||
+|80174CC|8017A78|8017688|801772C|8017984|UnitRemoveInvalidItems|[void UnitRemoveInvalidItems(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L439)||
+|0|8017CE4|80178F4|8017B18|8017DF8|UnitLoadItemsFromDefinition|[void UnitLoadItemsFromDefinition(struct Unit* unit, const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L689)||
+|8017928|8017F70|8017B80|8017E3C|8018120|UnitAutolevel|[void UnitAutolevel(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L816)||
+|8017ABC|8018124|8017D34|8017FB0|801829C|GetUnitFromCharId|[struct Unit* GetUnitFromCharId(int charId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L872)||
+|0|8018160|8017D70|8017FEC|80182D8|GetUnitFromCharIdAndFaction|[struct Unit* GetUnitFromCharIdAndFaction(int charId, int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L885)||
+|8017AF8|80181A4|8017DB4|8018030|801831C|CanUnitRescue|[s8 CanUnitRescue(struct Unit* actor, struct Unit* target) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L898)||
+|0|8018658|8018268|80184D4|80187C0|ClearActiveFactionGrayedStates|[void ClearActiveFactionGrayedStates(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1101)||
+|801809C|80187E4|80183F4|8018670|801895C|SetAllUnitNotBackSprite|[void SetAllUnitNotBackSprite(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1171)||
+|80180D8|801881C|801842C|80186A8|8018994|UnitUpdateUsedItem|[void UnitUpdateUsedItem(struct Unit* unit, int itemSlot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1182)||
+|80180FC|8018840|8018450|80186CC|80189B8|GetUnitAid|[int GetUnitAid(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1189)||
+|0|80188F4|8018504|8018790|8018A7C|sub_8018A7C|[void sub_8018A7C(struct Unit* unit, int x, int y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1223)||
+|0|8018A14|8018624|80188B4|8018BA0|GetCombinedEnemyWeaponUsabilityBits|[int GetCombinedEnemyWeaponUsabilityBits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1290)||
+|8018388|8018E60|8018A70|8018E64|8019150|GetUnitCurrentHp|[inline int GetUnitCurrentHp(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L268)||
+|8018548|8019030|8018C40|8019040|8019368|SetUnitHp|[inline void SetUnitHp(struct Unit* unit, int value) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L342)||
+|8018584|801906C|8018C7C|801907C|80193A4|AddUnitHp|[inline void AddUnitHp(struct Unit* unit, int amount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L349)||
+|8018670|8019150|8018D68|8019174|801949C|CanUnitCrossTerrain|[inline s8 CanUnitCrossTerrain(struct Unit* unit, int terrain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L985)||
 |8018920|8019454|801906C|801947C|80197A4|BmMapInit|[void BmMapInit(void* buffer, u8*** outHandle, int x, int y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L173)||
 |80189BC|80194F0|8019108|8019518|8019840|BmMapFillEdges|[void BmMapFillEdges(u8** map, u8 value) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L209)||
 |8018A88|80195BC|80191D4|80195E4|801990C|UnpackChapterMapGraphics|[void UnpackChapterMapGraphics(int chapterId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L245)||
@@ -139,7 +139,8 @@
 |801AD84|801C000|801BC50|801BFD0|801C340||||
 |0|801C030|801BC80|801C000|801C370|StartupDebugMenu_InitializeFileEffect|signed int StartupDebugMenu_InitializeFileEffect(int a1, int a2)||
 |801ADCC|801C074|801BCC4|801C044|801C3B4||||
-|801AED8|801C180|801BDDC|801C14C|0||||
+|801AED8|801C180|801BDDC|801C14C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|801C8D4|801C4D0|801C7D8|801CB70|DisplayUnitEffectRange|int DisplayUnitEffectRange(unsigned __int8 *a1)||
 |801BAB4|801D184|801CD80|801D098|801D434||||
 |0|801D2F8|801CEF4|801D20C|801D5A8|CanMoveActiveUnitTo|int CanMoveActiveUnitTo(int x, int y)||
@@ -155,14 +156,17 @@
 |0|801DF38|801DB94|801DF78|801E31C||||
 |801D6B4|801EFC8|801EC44|801F198|801F540|GasTrapEffectGfx_Setup|int GasTrapEffectGfx_Setup(int a1)||
 |0|801F174|801EDF0|801F344|801F6EC||||
-|80731D8|801F514|0|801F804|0||||
+|80731D8|801F514|0|801F804|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |800AF0C|801F650|8085D48|801F940|801FBAC||||
-|801DB5C|801F7B0|801F348|801FAA0|0||||
+|801DB5C|801F7B0|801F348|801FAA0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |801DBC8|801F81C|801F3B4|801FB0C|801FE14||||
 |801DC9C|801F8F0|801F488|801FBE0|801FEE8||||
 |801E774|8020630|80201C8|8020F74|802127C||||
 |0|8020B84|802071C|802178C|8021A94||||
-|0|8021618|80211AC|8022178|0||||
+|0|8021618|80211AC|8022178|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |801EB94|8021B28|80216B0|802276C|80227A4||||
 |801F1DC|8022020|8021BA8|8022C6C|8022CA4||||
 |801F780|8022704|802228C|802339C|80233D8|ItemSelectMenu_Usability|signed int ItemSelectMenu_Usability(int a1, int a2)||
@@ -191,10 +195,10 @@
 |0|8026794|8026308|8027D48|8027DB4||||
 |0|802682C|80263A0|8027DE0|8027E4C||||
 |0|8026A4C|80265C0|80280F4|8028160||||
-|8023634|8027770|80272E4|8029024|802907C|CanUnitUseHealItem|[s8 CanUnitUseHealItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L456)||
-|8023728|8027844|80273B8|8029108|8029160|CanUnitUseLockpickItem|[s8 CanUnitUseLockpickItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L516)||
-|8023D90|802800C|8027B80|80299D8|8029A4C|RepairMenuItemIsAvailable|[u8 RepairMenuItemIsAvailable(const struct MenuItemDef* def, int number)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L939)||
-|0|8028620|8028194|802A094|802A108|sub_802A108|[s8 sub_802A108(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1204)||
+|8023634|8027770|80272E4|8029024|802907C|CanUnitUseHealItem|[s8 CanUnitUseHealItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L450)||
+|8023728|8027844|80273B8|8029108|8029160|CanUnitUseLockpickItem|[s8 CanUnitUseLockpickItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L510)||
+|8023D90|802800C|8027B80|80299D8|8029A4C|RepairMenuItemIsAvailable|[u8 RepairMenuItemIsAvailable(const struct MenuItemDef* def, int number)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L933)||
+|0|8028620|8028194|802A094|802A108|sub_802A108|[s8 sub_802A108(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1198)||
 |8024248|8028830|80283A4|802A2A4|802A318|SimulateBattle|int SimulateBattle(int a1, int a2, int a3, int a4)||
 |0|80292CC|8028E1C|802AC68|802ACF8|ComputeLethalityChance|int ComputeLethalityChance(int a1, _DWORD *a2)||
 |80250B0|8029A90|80295E0|802B8E8|802B9A0|GetStatIncrease|int GetStatIncrease(int a1)||
@@ -207,21 +211,21 @@
 |8026218|802B1E0|802AD30|802D370|802D438|TradeMenu_GetAdjustedRow|[int TradeMenu_GetAdjustedRow(struct TradeMenuProc* proc, int col, int row)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L315)||
 |802636C|802B334|802AE84|802D4C4|802D58C|TradeMenu_RefreshSelectableCells|[void TradeMenu_RefreshSelectableCells(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L364)||
 |0|802BCE8|802B828|802DE14|802DEDC|sub_802DEDC|[void sub_802DEDC(struct Proc* ee)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L805)||
-|8026AC8|802BF08|802BA48|802E100|802E1C8|ClearTraps|[void ClearTraps(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L25)||
-|0|802C078|802BBB8|802E2E0|802E3A8|InitMapObstacles|[void InitMapObstacles(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L156)||
-|8026E18|802C190|802BCD0|802E42C|802E4F4|GetMapChange|[const struct MapChange* GetMapChange(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L245)||
-|8026E54|802C1CC|802BD0C|802E468|802E530|GetMapChangeIdAt|[int GetMapChangeIdAt(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L263)||
-|8026EB0|802C228|802BD68|802E4C4|802E58C|ApplyMapChangesById|[void ApplyMapChangesById(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L286)||
-|0|802C2A8|802BDE8|802E544|802E60C|DisableMapChange|[void DisableMapChange(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L314)||
-|8026F5C|802C300|802BE40|802E5C8|802E690|UpdateRoofedUnits|[void UpdateRoofedUnits(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L346)||
-|8026FF4|802C380|802BEC0|802E648|802E710|GenerateArrowTrapTargets|[void GenerateArrowTrapTargets(int x, int y, int damage)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L375)||
-|8027038|802C3C4|802BF04|802E68C|802E754|GenerateGasTrapTargets|[void GenerateGasTrapTargets(int x, int y, int damage, int facing)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L386)||
-|0|802C444|802BF84|802E70C|802E7D4|ShouldSkipGasTrapDisplay|[s8 ShouldSkipGasTrapDisplay(int x, int y, int facing)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L432)||
-|80270B8|802C4AC|802BFEC|802E774|802E83C|GenerateTrapDamageTargets|[void GenerateTrapDamageTargets(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L482)||
-|8027124|802C518|802C058|802E7E0|802E8A8|GenerateDisplayedTrapDamageTargets|[void GenerateDisplayedTrapDamageTargets(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L512)||
-|8027A60|802CDEC|802C92C|802F238|802F30C|ExecLatona|int ExecLatona(signed int a1)||
-|8027C50|802CFE4|802CB24|802F430|802F510||||
-|80984A8|802D440|802CF80|802FB0C|802FBBC||||
+|8026AC8|802BF08|802BA48|802E100|802E1C8|ClearTraps|[void ClearTraps(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L26)||
+|0|802C078|802BBB8|802E2E0|802E3A8|InitMapObstacles|[void InitMapObstacles(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L157)||
+|8026E18|802C190|802BCD0|802E42C|802E4F4|GetMapChange|[const struct MapChange* GetMapChange(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L246)||
+|8026E54|802C1CC|802BD0C|802E468|802E530|GetMapChangeIdAt|[int GetMapChangeIdAt(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L264)||
+|8026EB0|802C228|802BD68|802E4C4|802E58C|ApplyMapChangesById|[void ApplyMapChangesById(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L287)||
+|0|802C2A8|802BDE8|802E544|802E60C|DisableMapChange|[void DisableMapChange(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L315)||
+|8026F5C|802C300|802BE40|802E5C8|802E690|UpdateRoofedUnits|[void UpdateRoofedUnits(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L347)||
+|8026FF4|802C380|802BEC0|802E648|802E710|GenerateArrowTrapTargets|[void GenerateArrowTrapTargets(int x, int y, int damage)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L376)||
+|8027038|802C3C4|802BF04|802E68C|802E754|GenerateGasTrapTargets|[void GenerateGasTrapTargets(int x, int y, int damage, int facing)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L387)||
+|0|802C444|802BF84|802E70C|802E7D4|ShouldSkipGasTrapDisplay|[s8 ShouldSkipGasTrapDisplay(int x, int y, int facing)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L433)||
+|80270B8|802C4AC|802BFEC|802E774|802E83C|GenerateTrapDamageTargets|[void GenerateTrapDamageTargets(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L483)||
+|8027124|802C518|802C058|802E7E0|802E8A8|GenerateDisplayedTrapDamageTargets|[void GenerateDisplayedTrapDamageTargets(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L513)||
+|8027A60|802CDEC|802C92C|802F238|802F30C|ExecLatona|[void ExecLatona(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L452)||
+|8027C50|802CFE4|802CB24|802F430|802F510|sub_802F510|[void sub_802F510() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L557)||
+|80984A8|802D440|802CF80|802FB0C|802FBBC|ExecDanceRing|[void ExecDanceRing(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L911)||
 |8028394|802D874|802D3B4|80300D4|8030184|BMapDispSuspend|[void BMapDispSuspend(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L297)||
 |8028748|802DC30|802D770|8030490|8030540|WfxSnowStorm_Init|[void WfxSnowStorm_Init(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L487)||
 |802895C|802DE44|802D984|80306A8|8030758|WfxFlamesInitGradientPublic|[void WfxFlamesInitGradientPublic(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L593)||
@@ -235,13 +239,14 @@
 |8029C9C|802F2E0|802EE14|8031B5C|8031C10|PrepareBalancedArenaFight|signed int PrepareBalancedArenaFight()||
 |8029F80|802F5C4|802F0F8|8031E3C|8031EF0||||
 |807CEF0|802F64C|802F180|8031EC0|8031F74||||
-|802A3EC|802FA0C|802F540|8032320|80323D4|ActionSupport|int ActionSupport()||
-|802A5CC|802FC20|802F754|80325C0|8032674|DropRescuedUnitIfDead|int DropRescuedUnitIfDead(signed int a1, int a2)||
+|802A3EC|802FA0C|802F540|8032320|80323D4|ActionSupport|[s8 ActionSupport(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L373)||
+|802A5CC|802FC20|802F754|80325C0|8032674|DropRescueOnDeath|[void DropRescueOnDeath(ProcPtr proc, struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L508)||
 |802B928|803186C|8031384|8034330|8034428|CanUnitUseAttack|bool CanUnitUseAttack()||
 |802BA44|8031994|80314AC|8034458|8034550||||
 |802BB74|8031AC0|0|803458C|8034684|GetChapterMapChangesPointer|[const void* GetChapterMapChangesPointer(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L20)||
 |802CB14|8032A90|8032560|8035610|8035708|StartBottomHelpText|int StartBottomHelpText(signed int a1, int a2)||
-|0|8032B4C|803261C|80356C8|0||||
+|0|8032B4C|803261C|80356C8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8032CF4|80327C4|8035870|8035770||||
 |0|8033304|8032DD4|8035EDC|8035DDC||||
 |0|8033378|8032E48|8035F50|8035E50||||
@@ -331,8 +336,10 @@
 |803B2DC|8042B08|8042464|8047A0C|8047AF4|SioMenu_8047AF4|int SioMenu_8047AF4()||
 |803B93C|8043168|8042A90|8047FCC|80480B4|SioMenu_80480B4|int SioMenu_80480B4(int a1)||
 |803BFB0|8043864|0|80486D4|80487C0||||
-|0|80444C8|8043CC8|8049274|0||||
-|0|80445B8|8043DB8|8049364|0||||
+|0|80444C8|8043CC8|8049274|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80445B8|8043DB8|8049364|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |803C144|8044998|804419C|8049744|8048934||||
 |803C1A4|80449EC|80441F0|8049798|8048988||||
 |803CA3C|8045288|8044A8C|804A040|8049238||||
@@ -363,11 +370,11 @@
 |0|804B3D0|804ABF4|80504C8|804F754|SetForceDisabledMenuItems|[void SetForceDisabledMenuItems(u8 list[MENU_OVERRIDE_MAX])](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L721)||
 |0|804B3F8|804AC1C|80504F0|804F77C|AddMenuOverride|[void AddMenuOverride(int cmdid, int kind, void* func)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L730)||
 |0|804B464|804AC88|805055C|804F7E8|OverriddenMenuSelected|[u8 OverriddenMenuSelected(struct MenuProc* proc, struct MenuItemProc* item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L760)||
-|8042138|804B52C|804AD50|8050684|804F910|LinkTargets|int LinkTargets()||
-|8042388|804B78C|804AFB0|80508D8|804FB64|TargetSelection_HandleSelectInput|int TargetSelection_HandleSelectInput(_DWORD *a1)||
-|8042420|804B824|804B048|8050970|804FBFC|GetFarthestTargetIndex|int GetFarthestTargetIndex()||
-|8042480|804B884|804B0A8|80509D0|804FC5C|LinkTargetsOrdered|char *LinkTargetsOrdered()||
-|8042534|804B938|804B15C|8050A84|804FD10|GetFirstTargetPointer|char *GetFirstTargetPointer()||
+|8042138|804B52C|804AD50|8050684|804F910|LinkTargets|[void LinkTargets() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L97)||
+|8042388|804B78C|804AFB0|80508D8|804FB64|TargetSelection_HandleSelectInput|[int TargetSelection_HandleSelectInput(struct SelectTargetProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L275)||
+|8042420|804B824|804B048|8050970|804FBFC|GetFarthestTargetIndex|[int GetFarthestTargetIndex() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L347)||
+|8042480|804B884|804B0A8|80509D0|804FC5C|LinkTargetsOrdered|[struct SelectTarget* LinkTargetsOrdered() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L407)||
+|8042534|804B938|804B15C|8050A84|804FD10|GetFirstTargetPointer|[struct SelectTarget* GetFirstTargetPointer() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L449)||
 |8042A5C|804BE1C|804B640|8050FB8|8050244|ekrBattle_8050244|int ekrBattle_8050244(int a1)||
 |80444EC|804D894|804D0B8|8052AF8|8051E00||||
 |8044870|804DC18|804D43C|8052E7C|8052184||||
@@ -377,8 +384,10 @@
 |8046010|804EFE0|804E804|805441C|8053730|StartEfxQuake|int StartEfxQuake(int quakeType)||
 |8046E9C|804FF70|804F794|8055800|8054B18||||
 |8047300|8050348|804FB6C|8055C78|8054FA8|StartEfxSpellCast|int StartEfxSpellCast(int a1)||
-|0|8050654|804FE78|8055F90|0||||
-|8099E50|80506E0|804FF04|805601C|0||||
+|0|8050654|804FE78|8055F90|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8099E50|80506E0|804FF04|805601C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |804799C|8050CB8|80504DC|805660C|8055670|SpellFx_WriteBgMap|int SpellFx_WriteBgMap(int a1, int a2, int a3)||
 |8047B10|8050E2C|8050650|80567FC|8055860||||
 |0|8051180|80509A4|8056B5C|8055BD4|BeginAnimsOnBattleAnimations|int BeginAnimsOnBattleAnimations()||
@@ -504,23 +513,30 @@
 |0|80940C4|80937CC|809D090|809ADC8||||
 |0|8094684|8093D9C|809D5EC|809B324||||
 |0|80947E0|8093EF8|809D740|809B478||||
-|0|8095750|0|809E6B4|0||||
+|0|8095750|0|809E6B4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80960F8|0|809EFAC|809CD14||||
 |0|8096A38|8096260|809FB74|809D8D4||||
 |0|8098C0C|8098320|80A1DD4|809FB34||||
 |0|80990A4|80987E4|80A224C|809FFB0||||
 |0|80998A8|0|80A2A28|80A078C||||
-|0|809A404|8099A48|80A33E0|0||||
-|0|809A528|8099B6C|80A34F0|0||||
-|0|809AEDC|809A504|80A3DC8|0||||
+|0|809A404|8099A48|80A33E0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809A528|8099B6C|80A34F0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809AEDC|809A504|80A3DC8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|809BE18|809B440|80A4CA8|80A0EC0||||
 |0|809BFCC|809B604|80A4F4C|80A1174||||
 |0|809C038|809B670|80A4FB8|80A11E0||||
 |0|809CE20|809C49C|80A58BC|80A1AE4||||
 |808DD40|809D5F0|809CBD8|80A5FE8|80A221C||||
-|8082F18|809E25C|809D844|80A6AC0|0||||
-|8083078|809E3BC|809D9A4|80A6C20|0||||
-|808347C|809E7C4|809DDAC|80A7024|0||||
+|8082F18|809E25C|809D844|80A6AC0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8083078|809E3BC|809D9A4|80A6C20|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808347C|809E7C4|809DDAC|80A7024|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80841FC|809EE1C|809E404|80A7680|80A2C3C|SramInit|int SramInit()||
 |80842BC|809EEDC|809E4C4|80A7740|80A2CFC|ComputeChecksum16|int ComputeChecksum16(unsigned __int16 *a1, int a2)||
 |80844D4|809F1B0|809E7A0|80A79D8|80A2F94|SaveMetadata_Save|int SaveMetadata_Save(int a1, signed int a2)||
@@ -662,7 +678,8 @@
 |801C80C|801E110|801DD6C|801E150|801E4F4||||
 |0|809D33C|809C924|80A5D34|80A1F68||||
 |0|80863E0|80859E0|808F1C4|808CEC8|Loop6CUI2|int Loop6CUI2(int a1)||
-|0|8099E34|8099474|80A2E64|0||||
+|0|8099E34|8099474|80A2E64|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80AC538|80AB654|80B3FE8|80AF3C8||||
 |0|80138E8|80133C8|80132A8|80131F0||||
 |802F7B4|803631C|8035E44|803AD58|803AD38|AiFindClosestTileInRangeWithListedTerrain|bool AiFindClosestTileInRangeWithListedTerrain(_BYTE *a1, char a2, _WORD *a3)||
@@ -696,9 +713,9 @@
 |8016860|8016AD0|8016668|80167D4|8016A2C|DrawItemStatScreenLine|[void DrawItemStatScreenLine(struct TextHandle* text, int item, int nameColor, u16* mapOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L446)||
 |8022774|8026540|80260B4|8027AF4|8027B60||||
 |8022940|8026908|802647C|8027FA8|8028014||||
-|8023E24|80280A0|8027C14|8029A6C|8029AE0|RepairMenuItemSelect|[u8 RepairMenuItemSelect(struct MenuProc* menu, struct MenuItemProc* menuItem)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L966)||
-|8026CA0|802C100|802BC40|802E368|802E430|ApplyEnabledMapChanges|[void ApplyEnabledMapChanges(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L186)||
-|0|802C70C|802C24C|802E9F8|802EAC0|DecayTraps|[void DecayTraps(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L668)||
+|8023E24|80280A0|8027C14|8029A6C|8029AE0|RepairMenuItemSelect|[u8 RepairMenuItemSelect(struct MenuProc* menu, struct MenuItemProc* menuItem)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L960)||
+|8026CA0|802C100|802BC40|802E368|802E430|ApplyEnabledMapChanges|[void ApplyEnabledMapChanges(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L187)||
+|0|802C70C|802C24C|802E9F8|802EAC0|DecayTraps|[void DecayTraps(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L669)||
 |802986C|802EE6C|802E9A0|80316E0|8031794|PrepareArenaStruct|int PrepareArenaStruct(int a1)||
 |806AE7C|80790F8|8078928|8085484|808314C||||
 |806F170|8080FB8|8080270|8089910|8087698|DisplaySupportList|[void DisplaySupportList(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L946)||
@@ -737,11 +754,12 @@
 |805C76C|8068938|806814C|8074DE8|807290C||||
 |8070448|80823C8|8081668|808ADCC|8088B40|HbRedirect_SSItem|[void HbRedirect_SSItem(struct HelpBoxProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2012)||
 |0|808ED24|808E3E0|8097C94|80959B4|AtMenu_AutoDeployPrepScreenUnits|int AtMenu_AutoDeployPrepScreenUnits(unsigned __int8 *a1)||
-|0|809A324|8099968|80A3300|0||||
+|0|809A324|8099968|80A3300|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80A0C14|80A0248|80A9478|80A4A34|BWL_AddFavoritismValue|int BWL_AddFavoritismValue(int a1, int a2)||
 |0|80063C4|8006534|8004DF0|8004EE8||||
 |8016EAC|8017310|8016EBC|8016F90|80171E8|GetUnitWeaponReachBits|[int GetUnitWeaponReachBits(struct Unit* unit, int itemSlot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L878)||
-|0|8018914|8018524|80187B0|8018A9C|GetUnitKeyItemSlotForTerrain|[int GetUnitKeyItemSlotForTerrain(struct Unit* unit, int terrain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1230)||
+|0|8018914|8018524|80187B0|8018A9C|GetUnitKeyItemSlotForTerrain|[int GetUnitKeyItemSlotForTerrain(struct Unit* unit, int terrain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1232)||
 |8019A34|801A6B4|801A2D4|801A798|801AABC|MapAddInRange|[void MapAddInRange(int x, int y, int range, int value)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L400)||
 |801B9F4|801D094|801CC90|801CFA8|801D344||||
 |801DA54|801F484|801F100|801F654|801F9FC||||
@@ -755,7 +773,8 @@
 |8054B98|805D824|805D03C|8062694|8061594||||
 |8054C54|805D8E0|805D0F8|8062750|8061650||||
 |0|805F950|805F168|80647D8|80636D8||||
-|8054310|8061128|8060940|8066084|0||||
+|8054310|8061128|8060940|8066084|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|807A754|8079CE0|8086F18|8084C4C||||
 |0|807A7B4|8079D40|8086F78|8084CAC|IsCharDeadAsNonPlayerUnit|signed int IsCharDeadAsNonPlayerUnit(unsigned __int8 a1)||
 |0|807AA74|807A000|8087238|8084F6C|IsCharDeadAsNonPlayerUnit|signed int IsCharDeadAsNonPlayerUnit(unsigned __int8 a1)||
@@ -764,7 +783,8 @@
 |0|8084FC4|80845C8|808DD70|808BA60||||
 |0|8085658|8084C5C|808E400|808C100||||
 |0|80908E8|808FFA8|80993F0|809710C||||
-|0|809B73C|809AD64|80A45AC|0||||
+|0|809B73C|809AD64|80A45AC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|809BAE0|809B10C|80A4954|80A0B6C||||
 |0|809DB74|809D15C|80A64FC|80A2730||||
 |0|80A2CD0|80A205C|80AC0B4|80A769C||||
@@ -772,7 +792,7 @@
 |0|80B8F84|80B82E8|80BB550|80B6A10||||
 |80209C8|8023D00|8023874|8024D00|8024D50|CountUnitsInState|[int CountUnitsInState(int faction, int state) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L36)||
 |80284D8|802D9C0|802D500|8030220|80302D0|WfxSnow_VSync|[void WfxSnow_VSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L378)||
-|0|802ED60|802E894|80315D4|8031688|sub_8031688|[struct Unit* sub_8031688() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L120)||
+|0|802ED60|802E894|80315D4|8031688|GetSupplyUnit|[struct Unit* GetSupplyUnit() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L120)||
 |802C274|80321EC|8031CBC|8034D64|8034E5C|DrawHammerneUnitInfoWindow|int DrawHammerneUnitInfoWindow(int a1)||
 |802CD40|8032EF8|80329C8|8035B0C|8035A0C||||
 |802E090|8034340|8033E68|803715C|803705C||||
@@ -811,7 +831,8 @@
 |8026288|802B250|802ADA0|802D3E0|802D4A8|TradeMenu_RefreshItemText|[void TradeMenu_RefreshItemText(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L336)||
 |802CCEC|8032EA0|8032970|8035AB4|80359B4||||
 |802E01C|80342CC|8033DF4|80370E8|8036FE8||||
-|0|80349F8|8034520|803780C|0||||
+|0|80349F8|8034520|803780C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8030364|8036ECC|80369F4|803B904|803B8FC|AiGetLootingParameters|bool AiGetLootingParameters(_WORD *a1, int a2)||
 |8032A08|8039BB8|8039704|803E5D0|803E640|AiUpdateAllUnitHealAi|int AiUpdateAllUnitHealAi()||
 |0|803FB84|803F6C4|8044AC8|8044B2C||||
@@ -824,8 +845,10 @@
 |804D3A8|8056D14|805652C|805CD78|805BFDC||||
 |804DBAC|80575BC|8056DD4|805D628|805C88C||||
 |8054D08|805D994|805D1AC|8062804|8061704||||
-|0|80645D4|8063DEC|8070724|0||||
-|0|806466C|8063E84|80707BC|0||||
+|0|80645D4|8063DEC|8070724|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806466C|8063E84|80707BC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |805BD04|8067E14|8067628|8073ED4|80719F0|Loop6C_efxSoundSE|int Loop6C_efxSoundSE(int a1)||
 |805E890|806AFB4|806A7D4|80776B4|807527C|StartEkrPegasusKnightBG|int StartEkrPegasusKnightBG(int a1, int a2, int a3, int a4)||
 |805E964|806B088|806A8A8|8077788|8075350||||
@@ -873,8 +896,10 @@
 |803ED9C|80476A0|8046EB8|804C4BC|804B71C||||
 |803FB84|80484A4|8047CB8|804D14C|804C3AC||||
 |0|804E3E0|804DC04|8053668|8052978|StartEfxAvoid|int StartEfxAvoid(int a1)||
-|0|805057C|804FDA0|8055EB8|0||||
-|0|805073C|804FF60|8056078|0||||
+|0|805057C|804FDA0|8055EB8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805073C|804FF60|8056078|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8047938|8050C54|8050478|80565A8|805560C||||
 |8047B6C|8050E88|80506AC|8056858|80558BC||||
 |0|80510F4|8050918|8056AC0|8055B38||||
@@ -887,7 +912,8 @@
 |0|807A620|8079BAC|8086DD8|8084B0C||||
 |8070738|8082728|80819C8|808B128|8088E9C|StartHelpBoxExt|[void StartHelpBoxExt(const struct HelpBoxInfo* info, int unk)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2192)||
 |8070BEC|8082C44|8081EE4|808B640|80893B4|TryRelocateHbLeft|[int TryRelocateHbLeft(struct HelpBoxProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2510)||
-|8070C1C|8082C74|8081F14|808B670|0||||
+|8070C1C|8082C74|8081F14|808B670|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|808364C|8082C4C|808C2DC|8089FCC||||
 |80715FC|8083880|8082E80|808C510|808A200||||
 |0|8084208|808380C|808CF1C|808AC0C||||
@@ -904,7 +930,8 @@
 |0|80965B4|8095DC0|809F6B4|809D418||||
 |0|8097020|809689C|80A019C|809DEFC||||
 |0|8098210|8097A9C|80A13F0|809F150||||
-|0|809B248|809A870|80A40D4|0||||
+|0|809B248|809A870|80A40D4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80A4254|80A35DC|80AD4B4|80A8A9C||||
 |0|80AAFA4|80AA0DC|80B2B6C|80AE0F0||||
 |0|80AB098|80AA1D0|80B2C7C|80AE200|FadeOut_Loop|int FadeOut_Loop(int a1)||
@@ -924,7 +951,7 @@
 |0|8007B94|8007D04|8006530|800662C||||
 |800C084|8009D0C|8009E7C|80087A4|80088A8||||
 |8016250|80161EC|8015D70|8015EA8|8015E9C|ShouldMoveCameraPosSomething|bool ShouldMoveCameraPosSomething(int a1, int a2)||
-|0|8018318|8017F28|80181B0|801849C|UnitFinalizeMovement|[void UnitFinalizeMovement(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L988)||
+|0|8018318|8017F28|80181B0|801849C|UnitFinalizeMovement|[void UnitFinalizeMovement(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L990)||
 |8018E10|801996C|8019584|8019994|8019CBC|RenderBmMapOnBg2|[void RenderBmMapOnBg2(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L400)||
 |0|8020508|80200A0|8020D88|8021090||||
 |806DC50|8020540|80200D8|8020E80|8021188||||
@@ -933,13 +960,13 @@
 |80215E4|80249C4|8024538|8025DCC|8025E28|TryAddUnitToHealTargetList|int TryAddUnitToHealTargetList(int a1)||
 |802173C|8024B1C|8024690|8025FC0|802601C|TryAddUnitToBarrierTargetList|int TryAddUnitToBarrierTargetList(int a1)||
 |8021B30|8024F14|8024A88|80263B8|8026414||||
-|0|80282F4|8027E68|8029CC4|8029D38|sub_8029D38|[int sub_8029D38(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1079)||
+|0|80282F4|8027E68|8029CC4|8029D38|sub_8029D38|[int sub_8029D38(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1073)||
 |8026254|802B21C|802AD6C|802D3AC|802D474|TradeMenu_InitItemText|[void TradeMenu_InitItemText(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L323)||
 |0|802D8A8|802D3E8|8030108|80301B8|BMapDispResume|[void BMapDispResume(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L307)||
 |80296B0|802EBF8|802E72C|8031478|803152C|ShrinkConvoyItemList|[void ShrinkConvoyItemList() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L21)||
 |8029BFC|802F240|802ED74|8031ABC|8031B70|LoadArenaWeapons|int LoadArenaWeapons()||
-|0|802FD88|802F8BC|8032714|80327C8|BATTLE_ProbablyMakesTheDeadUnitDissapear|int BATTLE_ProbablyMakesTheDeadUnitDissapear(int a1)||
-|0|8030E48|803095C|8033850|8033940||||
+|0|802FD88|802F8BC|8032714|80327C8|BATTLE_PostCombatDeathFades|[void BATTLE_PostCombatDeathFades(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L591)||
+|0|8030E48|803095C|8033850|8033940|sub_8033940|[void sub_8033940(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L719)||
 |802CAC8|8032A44|8032514|80355C4|80356BC||||
 |802D06C|8033224|8032CF4|8035E14|8035D14||||
 |802E394|8034664|803418C|8037474|80373B4||||
@@ -953,9 +980,12 @@
 |80368B0|803DDCC|803D91C|8042D20|8042D9C||||
 |8038D64|8040530|803FE24|8045484|80454E4||||
 |803B508|8042D34|8042690|8047C08|8047CF0|SioMenu_8047CF0|int SioMenu_8047CF0(int a1)||
-|0|8044214|8043A14|8048FC0|0||||
-|0|804431C|8043B1C|80490C8|0||||
-|0|804440C|8043C0C|80491B8|0||||
+|0|8044214|8043A14|8048FC0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804431C|8043B1C|80490C8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804440C|8043C0C|80491B8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |803C6BC|8044F08|804470C|8049CC0|8048EB8||||
 |803C7D8|8045024|8044828|8049DDC|8048FD4||||
 |803CBB4|8045400|8044C10|804A1CC|80493D0||||
@@ -1004,14 +1034,18 @@
 |0|809733C|8096BB0|80A04B8|809E218||||
 |0|80984B4|8097D30|80A1694|809F3F4||||
 |0|8099C98|80992D8|80A2CCC|80A0A18||||
-|0|809B890|809AEBC|80A46F8|0||||
-|8082F54|809E298|809D880|80A6AFC|0||||
-|8082FE8|809E32C|809D914|80A6B90|0||||
+|0|809B890|809AEBC|80A46F8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8082F54|809E298|809D880|80A6AFC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8082FE8|809E32C|809D914|80A6B90|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8084280|809EEA0|809E488|80A7704|80A2CC0||||
 |0|80AA350|80A943C|80B1EDC|80AD43C||||
 |0|80AB840|80AA978|80B342C|80AE9B0||||
 |0|80AFDAC|80AEE74|80B75A0|80B2988||||
-|0|80B0EDC|80B00A8|80B8AA8|0||||
+|0|80B0EDC|80B00A8|80B8AA8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80B8E80|80B81E4|80BB460|80B6920||||
 |0|80B9C88|80B9128|80BC0C0|80B7614||||
 |0|80B65CC|80B57AC|80BEF94|80BA100||||
@@ -1037,8 +1071,8 @@
 |801515C|8014F64|8014AE8|80148A4|801487C|FutureCall2_Loop|int FutureCall2_Loop(int a1)||
 |0|80158D4|8015458|80154EC|80154C8|MapMain_UpdateTraps|signed int MapMain_UpdateTraps(signed int a1)||
 |800F8F8|8016470|8015FF4|801614C|8016140||||
-|8017798|8017DE0|80179F0|8017C14|8017EF4|UnitLoadSupports|[void UnitLoadSupports(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L729)||
-|0|8018B0C|801871C|80189AC|8018C98|IsPositionMagicSealed|[s8 IsPositionMagicSealed(int x, int y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1336)||
+|8017798|8017DE0|80179F0|8017C14|8017EF4|UnitLoadSupports|[void UnitLoadSupports(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L731)||
+|0|8018B0C|801871C|80189AC|8018C98|IsPositionMagicSealed|[s8 IsPositionMagicSealed(int x, int y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1338)||
 |80194A4|801A0E0|8019D00|801A1B8|801A4EC|GenerateMovementMap|[void GenerateMovementMap(int x, int y, int movement, int unitId)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L77)||
 |801AD50|801BFCC|801BC1C|801BF9C|801C30C||||
 |801B754|801CDC0|801C9BC|801CC70|801D008|PlayerPhase_BackToMove|int PlayerPhase_BackToMove(unsigned __int16 **a1)||
@@ -1063,7 +1097,7 @@
 |80286EC|802DBD4|802D714|8030434|80304E4|WfxSandStorm_VSync|[void WfxSandStorm_VSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L466)||
 |8028804|802DCEC|802D82C|803054C|80305FC|WfxSnowStorm_VSync|[void WfxSnowStorm_VSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L520)||
 |8028918|802DE00|802D940|8030664|8030714|WfxFlamesHSync|[void WfxFlamesHSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L571)||
-|0|8031594|80310A8|8033F98|8034090||||
+|0|8031594|80310A8|8033F98|8034090|sub_8034090|[void sub_8034090(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1013)||
 |802BBD0|8031B1C|0|80345E8|80346E0|sub_80346E0|[const char* sub_80346E0(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L34)||
 |802CBB4|8032D68|8032838|80358E4|80357E4||||
 |802D178|8033348|8032E18|8035F20|8035E20||||
@@ -1098,7 +1132,8 @@
 |8051050|805A87C|805A094|8060C24|805FB24||||
 |80512BC|805AAE8|805A300|8060E90|805FD90||||
 |8051FEC|805B9D4|805B1EC|80612E0|80601E0||||
-|0|8062558|8061D70|806749C|0||||
+|0|8062558|8061D70|806749C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8056E9C|80630FC|8062914|806F0A0|806CD7C||||
 |8057E98|8064140|8063958|80702BC|806DFA4||||
 |805826C|8064B40|8064358|8071218|806EC68||||
@@ -1150,7 +1185,7 @@
 |0|80B6DCC|80B5FC0|80C7C08|80C2E50||||
 |809CD78|80BF5F0|80BEAAC|80D540C|80D0714|m4aSoundMode|[void m4aSoundMode(u32 mode)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/m4a.c#L391)||
 |809DD38|80C05B8|80BFA74|80D63E0|80D16E4|ReadSramFast_Core|int ReadSramFast_Core(_BYTE *a1, _BYTE *a2, int a3)||
-|8018258|801899C|80185AC|801883C|8018B28|GetUnitWeaponUsabilityBits|[int GetUnitWeaponUsabilityBits(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1274)||
+|8018258|801899C|80185AC|801883C|8018B28|GetUnitWeaponUsabilityBits|[int GetUnitWeaponUsabilityBits(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1276)||
 |8028B4C|802E034|802DB74|8030898|8030948|WfxFlamesUpdateParticles|[void WfxFlamesUpdateParticles(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L696)||
 |80325BC|8039768|80392B4|803E17C|803E1EC|AiGetUnitReachWeightWithEquippedWeapon|signed int AiGetUnitReachWeightWithEquippedWeapon(int a1, int a2, int a3)||
 |8054DE8|805DA74|805D28C|80628E4|80617E4||||
@@ -1190,7 +1225,8 @@
 |801E3AC|80200CC|801FC64|8020924|8020C2C||||
 |801E9AC|8020870|8020408|80211A0|80214A8||||
 |0|8020E2C|80209C4|80219FC|8021D04||||
-|0|80215E0|8021174|8022140|0||||
+|0|80215E0|8021174|8022140|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |806DE00|8021750|80212D8|80222AC|80222E0||||
 |0|8022C10|8022798|80238A4|80238E0||||
 |8021278|8024638|80241AC|80256D8|8025728|FillBallistaRangeMaybe|int FillBallistaRangeMaybe(int a1)||
@@ -1199,8 +1235,8 @@
 |80257B0|802A24C|8029D9C|802C2B0|802C368||||
 |80267D0|802B86C|802B3BC|802D9E4|802DAAC|TradeMenu_OnEndSelected|[void TradeMenu_OnEndSelected(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L605)||
 |8090834|802BCC8|802B808|802DDF4|802DEBC|TradeMenu_TutorialWait_OnLoop|[void TradeMenu_TutorialWait_OnLoop(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L797)||
-|8027950|802CCDC|802C81C|802F08C|802F154|ExecFortify|int ExecFortify(signed int a1)||
-|8028238|802D718|802D258|802FF6C|803001C||||
+|8027950|802CCDC|802C81C|802F08C|802F154|ExecFortify|[void ExecFortify(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L349)||
+|8028238|802D718|802D258|802FF6C|803001C|AfterItemUse_SetTargetStatus|[void AfterItemUse_SetTargetStatus() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L1094)||
 |8028598|802DA80|802D5C0|80302E0|8030390|WfxRain_Init|[void WfxRain_Init(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L410)||
 |802867C|802DB64|802D6A4|80303C4|8030474|WfxSandStorm_Init|[void WfxSandStorm_Init(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L449)||
 |80288D0|802DDB8|802D8F8|803061C|80306CC|WfxBlue_Init|[void WfxBlue_Init(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L557)||
@@ -1209,10 +1245,10 @@
 |8028E44|802E32C|802DE6C|8030B90|8030C40|ResetMapPaletteAnimations|[void ResetMapPaletteAnimations(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L905)||
 |80297EC|802EDEC|802E920|8031660|8031714|LoadPlayerUnitsFromUnitStack|int LoadPlayerUnitsFromUnitStack()||
 |8029AA0|802F0C8|802EBFC|8031944|80319F8|GetNearLevel|int GetNearLevel(int a1)||
-|802A6B4|802FD04|802F838|803269C|8032750|KillUnitIfNoHealth|int KillUnitIfNoHealth(int a1)||
-|802A7F4|802FE70|802F9A4|80327FC|80328B0||||
-|0|802FF34|802FA6C|80328C0|8032974||||
-|802B750|80313A0|8030EB4|8033D94|8033E8C||||
+|802A6B4|802FD04|802F838|803269C|8032750|KillUnitOnArenaDeathMaybe|[void KillUnitOnArenaDeathMaybe(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L555)||
+|802A7F4|802FE70|802F9A4|80327FC|80328B0|sub_80328B0|[void sub_80328B0() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L643)||
+|0|802FF34|802FA6C|80328C0|8032974|sub_8032974|[void sub_8032974(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L695)||
+|802B750|80313A0|8030EB4|8033D94|8033E8C|sub_8033E8C|[void sub_8033E8C() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L914)||
 |802B964|80318B4|80313CC|8034378|8034470|CanActiveUnitUseRescue|bool CanActiveUnitUseRescue()||
 |802B980|80318D0|80313E8|8034394|803448C|CanActiveUnitUseTrade|bool CanActiveUnitUseTrade()||
 |802C034|8031FAC|8031A74|8034B20|8034C18|NewUnitInfoWindow_WithAllLines|int NewUnitInfoWindow_WithAllLines(signed int a1)||
@@ -1244,8 +1280,10 @@
 |8038910|80400C8|803F9BC|8045008|8045068|NameSelect_8045068|int NameSelect_8045068(int a1)||
 |803A748|8041F70|8041880|8046EAC|8046F68||||
 |803BBF8|80434A8|8042D90|8048310|80483F8||||
-|0|804417C|804397C|8048F24|0||||
-|0|8044704|8043F04|80494B0|0||||
+|0|804417C|804397C|8048F24|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8044704|8043F04|80494B0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |803C4CC|8044D14|8044518|8049AC8|8048CB8||||
 |803C678|8044EC4|80446C8|8049C7C|8048E6C||||
 |803CEDC|804572C|8044F3C|804A508|804970C||||
@@ -1262,7 +1300,7 @@
 |8041060|80499AC|80491C4|804E544|804D7B0||||
 |8041308|804A30C|8049B24|804EEEC|804E168|UnpackUiFrameBuffered|[void UnpackUiFrameBuffered(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L218)||
 |8041E24|804B08C|804A8B0|8050174|804F400|GetMenuCursorPosition|[void GetMenuCursorPosition(struct MenuProc* proc, int* xResult, int* yResult)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L520)||
-|8042264|804B664|804AE88|80507B0|804FA3C|StartTargetSelection|int StartTargetSelection(int a1)||
+|8042264|804B664|804AE88|80507B0|804FA3C|NewTargetSelection|[ProcPtr NewTargetSelection(const struct SelectInfo* selectInfo) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L194)||
 |80425F0|804B9F4|804B218|8050B48|804FDD4|StartEkrBattle|int StartEkrBattle()||
 |804294C|804BD4C|804B570|8050EA8|8050134|ekrBattle_8050134|int ekrBattle_8050134(int a1)||
 |8042B4C|804BF0C|804B730|80510AC|8050338|ekrBattle_WaitForTriangleAttackAnim|int ekrBattle_WaitForTriangleAttackAnim(int a1)||
@@ -1278,8 +1316,10 @@
 |804738C|80503D4|804FBF8|8055D08|8055038||||
 |80473F0|8050438|804FC5C|8055D6C|805509C||||
 |8047430|8050478|804FC9C|8055DAC|80550DC||||
-|0|80504F8|804FD1C|8055E2C|0||||
-|0|8050604|804FE28|8055F40|0||||
+|0|80504F8|804FD1C|8055E2C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8050604|804FE28|8055F40|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8047D38|8051214|8050A38|8056BF0|8055C68|MainUpdate_8055C68|int MainUpdate_8055C68()||
 |8048154|8051630|8050E54|8057000|8056078|ekrBattleStarting_8056078|int ekrBattleStarting_8056078(int a1)||
 |8048DA4|8052278|8051A9C|8057CAC|8056D24|StartEkrWindowAppear|int StartEkrWindowAppear(int a1, __int16 a2)||
@@ -1295,7 +1335,8 @@
 |8057344|80635B4|8062DCC|806F63C|806D320||||
 |8053420|8063804|806301C|806F88C|806D570||||
 |8057EC4|806416C|8063984|80702E8|806DFD0||||
-|0|8064764|8063F7C|80708B4|0||||
+|0|8064764|8063F7C|80708B4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8057F08|80647DC|8063FF4|8070EB8|806E904||||
 |8057F24|80647F8|8064010|8070ED4|806E920||||
 |805DA38|8069BE4|8069404|80762D0|8073E48||||
@@ -1348,12 +1389,16 @@
 |8057208|8096058|8095828|809EEE4|809CC40||||
 |0|8097C10|8097488|80A0D94|809EAF4||||
 |800EFB4|8097C30|80974A8|80A0DB4|809EB14||||
-|0|809AD54|809A378|80A3C64|0||||
-|0|809B2BC|809A8E4|80A4148|0||||
+|0|809AD54|809A378|80A3C64|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B2BC|809A8E4|80A4148|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|809C92C|809BF78|80A5868|80A1A90||||
 |0|809D4D0|809CAB8|80A5EC8|80A20FC||||
-|8089894|809E1CC|809D7B4|80A6A30|0||||
-|8082EC0|809E218|809D800|80A6A7C|0||||
+|8089894|809E1CC|809D7B4|80A6A30|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8082EC0|809E218|809D800|80A6A7C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80A0B5C|80A0190|80A93BC|80A4978||||
 |8085F24|80A22DC|80A1948|80AADF8|80A63E0|UpdateNextSuspendSaveId|int UpdateNextSuspendSaveId()||
 |8087218|80A3540|80A28CC|80AC89C|80A7E84||||
@@ -1392,7 +1437,7 @@
 |803D178|80459EC|80451FC|804A7CC|80499D0||||
 |0|80126BC|8012028|80091D4|80092E4|AP_Display|[void AP_Display(struct APHandle* handle, int x, int y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L88)||
 |0|80174A0|801704C|8017124|801737C|GetConvoyItemCostSum|[int GetConvoyItemCostSum(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L971)||
-|801753C|8017AE8|80176F8|80177A0|80179F8|UnitHasItem|[s8 UnitHasItem(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L472)||
+|801753C|8017AE8|80176F8|80177A0|80179F8|UnitHasItem|[s8 UnitHasItem(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L474)||
 |0|803BE78|803B9C4|8040770|80407F0||||
 |806C2C4|807A9F0|8079F7C|80871B4|8084EE8|IsAnyEnemyUnitAlive|signed int IsAnyEnemyUnitAlive()||
 |8072230|8085188|808478C|808DF38|808BC2C||||
@@ -1411,8 +1456,10 @@
 |80585DC|8064EB0|80646C8|8071568|806EFB8||||
 |0|8065158|8064970|80717F8|806F248||||
 |0|8093814|8092F08|809C804|809A538||||
-|0|809B8D0|809AEFC|80A4738|0||||
-|0|809B968|809AF94|80A47D0|0||||
+|0|809B8D0|809AEFC|80A4738|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B968|809AF94|80A47D0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80C0BDC|80C0114|80D6A08|80D1D88|strlen|int strlen(_DWORD *a1)||
 |8015260|8015068|8014BEC|80149B4|801498C||||
 |8016958|8016BC4|8016764|80168D0|8016B28|GetUnitEquippedWeapon|[u16 GetUnitEquippedWeapon(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L480)||
@@ -1434,7 +1481,7 @@
 |0|8004710|8004834|8002F90|8003040|EndEachProcMarked|int EndEachProcMarked(int a1)||
 |0|8004C98|8004DBC|800359C|8003650|GetIconTileIndex|[u16 GetIconTileIndex(int Index)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/icon.c#L64)||
 |8021360|8024724|8024298|80257C4|8025814|MakeTargetListForDoorAndBridges|int MakeTargetListForDoorAndBridges(int a1, int a2)||
-|80236C4|80277E0|8027354|80290A4|80290FC|CanUnitUseChestKeyItem|[s8 CanUnitUseChestKeyItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L493)||
+|80236C4|80277E0|8027354|80290A4|80290FC|CanUnitUseChestKeyItem|[s8 CanUnitUseChestKeyItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L487)||
 |80248E8|8029008|8028B68|802AAE4|802AB74|BattleLoadAS|int BattleLoadAS(int a1)||
 |0|8029328|8028E78|802ACC4|802AD54|BattleApplySRankBonuses|int BattleApplySRankBonuses(int a1)||
 |80331EC|803A3B0|8039EFC|803EDDC|803EE4C|AiTryDoStealAdjacent|bool AiTryDoStealAdjacent(int a1, int a2)||
@@ -1491,25 +1538,26 @@
 |80158B8|80156C0|8015244|80152C0|801529C||||
 |0|80177A8|80173A0|8017448|80176A0|GetItemEncodedRange|[inline int GetItemEncodedRange(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L163)||
 |0|80177D8|80173D0|8017478|80176D0|GetItemEffectiveness|[inline const u8* GetItemEffectiveness(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L171)||
-|0|80181D4|8017DE4|8018060|801834C|UnitRescue|[void UnitRescue(struct Unit* actor, struct Unit* target) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L903)||
-|8018408|8018EE0|8018AF0|8018EE4|80191D0|GetUnitSkill|[inline int GetUnitSkill(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L277)||
-|8018448|8018F20|8018B30|8018F24|8019210|GetUnitSpeed|[inline int GetUnitSpeed(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L286)||
+|0|80181D4|8017DE4|8018060|801834C|UnitRescue|[void UnitRescue(struct Unit* actor, struct Unit* target) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L905)||
+|8018408|8018EE0|8018AF0|8018EE4|80191D0|GetUnitSkill|[inline int GetUnitSkill(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L279)||
+|8018448|8018F20|8018B30|8018F24|8019210|GetUnitSpeed|[inline int GetUnitSpeed(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L288)||
 |8018784|801926C|8018E84|8019294|80195BC|InitChapterPreviewMap|[void InitChapterPreviewMap(int chapterId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L80)||
-|80192B4|8019EF0|0|8019F18|0||||
+|80192B4|8019EF0|0|8019F18|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |801DB00|801F748|801F2E0|801FA38|801FDAC||||
 |801E2B0|801FFD0|801FB68|8020818|8020B20||||
 |801E6C4|8020580|8020118|8020EC0|80211C8||||
-|80238FC|8027B0C|8027680|80294F8|8029550|StaffSelectOnSelect|[static int StaffSelectOnSelect(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L691)||
+|80238FC|8027B0C|8027680|80294F8|8029550|StaffSelectOnSelect|[static u8 StaffSelectOnSelect(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L685)||
 |0|802889C|8028410|802A310|802A384||||
 |0|802BBA8|802B6F8|802DFF8|802E0C0|sub_802E0C0|[void sub_802E0C0(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L910)||
-|8026B30|802BFB4|802BAF4|802E218|802E2E0|AddDamagingTrap|[struct Trap* AddDamagingTrap(int x, int y, int trapType, int meta, int turnCountdown, int turnInterval, int damage)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L104)||
+|8026B30|802BFB4|802BAF4|802E218|802E2E0|AddDamagingTrap|[struct Trap* AddDamagingTrap(int x, int y, int trapType, int meta, int turnCountdown, int turnInterval, int damage)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L105)||
 |8029F5C|802F5A0|802F0D4|8031E18|8031ECC||||
-|0|8030C88|803079C|8033680|8033770||||
-|802B0FC|8030CB0|80307C4|80336A8|8033798||||
-|802B118|8030CCC|80307E0|80336C4|80337B4||||
-|802B138|8030CEC|8030800|80336E4|80337D4||||
+|0|8030C88|803079C|8033680|8033770|sub_8033770|[void sub_8033770(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L601)||
+|802B0FC|8030CB0|80307C4|80336A8|8033798|sub_8033798|[void sub_8033798(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L617)||
+|802B118|8030CCC|80307E0|80336C4|80337B4|sub_80337B4|[void sub_80337B4(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L629)||
+|802B138|8030CEC|8030800|80336E4|80337D4|sub_80337D4|[void sub_80337D4(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L641)||
 |802BB30|8031A7C|0|8034548|8034640|GetChapterMapPointer|[const void* GetChapterMapPointer(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L12)||
-|802BBA0|8031AEC|0|80345B8|80346B0|GetChapterEventDataPointer|[const void* GetChapterEventDataPointer(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L27)||
+|802BBA0|8031AEC|0|80345B8|80346B0|GetChapterEventDataPointer|[const struct ChapterEventInfo* GetChapterEventDataPointer(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L27)||
 |802CF90|8033148|8032C18|8035D58|8035C58||||
 |802CFA4|803315C|8032C2C|8035D6C|8035C6C||||
 |802E58C|8034E84|80349AC|80397F0|8039778|AiPhaseCleanup|[static void AiPhaseCleanup(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_phase.c#L79)||
@@ -1519,7 +1567,8 @@
 |80351F4|803C710|803C25C|8041660|80416E0||||
 |8036A40|803DF80|803DAD0|8042EC8|8042F44||||
 |8036DEC|803E330|803DE80|8043278|80432F4||||
-|0|804397C|0|8048798|0||||
+|0|804397C|0|8048798|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |803F454|8047D5C|8047570|804CB78|804BDD8||||
 |8041188|8049AD4|80492EC|804E65C|804D8C8||||
 |8042970|804BD70|804B594|8050ECC|8050158|ekrBattle_8050158|_DWORD *ekrBattle_8050158(_DWORD *result)||
@@ -1556,8 +1605,10 @@
 |0|8098F2C|8098650|80A20F8|809FE58||||
 |0|809BA78|809B0A4|80A48EC|80A0B04||||
 |0|809BFB8|809B5F0|80A4E94|80A10BC||||
-|0|809E1A8|809D790|80A6A0C|0||||
-|0|809E1B8|809D7A0|80A6A1C|0||||
+|0|809E1A8|809D790|80A6A0C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809E1B8|809D7A0|80A6A1C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8084428|809F0FC|809E6EC|80A792C|80A2EE8||||
 |0|809FC60|809F224|80A8428|80A39E4||||
 |8084F78|80A0F60|80A05D4|80A97C4|80A4D80|UpdateLastUsedGameSaveSlot|int UpdateLastUsedGameSaveSlot(char a1)||
@@ -1585,7 +1636,7 @@
 |3002F38|3003018|30030F8|30038A8|3003908||||
 |80003E0|80003E0|80003E0|80003E0|80003E0||||
 |8012470|800EFB8|800F0AC|8012414|8012344|GetChapterAllyUnitCount|int GetChapterAllyUnitCount()||
-|8026B08|802BF8C|802BACC|802E1F0|802E2B8|AddTrap|[struct Trap* AddTrap(int x, int y, int trapType, int meta)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L89)||
+|8026B08|802BF8C|802BACC|802E1F0|802E2B8|AddTrap|[struct Trap* AddTrap(int x, int y, int trapType, int meta)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L90)||
 |8037020|803E564|803E0B8|80434B0|804352C||||
 |0|8005F14|8006084|800493C|8004A34|Text_DrawGlyphManual|int Text_DrawGlyphManual(int a1, int a2, int a3)||
 |808AF4C|8009598|8009708|8008058|800815C||||
@@ -1689,8 +1740,8 @@
 |8016344|80162E0|8015E64|8015F9C|8015F90||||
 |80163E4|8016400|8015F84|80160DC|80160D0|UpdatePlayMapMusic|int UpdatePlayMapMusic()||
 |0|80178B4|80174AC|8017558|80177B0|GetItemData|[inline const struct ItemData* GetItemData(int itemIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L82)||
-|8017BA8|801824C|8017E5C|80180DC|80183C8|UnitGive|[s8 UnitGive(struct Unit* actor, struct Unit* target) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L930)||
-|0|8018BAC|80187BC|8018A48|8018D34|GetUnitLastItem|[int GetUnitLastItem(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1365)||
+|8017BA8|801824C|8017E5C|80180DC|80183C8|UnitGive|[s8 UnitGive(struct Unit* actor, struct Unit* target) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L932)||
+|0|8018BAC|80187BC|8018A48|8018D34|GetUnitLastItem|[int GetUnitLastItem(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1367)||
 |801A5E0|801B660|801B280|801B754|801BA88|DebugPrintWithProc|[void DebugPrintWithProc(struct DebugPrintProc *proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L80)||
 |801A644|801B6C4|801B2E4|801B7B8|801BAEC|DebugPrint|[void DebugPrint(int x, int y, int width, const char *text)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L103)||
 |801A674|801B6F4|801B314|801B7E8|801BB1C|StartDebugMenu|[int StartDebugMenu(struct MenuProc *menuProc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L114)||
@@ -1715,13 +1766,15 @@
 |801D830|801F260|801EEDC|801F430|801F7D8||||
 |801D8B8|801F2E8|801EF64|801F4B8|801F860||||
 |801D95C|801F38C|801F008|801F55C|801F904||||
-|0|801F71C|0|801FA0C|0||||
+|0|801F71C|0|801FA0C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |801DAE4|801F72C|801F2C4|801FA1C|801FD90|BgMoverProc_Update|int BgMoverProc_Update()||
 |0|801FFA8|801FB40|80207F0|8020AF8||||
 |801E92C|80207F0|8020388|8021120|8021428||||
 |801E974|8020838|80203D0|8021168|8021470||||
 |0|8020A84|802061C|802137C|8021684|BeginLightRuneMapAnim|int BeginLightRuneMapAnim(signed int a1, __int16 a2, __int16 a3)||
-|0|802107C|8020C14|8021C28|0||||
+|0|802107C|8020C14|8021C28|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80212A0|8020E34|8021E18|8021FB8||||
 |0|8021550|80210E4|80220B0|8022250||||
 |0|80215B8|802114C|8022118|80222B8||||
@@ -1778,61 +1831,62 @@
 |8021048|80243F0|8023F64|8025490|80254E0|MakeTakeTargetList|int MakeTakeTargetList(int a1)||
 |80210E8|80244A4|8024018|8025544|8025594||||
 |80219E8|8024DC8|802493C|802626C|80262C8|MakeTargetListForUnlock|int MakeTargetListForUnlock(int a1)||
-|8023B34|8027D98|802790C|8029770|80297D0|WarpSelect_OnConfirm|[void WarpSelect_OnConfirm(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L804)||
-|8023B70|8027DD4|8027948|80297AC|802980C|WarpSelect_OnCancel|[void WarpSelect_OnCancel(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L819)||
-|8023BA4|8027E08|802797C|80297E0|8029840|WarpSelect_OnEnd|[void WarpSelect_OnEnd(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L832)||
-|8023BB8|8027E1C|8027990|80297F4|8029854|WarpOnSelectTarget|[static int WarpOnSelectTarget(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L838)||
-|8023C34|8027EA0|8027A14|8029874|80298D4|OnSelectPutTrap|[static int OnSelectPutTrap(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L862)||
-|0|8027F14|8027A88|80298E4|0||||
-|8023D4C|8027FC8|8027B3C|8029994|8029A08|RepairSelectOnChange|[int RepairSelectOnChange(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L919)||
-|8023F54|80281CC|8027D40|8029B9C|8029C10|BarrierSelectOnChange|[int BarrierSelectOnChange(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1020)||
-|8023FC0|8028238|8027DAC|8029C08|8029C7C|AttackStaffSelectOnChange|[int AttackStaffSelectOnChange(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1042)||
-|802402C|80282A4|8027E18|8029C74|8029CE8|sub_8029CE8|[int sub_8029CE8(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1064)||
-|802406C|80282E4|8027E58|8029CB4|8029D28|sub_8029D28|[void sub_8029D28(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1073)||
-|0|8028328|8027E9C|8029CF8|8029D6C|sub_8029D6C|[void sub_8029D6C(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1087)||
+|8023B34|8027D98|802790C|8029770|80297D0|WarpSelect_OnConfirm|[void WarpSelect_OnConfirm(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L798)||
+|8023B70|8027DD4|8027948|80297AC|802980C|WarpSelect_OnCancel|[void WarpSelect_OnCancel(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L813)||
+|8023BA4|8027E08|802797C|80297E0|8029840|WarpSelect_OnEnd|[void WarpSelect_OnEnd(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L826)||
+|8023BB8|8027E1C|8027990|80297F4|8029854|WarpOnSelectTarget|[static u8 WarpOnSelectTarget(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L832)||
+|8023C34|8027EA0|8027A14|8029874|80298D4|OnSelectPutTrap|[static u8 OnSelectPutTrap(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L856)||
+|0|8027F14|8027A88|80298E4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8023D4C|8027FC8|8027B3C|8029994|8029A08|RepairSelectOnChange|[int RepairSelectOnChange(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L913)||
+|8023F54|80281CC|8027D40|8029B9C|8029C10|BarrierSelectOnChange|[int BarrierSelectOnChange(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1014)||
+|8023FC0|8028238|8027DAC|8029C08|8029C7C|AttackStaffSelectOnChange|[int AttackStaffSelectOnChange(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1036)||
+|802402C|80282A4|8027E18|8029C74|8029CE8|sub_8029CE8|[int sub_8029CE8(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1058)||
+|802406C|80282E4|8027E58|8029CB4|8029D28|sub_8029D28|[void sub_8029D28(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1067)||
+|0|8028328|8027E9C|8029CF8|8029D6C|sub_8029D6C|[void sub_8029D6C(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1081)||
 |8024224|802880C|8028380|802A280|802A2F4|BATTLE_SyncMapFromBattle|int BATTLE_SyncMapFromBattle()||
 |8025E98|802AA64|802A5B4|802CB54|802CC1C|UpdateActiveUnitFromBattle|int UpdateActiveUnitFromBattle()||
 |8025EB4|802AA80|802A5D0|802CB70|802CC38|FinishUp10ExpBattle|int FinishUp10ExpBattle(signed int a1)||
 |0|802B544|802B094|802D6CC|802D794|TradeMenu_InitItemDisplay|[void TradeMenu_InitItemDisplay(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L477)||
 |802686C|802B908|802B458|802DA80|802DB48|TradeMenu_ClearDisplay|[void TradeMenu_ClearDisplay(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L632)||
 |0|802BC34|802B774|802DD40|802DE08|TradeMenu_DoubleTutorialHandCursor_Update|[void TradeMenu_DoubleTutorialHandCursor_Update(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L759)||
-|8026B68|802C000|802BB40|802E268|802E330|AddGasTrap|[void AddGasTrap(int x, int y, int facing, int turnCountdown, int turnInterval)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L131)||
-|8026B88|802C020|802BB60|802E288|802E350|AddArrowTrap|[void AddArrowTrap(int x, int turnCountdown, int turnInterval)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L136)||
-|8026F1C|802C294|802BDD4|802E530|802E5F8|EnableMapChange|[void EnableMapChange(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L309)||
-|8027248|802C664|802C1A4|802E938|802EA00|sub_802EA00|[void sub_802EA00(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L624)||
-|80274A8|802C7E4|802C324|802EAD0|802EB98|ExecStandardHeal|int ExecStandardHeal(signed int a1)||
-|80277D0|802CB14|802C654|802EE30|802EEF8|ExecRescueStaff|int ExecRescueStaff(signed int a1)||
-|0|802CB9C|802C6DC|802EEB8|802EF80||||
-|0|802CBC8|802C708|802EEE4|802EFAC|ExecWarpStaff|int ExecWarpStaff(signed int a1)||
-|80279C8|802CD54|802C894|802F1A0|802F274|ExecUnlock|int ExecUnlock(signed int a1)||
-|8027A08|802CD94|802C8D4|802F1E0|802F2B4|ExecHammerne|int ExecHammerne(signed int a1)||
-|8027AC8|802CE54|802C994|802F2A0|802F380|ExecSomeSelfHeal|int ExecSomeSelfHeal(signed int a1, int a2)||
-|8027B2C|802CEB8|802C9F8|802F304|802F3E4||||
-|8027C10|802CFA4|802CAE4|802F3F0|802F4D0||||
-|0|802D388|802CEC8|802F99C|802FA4C|ExecItemMine|int ExecItemMine(signed int a1)||
-|0|802D3CC|802CF0C|802F9E0|802FA90||||
-|0|802D40C|802CF4C|802FAD8|802FB88|ExecTorchStaff|int ExecTorchStaff(signed int a1)||
+|8026B68|802C000|802BB40|802E268|802E330|AddGasTrap|[void AddGasTrap(int x, int y, int facing, int turnCountdown, int turnInterval)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L132)||
+|8026B88|802C020|802BB60|802E288|802E350|AddArrowTrap|[void AddArrowTrap(int x, int turnCountdown, int turnInterval)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L137)||
+|8026F1C|802C294|802BDD4|802E530|802E5F8|EnableMapChange|[void EnableMapChange(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L310)||
+|8027248|802C664|802C1A4|802E938|802EA00|sub_802EA00|[void sub_802EA00(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L625)||
+|80274A8|802C7E4|802C324|802EAD0|802EB98|ExecStandardHeal|[void ExecStandardHeal(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L76)||
+|80277D0|802CB14|802C654|802EE30|802EEF8|ExecRescueStaff|[void ExecRescueStaff(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L225)||
+|0|802CB9C|802C6DC|802EEB8|802EF80|sub_802EF80|[int sub_802EF80() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L256)||
+|0|802CBC8|802C708|802EEE4|802EFAC|ExecWarpStaff|[void ExecWarpStaff(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L267)||
+|80279C8|802CD54|802C894|802F1A0|802F274|ExecUnlockStaff|[void ExecUnlockStaff(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L419)||
+|8027A08|802CD94|802C8D4|802F1E0|802F2B4|ExecHammerne|[void ExecHammerne(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L435)||
+|8027AC8|802CE54|802C994|802F2A0|802F380|ExecVulneraryItem|[void ExecVulneraryItem(ProcPtr proc, int amount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L480)||
+|8027B2C|802CEB8|802C9F8|802F304|802F3E4|ExecElixirItem|[void ExecElixirItem(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L498)||
+|8027C10|802CFA4|802CAE4|802F3F0|802F4D0|ExecAntitoxinItem|[void ExecAntitoxinItem(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L544)||
+|0|802D388|802CEC8|802F99C|802FA4C|ExecMine|[void ExecMine(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L815)||
+|0|802D3CC|802CF0C|802F9E0|802FA90|ExecLightRune|[void ExecLightRune(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L830)||
+|0|802D40C|802CF4C|802FAD8|802FB88|ExecTorchStaff|[void ExecTorchStaff(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L899)||
 |8028F94|802E4BC|802DFFC|8030D24|8030DD8|ClearBattleMapState|[void ClearBattleMapState(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L963)||
 |80292B8|802E7E0|802E314|80310A0|8031154|BMapDispResume_FromBattleDelayed|[void BMapDispResume_FromBattleDelayed(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1164)||
 |8029318|802E848|802E37C|8031108|80311BC|StartBMapMain|[struct BMapMainProc* StartBMapMain(struct GameCtrlProc* gameCtrl) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1190)||
 |0|802EBA0|802E6D4|8031420|80314D4|GameCtrl_DeclareCompletedPlaythrough|[void GameCtrl_DeclareCompletedPlaythrough(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1361)||
 |802974C|802EC94|802E7C8|8031518|80315CC|RemoveItemFromConvoy|[void RemoveItemFromConvoy(int index) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L69)||
-|0|802F7F4|802F328|80320B0|8032164|ActionRescue|int ActionRescue(signed int a1)||
-|803C02C|802F858|802F38C|8032114|80321C8||||
-|802A208|802F900|802F434|80321BC|8032270|ActionVisitAndSieze|int ActionVisitAndSieze()||
-|802A35C|802F97C|802F4B0|8032290|8032344|ActionArena|int ActionArena(signed int a1)||
-|0|802F990|802F4C4|80322A4|8032358|ActionDance|int ActionDance(signed int a1)||
-|802A3C0|802F9E0|802F514|80322F4|80323A8|ActionTalk|int ActionTalk()||
-|802A5BC|802FC10|802F744|80325B0|8032664|SpriteJumpAnimation_Cleanup|int SpriteJumpAnimation_Cleanup()||
-|0|802FE2C|802F960|80327B8|803286C|BATTLE_HandleUnitDeaths|int BATTLE_HandleUnitDeaths(signed int a1)||
-|0|803087C|80303B4|8033268|8033358||||
-|0|8030890|80303C8|803327C|803336C||||
-|0|8030998|0|8033378|8033468||||
-|0|8030A14|8030528|80333DC|80334CC||||
-|0|8030A30|8030544|80333F8|80334E8||||
-|0|8030A5C|8030570|8033424|8033514||||
-|802B69C|80312E8|8030DFC|8033CE0|8033DD8||||
-|80987B8|803157C|8031090|8033F80|8034078||||
+|0|802F7F4|802F328|80320B0|8032164|ActionRescue|[s8 ActionRescue(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L230)||
+|803C02C|802F858|802F38C|8032114|80321C8|sub_80321C8|[int sub_80321C8() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L253)||
+|802A208|802F900|802F434|80321BC|8032270|ActionVisitAndSeize|[s8 ActionVisitAndSeize(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L295)||
+|802A35C|802F97C|802F4B0|8032290|8032344|ActionArena|[s8 ActionArena(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L345)||
+|0|802F990|802F4C4|80322A4|8032358|ActionDance|[s8 ActionDance(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L350)||
+|802A3C0|802F9E0|802F514|80322F4|80323A8|ActionTalk|[s8 ActionTalk(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L364)||
+|802A5BC|802FC10|802F744|80325B0|8032664|sub_8032664|[void sub_8032664() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L501)||
+|0|802FE2C|802F960|80327B8|803286C|BATTLE_HandleCombatDeaths|[void BATTLE_HandleCombatDeaths(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L630)||
+|0|803087C|80303B4|8033268|8033358|sub_8033358|[void sub_8033358(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L415)||
+|0|8030890|80303C8|803327C|803336C|sub_803336C|[void sub_803336C(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L422)||
+|0|8030998|0|8033378|8033468|sub_8033468|[void sub_8033468(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L492)||
+|0|8030A14|8030528|80333DC|80334CC|sub_80334CC|[void sub_80334CC() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L513)||
+|0|8030A30|8030544|80333F8|80334E8|sub_80334E8|[void sub_80334E8(int r0) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L519)||
+|0|8030A5C|8030570|8033424|8033514|sub_8033514|[void sub_8033514(int r4) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L524)||
+|802B69C|80312E8|8030DFC|8033CE0|8033DD8|sub_8033DD8|[void sub_8033DD8(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L894)||
+|80987B8|803157C|8031090|8033F80|8034078|sub_8034078|[void sub_8034078(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1007)||
 |802B99C|80318EC|8031404|80343B0|80344A8|GetUnitCommandUseFlags|int GetUnitCommandUseFlags()||
 |802B9DC|803192C|8031444|80343F0|80344E8||||
 |802BA08|8031958|8031470|803441C|8034514||||
@@ -1852,7 +1906,8 @@
 |802CA24|80329A0|8032470|803551C|8035614||||
 |802CA84|8032A00|80324D0|8035580|8035678||||
 |802CAA4|8032A20|80324F0|80355A0|8035698||||
-|0|8032CA0|8032770|803581C|0||||
+|0|8032CA0|8032770|803581C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |802CF7C|8033134|8032C04|8035D44|8035C44||||
 |802D210|8033400|8032ED0|8035FD8|8035ED8||||
 |802D34C|8033518|8032FE8|80360F0|8035FF0||||
@@ -1889,12 +1944,17 @@
 |803BD20|80435D0|8042EB8|804843C|8048594||||
 |803BD90|8043640|8042F28|80484AC|8048524||||
 |0|804395C|80431C0|8048778|8048864||||
-|0|8043CC8|80434EC|8048AC4|0||||
-|0|8043DB0|80435D4|8048BAC|0||||
-|0|8043DE0|8043604|8048BDC|8033608||||
-|0|80446B4|8043EB4|8049460|0||||
-|0|804471C|8043F1C|80494C8|0||||
-|0|80448B8|80440B8|8049664|0||||
+|0|8043CC8|80434EC|8048AC4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8043DB0|80435D4|8048BAC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8043DE0|8043604|8048BDC|8033608|sub_8033608|[void sub_8033608() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L546)||
+|0|80446B4|8043EB4|8049460|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804471C|8043F1C|80494C8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80448B8|80440B8|8049664|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |803C690|8044EDC|80446E0|8049C94|8048E84||||
 |803CF70|80457C0|8044FD0|804A59C|80497A0||||
 |803D0A0|8045914|8045124|804A6F0|80498F4||||
@@ -2003,7 +2063,8 @@
 |804EB24|805EAB0|805EE08|8066874|8063378||||
 |804DE04|8060BE4|80605A8|8066A34|8064E2C||||
 |804F7BC|805F860|8061394|8066ADC|806542C||||
-|0|8061D84|806159C|8066CC0|0||||
+|0|8061D84|806159C|8066CC0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8056D28|805F5F0|805F694|8066D24|8063BC8||||
 |80561A0|8062350|8061B68|8067294|80657D4|StartSpellAnimIvaldi|int StartSpellAnimIvaldi(int a1)||
 |0|805B5D8|805ADF0|8068818|8066470||||
@@ -2148,18 +2209,28 @@
 |0|8099C44|8099284|80A2C78|80A09C4||||
 |0|8099C7C|80992BC|80A2CB0|80A09FC||||
 |0|8099E1C|809945C|80A2E4C|80B0620||||
-|0|809A044|8099684|80A3074|0||||
-|0|809A2E4|8099928|80A32C0|0||||
-|0|809B1FC|809A824|80A4088|0||||
-|0|809B510|809AB38|80A43A0|0||||
-|0|809B554|809AB7C|80A43E4|0||||
-|0|809B654|809AC7C|80A44D0|0||||
-|0|809B6F8|809AD20|80A4568|0||||
+|0|809A044|8099684|80A3074|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809A2E4|8099928|80A32C0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B1FC|809A824|80A4088|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B510|809AB38|80A43A0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B554|809AB7C|80A43E4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B654|809AC7C|80A44D0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B6F8|809AD20|80A4568|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|809C7B4|809BDFC|80A56F0|80A1918||||
 |0|809E0C0|809D6A8|80A6928|80A2B5C||||
-|0|809E7FC|809DDE4|80A705C|0|initPassword|void initPassword(int a1, int a2)||
-|0|809E8F0|809DED8|80A7150|0||||
-|0|809EB74|809E15C|80A73D4|0||||
+|0|809E7FC|809DDE4|80A705C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809E8F0|809DED8|80A7150|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809EB74|809E15C|80A73D4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8084388|809EFB0|809E598|80A7814|80A2DD0|SaveGeneralGameMetadataNoChecksum|int SaveGeneralGameMetadataNoChecksum(int a1)||
 |0|809F0BC|809E6AC|80A78EC|80A2EA8||||
 |8084628|809F344|809E934|80A7B74|80A3130|SaveLocalEventIndexes|int SaveLocalEventIndexes(int a1)||
@@ -2223,10 +2294,14 @@
 |0|80B8F48|80B82AC|80BB514|80B69D4||||
 |0|80B99D8|80B8E78|80BBEE8|80B742C||||
 |0|80B99F8|80B8E98|80BBF08|80B744C||||
-|0|80B9A08|80B8EA8|80BBF18|0||||
-|0|80BA8DC|80B9DD4|80BCCF0|0||||
-|0|80BA918|80B9E10|80BCD2C|0||||
-|0|80BA948|80B9E40|80BCD5C|0||||
+|0|80B9A08|80B8EA8|80BBF18|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BA8DC|80B9DD4|80BCCF0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BA918|80B9E10|80BCD2C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BA948|80B9E40|80BCD5C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80B5D78|80B4F58|80BD55C|80B8694||||
 |0|80B63AC|80B558C|80BEEB8|80BA024|EndWM|int EndWM()||
 |0|80B6580|80B5760|80BEF48|80BA0B4||||
@@ -2314,8 +2389,8 @@
 |0|8017844|801743C|80174E4|801773C|GetItemUseEffect|[inline int GetItemUseEffect(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L190)||
 |0|801785C|8017454|80174FC|8017754|GetItemCostPerUse|[inline int GetItemCostPerUse(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L194)||
 |0|801789C|8017494|8017540|8017798|GetItemAwardedExp|[inline int GetItemAwardedExp(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L202)||
-|0|80179F0|8017600|801769C|80178F4|SetUnitStatusExt|[void SetUnitStatusExt(struct Unit* unit, int status, int duration) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L380)||
-|801860C|80190F4|8018D0C|8019108|8019430|GetUnit|[inline struct Unit* GetUnit(int id) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L189)||
+|0|80179F0|8017600|801769C|80178F4|SetUnitStatusExt|[void SetUnitStatusExt(struct Unit* unit, int status, int duration) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L382)||
+|801860C|80190F4|8018D0C|8019108|8019430|GetUnit|[inline struct Unit* GetUnit(int id) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L191)||
 |80192C4|8019F00|8019B20|8019F28|801A258|GetTerrainHealAmount|[int GetTerrainHealAmount(int terrainId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L662)||
 |80192D4|8019F10|8019B30|8019F38|801A268|GetTerrainUnk|[int GetTerrainUnk(int terrainId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L666)||
 |80193F4|801A030|8019C50|801A108|801A43C|GenerateExtendedMovementMapOnRange|[void GenerateExtendedMovementMapOnRange(int x, int y, const s8 mct[TERRAIN_COUNT])](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L46)||
@@ -2331,7 +2406,7 @@
 |0|80296E4|8029234|802B134|802B1C4|UpdateBattleStats|int UpdateBattleStats(int a1, int a2)||
 |8025780|802A21C|8029D6C|802C27C|802C334|NullSomeStuff|int NullSomeStuff()||
 |8025BD8|802A788|802A2D8|802C880|802C948|FillSnagBattleStats|int FillSnagBattleStats()||
-|802749C|802C7D8|802C318|802EAC4|802EB8C|GetTrap|[inline struct Trap* GetTrap(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L20)||
+|802749C|802C7D8|802C318|802EAC4|802EB8C|GetTrap|[inline struct Trap* GetTrap(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L21)||
 |8028AD0|802DFB8|802DAF8|803081C|80308CC|WfxFlames_Init|[void WfxFlames_Init(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L661)||
 |8028BE4|802E0CC|802DC0C|8030930|80309E0|WfxFlames_VSync|[void WfxFlames_VSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L732)||
 |802979C|802ED9C|802E8D0|8031610|80316C4|InitUnitStack|signed int InitUnitStack(int a1)||
@@ -2359,10 +2434,10 @@
 |0|8049BD0|80493E8|804E754|804D9C4||||
 |8041660|804A810|804A028|804F5F8|804E86C|GetUiHandPrevDisplayX|[int GetUiHandPrevDisplayX(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L1096)||
 |804166C|804A81C|804A034|804F604|804E878|GetUiHandPrevDisplayY|[int GetUiHandPrevDisplayY(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L1101)||
-|80420CC|804B4C0|804ACE4|8050618|804F8A4|InitTargets|int *InitTargets(__int16 a1, __int16 a2)||
-|80420E4|804B4D8|804ACFC|8050630|804F8BC|AddTarget|int AddTarget(char a1, char a2, char a3, char a4)||
-|8042180|804B574|804AD98|80506CC|804F958|TargetSelection_GetRealCursorPosition|int TargetSelection_GetRealCursorPosition(int a1, _DWORD *a2, int *a3)||
-|8042558|804B95C|804B180|8050AA8|804FD34|GetTarget|char *GetTarget(int a1)||
+|80420CC|804B4C0|804ACE4|8050618|804F8A4|InitTargets|[void InitTargets(int xRoot, int yRoot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L51)||
+|80420E4|804B4D8|804ACFC|8050630|804F8BC|AddTarget|[void AddTarget(int x, int y, int unitId, int tId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L58)||
+|8042180|804B574|804AD98|80506CC|804F958|TargetSelection_GetRealCursorPosition|[void TargetSelection_GetRealCursorPosition(ProcPtr proc, int* xPos, int* yPos) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L143)||
+|8042558|804B95C|804B180|8050AA8|804FD34|GetTarget|[struct SelectTarget* GetTarget(int index) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L460)||
 |80438C8|804CC28|804C44C|8051EB4|8051180|EkrGauge_8051180|int EkrGauge_8051180()||
 |80438D8|804CC38|804C45C|8051EC4|8051190|EkrGauge_8051190|signed int EkrGauge_8051190()||
 |80438E8|804CC48|804C46C|8051ED4|80511A0|EkrGauge_80511A0|signed int EkrGauge_80511A0()||
@@ -2422,7 +2497,8 @@
 |0|809BA94|809B0C0|80A4908|80A0B20||||
 |0|809BAB8|809B0E4|80A492C|80A0B44||||
 |0|809BACC|809B0F8|80A4940|80A0B58||||
-|0|809E244|809D82C|80A6AA8|0||||
+|0|809E244|809D82C|80A6AA8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8084270|809EE90|809E478|80A76F4|80A2CB0|IsSramWorking|int IsSramWorking()||
 |8084414|809F0E8|809E6D8|80A7918|80A2ED4|GetSaveDataOffsetPointer|void *GetSaveDataOffsetPointer(int offset)||
 |808460C|809F328|809E918|80A7B58|80A3114|GetSaveSourceAddress|void *GetSaveSourceAddress(int saveBlockId)||
@@ -2450,15 +2526,15 @@
 |0|801DC24|801D820|801DC64|801E008||||
 |801EAD4|8021A3C|80215C4|802261C|8022650|MapMenuCommnd_StatusEffect|signed int MapMenuCommnd_StatusEffect()||
 |801F378|80221BC|8021D44|8022E1C|8022E54||||
-|8023D70|8027FEC|8027B60|80299B8|8029A2C|RepairSelectOnInit|[void RepairSelectOnInit(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L925)||
+|8023D70|8027FEC|8027B60|80299B8|8029A2C|RepairSelectOnInit|[void RepairSelectOnInit(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L919)||
 |80265E8|802B5D0|802B120|802D758|802D820|TradeMenu_OnInitUnselected|[void TradeMenu_OnInitUnselected(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L500)||
-|8027264|802C680|802C1C0|802E954|802EA1C|sub_802EA1C|[void sub_802EA1C(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L634)||
-|0|802CB8C|802C6CC|802EEA8|802EF70||||
+|8027264|802C680|802C1C0|802E954|802EA1C|sub_802EA1C|[void sub_802EA1C(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L635)||
+|0|802CB8C|802C6CC|802EEA8|802EF70|sub_802EF70|[int sub_802EF70() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L252)||
 |8028348|802D828|802D368|8030088|8030138|BMapVSync_OnEnd|[void BMapVSync_OnEnd(struct BMVSyncProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L277)||
-|0|802F848|802F37C|8032104|80321B8||||
-|0|802FC04|802F738|80325A4|8032658|SpriteJumpAnimation_ExecAnyTrap|int SpriteJumpAnimation_ExecAnyTrap(int a1)||
-|802A840|802FF60|802FA98|80328EC|80329A0|BATTLE_HandleActiveUnitDeath|int BATTLE_HandleActiveUnitDeath(signed int a1)||
-|803D6E0|8030870|80303A8|803325C|803334C||||
+|0|802F848|802F37C|8032104|80321B8|AfterDrop_CheckTrapAfterDropMaybe|[int AfterDrop_CheckTrapAfterDropMaybe(struct UnknownBMMindProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L249)||
+|0|802FC04|802F738|80325A4|8032658|sub_8032658|[void sub_8032658(struct DeathDropAnimProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L496)||
+|802A840|802FF60|802FA98|80328EC|80329A0|BATTLE_HandleArenaDeathsMaybe|[void BATTLE_HandleArenaDeathsMaybe(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L706)||
+|803D6E0|8030870|80303A8|803325C|803334C|sub_803334C|[void sub_803334C() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L410)||
 |802DE50|8034100|8033C28|8036F1C|8036E1C|BKSEL_Destructor|int BKSEL_Destructor()||
 |0|80347BC|80342E4|80375D0|8037510|FireTrap_StartGfx|int FireTrap_StartGfx(signed int a1)||
 |0|80347D4|80342FC|80375E8|8037528|MineTrap_StartGfx|int MineTrap_StartGfx(signed int a1)||
@@ -2482,7 +2558,8 @@
 |0|80B0160|80AF334|80B7B1C|80B2F2C||||
 |0|80B91C4|80B8528|80BB740|80B6C00||||
 |0|808EF60|808E624|80BD020|80B8168||||
-|3002E5C|3002F3C|300301C|30037CC|0||||
+|3002E5C|3002F3C|300301C|30037CC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |3002EB8|3002F98|3003078|3003828|3003888||||
 |8000304|8000304|8000304|8000304|8000304|ARM_ClearOAMBuffer(ARM)|_DWORD *ARM_ClearOAMBuffer(_DWORD *result, unsigned int a2)||
 |8000360|8000360|8000360|8000360|8000360|ARM_ComputeChecksum32(ARM)|int ARM_ComputeChecksum32(unsigned __int16 *a1, int a2)||
@@ -2505,7 +2582,8 @@
 |804E0B8|8057BF4|80630D8|805F1B4|805DAA4|EfxThunderOBJ_Main|int EfxThunderOBJ_Main(int a1)||
 |804EF84|8058AF8|8056908|805F594|805E0B4||||
 |8056BA8|8062E08|8062620|806FD84|806DA68||||
-|0|8064788|8063F3C|80708D8|0||||
+|0|8064788|8063F3C|80708D8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80582EC|8064BC0|80643D8|80714D4|806F820||||
 |8058528|8064DFC|8064614|8071DD0|806F9D8||||
 |80480C4|80515A0|8050DC4|8072200|806FC50|ekrBattleStarting_8055FE8|int ekrBattleStarting_8055FE8(int a1)||
@@ -2592,7 +2670,8 @@
 |0|80131F0|8012B38|8009EA0|8009F40|GetGameControl|int *GetGameControl()||
 |8013A0C|8013264|8012BAC|8009EEC|8009F8C|RestartGameAndGoto8|int RestartGameAndGoto8()||
 |0|8013288|8012BD0|8009F10|8009FB0|RestartGameAndGoto12|int RestartGameAndGoto12()||
-|0|8013354|8012C9C|8009FE4|0||||
+|0|8013354|8012C9C|8009FE4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|800ECEC|800EDE0|80117CC|80116E0|NewPopup_WeaponBroke|int NewPopup_WeaponBroke(__int16 a1, int a2)||
 |0|800ED34|800EE28|80117F0|8011704|NewPopup_WRankIncrease|int NewPopup_WRankIncrease(__int16 a1, int a2)||
 |8014218|8014020|8013B00|80139E0|8013928||||
@@ -2606,16 +2685,16 @@
 |8016B84|8016E38|80169E0|8016BA0|8016DF8|GetDisplayRankStringFromExp|[int GetDisplayRankStringFromExp(int wexp) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L670)||
 |0|8017610|0|801729C|80174F4|GetItemName|[inline char* GetItemName(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L90)||
 |0|8017774|801736C|8017414|801766C|GetItemMinRange|[inline int GetItemMinRange(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L155)||
-|8017394|80178F8|8017508|801759C|80177F4|ClearUnit|[void ClearUnit(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L220)||
-|80173BC|8017920|8017530|80175C4|801781C|CopyUnit|[void CopyUnit(struct Unit* from, struct Unit* to) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L226)||
-|0|80184DC|80180EC|8018370|801865C|UnitBeginAction|[void UnitBeginAction(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1048)||
-|0|8018554|8018164|80183E8|80186D4|UnitBeginCantoAction|[void UnitBeginCantoAction(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1068)||
-|80183C8|8018EA0|8018AB0|8018EA4|8019190|GetUnitMaxHp|[inline int GetUnitMaxHp(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L262)||
-|80183E8|8018EC0|8018AD0|8018EC4|80191B0|GetUnitPower|[inline int GetUnitPower(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L273)||
-|8018488|8018F60|8018B70|8018F64|8019250|GetUnitDefense|[inline int GetUnitDefense(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L295)||
-|80184A8|8018F80|8018B90|8018F84|8019270|GetUnitResistance|[inline int GetUnitResistance(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L299)||
-|80184D0|8018FA8|8018BB8|8018FAC|8019298|GetUnitLuck|[inline int GetUnitLuck(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L303)||
-|8018658|8019138|8018D50|801915C|8019484|UnitRemoveItem|[inline void UnitRemoveItem(struct Unit* unit, int slot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L425)||
+|8017394|80178F8|8017508|801759C|80177F4|ClearUnit|[void ClearUnit(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L222)||
+|80173BC|8017920|8017530|80175C4|801781C|CopyUnit|[void CopyUnit(struct Unit* from, struct Unit* to) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L228)||
+|0|80184DC|80180EC|8018370|801865C|UnitBeginAction|[void UnitBeginAction(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1050)||
+|0|8018554|8018164|80183E8|80186D4|UnitBeginCantoAction|[void UnitBeginCantoAction(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1070)||
+|80183C8|8018EA0|8018AB0|8018EA4|8019190|GetUnitMaxHp|[inline int GetUnitMaxHp(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L264)||
+|80183E8|8018EC0|8018AD0|8018EC4|80191B0|GetUnitPower|[inline int GetUnitPower(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L275)||
+|8018488|8018F60|8018B70|8018F64|8019250|GetUnitDefense|[inline int GetUnitDefense(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L297)||
+|80184A8|8018F80|8018B90|8018F84|8019270|GetUnitResistance|[inline int GetUnitResistance(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L301)||
+|80184D0|8018FA8|8018BB8|8018FAC|8019298|GetUnitLuck|[inline int GetUnitLuck(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L305)||
+|8018658|8019138|8018D50|801915C|8019484|UnitRemoveItem|[inline void UnitRemoveItem(struct Unit* unit, int slot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L427)||
 |80188F4|8019428|8019040|8019450|8019778|sub_8019778|[void sub_8019778(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L164)||
 |8018A28|801955C|8019174|8019584|80198AC|UnpackChapterMap|[void UnpackChapterMap(void* into, int chapterId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L227)||
 |8018AF0|8019624|801923C|801964C|8019974|UnpackChapterMapPalette|[void UnpackChapterMapPalette(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L263)||
@@ -2623,8 +2702,10 @@
 |0|8019F80|8019BA0|801A05C|801A38C|GenerateUnitMovementMap|[void GenerateUnitMovementMap(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L22)||
 |0|8019FFC|8019C1C|801A0D4|801A408|GenerateUnitExtendedMovementMap|[void GenerateUnitExtendedMovementMap(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L38)||
 |0|801A090|8019CB0|801A168|801A49C|GenerateMovementMapOnWorkingMap|[void GenerateMovementMapOnWorkingMap(struct Unit* unit, int x, int y, int movement)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L62)||
-|0|801BA34|0|801BA6C|0||||
-|0|801BB60|0|801BB98|0||||
+|0|801BA34|0|801BA6C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801BB60|0|801BB98|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |801C060|801D6D8|801D2D4|801D730|801DACC|HideMoveRangeGraphics|int HideMoveRangeGraphics()||
 |801C20C|801D880|801D47C|801D8E0|801DC7C|Make6CKOIDO|int Make6CKOIDO(_DWORD *a1, int a2, char a3, signed int a4)||
 |801D680|801EF94|801EC10|801F164|801F50C|ChangeActiveUnitFacing|[void ChangeActiveUnitFacing(int xLook, int yLook) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/unit_facing.c#L6)||
@@ -2648,21 +2729,21 @@
 |0|8026BD0|8026744|8028270|80282DC|UnitGainSupportLevel|[void UnitGainSupportLevel(struct Unit* unit, int num)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L104)||
 |8022F70|8026FDC|8026B50|8028680|80286EC|GetSupportLevelUiChar|[int GetSupportLevelUiChar(int level)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L344)||
 |0|8027028|8026BA0|80286D0|802873C|SetSupportLevelGained|[static void SetSupportLevelGained(u8 charA, u8 charB)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L364)||
-|8023700|802781C|8027390|80290E0|8029138|CanUnitUseDoorKeyItem|[s8 CanUnitUseDoorKeyItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L504)||
-|8023714|8027830|80273A4|80290F4|802914C|CanUnitOpenBridge|[s8 CanUnitOpenBridge(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L510)||
-|80238C8|8027AD8|802764C|80294C4|802951C|SetStaffUseAction|[void SetStaffUseAction(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L676)||
-|80238F0|8027B00|8027674|80294EC|8029544|SetItemUseAction|[void SetItemUseAction(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L686)||
-|8023914|8027B24|8027698|8029510|8029568|DoUseRescueStaff|[void DoUseRescueStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L699)||
-|0|8027B64|80276D8|8029550|80295A8|DoUseSpecialDance|[void DoUseSpecialDance(struct Unit* unit, void(*func)(struct Unit*), int msgHelp)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L710)||
-|8023ED0|8028184|8027CF8|8029B54|8029BC8|DoUseRestoreStaff|[void DoUseRestoreStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1004)||
-|8023F0C|80281F0|8027D64|8029BC0|8029C34|DoUseBarrierStaff|[void DoUseBarrierStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1026)||
-|8023FE4|802825C|8027DD0|8029C2C|8029CA0|DoUseAttackStaff|[void DoUseAttackStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1048)||
+|8023700|802781C|8027390|80290E0|8029138|CanUnitUseDoorKeyItem|[s8 CanUnitUseDoorKeyItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L498)||
+|8023714|8027830|80273A4|80290F4|802914C|CanUnitOpenBridge|[s8 CanUnitOpenBridge(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L504)||
+|80238C8|8027AD8|802764C|80294C4|802951C|SetStaffUseAction|[void SetStaffUseAction(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L670)||
+|80238F0|8027B00|8027674|80294EC|8029544|SetItemUseAction|[void SetItemUseAction(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L680)||
+|8023914|8027B24|8027698|8029510|8029568|DoUseRescueStaff|[void DoUseRescueStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L693)||
+|0|8027B64|80276D8|8029550|80295A8|DoUseSpecialDance|[void DoUseSpecialDance(struct Unit* unit, void(*func)(struct Unit*), int msgHelp)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L704)||
+|8023ED0|8028184|8027CF8|8029B54|8029BC8|DoUseRestoreStaff|[void DoUseRestoreStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L998)||
+|8023F0C|80281F0|8027D64|8029BC0|8029C34|DoUseBarrierStaff|[void DoUseBarrierStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1020)||
+|8023FE4|802825C|8027DD0|8029C2C|8029CA0|DoUseAttackStaff|[void DoUseAttackStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1042)||
 |80244DC|8028B44|80286B8|802A5D4|802A668|CopyUnitToBattleStructRawStats|int CopyUnitToBattleStructRawStats(_BYTE *a1, _DWORD *a2)||
 |0|8028DE8|802896C|802A884|802A918|SetupBattleBallistaWeaponData|int SetupBattleBallistaWeaponData(int a1)||
 |0|8028E2C|80289B0|802A8C8|802A95C|FillPreBattleStats|int FillPreBattleStats(int a1, int a2)||
 |0|8028E78|80289FC|802A914|802A9A8|FillBattleStats|int FillBattleStats(int a1, int a2)||
 |0|802AA10|802A560|802CB00|802CBC8|SetupTargetBattleUnitForStaff|int SetupTargetBattleUnitForStaff(_DWORD *a1)||
-|0|802C360|802BEA0|802E628|802E6F0|GenerateFireTileTrapTargets|[void GenerateFireTileTrapTargets(int x, int y, int damage)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L370)||
+|0|802C360|802BEA0|802E628|802E6F0|GenerateFireTileTrapTargets|[void GenerateFireTileTrapTargets(int x, int y, int damage)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L371)||
 |8028304|802D7E4|802D324|8030044|80300F4|BMapVSync_InitMapAnimations|[void BMapVSync_InitMapAnimations(struct BMVSyncProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L266)||
 |8028360|802D840|802D380|80300A0|8030150|BMapVSync_Start|[void BMapVSync_Start(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L285)||
 |8028384|802D864|802D3A4|80300C4|8030174|BMapVSync_End|[void BMapVSync_End(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L293)||
@@ -2679,8 +2760,8 @@
 |80297B8|802EDB8|802E8EC|803162C|80316E0|PushUnit|int PushUnit(_BYTE *a1)||
 |8029924|802EF4C|802EA80|80317C0|8031874|PrepareArena|int PrepareArena(int a1)||
 |8029940|802EF68|802EA9C|80317DC|8031890|PrepareArena2|int PrepareArena2(int a1)||
-|802A008|802F6C4|802F1F8|8031F38|8031FEC|StoreRNStateToActionStruct|int StoreRNStateToActionStruct()||
-|802A018|802F6D4|802F208|8031F48|8031FFC|LoadRNStateFromActionStruct|int LoadRNStateFromActionStruct()||
+|802A008|802F6C4|802F1F8|8031F38|8031FEC|StoreRNStateToActionStruct|[void StoreRNStateToActionStruct() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L164)||
+|802A018|802F6D4|802F208|8031F48|8031FFC|LoadRNStateFromActionStruct|[void LoadRNStateFromActionStruct() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L169)||
 |802ABB0|80302D0|802FE08|8032C4C|8032D30|GenerateMovementMapForActiveUnit|[void GenerateMovementMapForActiveUnit(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L130)||
 |802ABF4|8030314|802FE4C|8032C90|8032D74|ResetPathArrow|[void ResetPathArrow(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L138)||
 |802CB50|8032CCC|803279C|8035848|8035748|EndBottomHelpText|int EndBottomHelpText()||
@@ -2715,7 +2796,8 @@
 |803C288|8044AD0|80442D4|804987C|8048A6C||||
 |803C2B0|8044AF8|80442FC|80498A4|8048A94||||
 |803C530|8044D78|804457C|8049B2C|8048D1C||||
-|803CA6C|80452B8|0|804A070|0||||
+|803CA6C|80452B8|0|804A070|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |803CAC8|8045314|8044B24|804A0D4|80492D8||||
 |803CF58|80457A8|8044FB8|804A584|8049788||||
 |803D6E0|8045F70|8045784|804AD2C|8049F38||||
@@ -2736,7 +2818,7 @@
 |8041834|804AA58|804A270|804F970|804EBE4|StartOrphanMenu|[struct MenuProc* StartOrphanMenu(const struct MenuDef* def)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L103)||
 |8041A38|804AC78|804A490|804FCAC|804EF20|EndAllMenus|[void EndAllMenus(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L270)||
 |8041FA4|804B210|804AA34|80502F4|804F580|MenuFrozenHelpBox|[u8 MenuFrozenHelpBox(struct MenuProc* proc, int msgid)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L606)||
-|8042524|804B928|804B14C|8050A74|804FD00|GetLinkedTargetList|char *GetLinkedTargetList()||
+|8042524|804B928|804B14C|8050A74|804FD00|GetLinkedTargetList|[struct SelectTarget* GetLinkedTargetList() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L444)||
 |8042584|804B988|804B1AC|8050AD4|804FD60|StartEkrBattleDeamon|int StartEkrBattleDeamon()||
 |80438B4|804CC14|804C438|8051EA0|805116C|EndEkrGauge|int EndEkrGauge()||
 |8044198|804D540|804CD64|80527BC|8051AC4|StartEkrDispUP|int StartEkrDispUP()||
@@ -2808,24 +2890,33 @@
 |0|805F9E4|805F1FC|806486C|806376C||||
 |0|805FA70|805F288|80648F8|80637F8||||
 |0|80613B8|8060BD0|8066318|8064DE4||||
-|0|8061448|8060C60|80663A8|0||||
+|0|8061448|8060C60|80663A8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8061A8C|80612A4|80669EC|806533C||||
 |0|8061B1C|8061334|8066A7C|80653CC||||
-|0|806205C|8061874|8066F9C|0||||
-|0|806250C|8061D24|8067450|0||||
-|0|80626F0|8061F08|8067634|0||||
+|0|806205C|8061874|8066F9C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806250C|8061D24|8067450|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80626F0|8061F08|8067634|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80627C4|8061FDC|8067708|8065498||||
-|0|80628F0|8062108|8067834|0||||
+|0|80628F0|8062108|8067834|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80629CC|80621E4|8067914|80655C4||||
-|0|8062A3C|8062254|8067984|0||||
+|0|8062A3C|8062254|8067984|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8062C68|8062480|806E940|806C61C|StartEfxDamagaMojiEffect|int StartEfxDamagaMojiEffect(int a1, char a2)||
 |80570A0|8063200|8062A18|806F1A4|806CE80||||
 |0|8063300|8062B18|806F2A4|806CF80||||
 |805854C|806397C|8063194|806FA04|806D6E8||||
 |0|80641B0|80639C8|807032C|806E014|StartEfxChillEffect|int StartEfxChillEffect(int a1)||
-|0|8064458|8063C70|80705C8|0||||
-|0|8064644|8063E5C|8070794|0||||
-|0|80646EC|8063F04|807083C|0||||
+|0|8064458|8063C70|80705C8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8064644|8063E5C|8070794|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80646EC|8063F04|807083C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8057FB8|806488C|80640A4|8070F64|806E9B4||||
 |805B1DC|80672E8|8066AFC|80733E8|8070EC4||||
 |805B9A4|8067AB0|80672C4|8073B80|807168C||||
@@ -2882,7 +2973,8 @@
 |0|8095D1C|80954EC|809EC7C|809C9D8||||
 |0|8099C28|8099268|80A2C5C|80A09A8||||
 |0|8099C60|80992A0|80A2C94|80A09E0||||
-|0|809B2A0|809A8C8|80A412C|0||||
+|0|809B2A0|809A8C8|80A412C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|809C820|80A8664|80A575C|80A1984||||
 |0|809C948|809BF94|80A5884|80A1AAC||||
 |0|809EF88|809E570|80A77EC|80A2DA8|SaveGeneralGameMetadata|int SaveGeneralGameMetadata(unsigned __int16 *a1)||
@@ -2915,7 +3007,8 @@
 |0|80AA45C|80A9580|80B2020|80AD580||||
 |0|80AB7F4|80AA92C|80B33E0|80AE964|loadGradientPalette|void loadGradientPalette(void *palette1, void *palette2, int a3, int paletteSlot, int a5, _6CStruct *parent)|调色板渐变|
 |0|80ABB94|80AACB8|80B3804|80AEBCC||||
-|8089578|80AD190|80ADAF8|80B4B34|0||||
+|8089578|80AD190|80ADAF8|80B4B34|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |808A14C|80AD968|80ACA90|80B5224|80AFF1C||||
 |0|80ADD5C|80ACE34|80B5640|80B0A24|SetBonusContentClaimed|int SetBonusContentClaimed(int a1)||
 |808A418|80AEA10|80B0294|80B62A8|80B060C||||
@@ -2944,7 +3037,7 @@
 |0|8004644|8004768|8002EBC|8002F6C|SetProcEndHandler|int SetProcEndHandler(int result, int a2)||
 |8071760|800A378|0|8006DDC|8006ED8|MapEventEngineExists|bool MapEventEngineExists()||
 |8014288|8014090|8013B70|8013A50|8013998||||
-|8018540|8019028|8018C38|8019038|8019360|SetUnitLeaderCharId|[inline void SetUnitLeaderCharId(struct Unit* unit, int charId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L336)||
+|8018540|8019028|8018C38|8019038|8019360|SetUnitLeaderCharId|[inline void SetUnitLeaderCharId(struct Unit* unit, int charId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L338)||
 |8057F4C|8064820|8064038|8070EFC|806E948||||
 |0|8079888|80790B8|80855FC|80832C4||||
 |0|807988C|80790BC|8085600|80832C8||||
@@ -2952,7 +3045,8 @@
 |8070CA8|8082DAC|808204C|808B818|80895A8|GetLastHelpBoxInfo|[const struct HelpBoxInfo* GetLastHelpBoxInfo(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2626)||
 |0|800457C|80046A0|8002DE4|8002E94|BreakProcLoop|int BreakProcLoop(int result)||
 |0|8004AA8|8004BCC|8003328|80033DC|nullsub_83|void nullsub_83()||
-|0|800527C|80053A0|8003BC0|0||||
+|0|800527C|80053A0|8003BC0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8005440|8005570|8003D80|8003E50|Text_GetXCursor|int Text_GetXCursor(int a1)||
 |0|8005444|8005574|8003D84|8003E54|Text_SetXCursor|int Text_SetXCursor(int result, char a2)||
 |0|8005450|8005580|8003D90|8003E60|Text_SetColorId|int Text_SetColorId(int result, char a2)||
@@ -2975,7 +3069,7 @@
 |8029F74|802F5B8|802F0EC|8031E30|8031EE4||||
 |0|8039454|8038FA0|803DE54|803DEC4|ShouldAiNotBattle|int ShouldAiNotBattle()||
 |8040098|80489C8|80481DC|804D57C|804C7DC||||
-|804254C|804B950|804B174|8050A9C|804FD28|GetTargetListSize|int GetTargetListSize()||
+|804254C|804B950|804B174|8050A9C|804FD28|GetSelectTargetCount|[int GetSelectTargetCount() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L456)||
 |804256C|804B970|804B194|8050ABC|804FD48||||
 |8042578|804B97C|804B1A0|8050AC8|804FD54|.gcc2_compiled._5|int gcc2_compiled__5()||
 |0|8050FF0|8050814|80569D8|8055A34||||
@@ -3153,7 +3247,7 @@
 |802192C|8024D34|80248A8|80261D8|8026234|MakeTargetListForBerserk|int MakeTargetListForBerserk(int a1)||
 |0|8024FF0|8024B64|8026588|80265E4|MakeTargetListForDanceRing|int MakeTargetListForDanceRing(int a1)||
 |8099738|8007DE0|8007F50|8026614|8026670||||
-|8023F48|80281C0|8027D34|8029C68|8029CDC|sub_8029CDC|[int sub_8029CDC(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1059)||
+|8023F48|80281C0|8027D34|8029C68|8029CDC|sub_8029CDC|[int sub_8029CDC(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1053)||
 |8006CD4|8005E50|8007160|802DDDC|802DE94|EndTradeMenuTutorialHandCursor|[void EndTradeMenuTutorialHandCursor(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L782)||
 |806DFC4|801FE34|801F9CC|802DDEC|8021AFC||||
 |0|802BB88|802B6D8|802DFE8|802E0B0|sub_802E0B0|[void sub_802E0B0(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L905)||
@@ -3161,8 +3255,8 @@
 |0|802BBB8|802B6E8|802E018|802E0E0|sub_802E0E0|[void sub_802E0E0(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L920)||
 |0|802BBC8|802B708|802E028|802E0F0|sub_802E0F0|[void sub_802E0F0(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L925)||
 |0|802BBD8|802B718|802E038|802E100|sub_802E100|[void sub_802E100(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L930)||
-|0|802BFE4|802BB24|802E2A4|802E36C|sub_802E36C|[void sub_802E36C(int x, int y, int turnCountdown, int turnInterval)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L141)||
-|0|801001C|0|80327AC|8032860|BATTLE_DeleteLinkedMOVEUNIT|int BATTLE_DeleteLinkedMOVEUNIT(int a1)||
+|0|802BFE4|802BB24|802E2A4|802E36C|sub_802E36C|[void sub_802E36C(int x, int y, int turnCountdown, int turnInterval)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L142)||
+|0|801001C|0|80327AC|8032860|BATTLE_DeleteLinkedMOVEUNIT|[void BATTLE_DeleteLinkedMOVEUNIT(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L625)||
 |806DFD0|80202A8|801FE40|803639C|802DEB4|TradeMenu_TutorialWait_OnInit|[void TradeMenu_TutorialWait_OnInit(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L792)||
 |0|8034740|8034268|8037554|8037494||||
 |802E460|8034770|8034298|8037584|8037494||||
@@ -3311,13 +3405,16 @@
 |0|807CD78|807C304|809A7D8|8098500||||
 |0|8099810|0|809E0E8|809BE24||||
 |0|807D120|807C6AC|809E124|809BE60||||
-|0|80960C4|8095894|809EF78|0||||
+|0|80960C4|8095894|809EF78|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8096970|8096198|809FA74|809D7D4||||
 |0|8096938|8096160|809FAAC|809D80C||||
 |0|8097DD4|80961D0|809FAE4|809D844||||
 |809B2F4|808FED8|808F598|80A2DF0|808FF10||||
-|0|809B858|809AEA0|80A46C0|0||||
-|0|809B874|0|80A46DC|0||||
+|0|809B858|809AEA0|80A46C0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B874|0|80A46DC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80841EC|80478B0|80470C4|80A7670|80A2C2C||||
 |805DEBC|80635E4|8064AB0|80AB73C|80A6D24||||
 |0|80A4618|80A39A4|80AD9A4|80A8FD0||||
@@ -3388,16 +3485,18 @@
 |0|8007A5C|8007BCC|80063F8|80064F4|NewFace2|int NewFace2(int a1, int a2, __int16 a3, int a4, int a5)||
 |0|80A71EC|80A652C|80B08F0|80ABE3C||||
 |8030270|8036DD8|8036900|803B810|803B808|AiFindUnitSafestTileToMoveTo|bool AiFindUnitSafestTileToMoveTo(int a1, _WORD *a2)||
-|0|806238C|8061BA4|80672D0|0||||
+|0|806238C|8061BA4|80672D0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8035734|803CC50|803C79C|8041B9C|8041C1C|SioVSync_8041C1C|int SioVSync_8041C1C()||
 |8039E04|80415D4|8040ED8|80464FC|8046580||||
 |0|8061600|8060E18|8066560|8064EB0||||
 |0|8019C50|8019868|8019C78|8019FA0|RefreshUnitsOnBmMap|[void RefreshUnitsOnBmMap(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L520)||
 |0|8060014|805F82C|8064E64|8063D64||||
-|8083688|809EAAC|809E094|80A730C|0|PrintPassword|int PrintPassword(int a1, int a2)||
+|8083688|809EAAC|809E094|80A730C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |802C8F8|8032870|8032340|80353E8|80354E0||||
 |8022CB4|8026D24|8026898|80283C8|8028434|ProcessTurnSupportExp|[void ProcessTurnSupportExp(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L177)||
-|80182D0|8018A4C|801865C|80188EC|8018BD8|CanUnitMove|[s8 CanUnitMove(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1301)||
+|80182D0|8018A4C|801865C|80188EC|8018BD8|CanUnitMove|[s8 CanUnitMove(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1303)||
 |0|80B98F8|80B8D98|80BBE08|80B734C||||
 |803C094|80448E8|80440E8|8049694|8048884||||
 |805108C|805A8B8|805A0D0|8060C60|805FB60||||
@@ -3406,10 +3505,11 @@
 |0|80075F0|8007760|8006038|8006134||||
 |8088870|80A4D80|80A4108|80AE100|80A96EC||||
 |0|803AF8C|803AAD8|803F9C0|803FA40|AiTryDoStaff|int AiTryDoStaff(int a1)||
-|0|8043BCC|80433F0|80489C8|0||||
+|0|8043BCC|80433F0|80489C8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |805BDC0|8067ED4|80676E8|8073F94|8071AB0||||
 |804F03C|8058BB0|80583C8|805EC5C|805DB5C|EfxFire_Main|int EfxFire_Main(int a1)||
-|80177C4|8017E0C|8017A1C|8017C40|8017F20|UnitAutolevelWExp|[void UnitAutolevelWExp(struct Unit* unit, const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L736)||
+|80177C4|8017E0C|8017A1C|8017C40|8017F20|UnitAutolevelWExp|[void UnitAutolevelWExp(struct Unit* unit, const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L738)||
 |0|8083BB4|80831B4|808C840|808A530||||
 |8034094|803B44C|803AF98|803FE80|803FF00||||
 |802E5C4|8034EBC|80349E4|8039828|80397B0|CpOrderBerserkInit|[void CpOrderBerserkInit(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L53)||
@@ -3417,9 +3517,11 @@
 |8035DC8|803D2E4|803CE34|8042238|80422B8||||
 |80503F8|8059C30|8059448|8060014|805EF14||||
 |8051D0C|805B6B4|805AECC|8060FC0|805FEC0|DivineSfxLoop|int DivineSfxLoop(int a1)||
-|0|80BA640|80B9B38|80BCA74|0||||
-|80275B0|802C8EC|802C42C|802EC08|802ECD0|GetRescueStaffeePosition|int GetRescueStaffeePosition(int a1, int a2, int *a3, int *a4)||
-|0|8043D14|8043538|8048B10|0||||
+|0|80BA640|80B9B38|80BCA74|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80275B0|802C8EC|802C42C|802EC08|802ECD0|GetRescueStaffeePosition|[void GetRescueStaffeePosition(struct Unit* unit, struct Unit* target, int* xOut, int* yOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L134)||
+|0|8043D14|8043538|8048B10|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8020D90|8020928|8021960|8021C68||||
 |0|8098430|8097CAC|80A1610|809F370||||
 |0|8016620|80161A4|801631C|8016574|CanUnitUseWeapon|[s8 CanUnitUseWeapon(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L306)||
@@ -3432,7 +3534,7 @@
 |802E750|8035044|8034B6C|80399B0|8039938|GetUnitAiPriority|[int GetUnitAiPriority(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L142)||
 |8032C2C|8039DF0|803993C|803E808|803E878|AiUnitGetClosestEscapePointData|char *AiUnitGetClosestEscapePointData()||
 |0|80096E0|8009850|80081A0|80082A4||||
-|802B154|8030D08|803081C|8033700|80337F0||||
+|802B154|8030D08|803081C|8033700|80337F0|sub_80337F0|[void sub_80337F0(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L653)||
 |8018D90|80198EC|8019504|8019914|8019C3C|RenderBmMap|[void RenderBmMap(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L379)||
 |806EA24|808068C|807F8D4|8088E74|8086BB8|StartScreenMenuScrollingBg|int StartScreenMenuScrollingBg(signed int a1, int a2, signed int a3)||
 |8014E98|8014CA0|8014824|80145DC|80145C8||||
@@ -3468,7 +3570,8 @@
 |8019028|8019B84|801979C|8019BAC|8019ED4|RenderBmMapLine|[void RenderBmMapLine(u16 yOffset) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L488)||
 |8018F5C|8019AB8|80196D0|8019AE0|8019E08|RenderBmMapColumn|[void RenderBmMapColumn(u16 xOffset) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L456)||
 |0|80066E0|8006850|8005110|8005208|_DisplayAIS|int DisplayAIS(int a1)||
-|0|8064478|8063C90|80705E8|0||||
+|0|8064478|8063C90|80705E8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8034CC0|803C0DC|803BC28|80409F8|8040A78||||
 |809AA98|808FF58|808F618|80987D8|80964F4||||
 |0|8058158|8057970|805E19C|805D09C||||
@@ -3477,9 +3580,11 @@
 |80567E8|805F4C8|805ECE0|8064350|8063250||||
 |8039B5C|8041328|8040C24|8046250|80462D4||||
 |0|8013C48|8013728|8013608|8013550|WriteFadedPaletteFromArchive|int WriteFadedPaletteFromArchive(int a1, int a2, int a3, int a4)||
-|0|80BA960|80B9E58|80BCD74|0||||
-|804E124|8057C60|8057478|805DC9C|0||||
-|8017C84|801835C|8017F6C|80181F4|80184E0|UnitGetDeathDropLocation|[void UnitGetDeathDropLocation(struct Unit* unit, int* xOut, int* yOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1004)||
+|0|80BA960|80B9E58|80BCD74|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804E124|8057C60|8057478|805DC9C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8017C84|801835C|8017F6C|80181F4|80184E0|UnitGetDeathDropLocation|[void UnitGetDeathDropLocation(struct Unit* unit, int* xOut, int* yOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1006)||
 |0|8020C44|80207DC|8021828|8021B30||||
 |802E7C8|80350BC|8034BE4|8039A28|80399B0|BuildAiUnitList|[int BuildAiUnitList(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L167)||
 |8032AE0|8039C90|80397DC|803E6A8|803E718|AiUnitTryHealSelf|signed int AiUnitTryHealSelf()||
@@ -3511,12 +3616,14 @@
 |0|8010630|80101CC|8011870|8011784||||
 |805BA2C|8067B38|806734C|8073C08|8071714||||
 |802097C|8023C9C|8023810|8024C9C|8024CEC|GetPhaseAbleUnitCount|[int GetPhaseAbleUnitCount(int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L8)||
-|0|809E9DC|809DFC4|80A723C|0||||
+|0|809E9DC|809DFC4|80A723C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8020064|8023038|8022BC0|8023CD4|8023D14||||
 |80825B8|809115C|8090818|8099B70|809788C||||
 |805B13C|8067248|8066A5C|8073348|8070E24||||
 |8032838|80399E8|8039534|803E400|803E470||||
-|80830AC|809E3FC|809D9E4|80A6C60|0||||
+|80830AC|809E3FC|809D9E4|80A6C60|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |800ACA4|80090C0|8009230|8007B48|8007C4C||||
 |8057578|806390C|8063124|806F994|806D678||||
 |803A9FC|8042224|8041B48|8047140|804720C||||
@@ -3532,31 +3639,35 @@
 |8025C7C|802A860|802A3B0|802C94C|802CA14|BeginBattleAnimations|int BeginBattleAnimations()||
 |80430C4|804C440|804BC64|8051674|8050940|ekrBattle_8050940|int ekrBattle_8050940(int a1)||
 |80452B8|804E54C|804DD70|80537D4|8052AE4||||
-|804E1C0|8057CFC|8057514|805DD38|0||||
+|804E1C0|8057CFC|8057514|805DD38|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80ADBCC|80ACCF4|80B54AC|80B0894|DrawBonusItemMenuEntry|int DrawBonusItemMenuEntry(signed int a1)||
 |0|80AE0D4|80AD1AC|80B5954|80B0D38|ClaimBonusItemMenu_MainLoop|int ClaimBonusItemMenu_MainLoop(int a1)||
-|0|8012CE0|801265C|8009950|0||||
+|0|8012CE0|801265C|8009950|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80350C8|803C5E4|803C130|8041530|80415B0||||
 |0|80A8F68|80A8054|80B0C64|80AC1BC||||
 |8042AC4|804BE84|804B6A8|8051024|80502B0|ekrBattle_StartUIPaletteAnimations|int ekrBattle_StartUIPaletteAnimations(int a1)||
 |8026CE0|8023924|8023498|8024874|80248C4|RideCommandUsability|signed int RideCommandUsability()||
 |80322AC|8039458|8038FA4|803DE58|803DEC8|AiSimulateBattle|signed int AiSimulateBattle(unsigned __int8 *a1)||
 |0|8012718|8012084|8009230|8009340|AP_ExecFrame|[s8 AP_ExecFrame(struct APHandle* handle) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L110)||
-|0|809B028|809A650|80A3EF8|0||||
+|0|809B028|809A650|80A3EF8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8029C4C|802F290|802EDC4|8031B0C|8031BC0|GetArenaBetterItem|void *GetArenaBetterItem(unsigned __int16 a1)||
 |0|8006518|8006688|8004F48|8005040|AdvanceAIS|signed int AdvanceAIS(int a1)||
 |803CDD4|804561C|8044E2C|804A3F0|80495F4||||
 |0|801B84C|801B470|801B8E8|801BC1C||||
 |802407C|8028654|80281C8|802A0C8|802A13C||||
 |0|80A53C4|80A474C|80AE774|80A9D20||||
-|0|80A57BC|0|80AEBAC|0||||
+|0|80A57BC|0|80AEBAC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8030B94|8037914|8037460|803C2F4|803C364||||
 |0|8005010|8005134|800391C|80039D0|PrintStringToDBG|int PrintStringToDBG(_BYTE *a1)||
 |8036130|803D64C|803D19C|80425A4|8042620||||
 |0|800AAE0|800AB38|801135C|8011270|PopupProc_Display|int PopupProc_Display(int a1)||
 |803CFE4|8045848|8045058|804A624|8049828||||
 |8076314|808B520|808ABC4|80944C4|80921CC||||
-|802A6D8|802FD28|802F85C|80326C0|8032774|BATTLE_GOTO1_IfNobodyIsDead|int BATTLE_GOTO1_IfNobodyIsDead(unsigned __int16 **a1)||
+|802A6D8|802FD28|802F85C|80326C0|8032774|BATTLE_GOTO1_IfNobodyIsDead|[void BATTLE_GOTO1_IfNobodyIsDead(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L567)||
 |803EE7C|8047784|8046F98|804C5A0|804B800|BeginLinkArenaBattle|int BeginLinkArenaBattle()||
 |804F8A4|8063998|80631B0|806FA20|806D704||||
 |8016720|8016984|801650C|8016688|80168E0|DrawItemMenuLineLong|[void DrawItemMenuLineLong(struct TextHandle* text, int item, s8 isUsable, u16* mapOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L422)||
@@ -3570,7 +3681,8 @@
 |0|80AFA70|80AEB38|80B7220|80B2608||||
 |801AE60|801C108|801BD64|801C0D4|801C448|DebugMenu_FogIdle|int DebugMenu_FogIdle(int a1, int a2)||
 |0|809FB70|809F134|80A8338|80A38F4|LoadBonusContentData|signed int LoadBonusContentData(unsigned __int16 *a1)||
-|0|8099DC8|8099408|80A2DF8|0||||
+|0|8099DC8|8099408|80A2DF8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8084A10|80A07C8|809FDFC|80A8FD8|80A4594||||
 |0|808A55C|8089C00|80934BC|80911E4||||
 |805DF90|806A160|8069980|8076848|807DBE4||||
@@ -3605,7 +3717,8 @@
 |80879C0|80A3CF4|80A3080|80ACFFC|80A85E4||||
 |0|802F154|802EC88|80319D0|8031A84|LoadArenaOpponentStruct|int LoadArenaOpponentStruct()||
 |0|802250C|8022094|8023198|80231D0||||
-|8083378|809E6C0|809DCA8|80A6F1C|0||||
+|8083378|809E6C0|809DCA8|80A6F1C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8039580|8040D4C|8040640|8045C8C|8045CEC||||
 |801CA50|801E364|801DFC0|801E3A4|801E748|UpdateMenuItemPanel|int UpdateMenuItemPanel(signed int a1)||
 |8046DA0|804FE74|804F698|8055704|8054A1C|StartEfxStatusUnit|int StartEfxStatusUnit(int a1)||
@@ -3641,7 +3754,7 @@
 |0|80A517C|80A4504|80AE508|80A9AF4||||
 |803848C|803FBD0|0|8044B14|8044B78||||
 |801B49C|801CA28|801C624|801C8E4|801CC7C|DisplayActiveUnitEffectRange|int DisplayActiveUnitEffectRange()||
-|802B784|8031664|803117C|803411C|8034214|ShrinkPlayerUnitList|int ShrinkPlayerUnitList()||
+|802B784|8031664|803117C|803411C|8034214|ShrinkPlayerUnits|[void ShrinkPlayerUnits() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1090)||
 |8092E68|809F9D0|809EF94|80A82B4|80A3870||||
 |804FB6C|80596E0|8058EF8|805F794|805E694||||
 |8075D34|808AF78|808A61C|8093EF8|8091C00||||
@@ -3651,7 +3764,8 @@
 |8055134|805DDC0|805D5D8|8062C14|8061B14||||
 |8026928|802B9C4|802B514|802DB3C|802DC04|TradeMenu_HelpBox_OnLoop|[void TradeMenu_HelpBox_OnLoop(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L665)||
 |8007140|8006148|80062B8|8004B70|8004C68||||
-|0|809EC74|809E25C|80A74D4|0||||
+|0|809EC74|809E25C|80A74D4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8034BE8|8034710|8037A6C|80379D4|GetSomeBallistaItemAt|int GetSomeBallistaItemAt(int a1, int a2)||
 |801E938|80207FC|8020394|802112C|8021434||||
 |801FCB4|8022C80|8022808|8023914|8023950||||
@@ -3662,10 +3776,10 @@
 |808F22C|80AE970|80ADA58|80B6208|80B15E8||||
 |8074778|8089AA8|8089148|80928F8|8090620||||
 |8041CCC|804AF18|804A73C|8050008|804F294|ProcessMenuDpadInput|[void ProcessMenuDpadInput(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L427)||
-|80726CC|8028354|8027EC8|8029D24|8029D98|TorchSelect_OnInit|[void TorchSelect_OnInit(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1094)||
+|80726CC|8028354|8027EC8|8029D24|8029D98|TorchSelect_OnInit|[void TorchSelect_OnInit(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1088)||
 |8088B9C|80A50A0|80A4428|80AE42C|80A9A18||||
 |0|80A50F0|80A4478|80AE47C|80A9A68||||
-|802A188|802F870|802F3A4|803212C|80321E0|ActionDrop|int ActionDrop(signed int a1)||
+|802A188|802F870|802F3A4|803212C|80321E0|ActionDrop|[s8 ActionDrop(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L262)||
 |8041284|804A27C|8049A94|804EE2C|804E0A8|UnpackUiFramePalette|[void UnpackUiFramePalette(int palId)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L186)||
 |80412DC|804A2DC|8049AF4|804EEBC|804E138|UnpackUiBarPalette|[void UnpackUiBarPalette(int palId)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L210)||
 |0|80B7100|80B62F4|80BA8F8|80B5D74||||
@@ -3678,7 +3792,8 @@
 |8029764|802ECAC|802E7E0|8031530|80315E4|GetConvoyItemSlot|[int GetConvoyItemSlot(int r0) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L75)||
 |0|80A5138|80A44C0|80AE4C4|80A9AB0||||
 |0|8026434|8025FA8|80279E0|8027A4C|HandleMapSpriteCursorHover|int HandleMapSpriteCursorHover()||
-|0|8043EDC|8043700|8048CD8|0||||
+|0|8043EDC|8043700|8048CD8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8022A38|8026A00|8026574|80280A0|802810C|HideUnitSMS|int HideUnitSMS(int a1)||
 |806C608|807AEC8|807A454|8087654|8085388||||
 |0|808A7CC|8089E70|8093744|809144C||||
@@ -3699,7 +3814,7 @@
 |8044D4C|804E048|804D86C|80532DC|80525E8|StartEfxHpBarResire|int StartEfxHpBarResire(int a1)||
 |0|80288B0|8028424|802A324|802A398||||
 |801D920|801F350|801EFCC|801F520|801F8C8||||
-|80422DC|804B6DC|804AF00|805082C|804FAB8|EndTargetSelection|int EndTargetSelection(int a1)||
+|80422DC|804B6DC|804AF00|805082C|804FAB8|EndTargetSelection|[ProcPtr EndTargetSelection(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L229)||
 |802AEE0|8030600|8030138|8032F80|803306C|GetDirectionOfPathBeforeIndex|[u8 GetDirectionOfPathBeforeIndex(u8 i) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L239)||
 |0|809FB14|809F0D8|80A82DC|80A3898||||
 |0|80A00C8|809F68C|80A8890|80A3E4C||||
@@ -3708,7 +3823,8 @@
 |8082A40|809159C|8090C58|8099FB0|8097CD8||||
 |0|80AE740|80AD820|80B5FDC|80B13BC||||
 |8055C30|805E924|805E13C|80637B4|80626B4||||
-|0|80B0F5C|80B0134|80B8B28|0||||
+|0|80B0F5C|80B0134|80B8B28|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8088A20|0|809189C|808F5C8||||
 |0|8085B0C|8085110|808E8CC|808C5D0|InitMinimugBoxMaybe|int InitMinimugBoxMaybe(int a1, unsigned __int16 **a2)||
 |0|80250B0|8024C24|8026558|80265B4|TryAddUnitToDanceRingTargetList|int TryAddUnitToDanceRingTargetList(char *a1)||
@@ -3724,7 +3840,7 @@
 |0|8007C88|8007DF8|8006710|800680C|Dialogue_InitGfx|int Dialogue_InitGfx(__int16 a1, int a2, unsigned __int8 a3)||
 |801E244|801FF3C|801FAD4|8020784|8020A8C||||
 |805C738|80688C8|80680DC|8074D78|807289C||||
-|802B6CC|8031318|8030E2C|8033D10|8033E08||||
+|802B6CC|8031318|8030E2C|8033D10|8033E08|sub_8033E08|[void sub_8033E08(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L900)||
 |0|80A4B10|80A3E98|80ADEA8|80A9494||||
 |8039A1C|80411E8|8040AE0|8046114|804619C||||
 |802619C|802B164|802ACB4|802D2F8|802D3C0|TradeMenu_HighlightUpdater_OnLoop|[void TradeMenu_HighlightUpdater_OnLoop(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L291)||
@@ -3763,7 +3879,8 @@
 |0|80607B8|805FFD0|8065674|8064568||||
 |80435AC|804C8AC|804C0D0|8051B34|8050E00||||
 |80064B4|8005A24|8005B60|8004400|80044C8|Text_AppendStringAscii|int Text_AppendStringAscii(int a1, unsigned __int8 *a2)||
-|804E2F8|8057E34|805764C|805DE74|0||||
+|804E2F8|8057E34|805764C|805DE74|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |801BAF0|801D1C0|801CDBC|801D0D4|801D470|PlayerPhase_ApplyUnitMovement|int PlayerPhase_ApplyUnitMovement(int a1)||
 |8025748|802A1E8|8029D38|802C248|802C300|UpdateBallistaUsesFromBattle|int UpdateBallistaUsesFromBattle()||
 |803C390|8044BD8|80443DC|8049988|8048B78||||
@@ -3774,10 +3891,12 @@
 |80203EC|8023398|8022F20|8024100|8024144|ArenaCommandEffect|signed int ArenaCommandEffect(int a1, int a2)||
 |0|8004370|8004494|8002BCC|8002C7C|StartProc|int StartProc(int a1, signed int a2)||
 |0|802B5E4|802B134|802D76C|802D834|TradeMenu_OnLoopUnselected|[void TradeMenu_OnLoopUnselected(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L506)||
-|0|802C140|802BC80|802E3A8|802E470|RefreshAllLightRunes|[void RefreshAllLightRunes(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L208)||
+|0|802C140|802BC80|802E3A8|802E470|RefreshAllLightRunes|[void RefreshAllLightRunes(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L209)||
 |80362B0|803D7CC|803D31C|8042720|804279C||||
-|0|80620FC|8061914|8067040|0||||
-|80832A0|809E5F0|809DBD8|80A6E4C|0|modifyPassword|void modifyPassword(int (*a1)(void))||
+|0|80620FC|8061914|8067040|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80832A0|809E5F0|809DBD8|80A6E4C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80313AC|8038130|8037C7C|803CB18|803CB88|AiScriptCmd_0C_MoveTowardsSetPoint|int AiScriptCmd_0C_MoveTowardsSetPoint(_BYTE *a1)||
 |806F594|8081458|80806FC|8089D64|8087AD8|StartPageSlide|[void StartPageSlide(u16 key, int newPage, struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1181)||
 |0|80A067C|809FCB0|80A8E8C|80A4448|GetGameTotalTime|int GetGameTotalTime()||
@@ -3791,9 +3910,11 @@
 |8014DCC|8014BD4|8014758|8014510|80144FC||||
 |0|8081EF8|808119C|808A8FC|8088670|StatScreen_Display|[void StatScreen_Display(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1760)||
 |801B9CC|801D06C|801CC68|801CF80|801D31C|EnsureCameraOntoActiveUnitPosition|signed int EnsureCameraOntoActiveUnitPosition(signed int a1)||
-|0|80BAA54|80B9F4C|80BCE68|0||||
+|0|80BAA54|80B9F4C|80BCE68|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |805E2E8|806A38C|8069BAC|8076A74|8074638||||
-|0|8044750|8043F50|80494FC|0||||
+|0|8044750|8043F50|80494FC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |803D110|8045984|8045194|804A760|8049964||||
 |804D30C|8056C78|8056490|805CCDC|805BF40|Teono|void Teono(_6CStruct *ctx)||
 |804B8E8|805506C|8054884|805B138|805A394||||
@@ -3801,7 +3922,8 @@
 |0|80973EC|8096C60|80A0568|809E2C8||||
 |0|804E658|804DE7C|8053914|8052C24||||
 |0|8088024|8087690|8090EA8|808EBD4||||
-|0|8043E08|804362C|8048C08|0||||
+|0|8043E08|804362C|8048C08|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8087944|80A3C78|80A3004|80ACF80|80A8568||||
 |0|809FDC4|809F388|80A858C|80A3B48||||
 |0|8019E50|8019A68|8019E78|801A1A0|RefreshMinesOnBmMap|[void RefreshMinesOnBmMap(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L625)||
@@ -3836,14 +3958,16 @@
 |0|80044CC|80045F0|8002D30|8002DE0|_IsolateProc|int IsolateProc(_DWORD *a1)||
 |802E224|80343F0|8033FFC|803720C|803710C||||
 |802E140|80344D4|8033F18|80372F0|80371F0||||
-|0|8032C40|8032710|80357BC|0||||
+|0|8032C40|8032710|80357BC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |804EA4C|80585BC|8057DD4|805E608|805D508|Loop6C_efxDarkbreath|int Loop6C_efxDarkbreath(int a1)||
 |8006E74|8005FEC|800615C|8004A14|8004B0C|DrawSpecialUiChar|int DrawSpecialUiChar(_WORD *a1, int a2, int a3)||
 |0|8085530|8084B34|808E2D4|808BFD4||||
 |0|805CF78|805C790|8067768|80654F8||||
 |0|80A6E44|80A6184|80B04B4|80AB9FC||||
 |8050C30|805A45C|8059C74|80607FC|805F6FC||||
-|0|806B984|806B1A4|80780DC|0||||
+|0|806B984|806B1A4|80780DC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8008B28|8006F8C|80070FC|8005A08|8005B04||||
 |0|8098B60|8098274|80A1D28|809FA88||||
 |8041EC4|804B130|804A954|8050214|804F4A0|Menu_AutoHelpBox_OnLoop|[void Menu_AutoHelpBox_OnLoop(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L560)||
@@ -3854,7 +3978,7 @@
 |80066F8|806383C|8063054|806F8C4|806D5A8||||
 |0|8094BE0|8094350|809DB30|809B86C||||
 |8042784|804BB84|804B3A8|8050CD8|804FF64|ekrBattle_Init|int ekrBattle_Init(int a1)||
-|8042310|804B710|804AF34|8050860|804FAEC|TargetSelection_HandleMoveInput|int TargetSelection_HandleMoveInput(int a1)||
+|8042310|804B710|804AF34|8050860|804FAEC|TargetSelection_HandleMoveInput|[void TargetSelection_HandleMoveInput(struct SelectTargetProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L243)||
 |0|804F464|804EC88|80548A4|8053BBC||||
 |0|8088834|8087EAC|80916AC|808F3D8||||
 |0|8012C80|80125EC|80098F0|8009A00|GameControl_HandleSelectRightL|int GameControl_HandleSelectRightL(unsigned __int16 **a1)||
@@ -3869,17 +3993,18 @@
 |0|800BF1C|800C00C|800FE0C|800FC90|TryPrepareEventUnitMovement|bool TryPrepareEventUnitMovement(int a1, int a2, int a3)||
 |801C160|801D7E0|801D3DC|801D838|801DBD4|GetSomeFacingDirection|signed int GetSomeFacingDirection(int a1, int a2, int a3, int a4)||
 |802DE60|8034110|8033C38|8036F2C|8036E2C|BKSEL_Display|int BKSEL_Display(int a1)||
-|0|802FE90|802F9C4|803281C|80328D0|BATTLE_HandleItemDrop|signed int BATTLE_HandleItemDrop(unsigned int a1)||
+|0|802FE90|802F9C4|803281C|80328D0|BATTLE_HandleItemDrop|[bool8 BATTLE_HandleItemDrop(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L653)||
 |0|8099764|8098EA8|80A28E8|80A064C||||
 |0|8053BD4|80533EC|8059954|8058B24||||
 |805DC2C|8069DDC|80695FC|80764C8|8074040||||
 |80462BC|804F284|804EAA8|80546C8|80539DC|StartEfxHitQuake|int StartEfxHitQuake(int a1, int a2, int a3)||
 |80159F0|8015818|801539C|8015434|8015410|MapMain_SwitchPhases|bool MapMain_SwitchPhases()||
-|80754F4|808A730|8089DD4|80936B0|0||||
-|0|8031198|8030CAC|8033B9C|8033C90||||
-|0|80182A8|8017EB8|8018144|8018430|UnitChangeFaction|[void UnitChangeFaction(struct Unit* unit, int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L961)||
+|80754F4|808A730|8089DD4|80936B0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8031198|8030CAC|8033B9C|8033C90|sub_8033C90|[void sub_8033C90(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L849)||
+|0|80182A8|8017EB8|8018144|8018430|UnitChangeFaction|[void UnitChangeFaction(struct Unit* unit, int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L963)||
 |8016B24|8016DA4|8016948|8016B04|8016D5C|GetWeaponLevelFromExp|[int GetWeaponLevelFromExp(int wexp) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L630)||
-|80179EC|8018054|8017C64|8017EDC|80181C8|UnitCheckStatCaps|[void UnitCheckStatCaps(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L841)||
+|80179EC|8018054|8017C64|8017EDC|80181C8|UnitCheckStatCaps|[void UnitCheckStatCaps(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L843)||
 |803239C|8039548|8039094|803DF4C|803DFBC|AiBattleGetAlliesAroundWeight|int AiBattleGetAlliesAroundWeight()||
 |0|80961B8|80959B0|809F06C|809CDD4||||
 |0|8006C48|8006DB8|80056C8|80057C0|ApplyFaceDisplayBitChange|int ApplyFaceDisplayBitChange(int a1)||
@@ -3888,9 +4013,11 @@
 |0|80A2984|0|80AB4B8|80A6AA0||||
 |0|80A9D58|80A8E44|80B18F4|80ACE54||||
 |0|806A4F8|8069D18|8076BDC|80747A4||||
-|802D438|809A294|80998D8|80A3274|0||||
-|8059B78|8043E7C|80436A0|8048C7C|0||||
-|0|80316C8|80311E0|8034180|8034278|EndPrepScreen|int EndPrepScreen()||
+|802D438|809A294|80998D8|80A3274|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8059B78|8043E7C|80436A0|8048C7C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80316C8|80311E0|8034180|8034278|sub_8034278|[void sub_8034278() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1114)||
 |0|8087EEC|8087534|8090D6C|808EA98||||
 |0|805C414|805BC2C|80613C8|80602C8|Hazymoon|void Hazymoon(_6CStruct *ctx)||
 |8036A94|803DFD4|803DB24|8042F1C|8042F98||||
@@ -3900,8 +4027,8 @@
 |0|8093E9C|80935A4|809CE9C|809ABD0||||
 |8013CA4|8013688|8013168|8013008|8012F50|Decompress|int Decompress(_BYTE *a1, int a2)||
 |8015344|801514C|8014CD0|8014AA0|8014A78||||
-|0|802C75C|802C29C|802EA48|802EB10|DisableAllLightRunes|[void DisableAllLightRunes(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L703)||
-|0|802C79C|802C2DC|802EA88|802EB50|EnableAllLightRunes|[void EnableAllLightRunes(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L720)||
+|0|802C75C|802C29C|802EA48|802EB10|DisableAllLightRunes|[void DisableAllLightRunes(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L704)||
+|0|802C79C|802C2DC|802EA88|802EB50|EnableAllLightRunes|[void EnableAllLightRunes(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L721)||
 |802ECC8|80355FC|8035124|8039F84|8039F0C|CpPerform_MoveCameraOntoUnit|int CpPerform_MoveCameraOntoUnit(signed int a1)||
 |8022724|80264F0|8026064|8027AA0|8027B0C||||
 |8016140|8016000|8015B84|8015CBC|8015CB0|Loop6C_GENS|int Loop6C_GENS(int a1)||
@@ -3912,7 +4039,8 @@
 |0|80AE608|80AD6E4|80B5EA4|80B1288||||
 |806F470|8081334|80805D8|8089C68|80879DC|PageSlide_OnLoop|[void PageSlide_OnLoop(struct StatScreenEffectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1112)||
 |0|8098754|8097E68|80A1928|809F688||||
-|809AC94|8032AD0|80325A0|8035650|0||||
+|809AC94|8032AD0|80325A0|8035650|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8032CE8|8039EAC|80399F8|803E8CC|803E93C||||
 |8076448|808B654|808AD00|80945E8|80922F0||||
 |80361A4|803D6C0|803D210|8042618|8042694||||
@@ -3926,7 +4054,7 @@
 |0|800EDBC|800EEB0|80115C8|80114DC|NewGotItemPopup|int NewGotItemPopup(int a1, __int16 a2, int a3)||
 |808D07C|80AF8F8|80AE9C0|80B707C|80B2464||||
 |804D44C|8056DB8|80565D0|805CE1C|805C080||||
-|802A514|802FB5C|802F690|80324F8|80325AC|SpriteJumpAnimation_Loop|int SpriteJumpAnimation_Loop(signed __int16 *a1)||
+|802A514|802FB5C|802F690|80324F8|80325AC|sub_80325AC|[void sub_80325AC(struct DeathDropAnimProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L471)||
 |0|809754C|8096DC0|80A06C0|809E420||||
 |803FE64|8048794|8047FA8|804D344|804C5A4||||
 |0|80B5330|80B4510|80BD218|80B8350||||
@@ -3935,17 +4063,19 @@
 |8057BB0|8063E4C|8063664|806FED4|806DBBC||||
 |8045EE8|804EEB8|804E6DC|8054304|8053618||||
 |80504F0|8059D20|8059538|8060104|805F004||||
-|8042194|804B588|804ADAC|80506E0|804F96C|TargetSelection_Loop|int TargetSelection_Loop(int a1)||
+|8042194|804B588|804ADAC|80506E0|804F96C|TargetSelection_Loop|[void TargetSelection_Loop(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L150)||
 |801D234|801EB48|801E7C4|801ED1C|801F0C4||||
 |80412B0|804A2AC|8049AC4|804EE8C|804E108|UnpackUiFrameImage|[void UnpackUiFrameImage(void* dest)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L202)||
 |803F8E0|80481EC|8047A00|804CFA8|804C208||||
-|0|806221C|8061A34|8067160|0||||
+|0|806221C|8061A34|8067160|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8096DEC|8096668|809FF74|809DCD4||||
 |8044284|804D62C|804CE50|80528A8|8051BB0|ekrDispUP_Loop|int ekrDispUP_Loop(int a1)||
-|8017B4C|80181F8|8017E08|8018084|8018370|UnitDrop|[void UnitDrop(struct Unit* actor, int xTarget, int yTarget) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L914)||
+|8017B4C|80181F8|8017E08|8018084|8018370|UnitDrop|[void UnitDrop(struct Unit* actor, int xTarget, int yTarget) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L916)||
 |0|804EDB8|804E5DC|8054200|8053514||||
-|0|80B1110|80B02E4|80B8C9C|0||||
-|8023A08|8027C58|80277CC|8029644|802969C|WarpSelect_OnIdle|[void WarpSelect_OnIdle(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L752)||
+|0|80B1110|80B02E4|80B8C9C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8023A08|8027C58|80277CC|8029644|802969C|WarpSelect_OnIdle|[void WarpSelect_OnIdle(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L746)||
 |805BD64|8067E78|806768C|8073F38|8071A54||||
 |80259A0|802A50C|802A05C|802C5D8|802C6A0|ActiveBattleUnitAdd10Exp|int ActiveBattleUnitAdd10Exp()||
 |803DAE8|80463B4|8045BC8|804B164|804A3A8||||
@@ -3961,7 +4091,8 @@
 |0|80AE33C|80AD414|80B5BB0|80B0F94||||
 |8016024|8015F24|8015AA8|8015BF0|8015BD4||||
 |0|806A7E0|806A000|8076ECC|8074A94||||
-|808344C|809E794|809DD7C|80A6FF0|0||||
+|808344C|809E794|809DD7C|80A6FF0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80435EC|804C8F4|804C118|8051B74|8050E40||||
 |0|8062B9C|80623B4|8067AE4|8065724||||
 |8032440|80395EC|8039138|803DFF8|803E068|AiBattleGetWeight_803E068|int AiBattleGetWeight_803E068()||
@@ -3974,7 +4105,8 @@
 |804D280|8056BEC|8056404|805CC50|805BEB4|Loop6C_efxDummymagic|int Loop6C_efxDummymagic(int a1)||
 |802FF20|8036A88|80365B0|803B4C8|803B4B8||||
 |803784C|803ED98|803E904|8043CDC|8043D5C||||
-|0|809AC5C|809A280|80A3B70|0||||
+|0|809AC5C|809A280|80A3B70|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |808A658|80A6DD4|80A6114|80B0444|80AB98C||||
 |0|8025024|8024B98|80264C8|8026524||||
 |805D5B0|8069770|8068F90|8075E70|8073988|NewEkrLevelup|int NewEkrLevelup(int a1)||
@@ -3986,7 +4118,7 @@
 |80358DC|803CDF8|803C944|8041D44|8041DC4|SioMain_8041DC4|int SioMain_8041DC4()||
 |80263C8|802B390|802AEE0|802D520|802D5E8|TradeMenu_UpdateSelection|[s8 TradeMenu_UpdateSelection(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L381)||
 |0|802267C|8022204|8023318|8023350|ItemSelectMenu_TextDraw|int ItemSelectMenu_TextDraw(int a1, int a2)||
-|0|802D06C|802CBAC|802F4B8|802F598||||
+|0|802D06C|802CBAC|802F4B8|802F598|sub_802F598|[void sub_802F598(struct Unit* unit, int itemIdx, s8 unk) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L582)||
 |8070410|8082394|8081634|808AD94|8088B08|HbPopulate_SSPower|[void HbPopulate_SSPower(struct HelpBoxProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2004)||
 |80859E0|80A1D18|80A1384|80AA7C0|80A5DA8||||
 |0|809EFC4|809E5AC|80A7828|80A2DE4||||
@@ -3997,13 +4129,14 @@
 |0|808E81C|808DEF0|8097740|8095460|IsUnitInCurrentRoster|signed int IsUnitInCurrentRoster(_DWORD *a1)||
 |801B04C|801C584|801C194|801C514|801C8AC|HandlePlayerCursorMovement|int HandlePlayerCursorMovement()||
 |802FE84|80369EC|8036514|803B434|803B41C|AiAreEnemiesWithin3Tiles|int AiAreEnemiesWithin3Tiles(__int16 a1, __int16 a2)||
-|0|8018BC4|80187D4|8018A60|8018D4C|GetUnitMovementCost|[const s8* GetUnitMovementCost(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1369)||
+|0|8018BC4|80187D4|8018A60|8018D4C|GetUnitMovementCost|[const s8* GetUnitMovementCost(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1371)||
 |80392F4|8040AC0|80403B0|8045A04|8045A64||||
 |0|8083950|8082F50|808C5E0|808A2D0||||
-|0|8060EAC|80606C4|8065E44|0||||
+|0|8060EAC|80606C4|8065E44|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |801AB64|801BD40|801B990|801BD8C|801C0FC||||
 |804D088|80569FC|8056214|805CA64|805BCC4|Loop6C_efxMagicQUAKE|int Loop6C_efxMagicQUAKE(int a1)||
-|8017854|8017EB0|8017AC0|8017CE4|8017FC4|UnitAutolevelCore|[void UnitAutolevelCore(struct Unit* unit, u8 classId, int levelCount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L767)||
+|8017854|8017EB0|8017AC0|8017CE4|8017FC4|UnitAutolevelCore|[void UnitAutolevelCore(struct Unit* unit, u8 classId, int levelCount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L769)||
 |0|80046E8|800480C|8002F64|8003014|ResumeEachProcMarked|int ResumeEachProcMarked(int a1)||
 |8045C90|804EC74|804E498|80540C0|80533D0|MoveBattleCameraOnto|int MoveBattleCameraOnto(int a1, unsigned __int16 a2)||
 |8070E70|8082F74|8082528|808BB14|8089804|LoadDialogueBoxGfx|int LoadDialogueBoxGfx(int a1, int a2)||
@@ -4016,9 +4149,10 @@
 |801C3E0|801DA50|801D64C|801DA8C|801DE30|GetPlayerStartCursorPosition|int GetPlayerStartCursorPosition(_DWORD *a1, _DWORD *a2)||
 |8087CB0|80A4054|80A33E0|80AD2D0|80A88B8||||
 |8016644|8016850|80163D4|801654C|80167A4|CanUnitUseStaff|[s8 CanUnitUseStaff(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L371)||
-|0|8069830|8069050|8075F34|0||||
+|0|8069830|8069050|8075F34|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |805DDA8|8069F68|8069788|8076654|80741CC||||
-|0|802D320|802CE60|802F860|802F914|ExecStatBooster|int ExecStatBooster(int a1)||
+|0|802D320|802CE60|802F860|802F914|ExecStatBoostItem|[void ExecStatBoostItem(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L750)||
 |804A500|8053A80|8053298|80597E4|80589B4|GetAllegienceId|signed int GetAllegienceId(signed int a1)||
 |8094F14|80B03E0|80AF590|80B7C78|80B3088||||
 |8044390|804D738|804CF5C|80529BC|8051CC4||||
@@ -4027,24 +4161,25 @@
 |802186C|8024C4C|80247C0|80260F0|802614C|TryAddUnitToSleepTargetList|int TryAddUnitToSleepTargetList(char *a1)||
 |80218B8|8024C98|802480C|802613C|8026198|TryAddUnitToBerzerkTargetList|int TryAddUnitToBerzerkTargetList(char *a1)||
 |804695C|804F9D8|804F1FC|8055128|8054440|StartEfxFlashHPBar|int StartEfxFlashHPBar(int a1, unsigned __int16 a2, __int16 a3)||
-|80174AC|8017A44|8017654|80176F0|8017948|UnitAddItem|[s8 UnitAddItem(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L412)||
+|80174AC|8017A44|8017654|80176F0|8017948|UnitAddItem|[s8 UnitAddItem(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L414)||
 |801A7D4|801B9E4|801B61C|801BA20|801BD58|DebugMapMenu_DisplayInfoIdle|int DebugMapMenu_DisplayInfoIdle(int a1, int a2)||
 |8055294|805DF20|805D738|8062D78|8061C78||||
-|0|8061C1C|8061434|8066B7C|0||||
+|0|8061C1C|8061434|8066B7C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |804CAD8|8056314|8055B2C|805C414|805B670||||
-|80271FC|802C618|802C158|802E8E0|802E9A8|CountDownTraps|[void CountDownTraps(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L582)||
+|80271FC|802C618|802C158|802E8E0|802E9A8|CountDownTraps|[void CountDownTraps(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L583)||
 |8092854|8006A08|8006B78|8005478|8005570|FindFreeFaceSlot|signed int FindFreeFaceSlot()||
 |0|8012AD0|801243C|80095E0|80096F0|AP_Find|[struct APHandle* AP_Find(const u16* definition) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L325)||
-|8017520|8017ACC|80176DC|8017780|80179D8|GetUnitItemCount|[int GetUnitItemCount(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L462)||
+|8017520|8017ACC|80176DC|8017780|80179D8|GetUnitItemCount|[int GetUnitItemCount(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L464)||
 |802FDF8|8036960|8036488|803B3B0|803B390||||
-|8023C50|8027EBC|8027A30|8029890|80298F0|DoUsePutTrap|[void DoUsePutTrap(struct Unit* unit, void(*func)(struct Unit*), int msgHelp)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L872)||
+|8023C50|8027EBC|8027A30|8029890|80298F0|DoUsePutTrap|[void DoUsePutTrap(struct Unit* unit, void(*func)(struct Unit*), int msgHelp)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L866)||
 |8041BD8|804AE18|804A63C|804FED8|804F164|Menu_OnIdle|[void Menu_OnIdle(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L376)||
 |8054A10|805D698|805CEB0|8062548|8061448||||
 |8024BBC|8029568|80290B8|802AF88|802B018|MakeBattleRound|signed int MakeBattleRound(int a1, int a2)||
 |0|80B7448|80B663C|80BAC4C|80B60C8||||
-|8023BE0|8027E44|80279B8|802981C|802987C|DoUseWarpStaff|[void DoUseWarpStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L849)||
+|8023BE0|8027E44|80279B8|802981C|802987C|DoUseWarpStaff|[void DoUseWarpStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L843)||
 |8047620|805093C|8050160|8056240|8055298|StartBattleAnimHitEffects|int StartBattleAnimHitEffects(int a1, int a2, int a3, int a4)||
-|8023CFC|8027F74|8027AE8|8029944|80299B8|DoUseRepairStaff|[void DoUseRepairStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L906)||
+|8023CFC|8027F74|8027AE8|8029944|80299B8|DoUseRepairStaff|[void DoUseRepairStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L900)||
 |805440C|805D08C|805C8A4|8061FE6|8060ED8||||
 |0|8009310|8009480|8007D98|8007E9C|DialogueTextChoice_OnLoop|int DialogueTextChoice_OnLoop(int a1)||
 |804DC8C|805769C|8056EB4|805D708|805C96C||||
@@ -4061,13 +4196,13 @@
 |0|80809AC|0|8089268|8086FAC|DisplayBwl|[void DisplayBwl(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L602)||
 |80373E0|803E924|803E490|8043884|8043904||||
 |0|8005A94|8005C00|8004470|8004568|GetStringTextWidthAscii|int GetStringTextWidthAscii(unsigned __int8 *a1)||
-|0|80283AC|8027F20|8029D7C|8029DF0|TorchSelect_OnIdle|[void TorchSelect_OnIdle(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1105)||
+|0|80283AC|8027F20|8029D7C|8029DF0|TorchSelect_OnIdle|[void TorchSelect_OnIdle(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1099)||
 |8033380|803A544|803A090|803EF70|803EFE0|AiIsUnitAtPositionDifferentAllegiance|bool AiIsUnitAtPositionDifferentAllegiance(int a1, int a2)||
 |804C928|80560F8|8055910|805C1F8|805B454||||
 |0|808940C|8088AA8|80922F4|8090014||||
 |8086D04|80A2FE0|80A236C|80AC314|80A78FC||||
 |8025A90|802A620|802A170|802C6F8|802C7C0|BattleApplyWeaponTriangle|int BattleApplyWeaponTriangle(int a1, unsigned __int8 *a2)||
-|0|8018B7C|801878C|8018A1C|8018D08|IsUnitMagicSealed|[s8 IsUnitMagicSealed(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1355)||
+|0|8018B7C|801878C|8018A1C|8018D08|IsUnitMagicSealed|[s8 IsUnitMagicSealed(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1357)||
 |80505A0|8059DD0|80595E8|80601B0|805F0B0||||
 |8038AA4|8040270|803FB64|80451D4|8045234||||
 |8041844|804AA68|804A280|804FA3C|804ECB0|StartMenuCore|[    struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L173)||
@@ -4083,7 +4218,8 @@
 |0|80046C4|80047E8|8002F3C|8002FEC|HaltEachProcMarked|int HaltEachProcMarked(int a1)||
 |0|80069E0|8006B50|800544C|8005544|SetFaceGfxConfig|int SetFaceGfxConfig(int *a1)||
 |0|8040230|803FB24|8045190|80451F0|NameSelect_80451F0|int NameSelect_80451F0()||
-|0|806452C|8063D44|807069C|0||||
+|0|806452C|8063D44|807069C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8037EA0|803F3F0|803EF60|8044340|80443B0||||
 |0|8078C48|8078478|8085C34|80838FC|EvCheck04_CHARASM|signed int EvCheck04_CHARASM(int *a1)||
 |802E8E0|80351D4|8034CFC|8039B40|8039AC8|CpDecide_Suspend|[void CpDecide_Suspend(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_decide.c#L56)||
@@ -4092,15 +4228,17 @@
 |801D160|801EA74|801E6F0|801EC48|801EFF0||||
 |803B5A0|8042DCC|8042728|8047CA0|8047D88|SioMenu_8047D88|int SioMenu_8047D88(int a1)||
 |803B31C|8042B48|80424A4|8047A4C|8047B34|SioMenu_8047B34|int SioMenu_8047B34(int a1)||
-|0|809A47C|8099AC0|80A3458|0||||
+|0|809A47C|8099AC0|80A3458|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80A0D58|80A038C|80A95D4|80A4B90|GGM_GetCompletionCount|int GGM_GetCompletionCount(int a1)||
 |0|8090930|808FFF0|8099438|8097154||||
-|0|8018FC8|8018BD8|8018FCC|0||||
-|806DE20|802849C|8028010|8029E64|8029ED8|DoUseTorchStaff|[void DoUseTorchStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1151)||
+|0|8018FC8|8018BD8|8018FCC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806DE20|802849C|8028010|8029E64|8029ED8|DoUseTorchStaff|[void DoUseTorchStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1145)||
 |80296F4|802EC3C|802E770|80314BC|8031570|GetConvoyItemCount|[int GetConvoyItemCount() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L41)||
 |804B720|8054EBC|80546D4|805AF74|805A1D0||||
 |804B768|8054F04|805471C|805AFC0|805A21C||||
-|8018224|8018968|8018578|8018804|8018AF0|GetUnitAidIconId|[int GetUnitAidIconId(u32 attributes) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1259)||
+|8018224|8018968|8018578|8018804|8018AF0|GetUnitAidIconId|[int GetUnitAidIconId(u32 attributes) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1261)||
 |8074384|80896EC|8088D8C|8092604|8090324||||
 |801C3C8|800EC2C|800ED20|800D45C|800D198|EventEngineExists|[u8 EventEngineExists(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/event.c#L366)||
 |8089B3C|80A62F4|80A560C|80AF790|80AACBC||||
@@ -4115,7 +4253,8 @@
 |0|80070AC|800721C|8005B28|8005C24|ShouldPortraitBeSmol|signed int ShouldPortraitBeSmol(int a1)||
 |8076060|808B288|808A92C|8094208|8091F10||||
 |0|8098C48|809835C|80A1E10|809FB70||||
-|0|8062940|8062158|8067884|0||||
+|0|8062940|8062158|8067884|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80995B0|8097D1C|809759C|80A0ED8|809EC38||||
 |0|80BA15C|80B9654|80BC590|80B7B30||||
 |802CC80|8032E34|8032904|8035A2C|803592C|ExecSelfDamage|int ExecSelfDamage(_DWORD *a1, int a2)||
@@ -4127,7 +4266,8 @@
 |0|8096330|8095B28|809F418|809CF48||||
 |0|80935C4|8092CB8|809C5EC|809A31C||||
 |0|80A5A60|80A4D74|80AEF60|80AA47C||||
-|0|80055C8|0|8003F10|0|String_GetEnd|unsigned __int8 *String_GetEnd(unsigned __int8 *result)||
+|0|80055C8|0|8003F10|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8073454|80870E8|80866FC|808FEB0|808DBC8||||
 |804B8B0|8055034|805484C|805B0FC|805A358||||
 |0|8083C54|8083254|808C8E0|808A5D0||||
@@ -4162,15 +4302,16 @@
 |801FE30|8022DFC|8022984|8023A90|8023ACC|StaffCommandEffect|signed int StaffCommandEffect(int a1, int a2)||
 |0|8055624|8054E3C|805B710|805A96C||||
 |0|8091628|8090CE4|809A040|8097D68||||
-|0|809A9FC|809A024|80A390C|0||||
+|0|809A9FC|809A024|80A390C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80057C4|8005900|80041A0|8004268|DrawGlyph1DTileNoClear|int DrawGlyph1DTileNoClear(int a1, int a2)||
 |8047C28|8050F54|8050778|8056920|805598C|GetSpellAnimationStartFrame|signed int GetSpellAnimationStartFrame()||
 |8024DF0|80297D4|8029324|802B4CC|802B578|UpdateBattleTriangleAttackData|int UpdateBattleTriangleAttackData(int a1, int a2)||
 |80152E8|80150F0|8014C74|8014A3C|8014A14||||
-|8018500|8018FE4|8018BF4|8018FEC|80192F4|GetUnitMiniPortraitId|[inline int GetUnitMiniPortraitId(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L322)||
+|8018500|8018FE4|8018BF4|8018FEC|80192F4|GetUnitMiniPortraitId|[inline int GetUnitMiniPortraitId(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L324)||
 |0|8093540|8092C34|809C4EC|809A21C||||
 |8020488|8023454|8022FC8|8024198|80241DC|StealCommandEffect|signed int StealCommandEffect(int a1, int a2)||
-|0|8030958|8030490|803333C|803342C||||
+|0|8030958|8030490|803333C|803342C|SALLYCURSOR_RemoveSupplyUnit|[void SALLYCURSOR_RemoveSupplyUnit() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L472)||
 |0|801D50C|801D108|801D590|801D92C|Setup6CRangeDisplayGfx|int Setup6CRangeDisplayGfx()||
 |80419CC|804AC0C|804A424|804FC34|804EEA8|EndMenu|[struct Proc* EndMenu(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L247)||
 |0|80B73FC|80B65F0|80BABF4|80B6070|GetOverallRank|signed int GetOverallRank(int a1, int a2, int a3, int a4, int a5)||
@@ -4214,7 +4355,7 @@
 |8025A38|802A5A8|802A0F8|802C678|802C740||||
 |0|80931F8|80928EC|809C178|8099E98||||
 |0|80B4B08|80B3CD0|80C83A4|80C35EC||||
-|0|80313E8|8030EFC|8033DDC|8033ED4|CallCursorShop|int CallCursorShop(int a1)||
+|0|80313E8|8030EFC|8033DDC|8033ED4|CallCursorShop|[void CallCursorShop(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L934)||
 |80875FC|80A3930|80A2CBC|80ACC4C|80A8234||||
 |803AAF8|8042320|8041C44|804723C|8047308||||
 |80873CC|80A36F8|80A2A84|80ACA38|80A8020||||
@@ -4244,17 +4385,20 @@
 |0|8097E64|80976F0|80A102C|809ED8C||||
 |0|801D844|801D440|801D8A0|801DC3C|Loop6C_KOIDO|int Loop6C_KOIDO(int a1)||
 |80197B4|801A3F0|801A010|801A4D0|801A7F4|RevertMovementScript|[void RevertMovementScript(u8* begin, u8* end)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L262)||
-|0|8017A64|8017674|8017714|801796C|UnitClearInventory|[void UnitClearInventory(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L430)||
+|0|8017A64|8017674|8017714|801796C|UnitClearInventory|[void UnitClearInventory(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L432)||
 |8047358|80503A0|804FBC4|8055CD0|8055000|StartEndEfxSpellCast|int StartEndEfxSpellCast()||
 |8086D44|80A3020|80A23AC|80AC358|80A7940||||
 |0|802A5D0|802A120|802C6A4|802C76C|BattleReverseWTriangeEffect|int BattleReverseWTriangeEffect(int a1, int a2)||
-|808E7CC|8044004|8043828|8048DC0|0||||
+|808E7CC|8044004|8043828|8048DC0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8084798|80A0358|809F98C|80A8B48|80A4104|SaveClearedBWLAndChapterWinData|int SaveClearedBWLAndChapterWinData(int a1)||
 |0|80AD260|80AC384|80B4C30|80B0018||||
-|8038160|80439BC|80431E0|80487D8|0||||
+|8038160|80439BC|80431E0|80487D8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80799C0|80791F0|8085658|8083320|GetCurrentChapterBallistae2Ptr|int GetCurrentChapterBallistae2Ptr()||
 |8022DB4|8026E1C|8026990|80284C0|802852C|GetAffinityBonuses|[static const struct SupportBonuses* GetAffinityBonuses(int affinity)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L239)||
-|8083180|809E4D0|809DAB8|80A6D34|0||||
+|8083180|809E4D0|809DAB8|80A6D34|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |801E7B8|8020674|802020C|8020FB8|80212C0||||
 |8030230|8036D98|80368C0|803B7D0|803B7C8|AiGetBestItemSlotIndexToSteal|int AiGetBestItemSlotIndexToSteal(int a1)||
 |8037E14|803F364|803EED4|804421C|8044324||||
@@ -4279,12 +4423,14 @@
 |0|809DFE8|809D5D0|80A6878|80A2AAC||||
 |804CF34|805689C|80560B4|805C934|805BB84||||
 |803CCBC|8045504|8044D14|804A2D0|80494D4||||
-|0|8050530|804FD54|8055E64|0||||
-|0|8050548|804FD6C|8055E80|0||||
-|801743C|80179D8|80175E8|8017680|80178D8|SetUnitStatus|[void SetUnitStatus(struct Unit* unit, int status) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L370)||
+|0|8050530|804FD54|8055E64|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8050548|804FD6C|8055E80|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801743C|80179D8|80175E8|8017680|80178D8|SetUnitStatus|[void SetUnitStatus(struct Unit* unit, int status) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L372)||
 |802AFF8|8030718|8030250|803309C|803318C|DrawPathArrow|[void DrawPathArrow(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L278)||
 |8047ED4|80513B0|8050BD4|8056D7C|8055DF4|ekrBattleStarting_8055DF4|int ekrBattleStarting_8055DF4(signed __int16 *a1)||
-|0|8018C04|8018814|8018AA4|8018D90|GetClassSMSId|[int GetClassSMSId(int classId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1388)||
+|0|8018C04|8018814|8018AA4|8018D90|GetClassSMSId|[int GetClassSMSId(int classId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1390)||
 |802FA58|80365C0|80360E8|803AFFC|803AFDC|AiSomethingCheckPick|signed int AiSomethingCheckPick(int a1, _DWORD *a2, _WORD *a3)||
 |0|8093DC8|80934BC|809CDBC|809AAF0||||
 |8015208|8015010|8014B94|8014958|8014930||||
@@ -4335,7 +4481,7 @@
 |803B45C|8042C88|80425E4|8047B78|8047C60|SioMenu_8047C60|int SioMenu_8047C60(int a1)||
 |8088404|80A4924|80A3CAC|80ADCA4|80A9290||||
 |8005768|8005320|8005450|8003C68|8003D38|SetFont|int SetFont(int a1)||
-|8018620|8019108|8018D20|801911C|8019444|GetClassData|[inline const struct ClassData* GetClassData(int classId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L193)||
+|8018620|8019108|8018D20|801911C|8019444|GetClassData|[inline const struct ClassData* GetClassData(int classId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L195)||
 |80354F0|803CA0C|803C558|804195C|80419DC|OnSerialCommunication|int OnSerialCommunication()||
 |0|80AE584|80AD660|80B5E00|80B11E4||||
 |0|80A5980|80A4C94|80AEDF0|80AA30C||||
@@ -4352,7 +4498,7 @@
 |0|80A56A0|0|80AEA84|80AA030||||
 |0|80054CC|80055FC|8003E0C|8003EDC|GetStringTextWidth|int GetStringTextWidth(unsigned __int8 *a1)||
 |803DEE0|80467B0|8045FC4|804B55C|804A7C0||||
-|8018528|8019010|8018C20|8019018|8019340|GetUnitLeaderCharId|[inline int GetUnitLeaderCharId(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L329)||
+|8018528|8019010|8018C20|8019018|8019340|GetUnitLeaderCharId|[inline int GetUnitLeaderCharId(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L331)||
 |803E964|8047264|8046A7C|804C018|804B278||||
 |0|80846E4|8083CE8|808D488|808B178||||
 |80928C0|80850BC|8090148|80B389C|80AEC7C||||
@@ -4363,7 +4509,7 @@
 |8037D8C|803F2DC|803EE4C|80442A8|804429C||||
 |0|80034C8|80035EC|800226C|800231C|Sound_FadeOut800231C|[void Sound_FadeOut800231C(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L67)||
 |0|80055DC|8005718|8003F28|8004004|Text_AppendString|int Text_AppendString(int a1, unsigned __int8 *a2)||
-|806C998|8031114|8030C28|8033B20|8033C10|SALLYCURSOR6C_StartUnitSwap|int SALLYCURSOR6C_StartUnitSwap(signed int a1)||
+|806C998|8031114|8030C28|8033B20|8033C10|SALLYCURSOR6C_StartUnitSwap|[void SALLYCURSOR6C_StartUnitSwap(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L831)||
 |80603C4|806CF4C|806C760|807AFE0|8078BCC|MU_FogBumpFx_DisplayLoop|[static void MU_FogBumpFx_DisplayLoop(struct MUFogBumpFxProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1049)||
 |8031900|8038A0C|8038558|803D3E0|803D450|AiTryDoOffensiveAction|int AiTryDoOffensiveAction(int a1)||
 |8071B44|807E3E8|807D6B4|808C4C8|808A1B8||||
@@ -4413,7 +4559,8 @@
 |8070DA8|8082ECC|8082440|808B99C|80896D8||||
 |805FE9C|806CA1C|806C230|807AC48|8078824|MU_StepSound_OnSecondSound|[static void MU_StepSound_OnSecondSound(struct MUStepSoundProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L878)||
 |800DB38|800ED58|800EE4C|8011730|8011644|NewGoldGotPopup|int NewGoldGotPopup(int a1, int a2, int a3)||
-|0|809B214|809A83C|80A40A0|0||||
+|0|809B214|809A83C|80A40A0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|805B2C0|805AAD8|806C32C|806A008||||
 |0|80ADAA0|80ACBC8|80B5378|80B0760|InitBonusContentClaimList|bool InitBonusContentClaimList()||
 |808A524|80A6CD0|80A602C|80B0354|80AB89C||||
@@ -4422,7 +4569,7 @@
 |0|8095830|8094FE4|809E794|809C4E4||||
 |8067720|8074968|807416C|8080EE4|807EBA4|MapAnimLevelUp_DrawActorStat|int MapAnimLevelUp_DrawActorStat(int a1, int a2, int a3, int a4, char a5)||
 |800324C|80037A8|80038CC|8002440|80024F0|sub_80024F0|[static void sub_80024F0(struct Proc *proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L158)||
-|0|807B2DC|807A868|8018CD4|8018FC0|sub_8018FC0|[void sub_8018FC0(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1509)||
+|0|807B2DC|807A868|8018CD4|8018FC0|sub_8018FC0|[void sub_8018FC0(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1511)||
 |0|805E158|805D970|8062F8C|8061E8C||||
 |805B2BC|80673C8|8066BDC|80734BC|8070FA4||||
 |8013C18|80135FC|80130DC|8012F78|8012EC0|String_CopyTo|int String_CopyTo(_BYTE *a1, _BYTE *a2)||
@@ -4431,19 +4578,22 @@
 |0|8082D1C|8081FBC|808B750|80894E0|StartHelpPromptSprite|[struct Proc* StartHelpPromptSprite(int x, int y, int palid, struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2577)||
 |0|8060124|805F93C|8079AD4|80776B0||||
 |0|808FFF4|808F6B4|8098874|8096590||||
-|0|802BFD0|802BB10|802E234|802E2FC|RemoveTrap|[struct Trap* RemoveTrap(struct Trap* trap)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L116)||
+|0|802BFD0|802BB10|802E234|802E2FC|RemoveTrap|[struct Trap* RemoveTrap(struct Trap* trap)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L117)||
 |804BACC|8055250|8054A68|805B324|805A580||||
-|80515A0|805AFC8|805A7E0|8068E34|0||||
+|80515A0|805AFC8|805A7E0|8068E34|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80669E8|80661FC|8079C04|80777E0||||
-|807089C|80828A4|8081B44|80D0DB4|0||||
+|807089C|80828A4|8081B44|80D0DB4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8060408|806CF90|806C7A4|807B010|8078BFC|MU_IsFogBumpFxActive|[u8 MU_IsFogBumpFxActive(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1061)||
 |0|80A4320|80A36AC|80AD6EC|80A8CD4||||
 |0|809DAD4|809D0BC|80A6474|80A26A8||||
 |8029F34|802F578|802F0AC|8031DEC|8031EA0||||
-|80176E4|8017D20|8017930|8017B54|8017E34|UnitLoadStatsFromChracter|[void UnitLoadStatsFromChracter(struct Unit* unit, const struct CharacterData* character) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L696)||
+|80176E4|8017D20|8017930|8017B54|8017E34|UnitLoadStatsFromChracter|[void UnitLoadStatsFromChracter(struct Unit* unit, const struct CharacterData* character) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L698)||
 |802F5E0|8036148|8035C70|803AB9C|803AB5C||||
 |804119C|8049AE8|8049300|804E670|804D8DC||||
-|808B40C|8060D2C|8060BB0|807F784|0||||
+|808B40C|8060D2C|8060BB0|807F784|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8008DFC|8008F6C|8007890|800798C||||
 |8025790|802A22C|8029D7C|802C28C|802C344|GetUnitEffectiveLevel|int GetUnitEffectiveLevel(int a1)||
 |8017174|8017664|801725C|80172F0|8017548|GetItemType|[inline int GetItemType(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L107)||
@@ -4452,14 +4602,15 @@
 |802BB0C|8031A5C|0|8034520|8034618|GetROMChapterStruct|[const struct ROMChapterData* GetROMChapterStruct(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L5)||
 |80093AC|8007F68|80080D8|80069F4|8006AF0|Dialogue_SetCharacterDisplayDelay|int Dialogue_SetCharacterDisplayDelay(char a1)||
 |0|80A5920|80A4C34|80AED2C|80AA248||||
-|801863C|8019120|8018D38|801913C|8019464|GetCharacterData|[inline const struct CharacterData* GetCharacterData(int charId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L200)||
+|801863C|8019120|8018D38|801913C|8019464|GetCharacterData|[inline const struct CharacterData* GetCharacterData(int charId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L202)||
 |8020A18|8023D50|80238C4|8024D54|8024DA4|IsSameAllegiance|[int IsSameAllegiance(int left, int right) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L56)||
 |8020A7C|8023DB4|8023928|8024DD0|8024E20|sub_8024E20|[void sub_8024E20(u32 amt) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmgold.c#L21)||
 |80030B4|80035EC|8003710|8002330|80023E0|SoundStuff_80023E0|[void SoundStuff_80023E0(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L106)||
 |8082708|80912AC|8090968|8099CC0|80979DC||||
 |0|808FFD0|808F690|80C7D54|80C2F9C||||
 |0|80BAE6C|80BA364|80AB924|80A6F0C||||
-|8065E78|80730DC|80728F0|807FF28|0||||
+|8065E78|80730DC|80728F0|807FF28|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8000E5C|8000E5C|8000E84|8000C90|8000CB8|Roll2RN|[s8 Roll2RN(int threshold) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L89)||
 |0|8028C08|802877C|802A69C|802A730|SetupBattleWeaponData|int SetupBattleWeaponData(_DWORD *a1, signed int a2)||
 |0|806C738|806BF4C|807AAB8|8078694|MU_SetFacing|[void MU_SetFacing(struct MUProc* proc, int facingId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L738)||
@@ -4477,7 +4628,7 @@
 |0|809BF40|809B568|80A4DD0|80A0FE8||||
 |0|8002BE4|0|8001BD0|8001C78|SoftResetIfKeyComboPressed|[void SoftResetIfKeyComboPressed(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L937)||
 |8042070|804B334|804AB58|8050418|804F6A4|ApplyMenuCursorVScroll|[void ApplyMenuCursorVScroll(struct MenuProc* proc, int* xRef, int* yRef)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L668)||
-|8017FAC|80186F0|8018300|801856C|8018858|TickActiveFactionTurn|[void TickActiveFactionTurn(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1129)||
+|8017FAC|80186F0|8018300|801856C|8018858|TickActiveFactionTurn|[void TickActiveFactionTurn(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1131)||
 |803D0EC|8045960|8045170|80536E0|8038ED0||||
 |8071714|80839A4|801B250|806F4BC|808A320||||
 |801F310|800F8A4|800F998|800D0BC|800CDF8|EventCC_|int EventCC_(int a1)||
@@ -4485,7 +4636,7 @@
 |805F198|806B8A0|806B0C0|8077FAC|8075B78|MakeBattlePopupTileMapFromTSA|int MakeBattlePopupTileMapFromTSA(_WORD *a1, unsigned __int16 a2)||
 |802D3B0|80335B4|8033084|80361B8|80360B8||||
 |8058720|805DB68|805D380|80C6E4C|80C2094||||
-|0|80284C8|802803C|8029E8C|8029F00|CanUnitUseItemPrepScreen|[s8 CanUnitUseItemPrepScreen(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1157)||
+|0|80284C8|802803C|8029E8C|8029F00|CanUnitUseItemPrepScreen|[s8 CanUnitUseItemPrepScreen(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1151)||
 |8016F00|8017364|8016F10|8016FE4|801723C|GetUnitItemUseReachBits|[int GetUnitItemUseReachBits(struct Unit* unit, int itemSlot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L891)||
 |0|800844C|80085BC|8006ED4|8006FD0||||
 |802D6F4|8033940|0|8036694|8036594|BattleForecase_SetupLabelText|int BattleForecase_SetupLabelText()||
@@ -4512,7 +4663,7 @@
 |8024AB4|8029460|8028FB0|802AE40|802AED0|MakeBattle|int MakeBattle()||
 |8061014|806DEC4|806D6D8|807BA2C|8079618|MU_DeathFade_OnLoop|[static void MU_DeathFade_OnLoop(struct MUEffectProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1538)||
 |80742D0|8089638|8088CD4|8092518|8090238||||
-|802368C|80277A8|802731C|8029060|80290B8|CanUnitUseTorchItem|[s8 CanUnitUseTorchItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L477)||
+|802368C|80277A8|802731C|8029060|80290B8|CanUnitUseTorchItem|[s8 CanUnitUseTorchItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L471)||
 |0|8013128|8012A70|8009DB4|8009E54||||
 |8043980|804CCE0|804C504|8051F6C|8051238||||
 |0|80B58FC|80B4ADC|80C53A8|80C05C4||||
@@ -4539,10 +4690,11 @@
 |80012E8|80013A4|80013CC|8000F54|8000FA4|GetTileIndex|[int GetTileIndex(int bg, int offset)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L108)||
 |8098340|807E444|807D710|80C7C5C|80C2EA4||||
 |0|8003B4C|8003C70|8002680|8002730|ISuspectThisToBeMusicRelated_8002730|[void ISuspectThisToBeMusicRelated_8002730(int volume, int b, int c, struct Proc *parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L259)||
-|0|8092920|8092010|80A3018|0||||
-|0|8087B00|8087148|8033DAC|8033EA4||||
+|0|8092920|8092010|80A3018|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8087B00|8087148|8033DAC|8033EA4|sub_8033EA4|[void sub_8033EA4() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L921)||
 |806E8C8|8080530|807F778|8088CFC|8086A40||||
-|0|80A77E8|80A6B00|802E960|802EA28|sub_802EA28|[void sub_802EA28(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L639)||
+|0|80A77E8|80A6B00|802E960|802EA28|sub_802EA28|[void sub_802EA28(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L640)||
 |0|802414C|8023CC0|80251CC|802521C|TryAddUnitToTradeTargetList|int TryAddUnitToTradeTargetList(int a1)||
 |0|807FE8C|807F0C4|806A41C|80680EC||||
 |804A57C|8053AFC|8053314|8059864|8058A34|GetBattleAnimRoundTypeFlags|int GetBattleAnimRoundTypeFlags(int a1)||
@@ -4552,7 +4704,7 @@
 |801D43C|801ED50|801E9CC|801EF24|801F2CC|LoadPhaseIntroGraphics|int LoadPhaseIntroGraphics()||
 |0|80A79C8|80A6CD0|808CD7C|808AA6C||||
 |0|801140C|8010FBC|80D1F10|80CD218||||
-|0|807E658|807D908|80332E4|80333D4||||
+|0|807E658|807D908|80332E4|80333D4|SALLYCURSOR_DeploySupplyUnit|[void SALLYCURSOR_DeploySupplyUnit() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L452)||
 |0|800BE6C|800BF5C|803633C|803623C||||
 |806B43C|80798D4|8079104|8086240|8083F68|CheckForCharacterEvents|bool CheckForCharacterEvents(int a1, char a2)||
 |8031088|8037E0C|8037958|8085CC4|808398C|EvCheck07_CHES|signed int EvCheck07_CHES(int a1)||
@@ -4560,7 +4712,7 @@
 |80324EC|8039698|80391E4|803E0A4|803E114|AiBattleGetTileDangerWeight|signed int AiBattleGetTileDangerWeight()||
 |0|8099FE8|8099628|80CB8BC|80C69B0||||
 |8066C70|8073ED8|80736EC|80808C4|807E584||||
-|8017410|80179AC|80175BC|8017650|80178A8|GetUnitFogViewRange|[int GetUnitFogViewRange(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L361)||
+|8017410|80179AC|80175BC|8017650|80178A8|GetUnitFogViewRange|[int GetUnitFogViewRange(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L363)||
 |0|8094178|0|80D39AC|80CECB0||||
 |806C750|802C68C|802C1CC|809A02C|8097D54||||
 |806CC80|8031B40|0|80C5314|80C0530||||
@@ -4570,7 +4722,7 @@
 |802156C|8024938|80244AC|8025B44|8025BA0|AddAsTarget_IfCanStealFrom|int AddAsTarget_IfCanStealFrom(int a1)||
 |8003CA8|8004498|80045BC|8002CF4|8002DA4|_InsertMainProc|int InsertMainProc(int a1, int a2)||
 |0|807D248|807C7D4|80BB864|80B6D24|IceCrystal4|void IceCrystal4(_6CStruct *a1)||
-|803FD40|8048670|8047E84|80331E0|80332D0||||
+|803FD40|8048670|8047E84|80331E0|80332D0|sub_80332D0|[void sub_80332D0() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L391)||
 |8003CF4|80044B8|80045DC|8002D18|8002DC8|_InsertChildProc|int InsertChildProc(int a1, int a2)||
 |8061878|806EB28|806E33C|807CAE4|807A72C|DisplayWpnBrokePopup|[void DisplayWpnBrokePopup(u32 a) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mapanim.c#L23)||
 |8061908|806EBB8|806E3CC|807CB4C|807A794|DisplayWRankUpPopup|[void DisplayWRankUpPopup(u32 a) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mapanim.c#L45)||
@@ -4588,9 +4740,10 @@
 |0|80188A4|80184B4|80D16AC|80CC990||||
 |0|8063400|8062C18|806F3A4|806D080|loadMagfcast|void loadMagfcast(void *AIS, bool ifCritical)||
 |8065540|80727BC|8071FD0|807FAA4|807D760||||
-|80237F4|8027A04|8027578|80293B4|802940C|CanUnitUseStatGainItem|[s8 CanUnitUseStatGainItem(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L617)||
+|80237F4|8027A04|8027578|80293B4|802940C|CanUnitUseStatGainItem|[s8 CanUnitUseStatGainItem(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L611)||
 |80594CC|8033544|8033014|80C9568|80C47B0||||
-|0|8005528|0|8003E6C|0||||
+|0|8005528|0|8003E6C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|800E44C|800E540|801E9B0|801ED58||||
 |80855C4|80A1824|80A0E9C|80AA1AC|80A5794|LoadSavedUnit|int LoadSavedUnit(int a1, int a2)||
 |8093394|80BB0A8|0|8098574|8096294||||
@@ -4607,10 +4760,10 @@
 |8072218|8085170|8084774|808DF20|808BC10||||
 |8041A88|804ACC8|804A4E0|804FCFC|804EF70|RedrawMenu|[void RedrawMenu(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L305)||
 |8024A88|8029434|8028F84|802AE00|802AE90|ClearRounds|int ClearRounds()||
-|8088B40|800CC28|800CD18|8033780|8033870|InitPrepScreenUnitsAndCamera|int InitPrepScreenUnitsAndCamera(int a1)||
+|8088B40|800CC28|800CD18|8033780|8033870|InitPrepScreenUnitsAndCamera|[void InitPrepScreenUnitsAndCamera() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L679)||
 |80857B0|80A1A88|80A1100|80AA460|80A5A48|SaveSuspendedGame|int SaveSuspendedGame(int a1)||
 |8074EF0|808A0F4|8089794|8093058|8090D80||||
-|0|8050038|804F85C|8018730|8018A1C|GetUnitMagBy2Range|[int GetUnitMagBy2Range(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1197)||
+|0|8050038|804F85C|8018730|8018A1C|GetUnitMagBy2Range|[int GetUnitMagBy2Range(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1199)||
 |808171C|808F010|808E6D4|809FCA0|809DA00||||
 |0|80A2CB8|80A2044|80AC094|80A767C||||
 |805A9F8|806C114|806B928|805FBF0|805EAF0||||
@@ -4631,7 +4784,7 @@
 |0|80BD304|80BC8F8|807A49C|8078078||||
 |8020ED0|8024264|8023DD8|80252F4|8025344|TryAddUnitToRescueTargetList|int TryAddUnitToRescueTargetList(int a1)||
 |8084438|809F10C|809E6FC|80A793C|80A2EF8|SaveMetadata_Load|int SaveMetadata_Load(void *buffer, int saveBlockId)||
-|800E7F0|800BDFC|800BEEC|80337D0|80338C0||||
+|800E7F0|800BDFC|800BEEC|80337D0|80338C0|sub_80338C0|[void sub_80338C0() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L698)||
 |0|80A13E8|80A0A60|80A9D54|80A533C|SaveUnit|int SaveUnit(char *a1, int a2)||
 |80468D8|804F954|804F178|8078D54|8062ED8||||
 |0|809FA3C|809F000|808605C|8083D34|CheckGlobalEventIdFrom|bool CheckGlobalEventIdFrom(signed int a1, int a2)||
@@ -4644,7 +4797,7 @@
 |804FEB8|8059A2C|8059244|806AA60|8068738||||
 |8053340|80203D0|801FF68|8072974|80703C4||||
 |801E144|801FE3C|801F9D4|8066FD4|80664A8||||
-|8023620|802775C|80272D0|80294AC|8029504|CanUnitUseFruitItem|[s8 CanUnitUseFruitItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L669)||
+|8023620|802775C|80272D0|80294AC|8029504|CanUnitUseFruitItem|[s8 CanUnitUseFruitItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L663)||
 |8094460|807C080|807B60C|80D11C8|80CC4AC||||
 |0|801C624|0|801C5A8|801C940|PlayerPhase_MainIdle|int PlayerPhase_MainIdle(unsigned __int16 **a1)||
 |0|8082A3C|8081CDC|808B438|80891AC|ApplyHelpBoxContentSize|[void ApplyHelpBoxContentSize(struct HelpBoxProc* proc, int width, int height)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2374)||
@@ -4660,7 +4813,7 @@
 |804A5DC|8053C3C|8053454|80599F8|8058BC8|BattleAIS_ExecCommands|int BattleAIS_ExecCommands()||
 |802A718|806DD98|806D5AC|80358A8|80357A8||||
 |8000BC0|8000BB8|8000BE0|8000B60|8000B88|NextRN|[int NextRN(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L7)||
-|8017654|8017C58|8017868|8017A5C|8017D3C|UnitInitFromDefinition|[void UnitInitFromDefinition(struct Unit* unit, const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L655)||
+|8017654|8017C58|8017868|8017A5C|8017D3C|UnitInitFromDefinition|[void UnitInitFromDefinition(struct Unit* unit, const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L657)||
 |8047BA4|8050EC0|80506E4|8056890|80558F4|SpellFx_InterpretBgAnimScript|signed int SpellFx_InterpretBgAnimScript(unsigned __int16 *a1, unsigned __int16 *a2, __int16 *a3)||
 |0|808AE64|808A508|8093DE4|8091AEC||||
 |0|80564B8|8055CD0|805C5D8|805B828|loadRestWINH|void loadRestWINH(int a1, int a2, __int16 a3, unsigned int a4)||
@@ -4690,7 +4843,8 @@
 |8085A48|80A1D80|80A13EC|80AA828|80A5E10|PackUnitStructForSuspend|int PackUnitStructForSuspend(_DWORD *a1, int a2)||
 |806CC68|8034D44|803486C|8037BDC|8037B44|GetCurrentPromotedLevelBonus|signed int GetCurrentPromotedLevelBonus()||
 |0|800F5A8|800F69C|800D08C|800CDC8|EventC9_|signed int EventC9_(int a1)||
-|0|805F150|805E968|8068850|0||||
+|0|805F150|805E968|8068850|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8042C74|804C034|804B858|80511E0|805046C|ekrBattle_WaitForRoundAnimations|int ekrBattle_WaitForRoundAnimations(int a1)||
 |804B6B0|8054E4C|8054664|805AEF8|805A154|GetAISLayerId|bool GetAISLayerId(int a1)||
 |804B6C4|8054E60|8054678|805AF10|805A16C|GetAISSubjectId|bool GetAISSubjectId(int a1)||
@@ -4759,10 +4913,12 @@
 |805F680|806BD80|806B5F4|806DA60|806B73C||||
 |0|802A7C4|802A314|802C8BC|802C984|SaveSnagWallFromBattle|int SaveSnagWallFromBattle(int a1)||
 |0|8012BC0|801252C|8009840|8009950||||
-|0|809B098|809A6C0|80A3F68|0||||
+|0|809B098|809A6C0|80A3F68|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |805F6E0|806BEA0|806B750|8068D3C|806699C||||
 |808A918|80A7058|80A6398|80B06C8|80ABC14||||
-|0|807E63C|807D8EC|8010E1C|0||||
+|0|807E63C|807D8EC|8010E1C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|80B6E98|80B608C|8087CB8|80859EC||||
 |0|80666D4|8065EE8|807949C|807707C||||
 |0|802ACEC|802A83C|802CE00|802CEC8|CurrentRound_ComputeDamage|int CurrentRound_ComputeDamage(int a1)||
@@ -4864,17 +5020,17 @@
 |0|0|0|8017220|8017478|SetItemUnsealedForCharacter|[void SetItemUnsealedForCharacter(int item, u8 unk) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L1019)||
 |0|8017748|8017340|80173E4|801763C|GetItemCost|[inline int GetItemCost(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L148)||
 |0|8017874|801746C|8017514|801776C|GetItemMaxCost|[inline int GetItemMaxCost(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L198)||
-|0|8017974|8017584|8017618|8017870|GetFreeBlueUnit|[struct Unit* GetFreeBlueUnit(const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L245)||
-|8017578|8017B24|8017734|80177DC|8017A34|LoadUnits|[int LoadUnits(const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L484)||
-|0|0|0|80177FC|8017A54|sub_8017A54|[void sub_8017A54(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L497)||
-|0|0|0|8017834|8017A8C|CanClassWieldWeaponType|[s8 CanClassWieldWeaponType(u8 classId, u8 wpnType) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L508)||
-|0|0|0|8017BDC|8017EBC|FixROMUnitStructPtr|[void FixROMUnitStructPtr(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L722)||
-|0|0|0|8018C5C|8018F48|IsUnitSlotAvailable|[s8 IsUnitSlotAvailable(int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1483)||
-|0|0|0|8018C94|8018F80|sub_8018F80|[void sub_8018F80(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1493)||
-|0|0|0|8018D04|8018FF0|CountAvailableBlueUnits|[u16 CountAvailableBlueUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1522)||
-|0|0|0|8018D48|8019034|CountRedUnits|[int CountRedUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1542)||
-|0|0|0|8018D88|8019074|CountGreenUnits|[int CountGreenUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1562)||
-|0|0|0|8018DC8|80190B4|ClearCutsceneUnits|[void ClearCutsceneUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1582)||
+|0|8017974|8017584|8017618|8017870|GetFreeBlueUnit|[struct Unit* GetFreeBlueUnit(const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L247)||
+|8017578|8017B24|8017734|80177DC|8017A34|LoadUnits|[int LoadUnits(const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L486)||
+|0|0|0|80177FC|8017A54|sub_8017A54|[void sub_8017A54(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L499)||
+|0|0|0|8017834|8017A8C|CanClassWieldWeaponType|[s8 CanClassWieldWeaponType(u8 classId, u8 wpnType) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L510)||
+|0|0|0|8017BDC|8017EBC|FixROMUnitStructPtr|[void FixROMUnitStructPtr(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L724)||
+|0|0|0|8018C5C|8018F48|IsUnitSlotAvailable|[s8 IsUnitSlotAvailable(int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1485)||
+|0|0|0|8018C94|8018F80|sub_8018F80|[void sub_8018F80(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1495)||
+|0|0|0|8018D04|8018FF0|CountAvailableBlueUnits|[u16 CountAvailableBlueUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1524)||
+|0|0|0|8018D48|8019034|CountRedUnits|[int CountRedUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1544)||
+|0|0|0|8018D88|8019074|CountGreenUnits|[int CountGreenUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1564)||
+|0|0|0|8018DC8|80190B4|ClearCutsceneUnits|[void ClearCutsceneUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1584)||
 |0|0|0|8019F48|801A278|sub_801A278|[void sub_801A278(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L670)||
 |0|0|0|801D3C0|801D75C|ClearActiveUnit|int ClearActiveUnit(_BYTE *a1)||
 |0|0|0|801D498|801D834||||
@@ -4896,8 +5052,8 @@
 |8022A84|8026AB4|8026628|802815C|80281C8|GetUnitSupporterCount|[int GetUnitSupporterCount(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L22)||
 |8022A94|8026AC4|8026638|8028170|80281DC|GetUnitSupporterCharacter|[u8 GetUnitSupporterCharacter(struct Unit* unit, int num)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L30)||
 |0|0|0|8028224|8028290|UnitGainSupportExp|[void UnitGainSupportExp(struct Unit* unit, int num)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L88)||
-|0|0|0|8029048|80290A0|CanUnitUsePureWaterItem|[s8 CanUnitUsePureWaterItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L469)||
-|0|0|0|802908C|80290E4|CanUnitUseAntitoxinItem|[s8 CanUnitUseAntitoxinItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L485)||
+|0|0|0|8029048|80290A0|CanUnitUsePureWaterItem|[s8 CanUnitUsePureWaterItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L463)||
+|0|0|0|802908C|80290E4|CanUnitUseAntitoxinItem|[s8 CanUnitUseAntitoxinItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L479)||
 |0|0|0|802AB54|802ABE4|BattleLoadAvoid|int BattleLoadAvoid(int a1)||
 |0|0|0|802BDE8|802BEA0||||
 |0|0|0|802C320|802C3D8||||
@@ -4905,19 +5061,19 @@
 |0|0|0|802C77C|802C844|DoSomeBattleWeaponStuff|int DoSomeBattleWeaponStuff()||
 |0|0|0|802CA34|802CAFC||||
 |0|0|0|802E048|802E110|AreKeysHeld|[s8 AreKeysHeld(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L935)||
-|0|0|0|802E128|802E1F0|GetTrapAt|[struct Trap* GetTrapAt(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L35)||
-|0|0|0|802E184|802E24C|GetTypedTrapAt|[struct Trap* GetTypedTrapAt(int x, int y, int trapType)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L61)||
-|0|0|0|802E3E4|802E4AC|GetObstacleHpAt|[int GetObstacleHpAt(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L225)||
-|0|0|0|802E570|802E638|IsMapChangeEnabled|[s8 IsMapChangeEnabled(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L325)||
-|0|0|0|802E598|802E660|UnitHideIfUnderRoof|[void UnitHideIfUnderRoof(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L338)||
-|0|0|0|802E908|802E9D0|ResetCountedDownTraps|[void ResetCountedDownTraps(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L602)||
+|0|0|0|802E128|802E1F0|GetTrapAt|[struct Trap* GetTrapAt(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L36)||
+|0|0|0|802E184|802E24C|GetTypedTrapAt|[struct Trap* GetTypedTrapAt(int x, int y, int trapType)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L62)||
+|0|0|0|802E3E4|802E4AC|GetObstacleHpAt|[int GetObstacleHpAt(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L226)||
+|0|0|0|802E570|802E638|IsMapChangeEnabled|[s8 IsMapChangeEnabled(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L326)||
+|0|0|0|802E598|802E660|UnitHideIfUnderRoof|[void UnitHideIfUnderRoof(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L339)||
+|0|0|0|802E908|802E9D0|ResetCountedDownTraps|[void ResetCountedDownTraps(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L603)||
 |802887C|802DD64|802D8A4|80305C4|8030674|WfxBlueHSync|[void WfxBlueHSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L543)||
 |8028E28|802E310|802DE50|8030B74|8030C24|DisableMapPaletteAnimations|[void DisableMapPaletteAnimations(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L898)||
 |0|0|0|8030D50|8030E04|StartBattleMap|[void StartBattleMap(struct GameCtrlProc* gameCtrl) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L970)||
-|0|0|0|8033168|8033258|GetPlayerLeaderUnitId|signed int GetPlayerLeaderUnitId()||
-|0|0|0|80332B4|80333A4||||
-|0|802FD68|802F89C|803365C|803374C|CanCharacterBePrepMoved|bool CanCharacterBePrepMoved(int a1)||
-|0|0|0|803409C|8034194||||
+|0|0|0|8033168|8033258|GetPlayerLeaderUnitId|[int GetPlayerLeaderUnitId() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L346)||
+|0|0|0|80332B4|80333A4|sub_80333A4|[bool8 sub_80333A4(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L439)||
+|0|802FD68|802F89C|803365C|803374C|CanCharacterBePrepMoved|[bool8 CanCharacterBePrepMoved(int unitId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L591)||
+|0|0|0|803409C|8034194|sub_8034194|[void sub_8034194() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1053)||
 |802B8A0|80317EC|8031304|80342B0|80343A8|CanUnitUseSeize|signed int CanUnitUseSeize()||
 |0|0|0|80346DC|80347D4|UnitInfoWindow_PositionUnitName|int UnitInfoWindow_PositionUnitName(int a1)||
 |0|0|0|80354B4|80355AC||||
@@ -5457,7 +5613,7 @@
 |0|0|0|806845C|80660B4||||
 |0|0|0|8092A5C|8090784||||
 |0|0|0|80BD304|80B843C||||
-|0|0|0|8033888|8033978||||
+|0|0|0|8033888|8033978|sub_8033978|[void sub_8033978(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L734)||
 |0|0|0|809B3F8|8099120||||
 |0|0|0|806C000|8069CDC||||
 |0|0|0|809830C|809602C||||
@@ -5500,7 +5656,7 @@
 |0|0|0|800E160|800DF20|Event17_Fade|signed int Event17_Fade(int a1)||
 |0|0|0|80D3110|80CE414||||
 |0|0|0|80D6B28|80D1EB8|_vfprintf_r|int vfprintf_r(int a1, int a2, int a3, int a4)||
-|0|0|0|8033E3C|8033F34||||
+|0|0|0|8033E3C|8033F34|sub_8033F34|[void sub_8033F34(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L959)||
 |0|0|0|80C3AA4|80BECB8||||
 |0|0|0|80C77F8|80C2A40||||
 |0|0|0|80CC5D8|80C76C8||||
@@ -5518,8 +5674,8 @@
 |0|0|0|80816DC|807F39C||||
 |0|0|0|8082B08|80807C8||||
 |0|0|0|80C5E84|80C10B8||||
-|0|0|0|8018AC4|8018DB0|UpdatePrevDeployStates|[void UpdatePrevDeployStates(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1392)||
-|0|0|0|8018B44|8018E30|LoadUnitPrepScreenPositions|[void LoadUnitPrepScreenPositions(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1418)||
+|0|0|0|8018AC4|8018DB0|UpdatePrevDeployStates|[void UpdatePrevDeployStates(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1394)||
+|0|0|0|8018B44|8018E30|LoadUnitPrepScreenPositions|[void LoadUnitPrepScreenPositions(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1420)||
 |0|0|0|807F1BC|807CE78||||
 |0|0|0|808310C|8080DCC||||
 |0|0|0|8083284|8080F44||||
@@ -5571,7 +5727,7 @@
 |0|0|0|80C476C|80BF988||||
 |0|0|0|80C4A28|80BFC44||||
 |0|0|0|80B6B7C|80B1F64||||
-|0|0|0|802EF48|802F010|ExecStatusStaff|int ExecStatusStaff(signed int a1)||
+|0|0|0|802EF48|802F010|ExecStatusStaff|[void ExecStatusStaff(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L287)||
 |0|0|0|800C644|800C36C|Event98_|int Event98_(int a1)||
 |0|0|0|800F15C|800EF48||||
 |0|0|0|800FEA4|800FD28|Event2E_CheckAt|int Event2E_CheckAt(int a1)||
@@ -5594,7 +5750,7 @@
 |0|0|0|800E9E0|800E7D0||||
 |0|0|0|800F0FC|800EEE8||||
 |0|0|0|8011ED0|8011DF4||||
-|0|0|0|8017DE8|80180CC|UnitApplyBonusLevels|[void UnitApplyBonusLevels(struct Unit* unit, int levelCount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L801)||
+|0|0|0|8017DE8|80180CC|UnitApplyBonusLevels|[void UnitApplyBonusLevels(struct Unit* unit, int levelCount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L803)||
 |0|0|0|806BE8C|8069B68||||
 |0|0|0|806BF3C|8069C18||||
 |0|0|0|8079074|8076C54||||
@@ -5683,7 +5839,7 @@
 |0|0|0|8086A58|808478C||||
 |0|0|0|8016D60|8016FB8|GetUnitItemHealAmount|[int GetUnitItemHealAmount(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L778)||
 |0|0|0|8079CC0|807789C||||
-|0|0|0|8018BCC|8018EB8|ClearTemporaryUnits|[void ClearTemporaryUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1447)||
+|0|0|0|8018BCC|8018EB8|ClearTemporaryUnits|[void ClearTemporaryUnits(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1449)||
 |0|0|0|8037FDC|8037EB0||||
 |0|0|0|80C1E74|80BD068|GetBattleMapType|signed int GetBattleMapType()||
 |0|0|0|8002570|8002620|sub_8002620|[void sub_8002620(int songId)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L203)||
@@ -5700,14 +5856,14 @@
 |0|800E71C|800E810|8010E70|8010D28|Event44_|signed int Event44_(int a1)||
 |0|800EE60|800EF54|8011640|8011554|NewItemGot|int NewItemGot(unsigned int a1, int a2, unsigned __int16 a3)||
 |0|0|0|8012700|801263C|StoreUnitWordStructs|int StoreUnitWordStructs()||
-|0|0|0|8018110|80183FC|UnitKill|[void UnitKill(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L949)||
+|0|0|0|8018110|80183FC|UnitKill|[void UnitKill(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L951)||
 |0|0|0|8019FBC|801A2EC|RevertMapChange|[void RevertMapChange(int id) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L687)||
 |0|0|0|801C884|801CC1C|PlayerPhase_InitUnitMovementSelect|int PlayerPhase_InitUnitMovementSelect()||
 |0|0|0|801D370|801D70C|MakeMoveunitForActiveUnit|int MakeMoveunitForActiveUnit()||
 |0|0|0|801E9EC|801ED94||||
 |0|0|0|801EA60|801EE08||||
 |0|0|0|8022DB8|8022DF0||||
-|0|0|0|802F134|802F208||||
+|0|0|0|802F134|802F208|ApplyNightmareEffect|[void ApplyNightmareEffect() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L392)||
 |0|0|0|803611C|803601C||||
 |0|0|0|803621C|803611C||||
 |0|0|0|8038788|8038668||||
@@ -5746,7 +5902,7 @@
 |0|0|0|800E2C8|800E070|Event19_|int Event19_(int a1)||
 |0|0|0|800F068|800EE54||||
 |0|0|0|8015530|801550C|MapMain_StartIntroFx|int MapMain_StartIntroFx(signed int a1)||
-|0|0|0|8018454|8018740|MoveActiveUnit|[void MoveActiveUnit(int x, int y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1085)||
+|0|0|0|8018454|8018740|MoveActiveUnit|[void MoveActiveUnit(int x, int y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1087)||
 |0|0|0|8021894|8021B9C||||
 |0|0|0|8025814|8025864||||
 |0|0|0|802DC10|802DCD8|TradeMenu_HelpBox_OnEnd|[void TradeMenu_HelpBox_OnEnd(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L697)||
@@ -5823,8 +5979,8 @@
 |0|0|0|8024354|802439C|StealItemMenuCommand_Effect|signed int StealItemMenuCommand_Effect(int a1, int a2)||
 |0|0|0|8025EA0|8025EFC|AddToTargetListIfNotAllied|int AddToTargetListIfNotAllied(char *a1)||
 |0|0|0|80315AC|8031660|sub_8031660|[bool8 sub_8031660() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L112)||
-|0|0|0|8032700|80327B4|DidUnitDie|bool DidUnitDie(int a1)||
-|0|0|0|8034014|803410C||||
+|0|0|0|8032700|80327B4|DidUnitDie|[bool8 DidUnitDie(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L583)||
+|0|0|0|8034014|803410C|sub_803410C|[void sub_803410C(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1033)||
 |802D2C8|8033494|8032F64|803606C|8035F6C||||
 |0|0|0|8038574|8038448||||
 |0|0|0|80396B4|803963C||||
@@ -5928,7 +6084,7 @@
 |0|0|0|80DA85C|80D5C20|.gcc2_compiled._37|int gcc2_compiled__37(int a1, int a2, int a3)||
 |80677A8|80749F0|80741F4|8080F48|807EC08|MapAnimLevelUp_GetActorStatUp|signed int MapAnimLevelUp_GetActorStatUp(int a1, int a2)||
 |0|0|0|802B164|802B1F4|RollForSureShot|int RollForSureShot(int a1)||
-|0|0|0|80323C8|803247C|ActionSteal|int ActionSteal(signed int a1)||
+|0|0|0|80323C8|803247C|ActionSteal|[s8 ActionSteal(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L408)||
 |0|0|0|8036B70|8036A70|BKSEL_DrawDetailed|int BKSEL_DrawDetailed(int a1)||
 |0|0|0|807D704|807B3BC|SetBattleAnimActorFacing|int SetBattleAnimActorFacing(int a1, int a2, signed int a3)||
 |0|0|0|80BFF10|80BB0E0||||
@@ -5963,9 +6119,9 @@
 |0|0|0|8022060|8022200||||
 |0|0|0|8022BA0|8022BD8||||
 |0|0|0|802E078|802E140|TradeMenu_InitTradeTutorial|[void TradeMenu_InitTradeTutorial(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L948)||
-|0|0|0|802FA20|802FAD0||||
-|0|0|0|80321E8|803229C|ActionCombat|int ActionCombat(signed int a1)||
-|0|0|0|8032674|8032728|KillUnitIfDefeatedBy|int KillUnitIfDefeatedBy(int a1, int a2)||
+|0|0|0|802FA20|802FAD0|sub_802FAD0|[void sub_802FAD0(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L845)||
+|0|0|0|80321E8|803229C|ActionCombat|[s8 ActionCombat(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L307)||
+|0|0|0|8032674|8032728|KillUnitOnCombatDeath|[void KillUnitOnCombatDeath(struct Unit* unitA, struct Unit* unitB) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L543)||
 |0|0|0|8035D80|8035C80||||
 |0|0|0|803836C|8038240||||
 |0|0|0|8038EB0|8038E38||||
@@ -5978,8 +6134,8 @@
 |0|0|0|804DBF4|804CE5C||||
 |8041FD8|804B29C|804AAC0|8050380|804F60C|FreezeMenu|[void FreezeMenu(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L632)||
 |0|0|0|80503A0|804F62C|ResumeMenu|[void ResumeMenu(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L640)||
-|80423E0|804B7E4|804B008|8050930|804FBBC||||
-|8042400|804B804|804B028|8050950|804FBDC||||
+|80423E0|804B7E4|804B008|8050930|804FBBC|sub_804FBBC|[void sub_804FBBC() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L299)||
+|8042400|804B804|804B028|8050950|804FBDC|sub_804FBDC|[void sub_804FBDC() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L308)||
 |8046810|804F88C|804F0B0|8054CCC|8053FE4||||
 |0|0|0|8055160|8054478||||
 |0|0|0|805FAE4|805E9E4||||
@@ -6131,7 +6287,7 @@
 |0|0|0|807CDE8|807AA4C|MapAnimProc_DisplayExpBar|int MapAnimProc_DisplayExpBar(signed int a1)||
 |0|0|0|80828EC|80805AC||||
 |0|0|0|800D374|800D0B0|EventEngine_Create|[struct EventEngineProc* EventEngine_Create(const u16* events, u8 execType) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/event.c#L301)||
-|0|0|0|802F8C4|802F978||||
+|0|0|0|802F8C4|802F978|sub_802F978|[int sub_802F978(struct Unit* unit, int itemIdx) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L768)||
 |0|0|0|8053888|8052B98|StartEfxNoDamage|int StartEfxNoDamage(int a1, int a2, char a3)||
 |0|0|0|8065944|8064838||||
 |0|0|0|806C718|806A3F4||||
@@ -6153,7 +6309,7 @@
 |0|0|0|80CE208|80C9100||||
 |0|0|0|80CE628|80C9218||||
 |0|0|0|80CE890|80C9638||||
-|0|0|0|8018E1C|8019108|sub_8019108|[void sub_8019108(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1600)||
+|0|0|0|8018E1C|8019108|sub_8019108|[void sub_8019108(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1602)||
 |0|0|0|806B5D8|80692B0||||
 |0|0|0|807DB9C|807B854|BeginBattleMapAnims|int BeginBattleMapAnims()||
 |0|0|0|80989D4|80966F0||||
@@ -6165,7 +6321,7 @@
 |0|0|0|80ABC70|80A7258||||
 |0|0|0|80C1218|80BC3D4||||
 |0|0|0|8001ACC|8001B58|SetupBackgrounds|[void SetupBackgrounds(u16 *bgConfig)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L865)||
-|0|0|0|802FF04|802FFB4|ActionPick|int ActionPick()||
+|0|0|0|802FF04|802FFB4|ActionPick|[void ActionPick(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L1072)||
 |0|0|0|80558C8|8054BF0||||
 |0|0|0|8069904|80675D4||||
 |0|0|0|8069BBC|806788C||||
@@ -6208,7 +6364,7 @@
 |0|0|0|800DA04|800D77C|Event05_SetSlot|int Event05_SetSlot(int a1)||
 |0|0|0|8011258|801116C||||
 |0|0|0|8014F04|8014EDC||||
-|0|0|0|80190C0|80193E8|GetUnitRescueName|[inline char* GetUnitRescueName(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L942)||
+|0|0|0|80190C0|80193E8|GetUnitRescueName|[inline char* GetUnitRescueName(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L944)||
 |0|0|0|80201A4|80204AC||||
 |0|0|0|80204EC|80207F4||||
 |0|0|0|8020AB4|8020DBC||||
@@ -6335,9 +6491,9 @@
 |0|0|0|80D4158|80CF460||||
 |0|0|0|80DA650|80D5A14|_swiopen|int swiopen(_DWORD *a1, __int16 a2)||
 |0|0|0|80088CC|80089D0|DialogueExists|bool DialogueExists()||
-|0|0|0|8029010|8029068|HasSelectTarget|[s8 HasSelectTarget(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L449)||
+|0|0|0|8029010|8029068|HasSelectTarget|[s8 HasSelectTarget(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L443)||
 |0|0|0|802B328|802B3D0|NullifyBattleDamageIfUsingStone|int NullifyBattleDamageIfUsingStone(int a1)||
-|0|0|0|802EB58|802EC20|ExecRestore|int ExecRestore(signed int a1)||
+|0|0|0|802EB58|802EC20|ExecRestore|[void ExecRestore(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L101)||
 |0|0|0|8037FA8|8037E7C||||
 |0|0|0|804D23C|804C49C||||
 |0|0|0|804EDFC|804E078|UnpackLegacyUiFramePalette|[void UnpackLegacyUiFramePalette(int palId)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L178)||
@@ -6433,7 +6589,7 @@
 |0|0|0|8013D10|8013C58||||
 |0|0|0|8013D28|8013C70||||
 |0|0|0|8014E64|8014E3C||||
-|0|0|0|80190EC|8019414|GetUnitStatusName|[inline char* GetUnitStatusName(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L385)||
+|0|0|0|80190EC|8019414|GetUnitStatusName|[inline char* GetUnitStatusName(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L387)||
 |0|0|0|801B820|801BB54|DebugMenu_MapEffect|[u8 DebugMenu_MapEffect(struct MenuProc *menuProc, struct MenuItemProc *menuItemProc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L129)||
 |0|0|0|801BCC0|801C030||||
 |0|0|0|801BCEC|801C05C||||
@@ -6468,22 +6624,22 @@
 |0|0|0|80244F8|8024548||||
 |0|0|0|80246D4|80247F4||||
 |0|0|0|80286A4|8028710|GetAffinityName|[char* GetAffinityName(int affinity)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L354)||
-|8023954|8027BA4|8027718|8029590|80295E8|WarpSelect_OnInit|[void WarpSelect_OnInit(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L721)||
+|8023954|8027BA4|8027718|8029590|80295E8|WarpSelect_OnInit|[void WarpSelect_OnInit(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L715)||
 |0|0|0|802D218|802D2E0|TradeMenu_InitUnitNameDisplay|[void TradeMenu_InitUnitNameDisplay(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L253)||
 |0|0|0|802DD08|802DDD0|TradeMenu_TutorialHandCursor_Update|[void TradeMenu_TutorialHandCursor_Update(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L750)||
-|0|0|0|802F65C|802F73C||||
-|0|0|0|802F680|802F760||||
+|0|0|0|802F65C|802F73C|sub_802F73C|[void sub_802F73C() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L654)||
+|0|0|0|802F680|802F760|sub_802F760|[void sub_802F760(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L661)||
 |0|0|0|8031044|80310F8|RefreshBMapDisplay_FromBattle|[void RefreshBMapDisplay_FromBattle(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1143)||
 |0|802EB7C|802E6B0|80313FC|80314B0|GameCtrl_DeclareCompletedChapter|[void GameCtrl_DeclareCompletedChapter(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1352)||
-|0|0|0|803290C|80329C0||||
-|0|0|0|80332D4|80333C4||||
-|0|0|0|803339C|803348C||||
-|0|8030A04|8030518|80333CC|80334BC||||
-|0|0|0|8033458|8033548||||
-|0|0|0|8033484|8033574||||
-|0|0|0|8033544|8033634||||
-|0|0|0|8034070|8034168||||
-|0|0|0|80340D8|80341D0|PrepScreenProc_LockGame|int PrepScreenProc_LockGame()||
+|0|0|0|803290C|80329C0|sub_80329C0|[void sub_80329C0(u8 r0) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L724)||
+|0|0|0|80332D4|80333C4|sub_80333C4|[bool8 sub_80333C4(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L447)||
+|0|0|0|803339C|803348C|sub_803348C|[void sub_803348C(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L500)||
+|0|8030A04|8030518|80333CC|80334BC|sub_80334BC|[void sub_80334BC(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L507)||
+|0|0|0|8033458|8033548|sub_8033548|[void sub_8033548(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L530)||
+|0|0|0|8033484|8033574|sub_8033574|[void sub_8033574() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L537)||
+|0|0|0|8033544|8033634|sub_8033634|[void sub_8033634() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L555)||
+|0|0|0|8034070|8034168|sub_8034168|[void sub_8034168() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1047)||
+|0|0|0|80340D8|80341D0|sub_80341D0|[void sub_80341D0() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1068)||
 |0|0|0|8034964|8034A5C||||
 |0|0|0|8034A18|8034B10||||
 |0|0|0|8034AEC|8034BE4||||
@@ -6993,7 +7149,7 @@
 |0|0|0|8014EEC|8014EC4||||
 |0|0|0|8014F1C|8014EF4||||
 |0|0|0|801742C|8017684|GetItemMaxRange|[inline int GetItemMaxRange(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L159)||
-|0|0|0|801876C|8018A58|UnitHasMagicRank|[s8 UnitHasMagicRank(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1210)||
+|0|0|0|801876C|8018A58|UnitHasMagicRank|[s8 UnitHasMagicRank(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1212)||
 |0|0|0|801C2B8|801C650||||
 |0|0|0|8024D6C|8024DBC|GetCurrentPhase|[int GetCurrentPhase(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L66)||
 |0|0|0|8024D80|8024DD0|GetNonActiveFaction|[int GetNonActiveFaction(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L70)||
@@ -7003,10 +7159,10 @@
 |0|0|0|802CDC0|802CE88|IsCurrentBattleTriangleAttack|unsigned int IsCurrentBattleTriangleAttack()||
 |80260CC|802B040|802AB90|802D1EC|802D2B4||||
 |0|0|0|802D1FC|802D2C4||||
-|0|0|0|802E24C|802E314|AddFireTile|[void AddFireTile(int x, int y, int turnCountdown, int turnInterval)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L126)||
-|0|802C058|802BB98|802E2C0|802E388|AddTrap8|[void AddTrap8(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L146)||
-|0|802C068|802BBA8|802E2D0|802E398|AddTrap9|[void AddTrap9(int x, int y, int meta)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L151)||
-|0|0|0|802E990|802EA58|AddLightRune|[struct Trap* AddLightRune(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L652)||
+|0|0|0|802E24C|802E314|AddFireTile|[void AddFireTile(int x, int y, int turnCountdown, int turnInterval)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L127)||
+|0|802C058|802BB98|802E2C0|802E388|AddTrap8|[void AddTrap8(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L147)||
+|0|802C068|802BBA8|802E2D0|802E398|AddTrap9|[void AddTrap9(int x, int y, int meta)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L152)||
+|0|0|0|802E990|802EA58|AddLightRune|[struct Trap* AddLightRune(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L653)||
 |0|0|0|803460C|8034704|IsDifficultMode|[int IsDifficultMode(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L42)||
 |0|0|0|8037F34|8037E08||||
 |0|0|0|8037F5C|8037E30||||
@@ -7024,7 +7180,7 @@
 |0|80457EC|8044FFC|804A5C8|80497CC||||
 |0|0|0|804F9C0|804EC34|StartMenuExt|[    struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L132)||
 |0|0|0|804FA24|804EC98|StartMenuAt|[    struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L161)||
-|80422CC|804B6CC|804AEF0|8050818|804FAA4|StartTargetSelectionExt|int StartTargetSelectionExt(int a1, int a2)||
+|80422CC|804B6CC|804AEF0|8050818|804FAA4|NewTargetSelection_Specialized|[ProcPtr NewTargetSelection_Specialized(const struct SelectInfo* selectInfo, u8(*onSelect)(ProcPtr, struct SelectTarget*)) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L222)||
 |0|0|0|8052F0C|8052214||||
 |0|0|0|8052F18|8052220||||
 |0|0|0|8056B3C|8055BB4||||
@@ -7122,7 +7278,7 @@
 |0|0|0|801D360|801D6FC|PlayerPhase_ReloadGameGfx|int PlayerPhase_ReloadGameGfx(int a1)||
 |0|0|0|8024C90|8024CE0||||
 |0|8024A18|0|8025C48|8025CA4|ListSummonTargets|int ListSummonTargets(int a1)||
-|0|0|0|8034108|8034200|PrepScreenProc_HideEverythingAndUnlockGame|int PrepScreenProc_HideEverythingAndUnlockGame()||
+|0|0|0|8034108|8034200|sub_8034200|[void sub_8034200() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1081)||
 |802C4A8|8032420|8031EF0|8034F98|8035090||||
 |0|0|0|80373D4|80372D4|MapEventEngineExists_|bool MapEventEngineExists_()||
 |0|80A79B8|8066544|8037DF0|8037D58||||
@@ -7157,7 +7313,7 @@
 |0|0|0|800CB8C|800C8B0|EventAF_|int EventAF_(int a1)||
 |0|0|0|800CBB0|800C8D4|EventB0_|int EventB0_(int a1)||
 |0|0|0|8012BDC|8012B84||||
-|0|8032CDC|80327AC|8012C3C|80342FC|BBExists|bool BBExists()||
+|0|8032CDC|80327AC|8012C3C|80342FC|sub_80342FC|[bool8 sub_80342FC() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1148)||
 |0|0|0|8021AFC|80219F8||||
 |0|0|0|8022DA0|8022DD8||||
 |0|8022154|8021CDC|8023C2C|8023C68||||
@@ -7295,7 +7451,7 @@
 |0|0|0|8016BC8|8016E20|GetWeaponTypeDisplayString|[char* GetWeaponTypeDisplayString(int wpnType) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L679)||
 |0|0|0|8021510|8021818||||
 |0|0|0|8025EE8|8025F44|MakeTargetListForFuckingNightmare|int MakeTargetListForFuckingNightmare(int a1)||
-|0|0|0|8029B18|8029B8C|DoUseHealStaff|[void DoUseHealStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L993)||
+|0|0|0|8029B18|8029B8C|DoUseHealStaff|[void DoUseHealStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L987)||
 |0|0|0|802AB1C|802ABAC|BattleLoadHit|int BattleLoadHit(int a1)||
 |8026504|802B4DC|802B02C|802D664|802D72C|TradeMenu_ApplyItemSwap|[void TradeMenu_ApplyItemSwap(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L458)||
 |8012780|800F23C|8013AB0|802DDA4|802DE6C|StartTradeMenuTutorialHandCursor|[void StartTradeMenuTutorialHandCursor(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L772)||
@@ -7304,20 +7460,20 @@
 |0|0|0|802E0A0|802E168|sub_802E168|[void sub_802E168(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L959)||
 |0|0|0|802E0C0|802E188|sub_802E188|[void sub_802E188(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L967)||
 |0|0|0|802E0E0|802E1A8|sub_802E1A8|[void sub_802E1A8(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L975)||
-|0|0|0|802E9C8|802EA90|RemoveLightRune|[struct Trap* RemoveLightRune(struct Trap* trap)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L662)||
-|0|802C8A8|802C3E8|802EBC4|802EC8C||||
-|0|0|0|802F104|802F1D8||||
-|0|802CF24|802CA64|802F370|802F450||||
-|0|802CF60|802CAA0|802F3AC|802F48C||||
+|0|0|0|802E9C8|802EA90|RemoveLightRune|[struct Trap* RemoveLightRune(struct Trap* trap)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L663)||
+|0|802C8A8|802C3E8|802EBC4|802EC8C|ExecBarrierStaff|[void ExecBarrierStaff(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L120)||
+|0|0|0|802F104|802F1D8|ExecNightmare|[void ExecNightmare(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L380)||
+|0|802CF24|802CA64|802F370|802F450|ExecPureWaterItem|[void ExecPureWaterItem(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L517)||
+|0|802CF60|802CAA0|802F3AC|802F48C|ExecTorchItem|[void ExecTorchItem(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L529)||
 |0|802E5B4|802E0F4|8030E94|8030F48|RestartBattleMap|[void RestartBattleMap(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1040)||
 |0|0|0|803124C|8031300|MapMain_ResumeFromPhaseIdle|[void MapMain_ResumeFromPhaseIdle(struct BMapMainProc* mapMain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1267)||
 |0|0|0|8031288|803133C|MapMain_ResumeFromAction|[void MapMain_ResumeFromAction(struct BMapMainProc* mapMain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1280)||
 |0|0|0|8031308|80313BC|MapMain_ResumeFromBskPhase|[void MapMain_ResumeFromBskPhase(struct BMapMainProc* mapMain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1301)||
 |0|0|0|8031344|80313F8|MapMain_ResumeFromArenaFight|[void MapMain_ResumeFromArenaFight(struct BMapMainProc* mapMain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1314)||
 |0|0|0|80313C0|8031474|MapMain_ResumeFromPhaseChange|[void MapMain_ResumeFromPhaseChange(struct BMapMainProc* mapMain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1339)||
-|0|0|0|80324A0|8032554|ActionSummon|int ActionSummon(signed int a1)||
-|0|0|0|80324CC|8032580|ActionSummonDK|int ActionSummonDK(signed int a1)||
-|800D83C|800ADAC|0|8033530|8033620||||
+|0|0|0|80324A0|8032554|ActionSummon|[s8 ActionSummon(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L451)||
+|0|0|0|80324CC|8032580|ActionSummonDK|[s8 ActionSummonDK(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L461)||
+|800D83C|800ADAC|0|8033530|8033620|sub_8033620|[void sub_8033620(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L551)||
 |0|0|0|80379A8|8037910|LoadChapterBallistae|int LoadChapterBallistae()||
 |0|0|0|8038C1C|8038BA4||||
 |0|8035824|803534C|803A1AC|803A134|CpPerform_PerformSteal|int CpPerform_PerformSteal(int a1)||
@@ -7703,7 +7859,7 @@
 |0|0|0|80CA1E8|80C5430||||
 |0|0|0|80DA744|80D5B08|_exit|int exit()||
 |0|0|0|80DA764|80D5B28|_kill|int kill()||
-|0|0|0|8029150|80291A8|CanUnitUsePromotionItem|[s8 CanUnitUsePromotionItem(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L527)||
+|0|0|0|8029150|80291A8|CanUnitUsePromotionItem|[s8 CanUnitUsePromotionItem(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L521)||
 |0|0|0|80D2824|80CDB34|PromotionCommand_OnSelect|int PromotionCommand_OnSelect(int a1, int a2)||
 |8009958|8006FF0|0|8005A6C|8004974||||
 |0|0|0|8009E5C|8009EFC||||
@@ -7739,12 +7895,12 @@
 |0|8024D0C|0|80261B0|802620C|MakeTargetListForSleep|int MakeTargetListForSleep(int a1)||
 |0|802507C|8024BF0|8026494|80264F0|MakeTargetListForMine|int MakeTargetListForMine(int a1)||
 |0|80250E0|8024C54|8026524|8026580|MakeTargetListForLightRune|int MakeTargetListForLightRune(int a1)||
-|0|0|0|80299C4|8029A38|RepairMenuItemOnChange|[int RepairMenuItemOnChange(struct MenuProc* menu, struct MenuItemProc* item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L930)||
-|0|0|0|8029B90|8029C04|BarrierSelectOnInit|[int BarrierSelectOnInit(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1015)||
-|0|0|0|8029BFC|8029C70|AttackStaffSelectOnInit|[int AttackStaffSelectOnInit(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1037)||
+|0|0|0|80299C4|8029A38|RepairMenuItemOnChange|[int RepairMenuItemOnChange(struct MenuProc* menu, struct MenuItemProc* item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L924)||
+|0|0|0|8029B90|8029C04|BarrierSelectOnInit|[int BarrierSelectOnInit(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1009)||
+|0|0|0|8029BFC|8029C70|AttackStaffSelectOnInit|[int AttackStaffSelectOnInit(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1031)||
 |0|0|0|802DDCC|80222D0||||
-|0|0|0|802FFA0|8030050||||
-|0|0|0|8033B08|8033BF8||||
+|0|0|0|802FFA0|8030050|sub_8030050|[void sub_8030050() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L1105)||
+|0|0|0|8033B08|8033BF8|sub_8033BF8|[int sub_8033BF8() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L825)||
 |0|0|0|8038320|800D1E4|sub_800D1E4|[void sub_800D1E4(struct Proc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/event.c#L379)||
 |0|0|0|8039B34|8009A60|GameControl_8009A60_Null|int GameControl_8009A60_Null(int a1)||
 |0|0|0|80458C0|8045920||||
@@ -7983,7 +8139,7 @@
 |0|0|0|80C66DC|80C1920||||
 |0|0|0|80CD1E8|80C8278||||
 |0|0|0|80386AC|8038588||||
-|0|0|0|802F584|802F664||||
+|0|0|0|802F584|802F664|sub_802F664|[void sub_802F664(struct Unit* unit, u8 classId, int itemIdx, s8 unk) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L618)||
 |0|0|0|8001870|80018E4|sub_80018E4|[void sub_80018E4(u8 a)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L769)||
 |0|0|0|80CD2E0|80C7B80||||
 |0|0|0|800FE54|800FCD8|GetSomeEventEngineMoveRelatedBitfield|int GetSomeEventEngineMoveRelatedBitfield(int a1, char a2)||
@@ -8071,7 +8227,7 @@
 |0|0|0|806D750|806B3B8||||
 |0|0|0|80A98B4|80A4E70|SaveNewGame|int SaveNewGame(int a1, int a2, int a3, signed int a4)||
 |0|0|0|800FCA0|800FB18|Event2B_|int Event2B_(int a1)||
-|0|0|0|802F92C|802F9E0||||
+|0|0|0|802F92C|802F9E0|ExecJunaFruitItem|[void ExecJunaFruitItem(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L799)||
 |0|0|0|80AF0F8|80AA658||||
 |0|0|0|80CB720|80C67D4||||
 |0|0|0|800CAF4|800C814|EventAC_|signed int EventAC_(int a1)||
@@ -8103,7 +8259,7 @@
 |0|0|0|8010994|8010850|Event3C_|int Event3C_(int a1)||
 |0|0|0|800CA94|800C7B4|EventAA_|int EventAA_(int a1)||
 |0|0|0|800CAC4|800C7E4|EventAB_|int EventAB_(int a1)||
-|0|0|0|8017E7C|8018160|UnitAutolevelRealistic|[void UnitAutolevelRealistic(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L821)||
+|0|0|0|8017E7C|8018160|UnitAutolevelRealistic|[void UnitAutolevelRealistic(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L823)||
 |803F938|8048244|8047A58|804D000|804C260||||
 |0|0|0|80C5628|80C0858|GetWMCenteredCameraPosition|int GetWMCenteredCameraPosition(__int16 a1, __int16 a2, signed __int16 *a3, signed __int16 *a4)||
 |0|0|0|80BFAC8|80BAC78|GmapUnit_Loop|int GmapUnit_Loop(int a1)||
@@ -8183,9 +8339,9 @@
 |0|0|0|807BFF4|8079BE0|MU_SortObjLayers|[void MU_SortObjLayers(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1884)||
 |0|0|0|8070A4C|8066758||||
 |0|0|0|800284C|80028FC|sub_80028FC|[void sub_80028FC(int songId)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L356)||
-|0|0|0|8017D84|8018064|UnitAutolevelPenalty|[void UnitAutolevelPenalty(struct Unit* unit, u8 classId, int levelCount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L779)||
+|0|0|0|8017D84|8018064|UnitAutolevelPenalty|[void UnitAutolevelPenalty(struct Unit* unit, u8 classId, int levelCount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L781)||
 |0|0|0|800CD70|800CA9C|EventBB_|int EventBB_(int a1)||
-|0|0|0|801786C|8017AC4|LoadUnit|[struct Unit* LoadUnit(const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L515)||
+|0|0|0|801786C|8017AC4|LoadUnit|[struct Unit* LoadUnit(const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L517)||
 |0|0|0|806BBA0|8069878||||
 |0|0|0|807CD3C|807A984|MapAnimProc_DisplayDeathQuote|int MapAnimProc_DisplayDeathQuote()||
 |0|0|0|806D692|806B344||||
@@ -8193,2557 +8349,5064 @@
 |0|0|0|801B724|80618D8||||
 |0|0|0|809C7D4|809A504||||
 |0|0|0|80730E4|8070B3C||||
-|0|0|0|8033558|8033648||||
+|0|0|0|8033558|8033648|sub_8033648|[void sub_8033648(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L560)||
 |0|0|0|8043CBC|8012B24||||
 |0|0|0|8065A44|809656C||||
-|8000B38|8000B30|8000B58|0|0||||
-|0|80010CC|80010F4|0|0||||
-|8001394|8001450|8001478|0|0||||
-|80015A4|800183C|8001864|0|0||||
-|8001610|80018A8|80018D0|0|0||||
-|8001714|80019AC|80019D4|0|0||||
-|8001734|80019CC|80019F4|0|0|_UpdateKeyStatus|int UpdateKeyStatus(int a1, __int16 a2)||
-|8001B4C|8001ED4|8001EFC|0|0||||
-|8001B8C|8001F14|8001F3C|0|0||||
-|8001C68|8001FF0|8002018|0|0||||
-|8001D0C|8002094|80020BC|0|0||||
-|8001D44|80020CC|80020F4|0|0||||
-|8001E68|80021F0|8002218|0|0||||
-|8001F88|8002310|8002338|0|0||||
-|800210C|8002494|80024BC|0|0||||
-|8001FD4|80025BC|80025E4|0|0||||
-|800236C|80026F4|800271C|0|0||||
-|80024A4|800282C|8002854|0|0||||
-|8002A68|8002EB8|8002FDC|0|0||||
-|800319C|80036F0|8003814|0|0||||
-|0|800394C|8003A70|0|0||||
-|80034B8|8003B04|8003C28|0|0||||
-|800361C|8003CE8|8003E0C|0|0||||
-|80036B0|8003D7C|8003EA0|0|0||||
-|0|8003F28|800404C|0|0||||
-|0|8003F94|80040B8|0|0||||
-|0|80045A4|80046C8|0|0||||
-|0|80045D0|80046F4|0|0||||
-|0|800497C|8004AA0|0|0||||
-|0|8004BA0|8004CC4|0|0||||
-|0|8004C38|8004D5C|0|0||||
-|0|800798C|8007AFC|0|0||||
-|0|800A720|800A71C|0|0||||
-|0|800A7A4|800A7A0|0|0||||
-|0|800B100|800B1C4|0|0||||
-|0|800B404|800B4C8|0|0||||
-|0|800B434|800B4F8|0|0||||
-|0|800B464|800B528|0|0||||
-|0|800B4F4|800B5B8|0|0||||
-|806D398|800B578|800B63C|0|0||||
-|0|800B678|800B73C|0|0||||
-|0|800B900|800B9A8|0|0||||
-|0|800B93C|800B9E4|0|0||||
-|0|800BB64|800BC54|0|0||||
-|0|800BBF8|800BCE8|0|0||||
-|0|800C2C4|800C3B4|0|0||||
-|0|800C374|800C464|0|0||||
-|0|800C3FC|800C4EC|0|0||||
-|0|800C5F4|800C6E4|0|0||||
-|0|800C70C|800C7FC|0|0||||
-|0|800C7CC|800C8BC|0|0||||
-|0|800C868|800C958|0|0||||
-|0|800C8BC|800C9AC|0|0||||
-|0|800C92C|800CA1C|0|0||||
-|0|800C9F8|800CAE8|0|0||||
-|0|800CA84|800CB74|0|0||||
-|0|800CCFC|800CDEC|0|0||||
-|0|800CDCC|800CEBC|0|0||||
-|0|800CE54|800CF44|0|0||||
-|0|800CEF4|800CFE4|0|0||||
-|0|800D484|800D574|0|0||||
-|0|800D4AC|800D59C|0|0||||
-|0|800D4C8|800D5B8|0|0||||
-|0|800D4EC|800D5DC|0|0||||
-|0|800D678|800D768|0|0||||
-|0|800D69C|800D78C|0|0||||
-|0|800D6C0|800D7B0|0|0||||
-|0|800D840|800D934|0|0||||
-|0|800D864|800D958|0|0||||
-|0|800D8DC|800D9D0|0|0||||
-|0|800DA9C|800DB90|0|0||||
-|0|800DB8C|800DC80|0|0||||
-|800FF18|800DC44|800DD38|0|0||||
-|0|800DC94|800DD88|0|0||||
-|0|800DDD4|800DEC8|0|0||||
-|8010244|800E120|800E214|0|0||||
-|0|800E160|800E254|0|0||||
-|0|800E1C4|800E2B8|0|0||||
-|8010530|800E32C|800E420|0|0||||
-|0|800E570|800E664|0|0||||
-|0|800E598|800E68C|0|0||||
-|0|800E5C0|800E6B4|0|0||||
-|0|800E5EC|800E6E0|0|0||||
-|0|800E60C|800E700|0|0||||
-|0|800F0CC|800F1C0|0|0||||
-|0|800F208|800F2FC|0|0||||
-|0|800F5C4|800F6B8|0|0||||
-|0|800F67C|800F770|0|0||||
-|0|800F6C4|800F7B8|0|0||||
-|0|800F710|800F804|0|0||||
-|0|800FAFC|800FBF0|0|0||||
-|0|800FBA4|800FC98|0|0||||
-|0|800FE60|800FE18|0|0||||
-|0|8010480|8010010|0|0||||
-|0|8010540|80100D0|0|0||||
-|0|80108C8|8010464|0|0||||
-|0|8010C5C|801080C|0|0||||
-|0|8010E14|80109C4|0|0||||
-|0|8011038|8010BE8|0|0||||
-|0|8011214|8010DC4|0|0||||
-|0|8011248|8010DF8|0|0||||
-|800D928|8011508|80110B8|0|0||||
-|0|8011C5C|80115C4|0|0||||
-|0|8011CBC|8011624|0|0||||
-|0|801206C|80119D4|0|0||||
-|0|80121A4|8011B0C|0|0||||
-|0|80122DC|8011C44|0|0||||
-|0|8012350|8011CB8|0|0||||
-|0|80124BC|8011E28|0|0||||
-|0|80125EC|8011F58|0|0||||
-|0|8012640|8011FAC|0|0||||
-|80150DC|8014EE4|8014A68|0|0||||
-|80151E4|8014FEC|8014B70|0|0||||
-|80151F8|8015000|8014B84|0|0||||
-|0|8015918|801549C|0|0||||
-|8016A10|8016C80|8016820|0|0||||
-|0|801759C|8017148|0|0||||
-|0|8017748|8017340|0|0||||
-|0|8017874|801746C|0|0||||
-|8017578|8017B24|8017734|0|0||||
-|0|8017B44|8017754|0|0||||
-|8017764|8017DAC|80179BC|0|0||||
-|0|8018C20|8018830|0|0||||
-|0|8018C78|8018888|0|0||||
-|0|8018CC4|80188D4|0|0||||
-|801A698|801B718|801B338|0|0||||
-|0|801E7E0|801E45C|0|0||||
-|0|801FDB8|801F950|0|0||||
-|0|80214E8|802107C|0|0||||
-|0|80217EC|8021374|0|0||||
-|801EA54|80219BC|8021544|0|0||||
-|801F534|8022394|8021F1C|0|0||||
-|801F688|80225F4|802217C|0|0||||
-|801FBDC|8022B9C|8022724|0|0||||
-|0|8023198|8022D20|0|0||||
-|0|80239AC|8023520|0|0||||
-|8020A64|8023D9C|8023910|0|0||||
-|8022A84|8026AB4|8026628|0|0||||
-|8022A94|8026AC4|8026638|0|0||||
-|0|8026B70|80266E4|0|0||||
-|0|80270C0|8026C38|0|0||||
-|8023678|8027794|8027308|0|0||||
-|80236B0|80277CC|8027340|0|0||||
-|802581C|802A2B8|8029E08|0|0||||
-|8025B1C|802A6A4|802A1F4|0|0||||
-|8025D5C|802A944|802A494|0|0||||
-|0|802AD58|802A8A8|0|0||||
-|0|802BD14|802B854|0|0||||
-|0|802C17C|802BCBC|0|0||||
-|8026F30|802C2D4|802BE14|0|0||||
-|8027220|802C63C|802C17C|0|0||||
-|802887C|802DD64|802D8A4|0|0||||
-|8029370|802E8A0|802E3D4|0|0||||
-|806C310|802ECE4|802E818|0|0||||
-|802AC20|8030340|802FE78|0|0|MoveCursor_8032DA0|signed int MoveCursor_8032DA0()||
-|801E674|80309BC|80304D0|0|0||||
-|0|8030C68|803077C|0|0||||
-|802B8A0|80317EC|8031304|0|0||||
-|802C9C0|803293C|803240C|0|0||||
-|802CA40|80329BC|803248C|0|0||||
-|0|8033D60|8033888|0|0||||
-|0|8034AC4|80345EC|0|0||||
-|0|8034CD0|80347F8|0|0||||
-|0|8034CF8|8034820|0|0||||
-|802F244|8035C6C|8035794|0|0||||
-|8031074|8037DF8|8037944|0|0||||
-|8033824|803A9FC|803A548|0|0||||
-|80347A4|803BBB0|803B6FC|0|0||||
-|8034DFC|803C218|803BD64|0|0||||
-|8035064|803C57C|803C0C8|0|0||||
-|8035CB0|803D1CC|803CD1C|0|0||||
-|8035D4C|803D268|803CDB8|0|0||||
-|80360C4|803D5E0|803D130|0|0||||
-|80369E0|803DF20|803DA70|0|0||||
-|8038324|803FA38|803F584|0|0||||
-|803882C|803FFE4|803F8D8|0|0||||
-|803A640|8041E68|804177C|0|0||||
-|0|8043DF4|8043618|8048BF0|0||||
-|0|8043E6C|8043690|0|0||||
-|0|8043F64|8043788|0|0||||
-|803C2C4|8044B0C|8044310|0|0||||
-|803E1E8|8046AC8|80462DC|0|0||||
-|803E2BC|8046B9C|80463B4|0|0||||
-|803E3B4|8046C90|80464A8|0|0||||
-|803FAA4|80483C0|8047BD4|0|0||||
-|803FB08|8048424|8047C38|0|0||||
-|803FCBC|80485EC|8047E00|0|0||||
-|8040B44|8049490|8048CA8|0|0||||
-|8041168|8049AB4|80492CC|0|0||||
-|0|804A360|8049B78|0|0||||
-|0|804B378|804AB9C|0|0||||
-|8042AA8|804BE68|804B68C|0|0||||
-|8042B74|804BF34|804B758|0|0||||
-|8042E58|804C20C|804BA30|0|0||||
-|8043078|804C3F4|804BC18|0|0||||
-|804323C|804C5BC|804BDE0|0|0||||
-|8045F88|804EF58|804E77C|0|0||||
-|8047058|80500DC|804F900|0|0||||
-|8047C88|8050FB4|80507D8|0|0||||
-|8048298|8051774|8050F98|0|0||||
-|8048A64|8051F38|805175C|0|0||||
-|804A484|80539FC|8053214|0|0||||
-|806C49C|8053C28|8053440|0|0||||
-|804B048|805480C|8054024|0|0|battleAnimationInit|void battleAnimationInit()|战斗动画数据载入到内存|
-|0|8055658|8054E70|0|0||||
-|804CD4C|8056418|8055C30|0|0||||
-|804CDD0|8056738|8055F50|0|0||||
-|804FF1C|8059A90|80592A8|0|0||||
-|805083C|805A06C|8059884|0|0||||
-|80520CC|805BAB4|805B2CC|0|0||||
-|8052544|805BF2C|805B744|0|0||||
-|8052598|805BF80|805B798|0|0||||
-|8055998|805E68C|805DEA4|0|0||||
-|0|805FEF4|805F70C|0|0||||
-|8057A7C|806096C|8060184|0|0||||
-|0|806574C|8064F5C|0|0|FireDragonBGAnimation6|void FireDragonBGAnimation6(_6CStruct *ctx)||
-|0|80660C8|80658D8|0|0||||
-|0|8066118|8065928|0|0|FireDragonBGPaletteAnimation|void FireDragonBGPaletteAnimation(_6CStruct *ctx)|火龙背景调色板动画|
-|0|8066224|8065A34|0|0||||
-|0|8066398|8065BA8|0|0||||
-|0|806648C|8065C9C|0|0||||
-|805BB24|8067C30|8067444|0|0|battleAnimationOAMInfoHandler|void battleAnimationOAMInfoHandler(void *battleAnimationOAMInfoBuffer, int a2, unsigned __int16 a3, int a4)|读取并处理解压到内存中的战斗动画OAM信息|
-|805C3FC|80685A8|8067DBC|0|0||||
-|805C89C|8068A68|806827C|0|0||||
-|805F7E4|806C238|806BA4C|0|0||||
-|805F93C|806C3F8|806BC0C|0|0||||
-|805FD40|806C8B8|806C0CC|0|0||||
-|805FD78|806C8F0|806C104|0|0||||
-|805FDEC|806C964|806C178|0|0||||
-|8060488|806D010|806C824|0|0||||
-|8060840|806D3F8|806CC0C|0|0||||
-|806096C|806D53C|806CD50|0|0||||
-|8060A1C|806D5EC|806CE00|0|0||||
-|8060A5C|806D62C|806CE40|0|0||||
-|8060B68|806D7E8|806CFFC|0|0||||
-|800E4C0|806D934|806D148|0|0||||
-|8060CB4|806DA3C|806D250|0|0||||
-|0|806DCB8|806D4CC|0|0||||
-|0|806E07C|806D890|0|0||||
-|0|806EA64|806E278|0|0||||
-|8061BAC|806EE5C|806E670|0|0||||
-|8061BEC|806EE9C|806E6B0|0|0||||
-|8061C8C|806EF3C|806E750|0|0||||
-|8061E14|806F0C4|806E8D8|0|0||||
-|8061FD0|806F280|806EA94|0|0||||
-|80620D8|806F2D8|806EAEC|0|0||||
-|806212C|806F330|806EB44|0|0||||
-|80621EC|806F404|806EC18|0|0||||
-|8062380|806F598|806EDAC|0|0||||
-|8062AB4|806FD1C|806F530|0|0||||
-|8062BD4|806FE3C|806F650|0|0||||
-|8062C38|806FEA0|806F6B4|0|0||||
-|8062D80|806FFE8|806F7FC|0|0||||
-|80646E4|8071960|8071174|0|0||||
-|80652E0|807255C|8071D70|0|0||||
-|8066484|80736EC|8072F00|0|0||||
-|0|80749F0|80741F4|0|0||||
-|8068060|807540C|8074C10|0|0||||
-|80687BC|8075B7C|80753AC|0|0||||
-|8068858|8075C18|8075448|0|0||||
-|8068A48|8075E08|8075638|0|0||||
-|8068CB8|8076080|80758B0|0|0||||
-|8068D9C|8076164|8075994|0|0||||
-|8068E80|8076248|8075A78|0|0||||
-|8068F04|80762CC|8075AFC|0|0||||
-|8069430|8076820|8076050|0|0||||
-|806A330|807761C|8076E4C|0|0||||
-|0|8077694|8076EC4|0|0||||
-|0|8077714|8076F44|0|0||||
-|0|8077794|8076FC4|0|0||||
-|806A3A8|807781C|807704C|0|0||||
-|806A44C|80778C0|80770F0|0|0||||
-|806A4D4|80778FC|807712C|0|0||||
-|0|8077944|8077174|0|0||||
-|806A51C|807798C|80771BC|0|0||||
-|806A600|8077A70|80772A0|0|0||||
-|0|8077D1C|807754C|0|0||||
-|0|8077FB4|80777E4|0|0||||
-|8069FD8|8078030|8077860|0|0||||
-|0|8078098|80778C8|0|0||||
-|0|80780E0|8077910|0|0||||
-|0|80781C8|80779F8|0|0||||
-|0|807850C|8077D3C|0|0||||
-|0|80785B8|8077DE8|0|0||||
-|806A920|8078950|8078180|0|0||||
-|806A954|8078984|80781B4|0|0||||
-|806BB9C|80789AC|80781DC|0|0||||
-|0|80789EC|807821C|0|0||||
-|0|8078ACC|80782FC|0|0||||
-|0|8078BC4|80783F4|0|0||||
-|806AAA0|8078CF0|8078520|0|0||||
-|806ABD0|8078E20|8078650|0|0||||
-|0|8078E84|80786B4|0|0||||
-|806AC90|8078F08|8078738|0|0||||
-|806B268|80795E0|8078E10|0|0||||
-|806B284|80795FC|8078E2C|0|0||||
-|806B310|8079688|8078EB8|0|0||||
-|806B3DC|8079754|8078F84|0|0||||
-|0|8079798|8078FC8|0|0||||
-|0|807982C|807905C|0|0||||
-|0|8079894|80790C4|0|0||||
-|0|8079CE4|8079514|0|0||||
-|806B8C8|8079F34|8079764|0|0||||
-|806B938|8079FA4|80797D4|0|0||||
-|806B984|8079FF0|8079820|0|0||||
-|806B9BC|807A028|8079858|0|0||||
-|806B9F8|807A064|8079894|0|0||||
-|806BA48|807A0B4|80798E4|0|0||||
-|806BA74|807A0E0|8079910|0|0||||
-|806BAA0|807A10C|807993C|0|0||||
-|806BAB8|807A160|8079990|0|0||||
-|806BAF0|807A198|80799C8|0|0||||
-|0|807A568|8079AF4|0|0||||
-|0|807A5D0|8079B5C|0|0||||
-|806BFA4|807A67C|8079C08|0|0||||
-|0|807AD28|807A2B4|0|0||||
-|0|807AD3C|807A2C8|0|0||||
-|0|807AD50|807A2DC|0|0||||
-|0|807AD64|807A2F0|0|0||||
-|0|807AD78|807A304|0|0||||
-|0|807AE94|807A420|0|0||||
-|806C62C|807AEF0|807A47C|0|0||||
-|0|807AF10|807A49C|0|0||||
-|0|807B32C|807A8B8|0|0||||
-|0|807C228|807B7B4|0|0||||
-|0|807D3E0|807C96C|0|0||||
-|0|807DAF4|807CFF4|0|0||||
-|0|807DB8C|807D094|0|0||||
-|0|807DD0C|807D1C8|0|0||||
-|801ADB4|807DD24|807D1E0|0|0||||
-|0|807DD3C|807D1F8|0|0||||
-|0|807DDDC|807D240|0|0||||
-|0|807DF0C|807D2EC|0|0||||
-|0|807DF44|807D324|0|0||||
-|806BF14|807E0A0|807D424|0|0||||
-|0|807E14C|807D4C0|0|0||||
-|0|807E188|807D4EC|0|0||||
-|0|807E378|807D644|0|0||||
-|0|807E540|807D80C|0|0||||
-|0|807E6A4|807D954|0|0||||
-|0|807E774|807D9E4|0|0||||
-|0|807E7A4|807DA14|0|0||||
-|0|807E950|807DBA0|0|0||||
-|0|807E9E0|807DC30|0|0||||
-|0|807EBCC|807DE1C|0|0||||
-|0|807ED8C|807DFDC|0|0||||
-|0|807EE34|807E084|0|0||||
-|0|807EED8|807E128|0|0||||
-|0|807F1FC|807E440|0|0||||
-|0|807F258|807E49C|0|0||||
-|0|807F3FC|807E640|0|0||||
-|0|807F448|807E68C|0|0||||
-|0|807FC74|807EEAC|0|0||||
-|0|807FC88|807EEC0|0|0||||
-|0|807FC9C|807EED4|0|0||||
-|806CC80|807FCB0|807EEE8|0|0||||
-|0|807FCC4|807EEFC|0|0||||
-|0|807FD34|807EF6C|0|0||||
-|0|807FD58|807EF90|0|0||||
-|806F5F8|80814C4|8080768|0|0||||
-|806F708|80815D4|8080878|0|0||||
-|806FBD8|8081AB0|8080D54|0|0||||
-|80704DC|808245C|80816FC|0|0||||
-|8070DC8|8082EEC|8082460|0|0||||
-|0|808586C|8084E70|0|0||||
-|0|808588C|8084E90|0|0||||
-|0|80864DC|8085ADC|0|0||||
-|0|80872E4|80868F8|0|0||||
-|8074668|8089998|8089038|0|0||||
-|0|808E7D4|808DEA8|0|0||||
-|806C4B0|808E8C8|808DC48|0|0||||
-|0|808ED8C|808E448|0|0||||
-|0|808F938|808EFFC|0|0||||
-|0|808FCF8|808F3B8|0|0||||
-|0|80902F0|808F9B0|0|0||||
-|0|8090B2C|80901EC|0|0||||
-|0|8090FD4|8090690|0|0||||
-|8082574|8091118|80907D4|0|0||||
-|80827F8|809139C|8090A58|0|0||||
-|0|8091618|8090CD4|0|0||||
-|0|8091C08|80912CC|0|0||||
-|0|80937E0|8092ED4|0|0||||
-|0|8095E8C|809565C|0|0||||
-|0|80966CC|8095ED8|0|0||||
-|0|8097C94|809750C|0|0||||
-|0|8098EF4|8098618|0|0||||
-|0|8099B50|8099198|0|0||||
-|806CE18|8099D00|8099340|0|0||||
-|0|809A214|8099858|0|0||||
-|0|809B380|809A9A8|0|0||||
-|8084560|809F280|809E870|0|0||||
-|0|809F660|809EC24|0|0||||
-|0|809F9F8|809EFBC|0|0|GetChapterThing|signed int GetChapterThing()||
-|0|80A0184|809F748|0|0||||
-|0|80A0654|809FC88|0|0|DoesThisChapterCount|signed int DoesThisChapterCount(signed int a1)||
-|8084D1C|80A0B44|80A0178|0|0||||
-|0|80A0DCC|80A0400|0|0||||
-|0|80A1384|80A09FC|0|0||||
-|0|80A3F48|80A32D4|0|0||||
-|0|80A5218|80A45A0|0|0||||
-|0|80A5838|80A4B4C|0|0||||
-|80895B8|80A5E30|80A5148|0|0||||
-|0|80A838C|80A7480|0|0||||
-|0|80A8774|80A7860|0|0||||
-|0|80A8850|80A793C|0|0||||
-|0|80A8B74|80A7C60|0|0||||
-|0|80A9034|80A8120|0|0||||
-|0|80A9D44|80A8E30|0|0||||
-|0|80AA4D4|80A95F8|0|0||||
-|0|80AA8FC|80A9A20|0|0||||
-|0|80AAB78|80A9C9C|0|0||||
-|0|80AAD44|80A9E7C|0|0||||
-|0|80AAD94|80A9ECC|0|0||||
-|0|80AB0E0|80AA218|0|0||||
-|0|80AB654|80AA78C|0|0||||
-|0|80ABC4C|80AAD68|0|0||||
-|0|80AC304|80AB420|0|0||||
-|0|80AC324|80AB440|0|0||||
-|0|80AC3D0|80AB4EC|0|0||||
-|0|80AC670|80AB78C|0|0||||
-|0|80ADD88|80ACE60|0|0||||
-|0|80AEA24|80ADB0C|0|0||||
-|0|80AF130|80AE218|0|0||||
-|808CE4C|80AF68C|80AE754|0|0||||
-|0|80AFBE8|80AECB0|0|0||||
-|80951FC|80B06B4|80AF864|0|0||||
-|809604C|80B1454|80B062C|0|0||||
-|0|80B1E64|80B103C|0|0||||
-|809704C|80B26A4|80B1878|0|0||||
-|80978AC|80B2EC0|80B209C|0|0||||
-|80979C8|80B2FE4|80B21C0|0|0||||
-|8097A54|80B3070|80B224C|0|0||||
-|8097BC0|80B31DC|80B23B8|0|0||||
-|8097E2C|80B3448|80B2624|0|0||||
-|80984A8|80B3AB4|80B2C90|0|0||||
-|80986DC|80B3CD4|80B2EB0|0|0||||
-|0|80B3E94|80B3070|0|0||||
-|0|80B40D8|80B32A0|0|0||||
-|0|80B4104|80B32CC|0|0||||
-|0|80B45FC|80B37C4|0|0||||
-|0|80B4750|80B3918|0|0||||
-|0|80B4778|80B3940|0|0||||
-|0|80B4810|80B39D8|0|0||||
-|0|80B4934|80B3AFC|0|0||||
-|0|80B5130|80B4310|0|0||||
-|0|80B519C|80B437C|0|0||||
-|0|80B520C|80B43EC|0|0||||
-|0|80B5430|80B4610|0|0||||
-|0|80B5600|80B47E0|0|0||||
-|0|80B5B6C|80B4D4C|0|0||||
-|0|80B60F0|80B52D0|0|0||||
-|0|80B6170|80B5350|0|0||||
-|0|80B6754|80B5934|0|0||||
-|0|80B6A1C|80B5BFC|0|0||||
-|0|80B6C8C|80B5E80|0|0||||
-|0|80B6DEC|80B5FE0|0|0||||
-|0|80B7578|80B676C|0|0||||
-|0|80B79FC|80B6C14|0|0||||
-|0|80B7B30|80B6D48|0|0||||
-|0|80B7B4C|80B6D64|0|0||||
-|0|80B7E60|80B70B4|0|0||||
-|0|80B812C|80B7380|0|0||||
-|0|80B81B4|80B7408|0|0||||
-|8017C04|80B8808|80B7A24|0|0||||
-|0|80B8A20|80B7C3C|0|0||||
-|0|80B8FF4|80B8358|0|0||||
-|0|80B9038|80B839C|0|0||||
-|0|80B9A4C|80B8EEC|0|0||||
-|0|80BAEA8|80BA3A0|0|0||||
-|0|80BAED4|80BA3CC|0|0||||
-|0|80BB210|80BA6D8|0|0||||
-|0|80BB8CC|80BAE50|0|0||||
-|0|80BB940|80BAEC4|0|0||||
-|0|80BBB5C|80BB0E0|0|0||||
-|0|80BBDD0|80BB354|0|0||||
-|0|80BBFAC|80BB530|0|0||||
-|0|80BC8B8|80BBEB0|0|0||||
-|0|80BCD00|80BC2D8|0|0||||
-|0|80BD19C|80BC790|0|0||||
-|0|80BD36C|80BC960|0|0||||
-|0|80BD3B0|80BC9B8|0|0||||
-|0|80BD98C|80BCE34|0|0||||
-|0|80BD9B8|80BCE60|0|0||||
-|0|80BDC2C|80BD0D4|0|0||||
-|0|80BDD34|80BD1DC|0|0||||
-|0|80BDEBC|80BD364|0|0||||
-|0|80BE04C|80BD4F4|0|0||||
-|0|80BE0B4|80BD570|0|0||||
-|0|80BE1DC|80BD698|0|0||||
-|0|80BE2A8|80BD764|0|0||||
-|8019B38|801A8B4|801A4D4|0|0||||
-|0|80A9090|80A817C|0|0||||
-|0|800D044|800D134|0|0||||
-|0|8030E80|8030994|0|0||||
-|0|807EA0C|807DC5C|0|0||||
-|0|808F3BC|808EA80|0|0||||
-|8069098|8076460|8075C90|0|0||||
-|0|8018D70|8018980|0|0||||
-|0|8020144|801FCDC|0|0||||
-|0|800B2CC|800B390|0|0||||
-|0|806DB6C|806D380|0|0||||
-|0|80B4208|80B33D0|0|0||||
-|0|800E854|800E948|0|0||||
-|0|801DF68|801DBC4|0|0||||
-|8096234|80B1630|80B0808|0|0||||
-|80966C4|80B1AC4|80B0C9C|0|0||||
-|0|8079DF4|8079624|0|0||||
-|0|80842F8|80838FC|0|0||||
-|803D4D0|8045D44|8045558|0|0||||
-|0|807FD9C|807EFD4|0|0||||
-|0|808F834|808EEF8|0|0||||
-|0|801BE04|801BA54|0|0||||
-|0|80A69EC|80A5D2C|0|0||||
-|0|800BF68|800C058|0|0||||
-|0|800C06C|800C15C|0|0||||
-|0|800CFA8|800D098|0|0||||
-|0|80926F0|8091DBC|0|0||||
-|0|8097AB0|8097324|0|0||||
-|0|80A88B8|80A79A4|0|0||||
-|0|80A8B98|80A7C84|0|0||||
-|0|80B1ED4|80B10AC|0|0||||
-|801A210|801B040|801AC60|0|0||||
-|801B7D0|801CE3C|801CA38|0|0||||
-|0|807AFCC|807A558|0|0||||
-|0|809C0C8|809B700|0|0||||
-|0|80B7A74|80B6C8C|0|0||||
-|0|8056618|8055E30|0|0||||
-|805CC80|8068E40|8068654|0|0||||
-|0|80BD0B4|80BC6A8|0|0||||
-|0|800EFD4|800F0C8|0|0||||
-|0|8031440|8030F54|0|0||||
-|805CD04|8068EC4|80686D8|0|0||||
-|8062E94|80700FC|806F910|0|0||||
-|8067B08|8074D50|8074554|0|0||||
-|0|8093948|809303C|0|0||||
-|0|80AD058|80AC174|0|0||||
-|0|80B549C|80B467C|0|0||||
-|0|800B244|800B308|0|0||||
-|0|800D994|800DA88|0|0||||
-|0|8078688|8077EB8|0|0||||
-|0|80B86C0|80B78DC|0|0||||
-|0|800D5E8|800D6D8|0|0||||
-|0|800DE98|800DF8C|0|0||||
-|0|805B404|805AC1C|0|0||||
-|80556F8|805E3EC|805DC04|0|0||||
+|8000B38|8000B30|8000B58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80010CC|80010F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001394|8001450|8001478|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80015A4|800183C|8001864|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001610|80018A8|80018D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001714|80019AC|80019D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001734|80019CC|80019F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001B4C|8001ED4|8001EFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001B8C|8001F14|8001F3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001C68|8001FF0|8002018|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001D0C|8002094|80020BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001D44|80020CC|80020F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001E68|80021F0|8002218|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001F88|8002310|8002338|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800210C|8002494|80024BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001FD4|80025BC|80025E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800236C|80026F4|800271C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80024A4|800282C|8002854|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002A68|8002EB8|8002FDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800319C|80036F0|8003814|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800394C|8003A70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80034B8|8003B04|8003C28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800361C|8003CE8|8003E0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80036B0|8003D7C|8003EA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8003F28|800404C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8003F94|80040B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80045A4|80046C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80045D0|80046F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800497C|8004AA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8004BA0|8004CC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8004C38|8004D5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800798C|8007AFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800A720|800A71C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800A7A4|800A7A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B100|800B1C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B404|800B4C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B434|800B4F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B464|800B528|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B4F4|800B5B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806D398|800B578|800B63C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B678|800B73C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B900|800B9A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B93C|800B9E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BB64|800BC54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BBF8|800BCE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C2C4|800C3B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C374|800C464|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C3FC|800C4EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C5F4|800C6E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C70C|800C7FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C7CC|800C8BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C868|800C958|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C8BC|800C9AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C92C|800CA1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C9F8|800CAE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800CA84|800CB74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800CCFC|800CDEC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800CDCC|800CEBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800CE54|800CF44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800CEF4|800CFE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D484|800D574|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D4AC|800D59C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D4C8|800D5B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D4EC|800D5DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D678|800D768|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D69C|800D78C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D6C0|800D7B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D840|800D934|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D864|800D958|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D8DC|800D9D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DA9C|800DB90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DB8C|800DC80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800FF18|800DC44|800DD38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DC94|800DD88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DDD4|800DEC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010244|800E120|800E214|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E160|800E254|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E1C4|800E2B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010530|800E32C|800E420|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E570|800E664|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E598|800E68C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E5C0|800E6B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E5EC|800E6E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E60C|800E700|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F0CC|800F1C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F208|800F2FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F5C4|800F6B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F67C|800F770|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F6C4|800F7B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F710|800F804|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FAFC|800FBF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FBA4|800FC98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FE60|800FE18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010480|8010010|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010540|80100D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80108C8|8010464|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010C5C|801080C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010E14|80109C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011038|8010BE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011214|8010DC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011248|8010DF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800D928|8011508|80110B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011C5C|80115C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011CBC|8011624|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801206C|80119D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80121A4|8011B0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80122DC|8011C44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012350|8011CB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80124BC|8011E28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80125EC|8011F58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012640|8011FAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80150DC|8014EE4|8014A68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80151E4|8014FEC|8014B70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80151F8|8015000|8014B84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8015918|801549C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8016A10|8016C80|8016820|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801759C|8017148|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8017748|8017340|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8017874|801746C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8017578|8017B24|8017734|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8017B44|8017754|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8017764|8017DAC|80179BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8018C20|8018830|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8018C78|8018888|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8018CC4|80188D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801A698|801B718|801B338|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801E7E0|801E45C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801FDB8|801F950|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80214E8|802107C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80217EC|8021374|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801EA54|80219BC|8021544|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801F534|8022394|8021F1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801F688|80225F4|802217C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801FBDC|8022B9C|8022724|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8023198|8022D20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80239AC|8023520|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8020A64|8023D9C|8023910|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8022A84|8026AB4|8026628|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8022A94|8026AC4|8026638|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8026B70|80266E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80270C0|8026C38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8023678|8027794|8027308|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80236B0|80277CC|8027340|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802581C|802A2B8|8029E08|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8025B1C|802A6A4|802A1F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8025D5C|802A944|802A494|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802AD58|802A8A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802BD14|802B854|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802C17C|802BCBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8026F30|802C2D4|802BE14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8027220|802C63C|802C17C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802887C|802DD64|802D8A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8029370|802E8A0|802E3D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C310|802ECE4|802E818|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802AC20|8030340|802FE78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801E674|80309BC|80304D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030C68|803077C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802B8A0|80317EC|8031304|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802C9C0|803293C|803240C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802CA40|80329BC|803248C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8033D60|8033888|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8034AC4|80345EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8034CD0|80347F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8034CF8|8034820|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802F244|8035C6C|8035794|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8031074|8037DF8|8037944|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8033824|803A9FC|803A548|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80347A4|803BBB0|803B6FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8034DFC|803C218|803BD64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8035064|803C57C|803C0C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8035CB0|803D1CC|803CD1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8035D4C|803D268|803CDB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80360C4|803D5E0|803D130|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80369E0|803DF20|803DA70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8038324|803FA38|803F584|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803882C|803FFE4|803F8D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803A640|8041E68|804177C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8043DF4|8043618|8048BF0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8043E6C|8043690|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8043F64|8043788|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803C2C4|8044B0C|8044310|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803E1E8|8046AC8|80462DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803E2BC|8046B9C|80463B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803E3B4|8046C90|80464A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FAA4|80483C0|8047BD4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FB08|8048424|8047C38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FCBC|80485EC|8047E00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8040B44|8049490|8048CA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8041168|8049AB4|80492CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804A360|8049B78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804B378|804AB9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8042AA8|804BE68|804B68C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8042B74|804BF34|804B758|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8042E58|804C20C|804BA30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8043078|804C3F4|804BC18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804323C|804C5BC|804BDE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8045F88|804EF58|804E77C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8047058|80500DC|804F900|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8047C88|8050FB4|80507D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8048298|8051774|8050F98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8048A64|8051F38|805175C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804A484|80539FC|8053214|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C49C|8053C28|8053440|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804B048|805480C|8054024|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|战斗动画数据载入到内存|
+|0|8055658|8054E70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804CD4C|8056418|8055C30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804CDD0|8056738|8055F50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804FF1C|8059A90|80592A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805083C|805A06C|8059884|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80520CC|805BAB4|805B2CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8052544|805BF2C|805B744|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8052598|805BF80|805B798|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8055998|805E68C|805DEA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805FEF4|805F70C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8057A7C|806096C|8060184|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806574C|8064F5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80660C8|80658D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066118|8065928|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|火龙背景调色板动画|
+|0|8066224|8065A34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066398|8065BA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806648C|8065C9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805BB24|8067C30|8067444|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|读取并处理解压到内存中的战斗动画OAM信息|
+|805C3FC|80685A8|8067DBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805C89C|8068A68|806827C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F7E4|806C238|806BA4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F93C|806C3F8|806BC0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FD40|806C8B8|806C0CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FD78|806C8F0|806C104|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FDEC|806C964|806C178|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060488|806D010|806C824|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060840|806D3F8|806CC0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806096C|806D53C|806CD50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060A1C|806D5EC|806CE00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060A5C|806D62C|806CE40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060B68|806D7E8|806CFFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800E4C0|806D934|806D148|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060CB4|806DA3C|806D250|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806DCB8|806D4CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806E07C|806D890|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806EA64|806E278|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061BAC|806EE5C|806E670|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061BEC|806EE9C|806E6B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061C8C|806EF3C|806E750|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061E14|806F0C4|806E8D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061FD0|806F280|806EA94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80620D8|806F2D8|806EAEC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806212C|806F330|806EB44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80621EC|806F404|806EC18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062380|806F598|806EDAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062AB4|806FD1C|806F530|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062BD4|806FE3C|806F650|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062C38|806FEA0|806F6B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062D80|806FFE8|806F7FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80646E4|8071960|8071174|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80652E0|807255C|8071D70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066484|80736EC|8072F00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80749F0|80741F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068060|807540C|8074C10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80687BC|8075B7C|80753AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068858|8075C18|8075448|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068A48|8075E08|8075638|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068CB8|8076080|80758B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068D9C|8076164|8075994|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068E80|8076248|8075A78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068F04|80762CC|8075AFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069430|8076820|8076050|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A330|807761C|8076E4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8077694|8076EC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8077714|8076F44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8077794|8076FC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A3A8|807781C|807704C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A44C|80778C0|80770F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A4D4|80778FC|807712C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8077944|8077174|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A51C|807798C|80771BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A600|8077A70|80772A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8077D1C|807754C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8077FB4|80777E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069FD8|8078030|8077860|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8078098|80778C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80780E0|8077910|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80781C8|80779F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807850C|8077D3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80785B8|8077DE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A920|8078950|8078180|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A954|8078984|80781B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BB9C|80789AC|80781DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80789EC|807821C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8078ACC|80782FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8078BC4|80783F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806AAA0|8078CF0|8078520|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806ABD0|8078E20|8078650|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8078E84|80786B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806AC90|8078F08|8078738|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B268|80795E0|8078E10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B284|80795FC|8078E2C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B310|8079688|8078EB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B3DC|8079754|8078F84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079798|8078FC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807982C|807905C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079894|80790C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079CE4|8079514|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B8C8|8079F34|8079764|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B938|8079FA4|80797D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B984|8079FF0|8079820|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B9BC|807A028|8079858|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B9F8|807A064|8079894|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BA48|807A0B4|80798E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BA74|807A0E0|8079910|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BAA0|807A10C|807993C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BAB8|807A160|8079990|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BAF0|807A198|80799C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807A568|8079AF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807A5D0|8079B5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BFA4|807A67C|8079C08|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AD28|807A2B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AD3C|807A2C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AD50|807A2DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AD64|807A2F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AD78|807A304|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AE94|807A420|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C62C|807AEF0|807A47C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AF10|807A49C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B32C|807A8B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C228|807B7B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D3E0|807C96C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DAF4|807CFF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DB8C|807D094|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DD0C|807D1C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801ADB4|807DD24|807D1E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DD3C|807D1F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DDDC|807D240|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DF0C|807D2EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DF44|807D324|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BF14|807E0A0|807D424|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E14C|807D4C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E188|807D4EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E378|807D644|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E540|807D80C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E6A4|807D954|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E774|807D9E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E7A4|807DA14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E950|807DBA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E9E0|807DC30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807EBCC|807DE1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807ED8C|807DFDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807EE34|807E084|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807EED8|807E128|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F1FC|807E440|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F258|807E49C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F3FC|807E640|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F448|807E68C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FC74|807EEAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FC88|807EEC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FC9C|807EED4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806CC80|807FCB0|807EEE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FCC4|807EEFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FD34|807EF6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FD58|807EF90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806F5F8|80814C4|8080768|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806F708|80815D4|8080878|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806FBD8|8081AB0|8080D54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80704DC|808245C|80816FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8070DC8|8082EEC|8082460|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808586C|8084E70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808588C|8084E90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80864DC|8085ADC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80872E4|80868F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8074668|8089998|8089038|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808E7D4|808DEA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C4B0|808E8C8|808DC48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808ED8C|808E448|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808F938|808EFFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808FCF8|808F3B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80902F0|808F9B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8090B2C|80901EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8090FD4|8090690|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8082574|8091118|80907D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80827F8|809139C|8090A58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8091618|8090CD4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8091C08|80912CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80937E0|8092ED4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8095E8C|809565C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80966CC|8095ED8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8097C94|809750C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8098EF4|8098618|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8099B50|8099198|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806CE18|8099D00|8099340|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809A214|8099858|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B380|809A9A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8084560|809F280|809E870|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809F660|809EC24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809F9F8|809EFBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A0184|809F748|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A0654|809FC88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8084D1C|80A0B44|80A0178|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A0DCC|80A0400|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A1384|80A09FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A3F48|80A32D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A5218|80A45A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A5838|80A4B4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80895B8|80A5E30|80A5148|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A838C|80A7480|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8774|80A7860|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8850|80A793C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8B74|80A7C60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A9034|80A8120|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A9D44|80A8E30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AA4D4|80A95F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AA8FC|80A9A20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AAB78|80A9C9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AAD44|80A9E7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AAD94|80A9ECC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB0E0|80AA218|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB654|80AA78C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ABC4C|80AAD68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AC304|80AB420|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AC324|80AB440|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AC3D0|80AB4EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AC670|80AB78C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ADD88|80ACE60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AEA24|80ADB0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AF130|80AE218|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808CE4C|80AF68C|80AE754|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AFBE8|80AECB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80951FC|80B06B4|80AF864|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809604C|80B1454|80B062C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1E64|80B103C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809704C|80B26A4|80B1878|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80978AC|80B2EC0|80B209C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80979C8|80B2FE4|80B21C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097A54|80B3070|80B224C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097BC0|80B31DC|80B23B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097E2C|80B3448|80B2624|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80984A8|80B3AB4|80B2C90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80986DC|80B3CD4|80B2EB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B3E94|80B3070|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B40D8|80B32A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4104|80B32CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B45FC|80B37C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4750|80B3918|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4778|80B3940|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4810|80B39D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4934|80B3AFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5130|80B4310|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B519C|80B437C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B520C|80B43EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5430|80B4610|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5600|80B47E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5B6C|80B4D4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B60F0|80B52D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6170|80B5350|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6754|80B5934|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6A1C|80B5BFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6C8C|80B5E80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6DEC|80B5FE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7578|80B676C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B79FC|80B6C14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7B30|80B6D48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7B4C|80B6D64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7E60|80B70B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B812C|80B7380|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B81B4|80B7408|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8017C04|80B8808|80B7A24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8A20|80B7C3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8FF4|80B8358|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9038|80B839C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9A4C|80B8EEC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BAEA8|80BA3A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BAED4|80BA3CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BB210|80BA6D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BB8CC|80BAE50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BB940|80BAEC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBB5C|80BB0E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBDD0|80BB354|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBFAC|80BB530|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC8B8|80BBEB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BCD00|80BC2D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD19C|80BC790|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD36C|80BC960|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD3B0|80BC9B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD98C|80BCE34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD9B8|80BCE60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDC2C|80BD0D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDD34|80BD1DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDEBC|80BD364|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BE04C|80BD4F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BE0B4|80BD570|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BE1DC|80BD698|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BE2A8|80BD764|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8019B38|801A8B4|801A4D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A9090|80A817C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D044|800D134|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030E80|8030994|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807EA0C|807DC5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808F3BC|808EA80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069098|8076460|8075C90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8018D70|8018980|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8020144|801FCDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B2CC|800B390|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806DB6C|806D380|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4208|80B33D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E854|800E948|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801DF68|801DBC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8096234|80B1630|80B0808|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80966C4|80B1AC4|80B0C9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079DF4|8079624|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80842F8|80838FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803D4D0|8045D44|8045558|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FD9C|807EFD4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808F834|808EEF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801BE04|801BA54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A69EC|80A5D2C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BF68|800C058|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C06C|800C15C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800CFA8|800D098|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80926F0|8091DBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8097AB0|8097324|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A88B8|80A79A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8B98|80A7C84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1ED4|80B10AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801A210|801B040|801AC60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801B7D0|801CE3C|801CA38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AFCC|807A558|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809C0C8|809B700|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7A74|80B6C8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8056618|8055E30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805CC80|8068E40|8068654|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD0B4|80BC6A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EFD4|800F0C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8031440|8030F54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805CD04|8068EC4|80686D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062E94|80700FC|806F910|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8067B08|8074D50|8074554|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8093948|809303C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AD058|80AC174|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B549C|80B467C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B244|800B308|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D994|800DA88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8078688|8077EB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B86C0|80B78DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D5E8|800D6D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DE98|800DF8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805B404|805AC1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80556F8|805E3EC|805DC04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8067920|8074B68|807436C|8081070|807ED30|MapAnimLevelUp_GetActorStatBase|int MapAnimLevelUp_GetActorStatBase(int a1, int a2)||
-|0|8093F88|8093690|0|0||||
-|8070F64|8083088|808263C|0|0||||
-|0|8025BB0|8025724|0|0||||
-|0|800C16C|800C25C|0|0||||
-|0|800C214|800C304|0|0||||
-|0|800C54C|800C63C|0|0||||
-|0|800EB4C|800EC40|0|0||||
-|0|800F9FC|800FAF0|0|0||||
-|0|800FDD8|800FD90|0|0||||
-|8034BF0|803BFF4|803BB40|0|0||||
-|8064DF8|8072074|8071888|0|0||||
-|806A270|807755C|8076D8C|0|0||||
-|0|807CFEC|807C578|0|0||||
-|0|807DF88|807D368|0|0||||
-|0|807EF7C|807E1C0|0|0||||
-|0|808F970|808F034|0|0||||
-|80640D0|807134C|8070B60|0|0||||
-|0|800D8FC|800D9F0|0|0||||
-|0|800F188|800F27C|0|0||||
-|801B3FC|801C980|801C57C|0|0||||
-|0|804BD8C|804B5B0|0|0||||
-|0|804C7C4|804BFE8|0|0||||
-|0|805AC14|805A42C|0|0||||
-|0|80656D8|8064EE8|0|0|FireDragonBGAnimation5|void FireDragonBGAnimation5(_6CStruct *ctx)||
-|805F9B8|806C4A0|806BCB4|0|0||||
-|0|80873B4|80869C8|0|0||||
-|0|80ACEE4|80AC000|0|0||||
-|0|80AEDC0|80ADEA8|0|0||||
-|8095034|80B04EC|80AF69C|0|0||||
-|0|80BE0CC|80BD588|0|0||||
-|0|80605E0|805FDF8|0|0||||
-|0|800D510|800D600|0|0||||
-|0|800D57C|800D66C|0|0||||
-|0|800D774|800D868|0|0||||
-|0|800DBD4|800DCC8|0|0||||
-|0|800DD08|800DDFC|0|0||||
-|806D35C|807A528|8079AB4|0|0||||
-|0|807A590|8079B1C|0|0||||
-|0|8090244|808F904|0|0||||
-|8097180|80B27D8|80B19AC|0|0||||
-|0|800F278|800F36C|0|0||||
-|0|800F3A0|800F494|0|0||||
-|0|800FEC8|800FE80|0|0||||
-|0|8010BF4|80107A4|0|0||||
-|8024E68|802984C|802939C|0|0|handleWeaponEffect|void handleWeaponEffect(u8 dataAttacker[], u8 dataDefender[])||
-|0|80387D0|803831C|0|0||||
-|8060748|806D2E4|806CAF8|0|0||||
-|0|807F104|807E348|0|0||||
-|807B90C|80897E0|8088E80|0|0||||
-|0|8096708|8095F14|0|0||||
-|0|809F40C|809E9FC|0|0||||
-|808C390|80AEAA4|80ADB8C|0|0||||
-|8094F94|80B044C|80AF5FC|0|0||||
-|0|800B9E8|800BA90|0|0||||
-|0|800BBB0|800BCA0|0|0||||
-|806CD78|800DDA4|800DE98|0|0||||
-|0|800E800|800E8F4|0|0||||
-|0|800F850|800F944|0|0||||
-|0|80185C0|80181D0|0|0||||
-|0|801FBD8|801F770|0|0||||
-|0|801FCD0|801F868|0|0||||
-|802BCF4|8031C6C|8031700|0|0||||
-|0|8043F74|8043798|0|0||||
-|0|80582B8|8057AD0|0|0||||
-|0|805B09C|805A8B4|0|0||||
-|0|805B384|805AB9C|0|0||||
-|8060504|806D08C|806C8A0|0|0||||
-|0|807D370|807C8FC|0|0||||
-|8073688|8087230|8086844|0|0||||
-|0|80872A4|80868B8|0|0||||
-|0|80BCEBC|80BC494|0|0||||
-|0|80BDBE4|80BD08C|0|0||||
-|0|8017B78|8017788|0|0||||
-|8002234|800235C|8002384|0|0||||
-|0|800B63C|800B700|0|0||||
-|0|800C4C0|800C5B0|0|0||||
-|0|800CF2C|800D01C|0|0||||
-|0|800DF64|800E058|0|0||||
-|0|800E00C|800E100|0|0||||
-|0|80308E8|8030420|0|0||||
-|804549C|804E6D0|804DEF4|0|0||||
-|0|804EA10|804E234|0|0||||
-|0|804FDB0|804F5D4|0|0||||
-|80528CC|805C2B4|805BACC|0|0||||
-|8054EF8|805DB84|805D39C|0|0||||
-|805873C|8065010|8064828|0|0||||
-|0|8065AB0|80652C0|0|0|FireDragonBGAnimation9|void FireDragonBGAnimation9(_6CStruct *ctx)||
-|0|8066500|8065D10|0|0||||
-|0|80797D4|8079004|0|0||||
-|0|807C464|807B9F0|0|0||||
-|806D028|807DEC0|807D2B0|0|0||||
-|0|807EC58|807DEA8|0|0||||
-|0|8090148|808F808|0|0||||
-|0|8099A20|8099068|0|0||||
-|0|809D648|809CC30|0|0||||
-|80860A4|80A245C|80A1AC8|0|0||||
-|0|80AC42C|80AB548|0|0||||
-|0|80B1908|80B0AE0|0|0||||
-|0|80B217C|80B1354|0|0||||
-|0|80B4B58|80B3D20|0|0||||
-|0|8077E50|8077680|0|0||||
-|0|807E854|807DAC4|0|0||||
-|80026BC|8002A44|8002A6C|0|0||||
-|8003434|80039D4|8003AF8|0|0||||
-|0|8003A68|8003B8C|0|0||||
-|0|8003BFC|8003D20|0|0||||
-|800DE3C|800B200|800B2C4|0|0||||
-|0|800B494|800B558|0|0||||
-|0|800B5AC|800B670|0|0||||
-|0|800D22C|800D31C|0|0||||
-|0|800D2E4|800D3D4|0|0||||
-|0|800DB18|800DC0C|0|0||||
-|0|800E71C|800E810|0|0||||
-|800E120|80104D4|8010064|0|0||||
-|0|802ED30|802E864|0|0||||
-|802B1D4|8030D88|803089C|0|0||||
-|0|804EA54|804E278|0|0||||
-|80481CC|80516A8|8050ECC|0|0||||
-|805238C|805BD74|805B58C|0|0||||
-|0|8066640|8065E54|0|0||||
-|0|8066D40|8066554|0|0||||
-|8061554|806E76C|806DF80|0|0||||
-|0|807C384|807B910|0|0||||
-|0|807E340|807D60C|0|0||||
-|8058F00|807E908|807DB74|0|0||||
-|80763D8|808B5E4|808AC90|0|0||||
-|0|808F8D0|808EF94|0|0||||
-|808A7B8|80A6EF8|80A6238|0|0||||
-|0|80A93A0|80A848C|0|0||||
-|0|80AEEB8|80ADFA0|0|0||||
-|0|80B4C58|80B3E20|0|0||||
-|0|80B916C|80B84D0|0|0||||
-|0|80BD48C|80BCA94|0|0||||
-|8002910|8002CD8|8002DFC|0|0||||
-|0|8029224|8028D74|0|0||||
-|0|80ACA44|80ABB60|0|0||||
-|0|8079C34|8079464|0|0||||
-|80028DC|8002CA4|8002DC8|0|0||||
-|0|800AE34|800AE8C|0|0||||
-|0|800B9B8|800BA60|0|0||||
-|0|800BC98|800BDD4|0|0||||
-|0|800BD84|800BE74|0|0||||
-|0|800D2B0|800D3A0|0|0||||
-|0|800F63C|800F730|0|0||||
-|0|800F7D0|800F8C4|0|0||||
-|0|800F810|800F904|0|0||||
-|0|8011628|80111D8|0|0|fubuki2|void fubuki2(_6CStruct *ctx)||
-|0|80116F0|80112A0|0|0|fubuki4|void fubuki4(_6CStruct *ctx)||
-|0|8011E48|80117B0|0|0||||
-|0|801B8FC|801B528|0|0||||
-|801D03C|801E94C|801E5C8|0|0||||
-|0|8020CB0|8020848|0|0||||
-|8024D60|8029714|8029264|0|0|calculateBattleDamage|void calculateBattleDamage(u8 battleData[])|战斗中计算实际伤害<br>addr=战斗数据基址<br>203A3EC 我方<br>203A46C 对方|
-|0|802FD68|802F89C|0|0||||
-|8048244|8051720|8050F44|0|0||||
-|8050A70|805A29C|8059AB4|0|0||||
-|8025C18|805AE68|805A680|0|0||||
-|0|805B52C|805AD44|0|0||||
-|8052878|805C260|805BA78|0|0||||
-|0|806037C|805FB94|0|0||||
-|0|8060414|805FC2C|0|0||||
-|8056B28|8062D88|80625A0|0|0||||
-|80572EC|806355C|8062D74|0|0||||
-|0|8065660|8064E70|0|0|FireDragonBGAnimation4|void FireDragonBGAnimation4(_6CStruct *ctx)||
-|0|80657D4|8064FE4|0|0|FireDragonBGAnimation7|void FireDragonBGAnimation7(_6CStruct *ctx)||
-|0|80658F8|8065108|0|0|FireDragonBGAnimation8|void FireDragonBGAnimation8(_6CStruct *ctx)||
-|805DCB4|8069E64|8069684|0|0||||
-|0|806DF58|806D76C|0|0||||
-|8065830|8072AAC|80722C0|0|0||||
-|8065994|8072C10|8072424|0|0||||
-|802D1A8|807B158|807A6E4|0|0||||
-|806C950|807B1E0|807A76C|0|0||||
-|0|807BC9C|807B228|0|0||||
-|8074084|807BDC8|807B354|0|0||||
-|0|807C108|807B694|0|0||||
-|0|807C3E8|807B974|0|0||||
-|0|807D9FC|807CF7C|0|0||||
-|0|807DD54|807D210|0|0||||
-|0|807DFF4|807D3D4|0|0||||
-|0|807E7F8|807DA68|0|0||||
-|0|807F238|807E47C|0|0||||
-|0|807FA64|807ECA8|0|0||||
-|0|8087B98|80871E0|0|0||||
-|0|8087C6C|80872B4|0|0||||
-|0|809AF38|809A560|80A3E24|0||||
-|0|80A58C4|80A4BD8|0|0||||
-|0|80A8FD8|80A80C4|0|0||||
-|0|80A9338|80A8424|0|0||||
-|0|80AC490|80AB5AC|0|0||||
-|0|80B50F4|80B42D4|0|0||||
-|0|80B5CA8|80B4E88|0|0||||
-|0|80B5EE4|80B50C4|0|0||||
-|0|80B8084|80B72D8|0|0||||
-|0|80B8260|80B74B4|0|0||||
-|80524A8|80B89C0|80B7BDC|0|0||||
-|0|80B8AB4|80B7CD0|0|0||||
-|0|80B94A0|80B8874|0|0||||
-|0|80BDCC0|80BD168|0|0||||
-|0|80BDCFC|80BD1A4|0|0||||
-|8041358|804A4CC|8049CE4|0|0||||
-|806B650|8079A94|80792C4|0|0||||
-|0|8066AE0|80662F4|0|0||||
-|80278A0|802CC2C|802C76C|0|0||||
-|0|807E0D4|807D448|0|0||||
-|8000C88|8000C80|8000CA8|0|0||||
-|8002DC4|8003214|8003338|0|0||||
-|80032F0|8003858|800397C|0|0||||
-|800E088|800B3DC|800B4A0|0|0||||
-|800E200|800B5F0|800B6B4|0|0||||
-|8013754|800B8CC|800B974|0|0||||
-|0|800BA34|800BADC|0|0||||
-|800E5A8|800BA5C|800BB04|0|0||||
-|8024844|800BA8C|800BB34|0|0||||
-|0|800BC48|800BD84|0|0||||
-|806B500|800CC74|800CD64|0|0||||
-|8071BC0|800CCB8|800CDA8|0|0||||
-|80815E4|800CD90|800CE80|0|0||||
-|0|800D28C|800D37C|0|0||||
-|801F5A0|800D7CC|800D8C0|0|0||||
-|0|800DE5C|800DF50|0|0||||
-|80104F0|800E25C|800E350|0|0||||
-|0|800E390|800E484|0|0||||
-|0|800E3B4|800E4A8|0|0||||
-|8010608|800E3DC|800E4D0|0|0||||
-|0|800E40C|800E500|0|0||||
-|8071B80|800EA9C|800EB90|0|0||||
-|0|800EAE4|800EBD8|0|0||||
-|0|800ECB8|800EDAC|0|0||||
-|0|800F2E0|800F3D4|0|0||||
-|0|800F330|800F424|0|0||||
-|0|800F3F8|800F4EC|0|0||||
-|0|800F44C|800F540|0|0||||
-|0|800FC6C|800FD60|0|0||||
-|0|8010404|800FF94|0|0||||
-|0|8010440|800FFD0|0|0||||
-|0|8010CB0|8010860|0|0||||
-|0|80117AC|801135C|0|0|eventCodeFunc_DF|signed int eventCodeFunc_DF(_6CStruct *parent)|parent = 0x2025330|
-|0|8011AFC|8011464|0|0||||
-|0|8011EC0|8011828|0|0||||
-|8012428|8012378|8011CE0|0|0||||
-|0|8012440|8011DAC|0|0||||
-|0|8015840|80153C4|0|0||||
-|0|8015940|80154C4|0|0||||
-|0|801BF24|801BB74|0|0||||
-|0|8021820|80213A8|0|0||||
-|0|8030814|803034C|0|0||||
-|0|8030DFC|8030910|0|0||||
-|802BCAC|8031C24|80316B8|0|0||||
-|802D2C8|8033494|8032F64|0|0||||
-|8038C04|80403D0|803FCC4|0|0||||
-|803C060|8043918|8043170|0|0||||
-|803F938|8048244|8047A58|0|0||||
-|8045A70|804EBC0|804E3E4|0|0||||
-|0|80501E4|804FA08|0|0||||
-|8047A1C|8050D38|805055C|0|0||||
-|8048EEC|80523C0|8051BE4|0|0||||
-|8048FD0|80524A4|8051CC8|0|0||||
-|804EC04|8058778|8057F90|0|0||||
-|80558D4|805E5C8|805DDE0|0|0||||
-|8057F60|8064834|806404C|0|0||||
-|805FC54|806C7CC|806BFE0|0|0||||
-|8061838|806EAE8|806E2FC|0|0||||
-|8063848|8070AC4|80702D8|0|0||||
-|8067E84|8075224|8074A28|0|0||||
-|80684EC|80758AC|80750DC|0|0||||
-|8068578|8075938|8075168|0|0||||
-|8068ADC|8075E9C|80756CC|0|0||||
-|8069504|80768F4|8076124|0|0||||
-|806AED8|8079158|8078988|0|0||||
-|806AF4C|80791CC|80789FC|0|0||||
-|0|807D534|807CAC0|0|0||||
-|0|807D668|807CBE4|0|0||||
-|0|807E514|807D7E0|0|0||||
-|0|807ECD4|807DF24|0|0||||
-|0|807F16C|807E3B0|0|0||||
-|0|807F550|807E794|0|0||||
-|0|807F590|807E7D4|0|0||||
-|80718E0|8083B80|8083180|0|0||||
-|0|8084068|8083668|0|0||||
-|0|808EDB0|808E46C|0|0||||
-|0|8093B5C|8093250|0|0||||
-|0|809B5F8|809AC20|0|0||||
-|0|809B7BC|809ADE4|0|0||||
-|0|809BB58|809B184|0|0||||
-|0|809C980|809BFCC|0|0||||
-|0|809DEEC|809D4D4|0|0||||
-|80846F0|809F468|809EA58|0|0||||
-|0|80A5A40|80A4D54|0|0||||
-|0|80A8304|80A73F8|0|0||||
-|0|80A84D8|80A75CC|0|0||||
-|0|80A9538|80A8624|0|0||||
-|807061C|80AB5FC|80AA734|0|0||||
-|0|80AD738|80AC860|0|0||||
-|8095100|80B05B8|80AF768|0|0||||
-|8095138|80B05F0|80AF7A0|80CEA84|0||||
-|80951A4|80B065C|80AF80C|0|0||||
-|8095FC4|80B13B0|80B0588|0|0||||
-|8095FF8|80B13E4|80B05BC|0|0||||
-|80960D4|80B14D0|80B06A8|0|0||||
-|8096164|80B1560|80B0738|0|0||||
-|8096AFC|80B2140|80B1318|0|0||||
-|8097444|80B2A9C|80B1C70|0|0||||
-|0|80B2B64|80B1D40|0|0||||
-|0|80B4A50|80B3C18|0|0||||
-|0|80B56B0|80B4890|0|0||||
-|0|80B8054|80B72A8|0|0||||
-|0|80B8BF8|80B7E20|0|0||||
-|0|80B8ECC|80B8230|0|0||||
-|0|80A17F2|80A0E6A|0|0||||
-|8068704|8075AC4|80752F4|0|0||||
-|806B6B0|8079AF0|8079320|0|0||||
-|0|8079B38|8079368|0|0||||
-|0|8079B80|80793B0|0|0||||
-|806B6F8|8079BC8|80793F8|0|0||||
-|0|80AB8FC|80AAA34|0|0||||
-|0|800B06C|800B130|0|0||||
-|800DBF4|800B0BC|800B180|0|0||||
-|0|800B0D4|800B198|0|0||||
-|0|800D894|800D988|0|0||||
-|0|800DA64|800DB58|0|0||||
-|0|800DAF4|800DBE8|0|0||||
-|800FFEC|800DCD4|800DDC8|0|0||||
-|0|800EC40|800ED34|0|0||||
-|0|800FC40|800FD34|0|0||||
-|0|8010A70|801060C|0|0||||
-|0|8010D88|8010938|0|0||||
-|0|8010EEC|8010A9C|0|0||||
-|0|8011130|8010CE0|0|0||||
-|0|801135C|8010F0C|0|0||||
-|0|80116A8|8011258|0|0|fubuki3|void fubuki3(_6CStruct *ctx)||
-|0|8011BD4|801153C|0|0||||
-|0|8011C08|8011570|0|0||||
-|0|8011C38|80115A0|0|0||||
-|0|8011DD8|8011740|0|0||||
-|0|8012D4C|80126D0|0|0||||
-|806E714|80130C0|8012A08|0|0||||
-|801D078|801E98C|801E608|0|0||||
-|0|801FC6C|801F804|0|0||||
-|806D000|801FD78|801F910|0|0||||
-|801E1F8|801FEF0|801FA88|0|0||||
-|0|8020BF4|802078C|0|0||||
-|801F328|802216C|8021CF4|0|0||||
-|8028E28|802E310|802DE50|0|0||||
-|802B768|80313B8|8030ECC|0|0||||
-|0|8032CDC|80327AC|0|0||||
-|802CFB8|8033170|8032C40|0|0||||
-|803F714|8048020|8047834|0|0||||
-|803FBC4|80484E4|8047CF8|0|0||||
-|8046810|804F88C|804F0B0|0|0||||
-|8046994|804FA10|804F234|0|0||||
-|8046F18|804FFEC|804F810|0|0||||
-|804FFD8|8059B4C|8059364|0|0||||
-|8050038|8059BAC|80593C4|0|0||||
-|80540A0|805CD04|805C51C|0|0||||
-|80544D8|805D158|805C970|0|0||||
-|8055084|805DD10|805D528|0|0||||
-|80563E0|805F0C0|805E8D8|0|0||||
-|8056AD8|8062D38|8062550|0|0||||
-|8058824|80650F8|8064910|0|0||||
-|0|8065328|8064B38|0|0||||
-|0|806546C|8064C7C|8086848|0|RunPlayerPhaseStartTutorialEvent|int RunPlayerPhaseStartTutorialEvent(int a1)||
-|0|8065C14|8065424|0|0|FireDragonBGAnimation12|void FireDragonBGAnimation12(_6CStruct *ctx)||
-|805A7C0|8065F0C|806571C|0|0||||
-|0|8065F98|80657A8|0|0||||
-|0|8065FEC|80657FC|0|0||||
-|805A6DC|8066828|806603C|0|0||||
-|0|8066DD8|80665EC|0|0||||
-|805CEE0|80690A0|80688B4|0|0||||
-|805D0E0|80692A0|8068AB4|0|0||||
-|0|806B5F8|806AE18|0|0||||
-|0|806BF10|806B724|0|0||||
-|805FCB4|806C82C|806C040|0|0||||
-|0|806DFF0|806D804|0|0||||
-|0|806E204|806DA18|0|0||||
-|8061D00|806EFB0|806E7C4|0|0||||
-|80633B0|8070620|806FE34|0|0||||
-|0|8070828|807003C|0|0||||
-|806376C|80709E8|80701FC|0|0||||
-|8064FD0|807224C|8071A60|0|0||||
-|80651E0|807245C|8071C70|0|0||||
-|80669BC|8073C24|8073438|0|0||||
-|8066A48|8073CB0|80734C4|0|0||||
-|80672B0|80744F8|8073D0C|0|0||||
-|80680F0|807549C|8074CA0|0|0||||
-|8068164|8075510|8074D14|0|0||||
-|8069794|8076B84|80763B4|0|0||||
-|8069AB4|8076EA8|80766D8|0|0||||
-|806B540|8079950|8079180|0|0||||
-|0|807A6BC|8079C48|0|0||||
-|806C9F8|807B228|807A7B4|0|0||||
-|0|807B778|807AD04|0|0||||
-|0|807BAE4|807B070|0|0||||
-|0|807BF08|807B494|0|0||||
-|0|807C7E8|807BD74|0|0||||
-|0|807CF94|807C520|0|0||||
-|0|807D088|807C614|0|0||||
-|0|807D140|807C6CC|0|0|IceCrystal1|void IceCrystal1(_6CStruct *ctx)||
-|0|807D284|807C810|0|0|IceCrystal5|void IceCrystal5(_6CStruct *ctx)||
-|0|807D6BC|807CC38|0|0||||
-|0|807D6E0|807CC5C|0|0||||
-|0|807D7D0|807CD4C|0|0||||
-|803782C|807D870|807CDEC|0|0||||
-|806C2F8|807DA28|807CFA8|0|0||||
-|0|807E4E8|807D7B4|0|0||||
-|0|807E5E0|807D890|0|0||||
-|0|807E624|807D8D4|0|0||||
-|0|807E71C|807D9CC|0|0||||
-|0|807F1DC|807E420|0|0||||
-|0|807F78C|807E9D0|0|0||||
-|0|807F9EC|807EC30|0|0||||
-|0|80800E0|807F328|0|0||||
-|0|808034C|807F594|0|0||||
-|0|8080480|807F6C8|0|0||||
-|806F688|8081554|80807F8|0|0||||
-|806F780|808164C|80808F0|0|0||||
-|0|808E4FC|808DBBC|0|0||||
-|0|808EF10|808E5C8|0|0||||
-|0|808EF6C|808E630|0|0||||
-|8082AD8|809163C|8090CF8|0|0||||
-|0|8093478|8092B6C|0|0||||
-|0|809ADDC|809A404|0|0||||
-|0|809CAFC|809C12C|0|0||||
-|0|809DCEC|809D2D4|0|0||||
-|0|809DE40|809D428|0|0||||
-|0|80A38A4|80A2C30|0|0||||
-|805A584|80A5A80|80A4D94|0|0||||
-|0|80A7388|80A66C4|0|0||||
-|0|80A739C|80A66D8|0|0||||
-|0|80A76FC|80A6A14|0|0||||
-|0|80A8A90|80A7B7C|0|0||||
-|0|80A8AAC|80A7B98|0|0|Call89A2938_PlaySound2|int Call89A2938_PlaySound2(int a1)||
-|0|80A8AF0|80A7BDC|0|0||||
-|0|80A8B38|80A7C24|0|0||||
-|0|80A8B80|80A7C6C|0|0||||
-|0|80A9590|80A867C|0|0||||
-|0|80AA0E4|80A91D0|0|0||||
-|0|80AA1BC|80A92A8|0|0||||
-|0|80AAB3C|80A9C60|0|0||||
-|0|80AB634|80AA76C|0|0||||
-|808DE70|80AD688|80AC7B0|0|0||||
-|0|80AD754|80AC87C|0|0||||
-|8094B28|80B0048|80AF234|0|0||||
-|8096AC4|80B2108|80B12E0|0|0||||
-|0|80B3968|80B2B44|0|0||||
-|0|80B4534|80B36FC|0|0||||
-|0|80B4558|80B3720|0|0||||
-|0|80B4CD0|80B3E98|0|0||||
-|0|80B5558|80B4738|0|0||||
-|0|80B5724|80B4904|0|0||||
-|0|80B59AC|80B4B8C|0|0||||
-|0|80B5A80|80B4C60|0|0||||
-|0|80B5DBC|80B4F9C|0|0||||
-|0|80B6B60|80B5D40|0|0||||
-|0|80B6F9C|80B6190|0|0||||
-|0|80B7BCC|80B6DE4|0|0||||
-|0|80B7C10|80B6E28|0|0||||
-|0|80B7F54|80B71A8|0|0||||
-|0|80B7FA0|80B71F4|0|0||||
-|0|80B8010|80B7264|0|0||||
-|0|80B80E0|80B7334|0|0||||
-|0|80B8418|80B766C|0|0||||
-|800AEA0|80B88FC|80B7B18|0|0||||
-|0|80B97A0|80B8C40|0|0||||
-|0|80B9B80|80B9020|0|0||||
-|0|80BAEFC|80BA3F4|0|0||||
-|0|80BC448|80BBA3C|0|0||||
-|0|80BC53C|80BBB30|0|0||||
-|0|80BCACC|80BC0C4|0|0||||
-|0|80BD2CC|80BC8C0|0|0||||
-|0|80BDB40|80BCFE8|0|0||||
-|0|80A87A4|80A7890|0|0||||
-|8063EF0|807116C|8070980|0|0||||
-|0|8001534|800155C|0|0||||
-|0|80015FC|8001624|0|0||||
-|0|800D384|800D474|0|0||||
-|806B2AC|8079624|8078E54|0|0||||
-|0|802BF58|802BA98|0|0||||
-|0|8017FB0|8017BC0|0|0||||
-|0|8053B98|80533B0|0|0||||
-|0|8060C2C|8060444|0|0||||
-|805FEC8|806CA48|806C25C|0|0||||
-|0|80B49A8|80B3B70|0|0||||
-|8095E90|80B127C|80B0454|0|0||||
-|8026AE0|802BF30|802BA70|0|0||||
-|0|808FDE8|808F4A8|0|0||||
-|0|809BB30|809B15C|0|0||||
-|0|80A1050|80A06C4|0|0||||
-|8085CE0|80A2054|80A16C0|0|0||||
-|0|80B3F48|80B3124|0|0||||
-|0|800E65C|800E750|0|0||||
-|0|800E698|800E78C|0|0||||
-|0|800EE60|800EF54|0|0||||
-|0|8017974|8017584|0|0||||
-|802A30C|802F92C|802F460|0|0||||
-|0|80654C8|8064CD8|0|0||||
-|0|80B69A0|80B5B80|0|0||||
-|8097354|80B29AC|80B1B80|0|0||||
-|0|807A1E4|8079A14|0|0||||
-|0|8091C60|8091324|0|0||||
-|807D0A8|80AD9D0|80ACAF8|0|0||||
-|0|80B4170|80B3338|0|0||||
-|0|80B8C38|80B7ED4|0|0||||
-|8052238|805BC20|805B438|0|0||||
-|8062890|806FAF8|806F30C|0|0||||
-|0|800F384|800F478|0|0||||
-|0|80104B8|8010048|0|0||||
-|0|80120E0|8011A48|0|0||||
-|8068524|80758E4|8075114|0|0||||
-|80685B0|8075970|80751A0|0|0||||
-|0|807B3D0|807A95C|0|0||||
-|0|807B400|807A98C|0|0||||
-|80970BC|80B2714|80B18E8|0|0||||
-|80972AC|80B2904|80B1AD8|0|0||||
-|0|800CB6C|800CC5C|0|0||||
-|0|800E628|800E71C|0|0||||
-|80526F4|805C0DC|805B8F4|0|0||||
-|0|807DCD0|807D18C|0|0||||
-|0|809F4C8|809EAB8|0|0||||
-|0|80B6250|80B5430|0|0||||
-|8011F64|8000B88|8000BB0|0|0||||
-|8000E98|8000E98|8000EC0|0|0||||
-|8001010|8001010|8001038|0|0||||
-|8001688|8001920|8001948|0|0||||
-|80016D0|8001968|8001990|0|0||||
-|8001934|8001BF4|8001C1C|0|0||||
-|8001968|8001C28|8001C50|0|0||||
-|0|8001CC4|8001CEC|0|0||||
-|8001AE4|8001E6C|8001E94|0|0||||
-|8001B18|8001EA0|8001EC8|0|0||||
-|0|800473C|8004860|0|0||||
-|0|8004A48|8004B6C|0|0||||
-|0|800542C|800555C|0|0||||
-|0|8006A54|8006BC4|0|0||||
-|0|8009F08|800A078|0|0||||
-|0|800A7C0|800A7BC|0|0||||
-|0|800A7D0|800A7CC|0|0||||
-|0|800A9C0|800AA18|0|0||||
-|809A0E0|800B148|800B20C|0|0||||
-|0|800D278|800D368|0|0||||
-|0|800D87C|800D970|0|0||||
-|0|800E510|800E604|0|0||||
-|0|800FDC4|800FD7C|0|0||||
-|809AD3C|8010ACC|8010668|0|0||||
-|0|8011B4C|80114B4|0|0||||
-|8073598|80130E8|8012A30|0|0||||
-|0|8013228|8012B70|0|0||||
-|0|80132AC|8012BF4|0|0||||
-|0|80132C8|8012C10|0|0||||
-|80144A0|80142A8|8013D88|0|0||||
-|801456C|8014374|8013E54|0|0||||
-|801459C|80143A4|8013E84|0|0||||
-|8014B68|8014970|8014450|0|0||||
-|801577C|8015584|8015108|0|0||||
-|8017BDC|8018280|8017E90|0|0||||
-|801E1A0|801FE98|801FA30|0|0||||
-|0|802C03C|802BB7C|0|0||||
-|8025E28|802FAB4|802F5E8|0|0||||
-|8031764|80384E4|8038030|0|0||||
-|8035880|803CD9C|803C8E8|0|0||||
-|80369A0|803DEE0|803DA30|0|0||||
-|8036E14|803E358|803DEA8|0|0||||
-|803BF8C|8043840|8043130|0|0||||
-|803ECA8|80475A8|8046DC0|0|0||||
-|803EFB4|80478BC|80470D0|0|0||||
-|803F2BC|8047BC4|80473D8|0|0||||
-|803F5AC|8047EB4|80476C8|0|0||||
-|8040C00|804954C|8048D64|0|0||||
-|80420B4|804B4A8|804ACCC|0|0||||
-|8043448|804C788|804BFAC|0|0||||
+|0|8093F88|8093690|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8070F64|8083088|808263C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8025BB0|8025724|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C16C|800C25C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C214|800C304|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C54C|800C63C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EB4C|800EC40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F9FC|800FAF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FDD8|800FD90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8034BF0|803BFF4|803BB40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064DF8|8072074|8071888|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A270|807755C|8076D8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CFEC|807C578|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DF88|807D368|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807EF7C|807E1C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808F970|808F034|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80640D0|807134C|8070B60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D8FC|800D9F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F188|800F27C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801B3FC|801C980|801C57C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804BD8C|804B5B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804C7C4|804BFE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805AC14|805A42C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80656D8|8064EE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F9B8|806C4A0|806BCB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80873B4|80869C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ACEE4|80AC000|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AEDC0|80ADEA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095034|80B04EC|80AF69C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BE0CC|80BD588|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80605E0|805FDF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D510|800D600|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D57C|800D66C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D774|800D868|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DBD4|800DCC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DD08|800DDFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806D35C|807A528|8079AB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807A590|8079B1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8090244|808F904|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097180|80B27D8|80B19AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F278|800F36C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F3A0|800F494|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FEC8|800FE80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010BF4|80107A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8024E68|802984C|802939C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80387D0|803831C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060748|806D2E4|806CAF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F104|807E348|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|807B90C|80897E0|8088E80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8096708|8095F14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809F40C|809E9FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808C390|80AEAA4|80ADB8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8094F94|80B044C|80AF5FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B9E8|800BA90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BBB0|800BCA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806CD78|800DDA4|800DE98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E800|800E8F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F850|800F944|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80185C0|80181D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801FBD8|801F770|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801FCD0|801F868|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802BCF4|8031C6C|8031700|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8043F74|8043798|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80582B8|8057AD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805B09C|805A8B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805B384|805AB9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060504|806D08C|806C8A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D370|807C8FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8073688|8087230|8086844|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80872A4|80868B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BCEBC|80BC494|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDBE4|80BD08C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8017B78|8017788|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002234|800235C|8002384|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B63C|800B700|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800C4C0|800C5B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800CF2C|800D01C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DF64|800E058|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E00C|800E100|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80308E8|8030420|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804549C|804E6D0|804DEF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804EA10|804E234|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804FDB0|804F5D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80528CC|805C2B4|805BACC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8054EF8|805DB84|805D39C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805873C|8065010|8064828|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065AB0|80652C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066500|8065D10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80797D4|8079004|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C464|807B9F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806D028|807DEC0|807D2B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807EC58|807DEA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8090148|808F808|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8099A20|8099068|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809D648|809CC30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80860A4|80A245C|80A1AC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AC42C|80AB548|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1908|80B0AE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B217C|80B1354|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4B58|80B3D20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8077E50|8077680|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E854|807DAC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80026BC|8002A44|8002A6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8003434|80039D4|8003AF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8003A68|8003B8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8003BFC|8003D20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800DE3C|800B200|800B2C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B494|800B558|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B5AC|800B670|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D22C|800D31C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D2E4|800D3D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DB18|800DC0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E71C|800E810|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800E120|80104D4|8010064|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802ED30|802E864|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802B1D4|8030D88|803089C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804EA54|804E278|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80481CC|80516A8|8050ECC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805238C|805BD74|805B58C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066640|8065E54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066D40|8066554|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061554|806E76C|806DF80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C384|807B910|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E340|807D60C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8058F00|807E908|807DB74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80763D8|808B5E4|808AC90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808F8D0|808EF94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808A7B8|80A6EF8|80A6238|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A93A0|80A848C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AEEB8|80ADFA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4C58|80B3E20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B916C|80B84D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD48C|80BCA94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002910|8002CD8|8002DFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8029224|8028D74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ACA44|80ABB60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079C34|8079464|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80028DC|8002CA4|8002DC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800AE34|800AE8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B9B8|800BA60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BC98|800BDD4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BD84|800BE74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D2B0|800D3A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F63C|800F730|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F7D0|800F8C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F810|800F904|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011628|80111D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80116F0|80112A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011E48|80117B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801B8FC|801B528|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801D03C|801E94C|801E5C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8020CB0|8020848|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8024D60|8029714|8029264|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|战斗中计算实际伤害<br>addr=战斗数据基址<br>203A3EC 我方<br>203A46C 对方|
+|0|802FD68|802F89C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8048244|8051720|8050F44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8050A70|805A29C|8059AB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8025C18|805AE68|805A680|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805B52C|805AD44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8052878|805C260|805BA78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806037C|805FB94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8060414|805FC2C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8056B28|8062D88|80625A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80572EC|806355C|8062D74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065660|8064E70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80657D4|8064FE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80658F8|8065108|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805DCB4|8069E64|8069684|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806DF58|806D76C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065830|8072AAC|80722C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065994|8072C10|8072424|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802D1A8|807B158|807A6E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C950|807B1E0|807A76C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BC9C|807B228|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8074084|807BDC8|807B354|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C108|807B694|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C3E8|807B974|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D9FC|807CF7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DD54|807D210|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DFF4|807D3D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E7F8|807DA68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F238|807E47C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FA64|807ECA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8087B98|80871E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8087C6C|80872B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809AF38|809A560|80A3E24|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A58C4|80A4BD8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8FD8|80A80C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A9338|80A8424|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AC490|80AB5AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B50F4|80B42D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5CA8|80B4E88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5EE4|80B50C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8084|80B72D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8260|80B74B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80524A8|80B89C0|80B7BDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8AB4|80B7CD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B94A0|80B8874|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDCC0|80BD168|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDCFC|80BD1A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8041358|804A4CC|8049CE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B650|8079A94|80792C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066AE0|80662F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80278A0|802CC2C|802C76C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E0D4|807D448|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000C88|8000C80|8000CA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002DC4|8003214|8003338|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80032F0|8003858|800397C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800E088|800B3DC|800B4A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800E200|800B5F0|800B6B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8013754|800B8CC|800B974|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BA34|800BADC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800E5A8|800BA5C|800BB04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8024844|800BA8C|800BB34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BC48|800BD84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B500|800CC74|800CD64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8071BC0|800CCB8|800CDA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80815E4|800CD90|800CE80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D28C|800D37C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801F5A0|800D7CC|800D8C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DE5C|800DF50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80104F0|800E25C|800E350|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E390|800E484|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E3B4|800E4A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010608|800E3DC|800E4D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E40C|800E500|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8071B80|800EA9C|800EB90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EAE4|800EBD8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800ECB8|800EDAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F2E0|800F3D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F330|800F424|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F3F8|800F4EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F44C|800F540|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FC6C|800FD60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010404|800FF94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010440|800FFD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010CB0|8010860|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80117AC|801135C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|parent = 0x2025330|
+|0|8011AFC|8011464|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011EC0|8011828|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8012428|8012378|8011CE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012440|8011DAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8015840|80153C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8015940|80154C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801BF24|801BB74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8021820|80213A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030814|803034C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030DFC|8030910|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802BCAC|8031C24|80316B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802D2C8|8033494|8032F64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8038C04|80403D0|803FCC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803C060|8043918|8043170|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803F938|8048244|8047A58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8045A70|804EBC0|804E3E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80501E4|804FA08|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8047A1C|8050D38|805055C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8048EEC|80523C0|8051BE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8048FD0|80524A4|8051CC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804EC04|8058778|8057F90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80558D4|805E5C8|805DDE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8057F60|8064834|806404C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FC54|806C7CC|806BFE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061838|806EAE8|806E2FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8063848|8070AC4|80702D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8067E84|8075224|8074A28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80684EC|80758AC|80750DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068578|8075938|8075168|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068ADC|8075E9C|80756CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069504|80768F4|8076124|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806AED8|8079158|8078988|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806AF4C|80791CC|80789FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D534|807CAC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D668|807CBE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E514|807D7E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807ECD4|807DF24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F16C|807E3B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F550|807E794|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F590|807E7D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80718E0|8083B80|8083180|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8084068|8083668|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808EDB0|808E46C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8093B5C|8093250|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B5F8|809AC20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B7BC|809ADE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809BB58|809B184|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809C980|809BFCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809DEEC|809D4D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80846F0|809F468|809EA58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A5A40|80A4D54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8304|80A73F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A84D8|80A75CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A9538|80A8624|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|807061C|80AB5FC|80AA734|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AD738|80AC860|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095100|80B05B8|80AF768|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095138|80B05F0|80AF7A0|80CEA84|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80951A4|80B065C|80AF80C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095FC4|80B13B0|80B0588|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095FF8|80B13E4|80B05BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80960D4|80B14D0|80B06A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8096164|80B1560|80B0738|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8096AFC|80B2140|80B1318|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097444|80B2A9C|80B1C70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B2B64|80B1D40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4A50|80B3C18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B56B0|80B4890|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8054|80B72A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8BF8|80B7E20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8ECC|80B8230|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A17F2|80A0E6A|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068704|8075AC4|80752F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B6B0|8079AF0|8079320|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079B38|8079368|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079B80|80793B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B6F8|8079BC8|80793F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB8FC|80AAA34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B06C|800B130|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800DBF4|800B0BC|800B180|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B0D4|800B198|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D894|800D988|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DA64|800DB58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DAF4|800DBE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800FFEC|800DCD4|800DDC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EC40|800ED34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FC40|800FD34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010A70|801060C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010D88|8010938|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010EEC|8010A9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011130|8010CE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801135C|8010F0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80116A8|8011258|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011BD4|801153C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011C08|8011570|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011C38|80115A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011DD8|8011740|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012D4C|80126D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806E714|80130C0|8012A08|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801D078|801E98C|801E608|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801FC6C|801F804|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806D000|801FD78|801F910|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801E1F8|801FEF0|801FA88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8020BF4|802078C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801F328|802216C|8021CF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8028E28|802E310|802DE50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802B768|80313B8|8030ECC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8032CDC|80327AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802CFB8|8033170|8032C40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803F714|8048020|8047834|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FBC4|80484E4|8047CF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8046810|804F88C|804F0B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8046994|804FA10|804F234|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8046F18|804FFEC|804F810|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804FFD8|8059B4C|8059364|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8050038|8059BAC|80593C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80540A0|805CD04|805C51C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80544D8|805D158|805C970|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8055084|805DD10|805D528|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80563E0|805F0C0|805E8D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8056AD8|8062D38|8062550|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8058824|80650F8|8064910|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065328|8064B38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806546C|8064C7C|8086848|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065C14|8065424|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805A7C0|8065F0C|806571C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065F98|80657A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065FEC|80657FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805A6DC|8066828|806603C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066DD8|80665EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805CEE0|80690A0|80688B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805D0E0|80692A0|8068AB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806B5F8|806AE18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806BF10|806B724|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FCB4|806C82C|806C040|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806DFF0|806D804|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806E204|806DA18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061D00|806EFB0|806E7C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80633B0|8070620|806FE34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8070828|807003C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806376C|80709E8|80701FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064FD0|807224C|8071A60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80651E0|807245C|8071C70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80669BC|8073C24|8073438|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066A48|8073CB0|80734C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80672B0|80744F8|8073D0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80680F0|807549C|8074CA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068164|8075510|8074D14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069794|8076B84|80763B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069AB4|8076EA8|80766D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B540|8079950|8079180|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807A6BC|8079C48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C9F8|807B228|807A7B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B778|807AD04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BAE4|807B070|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BF08|807B494|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C7E8|807BD74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CF94|807C520|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D088|807C614|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D140|807C6CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D284|807C810|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D6BC|807CC38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D6E0|807CC5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D7D0|807CD4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803782C|807D870|807CDEC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C2F8|807DA28|807CFA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E4E8|807D7B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E5E0|807D890|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E624|807D8D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E71C|807D9CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F1DC|807E420|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F78C|807E9D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F9EC|807EC30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80800E0|807F328|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808034C|807F594|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8080480|807F6C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806F688|8081554|80807F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806F780|808164C|80808F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808E4FC|808DBBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808EF10|808E5C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808EF6C|808E630|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8082AD8|809163C|8090CF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8093478|8092B6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809ADDC|809A404|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809CAFC|809C12C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809DCEC|809D2D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809DE40|809D428|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A38A4|80A2C30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805A584|80A5A80|80A4D94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7388|80A66C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A739C|80A66D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A76FC|80A6A14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8A90|80A7B7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8AAC|80A7B98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8AF0|80A7BDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8B38|80A7C24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8B80|80A7C6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A9590|80A867C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AA0E4|80A91D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AA1BC|80A92A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AAB3C|80A9C60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB634|80AA76C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808DE70|80AD688|80AC7B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AD754|80AC87C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8094B28|80B0048|80AF234|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8096AC4|80B2108|80B12E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B3968|80B2B44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4534|80B36FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4558|80B3720|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4CD0|80B3E98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5558|80B4738|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5724|80B4904|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B59AC|80B4B8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5A80|80B4C60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5DBC|80B4F9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6B60|80B5D40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6F9C|80B6190|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7BCC|80B6DE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7C10|80B6E28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7F54|80B71A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7FA0|80B71F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8010|80B7264|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B80E0|80B7334|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8418|80B766C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800AEA0|80B88FC|80B7B18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B97A0|80B8C40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9B80|80B9020|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BAEFC|80BA3F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC448|80BBA3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC53C|80BBB30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BCACC|80BC0C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD2CC|80BC8C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDB40|80BCFE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A87A4|80A7890|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8063EF0|807116C|8070980|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8001534|800155C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80015FC|8001624|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D384|800D474|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B2AC|8079624|8078E54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802BF58|802BA98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8017FB0|8017BC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8053B98|80533B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8060C2C|8060444|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FEC8|806CA48|806C25C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B49A8|80B3B70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095E90|80B127C|80B0454|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8026AE0|802BF30|802BA70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808FDE8|808F4A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809BB30|809B15C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A1050|80A06C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8085CE0|80A2054|80A16C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B3F48|80B3124|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E65C|800E750|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E698|800E78C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EE60|800EF54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8017974|8017584|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802A30C|802F92C|802F460|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80654C8|8064CD8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B69A0|80B5B80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097354|80B29AC|80B1B80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807A1E4|8079A14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8091C60|8091324|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|807D0A8|80AD9D0|80ACAF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4170|80B3338|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8C38|80B7ED4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8052238|805BC20|805B438|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062890|806FAF8|806F30C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F384|800F478|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80104B8|8010048|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80120E0|8011A48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068524|80758E4|8075114|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80685B0|8075970|80751A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B3D0|807A95C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B400|807A98C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80970BC|80B2714|80B18E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80972AC|80B2904|80B1AD8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800CB6C|800CC5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E628|800E71C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80526F4|805C0DC|805B8F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DCD0|807D18C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809F4C8|809EAB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6250|80B5430|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8011F64|8000B88|8000BB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000E98|8000E98|8000EC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001010|8001010|8001038|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001688|8001920|8001948|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80016D0|8001968|8001990|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001934|8001BF4|8001C1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001968|8001C28|8001C50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8001CC4|8001CEC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001AE4|8001E6C|8001E94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001B18|8001EA0|8001EC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800473C|8004860|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8004A48|8004B6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800542C|800555C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8006A54|8006BC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8009F08|800A078|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800A7C0|800A7BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800A7D0|800A7CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800A9C0|800AA18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809A0E0|800B148|800B20C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D278|800D368|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D87C|800D970|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E510|800E604|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FDC4|800FD7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809AD3C|8010ACC|8010668|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011B4C|80114B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8073598|80130E8|8012A30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8013228|8012B70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80132AC|8012BF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80132C8|8012C10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80144A0|80142A8|8013D88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801456C|8014374|8013E54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801459C|80143A4|8013E84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8014B68|8014970|8014450|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801577C|8015584|8015108|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8017BDC|8018280|8017E90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801E1A0|801FE98|801FA30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802C03C|802BB7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8025E28|802FAB4|802F5E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8031764|80384E4|8038030|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8035880|803CD9C|803C8E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80369A0|803DEE0|803DA30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8036E14|803E358|803DEA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803BF8C|8043840|8043130|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803ECA8|80475A8|8046DC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803EFB4|80478BC|80470D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803F2BC|8047BC4|80473D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803F5AC|8047EB4|80476C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8040C00|804954C|8048D64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80420B4|804B4A8|804ACCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8043448|804C788|804BFAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |804A528|8053AA8|80532C0|8059810|80589E0|transformateBattleAnimation|void transformateBattleAnimation(AnimationInterpreter *AIS, __int16 animationID)||
-|804A5C0|8053B40|8053358|0|0||||
-|8055434|805E0C4|805D8DC|0|0||||
-|0|8065288|8064ABC|0|0|getSpecialAnimationEffectInfoType|int getSpecialAnimationEffectInfoType(AnimationInterpreter *AIS)||
-|805FC18|806C790|806BFA4|0|0||||
-|805FC80|806C7F8|806C00C|0|0||||
-|805FE3C|806C9BC|806C1D0|0|0||||
-|806113C|806E334|806DB48|0|0||||
-|0|806E450|806DC64|0|0||||
-|8061360|806E564|806DD78|0|0||||
-|8061474|806E678|806DE8C|0|0||||
-|0|806E698|806DEAC|0|0||||
-|80627D0|806FA28|806F23C|0|0||||
-|80632C4|8070534|806FD48|0|0||||
-|806367C|80708F8|807010C|0|0||||
-|8067D2C|80750CC|80748D0|0|0||||
-|8067E50|80751F0|80749F4|0|0||||
-|8068048|80753F4|8074BF8|0|0||||
-|8068C28|8075FF0|8075820|0|0||||
-|8069A40|8076E34|8076664|0|0||||
-|806A770|8077BE0|8077410|0|0||||
-|0|8077E1C|807764C|0|0||||
-|0|8078894|80780C4|0|0||||
-|806A8AC|80788D0|8078100|0|0||||
-|806AF08|8079188|80789B8|0|0||||
-|806B254|80795CC|8078DFC|0|0||||
-|0|807AE2C|807A3B8|0|0||||
-|0|807B4E8|807AA74|0|0||||
-|0|807C58C|807BB18|0|0||||
-|0|807CBD0|807C15C|0|0||||
-|0|807DE3C|807D26C|0|0||||
-|0|807E414|807D6E0|0|0||||
-|0|807E428|807D6F4|0|0||||
-|0|807F198|807E3DC|0|0||||
-|0|807F62C|807E870|0|0||||
-|0|807F7BC|807EA00|0|0||||
-|0|807F918|807EB5C|0|0||||
-|0|807F9A0|807EBE4|0|0||||
-|0|807FF9C|807F1E4|0|0||||
-|8074804|8089B34|80891D4|0|0||||
-|0|8091C90|8091354|0|0||||
-|0|809E190|809D778|0|0||||
-|0|809FADC|809F0A0|0|0||||
-|0|809FAF4|809F0B8|0|0||||
-|80848C8|80A04FC|809FB30|0|0||||
-|0|80A5868|80A4B7C|0|0||||
-|0|80A8880|80A796C|0|0||||
-|809517C|80B0634|80AF7E4|0|0||||
-|809525C|80B0714|80AF8C4|0|0||||
-|8095F5C|80B1348|80B0520|0|0||||
-|0|80B1E24|80B0FFC|0|0||||
-|80977C0|80B2DD4|80B1FB0|0|0||||
-|8097AC4|80B30E0|80B22BC|0|0||||
-|806C68C|80B3DD4|80B2FB0|0|0||||
-|0|80B44D8|80B36A0|0|0||||
-|0|80B4AC8|80B3C90|0|0||||
-|0|80B4BF0|80B3DB8|0|0||||
-|0|80B4CB0|80B3E78|0|0||||
-|0|80B5648|80B4828|0|0||||
-|0|80B6240|80B5420|0|0||||
-|0|80B6920|80B5B00|0|0||||
-|0|80B70A4|80B6298|0|0||||
-|0|80B70D0|80B62C4|0|0||||
-|0|80B9750|80B8BF0|0|0||||
-|0|80B9B1C|80B8FBC|0|0||||
-|0|80B9BD4|80B9074|0|0||||
-|0|80BB3EC|80BA898|0|0||||
-|0|80BB7D8|80BAD7C|0|0||||
-|0|80BBAEC|80BB070|0|0||||
-|0|80BD358|80BC94C|0|0||||
-|0|80BE1D0|80BD68C|0|0||||
-|0|800F8BC|800F9B0|0|0||||
-|0|800F95C|800FA50|0|0||||
-|0|8010550|80100E0|0|0||||
-|0|80105A8|8010138|0|0||||
-|0|800D7F0|800D8E4|0|0||||
-|806AFD0|80792C4|8078AF4|0|0||||
-|0|800BAD4|800BBC4|0|0||||
-|0|800D3F0|800D524|0|0||||
-|0|800D434|800D4E0|0|0||||
-|0|80BCFEC|80BC5E0|0|0||||
-|8049F1C|8053484|8052C9C|0|0||||
-|0|8012150|8011AB8|0|0||||
-|8010804|8079210|8078A40|0|0||||
-|0|80907C8|808FE88|0|0||||
-|0|80B5A48|80B4C28|0|0||||
-|0|80B5B34|80B4D14|0|0||||
-|806AFD0|8079250|8078A80|0|0||||
-|0|8082DB8|8082058|0|0||||
-|0|805780C|8057024|805D860|0||||
-|0|8062748|8061F60|0|0||||
-|0|806D6A0|806CEB4|0|0||||
-|0|806D744|806CF58|0|0||||
-|806A7AC|8077C1C|807744C|0|0||||
-|0|80B980C|80B8CAC|0|0||||
-|0|800D31C|800D40C|0|0||||
-|0|800D34C|800D43C|0|0||||
-|0|8013160|8012AA8|0|0||||
-|0|8061290|8060AA8|0|0||||
-|0|8061F04|806171C|0|0||||
-|0|8078130|8077960|0|0||||
-|0|80782AC|8077ADC|0|0||||
-|0|8078344|8077B74|0|0||||
-|0|80783DC|8077C0C|0|0||||
-|0|8078474|8077CA4|0|0||||
-|0|807B304|807A890|0|0||||
-|0|80A466C|80A39F8|0|0||||
-|0|8001D2C|8001D54|0|0||||
-|800285C|8002C24|8002D48|0|0||||
-|0|8004110|8004234|0|0||||
-|8003764|8004158|800427C|0|0||||
-|8003820|8004214|8004338|0|0||||
-|80038C8|80042BC|80043E0|0|0||||
-|0|8004800|8004924|0|0|Interpret6C_18CallRoutineWithArg|int Interpret6C_18CallRoutineWithArg(_6CStruct *_6C)|带参数(sarg)调用函数|
-|0|8004E9C|8004FC0|0|0||||
-|0|80053E8|8005518|0|0||||
-|0|8005774|80058B0|0|0||||
-|0|80077E8|8007958|0|0||||
-|0|8007824|8007994|0|0||||
-|0|8007A00|8007B70|0|0||||
-|0|800836C|80084DC|0|0||||
-|8092E94|8009080|80091F0|0|0||||
-|800B3F8|8009564|80096D4|0|0||||
-|0|800A9F4|800AA4C|0|0||||
-|0|800AC6C|800ACC4|0|0||||
-|0|800ADF8|800AE50|0|0||||
-|0|800B70C|800B7D0|0|0||||
-|0|800BEEC|800BFDC|0|0||||
-|0|800CD68|800CE58|0|0||||
-|0|800D168|800D258|0|0||||
-|0|800D3E0|800D4D0|0|0||||
-|0|800D8BC|800D9B0|0|0||||
-|8010104|800DD70|800DE64|0|0||||
-|0|800DFE0|800E0D4|0|0||||
-|0|800E078|800E16C|0|0||||
-|0|800E098|800E18C|0|0||||
-|0|800E0B4|800E1A8|0|0||||
-|0|800E0D0|800E1C4|0|0||||
-|0|800E0F8|800E1EC|0|0||||
-|0|800E43C|800E530|0|0||||
-|0|800E4C0|800E5B4|0|0||||
-|0|800EA44|800EB38|0|0||||
-|0|800EA68|800EB5C|0|0||||
-|0|800EA7C|800EB70|0|0||||
-|8010D70|800EAD4|800EBC8|0|0||||
-|0|800EB1C|800EC10|0|0||||
-|0|800ED10|800EE04|0|0||||
-|0|800EED8|800EFCC|0|0||||
-|0|800EEF4|800EFE8|0|0||||
-|0|800F200|800F2F4|0|0||||
-|0|800F750|800F844|0|0||||
-|0|800F790|800F884|0|0||||
-|0|800FAB8|800FBAC|0|0||||
-|0|80108F0|801048C|0|0||||
-|0|80109F4|8010590|0|0||||
-|0|80111A8|8010D58|0|0||||
-|0|80114A4|8011054|0|0||||
-|0|8011568|8011118|0|0|fubuki1|void fubuki1(_6CStruct *ctx)||
-|0|801176C|801131C|0|0|fubuki5|void fubuki5()||
-|0|8011A24|801138C|0|0||||
-|0|8011DF4|801175C|0|0||||
-|0|80121FC|8011B64|0|0||||
-|0|80125A4|8011F10|0|0||||
-|8041F44|8012B64|80124D0|0|0||||
-|0|8012CA4|8012610|0|0||||
-|0|801309C|80129E4|0|0||||
-|0|80157F8|801537C|0|0||||
-|801A724|801B7A4|801B3C4|0|0||||
-|0|801BC84|801B8D4|0|0||||
-|801AABC|801BCB0|801B900|0|0||||
-|0|801BCD4|801B924|0|0||||
-|801ABE8|801BDC0|801BA10|0|0||||
-|801B018|801C2D8|801BF38|0|0||||
-|801BD08|801D44C|801D048|0|0||||
-|801C2B0|801D920|801D51C|0|0||||
-|801D4E8|801EDFC|801EA78|0|0||||
-|0|801F9D8|801F570|0|0||||
-|801DF34|801FB94|801F72C|0|0||||
-|801E220|801FF18|801FAB0|0|0||||
-|801E2C0|801FFE0|801FB78|0|0||||
-|801E578|8020350|801FEE8|0|0||||
-|801E704|80205C0|8020158|0|0||||
-|801E9D8|802089C|8020434|0|0||||
-|0|8020ECC|8020A64|0|0||||
-|0|8021184|8020D18|0|0||||
-|0|8021678|802120C|80221D8|0||||
-|0|8021F5C|8021AE4|0|0||||
+|804A5C0|8053B40|8053358|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8055434|805E0C4|805D8DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065288|8064ABC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FC18|806C790|806BFA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FC80|806C7F8|806C00C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FE3C|806C9BC|806C1D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806113C|806E334|806DB48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806E450|806DC64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061360|806E564|806DD78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061474|806E678|806DE8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806E698|806DEAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80627D0|806FA28|806F23C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80632C4|8070534|806FD48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806367C|80708F8|807010C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8067D2C|80750CC|80748D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8067E50|80751F0|80749F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068048|80753F4|8074BF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068C28|8075FF0|8075820|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069A40|8076E34|8076664|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A770|8077BE0|8077410|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8077E1C|807764C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8078894|80780C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A8AC|80788D0|8078100|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806AF08|8079188|80789B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B254|80795CC|8078DFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AE2C|807A3B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B4E8|807AA74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C58C|807BB18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CBD0|807C15C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DE3C|807D26C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E414|807D6E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E428|807D6F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F198|807E3DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F62C|807E870|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F7BC|807EA00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F918|807EB5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F9A0|807EBE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FF9C|807F1E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8074804|8089B34|80891D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8091C90|8091354|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809E190|809D778|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809FADC|809F0A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809FAF4|809F0B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80848C8|80A04FC|809FB30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A5868|80A4B7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8880|80A796C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809517C|80B0634|80AF7E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809525C|80B0714|80AF8C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095F5C|80B1348|80B0520|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1E24|80B0FFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80977C0|80B2DD4|80B1FB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097AC4|80B30E0|80B22BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C68C|80B3DD4|80B2FB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B44D8|80B36A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4AC8|80B3C90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4BF0|80B3DB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4CB0|80B3E78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5648|80B4828|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6240|80B5420|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6920|80B5B00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B70A4|80B6298|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B70D0|80B62C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9750|80B8BF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9B1C|80B8FBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9BD4|80B9074|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BB3EC|80BA898|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BB7D8|80BAD7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBAEC|80BB070|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD358|80BC94C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BE1D0|80BD68C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F8BC|800F9B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F95C|800FA50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010550|80100E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80105A8|8010138|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D7F0|800D8E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806AFD0|80792C4|8078AF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BAD4|800BBC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D3F0|800D524|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D434|800D4E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BCFEC|80BC5E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8049F1C|8053484|8052C9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012150|8011AB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010804|8079210|8078A40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80907C8|808FE88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5A48|80B4C28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5B34|80B4D14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806AFD0|8079250|8078A80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8082DB8|8082058|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805780C|8057024|805D860|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8062748|8061F60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806D6A0|806CEB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806D744|806CF58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A7AC|8077C1C|807744C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B980C|80B8CAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D31C|800D40C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D34C|800D43C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8013160|8012AA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8061290|8060AA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8061F04|806171C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8078130|8077960|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80782AC|8077ADC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8078344|8077B74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80783DC|8077C0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8078474|8077CA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B304|807A890|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A466C|80A39F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8001D2C|8001D54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800285C|8002C24|8002D48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8004110|8004234|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8003764|8004158|800427C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8003820|8004214|8004338|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80038C8|80042BC|80043E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8004800|8004924|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|带参数(sarg)调用函数|
+|0|8004E9C|8004FC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80053E8|8005518|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8005774|80058B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80077E8|8007958|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8007824|8007994|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8007A00|8007B70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800836C|80084DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8092E94|8009080|80091F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800B3F8|8009564|80096D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800A9F4|800AA4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800AC6C|800ACC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800ADF8|800AE50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B70C|800B7D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800BEEC|800BFDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800CD68|800CE58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D168|800D258|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D3E0|800D4D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D8BC|800D9B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010104|800DD70|800DE64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800DFE0|800E0D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E078|800E16C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E098|800E18C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E0B4|800E1A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E0D0|800E1C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E0F8|800E1EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E43C|800E530|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E4C0|800E5B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EA44|800EB38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EA68|800EB5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EA7C|800EB70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010D70|800EAD4|800EBC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EB1C|800EC10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800ED10|800EE04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EED8|800EFCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EEF4|800EFE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F200|800F2F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F750|800F844|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F790|800F884|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FAB8|800FBAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80108F0|801048C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80109F4|8010590|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80111A8|8010D58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80114A4|8011054|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011568|8011118|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801176C|801131C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011A24|801138C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011DF4|801175C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80121FC|8011B64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80125A4|8011F10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8041F44|8012B64|80124D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012CA4|8012610|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801309C|80129E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80157F8|801537C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801A724|801B7A4|801B3C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801BC84|801B8D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801AABC|801BCB0|801B900|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801BCD4|801B924|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801ABE8|801BDC0|801BA10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801B018|801C2D8|801BF38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801BD08|801D44C|801D048|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801C2B0|801D920|801D51C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801D4E8|801EDFC|801EA78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801F9D8|801F570|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801DF34|801FB94|801F72C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801E220|801FF18|801FAB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801E2C0|801FFE0|801FB78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801E578|8020350|801FEE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801E704|80205C0|8020158|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801E9D8|802089C|8020434|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8020ECC|8020A64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8021184|8020D18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8021678|802120C|80221D8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8021F5C|8021AE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80205EC|80235B8|802312C|8024300|8024348|StealItemMenuCommand_Draw|int StealItemMenuCommand_Draw(int a1, int a2)||
-|80207D8|802377C|80232F0|0|0||||
-|8023954|8027BA4|8027718|0|0||||
-|8023DC8|8028044|8027BB8|8029A10|8029A84|RepairMenuItemDraw|[int RepairMenuItemDraw(struct MenuProc* menu, struct MenuItemProc* menuItem)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L952)||
-|0|802B064|802ABB4|0|0||||
-|0|802BBF8|802B738|0|0||||
-|0|802E4E8|802E028|0|0||||
-|0|802E5B4|802E0F4|0|0||||
-|8029240|802E768|802E29C|0|0||||
-|80294E0|802EA08|802E53C|0|0||||
-|802959C|802EAC4|802E5F8|0|0||||
-|0|802EB7C|802E6B0|0|0||||
-|0|8030A04|8030518|0|0||||
-|0|8030A90|80305A4|0|0||||
-|0|8030AB8|80305CC|0|0||||
-|802C4A8|8032420|8031EF0|0|0||||
-|802CE40|8032FF8|8032AC8|0|0||||
-|802CE78|8033030|8032B00|0|0||||
-|802D0F4|80332AC|8032D7C|0|0||||
-|802D40C|8033624|80330F4|0|0||||
-|802DDC0|8034070|8033B98|0|0||||
-|8035414|803C930|803C47C|0|0||||
-|8036D3C|803E280|803DDD0|0|0||||
-|80377E8|803ED34|803E8A0|0|0||||
-|8038954|804010C|803FA00|0|0||||
-|0|8041D7C|804168C|0|0||||
-|0|8043330|8042C58|0|0||||
-|803BCD8|8043588|8042E70|0|0||||
-|0|8043948|80431AC|0|0||||
-|803C578|8044DC0|80445C4|0|0||||
-|803DC3C|8046510|8045D24|0|0||||
-|803F040|8047948|804715C|0|0||||
+|80207D8|802377C|80232F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8023954|8027BA4|8027718|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8023DC8|8028044|8027BB8|8029A10|8029A84|RepairMenuItemDraw|[int RepairMenuItemDraw(struct MenuProc* menu, struct MenuItemProc* menuItem)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L946)||
+|0|802B064|802ABB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802BBF8|802B738|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802E4E8|802E028|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802E5B4|802E0F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8029240|802E768|802E29C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80294E0|802EA08|802E53C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802959C|802EAC4|802E5F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802EB7C|802E6B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030A04|8030518|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030A90|80305A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030AB8|80305CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802C4A8|8032420|8031EF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802CE40|8032FF8|8032AC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802CE78|8033030|8032B00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802D0F4|80332AC|8032D7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802D40C|8033624|80330F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802DDC0|8034070|8033B98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8035414|803C930|803C47C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8036D3C|803E280|803DDD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80377E8|803ED34|803E8A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8038954|804010C|803FA00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8041D7C|804168C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8043330|8042C58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803BCD8|8043588|8042E70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8043948|80431AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803C578|8044DC0|80445C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803DC3C|8046510|8045D24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803F040|8047948|804715C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |803F068|8047970|8047184|804C784|804B9E4||||
 |803F304|8047C0C|8047420|804CA24|804BC84||||
 |803F478|8047D80|8047594|804CB9C|804BDFC||||
-|803F648|8047F54|8047768|0|0||||
-|803FC60|8048590|8047DA4|0|0||||
-|803FDD8|8048708|8047F1C|0|0||||
-|803FE0C|804873C|8047F50|0|0||||
-|803FE48|8048778|8047F8C|0|0||||
-|804085C|80491A8|80489C0|0|0||||
-|8040880|80491CC|80489E4|0|0||||
-|0|80498AC|80490C4|0|0||||
-|0|804A7B0|8049FC8|0|0||||
-|8041E94|804B100|804A924|0|0||||
-|0|804F86C|804F090|0|0||||
-|8047DC0|805129C|8050AC0|0|0||||
-|804CED4|805683C|8056054|805C8D4|0||||
-|8050810|805A040|8059858|8060400|0||||
-|805166C|805AF28|805B6A8|0|0||||
-|805166C|805BE90|805A740|0|0||||
-|8054128|805CD8C|805F9C0|0|0||||
-|8054128|80601A8|805C5A4|0|0||||
-|0|806030C|805FB24|0|0||||
-|804E884|8060D90|8060C18|0|0||||
-|0|80625D0|8061DE8|0|0||||
-|8056B58|8062DB8|80625D0|0|0||||
-|8056BD0|8062E30|8062648|806EB34|0||||
-|0|8063E2C|8063644|0|0||||
-|0|80642F4|806A064|0|0||||
+|803F648|8047F54|8047768|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FC60|8048590|8047DA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FDD8|8048708|8047F1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FE0C|804873C|8047F50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FE48|8048778|8047F8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804085C|80491A8|80489C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8040880|80491CC|80489E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80498AC|80490C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804A7B0|8049FC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8041E94|804B100|804A924|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804F86C|804F090|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8047DC0|805129C|8050AC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804CED4|805683C|8056054|805C8D4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8050810|805A040|8059858|8060400|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805166C|805AF28|805B6A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805166C|805BE90|805A740|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8054128|805CD8C|805F9C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8054128|80601A8|805C5A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806030C|805FB24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804E884|8060D90|8060C18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80625D0|8061DE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8056B58|8062DB8|80625D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8056BD0|8062E30|8062648|806EB34|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8063E2C|8063644|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80642F4|806A064|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |805CC64|8064E20|8064638|80714F8|806EF48||||
-|8058568|8064E3C|8064654|0|0||||
-|0|806553C|8064D4C|0|0|FireDragonBGAnimation1|void FireDragonBGAnimation1(_6CStruct *ctx)||
-|0|80655A0|8064DB0|0|0|FireDragonBGAnimation3|void FireDragonBGAnimation3(_6CStruct *ctx)||
-|0|8065C34|8065444|0|0|FireDragonBGAnimation13|void FireDragonBGAnimation13(_6CStruct *ctx)||
-|0|8065EAC|80656BC|0|0||||
-|0|80664CC|8065CDC|0|0||||
-|0|80666A4|8065EB8|0|0||||
-|805AFA4|80670F8|806690C|0|0||||
+|8058568|8064E3C|8064654|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806553C|8064D4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80655A0|8064DB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065C34|8065444|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065EAC|80656BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80664CC|8065CDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80666A4|8065EB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805AFA4|80670F8|806690C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |805CDB4|8068F74|8068788|80754AC|8072FD0||||
-|805F5C0|806BDE0|806B654|0|0||||
-|805F620|806BE40|806B594|0|0||||
-|0|806C398|806BBAC|0|0||||
-|805FE78|806C9F8|806C20C|0|0||||
-|805FF78|806CAF8|806C30C|0|0||||
-|80608AC|806D47C|806CC90|0|0||||
-|0|806E380|806DB94|0|0||||
-|80611FC|806E400|806DC14|0|0||||
-|806129C|806E4A0|806DCB4|0|0||||
-|8061318|806E51C|806DD30|0|0||||
-|8061518|806E730|806DF44|0|0||||
-|8061748|806E974|806E188|0|0||||
-|806199C|806EC4C|806E460|0|0||||
-|8061B10|806EDC0|806E5D4|0|0||||
-|8061B80|806EE30|806E644|0|0||||
-|8062D64|806FFCC|806F7E0|0|0||||
-|8063504|8070774|806FF88|0|0||||
-|807B6BC|8070AF8|807030C|0|0||||
-|8063CF4|8070F70|8070784|0|0||||
-|806495C|8071BD8|80713EC|0|0||||
-|8064B20|8071D9C|80715B0|0|0||||
-|8064B7C|8071DF8|807160C|0|0||||
-|8064BEC|8071E68|807167C|0|0||||
-|8064C50|8071ECC|80716E0|0|0||||
-|8064CC0|8071F3C|8071750|0|0||||
-|8064F4C|80721C8|80719DC|0|0||||
-|8065140|80723BC|8071BD0|0|0||||
-|80653BC|8072638|8071E4C|0|0||||
-|806543C|80726B8|8071ECC|0|0||||
-|8065608|8072884|8072098|0|0||||
-|8065674|80728F0|8072104|0|0||||
-|8065694|8072910|8072124|0|0||||
-|80656F0|807296C|8072180|0|0||||
-|8065AF8|8072D74|8072588|0|0||||
-|8065B90|8072E0C|8072620|0|0||||
-|8065C30|8072EAC|80726C0|0|0||||
-|8065C9C|8072F18|807272C|0|0||||
-|0|8073084|8072898|0|0||||
-|80661A4|807340C|8072C20|0|0||||
-|8066214|807347C|8072C90|0|0||||
-|8066294|80734FC|8072D10|0|0||||
-|8066300|8073568|8072D7C|0|0||||
-|806631C|8073584|8072D98|0|0||||
-|80665E4|807384C|8073060|0|0||||
-|806664C|80738B4|80730C8|0|0||||
-|806671C|8073984|8073198|0|0||||
-|8066784|80739EC|8073200|0|0||||
-|80667F0|8073A58|807326C|0|0||||
-|8066830|8073A98|80732AC|0|0||||
-|806686C|8073AD4|80732E8|0|0||||
-|80668D8|8073B40|8073354|0|0||||
-|8066AD4|8073D3C|8073550|0|0||||
-|8066B3C|8073DA4|80735B8|0|0||||
-|8066DFC|8074064|8073878|0|0||||
-|8066E64|80740CC|80738E0|0|0||||
-|8066FD8|8074240|8073A54|0|0||||
-|0|80742A8|8073ABC|0|0||||
-|0|80742DC|8073AF0|0|0||||
-|8067498|80746E0|8073EF4|0|0||||
-|806752C|8074774|8073F88|0|0||||
-|8067CF8|8075098|807489C|0|0||||
+|805F5C0|806BDE0|806B654|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F620|806BE40|806B594|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806C398|806BBAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FE78|806C9F8|806C20C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FF78|806CAF8|806C30C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80608AC|806D47C|806CC90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806E380|806DB94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80611FC|806E400|806DC14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806129C|806E4A0|806DCB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061318|806E51C|806DD30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061518|806E730|806DF44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061748|806E974|806E188|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806199C|806EC4C|806E460|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061B10|806EDC0|806E5D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061B80|806EE30|806E644|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062D64|806FFCC|806F7E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8063504|8070774|806FF88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|807B6BC|8070AF8|807030C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8063CF4|8070F70|8070784|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806495C|8071BD8|80713EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064B20|8071D9C|80715B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064B7C|8071DF8|807160C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064BEC|8071E68|807167C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064C50|8071ECC|80716E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064CC0|8071F3C|8071750|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064F4C|80721C8|80719DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065140|80723BC|8071BD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80653BC|8072638|8071E4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806543C|80726B8|8071ECC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065608|8072884|8072098|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065674|80728F0|8072104|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065694|8072910|8072124|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80656F0|807296C|8072180|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065AF8|8072D74|8072588|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065B90|8072E0C|8072620|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065C30|8072EAC|80726C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8065C9C|8072F18|807272C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8073084|8072898|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80661A4|807340C|8072C20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066214|807347C|8072C90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066294|80734FC|8072D10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066300|8073568|8072D7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806631C|8073584|8072D98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80665E4|807384C|8073060|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806664C|80738B4|80730C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806671C|8073984|8073198|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066784|80739EC|8073200|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80667F0|8073A58|807326C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066830|8073A98|80732AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806686C|8073AD4|80732E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80668D8|8073B40|8073354|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066AD4|8073D3C|8073550|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066B3C|8073DA4|80735B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066DFC|8074064|8073878|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066E64|80740CC|80738E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066FD8|8074240|8073A54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80742A8|8073ABC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80742DC|8073AF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8067498|80746E0|8073EF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806752C|8074774|8073F88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8067CF8|8075098|807489C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8068318|80756D0|8074F00|80817B8|807F478|MapAnimLevelUpProc_StartMusicThingy|int MapAnimLevelUpProc_StartMusicThingy(int a1)||
 |80684B8|8075878|80750A8|8081888|807F548||||
-|8068938|8075CF8|8075528|0|0||||
-|80689F0|8075DB0|80755E0|0|0||||
-|8068A1C|8075DDC|807560C|0|0||||
-|8069028|80763F0|8075C20|0|0||||
-|806984C|8076C40|8076470|0|0||||
-|80698BC|8076CB0|80764E0|0|0||||
-|80699A4|8076D98|80765C8|0|0||||
-|8069B70|8076F68|8076798|0|0||||
-|8069DD8|80771D0|8076A00|0|0||||
-|806AAEC|8078D3C|807856C|0|0||||
-|806AB30|8078D80|80785B0|0|0||||
-|0|8079ED4|8079704|0|0||||
-|806C3AC|807AE4C|807A3D8|0|0||||
-|0|807AFA0|807A52C|0|0||||
-|0|807B448|807A9D4|0|0||||
-|0|807B478|807AA04|0|0||||
-|0|807B8E4|807AE70|0|0||||
-|0|807B94C|807AED8|0|0||||
-|0|807BA14|807AFA0|0|0||||
-|0|807BB48|807B0D4|0|0||||
-|0|807BBFC|807B188|0|0||||
-|0|807BC80|807B20C|0|0||||
-|0|807BD00|807B28C|0|0||||
-|0|807BDFC|807B388|0|0||||
-|0|807BF5C|807B4E8|0|0||||
-|0|807BFEC|807B578|0|0||||
-|0|807C170|807B6FC|0|0||||
-|0|807C28C|807B818|0|0||||
-|0|807C490|807BA1C|0|0||||
-|0|807C66C|807BBF8|0|0||||
-|0|807C754|807BCE0|0|0||||
-|0|807C8DC|807BE68|0|0||||
-|0|807C9A4|807BF30|0|0||||
-|0|807CA9C|807C028|0|0||||
-|0|807CAB8|807C044|0|0||||
-|0|807CCCC|807C258|0|0||||
-|0|807CE14|807C3A0|0|0||||
-|0|807CE90|807C41C|0|0||||
-|0|807D0E0|807C66C|0|0||||
-|0|807D228|807C7B4|0|0|IceCrystal3|void IceCrystal3(_6CStruct *ctx)||
-|0|807D328|807C8B4|0|0||||
-|0|807D424|807C9B0|0|0||||
-|0|807D4B8|807CA44|0|0||||
-|0|807D8E4|807CE60|0|0||||
-|0|807D990|807CF10|0|0||||
-|0|807D9E8|807CF68|0|0||||
-|0|807DBC8|807D0B8|0|0||||
-|0|807DE6C|807D29C|0|0||||
-|0|807E3BC|807D688|0|0||||
-|0|807E694|807D944|0|0||||
-|0|807E9A4|807DBF4|0|0||||
-|0|807E9C4|807DC14|0|0||||
-|0|807EB44|807DD94|0|0||||
-|0|807EB80|807DDD0|0|0||||
-|0|807EF68|807E1AC|0|0||||
-|0|807F1B8|807E3FC|0|0||||
-|0|807F7EC|807EA30|0|0||||
-|0|807F89C|807EAE0|0|0||||
-|0|807F958|807EB9C|0|0||||
-|0|807FAFC|807ED40|0|0||||
-|0|807FEBC|807F0F4|0|0||||
-|0|807FFE4|807F22C|0|0||||
-|0|8080090|807F2D8|0|0||||
-|0|808014C|807F394|0|0||||
-|0|80801D0|807F418|0|0||||
-|0|8080228|807F470|0|0||||
-|0|80802C4|807F50C|0|0||||
-|0|80803D0|807F618|0|0||||
-|0|808043C|807F684|0|0||||
-|806F8F0|80817C8|8080A6C|0|0||||
-|0|8081C40|8080EE4|0|0||||
-|806FE80|8081D7C|8081020|0|0||||
-|0|8081DE4|8081088|0|0||||
-|807022C|8082168|808140C|0|0||||
-|8070278|80821B4|8081458|0|0||||
-|0|80829E0|8081C80|0|0||||
-|0|8082D00|8081FA0|0|0||||
-|0|8084608|8083C0C|0|0||||
-|0|80850A8|80846AC|0|0||||
-|0|80861B4|80857B4|0|0||||
-|0|8089B80|8089220|0|0||||
-|807B6BC|808F804|808EEC8|0|0||||
-|0|808FEE0|808F5A0|0|0||||
-|0|809005C|808F71C|0|0||||
+|8068938|8075CF8|8075528|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80689F0|8075DB0|80755E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068A1C|8075DDC|807560C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069028|80763F0|8075C20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806984C|8076C40|8076470|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80698BC|8076CB0|80764E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80699A4|8076D98|80765C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069B70|8076F68|8076798|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069DD8|80771D0|8076A00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806AAEC|8078D3C|807856C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806AB30|8078D80|80785B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079ED4|8079704|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C3AC|807AE4C|807A3D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AFA0|807A52C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B448|807A9D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B478|807AA04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B8E4|807AE70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B94C|807AED8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BA14|807AFA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BB48|807B0D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BBFC|807B188|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BC80|807B20C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BD00|807B28C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BDFC|807B388|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BF5C|807B4E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BFEC|807B578|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C170|807B6FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C28C|807B818|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C490|807BA1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C66C|807BBF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C754|807BCE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C8DC|807BE68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C9A4|807BF30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CA9C|807C028|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CAB8|807C044|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CCCC|807C258|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CE14|807C3A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CE90|807C41C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D0E0|807C66C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D228|807C7B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D328|807C8B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D424|807C9B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D4B8|807CA44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D8E4|807CE60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D990|807CF10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D9E8|807CF68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DBC8|807D0B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DE6C|807D29C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E3BC|807D688|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E694|807D944|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E9A4|807DBF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E9C4|807DC14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807EB44|807DD94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807EB80|807DDD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807EF68|807E1AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F1B8|807E3FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F7EC|807EA30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F89C|807EAE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F958|807EB9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FAFC|807ED40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FEBC|807F0F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FFE4|807F22C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8080090|807F2D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808014C|807F394|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80801D0|807F418|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8080228|807F470|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80802C4|807F50C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80803D0|807F618|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808043C|807F684|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806F8F0|80817C8|8080A6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8081C40|8080EE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806FE80|8081D7C|8081020|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8081DE4|8081088|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|807022C|8082168|808140C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8070278|80821B4|8081458|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80829E0|8081C80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8082D00|8081FA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8084608|8083C0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80850A8|80846AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80861B4|80857B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8089B80|8089220|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|807B6BC|808F804|808EEC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808FEE0|808F5A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809005C|808F71C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80827D8|809137C|8090A38|8099D84|8097AAC||||
-|8082A7C|80915D8|8090C94|0|0||||
-|0|8091CC8|809138C|0|0||||
-|0|8091D14|80913D8|0|0||||
-|0|8092150|8091824|0|0||||
-|0|8092310|80919C8|0|0||||
-|0|8092A9C|809218C|0|0||||
-|0|8092EDC|80925D0|0|0||||
-|0|8093004|80926F8|0|0||||
-|0|80951FC|809496C|0|0||||
-|0|8095FAC|809577C|0|0||||
-|0|80960E0|80958B0|0|0||||
-|0|80981E0|8097A6C|0|0||||
-|0|8098E3C|8098550|0|0||||
-|0|8098E74|8098588|0|0||||
-|0|8098FDC|809871C|0|0||||
-|0|8099050|8098790|0|0||||
-|0|8099828|8098F70|0|0||||
-|0|809A978|8099FA0|0|0||||
-|0|809C410|809BA48|0|0||||
-|0|809CD78|809C3F4|0|0||||
-|0|809CDA0|809C41C|0|0||||
-|0|809D5A4|809CB8C|0|0||||
-|0|809DA10|809CFF8|0|0||||
+|8082A7C|80915D8|8090C94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8091CC8|809138C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8091D14|80913D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8092150|8091824|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8092310|80919C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8092A9C|809218C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8092EDC|80925D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8093004|80926F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80951FC|809496C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8095FAC|809577C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80960E0|80958B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80981E0|8097A6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8098E3C|8098550|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8098E74|8098588|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8098FDC|809871C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8099050|8098790|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8099828|8098F70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809A978|8099FA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809C410|809BA48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809CD78|809C3F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809CDA0|809C41C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809D5A4|809CB8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809DA10|809CFF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|809E16C|809D754|80A69D4|80A2C08||||
-|8084138|809EDC0|809E3A8|80A7620|0||||
-|0|809EDF0|809E3D8|80A7650|0||||
-|0|809FAC0|809F084|0|0||||
-|80872A8|80A35D4|80A2960|0|0||||
-|0|80A5AA0|80A4DB4|0|0||||
-|0|80A5B44|80A4E58|0|0||||
-|0|80A5D6C|80A5084|0|0||||
-|0|80A6950|80A5C90|0|0||||
-|808A8B4|80A6FF4|80A6334|0|0||||
-|0|80A7374|80A66B0|0|0||||
-|0|80A75C4|80A68DC|0|0||||
-|0|80A76C8|80A69E0|0|0||||
-|0|80A7AE8|80A6DE0|0|0||||
-|0|80AB1AC|80AA2E4|80B2D94|0||||
-|0|80AB1D0|80AA308|0|0||||
-|0|80AB82C|80AA964|0|0||||
-|0|80ABEA8|80AAFC4|0|0||||
-|0|80AC680|80AB79C|0|0||||
-|0|80ACDD8|80ABEF4|0|0||||
-|0|80AD6C0|80AC7E8|0|0||||
-|0|80AD7DC|80AC904|0|0||||
-|0|80AD818|80AC940|0|0||||
-|0|80AE6D4|80AD7B4|0|0||||
-|0|80AE9A8|80ADA90|0|0||||
-|0|80AFC3C|80AED04|0|0||||
-|80961F4|80B15F0|80B07C8|0|0||||
-|80965C0|80B19DC|80B0BB4|0|0||||
-|809668C|80B1A8C|80B0C64|0|0||||
-|8097280|80B28D8|80B1AAC|0|0||||
-|8097418|80B2A70|80B1C44|0|0||||
-|8097600|80B2C14|80B1DF0|0|0||||
-|8097728|80B2D3C|80B1F18|0|0||||
-|80979AC|80B2FC8|80B21A4|0|0||||
-|8097EAC|80B34C8|80B26A4|0|0||||
-|8097ECC|80B34E8|80B26C4|0|0||||
-|8098258|80B3874|80B2A50|0|0||||
-|0|80B38E4|80B2AC0|0|0||||
-|80983D0|80B39EC|80B2BC8|0|0||||
-|0|80B3A08|80B2BE4|0|0||||
-|8098490|80B3A9C|80B2C78|0|0||||
-|8098730|80B3D30|80B2F0C|0|0||||
-|8098798|80B3D98|80B2F74|0|0||||
-|80987B8|80B3DB8|80B2F94|0|0||||
-|0|80B3DF0|80B2FCC|0|0||||
-|0|80B5148|80B4328|0|0||||
-|0|80B5D98|80B4F78|0|0||||
-|0|80B5E04|80B4FE4|0|0||||
-|0|80B5E50|80B5030|0|0||||
-|0|80B60A0|80B5280|0|0||||
-|0|80B6450|80B5630|0|0||||
-|0|80B67B0|80B5990|0|0||||
-|0|80B6964|80B5B44|0|0||||
-|0|80B698C|80B5B6C|0|0||||
-|0|80B6E40|80B6034|0|0||||
-|0|80B7018|80B620C|0|0||||
-|80947DC|80B7BBC|80B6DD4|0|0||||
-|0|80B7FC8|80B721C|0|0||||
-|0|80B8198|80B73EC|0|0||||
-|0|80B82DC|80B7530|0|0||||
-|0|80B8484|80B76D8|0|0||||
-|0|80B84C0|80B7714|0|0||||
-|0|80B87F0|80B7A0C|0|0||||
-|0|80B8958|80B7B74|0|0||||
-|8096A78|80B89AC|80B7BC8|0|0||||
-|0|80B8A0C|80B7C28|0|0||||
-|0|80B8A40|80B7C5C|0|0||||
-|0|80B8D8C|80B80F0|0|0||||
-|0|80B91D8|80B853C|0|0||||
-|0|80B9C20|80B90C0|0|0||||
-|0|80B9CBC|80B915C|0|0||||
-|0|80BA85C|80B9D54|0|0||||
-|0|80BAE14|80BA30C|0|0||||
-|0|80BB1EC|80BA6B4|0|0||||
-|0|80BBA64|80BAFE8|0|0||||
-|0|80BBAA4|80BB028|0|0||||
-|0|80BBF64|80BB4E8|0|0||||
-|0|80BC398|80BB98C|0|0||||
-|0|80BC4D0|80BBAC4|0|0||||
-|0|80BC688|80BBC80|0|0||||
-|0|80BC730|80BBD28|0|0||||
-|0|80BCAAC|80BC0A4|0|0||||
-|0|80BCB0C|80BC104|0|0||||
-|0|80BCD34|80BC30C|0|0||||
-|0|80BCFD8|80BC5CC|0|0||||
-|0|80BD000|80BC5F4|0|0||||
-|0|80BD1F0|80BC7E4|0|0||||
-|0|80BD534|80BCB1C|0|0||||
-|0|80BDE68|80BD310|0|0||||
-|0|80BE01C|80BD4C4|0|0||||
-|0|80BE0A0|80BD548|0|0||||
-|0|800D704|800D7F4|0|0||||
-|0|800D724|800D814|0|0||||
-|8010988|800E6D4|800E7C8|0|0||||
-|80109C4|800E6F8|800E7EC|0|0||||
-|8010A00|800E750|800E844|0|0||||
-|8010A3C|800E774|800E868|0|0||||
-|0|800E7B0|800E8A4|0|0||||
-|0|800E7D8|800E8CC|0|0||||
-|0|800F734|800F828|0|0||||
-|806C578|801E83C|8087D58|0|0||||
-|8052974|805C064|805B87C|0|0||||
-|0|805C35C|805BB74|0|0||||
-|80570E4|8063344|8062AA8|0|0||||
-|8069DE8|80771E0|8076A10|0|0||||
-|8069E50|8077248|8076A78|0|0||||
-|8069ED4|80772CC|8076AFC|0|0||||
-|0|8077350|8076B80|0|0||||
-|8069DE8|80773B8|8076BE8|0|0||||
-|806BF7C|807A654|8079BE0|0|0||||
-|0|807CDEC|807C378|0|0||||
-|806BF7C|807FBE8|807EE20|0|0||||
-|0|808FD10|808F3D0|0|0||||
-|0|808FD7C|808F43C|0|0||||
-|0|808FE6C|808F52C|0|0||||
-|0|809B598|809ABC0|0|0||||
-|0|809B674|809AC9C|0|0||||
-|0|80AB5E0|80B76F8|0|0|IceCrystal2|bool IceCrystal2()||
-|0|80B5934|80B4B14|0|0||||
-|0|80B5970|80B4B50|0|0||||
-|0|80B8B64|80B7D88|0|0||||
-|0|80BAA8C|80B9F84|0|0||||
-|8000B9C|8000B94|8000BBC|0|0||||
-|8000D54|8000D4C|8000D74|0|0|readRNFromWRAMToIRAM|void readRNFromWRAMToIRAM(int a1)||
-|8000DB0|8000DA8|8000DD0|0|0||||
-|8000EB4|8000EB4|8000EDC|0|0||||
-|8000EEC|8000EEC|8000F14|0|0|getPlayTime|int getPlayTime()||
-|8000F04|8000F04|8000F2C|0|0|setPlayTime|void setPlayTime(int time)||
-|8000FD4|8000FD4|8000FFC|0|0|SetBGMapSyncFlag|void SetBGMapSyncFlag(u8 flag)||
-|8000FF0|8000FF0|8001018|0|0|EnableBGMapSync|void EnableBGMapSync(u8 n)||
-|8001034|8001034|800105C|0|0|EnablePaletteSync|void EnablePaletteSync()||
-|8001048|8001048|8001070|0|0|DisablePaletteSync|void DisablePaletteSync()||
-|80010CC|8001188|80011B0|0|0||||
-|80012B4|8001370|8001398|0|0|GetBackgroundTileDataOffset|int GetBackgroundTileDataOffset(unsigned __int16 a1)||
-|800131C|80013D8|8001400|0|0||||
-|8001350|800140C|8001434|0|0||||
-|80013F8|80014B4|80014DC|0|0||||
-|80016F8|8001990|80019B8|0|0||||
-|800D6E4|8001CA8|8001CD0|0|0||||
-|8002818|8002BC0|8002BE8|0|0|BG_GetMapBuffer|__int16 (*BG_GetMapBuffer(int a1))[1024]||
-|8002A28|8002DF0|8002F14|0|0||||
-|8002A48|8002E10|8002F34|0|0||||
-|8002B88|8002FD8|80030FC|0|0|RegisterFillTile|int RegisterFillTile(int a1, int a2, int a3)||
-|8002CB8|8003108|800322C|0|0||||
-|8002D54|80031A4|80032C8|0|0||||
-|8002E14|8003264|8003388|0|0|SetOBJAttribute|int SetOBJAttribute(int a1, __int16 a2, __int16 a3, __int16 a4, __int16 a5)||
-|8002F68|80033B8|80034DC|0|0||||
-|8002F80|80033D0|80034F4|0|0||||
-|8003210|800376C|8003890|0|0||||
-|800322C|8003788|80038AC|0|0||||
-|0|8003E48|8003F6C|0|0||||
-|0|80040F8|800421C|0|0||||
+|8084138|809EDC0|809E3A8|80A7620|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809EDF0|809E3D8|80A7650|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809FAC0|809F084|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80872A8|80A35D4|80A2960|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A5AA0|80A4DB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A5B44|80A4E58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A5D6C|80A5084|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A6950|80A5C90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808A8B4|80A6FF4|80A6334|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7374|80A66B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A75C4|80A68DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A76C8|80A69E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7AE8|80A6DE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB1AC|80AA2E4|80B2D94|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB1D0|80AA308|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB82C|80AA964|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ABEA8|80AAFC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AC680|80AB79C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ACDD8|80ABEF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AD6C0|80AC7E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AD7DC|80AC904|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AD818|80AC940|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AE6D4|80AD7B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AE9A8|80ADA90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AFC3C|80AED04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80961F4|80B15F0|80B07C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80965C0|80B19DC|80B0BB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809668C|80B1A8C|80B0C64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097280|80B28D8|80B1AAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097418|80B2A70|80B1C44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097600|80B2C14|80B1DF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097728|80B2D3C|80B1F18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80979AC|80B2FC8|80B21A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097EAC|80B34C8|80B26A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097ECC|80B34E8|80B26C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098258|80B3874|80B2A50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B38E4|80B2AC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80983D0|80B39EC|80B2BC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B3A08|80B2BE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098490|80B3A9C|80B2C78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098730|80B3D30|80B2F0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098798|80B3D98|80B2F74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80987B8|80B3DB8|80B2F94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B3DF0|80B2FCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5148|80B4328|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5D98|80B4F78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5E04|80B4FE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5E50|80B5030|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B60A0|80B5280|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6450|80B5630|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B67B0|80B5990|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6964|80B5B44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B698C|80B5B6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6E40|80B6034|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7018|80B620C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80947DC|80B7BBC|80B6DD4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7FC8|80B721C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8198|80B73EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B82DC|80B7530|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8484|80B76D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B84C0|80B7714|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B87F0|80B7A0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8958|80B7B74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8096A78|80B89AC|80B7BC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8A0C|80B7C28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8A40|80B7C5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8D8C|80B80F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B91D8|80B853C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9C20|80B90C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9CBC|80B915C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BA85C|80B9D54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BAE14|80BA30C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BB1EC|80BA6B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBA64|80BAFE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBAA4|80BB028|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBF64|80BB4E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC398|80BB98C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC4D0|80BBAC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC688|80BBC80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC730|80BBD28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BCAAC|80BC0A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BCB0C|80BC104|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BCD34|80BC30C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BCFD8|80BC5CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD000|80BC5F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD1F0|80BC7E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD534|80BCB1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDE68|80BD310|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BE01C|80BD4C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BE0A0|80BD548|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D704|800D7F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D724|800D814|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010988|800E6D4|800E7C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80109C4|800E6F8|800E7EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010A00|800E750|800E844|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010A3C|800E774|800E868|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E7B0|800E8A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E7D8|800E8CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F734|800F828|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C578|801E83C|8087D58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8052974|805C064|805B87C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805C35C|805BB74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80570E4|8063344|8062AA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069DE8|80771E0|8076A10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069E50|8077248|8076A78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069ED4|80772CC|8076AFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8077350|8076B80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069DE8|80773B8|8076BE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BF7C|807A654|8079BE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CDEC|807C378|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806BF7C|807FBE8|807EE20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808FD10|808F3D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808FD7C|808F43C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808FE6C|808F52C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B598|809ABC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B674|809AC9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB5E0|80B76F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5934|80B4B14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B5970|80B4B50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8B64|80B7D88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BAA8C|80B9F84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000B9C|8000B94|8000BBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000D54|8000D4C|8000D74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000DB0|8000DA8|8000DD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000EB4|8000EB4|8000EDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000EEC|8000EEC|8000F14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000F04|8000F04|8000F2C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000FD4|8000FD4|8000FFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000FF0|8000FF0|8001018|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001034|8001034|800105C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001048|8001048|8001070|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80010CC|8001188|80011B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80012B4|8001370|8001398|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800131C|80013D8|8001400|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001350|800140C|8001434|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80013F8|80014B4|80014DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80016F8|8001990|80019B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800D6E4|8001CA8|8001CD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002818|8002BC0|8002BE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002A28|8002DF0|8002F14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002A48|8002E10|8002F34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002B88|8002FD8|80030FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002CB8|8003108|800322C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002D54|80031A4|80032C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002E14|8003264|8003388|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002F68|80033B8|80034DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002F80|80033D0|80034F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8003210|800376C|8003890|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800322C|8003788|80038AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8003E48|8003F6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80040F8|800421C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8006E10|8006F80|8005890|8005988|DrawMiniMug|int DrawMiniMug(int id, void *targetBg, int tileId, int palId)|r0 = minimug id, r1 = target bg, r2 = tile id, r3 = palid|
-|8008DB8|8007428|8007598|0|0||||
-|0|8007F44|80080B4|0|0||||
-|0|8007F58|80080C8|0|0||||
-|0|80098A0|8009A10|0|0||||
-|0|800AE98|800AF5C|0|0||||
-|80146F8|8014500|8013FE0|0|0||||
-|8014708|8014510|8013FF0|0|0||||
-|0|801778C|8017384|0|0||||
-|8018188|80188CC|80184DC|0|0||||
-|801A564|801B57C|801B19C|0|0|FillRangeMap|int FillRangeMap(__int16 a1, __int16 a2, __int16 a3, __int16 a4)||
-|8020A2C|8023D64|80238D8|0|0||||
-|8020A40|8023D78|80238EC|0|0||||
-|8022DD4|8026E3C|80269B0|0|0||||
-|8024514|8028B7C|80286F0|0|0||||
-|802454C|8028BB4|8028728|0|0||||
-|8025360|8029DB4|8029904|0|0||||
-|80260A0|802ACB4|802A804|0|0||||
-|0|802B040|802AB90|0|0||||
-|80260DC|802B050|802ABA0|0|0||||
-|0|802C058|802BB98|0|0||||
-|0|802C068|802BBA8|0|0||||
-|0|802C6A8|802C1E8|0|0||||
-|0|8031B54|80315E8|0|0|GetSomethingRelatedToCurrentDifficulty|bool GetSomethingRelatedToCurrentDifficulty()||
-|8030A84|8037804|8037350|0|0||||
-|8030CE8|8037A6C|80375B8|0|0||||
-|8030D78|8037AFC|8037648|0|0||||
-|8032474|8039620|803916C|0|0||||
-|8036964|803DEA4|803D9F4|0|0||||
-|8036974|803DEB4|803DA04|0|0||||
-|803A680|8041EA8|80417BC|0|0||||
-|0|80457EC|8044FFC|0|0||||
-|80422CC|804B6CC|804AEF0|0|0||||
-|0|804DCA8|804D4CC|0|0||||
-|8047500|805081C|8050040|0|0||||
-|80475D8|80508F4|8050118|0|0||||
-|804A5A8|8053B28|8053340|0|0||||
-|804BE6C|8055644|8054E5C|0|0||||
-|0|8065214|8064A48|0|0|initSpecialAnimationEffectInfo|void initSpecialAnimationEffectInfo()||
-|805F7B4|806C208|806BA1C|0|0||||
-|805F7D4|806C228|806BA3C|0|0||||
-|0|806C274|806BA88|0|0||||
-|805F8F4|806C3B0|806BBC4|0|0||||
-|805F91C|806C3D8|806BBEC|0|0||||
-|805FF50|806CAD0|806C2E4|0|0||||
-|805FF68|806CAE8|806C2FC|0|0||||
-|80608EC|806D4BC|806CCD0|0|0||||
-|806091C|806D4EC|806CD00|0|0||||
-|8060E88|806DD10|806D524|0|0||||
-|8060EB8|806DD40|806D554|0|0||||
-|8060EE4|806DD6C|806D580|0|0||||
-|80610A8|806E2A0|806DAB4|0|0||||
-|80610D0|806E2C8|806DADC|0|0||||
-|80610F0|806E2E8|806DAFC|0|0||||
-|0|806EA0C|806E220|0|0||||
-|0|806F2C8|806EADC|0|0||||
-|806283C|806FAA4|806F2B8|0|0||||
-|8067324|807456C|8073D80|0|0||||
-|806875C|8075B1C|807534C|0|0||||
-|8069C34|807702C|807685C|0|0||||
-|8069DA4|807719C|80769CC|0|0||||
-|806A424|8077898|80770C8|0|0||||
-|806A87C|8077CEC|807751C|0|0||||
-|0|80788F0|8078120|0|0||||
-|806B404|807977C|8078FAC|0|0||||
-|806B414|807978C|8078FBC|0|0||||
-|0|8079990|80791C0|0|0||||
-|0|807A794|8079D20|0|0||||
-|0|807AE3C|807A3C8|0|0||||
-|0|807AE5C|807A3E8|0|0||||
-|0|807D97C|807CEFC|0|0||||
-|806E83C|80804A4|807F6EC|0|0||||
-|806E860|80804C8|807F710|0|0||||
-|807280C|80858B0|8084EB4|0|0||||
-|0|808E684|808DD58|0|0||||
-|0|808E694|808DD68|0|0||||
-|0|8099CF0|8099330|0|0||||
-|808A3C8|80A6B4C|80A5E8C|0|0||||
-|808A3E8|80A6B6C|80A5EAC|0|0||||
-|0|80A7AB8|80A6DB0|0|0||||
-|0|80A7AC8|80A6DC0|0|0||||
-|0|80A7AD8|80A6DD0|0|0||||
-|0|80AEA60|80ADB48|0|0||||
-|0|80AEB3C|80ADC24|0|0||||
-|8095D5C|80B1148|80B0320|0|0||||
-|8095E10|80B11FC|80B03D4|0|0||||
-|8095E30|80B121C|80B03F4|0|0||||
-|8095E50|80B123C|80B0414|0|0||||
-|8097CF4|80B3310|80B24EC|0|0||||
-|8097D10|80B332C|80B2508|0|0||||
-|8097D34|80B3350|80B252C|0|0||||
-|0|80B41F0|80B33B8|0|0||||
-|0|80B41FC|80B33C4|0|0||||
-|0|80BBB4C|80BB0D0|0|0||||
-|0|80BBD98|80BB31C|0|0||||
-|0|80BBDA8|80BB32C|0|0||||
-|0|80BC848|80BBE40|0|0||||
-|806B06C|80793E4|8078C14|0|0||||
-|0|807E1E8|807D528|0|0||||
-|0|800954C|80096BC|0|0||||
-|0|800B02C|800B0F0|0|0||||
-|0|800B040|800B104|0|0||||
-|0|800E23C|800E330|0|0||||
-|0|800E24C|800E340|0|0||||
-|0|800E35C|800E450|0|0||||
-|0|800EB0C|800EC00|0|0||||
-|8011FB0|800EC58|800ED4C|0|0||||
-|0|800ECD4|800EDC8|0|0||||
-|0|800EE48|800EF3C|0|0||||
-|0|800EF1C|800F010|0|0||||
-|0|800F23C|800F330|0|0||||
-|0|800FA74|800FB68|0|0||||
-|0|800FA84|800FB78|0|0||||
-|0|800FC5C|800FD50|0|0||||
-|0|80121F0|8011B58|0|0||||
-|0|8015988|801550C|0|0||||
-|801EB14|8021AA8|8021630|0|0||||
-|0|8030B74|8030688|0|0||||
-|0|8031610|8031124|0|0||||
-|0|804097C|8040270|0|0||||
+|8008DB8|8007428|8007598|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8007F44|80080B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8007F58|80080C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80098A0|8009A10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800AE98|800AF5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80146F8|8014500|8013FE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8014708|8014510|8013FF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801778C|8017384|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8018188|80188CC|80184DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801A564|801B57C|801B19C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8020A2C|8023D64|80238D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8020A40|8023D78|80238EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8022DD4|8026E3C|80269B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8024514|8028B7C|80286F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802454C|8028BB4|8028728|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8025360|8029DB4|8029904|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80260A0|802ACB4|802A804|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802B040|802AB90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80260DC|802B050|802ABA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802C058|802BB98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802C068|802BBA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802C6A8|802C1E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8031B54|80315E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8030A84|8037804|8037350|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8030CE8|8037A6C|80375B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8030D78|8037AFC|8037648|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8032474|8039620|803916C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8036964|803DEA4|803D9F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8036974|803DEB4|803DA04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803A680|8041EA8|80417BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80457EC|8044FFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80422CC|804B6CC|804AEF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804DCA8|804D4CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8047500|805081C|8050040|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80475D8|80508F4|8050118|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804A5A8|8053B28|8053340|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804BE6C|8055644|8054E5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065214|8064A48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F7B4|806C208|806BA1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F7D4|806C228|806BA3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806C274|806BA88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F8F4|806C3B0|806BBC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F91C|806C3D8|806BBEC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FF50|806CAD0|806C2E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FF68|806CAE8|806C2FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80608EC|806D4BC|806CCD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806091C|806D4EC|806CD00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060E88|806DD10|806D524|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060EB8|806DD40|806D554|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060EE4|806DD6C|806D580|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80610A8|806E2A0|806DAB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80610D0|806E2C8|806DADC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80610F0|806E2E8|806DAFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806EA0C|806E220|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806F2C8|806EADC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806283C|806FAA4|806F2B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8067324|807456C|8073D80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806875C|8075B1C|807534C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069C34|807702C|807685C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069DA4|807719C|80769CC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A424|8077898|80770C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A87C|8077CEC|807751C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80788F0|8078120|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B404|807977C|8078FAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B414|807978C|8078FBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079990|80791C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807A794|8079D20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AE3C|807A3C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807AE5C|807A3E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D97C|807CEFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806E83C|80804A4|807F6EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806E860|80804C8|807F710|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|807280C|80858B0|8084EB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808E684|808DD58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808E694|808DD68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8099CF0|8099330|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808A3C8|80A6B4C|80A5E8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808A3E8|80A6B6C|80A5EAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7AB8|80A6DB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7AC8|80A6DC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7AD8|80A6DD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AEA60|80ADB48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AEB3C|80ADC24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095D5C|80B1148|80B0320|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095E10|80B11FC|80B03D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095E30|80B121C|80B03F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095E50|80B123C|80B0414|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097CF4|80B3310|80B24EC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097D10|80B332C|80B2508|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097D34|80B3350|80B252C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B41F0|80B33B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B41FC|80B33C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBB4C|80BB0D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBD98|80BB31C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBDA8|80BB32C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC848|80BBE40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806B06C|80793E4|8078C14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E1E8|807D528|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800954C|80096BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B02C|800B0F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B040|800B104|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E23C|800E330|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E24C|800E340|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E35C|800E450|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EB0C|800EC00|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8011FB0|800EC58|800ED4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800ECD4|800EDC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EE48|800EF3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EF1C|800F010|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F23C|800F330|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FA74|800FB68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FA84|800FB78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FC5C|800FD50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80121F0|8011B58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8015988|801550C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801EB14|8021AA8|8021630|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030B74|8030688|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8031610|8031124|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804097C|8040270|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8041E58|804176C|8046DAC|8046E4C||||
-|0|806543C|8064C4C|0|0||||
-|8058F28|8066D30|8066544|0|0||||
-|0|806B878|806B098|0|0||||
-|0|806B88C|806B0AC|0|0||||
-|8066190|80733F8|8072C0C|0|0||||
-|0|807475C|8073F70|0|0||||
-|8068A74|8075E34|8075664|0|0||||
-|8068AA8|8075E68|8075698|0|0||||
-|8068C84|807604C|807587C|0|0||||
-|8069530|8076920|8076150|0|0||||
-|80699D8|8076DCC|80765FC|0|0||||
-|8069A0C|8076E00|8076630|0|0||||
-|8069B3C|8076F34|8076764|0|0||||
-|0|807B8D8|807AE64|0|0||||
-|0|807DA64|807CFE4|0|0||||
-|0|807DFDC|807D3BC|0|0||||
-|0|807E090|807D414|0|0||||
-|0|80A5A94|80A4DA8|0|0||||
-|0|80A781C|80A6B34|0|0||||
-|0|80A79B8|80A6CC0|0|0||||
-|0|80ACC60|80ABD7C|0|0||||
-|0|80AD678|80AC7A0|0|0||||
-|8098478|80B3A84|80B2C60|0|0||||
-|809874C|80B3D4C|80B2F28|0|0||||
-|0|800ADC0|800AE18|0|0||||
-|0|800ADDC|800AE34|0|0||||
-|0|800F93C|800FA30|0|0||||
-|0|800F9DC|800FAD0|0|0||||
-|0|8010EA0|8011008|0|0||||
-|801E4D8|80202B0|801FE48|0|0||||
-|0|8020304|801FE9C|0|0||||
-|0|8020AD0|8020AD0|0|0||||
-|0|8020F38|8020668|0|0||||
-|801EAF8|8021A8C|8021614|0|0||||
-|801F310|8022154|8021CDC|0|0||||
-|8020D44|8024600|8024174|0|0|AddUnitToTargetListIfAllied|int AddUnitToTargetListIfAllied(char *a1)||
-|803C044|80438FC|8043154|0|0||||
-|803EFEC|80478F4|8047108|0|0||||
-|0|804B29C|804AAC0|0|0||||
-|0|804B7E4|804B008|0|0||||
-|8047370|80503B8|804FBDC|8055CEC|0||||
-|0|8050560|804FD84|0|0||||
-|8057A34|80563C8|8055BE0|0|0||||
-|0|80563F0|8055C08|0|0||||
-|804CD4C|8056454|8055C6C|0|0||||
-|0|8056490|8055CA8|0|0||||
+|0|806543C|8064C4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8058F28|8066D30|8066544|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806B878|806B098|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806B88C|806B0AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066190|80733F8|8072C0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807475C|8073F70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068A74|8075E34|8075664|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068AA8|8075E68|8075698|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068C84|807604C|807587C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069530|8076920|8076150|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80699D8|8076DCC|80765FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069A0C|8076E00|8076630|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069B3C|8076F34|8076764|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B8D8|807AE64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DA64|807CFE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DFDC|807D3BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E090|807D414|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A5A94|80A4DA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A781C|80A6B34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A79B8|80A6CC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ACC60|80ABD7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AD678|80AC7A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098478|80B3A84|80B2C60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809874C|80B3D4C|80B2F28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800ADC0|800AE18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800ADDC|800AE34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F93C|800FA30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F9DC|800FAD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010EA0|8011008|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801E4D8|80202B0|801FE48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8020304|801FE9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8020AD0|8020AD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8020F38|8020668|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801EAF8|8021A8C|8021614|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801F310|8022154|8021CDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8020D44|8024600|8024174|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803C044|80438FC|8043154|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803EFEC|80478F4|8047108|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804B29C|804AAC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|804B7E4|804B008|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8047370|80503B8|804FBDC|8055CEC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8050560|804FD84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8057A34|80563C8|8055BE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80563F0|8055C08|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804CD4C|8056454|8055C6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8056490|8055CA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80541C8|80578F0|8057108|805D944|805CBA8||||
-|0|8057DBC|80575D4|805DDF8|0||||
-|8055050|80587F8|805D6A4|0|0||||
-|8053114|805A5C4|8059DDC|0|0||||
-|0|805B610|805AE28|0|0||||
-|0|805FBBC|805F3D4|0|0||||
-|0|805FFD0|8060254|0|0||||
-|80590FC|806055C|805FD74|0|0||||
-|0|806084C|8060064|0|0||||
-|0|8060898|8060398|0|0||||
-|0|8060A3C|805F7E8|0|0||||
-|0|8060B80|8060544|0|0||||
-|0|8060E44|806065C|0|0||||
-|8090720|8061398|8061284|0|0||||
-|8090834|8061A6C|80600B0|0|0||||
-|8057A0C|8063CFC|8063514|0|0||||
-|809B7D4|8064724|8063FA0|8070874|0||||
-|0|80663EC|8065BFC|0|0||||
-|8057A34|8066590|8065DA0|0|0||||
-|805E4D4|806A584|8069DA4|0|0||||
-|805F6B8|806BE18|806B56C|0|0||||
-|8066D5C|80737AC|8072FC0|0|0||||
-|8066544|8073FC4|80737D8|0|0||||
-|0|807ADA8|807A334|0|0||||
-|0|807ADC4|807A350|0|0||||
-|0|807DA48|807EE58|0|0||||
-|0|807DC80|807EE74|0|0||||
-|0|807E81C|807DA8C|0|0||||
-|0|807E838|807DAA8|0|0||||
-|0|807FC20|807EF34|0|0||||
-|0|807FC3C|807EF50|0|0||||
-|8070C4C|8082CA4|8045170|0|0||||
-|0|8090ADC|8090180|0|0||||
-|8087254|80A3580|80A290C|0|0||||
-|8098550|80B3B44|80B2D20|0|0||||
-|0|800AEB0|800AF74|0|0||||
-|805FCD8|806C850|806C064|0|0||||
-|8098764|80B3D64|80B2F40|0|0||||
-|0|80858D8|8084EDC|0|0||||
-|0|80799E4|8079214|0|0||||
-|8000F58|8000F58|8000F80|0|0||||
-|8001550|80017E8|8001810|0|0||||
-|8001580|8001818|8001840|0|0||||
-|8002D6C|80031BC|80032E0|0|0||||
-|0|80033EC|8003510|0|0||||
-|8003028|800348C|80035B0|0|0||||
-|0|8003684|80037A8|0|0||||
-|0|8003E68|8003F8C|0|0||||
-|800384C|8004240|8004364|0|0|huffmanDecompressText|void huffmanDecompressText(int a1, int a2)||
-|8003870|8004264|8004388|0|0||||
-|800389C|8004290|80043B4|0|0||||
-|80038F0|80042E4|8004408|0|0||||
-|8008E00|8007458|80075C8|0|0||||
-|0|80095E4|8009754|0|0||||
-|0|800A70C|800A708|0|0||||
-|0|800AD84|800ADDC|0|0||||
-|8009914|800AD98|800ADF0|0|0||||
-|0|800B12C|800B1F0|0|0||||
-|0|800B7BC|800B880|0|0||||
-|0|800E520|800E614|0|0||||
-|0|800EC84|800ED78|0|0||||
-|0|800EC9C|800ED90|0|0||||
-|0|800EF34|800F028|0|0||||
-|0|800EF50|800F044|0|0||||
-|0|800EF78|800F06C|0|0||||
-|0|8010F48|8010AF8|0|0||||
-|0|80111E8|8010D98|0|0||||
-|0|80114EC|801109C|0|0||||
-|0|80123C8|8011D34|0|0||||
-|0|8012B98|8012504|0|0||||
-|80139DC|8013240|8012B88|0|0||||
-|0|8013BAC|8013670|0|0||||
-|0|8013BBC|8013680|0|0||||
-|8014AF8|8014900|80143E0|0|0||||
-|8014D50|8014B58|80146DC|0|0||||
-|80178F4|8017F3C|8017B4C|0|0||||
-|80192E4|8019F20|8019B40|0|0||||
-|0|8019FC0|8019BE0|0|0||||
-|0|8020E5C|80209F4|0|0||||
-|0|802196C|80214F4|0|0||||
+|0|8057DBC|80575D4|805DDF8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8055050|80587F8|805D6A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8053114|805A5C4|8059DDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805B610|805AE28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805FBBC|805F3D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805FFD0|8060254|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80590FC|806055C|805FD74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806084C|8060064|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8060898|8060398|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8060A3C|805F7E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8060B80|8060544|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8060E44|806065C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8090720|8061398|8061284|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8090834|8061A6C|80600B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8057A0C|8063CFC|8063514|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809B7D4|8064724|8063FA0|8070874|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80663EC|8065BFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8057A34|8066590|8065DA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805E4D4|806A584|8069DA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F6B8|806BE18|806B56C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066D5C|80737AC|8072FC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066544|8073FC4|80737D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807ADA8|807A334|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807ADC4|807A350|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DA48|807EE58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DC80|807EE74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E81C|807DA8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E838|807DAA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FC20|807EF34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FC3C|807EF50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8070C4C|8082CA4|8045170|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8090ADC|8090180|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8087254|80A3580|80A290C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098550|80B3B44|80B2D20|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800AEB0|800AF74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805FCD8|806C850|806C064|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098764|80B3D64|80B2F40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80858D8|8084EDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80799E4|8079214|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8000F58|8000F58|8000F80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001550|80017E8|8001810|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8001580|8001818|8001840|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8002D6C|80031BC|80032E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80033EC|8003510|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8003028|800348C|80035B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8003684|80037A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8003E68|8003F8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800384C|8004240|8004364|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8003870|8004264|8004388|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800389C|8004290|80043B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80038F0|80042E4|8004408|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8008E00|8007458|80075C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80095E4|8009754|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800A70C|800A708|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800AD84|800ADDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8009914|800AD98|800ADF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B12C|800B1F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B7BC|800B880|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E520|800E614|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EC84|800ED78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EC9C|800ED90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EF34|800F028|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EF50|800F044|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EF78|800F06C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010F48|8010AF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80111E8|8010D98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80114EC|801109C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80123C8|8011D34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012B98|8012504|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80139DC|8013240|8012B88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8013BAC|8013670|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8013BBC|8013680|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8014AF8|8014900|80143E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8014D50|8014B58|80146DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80178F4|8017F3C|8017B4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80192E4|8019F20|8019B40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8019FC0|8019BE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8020E5C|80209F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802196C|80214F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |801F26C|80220B0|8021C38|8022CFC|8022D34||||
-|0|802516C|8024CE0|0|0||||
-|8026504|802B4DC|802B02C|0|0||||
-|806DC90|802BD30|802B870|0|0||||
+|0|802516C|8024CE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8026504|802B4DC|802B02C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806DC90|802BD30|802B870|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|802BD44|802B884|804328C|8043308||||
-|806DC24|802BD58|802B898|80A4868|0||||
-|0|802C6DC|802C21C|0|0||||
-|8027530|802C86C|802C3AC|0|0||||
-|802756C|802C8A8|802C3E8|0|0||||
-|8027B98|802CF24|802CA64|0|0||||
-|0|802CF60|802CAA0|0|0||||
-|0|802D128|802CC68|0|0||||
-|0|802D148|802CC88|0|0||||
-|802A918|8030038|802FB70|0|0||||
-|0|8030B60|8030674|0|0||||
-|802EF20|8035824|803534C|0|0||||
-|8036FA8|803E4EC|803E040|0|0||||
-|0|80441D0|80439D0|0|0||||
-|0|80456C8|8044ED8|0|0||||
-|803F554|8047E5C|8047670|0|0||||
-|0|8048320|8047B34|0|0||||
-|803FB74|8048494|8047CA8|0|0||||
-|803FC3C|804856C|8047D80|0|0||||
-|803FE28|8048758|8047F6C|0|0||||
-|80410BC|8049A08|8049220|0|0||||
-|804536C|804E604|804DE28|0|0|loadNoDamage|void loadNoDamage(int a1, int a2, u8 a3)||
-|80459F8|804EB48|804E36C|0|0||||
-|804685C|804F8D8|804F0FC|0|0||||
+|806DC24|802BD58|802B898|80A4868|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802C6DC|802C21C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8027530|802C86C|802C3AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802756C|802C8A8|802C3E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8027B98|802CF24|802CA64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802CF60|802CAA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802D128|802CC68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802D148|802CC88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802A918|8030038|802FB70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030B60|8030674|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802EF20|8035824|803534C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8036FA8|803E4EC|803E040|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80441D0|80439D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80456C8|8044ED8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803F554|8047E5C|8047670|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8048320|8047B34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FB74|8048494|8047CA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FC3C|804856C|8047D80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FE28|8048758|8047F6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80410BC|8049A08|8049220|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804536C|804E604|804DE28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80459F8|804EB48|804E36C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804685C|804F8D8|804F0FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8046C14|804FD74|804F598|80554C4|80547DC|StartEfxFlashUnit|int StartEfxFlashUnit(int a1, __int16 a2, __int16 a3, char a4)||
-|80471E4|805022C|804FA50|0|0||||
-|804AFA0|8054764|8053F7C|0|0||||
-|804C5A4|8055D7C|8055594|0|0||||
+|80471E4|805022C|804FA50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804AFA0|8054764|8053F7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804C5A4|8055D7C|8055594|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8056070|8055888|805C170|805B3CC|StartSpellAnimation|int StartSpellAnimation(int a1)||
-|804D590|8056EFC|8056714|805CF64|0||||
-|0|805AE14|805A62C|0|0||||
-|8051624|805AEE0|805A6F8|0|0||||
-|8053A44|805AF74|805A78C|0|0||||
-|8051720|805B04C|805A864|0|0||||
-|0|805B264|805AA7C|0|0||||
-|0|805B32C|805AB44|0|0||||
-|8052334|805BD1C|805B534|0|0||||
-|8052460|805BE48|805B660|0|0||||
-|80524F4|805BEDC|805B6F4|0|0||||
-|8052848|805C230|805BA48|0|0||||
-|0|805C5B4|805BDCC|0|0|loadHazymoonBG1|void loadHazymoonBG1(void *AIS)||
-|0|805C624|805BE3C|0|0||||
-|8053FF4|805CC58|805C470|0|0||||
-|805581C|805E510|805DD28|0|0||||
-|80562C0|805EFA0|805E7B8|0|0||||
-|80564E4|805F1C4|805E9DC|0|0||||
-|0|8060730|805FF48|0|0||||
-|0|80608B8|80600D0|0|0||||
-|0|8060D4C|8060564|0|0||||
-|0|80611CC|80609E4|8066128|0||||
-|0|80612D4|8060AEC|0|0||||
-|0|80614E4|8060CFC|8066444|0||||
-|0|8061E40|8061658|0|0||||
-|0|8061F48|8061760|8066E88|0||||
-|0|8061FC4|80617DC|8066F04|0||||
-|0|8062658|8061E70|806759C|0||||
-|8056B08|8062D68|8062580|0|0||||
-|8056C3C|8062E9C|80626B4|0|0||||
-|8057BF8|8063E94|80636AC|0|0||||
-|0|8065F38|8065748|0|0||||
-|0|806603C|806584C|0|0||||
-|0|80660F4|8065904|0|0|loadFireDragonBGPaletteAnimation|_6CStruct *loadFireDragonBGPaletteAnimation(void *AIS)||
-|0|8066200|8065A10|0|0||||
-|0|80662F4|8065B04|0|0|loadFireSeaBG2|_6CStruct *loadFireSeaBG2(void *AIS)||
-|0|8066380|8065B90|0|0||||
-|0|8066CAC|80664C0|0|0|loadFireSeaBG1|void loadFireSeaBG1(void *AIS, __int16 duration)||
-|0|8066DA0|80665B4|0|0||||
-|0|8066F80|8066794|0|0||||
-|805CB6C|8068D2C|8068540|0|0||||
-|805CBB0|8068D70|8068584|0|0||||
-|805CC64|8068E24|8068638|0|0||||
+|804D590|8056EFC|8056714|805CF64|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805AE14|805A62C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8051624|805AEE0|805A6F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8053A44|805AF74|805A78C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8051720|805B04C|805A864|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805B264|805AA7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805B32C|805AB44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8052334|805BD1C|805B534|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8052460|805BE48|805B660|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80524F4|805BEDC|805B6F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8052848|805C230|805BA48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805C5B4|805BDCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805C624|805BE3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8053FF4|805CC58|805C470|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805581C|805E510|805DD28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80562C0|805EFA0|805E7B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80564E4|805F1C4|805E9DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8060730|805FF48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80608B8|80600D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8060D4C|8060564|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80611CC|80609E4|8066128|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80612D4|8060AEC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80614E4|8060CFC|8066444|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8061E40|8061658|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8061F48|8061760|8066E88|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8061FC4|80617DC|8066F04|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8062658|8061E70|806759C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8056B08|8062D68|8062580|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8056C3C|8062E9C|80626B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8057BF8|8063E94|80636AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065F38|8065748|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806603C|806584C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80660F4|8065904|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066200|8065A10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80662F4|8065B04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066380|8065B90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066CAC|80664C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066DA0|80665B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066F80|8066794|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805CB6C|8068D2C|8068540|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805CBB0|8068D70|8068584|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805CC64|8068E24|8068638|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |805CCE8|8068EA8|80686BC|8075434|8072F58||||
-|805CDCC|8068F8C|80687A0|0|0||||
-|805CF38|80690F8|806890C|0|0||||
-|0|806C474|806BC88|0|0||||
-|80601AC|806CD2C|806C540|0|0||||
-|80608D4|806D4A4|806CCB8|0|0||||
-|8060904|806D4D4|806CCE8|0|0||||
-|806094C|806D51C|806CD30|0|0||||
-|0|806D52C|806CD40|0|0||||
-|80613BC|806E5C0|806DDD4|0|0||||
-|806142C|806E630|806DE44|0|0||||
-|0|806E840|806E054|0|0||||
-|8061704|806E930|806E144|0|0||||
-|0|806F7B0|806EFC4|0|0||||
-|0|806F83C|806F050|0|0||||
-|0|806F8C8|806F0DC|0|0||||
-|0|806F97C|806F190|0|0||||
-|8062A80|806FCE8|806F4FC|0|0||||
-|8062BA0|806FE08|806F61C|0|0||||
-|8062CF0|806FF58|806F76C|0|0||||
-|8062D08|806FF70|806F784|0|0||||
-|8062FE8|8070258|806FA6C|0|0||||
-|8063120|8070390|806FBA4|0|0||||
-|8063494|8070704|806FF18|0|0||||
-|80645F8|8071874|8071088|0|0||||
-|8064994|8071C10|8071424|0|0||||
-|8064A10|8071C8C|80714A0|0|0||||
-|8064A8C|8071D08|807151C|0|0||||
-|80650A4|8072320|8071B34|0|0||||
-|8067A28|8074C70|8074474|0|0||||
-|80132C8|8074D38|807453C|0|0||||
-|80685F0|80759B0|80751E0|0|0||||
-|80686D8|8075A98|80752C8|0|0||||
-|8069C74|807706C|807689C|0|0||||
-|806A0DC|8077420|8076C50|0|0||||
-|0|807A208|8079A38|0|0||||
-|0|807BD6C|807B2F8|0|0||||
-|0|807CDD4|807C360|0|0||||
-|0|807FC04|807EE3C|0|0||||
-|0|807FC14|807EE4C|0|0||||
-|0|808667C|8085C7C|0|0||||
-|0|8086E0C|8086420|0|0||||
-|0|8087864|8086EA8|0|0||||
-|0|808E404|808DAC4|0|0||||
-|0|808EDD0|808E488|0|0||||
-|0|808EFBC|808E680|0|0||||
-|0|80903C4|808FA84|0|0||||
-|0|8090788|808FE48|0|0||||
-|0|80910B0|809076C|0|0||||
-|0|8091104|80907C0|0|0||||
-|0|809225C|8091914|0|0||||
-|0|809228C|8091944|0|0||||
-|0|8093B14|8093208|0|0||||
-|0|8093C00|80932F4|0|0||||
-|0|8099128|8098868|0|0||||
-|0|8099B94|80991DC|0|0||||
-|0|8099D18|8099358|0|0||||
-|0|809B2FC|809A924|0|0||||
-|0|809F098|809E688|0|0||||
-|80846B8|809F3D4|809E9C4|0|0|SaveConvoyItems|void SaveConvoyItems(_BYTE *pDest)|保存运输队物品到存档<br>输入参数：<br>pDest 指向目的地址的指针|
-|80846D0|809F3EC|809E9DC|0|0|LoadConvoyItems|void LoadConvoyItems(int a1)||
-|0|809FA94|809F058|0|0||||
-|0|80A03F8|809FA2C|0|0||||
-|0|80A041C|809FA50|0|0||||
-|8087878|80A3BAC|80A2F38|0|0||||
-|80878B4|80A3BE8|80A2F74|0|0||||
-|0|80A3EF8|80A3284|0|0||||
-|0|80A54A8|80A4830|0|0||||
-|0|80A61FC|80A5514|0|0||||
-|0|80A86D4|80A77C0|0|0||||
-|0|80A870C|80A77F8|0|0||||
-|0|80A8B60|80A7C4C|0|0||||
-|0|80A9064|80A8150|0|0||||
-|0|80A9A08|80A8AF4|0|0||||
-|0|80AA0C0|80A91AC|0|0||||
-|0|80ADE30|80ACF08|0|0||||
-|0|80AEBDC|80ADCC4|0|0||||
-|0|80AEC4C|80ADD34|0|0||||
-|0|80AFCC4|80AED8C|0|0||||
-|8095D88|80B1174|80B034C|0|0||||
-|8096F70|80B25C8|80B17A0|0|0||||
-|8097084|80B26DC|80B18B0|0|0||||
-|80975A0|80B2BB4|80B1D90|0|0||||
-|8097638|80B2C4C|80B1E28|0|0||||
-|809777C|80B2D90|80B1F6C|0|0||||
-|8097830|80B2E44|80B2020|0|0||||
-|8097E84|80B34A0|80B267C|0|0||||
-|80985D8|80B3BD0|80B2DAC|0|0||||
-|0|80B3E60|80B303C|0|0||||
-|808B7A0|80B4A3C|80B3C04|0|0||||
-|0|80B4BDC|80B3DA4|0|0||||
-|0|80B4C34|80B3DFC|0|0||||
-|808BE5C|80B5D64|80B4F44|0|0||||
-|0|80B6374|80B5554|0|0||||
-|0|80B7C40|80B6E58|0|0||||
-|0|80B94EC|80B88C0|0|0||||
-|0|80B97EC|80B8C8C|0|0||||
-|0|80BB000|80BA4BC|0|0||||
-|0|80BBAFC|80BB080|0|0||||
-|0|80BBD28|80BB2AC|0|0||||
-|0|80BC664|80BBC5C|0|0||||
-|0|80BC7D8|80BBDD0|0|0||||
-|0|80BC858|80BBE50|0|0||||
-|0|80BC884|80BBE7C|0|0||||
-|0|80BD4E0|80BCAE8|0|0||||
-|0|80BDB24|80BCFCC|0|0||||
-|0|80BDF7C|80BD424|0|0||||
-|0|807931C|8078B4C|0|0||||
-|8093284|809FB10|809F0D4|0|0||||
-|0|800D478|800D568|0|0||||
-|0|800D4A0|800D590|0|0||||
-|0|800D834|800D928|0|0||||
-|0|800D858|800D94C|0|0||||
-|0|8016FBC|8016B68|0|0||||
-|0|8079A50|8079280|0|0||||
-|0|808F6AC|808ED70|0|0||||
-|0|8003E9C|8003FC0|0|0||||
-|0|808E6A4|808DD78|0|0||||
-|0|800ACC4|800AD1C|0|0||||
-|0|802ACE0|802A830|0|0||||
-|805C41C|80685C8|8067DDC|0|0||||
-|80629FC|806FC64|806F478|0|0||||
-|0|80946CC|8093DE4|0|0|nullsub_7|void nullsub_7()||
-|0|809FB0C|809F0D0|0|0||||
-|0|80B647C|80B565C|0|0||||
-|0|8012E64|80127E8|0|0||||
-|0|8034D5C|8034884|0|0||||
-|0|8004B1C|8004C40|0|0||||
-|0|8009E6C|8009FDC|0|0||||
-|8020A58|8023D90|8023904|0|0||||
-|8029F68|802F5AC|802F0E0|0|0||||
-|0|80B3DE4|80B2FC0|0|0||||
-|0|80BE1CC|80BD688|0|0||||
-|0|80C0548|80BFA04|0|0|ArcTan2|u16 ArcTan2(u16 x, s16 y)||
-|0|801DC64|801D860|0|0||||
-|8023278|80273D4|8026F4C|0|0||||
-|80975C8|80B2BDC|80B1DB8|0|0||||
-|0|8005740|800587C|0|0||||
-|0|8005BB8|8005D24|0|0||||
-|0|800A604|800A608|0|0||||
-|80143E4|800B188|800B24C|0|0||||
-|0|800D268|800D358|0|0||||
-|0|800D828|800D91C|0|0||||
-|0|800EA58|800EB4C|0|0||||
-|80143E4|80141EC|8013CCC|0|0||||
-|8014718|8014520|8014000|0|0||||
-|80157C8|80155D0|8015154|0|0||||
-|8015810|8015618|801519C|0|0||||
-|803FC70|80485A0|8047DB4|0|0||||
-|803FC70|8049960|8049178|0|0||||
-|80581FC|8064AD0|80642E8|0|0||||
-|8058392|8064C66|806447E|0|0||||
-|8058612|8064EE6|80646FE|0|0||||
-|0|806518E|80649A6|0|0||||
-|8060460|806CFE8|806C7FC|0|0||||
-|800F094|806D06C|806C880|0|0||||
-|80604E4|806D07C|806C890|0|0||||
-|80612F0|806E4F4|806DD08|0|0||||
-|8061404|806E608|806DE1C|0|0||||
-|0|806E6DC|806DEF0|0|0||||
-|0|806E7EC|806E000|0|0||||
-|0|806E8DC|806E0F0|0|0||||
-|8061720|806E94C|806E160|0|0||||
-|8068608|80759C8|80751F8|0|0||||
-|8069C04|8076FFC|807682C|0|0||||
-|8069C1C|8077014|8076844|0|0||||
-|806A750|8077BC0|80773F0|0|0||||
-|806C158|807A940|8079ECC|0|0||||
-|806C1A4|807A950|8079EDC|0|0||||
-|806C1B4|807A960|8079EEC|0|0||||
-|806C1C4|807A970|8079EFC|0|0||||
-|806C1D4|807A980|8079F0C|0|0||||
-|0|807B534|807AAC0|0|0||||
-|0|807B558|807AAE4|0|0||||
-|0|807C8BC|807BE48|0|0||||
-|0|807F5C8|807E80C|0|0||||
-|0|807F610|807E854|0|0||||
-|0|807F648|807E88C|0|0||||
-|0|807F690|807E8D4|0|0||||
-|0|807F6B0|807E8F4|0|0||||
-|0|807F6D0|807E914|0|0||||
-|0|807F718|807E95C|0|0||||
-|0|807F738|807E97C|0|0||||
-|0|807F9D0|807EC14|0|0||||
-|0|807FB40|807ED78|0|0||||
-|0|807FB54|807ED8C|0|0||||
-|0|807FB6C|807EDA4|0|0||||
-|0|80877FC|8086E40|0|0||||
-|0|8089B60|8089200|0|0||||
-|0|808F7B4|808EE78|0|0||||
-|8041014|808FCAC|808F36C|0|0||||
-|0|8094828|8093F40|0|0||||
-|0|809484C|8093F64|0|0||||
-|808A160|80A691C|80A5C5C|0|0||||
-|808A228|80A69B8|80A5CF8|0|0||||
-|809AD64|80AA490|80A95B4|0|0||||
-|8074830|80AA4B4|80A95D8|0|0||||
-|8095DF0|80B11DC|80B03B4|0|0||||
-|8095E70|80B125C|80B0434|0|0||||
-|80604F4|80B1418|80B05F0|0|0||||
-|0|80B14B8|80B0690|0|0||||
-|0|80B1A0C|80B0BE4|0|0||||
-|0|80B1A44|80B0C1C|0|0||||
-|0|80B1A5C|80B0C34|0|0||||
-|0|80B1A74|80B0C4C|0|0||||
-|0|80B1E0C|80B0FE4|0|0||||
-|0|80B1E4C|80B1024|0|0||||
-|0|80B1EBC|80B1094|0|0||||
-|8097D50|80B336C|80B2548|0|0||||
-|8097D7C|80B3398|80B2574|0|0||||
-|0|80B39BC|80B2B98|0|0||||
-|0|80B39D4|80B2BB0|0|0||||
-|0|80B7084|80B6278|0|0||||
-|0|80B7094|80B6288|0|0||||
-|807B69C|80BCE9C|80BC474|0|0||||
-|8016FB4|8017420|8016FCC|0|0||||
-|0|802788C|8027400|0|0||||
-|80982D8|80B3908|80B2AE4|0|0||||
-|8096944|80B1D44|80B0F1C|0|0||||
-|0|8006FF0|800A524|0|0||||
+|805CDCC|8068F8C|80687A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805CF38|80690F8|806890C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806C474|806BC88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80601AC|806CD2C|806C540|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80608D4|806D4A4|806CCB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060904|806D4D4|806CCE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806094C|806D51C|806CD30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806D52C|806CD40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80613BC|806E5C0|806DDD4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806142C|806E630|806DE44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806E840|806E054|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061704|806E930|806E144|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806F7B0|806EFC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806F83C|806F050|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806F8C8|806F0DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806F97C|806F190|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062A80|806FCE8|806F4FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062BA0|806FE08|806F61C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062CF0|806FF58|806F76C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062D08|806FF70|806F784|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8062FE8|8070258|806FA6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8063120|8070390|806FBA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8063494|8070704|806FF18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80645F8|8071874|8071088|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064994|8071C10|8071424|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064A10|8071C8C|80714A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064A8C|8071D08|807151C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80650A4|8072320|8071B34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8067A28|8074C70|8074474|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80132C8|8074D38|807453C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80685F0|80759B0|80751E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80686D8|8075A98|80752C8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069C74|807706C|807689C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A0DC|8077420|8076C50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807A208|8079A38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BD6C|807B2F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CDD4|807C360|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FC04|807EE3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FC14|807EE4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808667C|8085C7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8086E0C|8086420|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8087864|8086EA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808E404|808DAC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808EDD0|808E488|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808EFBC|808E680|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80903C4|808FA84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8090788|808FE48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80910B0|809076C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8091104|80907C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809225C|8091914|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809228C|8091944|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8093B14|8093208|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8093C00|80932F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8099128|8098868|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8099B94|80991DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8099D18|8099358|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B2FC|809A924|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809F098|809E688|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80846B8|809F3D4|809E9C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|保存运输队物品到存档<br>输入参数：<br>pDest 指向目的地址的指针|
+|80846D0|809F3EC|809E9DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809FA94|809F058|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A03F8|809FA2C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A041C|809FA50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8087878|80A3BAC|80A2F38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80878B4|80A3BE8|80A2F74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A3EF8|80A3284|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A54A8|80A4830|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A61FC|80A5514|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A86D4|80A77C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A870C|80A77F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8B60|80A7C4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A9064|80A8150|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A9A08|80A8AF4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AA0C0|80A91AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ADE30|80ACF08|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AEBDC|80ADCC4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AEC4C|80ADD34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AFCC4|80AED8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095D88|80B1174|80B034C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8096F70|80B25C8|80B17A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097084|80B26DC|80B18B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80975A0|80B2BB4|80B1D90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097638|80B2C4C|80B1E28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809777C|80B2D90|80B1F6C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097830|80B2E44|80B2020|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097E84|80B34A0|80B267C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80985D8|80B3BD0|80B2DAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B3E60|80B303C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808B7A0|80B4A3C|80B3C04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4BDC|80B3DA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4C34|80B3DFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808BE5C|80B5D64|80B4F44|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6374|80B5554|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7C40|80B6E58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B94EC|80B88C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B97EC|80B8C8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BB000|80BA4BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBAFC|80BB080|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BBD28|80BB2AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC664|80BBC5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC7D8|80BBDD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC858|80BBE50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC884|80BBE7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD4E0|80BCAE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDB24|80BCFCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BDF7C|80BD424|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807931C|8078B4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8093284|809FB10|809F0D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D478|800D568|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D4A0|800D590|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D834|800D928|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D858|800D94C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8016FBC|8016B68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8079A50|8079280|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808F6AC|808ED70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8003E9C|8003FC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808E6A4|808DD78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800ACC4|800AD1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802ACE0|802A830|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805C41C|80685C8|8067DDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80629FC|806FC64|806F478|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80946CC|8093DE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809FB0C|809F0D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B647C|80B565C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012E64|80127E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8034D5C|8034884|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8004B1C|8004C40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8009E6C|8009FDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8020A58|8023D90|8023904|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8029F68|802F5AC|802F0E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B3DE4|80B2FC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BE1CC|80BD688|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80C0548|80BFA04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801DC64|801D860|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8023278|80273D4|8026F4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80975C8|80B2BDC|80B1DB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8005740|800587C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8005BB8|8005D24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800A604|800A608|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80143E4|800B188|800B24C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D268|800D358|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D828|800D91C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800EA58|800EB4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80143E4|80141EC|8013CCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8014718|8014520|8014000|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80157C8|80155D0|8015154|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8015810|8015618|801519C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FC70|80485A0|8047DB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803FC70|8049960|8049178|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80581FC|8064AD0|80642E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8058392|8064C66|806447E|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8058612|8064EE6|80646FE|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806518E|80649A6|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8060460|806CFE8|806C7FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800F094|806D06C|806C880|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80604E4|806D07C|806C890|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80612F0|806E4F4|806DD08|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061404|806E608|806DE1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806E6DC|806DEF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806E7EC|806E000|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806E8DC|806E0F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8061720|806E94C|806E160|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068608|80759C8|80751F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069C04|8076FFC|807682C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069C1C|8077014|8076844|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806A750|8077BC0|80773F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C158|807A940|8079ECC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C1A4|807A950|8079EDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C1B4|807A960|8079EEC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C1C4|807A970|8079EFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806C1D4|807A980|8079F0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B534|807AAC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B558|807AAE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C8BC|807BE48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F5C8|807E80C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F610|807E854|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F648|807E88C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F690|807E8D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F6B0|807E8F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F6D0|807E914|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F718|807E95C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F738|807E97C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F9D0|807EC14|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FB40|807ED78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FB54|807ED8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FB6C|807EDA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80877FC|8086E40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8089B60|8089200|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808F7B4|808EE78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8041014|808FCAC|808F36C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8094828|8093F40|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809484C|8093F64|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808A160|80A691C|80A5C5C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808A228|80A69B8|80A5CF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809AD64|80AA490|80A95B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8074830|80AA4B4|80A95D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095DF0|80B11DC|80B03B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095E70|80B125C|80B0434|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80604F4|80B1418|80B05F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B14B8|80B0690|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1A0C|80B0BE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1A44|80B0C1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1A5C|80B0C34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1A74|80B0C4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1E0C|80B0FE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1E4C|80B1024|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B1EBC|80B1094|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097D50|80B336C|80B2548|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097D7C|80B3398|80B2574|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B39BC|80B2B98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B39D4|80B2BB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7084|80B6278|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7094|80B6288|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|807B69C|80BCE9C|80BC474|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8016FB4|8017420|8016FCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802788C|8027400|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80982D8|80B3908|80B2AE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8096944|80B1D44|80B0F1C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8006FF0|800A524|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8014278|800AD50|8013B60|8008E44|8008F54||||
-|0|800DD90|800DE84|0|0||||
-|8010750|800E490|800E584|0|0||||
-|0|800E4A8|800E59C|0|0||||
-|0|800E7A4|800E88C|0|0||||
-|0|800F250|800F344|0|0||||
-|0|800F264|800F358|0|0||||
-|0|800FA94|800E898|0|0||||
-|0|800FAA0|800FB94|0|0||||
-|0|800FAE4|800FBD8|0|0||||
-|0|8010F74|8010B24|0|0||||
-|0|8011298|8010E48|0|0||||
-|0|8011AC8|8011430|0|0||||
-|0|8011E8C|80117F4|0|0||||
-|0|8012F44|80128C8|8009B94|0||||
-|0|8014834|8021164|0|0||||
-|801B034|801C56C|8015484|0|0||||
-|801CF48|801E858|801E4D4|0|0||||
-|0|8020A48|80205E0|0|0||||
-|0|80219F8|8021580|0|0||||
-|0|8022014|8021B9C|0|0||||
-|0|80221CC|801C168|0|0||||
-|0|8022EB0|8022A38|0|0||||
-|0|802348C|80232AC|0|0||||
-|8020770|8023714|8023400|8024608|0||||
-|80207F8|8023824|80233E0|0|0||||
+|0|800DD90|800DE84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8010750|800E490|800E584|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E4A8|800E59C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E7A4|800E88C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F250|800F344|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800F264|800F358|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FA94|800E898|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FAA0|800FB94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FAE4|800FBD8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010F74|8010B24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011298|8010E48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011AC8|8011430|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8011E8C|80117F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012F44|80128C8|8009B94|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8014834|8021164|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801B034|801C56C|8015484|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801CF48|801E858|801E4D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8020A48|80205E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80219F8|8021580|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8022014|8021B9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80221CC|801C168|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8022EB0|8022A38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802348C|80232AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8020770|8023714|8023400|8024608|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80207F8|8023824|80233E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |80208A0|802388C|8023444|8024780|80247D0||||
-|80217F8|8024BD8|8024858|0|0||||
-|8021904|8024D0C|80248A8|0|0||||
-|0|802507C|8024BF0|0|0||||
-|8021638|80250E0|8024C54|0|0||||
+|80217F8|8024BD8|8024858|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8021904|8024D0C|80248A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802507C|8024BF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8021638|80250E0|8024C54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8028354|802D834|802D374|8030094|8030144|BMapVSync_OnLoop|[void BMapVSync_OnLoop(struct BMVSyncProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L281)||
-|8029560|802EA88|802E500|0|0||||
-|8029618|802EB40|802E5BC|0|0||||
-|0|802FE20|802F954|0|0||||
-|0|8031634|8031148|0|0||||
+|8029560|802EA88|802E500|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8029618|802EB40|802E5BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802FE20|802F954|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8031634|8031148|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |802C798|8032710|803202C|8035288|8035380||||
 |0|803E068|807B178|8042FB0|804302C||||
-|803ED54|8047658|8046E70|0|0||||
-|804DE4C|8056F98|8056458|0|0|spellArrow|void spellArrow(void *AIS)||
-|0|805717C|80569F0|0|0||||
-|804D7C0|8057234|8056AA8|0|0||||
-|804D81C|8057290|8056B04|0|0||||
-|804D878|80572EC|8056B60|0|0||||
-|804D8D4|8057348|8056BBC|0|0||||
-|804D930|80573A4|8056C18|0|0||||
-|804D9E8|8057400|8056C74|0|0|spellTeyari9|int spellTeyari9(AnimationInterpreter *a1)||
-|804DA44|805745C|8056CD0|0|0|spellTeyari10|int spellTeyari10(AnimationInterpreter *a1)||
-|804E5E4|8057664|80567B0|805D6D0|0|spellSong|int spellSong(int a1)||
+|803ED54|8047658|8046E70|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804DE4C|8056F98|8056458|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805717C|80569F0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804D7C0|8057234|8056AA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804D81C|8057290|8056B04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804D878|80572EC|8056B60|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804D8D4|8057348|8056BBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804D930|80573A4|8056C18|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804D9E8|8057400|8056C74|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804DA44|805745C|8056CD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804E5E4|8057664|80567B0|805D6D0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |804E9FC|805856C|8057D84|805E5B8|805D4B8||||
 |0|8059F74|805978C|8060334|805F234||||
-|0|8059F8C|80597A4|0|0||||
-|804E8CC|805A090|805C250|0|0||||
-|804ECB8|805A60C|805DBC8|0|0||||
+|0|8059F8C|80597A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804E8CC|805A090|805C250|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804ECB8|805A60C|805DBC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8051394|805ABC0|805A3D8|8060F68|805FE68||||
-|804F5C4|805ABD8|805DE68|0|0||||
-|804FC28|805B678|805E100|0|0||||
-|805007C|805BA78|805E420|0|0||||
-|80503BC|805C3D8|805E69C|0|0||||
-|8053B88|805C7F8|805C010|0|0||||
+|804F5C4|805ABD8|805DE68|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804FC28|805B678|805E100|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805007C|805BA78|805E420|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80503BC|805C3D8|805E69C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8053B88|805C7F8|805C010|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8053DB0|805CA20|805C238|806198C|806088C||||
-|8050860|805CA38|805ECA4|0|0||||
-|8054084|805CCE8|805C500|8061C2C|0||||
-|8054558|805D1D8|805CB40|8062124|0|spellLive|int spellLive(int a1)||
-|80546A8|805D328|805CCE4|0|0|spellRelive|int spellRelive(int a1)||
-|8055234|805DEC0|805D6D8|0|0||||
-|8055264|805DEF0|805D708|0|0||||
-|8050DE0|805E3B0|805EF10|0|0||||
+|8050860|805CA38|805ECA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8054084|805CCE8|805C500|8061C2C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8054558|805D1D8|805CB40|8062124|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80546A8|805D328|805CCE4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8055234|805DEC0|805D6D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8055264|805DEF0|805D708|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8050DE0|805E3B0|805EF10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8055BDC|805E8D0|805E0E8|8063760|8062660||||
-|8052090|805EC08|8060688|0|0||||
-|80529EC|805EE84|8060DDC|0|0||||
-|805653C|805F21C|805EA34|80640A4|0||||
-|0|805F48C|80613F8|0|0|spellMShield|int spellMShield(AnimationInterpreter *a1)||
+|8052090|805EC08|8060688|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80529EC|805EE84|8060DDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805653C|805F21C|805EA34|80640A4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805F48C|80613F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8056A00|805F6E0|805EEF8|8064568|8063468||||
-|0|8060108|805F920|8064F58|0||||
-|80556BC|80605A4|8057C54|0|0|spellExcalibur|int spellExcalibur(AnimationInterpreter *a1)||
-|0|806079C|805FFB4|0|0||||
+|0|8060108|805F920|8064F58|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80556BC|80605A4|8057C54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806079C|805FFB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|8060B64|806037C|8065658|806454C||||
 |0|8060D10|8060528|8065A28|806491C||||
 |0|8061274|8060A8C|8065BD4|8064AC8||||
 |0|806137C|8060B94|80662DC|8065300||||
-|0|80615A8|8060D88|8067618|0||||
-|0|8061A50|8061268|80669B0|0||||
-|8055F24|8061BE0|8058FB4|0|0|spellLuce|int spellLuce(AnimationInterpreter *a1)||
-|0|8061EE8|8061700|0|0||||
-|0|8062640|8061E58|0|0||||
-|0|80626D4|8060DA4|806D988|0||||
-|0|8062AAC|80622C4|0|0|spellRingFilla|int spellRingFilla(AnimationInterpreter *a1)||
-|80575E8|80639F8|8063210|806FA80|0||||
-|0|8063C14|80656B0|0|0||||
-|8058180|8064A54|80643FC|0|0||||
-|8058310|8064BE4|8064938|80712BC|0||||
-|0|8065F8C|806579C|0|0||||
-|0|8066090|80658A0|0|0||||
-|802E8D4|8066634|8069D0C|0|0||||
-|0|806A7A0|8069FC0|8076E8C|0||||
-|804C7EC|806C178|80557DC|8078934|0||||
-|8064F28|80721A4|8071B88|807F3E0|0||||
-|80650F8|8072374|8071BAC|807F60C|0||||
-|80684D8|8074C5C|8074460|0|0||||
-|808B56C|8075864|8075094|0|0||||
-|0|8075F68|8075798|0|0||||
-|0|8075FAC|80757DC|0|0||||
-|8068F88|8076350|8075B80|0|0||||
-|8068FD8|80763A0|8075BD0|0|0||||
-|8069560|8076950|8076180|0|0||||
-|8069590|8076980|80761B0|0|0||||
-|80695C0|80769B0|80761E0|0|0||||
-|80695F0|80769E0|8076210|0|0||||
-|806962C|8076A1C|807624C|0|0||||
-|8069668|8076A58|8076288|0|0||||
-|80696A4|8076A94|80762C4|0|0||||
-|80696E0|8076AD0|8076300|0|0||||
-|806971C|8076B0C|807633C|0|0||||
-|8069758|8076B48|8076378|0|0||||
-|806988C|8076C80|80764B0|0|0||||
-|80698E4|8076CD8|8076508|0|0||||
-|8069914|8076D08|8076538|0|0||||
-|8069944|8076D38|8076568|0|0||||
-|8069974|8076D68|8076598|0|0||||
-|0|807B430|807A9BC|0|0||||
+|0|80615A8|8060D88|8067618|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8061A50|8061268|80669B0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8055F24|8061BE0|8058FB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8061EE8|8061700|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8062640|8061E58|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80626D4|8060DA4|806D988|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8062AAC|80622C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80575E8|80639F8|8063210|806FA80|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8063C14|80656B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8058180|8064A54|80643FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8058310|8064BE4|8064938|80712BC|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065F8C|806579C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066090|80658A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802E8D4|8066634|8069D0C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806A7A0|8069FC0|8076E8C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804C7EC|806C178|80557DC|8078934|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8064F28|80721A4|8071B88|807F3E0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80650F8|8072374|8071BAC|807F60C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80684D8|8074C5C|8074460|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808B56C|8075864|8075094|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8075F68|8075798|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8075FAC|80757DC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068F88|8076350|8075B80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8068FD8|80763A0|8075BD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069560|8076950|8076180|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069590|8076980|80761B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80695C0|80769B0|80761E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80695F0|80769E0|8076210|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806962C|8076A1C|807624C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069668|8076A58|8076288|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80696A4|8076A94|80762C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80696E0|8076AD0|8076300|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806971C|8076B0C|807633C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069758|8076B48|8076378|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806988C|8076C80|80764B0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80698E4|8076CD8|8076508|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069914|8076D08|8076538|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069944|8076D38|8076568|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8069974|8076D68|8076598|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807B430|807A9BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|807B7A0|807AD2C|8087B10|8085844||||
 |0|807B7C8|807AD54|8087B38|808586C||||
 |0|807B8A4|807AE30|8087C14|8085948||||
-|0|807C658|803DE94|0|0||||
-|0|807C6F0|807BC7C|0|0||||
-|0|807CA30|807BFBC|0|0||||
-|0|807CD48|807B1F4|0|0||||
-|0|807CD60|807B79C|0|0||||
-|0|807D314|807B1E0|0|0||||
-|0|807D59C|807CB28|0|0||||
-|0|807D938|807B264|0|0||||
-|0|807D94C|807CEC8|0|0||||
-|0|807D95C|807CED8|0|0||||
-|806DA90|807D96C|807CEE8|0|0||||
-|80947AC|807DA3C|807CFBC|0|0||||
-|0|807F8DC|801E6D0|0|0||||
-|0|807F8F4|807ED2C|0|0||||
-|8014278|807F908|807EB4C|0|0||||
-|0|807FAE8|807F45C|0|0||||
-|0|807FB80|807EDB8|0|0||||
-|0|807FB98|807EDD0|0|0||||
-|0|807FBB0|807EDE8|0|0||||
-|0|807FBCC|807EE04|0|0||||
-|0|8080214|807F6B4|0|0||||
-|808E6FC|8086668|808F7C4|0|0||||
+|0|807C658|803DE94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C6F0|807BC7C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CA30|807BFBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CD48|807B1F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CD60|807B79C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D314|807B1E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D59C|807CB28|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D938|807B264|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D94C|807CEC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807D95C|807CED8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806DA90|807D96C|807CEE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80947AC|807DA3C|807CFBC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F8DC|801E6D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807F8F4|807ED2C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8014278|807F908|807EB4C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FAE8|807F45C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FB80|807EDB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FB98|807EDD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FBB0|807EDE8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FBCC|807EE04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8080214|807F6B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808E6FC|8086668|808F7C4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|808E4E8|808DBA8|80974AC|80951CC||||
-|0|808E57C|808DC3C|0|0||||
-|0|808E5B4|808DC88|0|0||||
-|0|80921FC|80918B4|0|0||||
-|0|809221C|80918D4|0|0||||
-|0|809223C|80918F4|0|0||||
-|0|8093198|809288C|0|0||||
-|0|80931C8|80928BC|0|0||||
-|0|80931E0|80928D4|0|0||||
-|0|80951C0|8094930|0|0||||
-|0|8095C90|8095454|0|0||||
-|0|80960A8|809AE84|0|0||||
-|0|80969A8|8097660|0|0||||
-|0|8099B2C|809BA24|80A2B9C|0||||
-|0|809B6D4|809ACFC|0|0||||
+|0|808E57C|808DC3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808E5B4|808DC88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80921FC|80918B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809221C|80918D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809223C|80918F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8093198|809288C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80931C8|80928BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80931E0|80928D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80951C0|8094930|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8095C90|8095454|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80960A8|809AE84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80969A8|8097660|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8099B2C|809BA24|80A2B9C|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809B6D4|809ACFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |0|809C808|809BE68|80A5744|80A196C||||
-|0|80A45D4|80A3960|0|0||||
-|0|80A773C|80A6A54|0|0||||
-|80793F0|80A7D88|80A73E4|0|0||||
-|0|80AA8E8|80AA758|0|0||||
-|0|80AB188|80AA3A0|0|0||||
-|0|80AB1F4|80AA40C|0|0||||
-|0|80ABAE0|80AAC04|0|0||||
-|8095D2C|80B10B8|80B42FC|0|0||||
-|8096A98|80B1E90|80B1068|0|0||||
-|80985AC|80B3BA4|80B2D80|80B95A8|0||||
-|808BD58|80B511C|80B6264|0|0||||
-|8098A78|80B6444|80B5624|0|0||||
-|808D99C|80B7070|80B85D4|0|0||||
-|8098AA8|80B9244|80B85A8|0|0||||
-|0|80B9C0C|80B9FB0|0|0||||
-|8098AC0|80BAA80|80B9F78|0|0||||
-|0|80BC5B0|80BBBA4|0|0||||
-|0|80BD3A0|80BC9A8|0|0||||
-|0|80BD47C|80BCA84|0|0||||
-|8063894|8070B10|8070324|0|0||||
-|0|805B110|805A928|0|0||||
-|0|8089BDC|808927C|0|0||||
-|0|80419D4|80412E0|0|0||||
-|0|80B7D64|80B6FB8|0|0||||
-|0|80878A8|8086EEC|0|0||||
-|0|80A7E4C|80A6F34|0|0||||
-|0|809A0E8|8099728|0|0||||
-|0|8080E04|80800B4|0|0||||
-|0|8048ED0|80486E4|0|0||||
-|0|80BAC14|80BA10C|0|0||||
-|0|8010364|800FEF0|0|0||||
-|0|808E8DC|808DF9C|0|0|displayMainPrepScreen|void displayMainPrepScreen(int a1)|显示出击准备菜单|
-|0|80A8140|80A722C|0|0||||
-|0|80A64E0|80A5818|0|0||||
-|80185C8|80190B0|8018CC0|0|0||||
-|0|8090F14|80905D4|0|0||||
-|0|808E344|808DA04|0|0||||
-|0|80BAAE0|80B9FD8|0|0||||
-|0|80290F8|8028C50|0|0||||
-|0|80BAD64|80BA25C|0|0||||
-|0|8029040|8028BA0|0|0||||
-|0|800D744|800D834|0|0||||
-|80974A0|80B2AF8|80B1CCC|0|0||||
-|8036EB4|803E3F8|803DF48|0|0||||
-|0|808F9E0|808F0A4|0|0||||
-|0|80A80B8|80A71A8|0|0||||
-|0|8030B88|803069C|0|0|displayViewMapPrepScreen|void displayViewMapPrepScreen(int a1)|显示地图上的准备菜单屏幕（包括调整我军单位位置等功能）|
-|803A604|8041E1C|804172C|0|0||||
-|803A7E8|8042010|8041920|0|0||||
-|0|80A40E8|80A3474|0|0||||
-|0|800B994|800BA3C|0|0||||
-|801F5A0|8022404|8021F8C|0|0||||
-|0|809C448|809BA80|0|0||||
-|0|8092B30|8092220|0|0||||
-|0|80A0DFC|80A0458|0|0||||
-|0|80B92E8|80B8654|0|0||||
-|0|8094398|8093AA0|0|0||||
-|8094CEC|80B01BC|80AF368|0|0||||
-|0|80A7424|80A6748|0|0||||
-|8088F60|80A54C8|80A4850|0|0||||
-|0|8066414|8065C24|0|0||||
-|8079BC8|807D5B0|807CB3C|0|0||||
-|0|80A7328|80A6664|0|0||||
-|0|80A8618|80A76F8|0|0||||
-|80456C4|80BB7FC|80BADA0|0|0||||
-|0|8088D08|8088380|0|0||||
-|0|80B0330|80AF4D4|0|0||||
-|0|807BF9C|807C1B8|0|0||||
-|0|807C954|807C208|0|0||||
-|0|807CC2C|807BEE0|0|0||||
-|0|807CC7C|807C10C|0|0||||
-|0|807CB80|807B528|0|0||||
-|80588E0|80A02EC|809F924|0|0||||
-|0|80867D8|8085DCC|0|0||||
-|0|80B4CEC|80B3EB4|0|0||||
-|0|801C43C|801C070|0|0||||
-|0|80B8384|80B75D8|0|0||||
-|805183C|805CE2C|8060CC8|0|0||||
-|804F96C|805BA48|8058310|0|0||||
-|0|805836C|805D4F4|805E3B4|0||||
-|804E744|80614B0|8057B84|0|0||||
-|0|80580EC|8058010|805E130|0||||
-|804E5B0|805DD44|8063348|0|0||||
-|80534FC|805DE8C|8057904|0|0||||
-|804EC84|8063B30|805D55C|0|0||||
-|8052060|80637D4|8058920|0|0||||
-|805752C|80638C0|8058CF8|0|0||||
-|0|80665B8|8065DC8|0|0||||
-|8071888|8083B28|8062C78|0|0||||
-|0|8096A78|8096370|0|0||||
-|0|80B7C6C|80B6E84|0|0||||
-|0|8092838|8091F04|0|0||||
-|0|80ABC28|809F8F4|0|0||||
-|0|80BB46C|80BA918|0|0||||
-|80675AC|80747F4|8074008|0|0||||
-|0|80BB29C|80BA764|0|0||||
-|80930D4|80B6404|80B7EF8|0|0||||
-|0|800A614|800A618|0|0||||
-|80681D8|8075584|8074D88|0|0||||
-|0|80B6BBC|80B5D9C|0|0||||
-|0|80AB970|80AAAA8|0|0||||
-|0|800FD04|80C3CDC|0|0||||
-|0|80B4050|80B322C|0|0||||
-|0|80B9284|80B85E8|0|0||||
-|0|807DB3C|807D020|0|0||||
-|0|808341C|8082A10|0|0||||
-|802D7F0|8033A38|803351C|0|0||||
-|806ED34|8080B5C|807FDF0|0|0||||
-|80865EC|80A2A50|0|0|0||||
-|8086608|80A2A6C|0|0|0||||
-|8086624|80A2A88|0|0|0||||
-|8086640|80A2AA4|0|0|0||||
-|80371B4|803E6F8|0|0|0||||
-|803A08C|8041864|0|0|0||||
-|8016BAC|8016E60|0|0|0||||
-|8022F94|8027000|0|0|0||||
-|802BE4C|8031DC4|0|0|0||||
-|802BEA0|8031E18|0|0|0||||
-|802BEE0|8031E58|0|0|0||||
-|802BF48|8031EC0|0|0|0||||
-|802BF7C|8031EF4|0|0|0||||
-|802BFD4|8031F4C|0|0|0||||
-|802C008|8031F80|0|0|0||||
-|803A028|8041800|0|0|0||||
-|803BF28|80437DC|0|0|0||||
-|803C00C|80438C0|0|0|0||||
-|805F6E0|806BF3C|0|0|0||||
-|80684D8|8075898|0|0|0||||
-|8071120|8083268|0|0|0||||
-|80951DC|80B0694|0|0|0||||
-|8097014|80B266C|0|0|0||||
-|8098624|80B3C1C|0|0|0||||
-|803AE90|80426B8|0|0|0||||
-|8059A28|8063460|0|0|0||||
-|805F5F8|806BD58|0|0|0|ekrPopup_DrawWRankUp|int ekrPopup_DrawWRankUp(int a1)||
-|80185F8|80190E0|0|0|0||||
-|80294A4|802E9CC|0|0|0||||
-|803A6BC|8041EE4|0|0|0||||
-|8015AB8|8015900|0|0|0||||
-|804DAA0|80574B8|0|0|0||||
-|806511C|8072398|0|0|0||||
-|806DC24|807CD34|807C2C0|0|0||||
-|8045FF8|8090104|0|0|0||||
-|8094878|80AFE38|0|0|0||||
-|8094B80|80B00A0|0|0|0||||
-|8073570|8083838|8082E38|0|0||||
-|8073BE8|80BD4F4|0|0|0||||
-|8066094|8010230|0|0|0||||
-|800CAD4|800A3C8|0|0|0||||
+|0|80A45D4|80A3960|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A773C|80A6A54|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80793F0|80A7D88|80A73E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AA8E8|80AA758|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB188|80AA3A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB1F4|80AA40C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ABAE0|80AAC04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8095D2C|80B10B8|80B42FC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8096A98|80B1E90|80B1068|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80985AC|80B3BA4|80B2D80|80B95A8|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808BD58|80B511C|80B6264|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098A78|80B6444|80B5624|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|808D99C|80B7070|80B85D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098AA8|80B9244|80B85A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9C0C|80B9FB0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098AC0|80BAA80|80B9F78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BC5B0|80BBBA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD3A0|80BC9A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BD47C|80BCA84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8063894|8070B10|8070324|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805B110|805A928|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8089BDC|808927C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80419D4|80412E0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7D64|80B6FB8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80878A8|8086EEC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7E4C|80A6F34|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809A0E8|8099728|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8080E04|80800B4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8048ED0|80486E4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BAC14|80BA10C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8010364|800FEF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808E8DC|808DF9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|显示出击准备菜单|
+|0|80A8140|80A722C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A64E0|80A5818|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80185C8|80190B0|8018CC0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8090F14|80905D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808E344|808DA04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BAAE0|80B9FD8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80290F8|8028C50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BAD64|80BA25C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8029040|8028BA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800D744|800D834|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80974A0|80B2AF8|80B1CCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8036EB4|803E3F8|803DF48|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808F9E0|808F0A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A80B8|80A71A8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8030B88|803069C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|显示地图上的准备菜单屏幕（包括调整我军单位位置等功能）|
+|803A604|8041E1C|804172C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803A7E8|8042010|8041920|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A40E8|80A3474|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800B994|800BA3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801F5A0|8022404|8021F8C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|809C448|809BA80|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8092B30|8092220|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A0DFC|80A0458|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B92E8|80B8654|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8094398|8093AA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8094CEC|80B01BC|80AF368|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7424|80A6748|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8088F60|80A54C8|80A4850|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8066414|8065C24|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8079BC8|807D5B0|807CB3C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7328|80A6664|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A8618|80A76F8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80456C4|80BB7FC|80BADA0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8088D08|8088380|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B0330|80AF4D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807BF9C|807C1B8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C954|807C208|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CC2C|807BEE0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CC7C|807C10C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807CB80|807B528|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80588E0|80A02EC|809F924|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80867D8|8085DCC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4CEC|80B3EB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801C43C|801C070|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B8384|80B75D8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805183C|805CE2C|8060CC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804F96C|805BA48|8058310|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805836C|805D4F4|805E3B4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804E744|80614B0|8057B84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80580EC|8058010|805E130|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804E5B0|805DD44|8063348|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80534FC|805DE8C|8057904|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804EC84|8063B30|805D55C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8052060|80637D4|8058920|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805752C|80638C0|8058CF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80665B8|8065DC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8071888|8083B28|8062C78|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8096A78|8096370|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B7C6C|80B6E84|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8092838|8091F04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80ABC28|809F8F4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BB46C|80BA918|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80675AC|80747F4|8074008|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BB29C|80BA764|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80930D4|80B6404|80B7EF8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800A614|800A618|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80681D8|8075584|8074D88|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B6BBC|80B5D9C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80AB970|80AAAA8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800FD04|80C3CDC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B4050|80B322C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80B9284|80B85E8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807DB3C|807D020|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|808341C|8082A10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802D7F0|8033A38|803351C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806ED34|8080B5C|807FDF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80865EC|80A2A50|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8086608|80A2A6C|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8086624|80A2A88|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8086640|80A2AA4|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80371B4|803E6F8|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803A08C|8041864|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8016BAC|8016E60|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8022F94|8027000|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802BE4C|8031DC4|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802BEA0|8031E18|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802BEE0|8031E58|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802BF48|8031EC0|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802BF7C|8031EF4|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802BFD4|8031F4C|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802C008|8031F80|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803A028|8041800|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803BF28|80437DC|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803C00C|80438C0|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F6E0|806BF3C|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80684D8|8075898|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8071120|8083268|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80951DC|80B0694|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097014|80B266C|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8098624|80B3C1C|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803AE90|80426B8|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8059A28|8063460|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|805F5F8|806BD58|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80185F8|80190E0|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80294A4|802E9CC|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803A6BC|8041EE4|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8015AB8|8015900|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|804DAA0|80574B8|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806511C|8072398|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|806DC24|807CD34|807C2C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8045FF8|8090104|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8094878|80AFE38|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8094B80|80B00A0|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8073570|8083838|8082E38|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8073BE8|80BD4F4|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8066094|8010230|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800CAD4|800A3C8|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |8013EBC|80138A0|8013380|8013260|80131A8||||
 |809DD1C|80C059C|80BFA58|80D63C4|80D16C8|SoundBiasReset|int SoundBiasReset(void)||
 |809DD24|80C05A4|80BFA60|80D63CC|80D16D0|SoundBiasSet|int SoundBiasSet(void)||
@@ -10755,16 +13418,18 @@
 |801A89C|801BAB4|801B6F8|801BAEC|801BE28|DebugMenu_WeatherIdle|int DebugMenu_WeatherIdle(int a1, int a2)||
 |8028D38|802E220|802DD60|8030A84|8030B34|WfxInit|[void WfxInit(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L821)||
 |8028DA8|802E290|802DDD0|8030AF4|8030BA4|WfxVSync|[void WfxVSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L859)||
-|0|8030948|8030480|803332C|803341C||||
-|0|8030988|80304C0|8033368|8033458||||
+|0|8030948|8030480|803332C|803341C|sub_803341C|[void sub_803341C(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L466)||
+|0|8030988|80304C0|8033368|8033458|sub_8033458|[void sub_8033458(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L486)||
 |802C5E4|803255C|0|80350D4|80351CC||||
-|80394A8|8040C74|8040568|8045BB4|0||||
+|80394A8|8040C74|8040568|8045BB4|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |804C75C|8055F34|805574C|805C034|805B290||||
 |804EFB4|8058B28|8058340|805EBD4|805DAD4|StartSpellAnimFire|int StartSpellAnimFire(int a1)||
 |804EFF8|8058B6C|8058384|805EC18|805DB18|StartSpellAnimElfire|int StartSpellAnimElfire(int a1)||
 |804FE3C|80599B0|80591C8|805FA68|805E968||||
 |0|8061570|0|80664D0|806B664||||
-|0|806158C|0|8066508|0||||
+|0|806158C|0|8066508|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |805707C|80632DC|8062AF4|806F280|806CF5C||||
 |805717C|80633DC|8062BF4|806F380|806D05C||||
 |0|806830C|8067B20|807473C|8072258||||
@@ -10772,15 +13437,17 @@
 |8072734|8085824|8084E28|808E5CC|808C2CC||||
 |0|8088C78|0|8091AF8|808F824||||
 |0|808E4D4|808DB94|8097498|80951B8||||
-|0|809A270|80998B4|80A3250|0||||
+|0|809A270|80998B4|80A3250|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |804C478|8055C50|8055468|805BD44|805AFA0||||
 |0|80A30C8|80A2454|80AC424|80A7A0C||||
-|0|8027584|80270FC|8028E0C|8028E60|DoItemUse|[void DoItemUse(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L364)||
-|8017454|8017A00|8017610|80176AC|8017904|GetUnitSMSId|[int GetUnitSMSId(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L389)||
-|0|802D1E8|802CD28|802F728|802F808|ApplyStatBoosterAndGetMessageId|signed int ApplyStatBoosterAndGetMessageId(int a1, int a2)||
+|0|8027584|80270FC|8028E0C|8028E60|DoItemUse|[void DoItemUse(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L358)||
+|8017454|8017A00|8017610|80176AC|8017904|GetUnitSMSId|[int GetUnitSMSId(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L391)||
+|0|802D1E8|802CD28|802F728|802F808|ApplyStatBoostItem|[int ApplyStatBoostItem(struct Unit* unit, int itemIdx) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L689)||
 |8016A90|8016D0C|80168AC|8016A68|8016CC0|GetItemDisplayRangeString|[char* GetItemDisplayRangeString(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L588)||
 |8026D88|80307E4|803031C|80C33A0|80BE5B4||||
-|801ADEC|801C094|0|801C064|0||||
+|801ADEC|801C094|0|801C064|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
 |804A4B8|8053A38|8053250|8059790|8058960|SomethingFilterBattleAnimId|int *SomethingFilterBattleAnimId(signed int a1, int a2)||
 |0|0|0|80096D8|80097E8||||
 |0|0|0|8016E7C|80170D4|GetItemReachBits|[int GetItemReachBits(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L842)||
@@ -10798,10 +13465,10 @@
 |0|0|0|8021360|8021668||||
 |0|0|0|80214F4|80217FC||||
 |0|0|0|8021688|8021990||||
-|0|0|0|802881C|8028870|CanUnitUseItem|[s8 CanUnitUseItem(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L167)||
-|0|0|0|802FB98|802FC48|ActionStaffDoorChestUseItem|int ActionStaffDoorChestUseItem(signed int a1)||
-|0|0|0|8031F58|803200C|ApplyUnitAction|signed int ApplyUnitAction(signed int a1)||
-|0|0|0|8033DC8|8033EC0||||
+|0|0|0|802881C|8028870|CanUnitUseItem|[s8 CanUnitUseItem(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L161)||
+|0|0|0|802FB98|802FC48|ActionStaffDoorChestUseItem|[void ActionStaffDoorChestUseItem(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L944)||
+|0|0|0|8031F58|803200C|ApplyUnitAction|[unsigned int ApplyUnitAction(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L174)||
+|0|0|0|8033DC8|8033EC0|sub_8033EC0|[void sub_8033EC0(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L929)||
 |0|0|0|8035DB8|8035CB8||||
 |0|0|0|80379C0|8037928|AddGorgonEggTrap|int AddGorgonEggTrap(char a1, char a2, char a3, char a4, char a5)||
 |0|0|0|8046D14|8046DB4||||
@@ -10823,7 +13490,7 @@
 |0|0|0|808E688|808C388|MMB_DrawStatusText|int MMB_DrawStatusText(int a1, int a2, signed int a3)||
 |0|0|0|80CB3C0|80C6474||||
 |0|0|0|808ACB8|8088A2C|HbPopulate_SSStatus|[void HbPopulate_SSStatus(struct HelpBoxProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1955)||
-|0|0|0|8028BB8|8028C0C|GetItemCantUseMsgid|[int GetItemCantUseMsgid(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L294)||
+|0|0|0|8028BB8|8028C0C|GetItemCantUseMsgid|[int GetItemCantUseMsgid(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L288)||
 |0|0|0|8074050|8071B6C||||
 |0|0|0|80389CC|8038900||||
 |0|0|0|8058E44|8057FF8|GetSpellAnimId|int GetSpellAnimId(unsigned __int16 a1, unsigned __int16 a2)||
@@ -10831,47 +13498,91 @@
 |0|0|0|80CDCCC|80C8D30||||
 |0|0|0|80CB114|80C6204||||
 |0|0|0|808941C|8087184|DisplayPage0|[void DisplayPage0(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L677)||
-|800A82C|8003F04|8004028|0|0||||
-|0|800409C|80041C0|0|0||||
-|8016DA8|8017208|8016DB4|0|0|GetWeaponRangeMask|signed int GetWeaponRangeMask(unsigned __int8 a1)||
-|0|8035B0C|8035634|0|0||||
-|0|805313C|8052954|0|0||||
-|0|8053218|8052A30|0|0||||
-|0|80A1398|80A0A10|0|0||||
-|8097DA8|80B33C4|80B25A0|0|0||||
-|8097DD8|80B33F4|80B25D0|0|0||||
-|0|8065294|8064AC8|0|0|setSpecialAnimationEffectInfoType|void setSpecialAnimationEffectInfoType(AnimationInterpreter *AIS, __int16 type)||
-|0|80BCFC4|807B774|0|0||||
-|803C080|802BCAC|800AE04|0|0||||
-|0|800E284|800E378|0|0||||
-|0|80110E4|8010C94|0|0||||
-|0|801233C|8011CA4|0|0||||
-|0|8012FEC|8012934|0|0||||
-|0|8027158|8026CD0|0|0|CanUnitUseItem|unsigned int CanUnitUseItem(int a1, int a2)||
-|0|802D4CC|802D00C|0|0||||
-|802A028|802F6E4|802F218|0|0||||
-|802D010|80331C8|8032C98|0|0||||
-|803F7E4|80480F0|8047904|0|0||||
-|80455A4|804E7D8|804DFFC|0|0||||
-|0|80532F0|8052B08|0|0||||
-|0|8063FBC|80637D4|0|0||||
-|0|806C2DC|806BAF0|0|0||||
-|0|8074F40|8074744|0|0||||
-|80740D0|807BCEC|807B278|0|0||||
-|0|807C1FC|807B788|0|0|ForceKillFireRing|int ForceKillFireRing()||
-|0|807E2F0|807D5BC|0|0||||
-|0|807E584|807D840|0|0||||
-|0|807FC58|807EE90|0|0||||
-|0|80A7D50|80A6E2C|0|0||||
-|0|80A806C|80A715C|0|0||||
-|0|80A82B8|80A73AC|0|0||||
-|80964E0|80B18D4|80B0AAC|0|0||||
-|809656C|80B1978|80B0B50|0|0||||
-|0|80822DC|8081580|0|0||||
-|0|8067F90|80677A4|0|0|playBattleAnimationSFX|int playBattleAnimationSFX(int a1, int a2)|职业战斗动画音效播放|
-|0|809A560|8099BA4|0|0||||
-|0|80A5D24|80A503C|0|0||||
-|800CAB8|800A3B8|0|0|0||||
-|8094228|80BD830|0|0|0||||
-|80599D0|80833B4|0|0|0||||
-|801A760|801B96C|0|0|0||||
+|800A82C|8003F04|8004028|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800409C|80041C0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8016DA8|8017208|8016DB4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8035B0C|8035634|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|805313C|8052954|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8053218|8052A30|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A1398|80A0A10|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097DA8|80B33C4|80B25A0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8097DD8|80B33F4|80B25D0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8065294|8064AC8|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80BCFC4|807B774|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803C080|802BCAC|800AE04|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|800E284|800E378|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80110E4|8010C94|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|801233C|8011CA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8012FEC|8012934|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8027158|8026CD0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|802D4CC|802D00C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802A028|802F6E4|802F218|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|802D010|80331C8|8032C98|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|803F7E4|80480F0|8047904|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80455A4|804E7D8|804DFFC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80532F0|8052B08|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8063FBC|80637D4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|806C2DC|806BAF0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8074F40|8074744|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80740D0|807BCEC|807B278|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807C1FC|807B788|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E2F0|807D5BC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807E584|807D840|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|807FC58|807EE90|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A7D50|80A6E2C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A806C|80A715C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A82B8|80A73AC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80964E0|80B18D4|80B0AAC|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|809656C|80B1978|80B0B50|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80822DC|8081580|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|8067F90|80677A4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)|职业战斗动画音效播放|
+|0|809A560|8099BA4|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|0|80A5D24|80A503C|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|800CAB8|800A3B8|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|8094228|80BD830|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|80599D0|80833B4|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
+|801A760|801B96C|0|0|0|gRNSeeds|[static u16 gRNSeeds[3];
+](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L4)||
