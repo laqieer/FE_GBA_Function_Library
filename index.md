@@ -4507,7 +4507,7 @@
 |806B970|8079FDC|807980C|8085F70|8083C48|ClearLocalEvents|int ClearLocalEvents()||
 |8022064|8025B80|80256F4|802710C|8027168|GetUnitMapSpritePaletteIndex|signed int GetUnitMapSpritePaletteIndex(signed int result)||
 |8037D8C|803F2DC|803EE4C|80442A8|804429C||||
-|0|80034C8|80035EC|800226C|800231C|Sound_FadeOut800231C|[void Sound_FadeOut800231C(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L67)||
+|0|80034C8|80035EC|800226C|800231C|Sound_FadeOutBGM|[void Sound_FadeOutBGM(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L67)||
 |0|80055DC|8005718|8003F28|8004004|Text_AppendString|int Text_AppendString(int a1, unsigned __int8 *a2)||
 |806C998|8031114|8030C28|8033B20|8033C10|SALLYCURSOR6C_StartUnitSwap|[void SALLYCURSOR6C_StartUnitSwap(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L831)||
 |80603C4|806CF4C|806C760|807AFE0|8078BCC|MU_FogBumpFx_DisplayLoop|[static void MU_FogBumpFx_DisplayLoop(struct MUFogBumpFxProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1049)||
@@ -4522,7 +4522,7 @@
 |80602E0|806CE68|806C67C|807AF1C|8078B08|MU_FogBumpFx_TransitionInLoop|[static void MU_FogBumpFx_TransitionInLoop(struct MUFogBumpFxProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1024)||
 |0|8025D9C|8025910|8027348|80273A4|SMS_DisplayAllFromInfoStructs|int SMS_DisplayAllFromInfoStructs()||
 |0|809402C|8093734|80D2E44|80CE148||||
-|0|8003550|8003674|80022CC|800237C|Sound_FadeOut800237C|[void Sound_FadeOut800237C(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L86)||
+|0|8003550|8003674|80022CC|800237C|Sound_FadeOutBGMAlt|[void Sound_FadeOutBGMAlt(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L86)||
 |802F4C8|8035F10|8035A38|803A99C|803A924|AiGetClosestUnitPosition|signed int AiGetClosestUnitPosition(int a1, _WORD *a2)||
 |8054EDC|8004960|8004A84|80C6C10|80C1E54|SleepCallback6C|int SleepCallback6C(_6CStruct *_6C)|sleepTimer--,减到0则跳出睡眠循环|
 |8058720|8064FF4|806480C|80C7F60|80C31A8||||
@@ -4605,7 +4605,7 @@
 |801863C|8019120|8018D38|801913C|8019464|GetCharacterData|[inline const struct CharacterData* GetCharacterData(int charId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L202)||
 |8020A18|8023D50|80238C4|8024D54|8024DA4|IsSameAllegiance|[int IsSameAllegiance(int left, int right) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L56)||
 |8020A7C|8023DB4|8023928|8024DD0|8024E20|sub_8024E20|[void sub_8024E20(u32 amt) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmgold.c#L21)||
-|80030B4|80035EC|8003710|8002330|80023E0|SoundStuff_80023E0|[void SoundStuff_80023E0(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L106)||
+|80030B4|80035EC|8003710|8002330|80023E0|Sound_FadeOutSE|[void Sound_FadeOutSE(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L106)||
 |8082708|80912AC|8090968|8099CC0|80979DC||||
 |0|808FFD0|808F690|80C7D54|80C2F9C||||
 |0|80BAE6C|80BA364|80AB924|80A6F0C||||
@@ -7426,8 +7426,8 @@
 |8001550|80017E8|8001810|80011D0|8001220|BG_Fill|[void BG_Fill(void *dest, int b)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L221)||
 |8001580|8001818|8001840|80011F0|8001240|RegisterBlankTile|[void RegisterBlankTile(int a)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L226)||
 |0|0|0|8002088|8002138|FlushSecondaryOAM|[void FlushSecondaryOAM(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L1181)||
-|0|0|0|80021C4|8002274|Sound_SetVolume8002274|[void Sound_SetVolume8002274(int volume)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L50)||
-|0|0|0|800223C|80022EC|Sound_SetVolume80022EC|[void Sound_SetVolume80022EC(int volume)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L61)||
+|0|0|0|80021C4|8002274|Sound_SetBGMVolume|[void Sound_SetBGMVolume(int volume)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L50)||
+|0|0|0|800223C|80022EC|Sound_SetSEVolume|[void Sound_SetSEVolume(int volume)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L61)||
 |0|0|0|8002398|8002448|Sound_PlaySong8002448|[void Sound_PlaySong8002448(int songId, struct MusicPlayerInfo *player)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L119)||
 |0|8003E68|8003F8C|8002838|80028E8|Sound_SetMaxNumChannels|[void Sound_SetMaxNumChannels(int maxchn)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L350)||
 |0|800B040|800B104|8002B08|8002BB8|CallARM_PushToSecondaryOAM|[void CallARM_PushToSecondaryOAM(int a, int b, const u16 *c, int d)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ramfunc.c#L49)||
