@@ -8,18 +8,18 @@
 |8000AFC|8000AF4|8000B1C|8000AE8|8000B10|PrintDebugBuildDateAndTime|[void PrintDebugBuildDateAndTime(u16 *bg)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/fe3_dummy.c#L4)|print version infomation on this build of the game|
 |0|80042FC|8004420|8002B58|8002C08|InitProcSystem|int InitProcSystem()||
 |0|8004460|8004584|8002CBC|8002D6C|EndProc|int EndProc(int a1)||
-|8003E44|800456C|8004690|8002DD4|8002E84|ExecProc|int ExecProc(int a1)||
+|8003E44|800456C|8004690|8002DD4|8002E84|Proc_Run|[void Proc_Run(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L235)||
 |0|80045FC|8004720|8002E74|8002F24|GotoProcLabel|int GotoProcLabel(unsigned __int16 **a1, int a2)||
 |0|8004670|8004794|8002EE8|8002F98|ForEachProc|int ForEachProc(int a1)||
 |0|80049C4|8004AE8|8003244|80032F8|ProcInst11_EnsureUniqueWeak|signed int ProcInst11_EnsureUniqueWeak(_DWORD *a1)||
 |0|8004A04|8004B28|8003284|8003338|ProcInst12_EnsureUniqueStrong|signed int ProcInst12_EnsureUniqueStrong(int *a1)||
-|8004920|8004AAC|8004BD0|800332C|80033E0|ForEach6CDoNothing|int ForEach6CDoNothing(_6CStruct *a1, _DWORD *a2)||
-|8004978|8004AE4|8004C08|8003364|8003418||||
+|8004920|8004AAC|8004BD0|800332C|80033E0|WalkPrintProcInfo|[static void WalkPrintProcInfo(struct ProcDummy* proc, int* indent)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L747)||
+|8004978|8004AE4|8004C08|8003364|8003418|Proc_PrintSubtreeInfo|[void Proc_PrintSubtreeInfo(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L762)||
 |0|8004C6C|8004D90|8003570|8003624|GetIconGfxIndex|[int GetIconGfxIndex(int Index)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/icon.c#L50)||
 |8004414|8004D04|8004E28|8003608|80036BC|DrawIcon|[void DrawIcon(u16* BgOut, int IconIndex, int OamPalBase) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/icon.c#L88)||
 |0|8004F5C|8005080|8003868|800391C|StoreNumberStringOrDashesToSmallBuffer|int StoreNumberStringOrDashesToSmallBuffer(int a1)||
 |0|8004FA8|80050CC|80038B4|8003968|StoreNumberHexStringToSmallBuffer|int StoreNumberHexStringToSmallBuffer(int a1)||
-|80053B0|80050F4|8005218|8003A08|8003ABC||||
+|80053B0|80050F4|8005218|8003A08|8003ABC|DebugUpdateScreen|[bool DebugUpdateScreen(u16 held, u16 pressed)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-text.c#L239)||
 |0|800515C|8005280|8003A70|8003B24|SetupDebugFontForOBJ|int SetupDebugFontForOBJ(int a1, int a2)||
 |800566C|80052A4|80053D4|8003BE8|8003CB8|Font_InitForUI|int Font_InitForUI(FontStruct *a1, int a2, __int16 a3, __int16 a4)||
 |80058B8|8005394|80054C4|8003CDC|8003DAC|InitClearTextBatch|int InitClearTextBatch(int a1)||
@@ -29,7 +29,7 @@
 |0|8005D8C|8005EF8|80047B8|80048B0||||
 |8006C9C|8005E88|8005FF4|80048B4|80049AC|NewGreenTextColorManager|int NewGreenTextColorManager(int a1)||
 |8006E10|8005FAC|800611C|80049D4|8004ACC|DrawSpecialUiChar_|int DrawSpecialUiChar_(int a1, int a2)||
-|8032268|8006074|80061E4|8004A9C|8004B94|DrawUiNumberOrDoubleDashes|int DrawUiNumberOrDoubleDashes(_WORD *a1, int a2, int a3)||
+|8032268|8006074|80061E4|8004A9C|8004B94|AiIsBadFight|[bool AiIsBadFight(struct AiCombatSimulationSt* st)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L470)||
 |0|80060D0|8006240|8004AF8|8004BF0|DrawStatScreenBonusNumber|int DrawStatScreenBonusNumber(signed int a1, int a2)||
 |0|80060FC|800626C|8004B24|8004C1C||||
 |0|8006320|8006490|8004D48|8004E40|UpdateAISs|int UpdateAISs()||
@@ -38,19 +38,19 @@
 |0|8006698|8006808|80050C8|80051C0|InsertAIS|int InsertAIS(int a1)||
 |0|8006840|80069B0|80052AC|80053A4|ClearSprites|[void ClearSprites(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ctc.c#L143)||
 |0|80069C4|8006B34|8005430|8005528|Face_Init|int Face_Init()||
-|80082D0|8006A98|8006C08|8005518|8005610|StartFaceAuto|int StartFaceAuto(int a1, int a2, int a3, int a4)||
-|801AD50|8006BF8|8006D68|8005678|8005770|SetFaceDisplayBits|int SetFaceDisplayBits(int a1, int a2)||
+|80082D0|8006A98|8006C08|8005518|8005610|StartFaceAuto|[struct FaceProc* StartFaceAuto(int fid, int x, int y, int disp)](https://github.com/StanHash/fe6/blob/0b25087/src/face.c#L350)||
+|801AD50|8006BF8|8006D68|8005678|8005770|func_fe6_0801AD50|[int func_fe6_0801AD50(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L518)||
 |0|8006DAC|8006F1C|800582C|8005924|LoadMiniMugGraphics|int LoadMiniMugGraphics(int a1, int a2, int a3)||
 |0|8007160|80072D0|8005BA8|8005CA4||||
 |0|80078D4|8007A44|800633C|8006438|SetFaceBlinkControl|int SetFaceBlinkControl(int a1, int a2)||
 |0|8007C10|8007D80|80065AC|80066A8||||
 |0|8007C64|8007DD4|80066EC|80067E8|Dialogue_ClearFaceReferences|int Dialogue_ClearFaceReferences()||
 |0|8007D28|8007E98|80067B0|80068AC|Dialogue_InitGfxObj|int Dialogue_InitGfxObj(int tileStart, int lineCount, int paletteIndex)||
-|80090CC|8007E08|8007F78|8006890|800698C|StartDialogue|int StartDialogue(int a, int b, const char *textString, void *parent)||
-|8009524|8008074|80081E4|8006B04|8006C00|DialogueMain_OnInit|int DialogueMain_OnInit()||
+|80090CC|8007E08|8007F78|8006890|800698C|StartTalkExt|[ProcPtr StartTalkExt(int x, int y, char const* str, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L384)||
+|8009524|8008074|80081E4|8006B04|8006C00|Talk_OnInit|[static void Talk_OnInit(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L503)||
 |0|8008DC8|8008F38|800785C|8007958||||
-|800A918|8008F24|8009094|80079AC|8007AB0||||
-|800A9A8|8008F80|80090F0|8007A08|8007B0C||||
+|800A918|8008F24|8009094|80079AC|8007AB0|TalkFaceMove_OnInit|[static void TalkFaceMove_OnInit(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1114)||
+|800A9A8|8008F80|80090F0|8007A08|8007B0C|TalkFaceMove_OnIdle|[static void TalkFaceMove_OnIdle(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1130)||
 |0|80091AC|800931C|8007C34|8007D38||||
 |0|8009218|8009388|8007CA0|8007DA4||||
 |0|800925C|80093CC|8007CE4|8007DE8|StartDialogueTextChoice|int StartDialogueTextChoice(unsigned __int16 *a1, int a2, int a3, int a4, int a5, int a6)||
@@ -61,7 +61,7 @@
 |0|8009AA8|8009C18|8008564|8008668||||
 |0|8009DC0|8009F30|800885C|8008960||||
 |0|8009E9C|800A00C|8008938|8008A3C||||
-|800CCB4|800A4EC|800A4F0|8008E10|8008F20|DialogueEnableBgSyncByMask|int DialogueEnableBgSyncByMask(int a1)||
+|800CCB4|800A4EC|800A4F0|8008E10|8008F20|TalkBgSync|[static void TalkBgSync(int bgflags)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L2136)||
 |0|8011F20|8011888|8008F3C|800904C||||
 |0|801227C|8011BE4|80090F0|8009200||||
 |0|8012658|8011FC4|800916C|800927C|AP_Create|[struct APHandle* AP_Create(const void* apDefinition, u16 aObjNode) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L65)||
@@ -71,37 +71,37 @@
 |0|8012DC8|801274C|8009A3C|8009AEC||||
 |0|8013318|8012C60|8009FA8|800A240|GetStringFromIndex|[char *GetStringFromIndex(int index)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/messdecode.c#L79)||
 |0|800A7E8|800A7E4|8011080|8010F38|PopupProc_GetInnerLength|int PopupProc_GetInnerLength(int a1)||
-|8013BF0|80135D4|80130B4|8012F50|8012E98||||
-|8013D04|80136E8|80131C8|8013068|8012FB0||||
-|8013DAC|8013790|8013270|8013110|8013058||||
-|8013DE8|80137CC|80132AC|801314C|8013094||||
-|8013E58|801383C|801331C|80131BC|8013104||||
-|8013EE4|80138C8|80133A8|8013288|80131D0||||
+|8013BF0|80135D4|80130B4|8012F50|8012E98|StringEquals|[bool StringEquals(char const* strA, char const* strB)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L171)||
+|8013D04|80136E8|80131C8|8013068|8012FB0|Unused_08013D04|[int Unused_08013D04(struct Unk_08013CEC* unk, u8 const* src)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L255)||
+|8013DAC|8013790|8013270|8013110|8013058|func_fe6_08013DAC|[void func_fe6_08013DAC(u8 const* src, u8* dst, int width, int height)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L317)||
+|8013DE8|80137CC|80132AC|801314C|8013094|func_fe6_08013DE8|[static void func_fe6_08013DE8(u8 const* src, u8* dst, int width)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L337)||
+|8013E58|801383C|801331C|80131BC|8013104|PutIncrTileref|[void PutIncrTileref(u16* tm, int tileref, int width, int height)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L389)||
+|8013EE4|80138C8|80133A8|8013288|80131D0|func_fe6_08013EE4|[void func_fe6_08013EE4(short* array)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L434)||
 |0|8013BCC|80136AC|801358C|80134D4|ArchiveCurrentPalettes|int ArchiveCurrentPalettes()||
 |8094438|8013C18|80136F8|80135D8|8013520|ArchivePalette|int ArchivePalette(int a1)||
-|801428C|8014094|8013B74|8013A54|801399C||||
-|80143B4|80141BC|8013C9C|8013B7C|8013AC4||||
-|80143CC|80141D4|8013CB4|8013B94|8013ADC||||
-|80145D0|80143D8|8013EB8|8013D40|8013C88|IsFadeActive|bool IsFadeActive()||
-|80149B0|80147B8|8014298|8014120|8014068|WaitForFade|int WaitForFade(int a1)||
-|8014A44|8014850|8014330|80141B8|8014100||||
+|801428C|8014094|8013B74|8013A54|801399C|PalFade_OnLoop|[static void PalFade_OnLoop(struct PalFadeProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L699)||
+|80143B4|80141BC|8013C9C|8013B7C|8013AC4|SetAllBlackPals|[void SetAllBlackPals(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L745)||
+|80143CC|80141D4|8013CB4|8013B94|8013ADC|SetAllWhitePals|[void SetAllWhitePals(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L753)||
+|80145D0|80143D8|8013EB8|8013D40|8013C88|FadeExists|[bool FadeExists(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L874)||
+|80149B0|80147B8|8014298|8014120|8014068|WhileFadeExists|[void WhileFadeExists(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1124)||
+|8014A44|8014850|8014330|80141B8|8014100|func_fe6_08014A44|[void func_fe6_08014A44(struct FadeUnkProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1257)||
 |0|8014874|8014354|80141DC|8014124||||
-|8014BE4|80149EC|8014590|8014328|8014270||||
-|8014D0C|8014B14|8014698|8014450|801443C|SomeDrawTextInlineAutoWidth|TextStruct *SomeDrawTextInlineAutoWidth(_WORD *a1, char a2, unsigned __int8 *a3)||
-|8014E30|8014C38|80147BC|8014574|8014560||||
-|8015298|80150A0|8014C24|80149EC|80149C4||||
-|80153CC|80151D4|8014D58|8014B28|8014B00|RerangeSomething|int RerangeSomething(signed int a1)||
-|80153F4|80151FC|8014D80|8014B50|8014B28|PlaySpacialSoundMaybe|int PlaySpacialSoundMaybe(int a1, signed int a2)||
-|80154AC|80152B4|8014E38|8014C08|8014BE0||||
-|80155B8|80153C0|8014F44|8014FC4|8014F9C||||
-|8015A18|801585C|80153E0|8015474|8015450|MapMain_StartPhaseController|int MapMain_StartPhaseController(signed int a1)||
-|8015CC4|8015B90|8015714|8015854|8015838|MoveCameraByStepMaybe|int MoveCameraByStepMaybe(__int16 a1)||
-|8015E44|8015D10|8015894|80159D4|80159B8|GetSomeAdjustedCameraX|int GetSomeAdjustedCameraX(int a1)||
-|8015E88|8015D54|80158D8|8015A18|80159FC|GetSomeAdjustedCameraY|int GetSomeAdjustedCameraY(int a1)||
-|8015F1C|8015DE8|801596C|8015AB4|8015A98|DisplayCursor|int DisplayCursor(int a1, int a2, int a3)||
+|8014BE4|80149EC|8014590|8014328|8014270|NumberToString|[int NumberToString(int number, char* buf)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1367)||
+|8014D0C|8014B14|8014698|8014450|801443C|PutString|[struct Text* PutString(u16* tm, int color, char const* str)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1438)||
+|8014E30|8014C38|80147BC|8014574|8014560|func_fe6_08014E30|[void func_fe6_08014E30(u16* tm, int x, int y, u16 tileref, int width, int height)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1528)||
+|8015298|80150A0|8014C24|80149EC|80149C4|func_fe6_08015298|[void func_fe6_08015298(u8 const* src, u8* dst, int width, int height)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2236)||
+|80153CC|80151D4|8014D58|8014B28|8014B00|Screen2Pan|[int Screen2Pan(int x)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2296)||
+|80153F4|80151FC|8014D80|8014B50|8014B28|PlaySeSpacial|[void PlaySeSpacial(int song, int x)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2307)||
+|80154AC|80152B4|8014E38|8014C08|8014BE0|func_fe6_080154AC|[void func_fe6_080154AC(int palid)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2341)||
+|80155B8|80153C0|8014F44|8014FC4|8014F9C|MatMulMat|[void MatMulMat(int const* lmat, int const* rmat, int* omat)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2390)||
+|8015A18|801585C|80153E0|8015474|8015450|BmMain_StartPhase|[void BmMain_StartPhase(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L423)||
+|8015CC4|8015B90|8015714|8015854|8015838|HandleMoveMapCursor|[void HandleMoveMapCursor(int step)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L550)||
+|8015E44|8015D10|8015894|80159D4|80159B8|GetCameraAdjustedX|[u16 GetCameraAdjustedX(int x)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L656)||
+|8015E88|8015D54|80158D8|8015A18|80159FC|GetCameraAdjustedY|[u16 GetCameraAdjustedY(int y)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L675)||
+|8015F1C|8015DE8|801596C|8015AB4|8015A98|PutMapCursor|[void PutMapCursor(int x, int y, int kind)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L720)||
 |0|8016080|8015C04|8015D3C|8015D30|StoreAdjustedCameraPositions|int StoreAdjustedCameraPositions(int a1, int a2, _DWORD *a3, _DWORD *a4)||
 |0|80160D4|8015C58|8015D90|8015D84||||
-|8016290|801622C|8015DB0|8015EE8|8015EDC||||
+|8016290|801622C|8015DB0|8015EE8|8015EDC|CameraMove_08016290|[bool CameraMove_08016290(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L903)||
 |80169E4|8016C54|80167F4|8016968|8016BC0|EquipUnitItemSlot|[void EquipUnitItemSlot(struct Unit* unit, int itemSlot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L510)||
 |0|8016F80|8016B2C|8016D24|8016F7C|CanUnitUse_unused|[s8 CanUnitUse_unused(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L771)||
 |8016D58|80171B4|8016D60|8016E28|8017080|IsItemHammernable|[s8 IsItemHammernable(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L826)||
@@ -136,57 +136,57 @@
 |0|801A7B8|801A3D8|801A89C|801ABC0|MapSetInRange|[void MapSetInRange(int x, int y, int range, int value)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L463)||
 |0|801B528|801B148|801B620|801B950|GenerateMagicSealMap|[void GenerateMagicSealMap(int value)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L827)||
 |0|801B7C8|801B3E8|801B864|801BB98||||
-|801AD84|801C000|801BC50|801BFD0|801C340||||
+|801AD84|801C000|801BC50|801BFD0|801C340|func_fe6_0801AD84|[int func_fe6_0801AD84(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L533)||
 |0|801C030|801BC80|801C000|801C370|StartupDebugMenu_InitializeFileEffect|signed int StartupDebugMenu_InitializeFileEffect(int a1, int a2)||
-|801ADCC|801C074|801BCC4|801C044|801C3B4||||
-|801AED8|801C180|801BDDC|801C14C|0||||
+|801ADCC|801C074|801BCC4|801C044|801C3B4|func_fe6_0801ADCC|[int func_fe6_0801ADCC(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L552)||
+|801AED8|801C180|801BDDC|801C14C|0|func_fe6_0801AED8|[int func_fe6_0801AED8(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L614)||
 |0|801C8D4|801C4D0|801C7D8|801CB70|DisplayUnitEffectRange|int DisplayUnitEffectRange(unsigned __int8 *a1)||
-|801BAB4|801D184|801CD80|801D098|801D434||||
+|801BAB4|801D184|801CD80|801D098|801D434|func_fe6_0801BAB4|[static void func_fe6_0801BAB4(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L757)||
 |0|801D2F8|801CEF4|801D20C|801D5A8|CanMoveActiveUnitTo|int CanMoveActiveUnitTo(int x, int y)||
 |0|801D3B8|801CFB4|801D2CC|801D668|PlayerPhase_ResumeRangeDisplay|int PlayerPhase_ResumeRangeDisplay(unsigned __int16 **a1)||
-|801BD88|801D4CC|801D0C8|801D550|801D8EC|Loop6C_MLVCHC|int Loop6C_MLVCHC(int a1)||
-|801C0DC|801D758|801D354|801D7B0|801DB4C||||
-|801C430|801DAA4|801D6A0|801DAE4|801DE88|GetEnemyStartCursorPosition|int GetEnemyStartCursorPosition(_DWORD *a1, _DWORD *a2)||
-|801C49C|801DB0C|801D708|801DB4C|801DEF0||||
-|801C510|801DB80|801D77C|801DBC0|801DF64|ADJUSTFROMXI_MoveCameraOnSomeUnit|int ADJUSTFROMXI_MoveCameraOnSomeUnit(signed int a1)||
+|801BD88|801D4CC|801D0C8|801D550|801D8EC|OpenLimitView_Loop|[static void OpenLimitView_Loop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L885)||
+|801C0DC|801D758|801D354|801D7B0|801DB4C|TrySwitchViewedUnit|[void TrySwitchViewedUnit(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L1009)||
+|801C430|801DAA4|801D6A0|801DAE4|801DE88|GetAiInitialCursorPosition|[static void GetAiInitialCursorPosition(int* xOut, int* yOut)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L689)||
+|801C49C|801DB0C|801D708|801DB4C|801DEF0|InitPhaseCursor_Init|[static void InitPhaseCursor_Init(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L714)||
+|801C510|801DB80|801D77C|801DBC0|801DF64|func_fe6_0801C510|[static void func_fe6_0801C510(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L746)||
 |8082B74|801DBB0|801D7AC|801DBF0|801DF94||||
 |0|801DEB0|801DB0C|801DEF0|801E294||||
-|801C6C4|801DEFC|801DB58|801DF3C|801E2E0||||
+|801C6C4|801DEFC|801DB58|801DF3C|801E2E0|SetFogVision|[void SetFogVision(int vision)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L841)||
 |0|801DF38|801DB94|801DF78|801E31C||||
-|801D6B4|801EFC8|801EC44|801F198|801F540|GasTrapEffectGfx_Setup|int GasTrapEffectGfx_Setup(int a1)||
+|801D6B4|801EFC8|801EC44|801F198|801F540|GasTrapSpriteAnim_Init|[static void GasTrapSpriteAnim_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1443)||
 |0|801F174|801EDF0|801F344|801F6EC||||
 |80731D8|801F514|0|801F804|0||||
-|800AF0C|801F650|8085D48|801F940|801FBAC||||
-|801DB5C|801F7B0|801F348|801FAA0|0||||
-|801DBC8|801F81C|801F3B4|801FB0C|801FE14||||
-|801DC9C|801F8F0|801F488|801FBE0|801FEE8||||
-|801E774|8020630|80201C8|8020F74|802127C||||
+|800AF0C|801F650|8085D48|801F940|801FBAC|StartTalkChoice|[static void StartTalkChoice(struct TalkChoiceEnt const* choices, struct Text* text, u16* tm, int defaultChoice, int color, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1250)||
+|801DB5C|801F7B0|801F348|801FAA0|0|PutChapterIntroMotif|[void PutChapterIntroMotif(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1713)||
+|801DBC8|801F81C|801F3B4|801FB0C|801FE14|PutScreenFogEffect|[void PutScreenFogEffect(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1727)||
+|801DC9C|801F8F0|801F488|801FBE0|801FEE8|PutScreenFogEffectOverlayed|[void PutScreenFogEffectOverlayed(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1757)||
+|801E774|8020630|80201C8|8020F74|802127C|GameOverScreenHBlank|[static void GameOverScreenHBlank(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2191)||
 |0|8020B84|802071C|802178C|8021A94||||
 |0|8021618|80211AC|8022178|0||||
-|801EB94|8021B28|80216B0|802276C|80227A4||||
-|801F1DC|8022020|8021BA8|8022C6C|8022CA4||||
-|801F780|8022704|802228C|802339C|80233D8|ItemSelectMenu_Usability|signed int ItemSelectMenu_Usability(int a1, int a2)||
+|801EB94|8021B28|80216B0|802276C|80227A4|BackToUnitMenu_CamWatch|[static void BackToUnitMenu_CamWatch(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L196)||
+|801F1DC|8022020|8021BA8|8022C6C|8022CA4|func_fe6_0801F1DC|[int func_fe6_0801F1DC(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L532)||
+|801F780|8022704|802228C|802339C|80233D8|func_fe6_0801F780|[int func_fe6_0801F780(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L850)||
 |0|80229A8|8022530|8023640|802367C||||
-|801FA84|8022A20|80225A8|80236B8|80236F4||||
-|801FB68|8022B28|80226B0|80237BC|80237F8||||
-|801FC78|8022C48|80227D0|80238DC|8023918||||
-|80200FC|80230D0|8022C58|8023D70|8023DB4||||
-|8020438|8023404|8022F78|8024148|802418C|StealCommandUsability|signed int StealCommandUsability()||
-|80205A8|8023574|80230E8|80242BC|8024304|StealItemMenuCommand_Usability|signed int StealItemMenuCommand_Usability(int a1, int a2)||
+|801FA84|8022A20|80225A8|80236B8|80236F4|func_fe6_0801FA84|[int func_fe6_0801FA84(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L989)||
+|801FB68|8022B28|80226B0|80237BC|80237F8|func_fe6_0801FB68|[u8 func_fe6_0801FB68(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1024)||
+|801FC78|8022C48|80227D0|80238DC|8023918|func_fe6_0801FC78|[int func_fe6_0801FC78(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1077)||
+|80200FC|80230D0|8022C58|8023D70|8023DB4|func_fe6_080200FC|[int func_fe6_080200FC(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1321)||
+|8020438|8023404|8022F78|8024148|802418C|func_fe6_08020438|[int func_fe6_08020438(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1476)||
+|80205A8|8023574|80230E8|80242BC|8024304|func_fe6_080205A8|[int func_fe6_080205A8(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1548)||
 |0|8023A08|802357C|802495C|80249AC|AttackCommandUsability|signed int AttackCommandUsability()||
 |0|8023C2C|80237A0|8024B80|8024BD0||||
 |8020B04|8023E3C|80239B0|8024E5C|8024EAC|ForEachUnitInRange|int ForEachUnitInRange()||
 |8020F64|80242F8|8023E6C|8025398|80253E8|TryAddToDropTargetList|int TryAddToDropTargetList(int a1, int a2)||
 |0|8024F6C|8024AE0|8026410|802646C||||
-|8021BD0|8025184|8024CF8|802662C|8026688|SMS_Init|int SMS_Init()||
-|8021C04|80251B8|8024D2C|8026660|80266BC||||
-|8021C38|8025278|8024DEC|80267A0|80267FC|SMS_RegisterUsage|int SMS_RegisterUsage(int a1)||
-|8021FE8|8025A0C|8025580|8026F38|8026F94|SMS_SyncIndirect|int SMS_SyncIndirect()||
+|8021BD0|8025184|8024CF8|802662C|8026688|ResetUnitSprites|[void ResetUnitSprites(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L363)||
+|8021C04|80251B8|8024D2C|8026660|80266BC|ResetUnitSpritesB|[void ResetUnitSpritesB(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L374)||
+|8021C38|8025278|8024DEC|80267A0|80267FC|UseUnitSprite|[int UseUnitSprite(unsigned id)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L385)||
+|8021FE8|8025A0C|8025580|8026F38|8026F94|ForceSyncUnitSpriteSheet|[void ForceSyncUnitSpriteSheet(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L498)||
 |0|8025AE0|8025654|802700C|8027068||||
 |0|8025B54|80256C8|80270E0|802713C|GetUnitBattleMapSpritePaletteIndex|int GetUnitBattleMapSpritePaletteIndex(int a1)||
-|80221EC|8025D64|80258D8|8027310|802736C|SMS_GetNewInfoStruct|int SMS_GetNewInfoStruct(signed int a1)||
+|80221EC|8025D64|80258D8|8027310|802736C|AddUnitSprite|[static struct UnitSprite* AddUnitSprite(int y)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L644)||
 |0|8025F28|8025A9C|80274D4|8027530|DisplayChapterTileMarker|int DisplayChapterTileMarker()||
-|8022940|8026628|802619C|8027BDC|8027C48||||
+|8022940|8026628|802619C|8027BDC|8027C48|PutBlendWindowUnitSprite|[void PutBlendWindowUnitSprite(int layer, int x, int y, int oam2, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L964)||
 |0|80266DC|8026250|8027C90|8027CFC||||
 |0|8026794|8026308|8027D48|8027DB4||||
 |0|802682C|80263A0|8027DE0|8027E4C||||
@@ -195,15 +195,15 @@
 |8023728|8027844|80273B8|8029108|8029160|CanUnitUseLockpickItem|[s8 CanUnitUseLockpickItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L510)||
 |8023D90|802800C|8027B80|80299D8|8029A4C|RepairMenuItemIsAvailable|[u8 RepairMenuItemIsAvailable(const struct MenuItemDef* def, int number)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L933)||
 |0|8028620|8028194|802A094|802A108|sub_802A108|[s8 sub_802A108(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1198)||
-|8024248|8028830|80283A4|802A2A4|802A318|SimulateBattle|int SimulateBattle(int a1, int a2, int a3, int a4)||
+|8024248|8028830|80283A4|802A2A4|802A318|BattleGenerateSimulation|[void BattleGenerateSimulation(struct Unit* instigator, struct Unit* target, int x, int y, int item_slot)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L149)||
 |0|80292CC|8028E1C|802AC68|802ACF8|ComputeLethalityChance|int ComputeLethalityChance(int a1, _DWORD *a2)||
-|80250B0|8029A90|80295E0|802B8E8|802B9A0|GetStatIncrease|int GetStatIncrease(int a1)||
-|80250D4|8029AB4|8029604|802B90C|802B9C4|GetAutoleveledStat|int GetAutoleveledStat(int a1, int a2)||
-|80254CC|8029F20|8029A70|802BF70|802C028|SaveUnitsFromBattle|int SaveUnitsFromBattle()||
-|8025608|802A098|8029BE8|802C0F8|802C1B0|BattleUnit_DidWRankGoUp|unsigned int BattleUnit_DidWRankGoUp(int a1)||
-|8025644|802A0D4|8029C24|802C134|802C1EC|UpdateUnitFromBattleUnit|int UpdateUnitFromBattleUnit(_BYTE *a1, int a2)||
-|802571C|802A1BC|8029D0C|802C21C|802C2D4||||
-|80259E4|802A554|802A0A4|802C624|802C6EC|SetupBattleUnitEquippedWeapon|int SetupBattleUnitEquippedWeapon(int a1)||
+|80250B0|8029A90|80295E0|802B8E8|802B9A0|GetStatIncrease|[int GetStatIncrease(int growth)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L903)||
+|80250D4|8029AB4|8029604|802B90C|802B9C4|GetAutoleveledStatIncrease|[int GetAutoleveledStatIncrease(int growth, int levels)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L919)||
+|80254CC|8029F20|8029A70|802BF70|802C028|BattleApplyUnitUpdates|[void BattleApplyUnitUpdates(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1093)||
+|8025608|802A098|8029BE8|802C0F8|802C1B0|HasBattleUnitGainedWeaponLevel|[bool HasBattleUnitGainedWeaponLevel(struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1156)||
+|8025644|802A0D4|8029C24|802C134|802C1EC|UpdateUnitFromBattle|[void UpdateUnitFromBattle(struct Unit* unit, struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1167)||
+|802571C|802A1BC|8029D0C|802C21C|802C2D4|UpdateUnitDuringBattle|[void UpdateUnitDuringBattle(struct Unit* unit, struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1203)||
+|80259E4|802A554|802A0A4|802C624|802C6EC|BattleUnitTargetSetEquippedWeapon|[void BattleUnitTargetSetEquippedWeapon(struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1381)||
 |8026218|802B1E0|802AD30|802D370|802D438|TradeMenu_GetAdjustedRow|[int TradeMenu_GetAdjustedRow(struct TradeMenuProc* proc, int col, int row)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L315)||
 |802636C|802B334|802AE84|802D4C4|802D58C|TradeMenu_RefreshSelectableCells|[void TradeMenu_RefreshSelectableCells(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L364)||
 |0|802BCE8|802B828|802DE14|802DEDC|sub_802DEDC|[void sub_802DEDC(struct Proc* ee)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L805)||
@@ -228,73 +228,73 @@
 |8028BF4|802E0DC|802DC1C|8030940|80309F0|WfxCloudsOffsetGraphicsEffect|[void WfxCloudsOffsetGraphicsEffect(u32* lines) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L737)||
 |8028E10|802E2F8|802DE38|8030B5C|8030C0C|WfxUpdate|[void WfxUpdate(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L893)||
 |8029714|802EC5C|802E790|80314E0|8031594|AddItemToConvoy|[int AddItemToConvoy(int itemNameId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L54)||
-|802982C|802EE2C|802E960|80316A0|8031754|LoadPlayerUnitsFromUnitStack2|int LoadPlayerUnitsFromUnitStack2()||
-|8029990|802EF8C|802EAC0|8031800|80318B4|GetUnitBestWRankType|signed int GetUnitBestWRankType(int a1)||
-|8029964|802EFB8|802EAEC|803182C|80318E0|GetClassBestWRankType|signed int GetClassBestWRankType(int a1)||
-|80299BC|802EFE4|802EB18|8031858|803190C||||
-|8029C9C|802F2E0|802EE14|8031B5C|8031C10|PrepareBalancedArenaFight|signed int PrepareBalancedArenaFight()||
-|8029F80|802F5C4|802F0F8|8031E3C|8031EF0||||
+|802982C|802EE2C|802E960|80316A0|8031754|UnitRearrangeApply2|[void UnitRearrangeApply2(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-rearrange.c#L38)||
+|8029990|802EF8C|802EAC0|8031800|80318B4|ArenaGetJobWeaponKind|[static int ArenaGetJobWeaponKind(struct JInfo const* jinfo)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L242)||
+|8029964|802EFB8|802EAEC|803182C|80318E0|ArenaGetUnitWeaponKind|[static int ArenaGetUnitWeaponKind(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L220)||
+|80299BC|802EFE4|802EB18|8031858|803190C|ArenaGenOpposingJid|[static int ArenaGenOpposingJid(int weapon_kind)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L264)||
+|8029C9C|802F2E0|802EE14|8031B5C|8031C10|ArenaAdjustOpponentDamage|[static bool ArenaAdjustOpponentDamage(void)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L482)||
+|8029F80|802F5C4|802F0F8|8031E3C|8031EF0|ArenaContinueBattle|[void ArenaContinueBattle(void)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L645)||
 |807CEF0|802F64C|802F180|8031EC0|8031F74||||
 |802A3EC|802FA0C|802F540|8032320|80323D4|ActionSupport|[s8 ActionSupport(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L373)||
 |802A5CC|802FC20|802F754|80325C0|8032674|DropRescueOnDeath|[void DropRescueOnDeath(ProcPtr proc, struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L508)||
-|802B928|803186C|8031384|8034330|8034428|CanUnitUseAttack|bool CanUnitUseAttack()||
-|802BA44|8031994|80314AC|8034458|8034550||||
+|802B928|803186C|8031384|8034330|8034428|func_fe6_0802B928|[bool func_fe6_0802B928(void)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L65)||
+|802BA44|8031994|80314AC|8034458|8034550|func_fe6_0802BA44|[void func_fe6_0802BA44(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L120)||
 |802BB74|8031AC0|0|803458C|8034684|GetChapterMapChangesPointer|[const void* GetChapterMapChangesPointer(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L20)||
-|802CB14|8032A90|8032560|8035610|8035708|StartBottomHelpText|int StartBottomHelpText(signed int a1, int a2)||
+|802CB14|8032A90|8032560|8035610|8035708|StartSubtitleHelp|[void StartSubtitleHelp(ProcPtr parent, char const* str)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L212)||
 |0|8032B4C|803261C|80356C8|0||||
 |0|8032CF4|80327C4|8035870|8035770||||
 |0|8033304|8032DD4|8035EDC|8035DDC||||
 |0|8033378|8032E48|8035F50|8035E50||||
-|802D234|8033424|8032EF4|8035FFC|8035EFC||||
+|802D234|8033424|8032EF4|8035FFC|8035EFC|TerrainHealDisplay_Display|[static void TerrainHealDisplay_Display(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L427)||
 |0|8033650|8033120|80363A4|80362A4||||
 |0|8033820|80332F0|8036574|8036474||||
-|802D7B8|8033A04|80334E8|803676C|803666C|AddWeaponStatsAfterRound|int AddWeaponStatsAfterRound(int a1, _BYTE *a2, _DWORD *a3)||
-|802DD70|8034020|8033B48|8036E4C|8036D4C||||
-|802DF80|8034230|8033D58|803704C|8036F4C||||
-|802E308|80345D4|80340FC|80373E4|803730C|StartBattleForecast|int StartBattleForecast()||
-|802E3D0|80346A0|80341C8|80374B0|80373F0||||
+|802D7B8|8033A04|80334E8|803676C|803666C|BattlePreviewHitCountUpdate|[static void BattlePreviewHitCountUpdate(struct BattleUnit* bu, u8* hitCounter, int* usesCounter)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L148)||
+|802DD70|8034020|8033B48|8036E4C|8036D4C|InitBattlePreviewFramePalettes|[static void InitBattlePreviewFramePalettes(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L331)||
+|802DF80|8034230|8033D58|803704C|8036F4C|PutBattlePreviewMultipliers|[static void PutBattlePreviewMultipliers(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L421)||
+|802E308|80345D4|80340FC|80373E4|803730C|StartBattlePreview|[void StartBattlePreview(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L619)||
+|802E3D0|80346A0|80341C8|80374B0|80373F0|StartBattlePreviewHelpBox|[int StartBattlePreviewHelpBox(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L677)||
 |0|803484C|8034374|8037660|80375A0|MineFireTrap_80375A0|int MineFireTrap_80375A0(int a1)||
 |0|8034B70|8034698|80379F4|803795C|GetNonEmptyBallistaAt|TrapStruct *GetNonEmptyBallistaAt(int a1, int a2)||
 |802E6B0|8034FA4|8034ACC|8039910|8039898|GetUnitBattleAiPriority|[int GetUnitBattleAiPriority(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L105)||
 |802E868|803515C|8034C84|8039AC8|8039A50|SortAiUnitList|[void SortAiUnitList(int count)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L201)||
 |0|803576C|8035294|803A0F4|803A07C|CpPerform_PerformCombat|int CpPerform_PerformCombat(signed int a1)||
-|802F20C|8035C30|8035758|803A6B4|803A63C||||
-|802F29C|8035CC4|80357EC|803A748|803A6D0||||
-|802F34C|8035D74|803589C|803A800|803A788|AiFindPositionOfCharacter|signed int AiFindPositionOfCharacter(int a1, signed __int16 *a2)||
-|802F430|8035E64|803598C|803A8F0|803A878|AiFindClosestPositionWithUnitOfClass|bool AiFindClosestPositionWithUnitOfClass(int a1, signed __int16 *a2)||
-|802F6C0|8036228|8035D50|803AC5C|803AC3C|CouldStationaryUnitBeInRangeHeuristic|bool CouldStationaryUnitBeInRangeHeuristic(int a1, int a2, unsigned __int8 a3)||
-|802F714|803627C|8035DA4|803ACB0|803AC90|CouldUnitBeInRangeHeuristic|bool CouldUnitBeInRangeHeuristic(int a1, int a2, unsigned __int8 a3)||
-|802F910|8036478|8035FA0|803AEB4|803AE94||||
-|802FC8C|80367F4|803631C|803B244|803B224||||
-|802FD00|8036868|8036390|803B2B8|803B298||||
-|802FD7C|80368E4|803640C|803B334|803B314||||
-|802FFC0|8036B28|8036650|803B560|803B558|FillMovementAndRangeMapForItem|int FillMovementAndRangeMapForItem(int a1, unsigned __int8 a2)||
-|8030060|8036BC8|80366F0|803B600|803B5F8||||
-|80300E0|8036C48|8036770|803B680|803B678||||
-|80301FC|8036D64|803688C|803B79C|803B794|GetItemAiStealPriority|signed int GetItemAiStealPriority(unsigned __int16 a1)||
-|803079C|80374F8|8037044|803BEDC|803BF4C||||
-|80307D4|8037530|803707C|803BF14|803BF84|AiIsCharacterOnMap|signed int AiIsCharacterOnMap(unsigned __int16 a1)||
-|8030860|80375C0|803710C|803BFA4|803C014|AiIsPositionLootable|signed int AiIsPositionLootable(unsigned __int8 a1, int a2)||
+|802F20C|8035C30|8035758|803A6B4|803A63C|AiPerform_0802F20C|[void AiPerform_0802F20C(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L451)||
+|802F29C|8035CC4|80357EC|803A748|803A6D0|AiPerform_0802F29C|[void AiPerform_0802F29C(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L490)||
+|802F34C|8035D74|803589C|803A800|803A788|AiFindTargetInReachByPid|[bool AiFindTargetInReachByPid(int pid, struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L76)||
+|802F430|8035E64|803598C|803A8F0|803A878|AiFindTargetInReachByJid|[bool AiFindTargetInReachByJid(int jid, struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L131)||
+|802F6C0|8036228|8035D50|803AC5C|803AC3C|AiReachesByBirdsEyeDistance|[bool AiReachesByBirdsEyeDistance(struct Unit* unit, struct Unit* other, u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L263)||
+|802F714|803627C|8035DA4|803ACB0|803AC90|AiCouldReachByBirdsEyeDistance|[bool AiCouldReachByBirdsEyeDistance(struct Unit* unit, struct Unit* other, u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L273)||
+|802F910|8036478|8035FA0|803AEB4|803AE94|AiFindClosestTerrainAdjacentPosition|[bool AiFindClosestTerrainAdjacentPosition(u8 const* terrainList, int flags, struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L364)||
+|802FC8C|80367F4|803631C|803B244|803B224|AiCountUnitsInRange|[int AiCountUnitsInRange(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L521)||
+|802FD00|8036868|8036390|803B2B8|803B298|AiCountEnemyUnitsInRange|[int AiCountEnemyUnitsInRange(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L544)||
+|802FD7C|80368E4|803640C|803B334|803B314|AiCountAlliedUnitsInRange|[int AiCountAlliedUnitsInRange(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L570)||
+|802FFC0|8036B28|8036650|803B560|803B558|AiMakeMoveRangeMapsForUnitAndWeapon|[void AiMakeMoveRangeMapsForUnitAndWeapon(struct Unit* unit, u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L683)||
+|8030060|8036BC8|80366F0|803B600|803B5F8|AiMakeMoveRangeUnitPowerMaps|[void AiMakeMoveRangeUnitPowerMaps(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L702)||
+|80300E0|8036C48|8036770|803B680|803B678|AiMakeMoveRangeMapsForUnitAndWeapon2|[void AiMakeMoveRangeMapsForUnitAndWeapon2(struct Unit* unit, u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L723)||
+|80301FC|8036D64|803688C|803B79C|803B794|AiGetItemStealRank|[int AiGetItemStealRank(u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L779)||
+|803079C|80374F8|8037044|803BEDC|803BF4C|AiGetJobRank|[u8 AiGetJobRank(u8 jid)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1033)||
+|80307D4|8037530|803707C|803BF14|803BF84|AiUnitWithPidExists|[bool AiUnitWithPidExists(u16 pid)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1057)||
+|8030860|80375C0|803710C|803BFA4|803C014|AiLocationIsPillageTarget|[bool AiLocationIsPillageTarget(u8 x, u8 y)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1096)||
 |806CBBC|80376CC|8037218|803C0B0|803C120|SetupUnitStatusStaffAIFlags|int SetupUnitStatusStaffAIFlags(int a1, int a2)||
-|8030994|8037714|8037260|803C0F8|803C168|SetupUnitHealStaffAIFlags|int SetupUnitHealStaffAIFlags(int a1, int a2)||
-|8030AB4|8037834|8037380|803C214|803C284||||
-|8030C78|80379FC|8037548|803C3DC|803C44C||||
-|8030E08|8037B8C|80376D8|803C56C|803C5DC|AiScript_Exec|int AiScript_Exec(int a1)||
-|8030F48|8037CCC|8037818|803C6AC|803C71C|AiScriptCmd_02_ChangeAi|int AiScriptCmd_02_ChangeAi(_BYTE *a1)||
-|8031044|8037DC8|8037914|803C7A8|803C818|IsUnitEnemyWithActiveUnit|bool IsUnitEnemyWithActiveUnit(int a1)||
-|8031198|8037F1C|8037A68|803C904|803C974|AiScriptCmd_04_ActionOnSelectedCharacter|int AiScriptCmd_04_ActionOnSelectedCharacter(_BYTE *a1)||
-|8031230|8037FB4|8037B00|803C99C|803CA0C|AiScriptCmd_05_DoStandardAction|int AiScriptCmd_05_DoStandardAction(_BYTE *a1)||
-|80313F8|803817C|8037CC8|803CB64|803CBD4|AiScriptCmd_0D_MoveTowardsCharacterUntilInRange|int AiScriptCmd_0D_MoveTowardsCharacterUntilInRange(_BYTE *a1)||
-|80314C0|8038240|8037D8C|803CC28|803CC98|AiScriptCmd_0F_MoveTowardsUnitWithClass|int AiScriptCmd_0F_MoveTowardsUnitWithClass(_BYTE *a1)||
-|8031504|8038284|8037DD0|803CC6C|803CCDC|AiScriptCmd_10_DoLooting|int AiScriptCmd_10_DoLooting(_BYTE *a1)||
-|80315FC|803837C|8037EC8|803CD64|803CDD4|AiScriptCmd_11_MoveTowardsSafety|int AiScriptCmd_11_MoveTowardsSafety(_BYTE *a1)||
+|8030994|8037714|8037260|803C0F8|803C168|func_fe6_08030994|[void func_fe6_08030994(struct Unit* unit, u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1180)||
+|8030AB4|8037834|8037380|803C214|803C284|func_fe6_08030AB4|[bool func_fe6_08030AB4(struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1241)||
+|8030C78|80379FC|8037548|803C3DC|803C44C|AiUnitHasAnyStaff|[bool AiUnitHasAnyStaff(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1332)||
+|8030E08|8037B8C|80376D8|803C56C|803C5DC|AiDoExecScript|[void AiDoExecScript(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L107)||
+|8030F48|8037CCC|8037818|803C6AC|803C71C|AiCmd_SetAi|[void AiCmd_SetAi(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L201)||
+|8031044|8037DC8|8037914|803C7A8|803C818|AiIsUnitEnemy|[bool AiIsUnitEnemy(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L255)||
+|8031198|8037F1C|8037A68|803C904|803C974|AiCmd_ActionOnPid|[void AiCmd_ActionOnPid(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L303)||
+|8031230|8037FB4|8037B00|803C99C|803CA0C|AiCmd_Action|[void AiCmd_Action(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L338)||
+|80313F8|803817C|8037CC8|803CB64|803CBD4|AiCmd_MoveTowardsPid|[void AiCmd_MoveTowardsPid(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L434)||
+|80314C0|8038240|8037D8C|803CC28|803CC98|AiCmd_MoveTowardsJid|[void AiCmd_MoveTowardsJid(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L473)||
+|8031504|8038284|8037DD0|803CC6C|803CCDC|AiCmd_Pillage|[void AiCmd_Pillage(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L485)||
+|80315FC|803837C|8037EC8|803CD64|803CDD4|AiCmd_MoveToSafety|[void AiCmd_MoveToSafety(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L533)||
 |0|803855C|80380A8|803CF44|803CFB4||||
-|8031894|80389A0|80384EC|803D374|803D3E4|AiDoBerserkAction|int AiDoBerserkAction()||
-|80318B4|80389C0|803850C|803D394|803D404|AiDoBerserkMove|int AiDoBerserkMove()||
-|8031D40|8038F30|8038A7C|803D928|803D998||||
-|803206C|8039258|8038DA4|803DC54|803DCC4|AiTrySimulateBattle|int AiTrySimulateBattle(_BYTE *a1)||
-|803264C|80397F8|8039344|803E20C|803E27C|AiGetPositionUnitSafetyWeight|int AiGetPositionUnitSafetyWeight(int a1, int a2)||
-|8032B84|8039D48|8039894|803E760|803E7D0|AiUnitTryMoveTowardsEscapePoint|signed int AiUnitTryMoveTowardsEscapePoint()||
+|8031894|80389A0|80384EC|803D374|803D3E4|AiDoBerserkAction|[void AiDoBerserkAction(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L661)||
+|80318B4|80389C0|803850C|803D394|803D404|AiDoBerserkMove|[void AiDoBerserkMove(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L667)||
+|8031D40|8038F30|8038A7C|803D928|803D998|AiAttemptBallistaCombat|[bool AiAttemptBallistaCombat(bool(*is_enemy)(struct Unit* unit), struct AiCombatSimulationSt* st)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L218)||
+|803206C|8039258|8038DA4|803DC54|803DCC4|AiSimulateBestBattleAgainstTarget|[bool AiSimulateBestBattleAgainstTarget(struct AiCombatSimulationSt* st)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L376)||
+|803264C|80397F8|8039344|803E20C|803E27C|AiGetFriendZoneCombatPositionScoreComponent|[int AiGetFriendZoneCombatPositionScoreComponent(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L726)||
+|8032B84|8039D48|8039894|803E760|803E7D0|AiTryMoveTowardsEscape|[bool AiTryMoveTowardsEscape(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L296)||
 |8032F94|803A158|8039CA4|803EB80|803EBF0||||
 |8032FF4|803A1B8|8039D04|803EBE4|803EC54||||
 |8033064|803A228|8039D74|803EC54|803ECC4||||
@@ -319,7 +319,7 @@
 |8035D7C|803D298|803CDE8|80421EC|804226C||||
 |8037600|803EB44|803E6B0|8043A88|8043B08||||
 |0|803F584|803F0F4|80444F4|8044560||||
-|8017960|803F724|803F294|8044694|8044700|NameSelect_DrawNameText|int NameSelect_DrawNameText(int a1)||
+|8017960|803F724|803F294|8044694|8044700|UnitAutolevelPlayer|[void UnitAutolevelPlayer(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit.c#L560)||
 |80382A0|803F9B8|803F504|804490C|8044968||||
 |8038DEC|80405B8|803FEAC|804550C|804556C||||
 |8038E90|804065C|803FF50|80455B0|8045610||||
@@ -441,7 +441,7 @@
 |806C2F8|807AA5C|8079FE8|8087220|8084F54||||
 |8083618|807AE7C|807A408|8087604|8085338||||
 |0|807B24C|807A7D8|80876F4|8085428||||
-|801D03C|807B684|807AC10|80879F4|8085728||||
+|801D03C|807B684|807AC10|80879F4|8085728|PhaseIntroText_Init|[static void PhaseIntroText_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1182)||
 |806F3DC|8081224|80804C8|8089B58|80878CC|DisplayPage|[void DisplayPage(int pageid)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1052)||
 |806F8B8|808178C|8080A30|808A108|8087E7C|StartUnitSlide|[void StartUnitSlide(struct Unit* unit, int direction, struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1367)||
 |806FC0C|8081AE4|8080D88|808A488|80881FC|PageNumCtrl_UpdateArrows|[void PageNumCtrl_UpdateArrows(struct StatScreenPageNameProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1539)||
@@ -658,20 +658,20 @@
 |0|808EAF4|808E1B0|8097A28|8095748|SortPlayerUnitsForPrepScreen|int SortPlayerUnitsForPrepScreen()||
 |0|809CFD8|809C654|80A5A64|80A1C8C||||
 |809BBB0|80BE428|80BD8E4|80D4244|80CF54C|SoundMainRAM|||
-|80326F0|803989C|80393E8|803E2B0|803E320|FillAiDangerMap|int FillAiDangerMap()||
-|801C80C|801E110|801DD6C|801E150|801E4F4||||
+|80326F0|803989C|80393E8|803E2B0|803E320|AiFillDangerMap|[static void AiFillDangerMap(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L63)||
+|801C80C|801E110|801DD6C|801E150|801E4F4|EquipInfoWindow_Loop|[static void EquipInfoWindow_Loop(struct EquipInfoWindowProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L883)||
 |0|809D33C|809C924|80A5D34|80A1F68||||
 |0|80863E0|80859E0|808F1C4|808CEC8|Loop6CUI2|int Loop6CUI2(int a1)||
 |0|8099E34|8099474|80A2E64|0||||
 |0|80AC538|80AB654|80B3FE8|80AF3C8||||
 |0|80138E8|80133C8|80132A8|80131F0||||
-|802F7B4|803631C|8035E44|803AD58|803AD38|AiFindClosestTileInRangeWithListedTerrain|bool AiFindClosestTileInRangeWithListedTerrain(_BYTE *a1, char a2, _WORD *a3)||
+|802F7B4|803631C|8035E44|803AD58|803AD38|AiFindClosestTerrainPosition|[bool AiFindClosestTerrainPosition(u8 const* terrainList, int flags, struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L309)||
 |0|80386CC|8038218|803D0B4|803D124||||
 |80333B0|803A574|803A0C0|803EFA8|803F018||||
 |0|80210C8|8020C5C|8021C70|8021E10||||
-|802DEDC|803418C|8033CB4|8036FA8|8036EA8||||
+|802DEDC|803418C|8033CB4|8036FA8|8036EA8|PutBattlePreviewWtArrows|[static void PutBattlePreviewWtArrows(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L389)||
 |8044F90|804DE4C|804D670|80530E0|80523EC||||
-|802B814|8031758|8031270|803421C|8034314|CanUnitUseVisit|signed int CanUnitUseVisit()||
+|802B814|8031758|8031270|803421C|8034314|func_fe6_0802B814|[bool func_fe6_0802B814(void)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L15)||
 |0|8034894|80343BC|80376A8|80375E8|GetTriggeredTrapType|signed int GetTriggeredTrapType(int a1)||
 |8057380|80635F0|8062E08|806F678|806D35C||||
 |0|8091A74|8091138|809A4BC|80981E4|SomethingPrepListRelated|int SomethingPrepListRelated(_DWORD *a1, int a2, char a3)||
@@ -679,7 +679,7 @@
 |0|806347C|8062C94|806F4D8|806D1B4|loadMagfcastBG|int loadMagfcastBG(int AIS, unsigned int index)||
 |0|808A074|8089714|8092FD8|8090D00||||
 |0|809C838|809BE80|80A5774|80A199C||||
-|800974C|800821C|800838C|8006CA4|8006DA0|DialogueMain_UpdateDisplay|signed int DialogueMain_UpdateDisplay(signed int a1)||
+|800974C|800821C|800838C|8006CA4|8006DA0|TalkPrepNextChar|[static bool TalkPrepNextChar(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L597)||
 |0|8023FEC|8023B60|802506C|80250BC|TryAddTrapsToTargetList|int TryAddTrapsToTargetList()||
 |803BC60|8043510|8042DF8|8048378|8048460||||
 |803E3C8|8046CA4|80464BC|804BA64|804ACC4||||
@@ -694,12 +694,12 @@
 |80823A0|8090EC0|8090580|8099AD0|80977EC||||
 |8085FB4|80A236C|80A19D8|80AAE88|80A6470||||
 |8016860|8016AD0|8016668|80167D4|8016A2C|DrawItemStatScreenLine|[void DrawItemStatScreenLine(struct TextHandle* text, int item, int nameColor, u16* mapOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L446)||
-|8022774|8026540|80260B4|8027AF4|8027B60||||
-|8022940|8026908|802647C|8027FA8|8028014||||
+|8022774|8026540|80260B4|8027AF4|8027B60|PutUnitSprite|[void PutUnitSprite(int layer, int x, int y, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L906)||
+|8022940|8026908|802647C|8027FA8|8028014|PutBlendWindowUnitSprite|[void PutBlendWindowUnitSprite(int layer, int x, int y, int oam2, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L964)||
 |8023E24|80280A0|8027C14|8029A6C|8029AE0|RepairMenuItemSelect|[u8 RepairMenuItemSelect(struct MenuProc* menu, struct MenuItemProc* menuItem)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L960)||
 |8026CA0|802C100|802BC40|802E368|802E430|ApplyEnabledMapChanges|[void ApplyEnabledMapChanges(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L187)||
 |0|802C70C|802C24C|802E9F8|802EAC0|DecayTraps|[void DecayTraps(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L669)||
-|802986C|802EE6C|802E9A0|80316E0|8031794|PrepareArenaStruct|int PrepareArenaStruct(int a1)||
+|802986C|802EE6C|802E9A0|80316E0|8031794|ArenaBeginInternal|[static void ArenaBeginInternal(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L167)||
 |806AE7C|80790F8|8078928|8085484|808314C||||
 |806F170|8080FB8|8080270|8089910|8087698|DisplaySupportList|[void DisplaySupportList(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L946)||
 |0|809BEC4|809B4EC|80A4D54|80A0F6C||||
@@ -707,10 +707,10 @@
 |8087CD4|80A4078|80A3404|80AD2F8|80A88E0||||
 |0|80AC4E8|80AB604|80B3F98|80AF378||||
 |809406C|800A580|800A584|8008EA4|8008FB4||||
-|801D9D0|801F400|801F07C|801F5D0|801F978||||
+|801D9D0|801F400|801F07C|801F5D0|801F978|StartPikeTrapAnim|[void StartPikeTrapAnim(ProcPtr parent, int x, int y, int facing)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1613)||
 |0|80251EC|8024D60|8026694|80266F0|SMS_80266F0|int SMS_80266F0(int a1, int a2)||
 |8022BA4|8026C04|8026778|80282A4|8028310|CanUnitSupportNow|[s8 CanUnitSupportNow(struct Unit* unit, int num)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L112)||
-|8025FB4|802AB90|802A6E0|802CC9C|802CD64||||
+|8025FB4|802AB90|802A6E0|802CC9C|802CD64|BattleGenerateArena|[void BattleGenerateArena(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1723)||
 |803AD74|804259C|8041ED8|8047494|8047570||||
 |0|80462A4|8045AB8|804B054|804A298||||
 |803E204|8046AE4|80462F8|804B89C|804AAFC||||
@@ -724,11 +724,11 @@
 |0|80AA910|80A9A34|80B24DC|80ADA3C||||
 |0|8006AC4|8006C34|8005544|800563C|StartFace|int StartFace(int fadeId, int portraitId, int x, int y, int dispType)|ARGS (int faceId, int portraitId, int x, int y, int idk)|
 |0|800837C|80084EC|8006E04|8006F00||||
-|8014F70|8014D78|80148FC|80146B4|80146A0||||
+|8014F70|8014D78|80148FC|80146B4|80146A0|func_fe6_08014F70|[void func_fe6_08014F70(u16* tm, int x, int y, u16 tileref, int width, int height, u16 const* src, int arg_7)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1735)||
 |0|8016E8C|8016A38|8016BF8|8016E50|GetWeaponExpProgressState|[void GetWeaponExpProgressState(int wexp, int* outValue, int* outMax) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L690)||
 |0|802242C|8021FB4|80230B8|80230F0||||
 |0|80347EC|8034314|8037600|8037540|MineFireTrap_8037540|int MineFireTrap_8037540(int a1)||
-|80309E0|8037760|80372AC|803C144|803C1B4|UpdateNumberOfAlliedUnitsWithin8Tiles|int UpdateNumberOfAlliedUnitsWithin8Tiles(char *a1)||
+|80309E0|8037760|80372AC|803C144|803C1B4|func_fe6_080309E0|[void func_fe6_080309E0(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1205)||
 |803E2D0|8046BB0|80463C8|804B96C|804ABCC||||
 |803E4AC|8046D80|8046598|804BB40|804ADA0||||
 |803E5D0|8046EB0|80466C8|804BC64|804AEC4||||
@@ -743,10 +743,10 @@
 |8016EAC|8017310|8016EBC|8016F90|80171E8|GetUnitWeaponReachBits|[int GetUnitWeaponReachBits(struct Unit* unit, int itemSlot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L878)||
 |0|8018914|8018524|80187B0|8018A9C|GetUnitKeyItemSlotForTerrain|[int GetUnitKeyItemSlotForTerrain(struct Unit* unit, int terrain) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1232)||
 |8019A34|801A6B4|801A2D4|801A798|801AABC|MapAddInRange|[void MapAddInRange(int x, int y, int range, int value)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L400)||
-|801B9F4|801D094|801CC90|801CFA8|801D344||||
-|801DA54|801F484|801F100|801F654|801F9FC||||
+|801B9F4|801D094|801CC90|801CFA8|801D344|PlayerPhase_FinishAction|[static void PlayerPhase_FinishAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L706)||
+|801DA54|801F484|801F100|801F654|801F9FC|func_fe6_0801DA54|[void func_fe6_0801DA54(ProcPtr parent, int icon, char const* str)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1653)||
 |8020A98|8023DD0|8023944|8024DF0|8024E40|ForEachUnitInRange|int ForEachUnitInRange()||
-|8025CFC|802A8E0|802A430|802C9D0|802CA98||||
+|8025CFC|802A8E0|802A430|802C9D0|802CA98|GetBattleAnimType|[int GetBattleAnimType(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1573)||
 |803667C|803DB98|803D6E8|8042AEC|8042B68||||
 |8047268|80502B0|804FAD4|8055BE0|8054F10|EfxWeaponIcon_OnLoop|int EfxWeaponIcon_OnLoop(_DWORD *a1)||
 |80478A0|8050BBC|80503E0|80564B4|8055518||||
@@ -773,12 +773,12 @@
 |80209C8|8023D00|8023874|8024D00|8024D50|CountUnitsInState|[int CountUnitsInState(int faction, int state) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L36)||
 |80284D8|802D9C0|802D500|8030220|80302D0|WfxSnow_VSync|[void WfxSnow_VSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L378)||
 |0|802ED60|802E894|80315D4|8031688|GetSupplyUnit|[struct Unit* GetSupplyUnit() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L120)||
-|802C274|80321EC|8031CBC|8034D64|8034E5C|DrawHammerneUnitInfoWindow|int DrawHammerneUnitInfoWindow(int a1)||
-|802CD40|8032EF8|80329C8|8035B0C|8035A0C||||
-|802E090|8034340|8033E68|803715C|803705C||||
-|8031C7C|8038E6C|80389B8|803D864|803D8D4||||
-|8032318|80394C4|8039010|803DEC4|803DF34|AiBattleGetDamageDealtWeight|signed int AiBattleGetDamageDealtWeight()||
-|803248C|8039638|8039184|803E044|803E0B4|AiBattleGetDamageTakenWeight|signed int AiBattleGetDamageTakenWeight()||
+|802C274|80321EC|8031CBC|8034D64|8034E5C|RefreshUnitRepairInventoryPanel|[void RefreshUnitRepairInventoryPanel(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L303)||
+|802CD40|8032EF8|80329C8|8035B0C|8035A0C|KillAllRedUnits_Loop|[static void KillAllRedUnits_Loop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L120)||
+|802E090|8034340|8033E68|803715C|803705C|BattlePreview_LoopDisplay|[static void BattlePreview_LoopDisplay(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L475)||
+|8031C7C|8038E6C|80389B8|803D864|803D8D4|AiFloodMovementAndRange|[void AiFloodMovementAndRange(struct Unit* unit, u16 move, u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L195)||
+|8032318|80394C4|8039010|803DEC4|803DF34|AiGetDamageDealtCombatScoreComponent|[int AiGetDamageDealtCombatScoreComponent(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L511)||
+|803248C|8039638|8039184|803E044|803E0B4|AiGetDamageTakenScoreComponent|[int AiGetDamageTakenScoreComponent(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L626)||
 |803BE78|8043728|8043010|8048594|804867C||||
 |803ECD0|80475D0|8046DE8|804C3C4|804B624||||
 |0|804B428|804AC4C|8050520|804F7AC|OverriddenMenuAvailability|[u8 OverriddenMenuAvailability(const struct MenuItemDef* def, int number)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L742)||
@@ -796,24 +796,24 @@
 |0|80A454C|80A38D8|80AD91C|80A8F04||||
 |0|80AAEF8|80AA030|80B2AC0|80AE044||||
 |809CE10|80BF688|80BEB44|80D54A4|80D07AC|SoundClear|[void SoundClear(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/m4a.c#L449)||
-|8013F7C|8013970|8013450|8013330|8013278||||
+|8013F7C|8013970|8013450|8013330|8013278|func_fe6_08013F7C|[struct Unk* func_fe6_08013F7C(int arg_0)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L493)||
 |0|80051E8|800530C|8003AFC|8003BB0|PrintDebugStringAsOBJ|int PrintDebugStringAsOBJ(int a1, int a2, _BYTE *a3)||
 |0|8005580|80056C4|8003EC8|8003FAC||||
 |807921C|807B2A8|807A834|800BF08|800BC1C|HideAllUnits|int HideAllUnits()||
 |806D028|800AC34|800AC8C|80114AC|80113C0|PopupProc_WaitForPress|int PopupProc_WaitForPress(int a1)||
-|801C188|801D808|801D404|801D864|801DC00|NewMoveUnitForUnitBeingRescued|int NewMoveUnitForUnitBeingRescued(_DWORD *a1)||
+|801C188|801D808|801D404|801D864|801DC00|StartMuForRescueTransfterAnim|[static struct MuProc* StartMuForRescueTransfterAnim(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L545)||
 |0|801DCB4|801D8B0|801DCF4|801E098|HandleNewItemGetFromDrop|int HandleNewItemGetFromDrop(int a1, __int16 a2, signed int a3)||
 |0|80212D4|8020E68|8021E4C|8021FEC||||
 |0|8021EB4|8021A3C|8022AF8|8022B30||||
 |0|8022330|8021EB8|8022FA4|8022FDC||||
-|8020164|8023138|8022CC0|8023DD8|8023E1C||||
+|8020164|8023138|8022CC0|8023DD8|8023E1C|func_fe6_08020164|[int func_fe6_08020164(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1344)||
 |8021A1C|8024DFC|8024970|80262A0|80262FC|TryAddUnitToHammerneTargetList|int TryAddUnitToHammerneTargetList(char *a1)||
 |8026288|802B250|802ADA0|802D3E0|802D4A8|TradeMenu_RefreshItemText|[void TradeMenu_RefreshItemText(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L336)||
-|802CCEC|8032EA0|8032970|8035AB4|80359B4||||
-|802E01C|80342CC|8033DF4|80370E8|8036FE8||||
+|802CCEC|8032EA0|8032970|8035AB4|80359B4|KillAllRedUnits_Init|[static void KillAllRedUnits_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L105)||
+|802E01C|80342CC|8033DF4|80370E8|8036FE8|UpdateBattlePreviewEffectivenessPalettes|[static void UpdateBattlePreviewEffectivenessPalettes(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L448)||
 |0|80349F8|8034520|803780C|0||||
-|8030364|8036ECC|80369F4|803B904|803B8FC|AiGetLootingParameters|bool AiGetLootingParameters(_WORD *a1, int a2)||
-|8032A08|8039BB8|8039704|803E5D0|803E640|AiUpdateAllUnitHealAi|int AiUpdateAllUnitHealAi()||
+|8030364|8036ECC|80369F4|803B904|803B8FC|AiFindPillageLocation|[bool AiFindPillageLocation(struct Vec2* out, u8* outItemSlot)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L868)||
+|8032A08|8039BB8|8039704|803E5D0|803E640|func_fe6_08032A08|[void func_fe6_08032A08(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L210)||
 |0|803FB84|803F6C4|8044AC8|8044B2C||||
 |803CD74|80455BC|8044DCC|804A390|8049594||||
 |803CF14|8045764|8044F74|804A540|8049744||||
@@ -845,26 +845,26 @@
 |0|80AC10C|80AB228|80B3D60|80AF140||||
 |0|8084194|8083798|808CEA8|808AB98||||
 |0|80918D8|8090F9C|809A320|8098048||||
-|80098A8|8008308|8008478|8006D90|8006E8C||||
+|80098A8|8008308|8008478|8006D90|8006E8C|TalkSpritePrepNextChar|[static bool TalkSpritePrepNextChar(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L634)||
 |80891DC|8012E40|80127C4|8009AB4|8009B64||||
-|8013C30|8013614|80130F4|8012F94|8012EDC|CopyNoCompData|int CopyNoCompData(int a1, int a2)||
-|801445C|8014264|8013D44|8013C14|8013B5C||||
-|801452C|8014334|8013E14|8013CD0|8013C18||||
+|8013C30|8013614|80130F4|8012F94|8012EDC|UnpackRaw|[static void UnpackRaw(u8 const* src, void* dst)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L192)||
+|801445C|8014264|8013D44|8013C14|8013B5C|FadeToCommon_OnLoop|[static void FadeToCommon_OnLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L777)||
+|801452C|8014334|8013E14|8013CD0|8013C18|FadeFromCommon_OnLoop|[static void FadeFromCommon_OnLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L810)||
 |0|80168A4|8016428|80165A8|8016800|CanUnitUseStaffNow|[s8 CanUnitUseStaffNow(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L396)||
 |80167E4|8016A4C|80165DC|8016750|80169A8|DrawItemMenuLineNoColor|[void DrawItemMenuLineNoColor(struct TextHandle* text, int item, u16* mapOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L435)||
-|801EC94|8021C28|80217B0|802286C|80228A4|RescueUsability|signed int RescueUsability()||
-|801ED00|8021C94|802181C|80228D8|8022910|DropUsability|signed int DropUsability()||
-|801F39C|80221E0|8021D68|8022E54|8022E8C||||
+|801EC94|8021C28|80217B0|802286C|80228A4|func_fe6_0801EC94|[int func_fe6_0801EC94(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L251)||
+|801ED00|8021C94|802181C|80228D8|8022910|func_fe6_0801ED00|[int func_fe6_0801ED00(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L283)||
+|801F39C|80221E0|8021D68|8022E54|8022E8C|func_fe6_0801F39C|[u8 func_fe6_0801F39C(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L634)||
 |8020FF0|8024384|8023EF8|8025424|8025474|TryAddRescuedUnitToTakeTargetList|int TryAddRescuedUnitToTakeTargetList(int a1)||
 |8022C60|8026CD0|8026844|8028374|80283E0|ClearUnitSupports|[void ClearUnitSupports(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L161)||
 |0|802A704|802A254|802C7FC|802C8C4|MakeSnagBattleTarget|int MakeSnagBattleTarget()||
 |802826C|802D74C|802D28C|802FFAC|803005C|BMapVSync_UpdateMapImgAnimations|[void BMapVSync_UpdateMapImgAnimations(struct BMVSyncProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L222)||
 |80282B4|802D794|802D2D4|802FFF4|80300A4|BMapVSync_UpdateMapPalAnimations|[void BMapVSync_UpdateMapPalAnimations(struct BMVSyncProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L243)||
-|802DCFC|8033FAC|8033AD4|8036DD0|8036CD0|BKSEL_Draw|int BKSEL_Draw(int a1)||
-|802EF6C|8035870|8035398|803A1F4|803A17C|CpPerform_LootWait|signed int CpPerform_LootWait(signed int a1)||
-|80316C0|80383C0|8037F0C|803CDA8|803CE18|AiScriptCmd_12_MoveTowardsEnemy|int AiScriptCmd_12_MoveTowardsEnemy(_BYTE *a1)||
+|802DCFC|8033FAC|8033AD4|8036DD0|8036CD0|DrawBattlePreviewContents|[static void DrawBattlePreviewContents(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L297)||
+|802EF6C|8035870|8035398|803A1F4|803A17C|AiPillageAction|[bool AiPillageAction(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L242)||
+|80316C0|80383C0|8037F0C|803CDA8|803CE18|AiCmd_MoveToEnemy2|[void AiCmd_MoveToEnemy2(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L567)||
 |0|8038440|8037F8C|803CE28|803CE98|AiScriptCmd_13|int AiScriptCmd_13(_BYTE *a1)||
-|8032548|80396F4|8039240|803E108|803E178|ComputeAiAttackWeight|int ComputeAiAttackWeight(int a1)||
+|8032548|80396F4|8039240|803E108|803E178|AiComputeCombatScore|[void AiComputeCombatScore(struct AiCombatSimulationSt* st)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L674)||
 |8036804|803DD20|803D870|8042C74|8042CF0||||
 |80383F8|803FB28|803F66C|8044A6C|8044AD4||||
 |8039178|8040944|8040238|8045888|80458E8||||
@@ -909,10 +909,10 @@
 |0|80AAFA4|80AA0DC|80B2B6C|80AE0F0||||
 |0|80AB098|80AA1D0|80B2C7C|80AE200|FadeOut_Loop|int FadeOut_Loop(int a1)||
 |809FA98|80C0C28|80C57B4|80DC0DC|80D74A0|BgTileMap_ApplyTSA|int BgTileMap_ApplyTSA(int a1, int a2, int a3)||
-|8013B24|8013508|8012FE8|8012E84|8012DCC||||
+|8013B24|8013508|8012FE8|8012E84|8012DCC|Interpolate|[NAKEDFUNC int Interpolate(int method, int lo, int hi, int x, int end)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L51)||
 |80330C8|803A28C|8039DD8|803ECB8|803ED28|AiTryDoDanceAdjacent|signed int AiTryDoDanceAdjacent(int a1, int a2)||
 |809FAA8|80C0C38|80C57C4|80DC0EC|80D74B0||||
-|802D4D8|8033710|80331E0|8036464|8036364||||
+|802D4D8|8033710|80331E0|8036464|8036364|TrapDamageDisplay_Display|[static void TrapDamageDisplay_Display(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L631)||
 |0|80B735C|80B6550|80BAB54|80B5FD0||||
 |0|8088584|8087BFC|80913FC|808F128||||
 |0|8004648|800476C|8002EC0|8002F70|ForEveryProc|int ForEveryProc()||
@@ -922,13 +922,13 @@
 |0|80068F4|8006A64|8005360|8005458|PushSpriteLayerObjects|[void PushSpriteLayerObjects(int layer)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ctc.c#L181)||
 |0|800773C|80078AC|8006184|8006280||||
 |0|8007B94|8007D04|8006530|800662C||||
-|800C084|8009D0C|8009E7C|80087A4|80088A8||||
-|8016250|80161EC|8015D70|8015EA8|8015E9C|ShouldMoveCameraPosSomething|bool ShouldMoveCameraPosSomething(int a1, int a2)||
+|800C084|8009D0C|8009E7C|80087A4|80088A8|StartTalkOpen|[static void StartTalkOpen(int talk_face, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1660)||
+|8016250|80161EC|8015D70|8015EA8|8015E9C|IsCameraNotWatchingPosition|[bool IsCameraNotWatchingPosition(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L892)||
 |0|8018318|8017F28|80181B0|801849C|UnitFinalizeMovement|[void UnitFinalizeMovement(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L990)||
 |8018E10|801996C|8019584|8019994|8019CBC|RenderBmMapOnBg2|[void RenderBmMapOnBg2(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L400)||
 |0|8020508|80200A0|8020D88|8021090||||
 |806DC50|8020540|80200D8|8020E80|8021188||||
-|801FEE8|8022EBC|8022A44|8023B54|8023B90|StaffItemSelect_Usability|signed int StaffItemSelect_Usability(int a1, int a2)||
+|801FEE8|8022EBC|8022A44|8023B54|8023B90|func_fe6_0801FEE8|[int func_fe6_0801FEE8(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1187)||
 |0|8023B78|80236EC|8024ACC|8024B1C||||
 |80215E4|80249C4|8024538|8025DCC|8025E28|TryAddUnitToHealTargetList|int TryAddUnitToHealTargetList(int a1)||
 |802173C|8024B1C|8024690|8025FC0|802601C|TryAddUnitToBarrierTargetList|int TryAddUnitToBarrierTargetList(int a1)||
@@ -937,14 +937,14 @@
 |8026254|802B21C|802AD6C|802D3AC|802D474|TradeMenu_InitItemText|[void TradeMenu_InitItemText(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L323)||
 |0|802D8A8|802D3E8|8030108|80301B8|BMapDispResume|[void BMapDispResume(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L307)||
 |80296B0|802EBF8|802E72C|8031478|803152C|ShrinkConvoyItemList|[void ShrinkConvoyItemList() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L21)||
-|8029BFC|802F240|802ED74|8031ABC|8031B70|LoadArenaWeapons|int LoadArenaWeapons()||
+|8029BFC|802F240|802ED74|8031ABC|8031B70|ArenaGenBaseWeapons|[static void ArenaGenBaseWeapons(void)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L428)||
 |0|802FD88|802F8BC|8032714|80327C8|BATTLE_PostCombatDeathFades|[void BATTLE_PostCombatDeathFades(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L591)||
 |0|8030E48|803095C|8033850|8033940|sub_8033940|[void sub_8033940(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L719)||
-|802CAC8|8032A44|8032514|80355C4|80356BC||||
-|802D06C|8033224|8032CF4|8035E14|8035D14||||
-|802E394|8034664|803418C|8037474|80373B4||||
+|802CAC8|8032A44|8032514|80355C4|80356BC|SubtitleHelp_Loop|[static void SubtitleHelp_Loop(struct SubtitleHelpProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L177)||
+|802D06C|8033224|8032CF4|8035E14|8035D14|StatusHealEffect_PalSpriteAnim_SetOutlineIntensity|[static void StatusHealEffect_PalSpriteAnim_SetOutlineIntensity(struct GenericProc* proc, int intensity)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L316)||
+|802E394|8034664|803418C|8037474|80373B4|CloseBattlePreview|[void CloseBattlePreview(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L659)||
 |802EABC|80353B4|8034EDC|8039D24|8039CAC|AiDecideMain|[void AiDecideMain(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_decide.c#L305)||
-|8031308|803808C|8037BD8|803CA74|803CAE4|AiScriptCmd_08_DoStandardActionAgainstClass|int AiScriptCmd_08_DoStandardActionAgainstClass(_BYTE *a1)||
+|8031308|803808C|8037BD8|803CA74|803CAE4|AiCmd_ActionOnJid|[void AiCmd_ActionOnJid(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L387)||
 |8033250|803A414|8039F60|803EE40|803EEB0||||
 |803395C|803AB34|803A680|803F570|803F5E0||||
 |80339F8|803ABD0|803A71C|803F610|803F680||||
@@ -1025,7 +1025,7 @@
 |0|80048D0|80049F4|800314C|8003200|ProcInst08_BlockUntilRunning|signed int ProcInst08_BlockUntilRunning(int a1)||
 |8004DD8|8004D74|8004E98|8003678|800372C|LoadIconObjectGraphics|[void LoadIconObjectGraphics(int Index, int b)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/icon.c#L111)||
 |0|800694C|8006ABC|80053B8|80054B0|StartSpriteRefresher|[struct SpriteProc* StartSpriteRefresher(ProcPtr parent, int layer, int x, int y, const u16* object, int tileref)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ctc.c#L199)||
-|8008974|8006E54|8006FC4|80058D0|80059CC||||
+|8008974|8006E54|8006FC4|80058D0|80059CC|UnpackFaceChibiSprGraphics|[void UnpackFaceChibiSprGraphics(int fid, int chr, int pal)](https://github.com/StanHash/fe6/blob/0b25087/src/face.c#L568)||
 |0|8008408|8008578|8006E90|8006F8C||||
 |806C524|8008EB0|8009020|8007940|8007A3C||||
 |0|800909C|800920C|8007B24|8007C28|DialoguePauseTimer_OnLoop|int DialoguePauseTimer_OnLoop(int a1)||
@@ -1033,27 +1033,27 @@
 |0|8012F50|80128D4|8009BA0|8009C40||||
 |0|80233E0|8011498|800CC14|800C938|EventB3_|signed int EventB3_()||
 |0|800AA80|800AAD8|80112FC|8011210|PopupProc_PlaySound|int PopupProc_PlaySound(int a1)||
-|8014BC8|80149D0|80144B0|801430C|8014254|Timer_Countdown|int Timer_Countdown(int a1)||
-|801515C|8014F64|8014AE8|80148A4|801487C|FutureCall2_Loop|int FutureCall2_Loop(int a1)||
+|8014BC8|80149D0|80144B0|801430C|8014254|TemporaryLock_OnLoop|[static void TemporaryLock_OnLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1353)||
+|801515C|8014F64|8014AE8|80148A4|801487C|CallDelayed_OnLoop|[static void CallDelayed_OnLoop(struct CallDelayedProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2097)||
 |0|80158D4|8015458|80154EC|80154C8|MapMain_UpdateTraps|signed int MapMain_UpdateTraps(signed int a1)||
-|800F8F8|8016470|8015FF4|801614C|8016140||||
+|800F8F8|8016470|8015FF4|801614C|8016140|EvtCmd_GotoIfyFunc|[static int EvtCmd_GotoIfyFunc(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L1981)||
 |8017798|8017DE0|80179F0|8017C14|8017EF4|UnitLoadSupports|[void UnitLoadSupports(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L731)||
 |0|8018B0C|801871C|80189AC|8018C98|IsPositionMagicSealed|[s8 IsPositionMagicSealed(int x, int y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1338)||
 |80194A4|801A0E0|8019D00|801A1B8|801A4EC|GenerateMovementMap|[void GenerateMovementMap(int x, int y, int movement, int unitId)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L77)||
-|801AD50|801BFCC|801BC1C|801BF9C|801C30C||||
-|801B754|801CDC0|801C9BC|801CC70|801D008|PlayerPhase_BackToMove|int PlayerPhase_BackToMove(unsigned __int16 **a1)||
-|801B9B0|801D050|801CC4C|801CF64|801D300|MaybeRunPostActionEvents|signed int MaybeRunPostActionEvents()||
-|801C02C|801D6A4|801D2A0|801D6FC|801DA98|DisplayMoveRangeGraphics|int DisplayMoveRangeGraphics(__int16 a1)||
-|801C134|801D7B0|801D3AC|801D808|801DBA4|PlayerPhase_HandleAutoEnd|int PlayerPhase_HandleAutoEnd(unsigned __int16 **a1)||
-|801C560|801DBF8|801D7F4|801DC38|801DFDC||||
-|801E8F8|80207BC|8020354|80210EC|80213F4||||
+|801AD50|801BFCC|801BC1C|801BF9C|801C30C|func_fe6_0801AD50|[int func_fe6_0801AD50(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L518)||
+|801B754|801CDC0|801C9BC|801CC70|801D008|PlayerPhase_CancelAction|[static void PlayerPhase_CancelAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L579)||
+|801B9B0|801D050|801CC4C|801CF64|801D300|PlayerPhase_0801B9B0|[bool PlayerPhase_0801B9B0(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L690)||
+|801C02C|801D6A4|801D2A0|801D6FC|801DA98|StartLimitView|[void StartLimitView(int flags)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L966)||
+|801C134|801D7B0|801D3AC|801D808|801DBA4|PlayerPhase_HandleAutoEnd|[static void PlayerPhase_HandleAutoEnd(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L1033)||
+|801C560|801DBF8|801D7F4|801DC38|801DFDC|DiscardItem_PostItemSelect|[static int DiscardItem_PostItemSelect(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L768)||
+|801E8F8|80207BC|8020354|80210EC|80213F4|GameOverScreen_LoopFadeIn|[static void GameOverScreen_LoopFadeIn(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2259)||
 |80501B8|8021FAC|8021B34|8022BF8|8022C30|DisplayUnitStandingAttackRange|int DisplayUnitStandingAttackRange()||
-|801F6A8|8022614|802219C|80232B0|80232E8|ItemCommandEffect|signed int ItemCommandEffect(int a1, int a2)||
-|801F948|80228D4|802245C|802356C|80235A8||||
-|801FACC|8022A68|80225F0|8023700|802373C||||
-|8020678|8023644|80231B8|8024538|8024588||||
+|801F6A8|8022614|802219C|80232B0|80232E8|func_fe6_0801F6A8|[u8 func_fe6_0801F6A8(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L813)||
+|801F948|80228D4|802245C|802356C|80235A8|func_fe6_0801F948|[u8 func_fe6_0801F948(struct MenuProc* menu)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L940)||
+|801FACC|8022A68|80225F0|8023700|802373C|func_fe6_0801FACC|[int func_fe6_0801FACC(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1000)||
+|8020678|8023644|80231B8|8024538|8024588|func_fe6_08020678|[int func_fe6_08020678(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1581)||
 |808FD44|8023AE4|8023658|8024A38|8024A88||||
-|801F648|8023B4C|80236C0|8024AA0|8024AF0||||
+|801F648|8023B4C|80236C0|8024AA0|8024AF0|func_fe6_0801F648|[u8 func_fe6_0801F648(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L783)||
 |0|8023C54|80237C8|8024BA8|8024BF8||||
 |8020E5C|80241F0|8023D64|8025280|80252D0|MakeTradeTargetList|int MakeTradeTargetList(int a1)||
 |8022F58|8026FC4|8026B38|8028668|80286D4|GetCharacterAffinityIcon|[int GetCharacterAffinityIcon(int characterId)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L334)||
@@ -1065,15 +1065,15 @@
 |8028918|802DE00|802D940|8030664|8030714|WfxFlamesHSync|[void WfxFlamesHSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L571)||
 |0|8031594|80310A8|8033F98|8034090|sub_8034090|[void sub_8034090(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1013)||
 |802BBD0|8031B1C|0|80345E8|80346E0|sub_80346E0|[const char* sub_80346E0(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L34)||
-|802CBB4|8032D68|8032838|80358E4|80357E4||||
-|802D178|8033348|8032E18|8035F20|8035E20||||
-|802D314|80334E0|8032FB0|80360B8|8035FB8||||
-|802E0FC|80343AC|8033ED4|80371C8|80370C8||||
-|802E36C|803463C|8034164|803744C|803738C||||
+|802CBB4|8032D68|8032838|80358E4|80357E4|RenderMapForFogFadeIfUnitDied|[static void RenderMapForFogFadeIfUnitDied(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L38)||
+|802D178|8033348|8032E18|8035F20|8035E20|TerrainHealDisplay_Init|[static void TerrainHealDisplay_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L391)||
+|802D314|80334E0|8032FB0|80360B8|8035FB8|PoisonDamageDisplay_Init|[static void PoisonDamageDisplay_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L499)||
+|802E0FC|80343AC|8033ED4|80371C8|80370C8|BattlePreview_OnNewBattle|[static void BattlePreview_OnNewBattle(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L502)||
+|802E36C|803463C|8034164|803744C|803738C|UpdateBattlePreviewContents|[void UpdateBattlePreviewContents(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L648)||
 |0|8034A74|803459C|8037888|80377F0||||
-|802F268|8035C90|80357B8|803A714|803A69C|CpPerform_StealWait|signed int CpPerform_StealWait(int a1)||
-|8031790|8038894|80383E0|803D268|803D2D8|AiScriptCmd_19_MoveTowardsTerrain|int AiScriptCmd_19_MoveTowardsTerrain(_BYTE *a1)||
-|8031808|8038910|803845C|803D2E4|803D354|AiScriptCmd_1A_MoveTowardsTerrain|int AiScriptCmd_1A_MoveTowardsTerrain(_BYTE *a1)||
+|802F268|8035C90|80357B8|803A714|803A69C|AiWaitAndClearScreenAction|[bool AiWaitAndClearScreenAction(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L476)||
+|8031790|8038894|80383E0|803D268|803D2D8|AiCmd_MoveTowardsTerrain|[void AiCmd_MoveTowardsTerrain(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L617)||
+|8031808|8038910|803845C|803D2E4|803D354|AiCmd_MoveTowardsListedTerrain|[void AiCmd_MoveTowardsListedTerrain(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L636)||
 |8036ADC|803E01C|803DB6C|8042F64|8042FE0||||
 |8036BFC|803E13C|803DC8C|8043084|8043100||||
 |803BE00|80436B0|8042F98|804851C|8048604||||
@@ -1142,7 +1142,7 @@
 |80861EC|80A25A4|80A1C10|80AB0D8|80A66C0||||
 |8086220|80A25D8|80A1C44|80AB10C|80A66F4||||
 |80899F0|80A61B0|80A54C8|80AF64C|80AAB78||||
-|800D30C|80ABEF0|80AB00C|80B3B44|80AEF24||||
+|800D30C|80ABEF0|80AB00C|80B3B44|80AEF24|Popup_PlaySe|[static void Popup_PlaySe(struct PopupProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L578)||
 |0|80AC998|80ABAB4|80B4414|80AF7F4||||
 |0|80ACA1C|80ABB38|80B4498|80AF878||||
 |0|80AD460|80AC588|80B4E58|80B0240||||
@@ -1152,43 +1152,43 @@
 |809DD38|80C05B8|80BFA74|80D63E0|80D16E4|ReadSramFast_Core|int ReadSramFast_Core(_BYTE *a1, _BYTE *a2, int a3)||
 |8018258|801899C|80185AC|801883C|8018B28|GetUnitWeaponUsabilityBits|[int GetUnitWeaponUsabilityBits(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1276)||
 |8028B4C|802E034|802DB74|8030898|8030948|WfxFlamesUpdateParticles|[void WfxFlamesUpdateParticles(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L696)||
-|80325BC|8039768|80392B4|803E17C|803E1EC|AiGetUnitReachWeightWithEquippedWeapon|signed int AiGetUnitReachWeightWithEquippedWeapon(int a1, int a2, int a3)||
+|80325BC|8039768|80392B4|803E17C|803E1EC|AiGetInRangeCombatPositionScoreComponent|[int AiGetInRangeCombatPositionScoreComponent(int x, int y, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L703)||
 |8054DE8|805DA74|805D28C|80628E4|80617E4||||
 |805E59C|806ACC0|806A4E0|80773B8|8074F80|EkrTriangle_OnLoop|int EkrTriangle_OnLoop(int a1)||
 |0|8085008|808460C|808DDB4|808BAA4||||
 |0|800479C|80048C0|800301C|80030CC||||
-|8004E58|8004DD4|8004EF8|80036D8|800378C|SetupDebugFontForBG|int SetupDebugFontForBG(int a1, signed int a2)||
+|8004E58|8004DD4|8004EF8|80036D8|800378C|DebugInitBg|[void DebugInitBg(int bg, int vramOffset)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-text.c#L36)||
 |0|8004EB0|8004FD4|80037BC|8003870||||
 |8007F8C|8006990|8006B00|80053FC|80054F4|MoveSpriteRefresher|[void MoveSpriteRefresher(struct SpriteProc* proc, int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ctc.c#L217)||
 |0|800722C|800739C|8005C74|8005D70||||
 |0|80076F8|8007868|8006140|800623C||||
-|800A78C|8008E58|8008FC8|80078E8|80079E4||||
+|800A78C|8008E58|8008FC8|80078E8|80079E4|MoveTalkFace|[static void MoveTalkFace(int talkFaceFrom, int talkFaceTo)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1049)||
 |0|80122CC|8011C34|8009140|8009250||||
 |0|800A8EC|800A918|8011184|801106C|GenSomeLongPopupText|int GenSomeLongPopupText(unsigned __int8 *a1, int a2, int a3)|Arguments: r0 = Popup Definition ptr, (r1, r2) = Text Struct Copy|
-|8013C74|8013658|8013138|8012FD8|8012F20||||
-|80149E0|80147E8|80142C8|8014150|8014098||||
-|8014ADC|80148E4|80143C4|801424C|8014194||||
-|8015180|8014F88|8014B0C|80148C8|80148A0|FutureCall_Loop|int FutureCall_Loop(_DWORD *a1)||
-|801523C|8015044|8014BC8|8014990|8014968||||
-|80152C4|80150CC|8014C50|8014A18|80149F0||||
+|8013C74|8013658|8013138|8012FD8|8012F20|Decompress_Unused_08013C74|[void Decompress_Unused_08013C74(u8 const* src, u8* dst)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L202)||
+|80149E0|80147E8|80142C8|8014150|8014098|func_fe6_080149E0|[void func_fe6_080149E0(int kind, int speed, ProcPtr parent, Func endFunc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1187)||
+|8014ADC|80148E4|80143C4|801424C|8014194|func_fe6_08014ADC|[void func_fe6_08014ADC(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1306)||
+|8015180|8014F88|8014B0C|80148C8|80148A0|CallDelayedArg_OnLoop|[static void CallDelayedArg_OnLoop(struct CallDelayedProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2110)||
+|801523C|8015044|8014BC8|8014990|8014968|PartialGameLock_OnLoop|[static void PartialGameLock_OnLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2222)||
+|80152C4|80150CC|8014C50|8014A18|80149F0|func_fe6_080152C4|[void func_fe6_080152C4(u16 const* src, u16* dst, int size, u16 tileref)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2249)||
 |80716C8|8015274|8014DF8|8014BC8|8014BA0||||
-|80158C0|80156C8|801524C|80152C8|80152A4|OnVBlankMain|int OnVBlankMain()||
-|8015910|8015718|801529C|8015318|80152F4|OnGameLoopMain|int OnGameLoopMain()||
-|80161C0|801615C|8015CE0|8015E18|8015E0C|EnsureCameraOntoPosition|signed int EnsureCameraOntoPosition(signed int a1, int a2, int a3)||
-|80162F4|8016290|8015E14|8015F4C|8015F40||||
+|80158C0|80156C8|801524C|80152C8|80152A4|OnVBlank|[void OnVBlank(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L318)||
+|8015910|8015718|801529C|8015318|80152F4|OnMain|[void OnMain(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L342)||
+|80161C0|801615C|8015CE0|8015E18|8015E0C|CameraMoveWatchPosition|[bool CameraMoveWatchPosition(ProcPtr proc, int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L865)||
+|80162F4|8016290|8015E14|8015F4C|8015F40|UnkMapCursor_OnLoop|[static void UnkMapCursor_OnLoop(struct UnkMapCursorProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L924)||
 |809B608|8016410|8015F94|80160EC|80160E0||||
 |8018C6C|80197C8|80193E0|80197F0|8019B18|DisplayBmTile|[void DisplayBmTile(u16* bg, int xTileMap, int yTileMap, int xBmMap, int yBmMap) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L322)||
 |0|801D154|801CD50|801D068|801D404||||
-|801C380|801D9F0|801D5EC|801DA0C|801DDA8|Destruct6CBMXFADE|int Destruct6CBMXFADE(int a1)||
+|801C380|801D9F0|801D5EC|801DA0C|801DDA8|MapFade_End|[static void MapFade_End(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L639)||
 |8093444|801DA38|801D634|801DA74|801DE18|BMXFADEExists|bool BMXFADEExists()||
-|801C990|801E2A0|801DEFC|801E2E0|801E684|ForceMenuItemPanel|int ForceMenuItemPanel(signed int a1, _DWORD *a2, char a3, char a4)||
-|801D014|801E924|801E5A0|801E988|801ED30||||
-|801D310|801EC24|801E8A0|801EDF8|801F1A0||||
-|801D398|801ECAC|801E928|801EE80|801F228||||
-|801D41C|801ED30|801E9AC|801EF04|801F2AC||||
-|801D8E4|801F314|801EF90|801F4E4|801F88C||||
-|801E3AC|80200CC|801FC64|8020924|8020C2C||||
-|801E9AC|8020870|8020408|80211A0|80214A8||||
+|801C990|801E2A0|801DEFC|801E2E0|801E684|StartEquipInfoWindow|[void StartEquipInfoWindow(ProcPtr parent, struct Unit* unit, int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L913)||
+|801D014|801E924|801E5A0|801E988|801ED30|PhaseIntroText_PutText|[static void PhaseIntroText_PutText(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1171)||
+|801D310|801EC24|801E8A0|801EDF8|801F1A0|PhaseIntroBlendBox_InLoop|[static void PhaseIntroBlendBox_InLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1312)||
+|801D398|801ECAC|801E928|801EE80|801F228|PhaseIntroBlendBox_OutLoop|[static void PhaseIntroBlendBox_OutLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1331)||
+|801D41C|801ED30|801E9AC|801EF04|801F2AC|PhaseIntro_EndIfNoUnits|[static void PhaseIntro_EndIfNoUnits(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1350)||
+|801D8E4|801F314|801EF90|801F4E4|801F88C|func_fe6_0801D8E4|[static void func_fe6_0801D8E4(struct ShowMapChangeProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1561)||
+|801E3AC|80200CC|801FC64|8020924|8020C2C|ChapterIntro_BeginFadeToMap|[static void ChapterIntro_BeginFadeToMap(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2020)||
+|801E9AC|8020870|8020408|80211A0|80214A8|GameOverScreen_LoopFadeOut|[static void GameOverScreen_LoopFadeOut(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2298)||
 |0|8020E2C|80209C4|80219FC|8021D04||||
 |0|80215E0|8021174|8022140|0||||
 |806DE00|8021750|80212D8|80222AC|80222E0||||
@@ -1196,7 +1196,7 @@
 |8021278|8024638|80241AC|80256D8|8025728|FillBallistaRangeMaybe|int FillBallistaRangeMaybe(int a1)||
 |8000564|80253D8|8024F4C|8026900|802695C|SomethingSMS_16x16|int SomethingSMS_16x16(int a1, unsigned int a2)||
 |8022B14|8026B44|80266B8|80281F8|8028264|GetUnitTotalSupportLevel|[int GetUnitTotalSupportLevel(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L74)||
-|80257B0|802A24C|8029D9C|802C2B0|802C368||||
+|80257B0|802A24C|8029D9C|802C2B0|802C368|GetUnitRoundExp|[int GetUnitRoundExp(struct Unit* unit, struct Unit* other)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1250)||
 |80267D0|802B86C|802B3BC|802D9E4|802DAAC|TradeMenu_OnEndSelected|[void TradeMenu_OnEndSelected(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L605)||
 |8090834|802BCC8|802B808|802DDF4|802DEBC|TradeMenu_TutorialWait_OnLoop|[void TradeMenu_TutorialWait_OnLoop(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L797)||
 |8027950|802CCDC|802C81C|802F08C|802F154|ExecFortify|[void ExecFortify(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L349)||
@@ -1207,32 +1207,32 @@
 |80289DC|802DEC4|802DA04|8030728|80307D8|WfxFlamesInitGradient|[void WfxFlamesInitGradient(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L617)||
 |8028A6C|802DF54|802DA94|80307B8|8030868|WfxFlamesInitParticles|[void WfxFlamesInitParticles(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L645)||
 |8028E44|802E32C|802DE6C|8030B90|8030C40|ResetMapPaletteAnimations|[void ResetMapPaletteAnimations(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L905)||
-|80297EC|802EDEC|802E920|8031660|8031714|LoadPlayerUnitsFromUnitStack|int LoadPlayerUnitsFromUnitStack()||
-|8029AA0|802F0C8|802EBFC|8031944|80319F8|GetNearLevel|int GetNearLevel(int a1)||
+|80297EC|802EDEC|802E920|8031660|8031714|UnitRearrangeApply|[void UnitRearrangeApply(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-rearrange.c#L28)||
+|8029AA0|802F0C8|802EBFC|8031944|80319F8|ArenaGetOpposingLevel|[static int ArenaGetOpposingLevel(int level)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L348)||
 |802A6B4|802FD04|802F838|803269C|8032750|KillUnitOnArenaDeathMaybe|[void KillUnitOnArenaDeathMaybe(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L555)||
 |802A7F4|802FE70|802F9A4|80327FC|80328B0|sub_80328B0|[void sub_80328B0() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L643)||
 |0|802FF34|802FA6C|80328C0|8032974|sub_8032974|[void sub_8032974(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L695)||
 |802B750|80313A0|8030EB4|8033D94|8033E8C|sub_8033E8C|[void sub_8033E8C() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L914)||
-|802B964|80318B4|80313CC|8034378|8034470|CanActiveUnitUseRescue|bool CanActiveUnitUseRescue()||
-|802B980|80318D0|80313E8|8034394|803448C|CanActiveUnitUseTrade|bool CanActiveUnitUseTrade()||
-|802C034|8031FAC|8031A74|8034B20|8034C18|NewUnitInfoWindow_WithAllLines|int NewUnitInfoWindow_WithAllLines(signed int a1)||
-|802C894|803280C|80322DC|8035384|803547C||||
-|802CA58|80329D4|80324A4|8035554|803564C||||
-|802CDD8|8032F90|8032A60|8035BA4|8035AA4||||
-|802CF24|80330DC|8032BAC|8035CEC|8035BEC||||
-|802D09C|8033254|8032D24|8035E44|8035D44||||
-|802D0C8|8033280|8032D50|8035E70|8035D70||||
-|8027368|8033468|8032F38|8036040|8035F40||||
-|802733C|80347A0|80342C8|80375B4|80374F4|MineFireTrap_DoSomeBWLStuffWhenKill|int MineFireTrap_DoSomeBWLStuffWhenKill(int a1)||
+|802B964|80318B4|80313CC|8034378|8034470|func_fe6_0802B964|[bool func_fe6_0802B964(void)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L77)||
+|802B980|80318D0|80313E8|8034394|803448C|func_fe6_0802B980|[bool func_fe6_0802B980(void)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L84)||
+|802C034|8031FAC|8031A74|8034B20|8034C18|StartUnitInventoryPanel|[void StartUnitInventoryPanel(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L218)||
+|802C894|803280C|80322DC|8035384|803547C|PutSubtitleHelpText|[static void PutSubtitleHelpText(struct SubtitleHelpProc* proc, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L27)||
+|802CA58|80329D4|80324A4|8035554|803564C|SubtitleHelpDarkener_FadeOut|[static void SubtitleHelpDarkener_FadeOut(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L139)||
+|802CDD8|8032F90|8032A60|8035BA4|8035AA4|StatusHealEffect_OverlayBg_Init|[static void StatusHealEffect_OverlayBg_Init(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L175)||
+|802CF24|80330DC|8032BAC|8035CEC|8035BEC|StatusHealEffect_BlendedSprite_Loop|[static void StatusHealEffect_BlendedSprite_Loop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L223)||
+|802D09C|8033254|8032D24|8035E44|8035D44|StatusHealEffect_PalSpriteAnim_LoopIn|[static void StatusHealEffect_PalSpriteAnim_LoopIn(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L328)||
+|802D0C8|8033280|8032D50|8035E70|8035D70|StatusHealEffect_PalSpriteAnim_LoopOut|[static void StatusHealEffect_PalSpriteAnim_LoopOut(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L338)||
+|8027368|8033468|8032F38|8036040|8035F40|StepTrap_End|[static void StepTrap_End(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/trap.c#L706)||
+|802733C|80347A0|80342C8|80375B4|80374F4|StepPikeTrap_08027318|[static void StepPikeTrap_08027318(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/trap.c#L698)||
 |802E4C0|8034DB8|80348E0|8039724|80396AC|AiPhaseInit|[static void AiPhaseInit(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_phase.c#L40)||
 |802E52C|8034E24|803494C|8039790|8039718|AiPhaseBerserkInit|[static void AiPhaseBerserkInit(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_phase.c#L61)||
 |802E670|8034F64|8034A8C|80398D0|8039858|CpOrderFunc_BeginDecide|[void CpOrderFunc_BeginDecide(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L88)||
 |0|80355E4|803510C|8039F6C|8039EF4|CpPerform_UpdateMapMusic|int CpPerform_UpdateMapMusic()||
-|802ED68|803569C|80351C4|803A024|8039FAC|CpPerform_BeginUnitMovement|int CpPerform_BeginUnitMovement(int a1)||
-|802F064|8035968|8035490|803A2EC|803A274|CpPerform_TalkWait|signed int CpPerform_TalkWait()||
+|802ED68|803569C|80351C4|803A024|8039FAC|AiPerform_StartMovement|[void AiPerform_StartMovement(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L139)||
+|802F064|8035968|8035490|803A2EC|803A274|AiTalkAction|[bool AiTalkAction(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L308)||
 |0|8035BEC|8035714|803A670|803A5F8|CpPerform_WaitAction|int CpPerform_WaitAction(int a1)||
-|8030180|8036CE8|8036810|803B720|803B718|GetLesserWeightedAdjacentPosition|bool GetLesserWeightedAdjacentPosition(int a1, int a2, int a3, _WORD *a4)||
-|80326C4|8039870|80393BC|803E284|803E2F4|SetupAiDangerMap|int SetupAiDangerMap()||
+|8030180|8036CE8|8036810|803B720|803B718|AiFindBestAdjacentPositionByFunc|[bool AiFindBestAdjacentPositionByFunc(int x, int y, u8(*funcArg)(int x, int y), struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L742)||
+|80326C4|8039870|80393BC|803E284|803E2F4|AiRefreshDangerMap|[void AiRefreshDangerMap(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L52)||
 |8032F48|803A10C|8039C58|803EB34|803EBA4||||
 |8036440|803D95C|803D4AC|80428B0|804292C||||
 |80364A4|803D9C0|803D510|8042914|8042990||||
@@ -1347,7 +1347,7 @@
 |0|8094BA4|8094314|809DAF4|809B830||||
 |8057208|8096058|8095828|809EEE4|809CC40||||
 |0|8097C10|8097488|80A0D94|809EAF4||||
-|800EFB4|8097C30|80974A8|80A0DB4|809EB14||||
+|800EFB4|8097C30|80974A8|80A0DB4|809EB14|DisplayMovement|[static bool DisplayMovement(struct EventProc* proc, struct Unit* unit, u8 const* movescr)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L1576)||
 |0|809AD54|809A378|80A3C64|0||||
 |0|809B2BC|809A8E4|80A4148|0||||
 |0|809C92C|809BF78|80A5868|80A1A90||||
@@ -1405,7 +1405,7 @@
 |803B2AC|8042ACC|8042428|80479D0|8047AB8|CheckSomethingSaveRelated|signed int CheckSomethingSaveRelated()||
 |808F4F0|80B75A4|80B6798|80BADB0|80B622C|GetDeadUnitAmount|int GetDeadUnitAmount()||
 |809DFE4|80C0864|80BFD20|80D6690|80D1994|__modsi3|unsigned int _modsi3(unsigned int result, unsigned int a2)||
-|802D66C|80338B8|8033388|803660C|803650C||||
+|802D66C|80338B8|8033388|803660C|803650C|InitBattlePreviewIconPalBuf|[static void InitBattlePreviewIconPalBuf(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L76)||
 |80581C0|8064A94|80642AC|807116C|806EBBC||||
 |8058358|8064C2C|8064444|8071304|806ED54||||
 |80585DC|8064EB0|80646C8|8071568|806EFB8||||
@@ -1414,7 +1414,7 @@
 |0|809B8D0|809AEFC|80A4738|0||||
 |0|809B968|809AF94|80A47D0|0||||
 |0|80C0BDC|80C0114|80D6A08|80D1D88|strlen|int strlen(_DWORD *a1)||
-|8015260|8015068|8014BEC|80149B4|801498C||||
+|8015260|8015068|8014BEC|80149B4|801498C|func_fe6_08015260|[void func_fe6_08015260(u8 const* src, u8* dst, int size)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2228)||
 |8016958|8016BC4|8016764|80168D0|8016B28|GetUnitEquippedWeapon|[u16 GetUnitEquippedWeapon(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L480)||
 |8016988|8016BF4|8016794|8016900|8016B58|GetUnitEquippedWeaponSlot|[int GetUnitEquippedWeaponSlot(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L490)||
 |0|8019E24|8019A3C|8019E4C|801A174|RefreshTorchlightsOnBmMap|[void RefreshTorchlightsOnBmMap(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L611)||
@@ -1435,7 +1435,7 @@
 |0|8004C98|8004DBC|800359C|8003650|GetIconTileIndex|[u16 GetIconTileIndex(int Index)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/icon.c#L64)||
 |8021360|8024724|8024298|80257C4|8025814|MakeTargetListForDoorAndBridges|int MakeTargetListForDoorAndBridges(int a1, int a2)||
 |80236C4|80277E0|8027354|80290A4|80290FC|CanUnitUseChestKeyItem|[s8 CanUnitUseChestKeyItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L487)||
-|80248E8|8029008|8028B68|802AAE4|802AB74|BattleLoadAS|int BattleLoadAS(int a1)||
+|80248E8|8029008|8028B68|802AAE4|802AB74|ComputeBattleUnitSpeed|[void ComputeBattleUnitSpeed(struct BattleUnit* attacker)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L474)||
 |0|8029328|8028E78|802ACC4|802AD54|BattleApplySRankBonuses|int BattleApplySRankBonuses(int a1)||
 |80331EC|803A3B0|8039EFC|803EDDC|803EE4C|AiTryDoStealAdjacent|bool AiTryDoStealAdjacent(int a1, int a2)||
 |804F820|8059394|8058BAC|805F418|805E318|loadFimbulvetrBG|void loadFimbulvetrBG(void *AIS)||
@@ -1451,8 +1451,8 @@
 |0|80A06BC|809FCF0|80A8ECC|80A4488|GetGameTotalTurnCount2|int GetGameTotalTurnCount2()||
 |8086590|80A29DC|0|80AB514|80A6AFC||||
 |809CCD4|80BF54C|80BEA08|80D5368|80D0670|SampleFreqSet|[void SampleFreqSet(u32 freq)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/m4a.c#L359)||
-|8013D74|8013758|8013238|80130D8|8013020|CopyTileGfxForObj|int CopyTileGfxForObj(const void *src, void *dst, unsigned int tileLen, unsigned int height)||
-|8013E8C|8013870|8013350|80131F0|8013138||||
+|8013D74|8013758|8013238|80130D8|8013020|Copy2dChr|[void Copy2dChr(void const* src, u8* dst, int width, int height)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L299)||
+|8013E8C|8013870|8013350|80131F0|8013138|func_fe6_08013E8C|[void func_fe6_08013E8C(u16* tm, u8 const* src, int tileref, int len)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L398)||
 |3002D8C|3002E6C|3002F4C|30036FC|300375C||||
 |8000234|8000234|8000234|8000234|8000234||||
 |0|80049A0|8004AC4|8003220|80032D4|ProcInst0F_Mark|signed int ProcInst0F_Mark(int a1)||
@@ -1472,48 +1472,48 @@
 |0|8007F84|80080F4|8006A14|8006B10|Dialogue_SetDefaultTextColor|int Dialogue_SetDefaultTextColor(char a1)||
 |0|800968C|80097FC|800814C|8008250||||
 |0|8013214|8012B5C|8009EC4|8009F64|SetNextChapterId|int SetNextChapterId(char a1)||
-|800D754|800AD04|800AD5C|801157C|8011490|Popup_CreateExt|int Popup_CreateExt(int a1, int a2, char a3, __int16 a4, char a5, signed int a6)||
-|8013CEC|80136D0|80131B0|8013050|8012F98||||
-|8013D34|8013718|80131F8|8013098|8012FE0||||
-|8013D48|801372C|801320C|80130AC|8012FF4|RegisterObjectTileGraphics|int RegisterObjectTileGraphics(int a1, int a2, int a3, int a4)||
-|8013EC4|80138A8|8013388|8013268|80131B0||||
-|8013ED8|80138BC|801339C|801327C|80131C4||||
+|800D754|800AD04|800AD5C|801157C|8011490|StartPopupExt|[ProcPtr StartPopupExt(struct PopupInfo const* info, int duration, int winKind, int iconChr, int iconPal, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L705)||
+|8013CEC|80136D0|80131B0|8013050|8012F98|Unused_08013CEC|[struct Unk* Unused_08013CEC(struct Unk_08013CEC* unk, int arg_1, int arg_2)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L245)||
+|8013D34|8013718|80131F8|8013098|8012FE0|Unused_08013D34|[int Unused_08013D34(struct Unk_08013CEC* unk, int arg_1)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L271)||
+|8013D48|801372C|801320C|80130AC|8012FF4|Register2dChrMove|[void Register2dChrMove(u8 const* src, u8* dst, int width, int height)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L283)||
+|8013EC4|80138A8|8013388|8013268|80131B0|func_fe6_08013EC4|[void func_fe6_08013EC4(struct Unk_08013EBC* unk)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L423)||
+|8013ED8|80138BC|801339C|801327C|80131C4|func_fe6_08013ED8|[void func_fe6_08013ED8(struct Unk_08013EBC* unk)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L429)||
 |0|8013BA0|8013664|8013560|80134A8|GetSomethingInPaletteBB_2A|int GetSomethingInPaletteBB_2A()||
-|8014150|8013F58|8013A38|8013918|8013860||||
-|80141E0|8014004|8013AE4|80139C4|801390C||||
-|8014A38|8014844|8014324|80141AC|80140F4||||
-|8014D9C|8014BA4|8014728|80144E0|80144CC||||
-|8014DB4|8014BBC|8014740|80144F8|80144E4|StartPaletteAnimator_|int StartPaletteAnimator_(int a1, __int16 a2, int a3, __int16 a4, signed int a5)||
-|801556C|8015374|8014EF8|8014F78|8014F50||||
-|8015728|8015530|80150B4|8015134|801510C||||
-|801585C|8015664|80151E8|8015264|8015240||||
-|8015880|8015688|801520C|8015288|8015264||||
-|80158B8|80156C0|8015244|80152C0|801529C||||
+|8014150|8013F58|8013A38|8013918|8013860|SpacialSeTest_OnInit|[static void SpacialSeTest_OnInit(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L600)||
+|80141E0|8014004|8013AE4|80139C4|801390C|StartPalFadeToBlack|[void StartPalFadeToBlack(int palid, int duration, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L642)||
+|8014A38|8014844|8014324|80141AC|80140F4|func_fe6_08014A38|[void func_fe6_08014A38(struct FadeUnkProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1250)||
+|8014D9C|8014BA4|8014728|80144E0|80144CC|func_fe6_08014D9C|[void func_fe6_08014D9C(u16 const* colors, int palOffset, int palSize, int arg_3, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1494)||
+|8014DB4|8014BBC|8014740|80144F8|80144E4|func_fe6_08014DB4|[void func_fe6_08014DB4(u16 const* colors, int palOffset, int palSize, int arg_3, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1499)||
+|801556C|8015374|8014EF8|8014F78|8014F50|VecMulMat|[void VecMulMat(int const* vec, int const* mat, int* ovec)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2383)||
+|8015728|8015530|80150B4|8015134|801510C|MatIdent|[void MatIdent(int* mat)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2420)||
+|801585C|8015664|80151E8|8015264|8015240|VecDotVec|[int VecDotVec(int const* lvec, int const* rvec)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2516)||
+|8015880|8015688|801520C|8015288|8015264|VecCrossVec|[void VecCrossVec(int const* lvec, int const* rvec, int* ovec)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2521)||
+|80158B8|80156C0|8015244|80152C0|801529C|func_fe6_080158B8|[int func_fe6_080158B8(int arg_0, int arg_1, int arg_2, int arg_3)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2528)||
 |0|80177A8|80173A0|8017448|80176A0|GetItemEncodedRange|[inline int GetItemEncodedRange(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L163)||
 |0|80177D8|80173D0|8017478|80176D0|GetItemEffectiveness|[inline const u8* GetItemEffectiveness(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L171)||
 |0|80181D4|8017DE4|8018060|801834C|UnitRescue|[void UnitRescue(struct Unit* actor, struct Unit* target) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L905)||
 |8018408|8018EE0|8018AF0|8018EE4|80191D0|GetUnitSkill|[inline int GetUnitSkill(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L279)||
 |8018448|8018F20|8018B30|8018F24|8019210|GetUnitSpeed|[inline int GetUnitSpeed(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L288)||
 |8018784|801926C|8018E84|8019294|80195BC|InitChapterPreviewMap|[void InitChapterPreviewMap(int chapterId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L80)||
-|80192B4|8019EF0|0|8019F18|0||||
-|801DB00|801F748|801F2E0|801FA38|801FDAC||||
-|801E2B0|801FFD0|801FB68|8020818|8020B20||||
-|801E6C4|8020580|8020118|8020EC0|80211C8||||
+|80192B4|8019EF0|0|8019F18|0|GetTerrainName|[char const* GetTerrainName(int terrain)](https://github.com/StanHash/fe6/blob/0b25087/src/map.c#L623)||
+|801DB00|801F748|801F2E0|801FA38|801FDAC|ChapterIntro_KeyListen_Init|[static void ChapterIntro_KeyListen_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1688)||
+|801E2B0|801FFD0|801FB68|8020818|8020B20|ChapterIntro_0801E2B0|[static void ChapterIntro_0801E2B0(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1981)||
+|801E6C4|8020580|8020118|8020EC0|80211C8|GameOverScreen_RandomScroll_Init|[static void GameOverScreen_RandomScroll_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2167)||
 |80238FC|8027B0C|8027680|80294F8|8029550|StaffSelectOnSelect|[static u8 StaffSelectOnSelect(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L685)||
 |0|802889C|8028410|802A310|802A384||||
 |0|802BBA8|802B6F8|802DFF8|802E0C0|sub_802E0C0|[void sub_802E0C0(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L910)||
 |8026B30|802BFB4|802BAF4|802E218|802E2E0|AddDamagingTrap|[struct Trap* AddDamagingTrap(int x, int y, int trapType, int meta, int turnCountdown, int turnInterval, int damage)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L105)||
-|8029F5C|802F5A0|802F0D4|8031E18|8031ECC||||
+|8029F5C|802F5A0|802F0D4|8031E18|8031ECC|ArenaGetMatchupGoldValue|[int ArenaGetMatchupGoldValue(void)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L630)||
 |0|8030C88|803079C|8033680|8033770|sub_8033770|[void sub_8033770(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L601)||
 |802B0FC|8030CB0|80307C4|80336A8|8033798|sub_8033798|[void sub_8033798(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L617)||
 |802B118|8030CCC|80307E0|80336C4|80337B4|sub_80337B4|[void sub_80337B4(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L629)||
 |802B138|8030CEC|8030800|80336E4|80337D4|sub_80337D4|[void sub_80337D4(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L641)||
 |802BB30|8031A7C|0|8034548|8034640|GetChapterMapPointer|[const void* GetChapterMapPointer(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L12)||
 |802BBA0|8031AEC|0|80345B8|80346B0|GetChapterEventDataPointer|[const struct ChapterEventInfo* GetChapterEventDataPointer(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L27)||
-|802CF90|8033148|8032C18|8035D58|8035C58||||
-|802CFA4|803315C|8032C2C|8035D6C|8035C6C||||
+|802CF90|8033148|8032C18|8035D58|8035C58|StatusHealEffect_BlendSpriteAnim_InitIn|[static void StatusHealEffect_BlendSpriteAnim_InitIn(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L251)||
+|802CFA4|803315C|8032C2C|8035D6C|8035C6C|StatusHealEffect_BlendSpriteAnim_InitOut|[static void StatusHealEffect_BlendSpriteAnim_InitOut(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L258)||
 |802E58C|8034E84|80349AC|80397F0|8039778|AiPhaseCleanup|[static void AiPhaseCleanup(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_phase.c#L79)||
-|8031880|803898C|80384D8|803D360|803D3D0|AiScriptCmd_1B_NoOp|int AiScriptCmd_1B_NoOp(_BYTE *a1)||
+|8031880|803898C|80384D8|803D360|803D3D0|AiCmd_Label|[void AiCmd_Label(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L655)||
 |80336B0|803A888|803A3D4|803F2C0|803F330||||
 |0|803AF14|803AA60|803F948|803F9C8||||
 |80351F4|803C710|803C25C|8041660|80416E0||||
@@ -1584,25 +1584,25 @@
 |809FAB8|80C0C48|80C57D4|80DC0FC|80D74C0|ComputeChecksum32|int ComputeChecksum32(unsigned __int16 *a1, int a2)||
 |3002F38|3003018|30030F8|30038A8|3003908||||
 |80003E0|80003E0|80003E0|80003E0|80003E0||||
-|8012470|800EFB8|800F0AC|8012414|8012344|GetChapterAllyUnitCount|int GetChapterAllyUnitCount()||
+|8012470|800EFB8|800F0AC|8012414|8012344|GetPlayerDeployCount|[int GetPlayerDeployCount(void)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3616)||
 |8026B08|802BF8C|802BACC|802E1F0|802E2B8|AddTrap|[struct Trap* AddTrap(int x, int y, int trapType, int meta)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L90)||
 |8037020|803E564|803E0B8|80434B0|804352C||||
 |0|8005F14|8006084|800493C|8004A34|Text_DrawGlyphManual|int Text_DrawGlyphManual(int a1, int a2, int a3)||
 |808AF4C|8009598|8009708|8008058|800815C||||
 |0|8017574|8017120|80171F8|8017450|GetPartyTotalGoldValue|[int GetPartyTotalGoldValue(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L1006)||
 |8018960|8019494|80190AC|80194BC|80197E4|BmMapFill|[void BmMapFill(u8** map, int value) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L195)||
-|8021D08|8025344|8024EB8|802686C|80268C8|SomethingSMS_16x16_0|int SomethingSMS_16x16_0(int a1, unsigned int a2)||
-|8021D9C|80254B4|8025028|80269DC|8026A38|SomethingSMS_16x32|int SomethingSMS_16x32(int a1, unsigned int a2)||
-|8021E8C|80255A4|8025118|8026ACC|8026B28|SomethingSMS_32x32|int SomethingSMS_32x32(int a1, unsigned int a2)||
-|80243F8|8028A60|80285D4|802A4F0|802A584|InitBattleUnitFromUnit|int InitBattleUnitFromUnit(_BYTE *a1, _DWORD *a2)||
-|8024988|80291B0|8028D00|802AB88|802AC18|BattleLoadCrit|int BattleLoadCrit(int a1)||
-|8060F10|8034C80|80347A8|8037B04|8037A6C|TryRemoveUnitFromBallista|int TryRemoveUnitFromBallista(int a1)||
+|8021D08|8025344|8024EB8|802686C|80268C8|ApplyUnitSpriteImage16x16|[static int ApplyUnitSpriteImage16x16(int slot, unsigned id)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L423)||
+|8021D9C|80254B4|8025028|80269DC|8026A38|ApplyUnitSpriteImage16x32|[static int ApplyUnitSpriteImage16x32(int slot, unsigned id)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L441)||
+|8021E8C|80255A4|8025118|8026ACC|8026B28|ApplyUnitSpriteImage32x32|[static int ApplyUnitSpriteImage32x32(int slot, unsigned id)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L461)||
+|80243F8|8028A60|80285D4|802A4F0|802A584|InitBattleUnit|[void InitBattleUnit(struct BattleUnit* bu, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L240)||
+|8024988|80291B0|8028D00|802AB88|802AC18|ComputeBattleUnitCritRate|[void ComputeBattleUnitCritRate(struct BattleUnit* attacker)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L502)||
+|8060F10|8034C80|80347A8|8037B04|8037A6C|StartMuDeathFade|[void StartMuDeathFade(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1040)||
 |0|8084640|8083C44|808D3E4|808B0D4||||
 |0|8084664|8083C68|808D408|808B0F8||||
 |0|809F50C|809EAFC|80A7D8C|80A3348||||
 |0|808734C|8086960|80D32B8|80CE5BC||||
 |0|8025A6C|80255E0|8026F98|8026FF4||||
-|8021F80|80259A4|8025518|8026ED0|8026F2C|SMS_SyncDirect|int SMS_SyncDirect()||
+|8021F80|80259A4|8025518|8026ED0|8026F2C|SyncUnitSpriteSheet|[void SyncUnitSpriteSheet(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L481)||
 |0|80209D0|8020568|802147C|80215F0||||
 |0|8020FEC|8020B84|8021610|8021784||||
 |0|805C700|805BF18|806768C|806056C||||
@@ -1610,15 +1610,15 @@
 |0|807A284|0|8086B4C|80848E0||||
 |0|807A2E4|0|8086BAC|8084940||||
 |0|807A344|0|8086C0C|8084880||||
-|80140A4|8013A98|8013578|8013458|80133A0||||
-|800B4D0|80AAC88|80A9DC0|80B2874|80ADDD4||||
+|80140A4|8013A98|8013578|8013458|80133A0|DarkenPals|[void DarkenPals(int reduction)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L558)||
+|800B4D0|80AAC88|80A9DC0|80B2874|80ADDD4|ClearPutTalkText|[void ClearPutTalkText(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1395)||
 |0|80A9CAC|80A8D98|80B1844|80ACDA4||||
 |3002FEC|30030CC|30031AC|300395C|30039BC||||
 |300308C|300316C|300324C|30039FC|3003A5C||||
 |8000494|8000494|8000494|8000494|8000494|ARM_PushToHiOAM(ARM)|int ARM_PushToHiOAM(int result, unsigned __int16 a2, _WORD *a3, __int16 a4)||
 |8000534|8000534|8000534|8000534|8000534|ARM_PushToLoOAM(ARM)|void ARM_PushToLoOAM()||
-|802F8B8|8036420|8035F48|803AE5C|803AE3C|GetPositionRangeWeight|signed int GetPositionRangeWeight(int a1, int a2)||
-|8031ECC|80390A0|8038BEC|803DA98|803DB08|GetEffectiveTileMovCost|signed int GetEffectiveTileMovCost(int a1, int a2)||
+|802F8B8|8036420|8035F48|803AE5C|803AE3C|AiGetPositionRange|[u8 AiGetPositionRange(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L353)||
+|8031ECC|80390A0|8038BEC|803DA98|803DB08|AiAttemptStealAction_GetMovementAt|[static u8 AiAttemptStealAction_GetMovementAt(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L303)||
 |8034D28|803C144|803BC90|8040A60|8040AE0||||
 |3002F00|3002FE0|30030C0|3003870|30038D0||||
 |3002F94|3003074|3003154|3003904|3003964||||
@@ -1627,29 +1627,29 @@
 |0|80047B8|80048DC|8003038|80030E8|ProcInst00_End|int ProcInst00_End(int a1)||
 |0|80047D4|80048F8|8003054|8003104|ProcInst02_CallRoutine|signed int ProcInst02_CallRoutine(int a1)||
 |0|80047E8|800490C|8003068|8003118|ProcInst16_CallRoutine2|int ProcInst16_CallRoutine2(int a1)||
-|80044BC|8004878|800499C|80030F4|80031A8|ProcInst05_AddChild|signed int ProcInst05_AddChild(signed int a1)||
-|80044EC|8004894|80049B8|8003110|80031C4|ProcInst06_AddBlockingChild|int ProcInst06_AddBlockingChild(signed int a1)||
-|800451C|80048B0|80049D4|800312C|80031E0|ProcInst07_BuggedAddGlobal|signed int ProcInst07_BuggedAddGlobal(int a1)||
-|8004590|80048F8|8004A1C|8003174|8003228|ProcInst09_EndAllOf|signed int ProcInst09_EndAllOf(int a1)||
-|80045C0|8004914|8004A38|8003190|8003244|ProcInst0A_BreakLoopForAll|signed int ProcInst0A_BreakLoopForAll(int a1)||
+|80044BC|8004878|800499C|80030F4|80031A8|ProcCmd_SpawnChild|[static bool ProcCmd_SpawnChild(struct ProcDummy* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L516)||
+|80044EC|8004894|80049B8|8003110|80031C4|ProcCmd_SpawnLockChild|[static bool ProcCmd_SpawnLockChild(struct ProcDummy* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L524)||
+|800451C|80048B0|80049D4|800312C|80031E0|ProcCmd_SpawnBugged|[static bool ProcCmd_SpawnBugged(struct ProcDummy* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L532)||
+|8004590|80048F8|8004A1C|8003174|8003228|ProcCmd_EndEach|[static bool ProcCmd_EndEach(struct ProcDummy* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L554)||
+|80045C0|8004914|8004A38|8003190|8003244|ProcCmd_BreakEach|[static bool ProcCmd_BreakEach(struct ProcDummy* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L562)||
 |0|800494C|8004A70|80031C8|800327C|ProcInst0C_GotoLabel|signed int ProcInst0C_GotoLabel(int a1)||
 |0|8004EF4|8005018|8003800|80038B4||||
-|8005154|8004F8C|80050B0|8003898|800394C||||
-|80051DC|8004FF4|8005118|8003900|80039B4||||
-|80055CC|8005234|8005358|8003B48|8003BFC|PrintDebugNumberDec|int PrintDebugNumberDec(int a1, int a2, int a3, int a4)|Arguments: r0 = Tile X, r1 = Tile Y, r2 = Number, r3 = Display Len|
-|80055FC|8005258|800537C|8003B6C|8003C20|PrintDebugNumberHex|int PrintDebugNumberHex(int a1, int a2, int a3, int a4)|Arguments: r0 = Tile X, r1 = Tile Y, r2 = Number, r3 = Display Len|
+|8005154|8004F8C|80050B0|8003898|800394C|DebugPrintNumber|[void DebugPrintNumber(int number, int length)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-text.c#L152)||
+|80051DC|8004FF4|8005118|8003900|80039B4|DebugPrintNumberHex|[void DebugPrintNumberHex(int number, int length)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-text.c#L177)||
+|80055CC|8005234|8005358|8003B48|8003BFC|DebugPutObjNumber|[void DebugPutObjNumber(int x, int y, int number, int length)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-text.c#L301)|Arguments: r0 = Tile X, r1 = Tile Y, r2 = Number, r3 = Display Len|
+|80055FC|8005258|800537C|8003B6C|8003C20|DebugPutObjNumberHex|[void DebugPutObjNumberHex(int x, int y, int number, int length)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-text.c#L307)|Arguments: r0 = Tile X, r1 = Tile Y, r2 = Number, r3 = Display Len|
 |0|8005E60|8005FCC|800488C|8004984||||
 |0|8006298|8006408|8004CC0|8004DB8||||
 |80070B4|80062D8|8006448|8004D00|8004DF8||||
 |0|8006A2C|8006B9C|800549C|8005594|FACE_Load|int FACE_Load(int a1)||
 |0|8006F5C|80070CC|80059D8|8005AD4||||
 |0|8007BB8|8007D28|8006554|8006650||||
-|8009240|8007EAC|800801C|8006934|8006A30|StartDialogueFromIndex|int StartDialogueFromIndex(int a1, int a2, int a3)||
+|8009240|8007EAC|800801C|8006934|8006A30|StartTalkMsg|[ProcPtr StartTalkMsg(int x, int y, int msg)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L416)||
 |0|8007ECC|800803C|8006954|8006A50||||
 |0|8009178|80092E8|8007C00|8007D04||||
 |0|8009418|8009588|8007E98|8007F9C||||
-|800BF70|8009C58|8009DC8|8008708|800880C||||
-|800C4AC|8009F98|800A108|8008A2C|8008B30||||
+|800BF70|8009C58|8009DC8|8008708|800880C|TalkOpen_PutTalkBubble|[static void TalkOpen_PutTalkBubble(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1639)||
+|800C4AC|8009F98|800A108|8008A2C|8008B30|TalkPutSpriteText_OnEnd|[static void TalkPutSpriteText_OnEnd(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1800)||
 |0|800A530|800A534|8008E54|8008F64||||
 |0|8011F10|8011878|8008F2C|800903C||||
 |0|8012030|8011998|800904C|800915C||||
@@ -1659,112 +1659,112 @@
 |0|8012D98|801271C|8009A0C|8009ABC||||
 |0|8012FB0|0|8009C04|8009CA4||||
 |0|80131B8|8012B00|8009E68|8009F08|NewGameControl|int NewGameControl()||
-|801154C|800F518|800F60C|800D004|800CD40||||
+|801154C|800F518|800F60C|800D004|800CD40|WmRemoveFace_OnEnd|[static void WmRemoveFace_OnEnd(struct WmEventFaceProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3105)||
 |0|800BCE4|800BE20|800E9D4|800E7C4|Event20_|int Event20_()||
 |0|800B72C|800B7F0|8010F08|8010DC0||||
 |0|800EC08|800ECFC|8010F98|8010E50||||
 |806C76C|807AF50|807A4DC|8011030|8010EE8||||
-|800D374|800AAC4|800AB1C|8011340|8011254|PopupIconUpdaterLoop|int PopupIconUpdaterLoop(int a1)||
+|800D374|800AAC4|800AB1C|8011340|8011254|PopupIconSprite_OnIdle|[static void PopupIconSprite_OnIdle(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L590)||
 |0|800EEA8|800EF9C|8011610|8011524|ItemGot_DisplayLePopup|int ItemGot_DisplayLePopup(int a1)||
-|8012268|800EEBC|800EFB0|8011624|8011538|ItemGot_GotLeItem|int ItemGot_GotLeItem(int a1)||
+|8012268|800EEBC|800EFB0|8011624|8011538|GiveItem_DoGiveItem|[static void GiveItem_DoGiveItem(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3562)||
 |0|800ED9C|800EE90|8011710|8011624||||
-|8014130|8013B24|8013604|80134E4|801342C||||
+|8014130|8013B24|8013604|80134E4|801342C|func_fe6_08014130|[void func_fe6_08014130(char const* arg_0)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L594)||
 |0|8013EF8|80139D8|80138B8|8013800||||
-|8014394|801419C|8013C7C|8013B5C|8013AA4||||
-|8014618|8014420|8013F00|8013D88|8013CD0|StartFadeInBlack|int StartFadeInBlack(__int16 a1)||
-|8014634|801443C|8013F1C|8013DA4|8013CEC|StartFadeOutBlack|int StartFadeOutBlack(__int16 a1)||
-|8014668|8014470|8013F50|8013DC0|8013D08|StartBlockingFadeInBlack|int StartBlockingFadeInBlack(__int16 a1, signed int a2)||
-|8014650|8014458|8013F38|8013DD8|8013D20|StartBlockingFadeOutBlack|int StartBlockingFadeOutBlack(__int16 a1, signed int a2)||
-|8014680|8014488|8013F68|8013DF0|8013D38|StartBlockingFadeInWhite|int StartBlockingFadeInWhite(__int16 a1, signed int a2)||
-|8014698|80144A0|8013F80|8013E08|8013D50|StartBlockingFadeOutWhite|int StartBlockingFadeOutWhite(__int16 a1, signed int a2)||
-|8014728|8014530|8014010|8013E78|8013DC0|StartBlockingFadeInBlackSlow|int StartBlockingFadeInBlackSlow(signed int a1)||
-|80148E0|80146E8|80141C8|8014050|8013F98||||
-|8014CA8|8014AB0|8014634|80143EC|80143D8|SomeDrawTextCentered|TextStruct *SomeDrawTextCentered(_WORD *a1, char a2, int a3, unsigned __int8 *a4)||
-|8014D60|8014B68|80146EC|80144A4|8014490|StartPaletteAnimator|int StartPaletteAnimator(int a1, __int16 a2, int a3, __int16 a4, signed int a5)||
-|80151C4|8014FCC|8014B50|801490C|80148E4|SetupFutureCall|int SetupFutureCall(int a1, int a2, int a3)||
-|8015218|8015020|8014BA4|801496C|8014944||||
-|801548C|8015294|8014E18|8014BE8|8014BC0||||
-|801549C|80152A4|8014E28|8014BF8|8014BD0||||
-|8015A6C|80158B0|8015434|80154C8|80154A4|MapMain_StartPlayerPhaseAndApplyAction|int MapMain_StartPlayerPhaseAndApplyAction(signed int a1)||
-|8016344|80162E0|8015E64|8015F9C|8015F90||||
-|80163E4|8016400|8015F84|80160DC|80160D0|UpdatePlayMapMusic|int UpdatePlayMapMusic()||
+|8014394|801419C|8013C7C|8013B5C|8013AA4|SetWhitePal|[void SetWhitePal(int palid)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L740)||
+|8014618|8014420|8013F00|8013D88|8013CD0|StartFadeToBlack|[void StartFadeToBlack(int q4_speed)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L887)||
+|8014634|801443C|8013F1C|8013DA4|8013CEC|StartFadeFromBlack|[void StartFadeFromBlack(int q4_speed)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L893)||
+|8014668|8014470|8013F50|8013DC0|8013D08|StartLockingFadeFromBlack|[void StartLockingFadeFromBlack(int q4_speed, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L905)||
+|8014650|8014458|8013F38|8013DD8|8013D20|StartLockingFadeToBlack|[void StartLockingFadeToBlack(int q4_speed, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L899)||
+|8014680|8014488|8013F68|8013DF0|8013D38|StartLockingFadeToWhite|[void StartLockingFadeToWhite(int q4_speed, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L911)||
+|8014698|80144A0|8013F80|8013E08|8013D50|StartLockingFadeFromWhite|[void StartLockingFadeFromWhite(int q4_speed, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L917)||
+|8014728|8014530|8014010|8013E78|8013DC0|StartMidLockingFadeFromBlack|[void StartMidLockingFadeFromBlack(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L968)||
+|80148E0|80146E8|80141C8|8014050|8013F98|func_fe6_080148E0|[void func_fe6_080148E0(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1073)||
+|8014CA8|8014AB0|8014634|80143EC|80143D8|PutStringCentered|[struct Text* PutStringCentered(u16* tm, int color, int width, char const* str)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1421)||
+|8014D60|8014B68|80146EC|80144A4|8014490|func_fe6_08014D60|[struct UnkProc_085C4E64* func_fe6_08014D60(u16 const* colors, int palOffset, int palSize, int arg_3, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1477)||
+|80151C4|8014FCC|8014B50|801490C|80148E4|CallDelayedArg|[void CallDelayedArg(void(*func)(int), int arg, int delay)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2143)||
+|8015218|8015020|8014BA4|801496C|8014944|StartPartialGameLock|[void StartPartialGameLock(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2214)||
+|801548C|8015294|8014E18|8014BE8|8014BC0|func_fe6_0801548C|[void func_fe6_0801548C(short song)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2331)||
+|801549C|80152A4|8014E28|8014BF8|8014BD0|func_fe6_0801549C|[void func_fe6_0801549C(short speed)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2336)||
+|8015A6C|80158B0|8015434|80154C8|80154A4|BmMain_ResumePlayerPhase|[void BmMain_ResumePlayerPhase(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L445)||
+|8016344|80162E0|8015E64|8015F9C|8015F90|Unused_08016344|[void Unused_08016344(int x, int y, int duration)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L939)||
+|80163E4|8016400|8015F84|80160DC|80160D0|StartMapSongBgm|[void StartMapSongBgm(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L973)||
 |0|80178B4|80174AC|8017558|80177B0|GetItemData|[inline const struct ItemData* GetItemData(int itemIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L82)||
 |8017BA8|801824C|8017E5C|80180DC|80183C8|UnitGive|[s8 UnitGive(struct Unit* actor, struct Unit* target) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L932)||
 |0|8018BAC|80187BC|8018A48|8018D34|GetUnitLastItem|[int GetUnitLastItem(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1367)||
 |801A5E0|801B660|801B280|801B754|801BA88|DebugPrintWithProc|[void DebugPrintWithProc(struct DebugPrintProc *proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L80)||
 |801A644|801B6C4|801B2E4|801B7B8|801BAEC|DebugPrint|[void DebugPrint(int x, int y, int width, const char *text)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L103)||
 |801A674|801B6F4|801B314|801B7E8|801BB1C|StartDebugMenu|[int StartDebugMenu(struct MenuProc *menuProc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L114)||
-|801A748|801B954|801B580|801B998|801BCCC||||
-|801AA74|801BC6C|801B8BC|801BCA8|801C018|DebugMenu_ErasedEffect|signed int DebugMenu_ErasedEffect()||
-|801B73C|801CDA8|801C9A4|801CC58|801CFF0|PlayerPhase_CancelAction|int PlayerPhase_CancelAction(unsigned __int16 **a1)||
+|801A748|801B954|801B580|801B998|801BCCC|func_fe6_0801A748|[int func_fe6_0801A748(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L177)||
+|801AA74|801BC6C|801B8BC|801BCA8|801C018|func_fe6_0801AA74|[int func_fe6_0801AA74(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L364)||
+|801B73C|801CDA8|801C9A4|801CC58|801CFF0|PlayerPhase_ContinueAction|[static void PlayerPhase_ContinueAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L573)||
 |0|801D374|801CF70|801D288|801D624|PlayerPhase_DisplayUnitMovement|int PlayerPhase_DisplayUnitMovement()||
-|801C264|801D8D4|801D4D0|801D934|801DCD0|Make6CKOIDOAMM|int Make6CKOIDOAMM(_DWORD *a1, int a2)||
-|801C59C|801DC34|801D830|801DC74|801E018||||
+|801C264|801D8D4|801D4D0|801D934|801DCD0|StartRescueTransferAnimParentless|[void StartRescueTransferAnimParentless(struct Unit* unit, int facing)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L591)||
+|801C59C|801DC34|801D830|801DC74|801E018|DiscardItem_0801C59C|[static int DiscardItem_0801C59C(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L788)||
 |0|801DC48|801D844|801DC88|801E02C||||
-|801C62C|801DD60|801D95C|801DDA0|801E144|MenuCommand_DrawExtraItem|int MenuCommand_DrawExtraItem(int a1, int a2)||
+|801C62C|801DD60|801D95C|801DDA0|801E144|func_fe6_0801C62C|[int func_fe6_0801C62C(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L814)||
 |0|801DDA4|801D9A0|801DDE4|801E188|SendToConvoyMenu_NormalEffect|signed int SendToConvoyMenu_NormalEffect(int a1, int a2)||
 |0|801DDF8|801D9F4|801DE38|801E1DC||||
 |0|801DE18|0|801DE58|801E1FC||||
 |0|801DE6C|0|801DEAC|801E250||||
-|801CD50|801E650|801E2CC|801E6AC|801EA54|EndMenuItemPanel|int EndMenuItemPanel()||
-|801CD60|801E660|801E2DC|801E6BC|801EA64||||
-|801CF10|801E804|801E480|801E868|801EC10|StartUnitSwapAnimation|int StartUnitSwapAnimation(signed int a1, int a2, __int16 a3, __int16 a4)||
+|801CD50|801E650|801E2CC|801E6AC|801EA54|EndEquipInfoWindow|[void EndEquipInfoWindow(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1054)||
+|801CD60|801E660|801E2DC|801E6BC|801EA64|func_fe6_0801CD60|[static void func_fe6_0801CD60(struct UnkProc2* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1059)||
+|801CF10|801E804|801E480|801E868|801EC10|func_fe6_0801CF10|[void func_fe6_0801CF10(ProcPtr parent, struct Unit* unit, int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1114)||
 |0|801F0B8|801ED34|801F288|801F630|MineFireEffectGfx_Setup|int MineFireEffectGfx_Setup(int a1)||
 |0|801F144|801EDC0|801F314|801F6BC|NewMineTrapEffectGfx|int NewMineTrapEffectGfx(signed int a1, int a2, int a3)||
 |0|801F208|801EE84|801F3D8|801F780||||
-|801D830|801F260|801EEDC|801F430|801F7D8||||
-|801D8B8|801F2E8|801EF64|801F4B8|801F860||||
-|801D95C|801F38C|801F008|801F55C|801F904||||
+|801D830|801F260|801EEDC|801F430|801F7D8|ArrowTrapSpriteAnim_Init|[static void ArrowTrapSpriteAnim_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1525)||
+|801D8B8|801F2E8|801EF64|801F4B8|801F860|func_fe6_0801D8B8|[static void func_fe6_0801D8B8(struct ShowMapChangeProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1549)||
+|801D95C|801F38C|801F008|801F55C|801F904|PikeTrapSpriteAnim_Init|[static void PikeTrapSpriteAnim_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1598)||
 |0|801F71C|0|801FA0C|0||||
-|801DAE4|801F72C|801F2C4|801FA1C|801FD90|BgMoverProc_Update|int BgMoverProc_Update()||
+|801DAE4|801F72C|801F2C4|801FA1C|801FD90|ChapterIntro_Bg3Scroll_Loop|[static void ChapterIntro_Bg3Scroll_Loop(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1681)||
 |0|801FFA8|801FB40|80207F0|8020AF8||||
-|801E92C|80207F0|8020388|8021120|8021428||||
-|801E974|8020838|80203D0|8021168|8021470||||
+|801E92C|80207F0|8020388|8021120|8021428|GameOverScreen_BeginIdle|[static void GameOverScreen_BeginIdle(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2273)||
+|801E974|8020838|80203D0|8021168|8021470|GameOverScreen_BeginFadeOut|[static void GameOverScreen_BeginFadeOut(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2289)||
 |0|8020A84|802061C|802137C|8021684|BeginLightRuneMapAnim|int BeginLightRuneMapAnim(signed int a1, __int16 a2, __int16 a3)||
 |0|802107C|8020C14|8021C28|0||||
 |0|80212A0|8020E34|8021E18|8021FB8||||
 |0|8021550|80210E4|80220B0|8022250||||
 |0|80215B8|802114C|8022118|80222B8||||
 |0|8021770|80212F8|80222CC|8022300|BeginMineMapAnim|int BeginMineMapAnim(signed int a1, int a2, int a3)||
-|801EAA4|8021A0C|8021594|80225D8|802260C|MapMenuCommand_UnitEffect|signed int MapMenuCommand_UnitEffect()||
+|801EAA4|8021A0C|8021594|80225D8|802260C|func_fe6_0801EAA4|[u8 func_fe6_0801EAA4(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L129)||
 |0|8021A4C|80215D4|80226C0|80226F8|MapMenuCommand_DangerZoneUnusedEffect|signed int MapMenuCommand_DangerZoneUnusedEffect()||
-|801EB38|8021ACC|8021654|8022710|8022748|GenericSelection_BackToUM|signed int GenericSelection_BackToUM()||
-|801EBF8|8021B8C|8021714|80227D0|8022808||||
-|801EC1C|8021BB0|8021738|80227F4|802282C|GenericSelection_BackToUM_CamWait|signed int GenericSelection_BackToUM_CamWait()||
-|801EC50|8021BE4|802176C|8022828|8022860||||
-|801ECCC|8021C60|80217E8|80228A4|80228DC|RescueEffect|signed int RescueEffect()||
-|801ED38|8021CCC|8021854|8022910|8022948|DropEffect|signed int DropEffect()||
-|801ED58|8021CEC|8021874|8022930|8022968|DropSelection_OnSelect|signed int DropSelection_OnSelect(int a1, char *a2)||
-|801EDC4|8021D58|80218E0|802299C|80229D4|TakeEffect|signed int TakeEffect()||
-|801EE2C|8021DC0|8021948|8022A04|8022A3C|GiveEffect|signed int GiveEffect()||
-|801EE4C|8021DE0|8021968|8022A24|8022A5C|MakeUnitRescueTransferGraphics|int MakeUnitRescueTransferGraphics(int a1, int a2)||
+|801EB38|8021ACC|8021654|8022710|8022748|func_fe6_0801EB38|[u8 func_fe6_0801EB38(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L178)||
+|801EBF8|8021B8C|8021714|80227D0|8022808|BackToUnitMenu_RestartMenu|[static void BackToUnitMenu_RestartMenu(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L211)||
+|801EC1C|8021BB0|8021738|80227F4|802282C|func_fe6_0801EC1C|[u8 func_fe6_0801EC1C(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L216)||
+|801EC50|8021BE4|802176C|8022828|8022860|func_fe6_0801EC50|[u8 func_fe6_0801EC50(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L232)||
+|801ECCC|8021C60|80217E8|80228A4|80228DC|func_fe6_0801ECCC|[u8 func_fe6_0801ECCC(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L267)||
+|801ED38|8021CCC|8021854|8022910|8022948|func_fe6_0801ED38|[u8 func_fe6_0801ED38(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L299)||
+|801ED58|8021CEC|8021874|8022930|8022968|func_fe6_0801ED58|[u8 func_fe6_0801ED58(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L307)||
+|801EDC4|8021D58|80218E0|802299C|80229D4|func_fe6_0801EDC4|[u8 func_fe6_0801EDC4(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L337)||
+|801EE2C|8021DC0|8021948|8022A04|8022A3C|func_fe6_0801EE2C|[u8 func_fe6_0801EE2C(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L364)||
+|801EE4C|8021DE0|8021968|8022A24|8022A5C|func_fe6_0801EE4C|[void func_fe6_0801EE4C(struct Unit* from, struct Unit* to)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L372)||
 |0|8021F10|8021A98|8022B54|8022B8C||||
-|801F228|802206C|8021BF4|8022CB8|8022CF0||||
-|801F2BC|8022100|8021C88|8022D4C|8022D84||||
-|801F35C|80221A0|8021D28|8022E00|8022E38||||
-|801F420|8022264|8021DEC|8022ED8|8022F10||||
-|801F484|80222DC|8021E64|8022F50|8022F88||||
-|801F4A8|8022300|8021E88|8022F74|8022FAC||||
+|801F228|802206C|8021BF4|8022CB8|8022CF0|func_fe6_0801F228|[u8 func_fe6_0801F228(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L550)||
+|801F2BC|8022100|8021C88|8022D4C|8022D84|func_fe6_0801F2BC|[u8 func_fe6_0801F2BC(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L575)||
+|801F35C|80221A0|8021D28|8022E00|8022E38|func_fe6_0801F35C|[static void func_fe6_0801F35C(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L617)||
+|801F420|8022264|8021DEC|8022ED8|8022F10|func_fe6_0801F420|[u8 func_fe6_0801F420(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L659)||
+|801F484|80222DC|8021E64|8022F50|8022F88|func_fe6_0801F484|[u8 func_fe6_0801F484(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L686)||
+|801F4A8|8022300|8021E88|8022F74|8022FAC|func_fe6_0801F4A8|[u8 func_fe6_0801F4A8(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L696)||
 |0|8022374|8021EFC|8022FE8|8023020||||
-|801F7D0|8022754|80222DC|80233EC|8023428|ItemSelectMenu_Effect|signed int ItemSelectMenu_Effect(int a1, int a2)||
-|801F854|80227D8|8022360|8023470|80234AC||||
-|801F898|802281C|80223A4|80234B4|80234F0||||
-|801FBA8|8022B68|80226F0|80237FC|8023838||||
-|801FD04|8022CD0|8022858|8023964|80239A0||||
-|801FD30|8022CFC|8022884|8023990|80239CC|FillBallistaRange|int FillBallistaRange()||
-|801FE94|8022E68|80229F0|8023B00|8023B3C||||
-|801FF20|8022EF4|8022A7C|8023B8C|8023BC8|StaffItemSelect_Effect|signed int StaffItemSelect_Effect(int a1, int a2)||
-|801FF6C|8022F40|8022AC8|8023BD8|8023C14|StaffItemSelect_OnHover|int StaffItemSelect_OnHover(int a1, int a2)||
-|802013C|8023110|8022C98|8023DB0|8023DF4||||
-|80201A0|8023174|8022CFC|8023E14|8023E58||||
-|8020268|802322C|8022DB4|8023F74|8023FB8||||
-|80204E0|80234AC|8023020|80241F4|802423C||||
-|8020504|80234D0|8023044|8024218|8024260||||
-|80206D0|802369C|8023210|8024590|80245E0||||
+|801F7D0|8022754|80222DC|80233EC|8023428|func_fe6_0801F7D0|[u8 func_fe6_0801F7D0(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L864)||
+|801F854|80227D8|8022360|8023470|80234AC|func_fe6_0801F854|[void func_fe6_0801F854(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L890)||
+|801F898|802281C|80223A4|80234B4|80234F0|func_fe6_0801F898|[void func_fe6_0801F898(struct MenuProc* menu)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L898)||
+|801FBA8|8022B68|80226F0|80237FC|8023838|func_fe6_0801FBA8|[u8 func_fe6_0801FBA8(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1037)||
+|801FD04|8022CD0|8022858|8023964|80239A0|func_fe6_0801FD04|[u8 func_fe6_0801FD04(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1096)||
+|801FD30|8022CFC|8022884|8023990|80239CC|func_fe6_0801FD30|[int func_fe6_0801FD30(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1108)||
+|801FE94|8022E68|80229F0|8023B00|8023B3C|func_fe6_0801FE94|[int func_fe6_0801FE94(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1168)||
+|801FF20|8022EF4|8022A7C|8023B8C|8023BC8|func_fe6_0801FF20|[u8 func_fe6_0801FF20(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1200)||
+|801FF6C|8022F40|8022AC8|8023BD8|8023C14|func_fe6_0801FF6C|[int func_fe6_0801FF6C(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1217)||
+|802013C|8023110|8022C98|8023DB0|8023DF4|func_fe6_0802013C|[u8 func_fe6_0802013C(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1335)||
+|80201A0|8023174|8022CFC|8023E14|8023E58|func_fe6_080201A0|[u8 func_fe6_080201A0(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1356)||
+|8020268|802322C|8022DB4|8023F74|8023FB8|func_fe6_08020268|[u8 func_fe6_08020268(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1394)||
+|80204E0|80234AC|8023020|80241F4|802423C|func_fe6_080204E0|[int func_fe6_080204E0(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1517)||
+|8020504|80234D0|8023044|8024218|8024260|func_fe6_08020504|[int func_fe6_08020504(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1523)||
+|80206D0|802369C|8023210|8024590|80245E0|func_fe6_080206D0|[int func_fe6_080206D0(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1592)||
 |0|80236D4|8023248|80245C8|8024618||||
-|80207B4|8023758|80232CC|802464C|802469C|RescueSelection_OnChange|int RescueSelection_OnChange(int a1, char *a2)||
-|8020818|80237BC|8023330|80246B0|8024700||||
-|802085C|8023800|8023374|80246F4|8024744||||
+|80207B4|8023758|80232CC|802464C|802469C|func_fe6_080207B4|[int func_fe6_080207B4(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1639)||
+|8020818|80237BC|8023330|80246B0|8024700|func_fe6_08020818|[int func_fe6_08020818(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1660)||
+|802085C|8023800|8023374|80246F4|8024744|func_fe6_0802085C|[int func_fe6_0802085C(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1672)||
 |0|8023844|80233B8|8024738|8024788||||
 |0|8023980|80234F4|80248D0|8024920|RideCommandEffect|signed int RideCommandEffect()||
 |0|80239DC|8023550|8024930|8024980||||
@@ -1790,9 +1790,9 @@
 |802402C|80282A4|8027E18|8029C74|8029CE8|sub_8029CE8|[int sub_8029CE8(ProcPtr proc, struct SelectTarget* target)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1058)||
 |802406C|80282E4|8027E58|8029CB4|8029D28|sub_8029D28|[void sub_8029D28(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1067)||
 |0|8028328|8027E9C|8029CF8|8029D6C|sub_8029D6C|[void sub_8029D6C(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1081)||
-|8024224|802880C|8028380|802A280|802A2F4|BATTLE_SyncMapFromBattle|int BATTLE_SyncMapFromBattle()||
-|8025E98|802AA64|802A5B4|802CB54|802CC1C|UpdateActiveUnitFromBattle|int UpdateActiveUnitFromBattle()||
-|8025EB4|802AA80|802A5D0|802CB70|802CC38|FinishUp10ExpBattle|int FinishUp10ExpBattle(signed int a1)||
+|8024224|802880C|8028380|802A280|802A2F4|BattleApplyGameStateUpdates|[void BattleApplyGameStateUpdates(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L140)||
+|8025E98|802AA64|802A5B4|802CB54|802CC1C|DummyBattleAnimLock_UpdateInstigator|[static void DummyBattleAnimLock_UpdateInstigator(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1674)||
+|8025EB4|802AA80|802A5D0|802CB70|802CC38|BattleApplyMiscAction|[void BattleApplyMiscAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1679)||
 |0|802B544|802B094|802D6CC|802D794|TradeMenu_InitItemDisplay|[void TradeMenu_InitItemDisplay(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L477)||
 |802686C|802B908|802B458|802DA80|802DB48|TradeMenu_ClearDisplay|[void TradeMenu_ClearDisplay(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L632)||
 |0|802BC34|802B774|802DD40|802DE08|TradeMenu_DoubleTutorialHandCursor_Update|[void TradeMenu_DoubleTutorialHandCursor_Update(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L759)||
@@ -1833,40 +1833,40 @@
 |0|8030A5C|8030570|8033424|8033514|sub_8033514|[void sub_8033514(int r4) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L524)||
 |802B69C|80312E8|8030DFC|8033CE0|8033DD8|sub_8033DD8|[void sub_8033DD8(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L894)||
 |80987B8|803157C|8031090|8033F80|8034078|sub_8034078|[void sub_8034078(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1007)||
-|802B99C|80318EC|8031404|80343B0|80344A8|GetUnitCommandUseFlags|int GetUnitCommandUseFlags()||
-|802B9DC|803192C|8031444|80343F0|80344E8||||
-|802BA08|8031958|8031470|803441C|8034514||||
-|802BC80|8031BF8|803168C|80346B0|80347A8|NewUnitInfoWindow|int NewUnitInfoWindow(signed int a1)||
-|802BF14|8031E8C|8031938|80349E4|8034ADC||||
-|802C3B4|803232C|8031DFC|8034EA4|8034F9C||||
-|802C3C8|8032340|8031E10|8034EB8|8034FB0||||
-|802C514|803248C|8031F5C|8034F04|8034FFC||||
-|802C434|80323AC|8031E7C|8034F24|803501C||||
-|802C4BC|8032434|8031F04|8034FAC|80350A4||||
-|802C414|803238C|8031E5C|8035004|80350FC||||
-|802C534|80324AC|8031F7C|8035024|803511C||||
-|802C5B4|803252C|8031FFC|80350A4|803519C||||
-|802C61C|8032594|8032064|803510C|8035204|SetupUnitRescueWindow|int SetupUnitRescueWindow(int a1)||
-|802C6D4|803264C|803211C|80351C4|80352BC||||
-|802C7D0|8032748|8032218|80352C0|80353B8||||
-|802CA24|80329A0|8032470|803551C|8035614||||
-|802CA84|8032A00|80324D0|8035580|8035678||||
-|802CAA4|8032A20|80324F0|80355A0|8035698||||
+|802B99C|80318EC|8031404|80343B0|80344A8|func_fe6_0802B99C|[int func_fe6_0802B99C(void)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L91)||
+|802B9DC|803192C|8031444|80343F0|80344E8|func_fe6_0802B9DC|[int func_fe6_0802B9DC(void)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L106)||
+|802BA08|8031958|8031470|803441C|8034514|func_fe6_0802BA08|[int func_fe6_0802BA08(void)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L112)||
+|802BC80|8031BF8|803168C|80346B0|80347A8|StartUnitPanel|[static struct UnitPanelProc* StartUnitPanel(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L72)||
+|802BF14|8031E8C|8031938|80349E4|8034ADC|PutUnitAidIconForTextAt|[static void PutUnitAidIconForTextAt(struct Unit* unit, int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L176)||
+|802C3B4|803232C|8031DFC|8034EA4|8034F9C|StartUnitHpPanel|[void StartUnitHpPanel(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L344)||
+|802C3C8|8032340|8031E10|8034EB8|8034FB0|RefreshUnitHpPanel|[void RefreshUnitHpPanel(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L351)||
+|802C514|803248C|8031F5C|8034F04|8034FFC|StartUnitStaffOffensePanel|[void StartUnitStaffOffensePanel(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L409)||
+|802C434|80323AC|8031E7C|8034F24|803501C|RefreshUnitHpStatusPanel|[void RefreshUnitHpStatusPanel(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L372)||
+|802C4BC|8032434|8031F04|8034FAC|80350A4|RefreshUnitResChangePanel|[void RefreshUnitResChangePanel(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L395)||
+|802C414|803238C|8031E5C|8035004|80350FC|StartUnitHpStatusPanel|[void StartUnitHpStatusPanel(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L364)||
+|802C534|80324AC|8031F7C|8035024|803511C|RefreshUnitStaffOffensePanel|[void RefreshUnitStaffOffensePanel(struct Unit* unit, int hit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L417)||
+|802C5B4|803252C|8031FFC|80350A4|803519C|StartUnitRescuePanelsCore|[static void StartUnitRescuePanelsCore(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L434)||
+|802C61C|8032594|8032064|803510C|8035204|RefreshUnitRescuePanels|[void RefreshUnitRescuePanels(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L454)||
+|802C6D4|803264C|803211C|80351C4|80352BC|RefreshUnitTakePanels|[void RefreshUnitTakePanels(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L478)||
+|802C7D0|8032748|8032218|80352C0|80353B8|RefreshUnitGivePanels|[void RefreshUnitGivePanels(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L517)||
+|802CA24|80329A0|8032470|803551C|8035614|SubtitleHelpDarkener_Init|[static void SubtitleHelpDarkener_Init(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L127)||
+|802CA84|8032A00|80324D0|8035580|8035678|SubtitleHelp_Init|[static void SubtitleHelp_Init(struct SubtitleHelpProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L161)||
+|802CAA4|8032A20|80324F0|80355A0|8035698|SubtitleHelp_OnEnd|[static void SubtitleHelp_OnEnd(struct SubtitleHelpProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L169)||
 |0|8032CA0|8032770|803581C|0||||
-|802CF7C|8033134|8032C04|8035D44|8035C44||||
-|802D210|8033400|8032ED0|8035FD8|8035ED8||||
-|802D34C|8033518|8032FE8|80360F0|8035FF0||||
+|802CF7C|8033134|8032C04|8035D44|8035C44|StatusHealEffect_BlendedSprite_Finish|[static void StatusHealEffect_BlendedSprite_Finish(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L236)||
+|802D210|8033400|8032ED0|8035FD8|8035ED8|MassEffectDisplay_Watch|[static void MassEffectDisplay_Watch(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L421)||
+|802D34C|8033518|8032FE8|80360F0|8035FF0|PoisonDamageDisplay_Display|[static void PoisonDamageDisplay_Display(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L513)||
 |0|8034A50|8034578|8037864|80377CC|ExecTrapForActionTarget|int ExecTrapForActionTarget(signed int a1)||
 |0|8034AB4|80345DC|80378C8|8037830|ExecTrap_QuietMaybe|int ExecTrap_QuietMaybe(signed int a1, int a2)||
 |0|8034C18|8034740|8037A9C|8037A04|AddBallista|TrapStruct *AddBallista(char a1, char a2, int a3)||
 |802E59C|8034E94|80349BC|8039800|8039788|CpOrderMain|[void CpOrderMain(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L48)||
-|802EFF4|80358F8|8035420|803A27C|803A204|CpPerform_StaffWait|signed int CpPerform_StaffWait(signed int a1)||
-|802F02C|8035930|8035458|803A2B4|803A23C|CpPerform_ChestWait|signed int CpPerform_ChestWait(signed int a1)||
+|802EFF4|80358F8|8035420|803A27C|803A204|AiStaffAction|[bool AiStaffAction(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L276)||
+|802F02C|8035930|8035458|803A2B4|803A23C|AiUseItemAction|[bool AiUseItemAction(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L290)||
 |0|80359D4|80354FC|803A358|803A2E0|CpPerform_ExitBallistaWait|signed int CpPerform_ExitBallistaWait()||
-|8030F18|8037C9C|80377E8|803C67C|803C6EC|AiScriptCmd_01_FunctionCall|int AiScriptCmd_01_FunctionCall(_BYTE *a1)||
-|80310D0|8037E54|80379A0|803C83C|803C8AC|IsUnitEnemyOrInTheAiInstList|bool IsUnitEnemyOrInTheAiInstList(int a1)||
-|8031750|80384D0|803801C|803CEB8|803CF28|AiScriptCmd_16|int AiScriptCmd_16(_BYTE *a1)||
-|80318F0|80389FC|8038548|803D3D0|803D440||||
+|8030F18|8037C9C|80377E8|803C67C|803C6EC|AiCmd_CallFunc|[void AiCmd_CallFunc(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L193)||
+|80310D0|8037E54|80379A0|803C83C|803C8AC|AiIsUnitEnemyOrInScrList|[bool AiIsUnitEnemyOrInScrList(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L279)||
+|8031750|80384D0|803801C|803CEB8|803CF28|AiCmd_MoveRandom|[void AiCmd_MoveRandom(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L599)||
+|80318F0|80389FC|8038548|803D3D0|803D440|func_fe6_080318F0|[bool func_fe6_080318F0(u8 const* arg)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L684)||
 |8033868|803AA40|803A58C|803F47C|803F4EC||||
 |0|803AEF4|803AA40|803F928|803F9A8||||
 |0|803C3B4|803BF00|8040E48|8040EC8||||
@@ -2250,7 +2250,7 @@
 |8057130|8063390|8062B5C|806F1E8|806D010||||
 |8056FE4|8063244|8062BA8|806F2E8|806CFC4||||
 |8057030|8063290|8062A5C|806F334|806CEC4||||
-|801EA1C|80208E0|8020478|8081908|807F5C8||||
+|801EA1C|80208E0|8020478|8081908|807F5C8|StartGameOverScreen|[void StartGameOverScreen(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2320)||
 |806B3C0|8079738|8078F68|808556C|8083234||||
 |0|807A3DC|0|8086CA4|80849D8||||
 |0|807A414|0|8086CDC|8084A10||||
@@ -2273,11 +2273,11 @@
 |8006F30|8006068|80061D8|8004A90|8004B88|DrawUiNumber|int DrawUiNumber(_WORD *a1, int a2, int a3)||
 |8006FE0|80060C4|8006234|8004AEC|8004BE4|DrawUiSmallNumber|int DrawUiSmallNumber(_WORD *a1, int a2, int a3)||
 |80071F8|800623C|80063AC|8004C64|8004D5C||||
-|800DB24|800650C|800667C|8004F3C|8005034|DisplayAIS|int DisplayAIS(int a1)||
+|800DB24|800650C|800667C|8004F3C|8005034|Event_OnEnd|[static void Event_OnEnd(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L873)||
 |0|8006884|80069F4|80052F0|80053E8|PutSprite|[void PutSprite(int layer, int x, int y, const u16* object, int oam2)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ctc.c#L159)||
 |0|80068C4|8006A34|8005330|8005428|PutSpriteExt|[void PutSpriteExt(int layer, int xOam1, int yOam0, const u16* object, int oam2)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ctc.c#L170)||
 |0|80069B0|8006B20|800541C|8005514|GetPortraitData|int *GetPortraitData(int a1)||
-|8008580|8006BE0|8006D50|8005660|8005758|EndFaceById|int EndFaceById(int a1)||
+|8008580|8006BE0|8006D50|8005660|8005758|EndFaceById|[void EndFaceById(int slot)](https://github.com/StanHash/fe6/blob/0b25087/src/face.c#L425)||
 |0|8006C14|8006D84|8005694|800578C|SetFaceDisplayBitsById|int SetFaceDisplayBitsById(int a1, int a2)||
 |0|8006C30|8006DA0|80056B0|80057A8|GetFaceDisplayBitsById|int GetFaceDisplayBitsById(int a1)||
 |0|80078F4|8007A64|800635C|8006458|SetFaceBlinkControlById|int SetFaceBlinkControlById(int a1, int a2)||
@@ -2286,8 +2286,8 @@
 |0|8007F24|8008094|80069AC|8006AA8|SetDialogueFlag|int SetDialogueFlag(int a1)||
 |0|8008CB8|8008E28|800773C|8007838|Dialogue_SetActiveFacePosition|int Dialogue_SetActiveFacePosition(int result)||
 |0|80095D4|8009744|8008094|8008198|GetTextPauseDurationFromControlCode|int GetTextPauseDurationFromControlCode(int a1)||
-|800C274|8009E18|8009F88|80088B4|80089B8||||
-|800C28C|8009E24|8009F94|80088C0|80089C4||||
+|800C274|8009E18|8009F88|80088B4|80089B8|SetTalkFaceMouthMove|[static void SetTalkFaceMouthMove(int talk_face)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1710)||
+|800C28C|8009E24|8009F94|80088C0|80089C4|SetTalkFaceNoMouthMove|[static void SetTalkFaceNoMouthMove(int talk_face)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1715)||
 |0|8009E78|8009FE8|8008914|8008A18||||
 |0|8013200|8012B48|8009EB0|8009F50|SetNextGameActionId|int SetNextGameActionId(char a1)||
 |0|800ACE8|800AD40|8011560|8011474|Popup_Create|int Popup_Create(int a1, int a2, int a3, int a4)||
@@ -2296,10 +2296,10 @@
 |0|8013B78|801363C|8013538|8013480|SetSomethingInPaletteBB_5A|int SetSomethingInPaletteBB_5A(__int16 a1)||
 |0|8013B8C|8013650|801354C|8013494|SetSomethingInPaletteBB_8A|int SetSomethingInPaletteBB_8A(__int16 a1)||
 |0|8013FE8|8013AC8|80139A8|80138F0||||
-|8015748|8015550|80150D4|8015154|801512C||||
-|801597C|8015784|8015308|8015384|8015360|LockGameLogic|int LockGameLogic()||
-|801598C|8015794|8015318|8015394|8015370|UnlockGameLogic|int UnlockGameLogic()||
-|801600C|8015F0C|8015A90|8015BD8|8015BBC|SetCursorMapPosition|int SetCursorMapPosition(int a1, __int16 a2)||
+|8015748|8015550|80150D4|8015154|801512C|MatCopy|[void MatCopy(int const* src, int* dst)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2439)||
+|801597C|8015784|8015308|8015384|8015360|LockGame|[void LockGame(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L367)||
+|801598C|8015794|8015318|8015394|8015370|UnlockGame|[void UnlockGame(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L372)||
+|801600C|8015F0C|8015A90|8015BD8|8015BBC|SetMapCursorPosition|[void SetMapCursorPosition(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L773)||
 |8017128|8017608|80171B4|8017294|80174EC|GetItemIndex|[inline int GetItemIndex(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L86)||
 |0|8017634|801722C|80172C0|8017518|GetItemDescId|[inline int GetItemDescId(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L99)||
 |0|801764C|8017244|80172D8|8017530|GetItemUseDescId|[inline int GetItemUseDescId(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L103)||
@@ -2324,26 +2324,26 @@
 |0|8027078|8026BF0|8028720|802878C|HasUnitGainedSupportLevel|[static s8 HasUnitGainedSupportLevel(struct Unit* unit, int num)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L377)||
 |0|8028868|80283DC|802A2DC|802A350||||
 |0|802887C|80283F0|802A2F0|802A364|SimulateBattleBallista|int SimulateBattleBallista(int a1)||
-|8024884|8028F74|8028AF8|802AA10|802AAA4|LoadRawDefense|_WORD *LoadRawDefense(int a1)||
-|80249C4|80291EC|8028D3C|802ABC4|802AC54|BattleLoadDodge|_WORD *BattleLoadDodge(int a1)||
-|8024B2C|80294D8|8029028|802AEEC|802AF7C|GetBattleUnitPointers|BattleUnitStruct *GetBattleUnitPointers(_DWORD *a1, _DWORD *a2)||
-|8024C18|80295C4|8029114|802AFF0|802B080|GetBattleHitCount|signed int GetBattleHitCount()||
+|8024884|8028F74|8028AF8|802AA10|802AAA4|ComputeBattleUnitBaseDefense|[void ComputeBattleUnitBaseDefense(struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L459)||
+|80249C4|80291EC|8028D3C|802ABC4|802AC54|ComputeBattleUnitDodgeRate|[void ComputeBattleUnitDodgeRate(struct BattleUnit* attacker)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L510)||
+|8024B2C|80294D8|8029028|802AEEC|802AF7C|BattleGetBattleUnitOrder|[void BattleGetBattleUnitOrder(struct BattleUnit** attacker, struct BattleUnit** defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L608)||
+|8024C18|80295C4|8029114|802AFF0|802B080|GetBattleUnitHitCount|[int GetBattleUnitHitCount(struct BattleUnit* attacker)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L661)||
 |0|80296E4|8029234|802B134|802B1C4|UpdateBattleStats|int UpdateBattleStats(int a1, int a2)||
-|8025780|802A21C|8029D6C|802C27C|802C334|NullSomeStuff|int NullSomeStuff()||
-|8025BD8|802A788|802A2D8|802C880|802C948|FillSnagBattleStats|int FillSnagBattleStats()||
+|8025780|802A21C|8029D6C|802C27C|802C334|func_fe6_08025780|[void func_fe6_08025780(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1224)||
+|8025BD8|802A788|802A2D8|802C880|802C948|ComputeBattleObstacleStats|[void ComputeBattleObstacleStats(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1491)||
 |802749C|802C7D8|802C318|802EAC4|802EB8C|GetTrap|[inline struct Trap* GetTrap(int id)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L21)||
 |8028AD0|802DFB8|802DAF8|803081C|80308CC|WfxFlames_Init|[void WfxFlames_Init(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L661)||
 |8028BE4|802E0CC|802DC0C|8030930|80309E0|WfxFlames_VSync|[void WfxFlames_VSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L732)||
-|802979C|802ED9C|802E8D0|8031610|80316C4|InitUnitStack|signed int InitUnitStack(int a1)||
+|802979C|802ED9C|802E8D0|8031610|80316C4|UnitRearrangeInit|[void UnitRearrangeInit(struct Unit* buf)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-rearrange.c#L10)||
 |0|802F6A0|802F1D4|8031F14|8031FC8||||
 |802A860|802FF80|802FAB8|8032924|80329D8|SetLastCoords|[void SetLastCoords(u16 x, u16 y) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L12)||
 |802B0B4|80307D4|803030C|8033158|8033248|DrawUpdatedPathArrow|[void DrawUpdatedPathArrow(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L299)||
 |802EA10|8035308|8034E30|8039C78|8039C00|AiClearDecision|[void AiClearDecision(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_decide.c#L252)||
 |802EA30|8035328|8034E50|8039C98|8039C20|AiSetDecision|[void AiSetDecision(u8 xMove, u8 yMove, u8 actionId, u8 targetId, u8 itemSlot, u8 xTarget, u8 yTarget)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_decide.c#L269)||
 |802EA74|803536C|8034E94|8039CDC|8039C64|AiUpdateDecision|[void AiUpdateDecision(u8 actionId, u8 targetId, u8 itemSlot, u8 xTarget, u8 yTarget)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_decide.c#L285)||
-|8030D3C|8037AC0|803760C|803C4A0|803C510|AiExecFallbackAi1|int AiExecFallbackAi1()||
-|8030DCC|8037B50|803769C|803C530|803C5A0|AiExecFallbackAi2|int AiExecFallbackAi2()||
-|803260C|80397B8|8039304|803E1CC|803E23C|AiGetPositionTerrainSafetyWeight|int AiGetPositionTerrainSafetyWeight(int a1, int a2)||
+|8030D3C|8037AC0|803760C|803C4A0|803C510|AiExecFallbackScriptA|[bool AiExecFallbackScriptA(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L70)||
+|8030DCC|8037B50|803769C|803C530|803C5A0|AiExecFallbackScriptB|[bool AiExecFallbackScriptB(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L95)||
+|803260C|80397B8|8039304|803E1CC|803E23C|AiGetTerrainCombatPositionScoreComponent|[int AiGetTerrainCombatPositionScoreComponent(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L717)||
 |80351E4|803C700|803C24C|8041650|80416D0||||
 |8036494|803D9B0|803D500|8042904|8042980||||
 |8036608|803DB24|803D674|8042A78|8042AF4||||
@@ -2437,19 +2437,19 @@
 |809C860|80BF0D8|80BE594|80D4EF4|80D01FC|m4aSongNumStart|[void m4aSongNumStart(u16 n)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/m4a.c#L92)||
 |809C9F8|80BF270|80BE72C|80D508C|80D0394|m4aMPlayFadeOut|[void m4aMPlayFadeOut(struct MusicPlayerInfo *mplayInfo, u16 speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/m4a.c#L181)||
 |809DD04|80C0584|80BFA40|80D63AC|80D16B0|SoftReset|void SoftReset(void *a1)||
-|800448C|800485C|8004980|80030D8|800318C|ProcInst04_SetOnEnd|signed int ProcInst04_SetOnEnd(int a1)||
+|800448C|800485C|8004980|80030D8|800318C|ProcCmd_SetEndFunc|[static bool ProcCmd_SetEndFunc(struct ProcDummy* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L508)||
 |0|800493C|8004A60|80031B8|800326C|ProcInst0D_GotoPointer|signed int ProcInst0D_GotoPointer(int a1)||
-|8008CC0|8007388|80074F8|8005DD0|8005ECC||||
+|8008CC0|8007388|80074F8|8005DD0|8005ECC|EndFacePtr|[static void EndFacePtr(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/face.c#L657)||
 |0|8009E84|8009FF4|8008920|8008A24||||
 |0|800F324|800F418|800C118|800BE2C|Event82_EndWM|int Event82_EndWM()||
-|8014AB8|80148C0|80143A0|8014228|8014170||||
-|8014ACC|80148D4|80143B4|801423C|8014184||||
-|8015454|801525C|8014DE0|8014BB0|8014B88||||
-|801AEBC|801C164|801BDC0|801C130|801C4B4|StartupDebugMenu_ReleaseEntryEffect|signed int StartupDebugMenu_ReleaseEntryEffect()||
-|801AEC8|801C170|801BDCC|801C13C|801C4C0|DebugMenu_GNightEffect|signed int DebugMenu_GNightEffect()||
+|8014AB8|80148C0|80143A0|8014228|8014170|func_fe6_08014AB8|[void func_fe6_08014AB8(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1294)||
+|8014ACC|80148D4|80143B4|801423C|8014184|func_fe6_08014ACC|[void func_fe6_08014ACC(int a, int b)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1300)||
+|8015454|801525C|8014DE0|8014BB0|8014B88|PlaySeDelayed|[void PlaySeDelayed(int song, int delay)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2321)||
+|801AEBC|801C164|801BDC0|801C130|801C4B4|func_fe6_0801AEBC|[int func_fe6_0801AEBC(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L600)||
+|801AEC8|801C170|801BDCC|801C13C|801C4C0|func_fe6_0801AEC8|[int func_fe6_0801AEC8(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L607)||
 |0|801DC24|801D820|801DC64|801E008||||
-|801EAD4|8021A3C|80215C4|802261C|8022650|MapMenuCommnd_StatusEffect|signed int MapMenuCommnd_StatusEffect()||
-|801F378|80221BC|8021D44|8022E1C|8022E54||||
+|801EAD4|8021A3C|80215C4|802261C|8022650|func_fe6_0801EAD4|[u8 func_fe6_0801EAD4(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L143)||
+|801F378|80221BC|8021D44|8022E1C|8022E54|func_fe6_0801F378|[static void func_fe6_0801F378(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L622)||
 |8023D70|8027FEC|8027B60|80299B8|8029A2C|RepairSelectOnInit|[void RepairSelectOnInit(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L919)||
 |80265E8|802B5D0|802B120|802D758|802D820|TradeMenu_OnInitUnselected|[void TradeMenu_OnInitUnselected(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L500)||
 |8027264|802C680|802C1C0|802E954|802EA1C|sub_802EA1C|[void sub_802EA1C(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L635)||
@@ -2459,7 +2459,7 @@
 |0|802FC04|802F738|80325A4|8032658|sub_8032658|[void sub_8032658(struct DeathDropAnimProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L496)||
 |802A840|802FF60|802FA98|80328EC|80329A0|BATTLE_HandleArenaDeathsMaybe|[void BATTLE_HandleArenaDeathsMaybe(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L706)||
 |803D6E0|8030870|80303A8|803325C|803334C|sub_803334C|[void sub_803334C() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L410)||
-|802DE50|8034100|8033C28|8036F1C|8036E1C|BKSEL_Destructor|int BKSEL_Destructor()||
+|802DE50|8034100|8033C28|8036F1C|8036E1C|BattlePreview_OnEnd|[static void BattlePreview_OnEnd(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L364)||
 |0|80347BC|80342E4|80375D0|8037510|FireTrap_StartGfx|int FireTrap_StartGfx(signed int a1)||
 |0|80347D4|80342FC|80375E8|8037528|MineTrap_StartGfx|int MineTrap_StartGfx(signed int a1)||
 |0|80359AC|80354D4|803A330|803A2B8|CpPerform_RideBallistaWait|signed int CpPerform_RideBallistaWait()||
@@ -2486,10 +2486,10 @@
 |3002EB8|3002F98|3003078|3003828|3003888||||
 |8000304|8000304|8000304|8000304|8000304|ARM_ClearOAMBuffer(ARM)|_DWORD *ARM_ClearOAMBuffer(_DWORD *result, unsigned int a2)||
 |8000360|8000360|8000360|8000360|8000360|ARM_ComputeChecksum32(ARM)|int ARM_ComputeChecksum32(unsigned __int16 *a1, int a2)||
-|800D2E0|800AA64|800AABC|80112E0|80111F4||||
-|800D348|800AAA8|800AB00|8011324|8011238||||
-|801AD6C|801BFE8|801BCAC|801BFB8|801C328||||
-|801AD6C|801C05C|801BC38|801C02C|801C39C||||
+|800D2E0|800AA64|800AABC|80112E0|80111F4|Popup_FadeBgmOut|[static void Popup_FadeBgmOut(struct PopupProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L572)||
+|800D348|800AAA8|800AB00|8011324|8011238|Popup_FadeBgmIn|[static void Popup_FadeBgmIn(struct PopupProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L584)||
+|801AD6C|801BFE8|801BCAC|801BFB8|801C328|func_fe6_0801AD6C|[bool func_fe6_0801AD6C(void)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L528)||
+|801AD6C|801C05C|801BC38|801C02C|801C39C|func_fe6_0801AD6C|[bool func_fe6_0801AD6C(void)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L528)||
 |8020D44|80240AC|8023C20|80256A0|80256F0|AddUnitToTargetListIfAllied|int AddUnitToTargetListIfAllied(char *a1)||
 |80217C0|8024BA0|8024714|8026044|80260A0|TryAddUnitToRescueStaffTargetList|int TryAddUnitToRescueStaffTargetList(char *a1)||
 |802197C|8024D5C|80248D0|8026200|802625C|TryAddUnitToWarpTargetList|int TryAddUnitToWarpTargetList(char *a1)||
@@ -2525,7 +2525,7 @@
 |0|807B750|807ACDC|8087AE8|808581C||||
 |8070640|80825C4|8081864|808AFC8|8088D3C|HelpBox_OnLoop|[void HelpBox_OnLoop(struct HelpBoxProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2090)||
 |807155C|80837E0|8082DE0|808C470|808A160||||
-|8009934|8008354|80084C4|8098994|808A36C||||
+|8009934|8008354|80084C4|8098994|808A36C|IsTalkLocked|[i8 IsTalkLocked(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L655)||
 |0|80907AC|808FE6C|80992B4|8096FD0||||
 |0|80886FC|8087D74|809965C|808F2A0||||
 |0|8090AC0|8090444|8099678|8097394||||
@@ -2534,7 +2534,7 @@
 |0|8098E8C|80985A0|80A2040|809D244||||
 |0|80AA1A0|80A928C|80B1D2C|80AD28C||||
 |0|80907E4|808FEA4|80B1FA0|80AD500||||
-|800C2A4|8009E30|8009FA0|80BEEE8|80BA054|DoesTCSWrapperExist|bool DoesTCSWrapperExist()||
+|800C2A4|8009E30|8009FA0|80BEEE8|80BA054|IsTalkActive|[i8 IsTalkActive(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1720)||
 |0|80B6664|80B5844|80BF11C|80BA198||||
 |8092028|8012BA8|800A50C|80C4918|80BFB34||||
 |0|8020F20|8012514|80C4AF4|80BFD10|DoesBMXFADEExist|bool DoesBMXFADEExist()||
@@ -2547,11 +2547,11 @@
 |0|80AB134|80AA26C|80C74A8|80C26F0|DoesMoveUnitExist|bool DoesMoveUnitExist()||
 |0|80AB14C|80AA284|80C7BF0|80C2E38||||
 |8091A4C|80B6464|80B5644|80C8E10|80C4058||||
-|801FDB8|8022D84|802290C|8023A18|8023A54|StaffCommandUsability|signed int StaffCommandUsability()||
+|801FDB8|8022D84|802290C|8023A18|8023A54|func_fe6_0801FDB8|[int func_fe6_0801FDB8(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1126)||
 |0|8013374|8012CBC|800A004|800A2A4|sub_800A2A4|[char *sub_800A2A4(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/messdecode.c#L96)||
 |0|80359FC|8035524|803A440|803A3C8|CpPerform_MoveCameraOntoTarget|int CpPerform_MoveCameraOntoTarget(signed int a1)||
-|8004264|8004748|800486C|8002FC8|8003078|EndEachProc|int EndEachProc(int a1)||
-|800D824|8004764|8004888|8002FE4|8003094|BreakEachProcLoop|int BreakEachProcLoop(int a1)||
+|8004264|8004748|800486C|8002FC8|8003078|BreakProc|[static void BreakProc(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L410)||
+|800D824|8004764|8004888|8002FE4|8003094|EventDisableSkip|[static void EventDisableSkip(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L735)||
 |0|8004BD0|8004CF4|80034D0|8003584|ResetIconGraphics|[void ResetIconGraphics() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/icon.c#L18)||
 |8004AA4|8004C08|8004D2C|8003508|80035BC|LoadIconPalettes|[void LoadIconPalettes(u32 Dest)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/icon.c#L24)||
 |8004AC8|8004C20|8004D44|8003520|80035D4|LoadIconPalette|[void LoadIconPalette(u32 Index, u32 Dest)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/icon.c#L29)||
@@ -2566,20 +2566,20 @@
 |8006484|8005A00|8005B3C|80043DC|80044A4|Text_InsertNumberOr2Dashes|int Text_InsertNumberOr2Dashes(int a1, char a2, char a3, int a4)||
 |0|8005ACC|8005C38|80044A4|800459C|Font_InitForObj|int Font_InitForObj(int a1, int a2, char a3)||
 |0|8005B8C|8005CF8|80045BC|80046B4|Text_Fill2DLine|int Text_Fill2DLine(int a1, int a2)||
-|8008BC8|8005EAC|8006018|80048D8|80049D0|EndGreenTextColorManager|int EndGreenTextColorManager()||
+|8008BC8|8005EAC|8006018|80048D8|80049D0|EndFaceChibiSpr|[void EndFaceChibiSpr(void)](https://github.com/StanHash/fe6/blob/0b25087/src/face.c#L620)||
 |0|800625C|80063CC|8004C84|8004D7C||||
 |0|8006BC0|8006D30|8005640|8005738|EndFace|int EndFace(int a1)||
 |0|8007000|8007170|8005A7C|8005B78||||
 |0|8007054|80071C4|8005AD0|8005BCC||||
 |0|8007354|80074C4|8005D9C|8005E98||||
-|8008CDC|8007394|8007504|8005DDC|8005ED8||||
+|8008CDC|8007394|8007504|8005DDC|8005ED8|EndFaceIn8Frames|[void EndFaceIn8Frames(struct FaceProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/face.c#L662)||
 |0|80073AC|800751C|8005DF4|8005EF0||||
 |0|80073F4|8007564|8005E3C|8005F38||||
 |0|8007C48|8007DB8|80065E4|80066E0||||
-|80090B0|8007DF4|8007F64|800687C|8006978|Dialogue_InitFont|int Dialogue_InitFont()||
-|800C56C|8007EF8|8008068|8006980|8006A7C|EndDialogue|int EndDialogue()||
+|80090B0|8007DF4|8007F64|800687C|8006978|SetInitTalkTextFont|[void SetInitTalkTextFont(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L378)||
+|800C56C|8007EF8|8008068|8006980|8006A7C|EndPutTalkSpriteText|[void EndPutTalkSpriteText(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1823)||
 |808BD58|8008340|80084B0|8006DC8|8006EC4||||
-|8011FD0|800EC74|800ED68|8007748|8007844||||
+|8011FD0|800EC74|800ED68|8007748|8007844|SetFightEventFaceConfig|[void SetFightEventFaceConfig(void)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3465)||
 |0|8008DA8|8008F18|800783C|8007938||||
 |0|800914C|80092BC|8007BD4|8007CD8|NewTextBluArrowAndButtonChecker|int NewTextBluArrowAndButtonChecker(signed int a1, __int16 a2, __int16 a3)||
 |0|800981C|800998C|80082DC|80083E0|NewDialogueBoxAppearingAnimator|int NewDialogueBoxAppearingAnimator()||
@@ -2595,13 +2595,13 @@
 |0|8013354|8012C9C|8009FE4|0||||
 |0|800ECEC|800EDE0|80117CC|80116E0|NewPopup_WeaponBroke|int NewPopup_WeaponBroke(__int16 a1, int a2)||
 |0|800ED34|800EE28|80117F0|8011704|NewPopup_WRankIncrease|int NewPopup_WRankIncrease(__int16 a1, int a2)||
-|8014218|8014020|8013B00|80139E0|8013928||||
-|8014374|801417C|8013C5C|8013B3C|8013A84||||
-|8014BAC|80149B4|8014494|80142F0|8014238|StartBlockingTimer|int StartBlockingTimer(signed int a1, int a2)||
-|80151A8|8014FB0|8014B34|80148F0|80148C8|SetupFutureCall2|int SetupFutureCall2(int a1, int a2)||
-|801551C|8015324|8014EA8|8014C7C|8014C54||||
-|8015B44|8015A0C|8015590|801569C|8015680|LoadObjUIGfx|int LoadObjUIGfx()||
-|8015B80|8015A48|80155CC|8015710|80156F4|LoadGameCoreGfx|int LoadGameCoreGfx()||
+|8014218|8014020|8013B00|80139E0|8013928|StartPalFade|[struct PalFadeSt* StartPalFade(u16 const* colors, int pal, int duration, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L670)||
+|8014374|801417C|8013C5C|8013B3C|8013A84|SetBlackPal|[void SetBlackPal(int palid)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L735)||
+|8014BAC|80149B4|8014494|80142F0|8014238|StartTemporaryLock|[void StartTemporaryLock(ProcPtr proc, int duration)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1345)||
+|80151A8|8014FB0|8014B34|80148F0|80148C8|CallDelayed|[void CallDelayed(void(*func)(void), int delay)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2135)||
+|801551C|8015324|8014EA8|8014C7C|8014C54|PutDrawTextCentered|[void PutDrawTextCentered(struct Text* text, int x, int y, char const* str, int width)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2370)||
+|8015B44|8015A0C|8015590|801569C|8015680|ApplySystemObjectsGraphics|[void ApplySystemObjectsGraphics(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L484)||
+|8015B80|8015A48|80155CC|8015710|80156F4|ApplySystemGraphics|[void ApplySystemGraphics(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L492)||
 |0|8015ED8|8015A5C|8015BA4|8015B88||||
 |8016B84|8016E38|80169E0|8016BA0|8016DF8|GetDisplayRankStringFromExp|[int GetDisplayRankStringFromExp(int wexp) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L670)||
 |0|8017610|0|801729C|80174F4|GetItemName|[inline char* GetItemName(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L90)||
@@ -2625,15 +2625,15 @@
 |0|801A090|8019CB0|801A168|801A49C|GenerateMovementMapOnWorkingMap|[void GenerateMovementMapOnWorkingMap(struct Unit* unit, int x, int y, int movement)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L62)||
 |0|801BA34|0|801BA6C|0||||
 |0|801BB60|0|801BB98|0||||
-|801C060|801D6D8|801D2D4|801D730|801DACC|HideMoveRangeGraphics|int HideMoveRangeGraphics()||
-|801C20C|801D880|801D47C|801D8E0|801DC7C|Make6CKOIDO|int Make6CKOIDO(_DWORD *a1, int a2, char a3, signed int a4)||
+|801C060|801D6D8|801D2D4|801D730|801DACC|EndLimitView|[void EndLimitView(void)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L982)||
+|801C20C|801D880|801D47C|801D8E0|801DC7C|StartRescueTransferAnim|[void StartRescueTransferAnim(struct Unit* unit, int facing, bool arg_2, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L572)||
 |801D680|801EF94|801EC10|801F164|801F50C|ChangeActiveUnitFacing|[void ChangeActiveUnitFacing(int xLook, int yLook) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/unit_facing.c#L6)||
-|801D774|801F088|801ED04|801F258|801F600|StartGasTrapEffectGfxMaybe|int StartGasTrapEffectGfxMaybe(signed int a1, int a2, int a3, __int16 a4)||
+|801D774|801F088|801ED04|801F258|801F600|StartGasTrapAnim|[void StartGasTrapAnim(ProcPtr parent, int x, int y, int facing)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1489)||
 |0|801F114|801ED90|801F2E4|801F68C|NewFireTrapEffectGfx|int NewFireTrapEffectGfx(signed int a1, int a2, int a3)||
-|801D89C|801F2CC|801EF48|801F49C|801F844|StartLightArrowTrapGfx|int StartLightArrowTrapGfx(signed int a1, int a2)||
+|801D89C|801F2CC|801EF48|801F49C|801F844|StartArrowTrapAnim|[void StartArrowTrapAnim(ProcPtr parent, int x)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1541)||
 |0|8021348|8020EDC|8021EC0|8022060||||
-|801F8A4|8022828|80223B0|80234C0|80234FC||||
-|801F8E0|8022864|80223EC|80234FC|8023538||||
+|801F8A4|8022828|80223B0|80234C0|80234FC|func_fe6_0801F8A4|[u8 func_fe6_0801F8A4(struct MenuProc* menu)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L903)||
+|801F8E0|8022864|80223EC|80234FC|8023538|func_fe6_0801F8E0|[u8 func_fe6_0801F8E0(struct MenuProc* menu)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L915)||
 |0|802287C|8022404|8023514|8023550||||
 |8020BC8|8023F00|8023A74|8024F20|8024F70|ForEachAdjacentUnit|int ForEachAdjacentUnit(int a1, int a2)||
 |8020BFC|8023F34|8023AA8|8024F54|8024FA4|ForEachAdjacentPosition|int ForEachAdjacentPosition(int a1, int a2)||
@@ -2657,7 +2657,7 @@
 |8023ED0|8028184|8027CF8|8029B54|8029BC8|DoUseRestoreStaff|[void DoUseRestoreStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L998)||
 |8023F0C|80281F0|8027D64|8029BC0|8029C34|DoUseBarrierStaff|[void DoUseBarrierStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1020)||
 |8023FE4|802825C|8027DD0|8029C2C|8029CA0|DoUseAttackStaff|[void DoUseAttackStaff(struct Unit* unit, void(*func)(struct Unit*))](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1042)||
-|80244DC|8028B44|80286B8|802A5D4|802A668|CopyUnitToBattleStructRawStats|int CopyUnitToBattleStructRawStats(_BYTE *a1, _DWORD *a2)||
+|80244DC|8028B44|80286B8|802A5D4|802A668|InitBattleUnitWithoutBonuses|[void InitBattleUnitWithoutBonuses(struct BattleUnit* bu, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L287)||
 |0|8028DE8|802896C|802A884|802A918|SetupBattleBallistaWeaponData|int SetupBattleBallistaWeaponData(int a1)||
 |0|8028E2C|80289B0|802A8C8|802A95C|FillPreBattleStats|int FillPreBattleStats(int a1, int a2)||
 |0|8028E78|80289FC|802A914|802A9A8|FillBattleStats|int FillBattleStats(int a1, int a2)||
@@ -2676,23 +2676,23 @@
 |802934C|802E87C|802E3B0|803113C|80311F0|EndBMapMain|[void EndBMapMain(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1202)||
 |807D16C|802EBB8|802E6EC|8031438|80314EC|SetTacticianName|[void SetTacticianName(const char* newName) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1370)||
 |802968C|802EBD4|802E708|8031454|8031508|ClearConvoyItems|[void ClearConvoyItems() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L16)||
-|80297B8|802EDB8|802E8EC|803162C|80316E0|PushUnit|int PushUnit(_BYTE *a1)||
-|8029924|802EF4C|802EA80|80317C0|8031874|PrepareArena|int PrepareArena(int a1)||
-|8029940|802EF68|802EA9C|80317DC|8031890|PrepareArena2|int PrepareArena2(int a1)||
+|80297B8|802EDB8|802E8EC|803162C|80316E0|UnitRearrangeAdd|[void UnitRearrangeAdd(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-rearrange.c#L16)||
+|8029924|802EF4C|802EA80|80317C0|8031874|ArenaBegin|[void ArenaBegin(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L207)||
+|8029940|802EF68|802EA9C|80317DC|8031890|ArenaResume|[void ArenaResume(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L213)||
 |802A008|802F6C4|802F1F8|8031F38|8031FEC|StoreRNStateToActionStruct|[void StoreRNStateToActionStruct() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L164)||
 |802A018|802F6D4|802F208|8031F48|8031FFC|LoadRNStateFromActionStruct|[void LoadRNStateFromActionStruct() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L169)||
 |802ABB0|80302D0|802FE08|8032C4C|8032D30|GenerateMovementMapForActiveUnit|[void GenerateMovementMapForActiveUnit(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L130)||
 |802ABF4|8030314|802FE4C|8032C90|8032D74|ResetPathArrow|[void ResetPathArrow(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L138)||
-|802CB50|8032CCC|803279C|8035848|8035748|EndBottomHelpText|int EndBottomHelpText()||
-|802CBD4|8032D88|8032858|8035904|8035804||||
-|802D730|803397C|8033460|80366E4|80365E4|DrawUnitNameForBattleForecast|int DrawUnitNameForBattleForecast(_WORD *a1, unsigned __int8 *a2, unsigned __int16 **a3)||
-|802D774|80339C0|80334A4|8036728|8036628||||
+|802CB50|8032CCC|803279C|8035848|8035748|EndSubtitleHelp|[void EndSubtitleHelp(void)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L229)||
+|802CBD4|8032D88|8032858|8035904|8035804|BeginUnitHealAnim|[void BeginUnitHealAnim(struct Unit* unit, int hp)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L44)||
+|802D730|803397C|8033460|80366E4|80365E4|PutBattlePreviewUnitName|[static void PutBattlePreviewUnitName(u16* tm, struct Text* text, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L130)||
+|802D774|80339C0|80334A4|8036728|8036628|PutBattlePreviewItemName|[static void PutBattlePreviewItemName(u16* tm, struct Text* text, int item)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L139)||
 |0|8034C48|8034770|8037ACC|8037A34|RideBallista|int RideBallista(int a1)||
-|802ECA0|80355BC|80350E4|8039F44|8039ECC|StartAiTargetCursor|int StartAiTargetCursor(int a1, int a2, int a3, signed int a4)||
+|802ECA0|80355BC|80350E4|8039F44|8039ECC|AiStartActionCursor|[void AiStartActionCursor(int x, int y, int kind, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L101)||
 |0|8035714|803523C|803A09C|803A024|AiRefreshMap|int AiRefreshMap()||
 |0|8038508|8038054|803CEF0|803CF60||||
-|8031C28|8038E18|8038964|803D810|803D880|AiFillUnitStandingRangeWithWeapon|int AiFillUnitStandingRangeWithWeapon(int a1, unsigned __int8 a2)||
-|8032200|80393EC|8038F38|803DDEC|803DE5C|AiGetTileWeightForAttack|unsigned int AiGetTileWeightForAttack(int a1, int a2, int a3)||
+|8031C28|8038E18|8038964|803D810|803D880|AiFillReversedAttackRangeMap|[void AiFillReversedAttackRangeMap(struct Unit* unit, u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L187)||
+|8032200|80393EC|8038F38|803DDEC|803DE5C|AiGetCombatPositionScore|[u32 AiGetCombatPositionScore(int x, int y, struct AiCombatSimulationSt* st)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L455)||
 |8033038|803A1FC|8039D48|803EC28|803EC98|GetUnitAttackAndWeapon|int GetUnitAttackAndWeapon(_DWORD *a1, _WORD *a2)||
 |0|803C354|803BEA0|8040DE8|8040E68|InitAiMoveMapForUnit|int InitAiMoveMapForUnit(int a1)||
 |0|803C384|803BED0|8040E18|8040E98||||
@@ -2943,7 +2943,7 @@
 |0|808F740|808EE04|8098674|8096390||||
 |0|8004644|8004768|8002EBC|8002F6C|SetProcEndHandler|int SetProcEndHandler(int result, int a2)||
 |8071760|800A378|0|8006DDC|8006ED8|MapEventEngineExists|bool MapEventEngineExists()||
-|8014288|8014090|8013B70|8013A50|8013998||||
+|8014288|8014090|8013B70|8013A50|8013998|SetPalFadeStop|[void SetPalFadeStop(struct PalFadeSt* st, int val)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L694)||
 |8018540|8019028|8018C38|8019038|8019360|SetUnitLeaderCharId|[inline void SetUnitLeaderCharId(struct Unit* unit, int charId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L338)||
 |8057F4C|8064820|8064038|8070EFC|806E948||||
 |0|8079888|80790B8|80855FC|80832C4||||
@@ -2962,17 +2962,17 @@
 |0|800796C|8007ADC|80063D8|80064D4||||
 |0|8009E60|8009FD0|80088FC|8008A00|GetLastDialoguePromptResult|int GetLastDialoguePromptResult()||
 |0|800ACD0|800AD28|8011548|801145C|SetPopupItem|__int16 SetPopupItem(__int16 result)||
-|8013CE4|80136C8|80131A8|8013048|8012F90|GetNoCompDataSize|int GetNoCompDataSize(_DWORD *a1)||
+|8013CE4|80136C8|80131A8|8013048|8012F90|GetDataSize|[int GetDataSize(u8 const* data)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L234)||
 |0|8013B44|8013624|8013504|801344C|GetPaletteFadeBuffer|__int16 *GetPaletteFadeBuffer()||
-|801599C|80157A4|8015328|80153A4|8015380|GetGameLogicLock|int GetGameLogicLock()||
+|801599C|80157A4|8015328|80153A4|8015380|GetGameLock|[u8 GetGameLock(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L377)||
 |8018CDC|8019838|8019450|8019860|8019B88|nullsub_8|[void nullsub_8(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L335)||
 |801A558|801B570|801B190|801B668|801B998|SetWorkingBmMap|[inline void SetWorkingBmMap(u8** map)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L17)||
 |801A5A4|801B5BC|801B1DC|801B6B0|801B9E4|GetWorkingMoveCosts|[inline s8* GetWorkingMoveCosts(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L843)||
-|8025D58|802A940|802A490|802CA30|802CAF8|nullsub_11|void nullsub_11()||
+|8025D58|802A940|802A490|802CA30|802CAF8|BattlePrintDebugUnitInfo|[void BattlePrintDebugUnitInfo(struct BattleUnit* actor, struct BattleUnit* target)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1602)||
 |8028914|802DDFC|802D93C|8030660|8030710|WfxBlue_VSync|[void WfxBlue_VSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L569)||
 |0|802EBB0|802E6E4|8031430|80314E4|GetTacticianName|[char* GetTacticianName(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L1366)||
 |8029684|802EBCC|802E700|803144C|8031500|GetConvoyItemArray|[u16* GetConvoyItemArray() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L12)||
-|8029F74|802F5B8|802F0EC|8031E30|8031EE4||||
+|8029F74|802F5B8|802F0EC|8031E30|8031EE4|ArenaSetResult|[void ArenaSetResult(int result)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L640)||
 |0|8039454|8038FA0|803DE54|803DEC4|ShouldAiNotBattle|int ShouldAiNotBattle()||
 |8040098|80489C8|80481DC|804D57C|804C7DC||||
 |804254C|804B950|804B174|8050A9C|804FD28|GetSelectTargetCount|[int GetSelectTargetCount() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L456)||
@@ -3028,49 +3028,49 @@
 |0|8004A3C|8004B60|80032BC|8003370|ProcInst15_Nop3|signed int ProcInst15_Nop3(int a1)||
 |0|8013198|8012AE0|8009E3C|8009EDC|GameControl_GetChapterIdToProc|char *GameControl_GetChapterIdToProc(int a1)||
 |0|80131A8|8012AF0|8009E4C|8009EEC|GameControl_GetChapterIdFromProc|int GameControl_GetChapterIdFromProc(int a1)||
-|80146B0|80144B8|8013F98|8013E20|8013D68|StartFadeInBlackMedium|int StartFadeInBlackMedium()||
-|80146BC|80144C4|8013FA4|8013E2C|8013D74|StartFadeInBlackSlow|int StartFadeInBlackSlow()||
-|80146C8|80144D0|8013FB0|8013E38|8013D80|StartFadeInBlackFast|int StartFadeInBlackFast()||
-|80146D4|80144DC|8013FBC|8013E44|8013D8C|StartFadeOutBlackMedium|int StartFadeOutBlackMedium()||
-|80146E0|80144E8|8013FC8|8013E50|8013D98||||
-|80146EC|80144F4|8013FD4|8013E5C|8013DA4|StartFadeOutBlackFast|int StartFadeOutBlackFast()||
-|8014758|8014560|8014040|8013EC8|8013E10||||
-|8014768|8014570|8014050|8013ED8|8013E20||||
-|8014870|8014580|8014060|8013EE8|8013E30||||
-|8014888|8014598|8014078|8013F00|8013E48||||
-|8014778|80145B0|8014090|8013F18|8013E60||||
-|8014790|80145C8|80140A8|8013F30|8013E78||||
-|80147A8|80145E0|80140C0|8013F48|8013E90||||
-|80147F0|80145F8|80140D8|8013F60|8013EA8||||
-|8014804|801460C|80140EC|8013F74|8013EBC||||
-|8014818|8014620|8014100|8013F88|8013ED0||||
-|801482C|8014634|8014114|8013F9C|8013EE4||||
-|80147C0|8014648|8014128|8013FB0|8013EF8||||
-|80147D8|8014660|8014140|8013FC8|8013F10||||
-|8014840|8014678|8014158|8013FE0|8013F28||||
-|8014858|8014690|8014170|8013FF8|8013F40||||
-|80148A0|80146A8|8014188|8014010|8013F58||||
-|80148B8|80146C0|80141A0|8014028|8013F70||||
-|80148CC|80146D4|80141B4|801403C|8013F84||||
-|80148F8|8014700|80141E0|8014068|8013FB0||||
-|801490C|8014714|80141F4|801407C|8013FC4||||
-|8014920|8014728|8014208|8014090|8013FD8||||
-|8014934|801473C|801421C|80140A4|8013FEC||||
-|8014948|8014750|8014230|80140B8|8014000||||
-|801495C|8014764|8014244|80140CC|8014014||||
-|8014970|8014778|8014258|80140E0|8014028||||
-|8014984|801478C|801426C|80140F4|801403C||||
-|8014998|80147A0|8014280|8014108|8014050||||
-|80149CC|80147D4|80142B4|801413C|8014084||||
-|801F524|8021ABC|8021644|8022700|8022738|EffectWait|signed int EffectWait()||
-|801F674|80225E0|8022168|802326C|80232A4||||
-|8021B88|8025114|8024C88|80265BC|8026618||||
-|8022628|8026428|8025F9C|80279D4|8027A40|ResetMapSpriteHoverTimer|int ResetMapSpriteHoverTimer()||
-|8022A2C|80269F4|8026568|8028094|8028100||||
-|80314B8|8038024|8037B70|803CA0C|803CA7C|AiScriptCmd_06_DoNothing|_BYTE *AiScriptCmd_06_DoNothing(_BYTE *result)||
-|8031740|8038238|8037D84|803CC20|803CC90|AiScriptCmd_0E_DoNothing|_BYTE *AiScriptCmd_0E_DoNothing(_BYTE *result)||
-|8031748|80384C0|803800C|803CEA8|803CF18|AiScriptCmd_14_DoNothing|_BYTE *AiScriptCmd_14_DoNothing(_BYTE *result)||
-|8031788|80384C8|8038014|803CEB0|803CF20|AiScriptCmd_15_DoNothing|_BYTE *AiScriptCmd_15_DoNothing(_BYTE *result)||
+|80146B0|80144B8|8013F98|8013E20|8013D68|StartMidFadeToBlack|[void StartMidFadeToBlack(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L923)||
+|80146BC|80144C4|8013FA4|8013E2C|8013D74|StartSlowFadeToBlack|[void StartSlowFadeToBlack(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L928)||
+|80146C8|80144D0|8013FB0|8013E38|8013D80|StartFastFadeToBlack|[void StartFastFadeToBlack(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L933)||
+|80146D4|80144DC|8013FBC|8013E44|8013D8C|StartMidFadeFromBlack|[void StartMidFadeFromBlack(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L938)||
+|80146E0|80144E8|8013FC8|8013E50|8013D98|StartSlowFadeFromBlack|[void StartSlowFadeFromBlack(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L943)||
+|80146EC|80144F4|8013FD4|8013E5C|8013DA4|StartFastFadeFromBlack|[void StartFastFadeFromBlack(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L948)||
+|8014758|8014560|8014040|8013EC8|8013E10|StartSlowLockingFadeToWhite|[void StartSlowLockingFadeToWhite(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L983)||
+|8014768|8014570|8014050|8013ED8|8013E20|StartSlowLockingFadeFromWhite|[void StartSlowLockingFadeFromWhite(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L988)||
+|8014870|8014580|8014060|8013EE8|8013E30|func_fe6_08014870|[void func_fe6_08014870(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1048)||
+|8014888|8014598|8014078|8013F00|8013E48|func_fe6_08014888|[void func_fe6_08014888(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1053)||
+|8014778|80145B0|8014090|8013F18|8013E60|func_fe6_08014778|[void func_fe6_08014778(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L993)||
+|8014790|80145C8|80140A8|8013F30|8013E78|func_fe6_08014790|[void func_fe6_08014790(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L998)||
+|80147A8|80145E0|80140C0|8013F48|8013E90|func_fe6_080147A8|[void func_fe6_080147A8(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1003)||
+|80147F0|80145F8|80140D8|8013F60|8013EA8|func_fe6_080147F0|[void func_fe6_080147F0(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1018)||
+|8014804|801460C|80140EC|8013F74|8013EBC|func_fe6_08014804|[void func_fe6_08014804(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1023)||
+|8014818|8014620|8014100|8013F88|8013ED0|func_fe6_08014818|[void func_fe6_08014818(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1028)||
+|801482C|8014634|8014114|8013F9C|8013EE4|func_fe6_0801482C|[void func_fe6_0801482C(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1033)||
+|80147C0|8014648|8014128|8013FB0|8013EF8|func_fe6_080147C0|[void func_fe6_080147C0(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1008)||
+|80147D8|8014660|8014140|8013FC8|8013F10|func_fe6_080147D8|[void func_fe6_080147D8(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1013)||
+|8014840|8014678|8014158|8013FE0|8013F28|func_fe6_08014840|[void func_fe6_08014840(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1038)||
+|8014858|8014690|8014170|8013FF8|8013F40|func_fe6_08014858|[void func_fe6_08014858(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1043)||
+|80148A0|80146A8|8014188|8014010|8013F58|func_fe6_080148A0|[void func_fe6_080148A0(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1058)||
+|80148B8|80146C0|80141A0|8014028|8013F70|func_fe6_080148B8|[void func_fe6_080148B8(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1063)||
+|80148CC|80146D4|80141B4|801403C|8013F84|func_fe6_080148CC|[void func_fe6_080148CC(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1068)||
+|80148F8|8014700|80141E0|8014068|8013FB0|func_fe6_080148F8|[void func_fe6_080148F8(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1079)||
+|801490C|8014714|80141F4|801407C|8013FC4|func_fe6_0801490C|[void func_fe6_0801490C(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1084)||
+|8014920|8014728|8014208|8014090|8013FD8|func_fe6_08014920|[void func_fe6_08014920(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1089)||
+|8014934|801473C|801421C|80140A4|8013FEC|func_fe6_08014934|[void func_fe6_08014934(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1094)||
+|8014948|8014750|8014230|80140B8|8014000|func_fe6_08014948|[void func_fe6_08014948(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1099)||
+|801495C|8014764|8014244|80140CC|8014014|func_fe6_0801495C|[void func_fe6_0801495C(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1104)||
+|8014970|8014778|8014258|80140E0|8014028|func_fe6_08014970|[void func_fe6_08014970(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1109)||
+|8014984|801478C|801426C|80140F4|801403C|func_fe6_08014984|[void func_fe6_08014984(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1114)||
+|8014998|80147A0|8014280|8014108|8014050|func_fe6_08014998|[void func_fe6_08014998(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1119)||
+|80149CC|80147D4|80142B4|801413C|8014084|func_fe6_080149CC|[void func_fe6_080149CC(ProcPtr parent, Func func)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1130)||
+|801F524|8021ABC|8021644|8022700|8022738|func_fe6_0801F524|[u8 func_fe6_0801F524(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L716)||
+|801F674|80225E0|8022168|802326C|80232A4|func_fe6_0801F674|[u8 func_fe6_0801F674(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L794)||
+|8021B88|8025114|8024C88|80265BC|8026618|func_fe6_08021B88|[void func_fe6_08021B88(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L350)||
+|8022628|8026428|8025F9C|80279D4|8027A40|ResetUnitSpritHover|[void ResetUnitSpritHover(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L831)||
+|8022A2C|80269F4|8026568|8028094|8028100|func_fe6_08022A2C|[void func_fe6_08022A2C(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L996)||
+|80314B8|8038024|8037B70|803CA0C|803CA7C|AiCmd_Nop_080314B8|[void AiCmd_Nop_080314B8(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L468)||
+|8031740|8038238|8037D84|803CC20|803CC90|AiCmd_Nop_08031740|[void AiCmd_Nop_08031740(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L589)||
+|8031748|80384C0|803800C|803CEA8|803CF18|AiCmd_Nop_08031748|[void AiCmd_Nop_08031748(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L594)||
+|8031788|80384C8|8038014|803CEB0|803CF20|AiCmd_Nop_08031788|[void AiCmd_Nop_08031788(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L612)||
 |8036A80|803DFC0|803DB10|8042F08|8042F84||||
 |803BECC|8043780|8043068|80485EC|80486D4||||
 |803F3AC|8047CB4|80474C8|804CACC|804BD2C||||
@@ -3118,37 +3118,37 @@
 |809DC98|80C0510|80BF9CC|80D632C|80D1634|ply_xiecl|[void ply_xiecl(struct MusicPlayerInfo *mplayInfo, struct MusicPlayerTrack *track)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/m4a.c#L1576)||
 |809DCA4|80C051C|80BF9D8|80D6338|80D1640|ply_xleng|[void ply_xleng(struct MusicPlayerInfo *mplayInfo, struct MusicPlayerTrack *track)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/m4a.c#L1582)||
 |809DCB8|80C0530|80BF9EC|80D634C|80D1654|ply_xswee|[void ply_xswee(struct MusicPlayerInfo *mplayInfo, struct MusicPlayerTrack *track)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/m4a.c#L1588)||
-|8014738|8014540|8014020|8013E68|8013DB0||||
-|8014738|8014550|8014030|8013E88|8013DD0||||
+|8014738|8014540|8014020|8013E68|8013DB0|StartSlowLockingFadeFromBlack|[void StartSlowLockingFadeFromBlack(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L973)||
+|8014738|8014550|8014030|8013E88|8013DD0|StartSlowLockingFadeFromBlack|[void StartSlowLockingFadeFromBlack(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L973)||
 |0|801B650|801B270|801B744|801BA78|SetNewKeyStatusWith16|[void SetNewKeyStatusWith16(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L68)||
 |0|801BF90|0|801BF60|801C2D0||||
 |0|801BFA4|0|801BF74|801C2E4||||
 |0|801BFB8|801BC08|801BF88|801C2F8||||
 |0|801DD54|801D950|801DD94|801E138|SendToConvoyMenu_Draw|int SendToConvoyMenu_Draw()||
-|801CF8C|801E89C|801E518|801E900|801ECA8||||
-|801CFD0|801E8E0|801E55C|801E944|801ECEC||||
-|802D430|800A578|800A57C|801F61C|801F198||||
+|801CF8C|801E89C|801E518|801E900|801ECA8|PhaseIntroVMatchMid|[static void PhaseIntroVMatchMid(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1145)||
+|801CFD0|801E8E0|801E55C|801E944|801ECEC|PhaseIntroVMatchLo|[static void PhaseIntroVMatchLo(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1158)||
+|802D430|800A578|800A57C|801F61C|801F198|TrapDamageDisplay_Init|[static void TrapDamageDisplay_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L601)||
 |806C948|801EA6C|801E6E8|801FCC8|801F9C4||||
 |806DBA0|801EC1C|801E898|8020DB8|801FFD0||||
 |806DC48|801F44C|801F0C8|80217F4|80210C0||||
 |0|8021A78|8021600|80226EC|8022724||||
-|801ECEC|8021C80|8021808|80228C4|80228FC|RescueSelection_OnSelect|signed int RescueSelection_OnSelect(int a1, int a2)||
-|801EE80|8021E14|80219EC|8022A58|8022A90|TakeSelection_OnSelect|signed int TakeSelection_OnSelect(int a1, int a2)||
-|801EED0|8021E64|802199C|8022AA8|8022AE0|GiveSelection_OnSelect|signed int GiveSelection_OnSelect(int a1, int a2)||
+|801ECEC|8021C80|8021808|80228C4|80228FC|func_fe6_0801ECEC|[u8 func_fe6_0801ECEC(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L275)||
+|801EE80|8021E14|80219EC|8022A58|8022A90|func_fe6_0801EE80|[u8 func_fe6_0801EE80(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L380)||
+|801EED0|8021E64|802199C|8022AA8|8022AE0|func_fe6_0801EED0|[u8 func_fe6_0801EED0(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L393)||
 |0|8022F34|8022ABC|8023BCC|8023C08|StaffItemSelect_TextDraw|int StaffItemSelect_TextDraw(int a1, int a2)||
-|8020050|8023024|8022BAC|8023CC0|8023D00||||
-|80200E8|80230BC|8022C44|8023D5C|8023DA0||||
-|80202C4|8023280|8022E08|8023FD0|8024014||||
-|8020320|80232D4|8022E5C|802402C|8024070||||
-|802037C|8023328|8022EB0|8024088|80240CC||||
+|8020050|8023024|8022BAC|8023CC0|8023D00|func_fe6_08020050|[u8 func_fe6_08020050(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1270)||
+|80200E8|80230BC|8022C44|8023D5C|8023DA0|func_fe6_080200E8|[u8 func_fe6_080200E8(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1313)||
+|80202C4|8023280|8022E08|8023FD0|8024014|func_fe6_080202C4|[u8 func_fe6_080202C4(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1412)||
+|8020320|80232D4|8022E5C|802402C|8024070|func_fe6_08020320|[u8 func_fe6_08020320(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1427)||
+|802037C|8023328|8022EB0|8024088|80240CC|func_fe6_0802037C|[u8 func_fe6_0802037C(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1442)||
 |0|8023738|8023310|80241D4|8024768|TradeTargetSelection_OnInit|int TradeTargetSelection_OnInit(int a1)||
-|8020764|80238F4|8023468|80245FC|802464C||||
-|802083C|802379C|8023354|802462C|80247B0||||
+|8020764|80238F4|8023468|80245FC|802464C|func_fe6_08020764|[void func_fe6_08020764(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1622)||
+|802083C|802379C|8023354|802462C|80247B0|func_fe6_0802083C|[void func_fe6_0802083C(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1666)||
 |0|80237E0|8023424|8024690|802421C|StealTargetSelection_OnInit|int StealTargetSelection_OnInit(int a1)||
-|802083C|802386C|8023424|8024718|802467C|RescueSelection_OnConstruction|int RescueSelection_OnConstruction(int a1)||
-|8020880|80238B0|0|8024760|80246E0||||
-|80208E4|80238D0|8023474|80247C4|8024814||||
-|802094C|807C7DC|807BD68|80247E8|8024838||||
+|802083C|802386C|8023424|8024718|802467C|func_fe6_0802083C|[void func_fe6_0802083C(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1666)||
+|8020880|80238B0|0|8024760|80246E0|func_fe6_08020880|[void func_fe6_08020880(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1678)||
+|80208E4|80238D0|8023474|80247C4|8024814|func_fe6_080208E4|[int func_fe6_080208E4(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1696)||
+|802094C|807C7DC|807BD68|80247E8|8024838|func_fe6_0802094C|[void func_fe6_0802094C(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1714)||
 |8021904|8024CE4|8024880|802607C|80260D8|MakeTargetListForRescueStaff|int MakeTargetListForRescueStaff(int a1)||
 |802192C|8024D34|80248A8|80261D8|8026234|MakeTargetListForBerserk|int MakeTargetListForBerserk(int a1)||
 |0|8024FF0|8024B64|8026588|80265E4|MakeTargetListForDanceRing|int MakeTargetListForDanceRing(int a1)||
@@ -3165,17 +3165,17 @@
 |0|801001C|0|80327AC|8032860|BATTLE_DeleteLinkedMOVEUNIT|[void BATTLE_DeleteLinkedMOVEUNIT(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L625)||
 |806DFD0|80202A8|801FE40|803639C|802DEB4|TradeMenu_TutorialWait_OnInit|[void TradeMenu_TutorialWait_OnInit(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L792)||
 |0|8034740|8034268|8037554|8037494||||
-|802E460|8034770|8034298|8037584|8037494||||
-|8031358|80380DC|8037C28|803CAC4|803CB34|AiScriptCmd_09_DoStaffAction|int AiScriptCmd_09_DoStaffAction(_BYTE *a1)||
-|8031374|80380F8|8037C44|803CAE0|803CB50|AiScriptCmd_0A_DoStaffAction|int AiScriptCmd_0A_DoStaffAction(_BYTE *a1)||
-|8031390|8038114|8037C60|803CAFC|803CB6C|AiScriptCmd_0B_DoStaffAction|int AiScriptCmd_0B_DoStaffAction(_BYTE *a1)||
+|802E460|8034770|8034298|8037584|8037494|func_fe6_0802E460|[void func_fe6_0802E460(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L734)||
+|8031358|80380DC|8037C28|803CAC4|803CB34|AiCmd_StaffAction|[void AiCmd_StaffAction(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L404)||
+|8031374|80380F8|8037C44|803CAE0|803CB50|AiCmd_StaffAction2|[void AiCmd_StaffAction2(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L410)||
+|8031390|8038114|8037C60|803CAFC|803CB6C|AiCmd_StaffAction3|[void AiCmd_StaffAction3(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L416)||
 |806BF70|80419BC|80412C8|804690C|80469AC||||
 |806BF98|80419C8|80412D4|8046918|80469AC||||
 |0|809039C|808E60C|804C44C|804B6AC||||
-|80141C8|8013FD0|0|804C494|804B6F4||||
+|80141C8|8013FD0|0|804C494|804B6F4|StartSpacialSeTest|[void StartSpacialSeTest(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L633)||
 |806F588|80130DC|8012A24|804C6C0|804B920||||
 |8073F1C|80233F8|8022F6C|804C6CC|804B92C||||
-|80132C8|800A520|800ADA8|804E458|804D6C4||||
+|80132C8|800A520|800ADA8|804E458|804D6C4|EndEachSpriteAnimProc|[void EndEachSpriteAnimProc(void)](https://github.com/StanHash/fe6/blob/0b25087/src/sprite-anim.c#L393)||
 |0|804B1B0|804A9D4|8050294|804F520|MenuAutoHelpBoxSelect|[u8 MenuAutoHelpBoxSelect(struct MenuProc* menu)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L585)||
 |0|804B28C|804AAB0|8050370|804F5FC|MenuFrozen|[u8 MenuFrozen(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L627)||
 |8046848|804F8C4|804F1E8|8055114|8054224||||
@@ -3225,7 +3225,7 @@
 |8094064|802BCC0|802B800|806E470|806B938||||
 |80576AC|8063ABC|80632D4|806FB44|806D764||||
 |0|8065120|806426C|8071C64|806F844||||
-|8012770|800F224|800F318|80727A4|80701F4||||
+|8012770|800F224|800F318|80727A4|80701F4|ResetWeather|[void ResetWeather(void)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3731)||
 |806DDD4|800F230|800F324|80727B4|8070204||||
 |0|8065400|8064C10|8072E74|80708CC|loadFireDragonBattleAnimationBG|void loadFireDragonBattleAnimationBG(AnimationInterpreter *AIS)||
 |805CD68|8068F28|806873C|80754C4|8072FE8||||
@@ -3237,7 +3237,7 @@
 |80990F0|800AD78|800ADD0|807CBB8|807A800|_InitFontForUIDefault|[void _InitFontForUIDefault(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mapanim.c#L67)||
 |0|8021064|8020BFC|807F9B4|807D39C||||
 |0|800AEA4|800AF68|80800B4|807DD74||||
-|801D140|8021954|8020BFC|8080674|807D3B4||||
+|801D140|8021954|8020BFC|8080674|807D3B4|PhaseIntroText_Clear|[static void PhaseIntroText_Clear(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1224)||
 |0|80215D0|803DBB8|8080D90|8077678||||
 |0|80123BC|0|808112C|807EDEC||||
 |0|8023708|802327C|808187C|807F53C|MapAnimLevelUpProc_ClearLevelUpSmallText|int MapAnimLevelUpProc_ClearLevelUpSmallText()||
@@ -3247,7 +3247,7 @@
 |0|801EA54|801E6D0|80831C4|8080E84||||
 |0|80803B8|80214DC|8083348|807FCA8||||
 |8056F94|805226C|8062A0C|8084188|8081E48|UnitKakudai3|void UnitKakudai3(_6CStruct *a1)||
-|801C620|805660C|8062DFC|8084194|8081E54||||
+|801C620|805660C|8062DFC|8084194|8081E54|func_fe6_0801C620|[int func_fe6_0801C620(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L809)||
 |80992D0|807B1D8|807A764|80848F0|807F628|BG0Shaker_Init|_WORD *BG0Shaker_Init(int a1)||
 |0|807A648|8069D00|8086E00|8084B34||||
 |0|807A670|8079BD4|8086E2C|8084B34||||
@@ -3342,16 +3342,16 @@
 |0|80A7044|80A6E64|80B92FC|80B4774||||
 |0|80A7A94|80A7194|80B9540|80B49B8||||
 |8079D70|80A80A4|80B85D4|80B95C8|80B4A40||||
-|8022618|8026418|8025F8C|80BA244|80B56C0||||
+|8022618|8026418|8025F8C|80BA244|80B56C0|func_fe6_08022618|[void func_fe6_08022618(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L826)||
 |807B888|80A82F0|0|80BA600|80B5A7C||||
-|8023FB4|80A2BE8|8027DA0|80BA684|80B5B00||||
+|8023FB4|80A2BE8|8027DA0|80BA684|80B5B00|AttackStaffSelectOnInit|[int AttackStaffSelectOnInit(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/item-use.c#L821)||
 |8069DD8|806A4E0|8065C90|80BD0CC|80B8200||||
 |808958C|80AD664|80AC78C|80BD548|80B8680||||
 |808D368|808144C|80806F0|80BE694|80B97F8||||
-|805FF50|8065DC4|8065E48|80BE6A0|80B9804||||
-|8024020|8028298|8027E0C|80BE6BC|80B9820||||
+|805FF50|8065DC4|8065E48|80BE6A0|80B9804|PlayMuStepSe|[void PlayMuStepSe(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L525)||
+|8024020|8028298|8027E0C|80BE6BC|80B9820|func_fe6_08024020|[int func_fe6_08024020(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/item-use.c#L843)||
 |8093120|807B8CC|807AE58|80BE830|80B9994||||
-|801FF60|8065EA0|80698AC|80BEC4C|80B9DB8||||
+|801FF60|8065EA0|80698AC|80BEC4C|80B9DB8|func_fe6_0801FF60|[int func_fe6_0801FF60(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1212)||
 |8092450|809EE0C|809E3F4|80BF950|80BAB00||||
 |0|807BBEC|807B178|80BFAA8|80BAC58|GmapUnit_Destruct|int GmapUnit_Destruct(int a1)||
 |80740E4|807F438|807E67C|80C0548|80BB718|GmapScreen2_Destruct|int GmapScreen2_Destruct(int a1)||
@@ -3361,7 +3361,7 @@
 |0|80B9270|80B90AC|80C2A10|80BDC28|NewMapMU|int NewMapMU(signed int a1)||
 |807B0DC|80B8A38|80B7C54|80C3BB8|80BEDCC||||
 |8098C94|807FF5C|807F194|80C41E0|80BF3F4||||
-|802A798|807FF6C|807F1A4|80C4908|80BFB24||||
+|802A798|807FF6C|807F1A4|80C4908|80BFB24|CombatAction_PostBanimDeathFadesEnd|[static void CombatAction_PostBanimDeathFadesEnd(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/action.c#L456)||
 |8036B28|807FF7C|807F1B4|80C4AE4|80BFD00||||
 |0|807FF8C|807F1C4|80C4FE4|80C0200||||
 |806E730|8091370|8090A2C|80C5D70|80C0FA4||||
@@ -3387,7 +3387,7 @@
 |0|800749C|800760C|8005EE4|8005FE0||||
 |0|8007A5C|8007BCC|80063F8|80064F4|NewFace2|int NewFace2(int a1, int a2, __int16 a3, int a4, int a5)||
 |0|80A71EC|80A652C|80B08F0|80ABE3C||||
-|8030270|8036DD8|8036900|803B810|803B808|AiFindUnitSafestTileToMoveTo|bool AiFindUnitSafestTileToMoveTo(int a1, _WORD *a2)||
+|8030270|8036DD8|8036900|803B810|803B808|AiFindSafestReachableLocation|[bool AiFindSafestReachableLocation(struct Unit* unit, struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L826)||
 |0|806238C|8061BA4|80672D0|0||||
 |8035734|803CC50|803C79C|8041B9C|8041C1C|SioVSync_8041C1C|int SioVSync_8041C1C()||
 |8039E04|80415D4|8040ED8|80464FC|8046580||||
@@ -3395,7 +3395,7 @@
 |0|8019C50|8019868|8019C78|8019FA0|RefreshUnitsOnBmMap|[void RefreshUnitsOnBmMap(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L520)||
 |0|8060014|805F82C|8064E64|8063D64||||
 |8083688|809EAAC|809E094|80A730C|0|PrintPassword|int PrintPassword(int a1, int a2)||
-|802C8F8|8032870|8032340|80353E8|80354E0||||
+|802C8F8|8032870|8032340|80353E8|80354E0|InitSubtitleHelpText|[static void InitSubtitleHelpText(struct SubtitleHelpProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L47)||
 |8022CB4|8026D24|8026898|80283C8|8028434|ProcessTurnSupportExp|[void ProcessTurnSupportExp(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L177)||
 |80182D0|8018A4C|801865C|80188EC|8018BD8|CanUnitMove|[s8 CanUnitMove(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1303)||
 |0|80B98F8|80B8D98|80BBE08|80B734C||||
@@ -3413,7 +3413,7 @@
 |0|8083BB4|80831B4|808C840|808A530||||
 |8034094|803B44C|803AF98|803FE80|803FF00||||
 |802E5C4|8034EBC|80349E4|8039828|80397B0|CpOrderBerserkInit|[void CpOrderBerserkInit(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L53)||
-|8030BDC|8037960|80374AC|803C340|803C3B0||||
+|8030BDC|8037960|80374AC|803C340|803C3B0|func_fe6_08030BDC|[int func_fe6_08030BDC(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1305)||
 |8035DC8|803D2E4|803CE34|8042238|80422B8||||
 |80503F8|8059C30|8059448|8060014|805EF14||||
 |8051D0C|805B6B4|805AECC|8060FC0|805FEC0|DivineSfxLoop|int DivineSfxLoop(int a1)||
@@ -3428,36 +3428,36 @@
 |803372C|803A904|803A450|803F33C|803F3AC||||
 |0|805F734|805EF4C|80645BC|80634BC||||
 |0|80AFD28|80AEDF0|80B751C|80B2904||||
-|80308B0|8037610|803715C|803BFF4|803C064|GenBlueUnitAiStats|int GenBlueUnitAiStats()||
+|80308B0|8037610|803715C|803BFF4|803C064|func_fe6_080308B0|[void func_fe6_080308B0(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1123)||
 |802E750|8035044|8034B6C|80399B0|8039938|GetUnitAiPriority|[int GetUnitAiPriority(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L142)||
-|8032C2C|8039DF0|803993C|803E808|803E878|AiUnitGetClosestEscapePointData|char *AiUnitGetClosestEscapePointData()||
+|8032C2C|8039DF0|803993C|803E808|803E878|func_fe6_08032C2C|[struct AiEscapePt const* func_fe6_08032C2C(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L324)||
 |0|80096E0|8009850|80081A0|80082A4||||
 |802B154|8030D08|803081C|8033700|80337F0|sub_80337F0|[void sub_80337F0(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L653)||
 |8018D90|80198EC|8019504|8019914|8019C3C|RenderBmMap|[void RenderBmMap(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L379)||
 |806EA24|808068C|807F8D4|8088E74|8086BB8|StartScreenMenuScrollingBg|int StartScreenMenuScrollingBg(signed int a1, int a2, signed int a3)||
-|8014E98|8014CA0|8014824|80145DC|80145C8||||
+|8014E98|8014CA0|8014824|80145DC|80145C8|func_fe6_08014E98|[void func_fe6_08014E98(u16* tm, int x, int y, u16 tileref, int width, int height, u16 const* src, bool hflip)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1579)||
 |8033ECC|803B27C|803ADC8|803FCB0|803FD30||||
 |8036D60|803E2A4|803DDF4|80431EC|8043268||||
 |0|804A13C|8049954|804ECBC|804DF38||||
 |0|807B7F8|807AD84|8087B68|808589C||||
 |0|8021390|8020F24|8021F08|80220A8||||
 |8021198|8024554|80240C8|80255F4|8025644|MakeTargetListForSupport|int MakeTargetListForSupport(int a1)||
-|8029ABC|802F0E4|802EC18|8031960|8031A14|GetUnitArenaWeight|int GetUnitArenaWeight(_DWORD *a1, int a2)||
+|8029ABC|802F0E4|802EC18|8031960|8031A14|ArenaGetPowerRanking|[static int ArenaGetPowerRanking(struct Unit* unit, bool opponent_is_magic)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L360)||
 |0|80ABF30|80AB04C|80B3B84|80AEF64||||
-|80303F8|8036F64|8036A8C|803B99C|803B994|AiGetActiveUniChestKeyItemSlot|signed int AiGetActiveUniChestKeyItemSlot(_BYTE *a1)||
+|80303F8|8036F64|8036A8C|803B99C|803B994|AiGetChestUnlockItemSlot|[bool AiGetChestUnlockItemSlot(u8* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L892)||
 |803DD30|8046604|8045E18|804B3B0|804A614||||
 |804FC64|80597D8|8058FF0|805F890|805E790||||
 |0|8097178|80969F4|80A02F4|809E054||||
 |0|80982D8|8097B64|80A14B8|809F218||||
 |0|8098384|8097C08|80A1564|809F2C4||||
 |8034178|803B558|803B0A4|803FF8C|804000C||||
-|8024144|8028724|8028298|802A198|802A20C||||
+|8024144|8028724|8028298|802A198|802A20C|BattleGenerateRealInternal|[void BattleGenerateRealInternal(struct Unit* instigator, struct Unit* target)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L103)||
 |803D208|8045A7C|804528C|804A85C|8049A60||||
 |807ACFC|808F24C|808E910|809819C|8095EBC||||
-|8014160|8013F68|8013A48|8013928|8013870||||
+|8014160|8013F68|8013A48|8013928|8013870|SpacialSeTest_OnLoop|[static void SpacialSeTest_OnLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L606)||
 |0|805C77C|805BF94|80616E8|80605E8|loadHazymoonOBJ2|void loadHazymoonOBJ2(void *AIS)||
 |804E484|8057FC0|80577D8|805E004|805CF04||||
-|802503C|8029A1C|802956C|802B874|802B92C||||
+|802503C|8029A1C|802956C|802B874|802B92C|BattleApplyExpGains|[void BattleApplyExpGains(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L885)||
 |80342C4|803B6B0|803B1FC|80400E4|8040164||||
 |0|8081278|808051C|8089BAC|8087920|FindNextUnit|[struct Unit* FindNextUnit(struct Unit* u, int direction)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1071)||
 |80344AC|803B8A0|803B3EC|80402D4|8040354||||
@@ -3482,7 +3482,7 @@
 |8017C84|801835C|8017F6C|80181F4|80184E0|UnitGetDeathDropLocation|[void UnitGetDeathDropLocation(struct Unit* unit, int* xOut, int* yOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1006)||
 |0|8020C44|80207DC|8021828|8021B30||||
 |802E7C8|80350BC|8034BE4|8039A28|80399B0|BuildAiUnitList|[int BuildAiUnitList(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_order.c#L167)||
-|8032AE0|8039C90|80397DC|803E6A8|803E718|AiUnitTryHealSelf|signed int AiUnitTryHealSelf()||
+|8032AE0|8039C90|80397DC|803E6A8|803E718|AiTryHealSelf|[bool AiTryHealSelf(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L262)||
 |808667C|80A2AE0|0|80AB634|80A6C1C||||
 |0|806196C|8061184|80668CC|806521C||||
 |0|801F758|801F2F0|801FA48|801FDBC||||
@@ -3512,24 +3512,24 @@
 |805BA2C|8067B38|806734C|8073C08|8071714||||
 |802097C|8023C9C|8023810|8024C9C|8024CEC|GetPhaseAbleUnitCount|[int GetPhaseAbleUnitCount(int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L8)||
 |0|809E9DC|809DFC4|80A723C|0||||
-|8020064|8023038|8022BC0|8023CD4|8023D14||||
+|8020064|8023038|8022BC0|8023CD4|8023D14|func_fe6_08020064|[int func_fe6_08020064(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1278)||
 |80825B8|809115C|8090818|8099B70|809788C||||
 |805B13C|8067248|8066A5C|8073348|8070E24||||
-|8032838|80399E8|8039534|803E400|803E470||||
+|8032838|80399E8|8039534|803E400|803E470|AiTryGetNearestHealPoint|[bool AiTryGetNearestHealPoint(struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L131)||
 |80830AC|809E3FC|809D9E4|80A6C60|0||||
-|800ACA4|80090C0|8009230|8007B48|8007C4C||||
+|800ACA4|80090C0|8009230|8007B48|8007C4C|TalkWaitForInput_OnIdle|[static void TalkWaitForInput_OnIdle(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1179)||
 |8057578|806390C|8063124|806F994|806D678||||
 |803A9FC|8042224|8041B48|8047140|804720C||||
 |803D3C0|8045C34|8045448|804AA0C|8049C18||||
 |805794C|8063C40|8063458|806FCC8|806D9AC||||
 |0|8007FC0|8008130|8006A50|8006B4C|DialogueSkipInputListener_OnLoop|int DialogueSkipInputListener_OnLoop(int a1)||
-|802EC5C|8035578|80350A0|8039F00|8039E88|AiTargetCursor_Main|int AiTargetCursor_Main(int a1)||
+|802EC5C|8035578|80350A0|8039F00|8039E88|AiActionCursor_Idle|[void AiActionCursor_Idle(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L91)||
 |0|803490C|8034434|8037720|8037660|ExecTrap|int ExecTrap(signed int a1, int a2, __int16 a3)||
 |0|8006D1C|8006E8C|800579C|8005894||||
 |804DF80|8057ABC|80572D4|805DAF8|805CD5C|shooter|void shooter(_6CStruct *ctx)||
 |0|809D450|809CA38|80A5E48|80A207C||||
 |0|80964A0|8095CA8|809F59C|809D300||||
-|8025C7C|802A860|802A3B0|802C94C|802CA14|BeginBattleAnimations|int BeginBattleAnimations()||
+|8025C7C|802A860|802A3B0|802C94C|802CA14|BeginBattleAnimations|[void BeginBattleAnimations(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1534)||
 |80430C4|804C440|804BC64|8051674|8050940|ekrBattle_8050940|int ekrBattle_8050940(int a1)||
 |80452B8|804E54C|804DD70|80537D4|8052AE4||||
 |804E1C0|8057CFC|8057514|805DD38|0||||
@@ -3539,18 +3539,18 @@
 |80350C8|803C5E4|803C130|8041530|80415B0||||
 |0|80A8F68|80A8054|80B0C64|80AC1BC||||
 |8042AC4|804BE84|804B6A8|8051024|80502B0|ekrBattle_StartUIPaletteAnimations|int ekrBattle_StartUIPaletteAnimations(int a1)||
-|8026CE0|8023924|8023498|8024874|80248C4|RideCommandUsability|signed int RideCommandUsability()||
-|80322AC|8039458|8038FA4|803DE58|803DEC8|AiSimulateBattle|signed int AiSimulateBattle(unsigned __int8 *a1)||
+|8026CE0|8023924|8023498|8024874|80248C4|GetBallistaTrapAt|[struct Trap* GetBallistaTrapAt(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/trap.c#L233)||
+|80322AC|8039458|8038FA4|803DE58|803DEC8|AiSimulateBattleAgainstTargetAtPosition|[bool AiSimulateBattleAgainstTargetAtPosition(struct AiCombatSimulationSt* st)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L487)||
 |0|8012718|8012084|8009230|8009340|AP_ExecFrame|[s8 AP_ExecFrame(struct APHandle* handle) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L110)||
 |0|809B028|809A650|80A3EF8|0||||
-|8029C4C|802F290|802EDC4|8031B0C|8031BC0|GetArenaBetterItem|void *GetArenaBetterItem(unsigned __int16 a1)||
+|8029C4C|802F290|802EDC4|8031B0C|8031BC0|ArenaGetUpgradedWeapon|[static u16 ArenaGetUpgradedWeapon(u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L453)||
 |0|8006518|8006688|8004F48|8005040|AdvanceAIS|signed int AdvanceAIS(int a1)||
 |803CDD4|804561C|8044E2C|804A3F0|80495F4||||
 |0|801B84C|801B470|801B8E8|801BC1C||||
-|802407C|8028654|80281C8|802A0C8|802A13C||||
+|802407C|8028654|80281C8|802A0C8|802A13C|BattleGenerateSimulationInternal|[void BattleGenerateSimulationInternal(struct Unit* instigator, struct Unit* target, int x, int y, int item_slot)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L75)||
 |0|80A53C4|80A474C|80AE774|80A9D20||||
 |0|80A57BC|0|80AEBAC|0||||
-|8030B94|8037914|8037460|803C2F4|803C364||||
+|8030B94|8037914|8037460|803C2F4|803C364|func_fe6_08030B94|[int func_fe6_08030B94(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1279)||
 |0|8005010|8005134|800391C|80039D0|PrintStringToDBG|int PrintStringToDBG(_BYTE *a1)||
 |8036130|803D64C|803D19C|80425A4|8042620||||
 |0|800AAE0|800AB38|801135C|8011270|PopupProc_Display|int PopupProc_Display(int a1)||
@@ -3562,13 +3562,13 @@
 |8016720|8016984|801650C|8016688|80168E0|DrawItemMenuLineLong|[void DrawItemMenuLineLong(struct TextHandle* text, int item, s8 isUsable, u16* mapOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L422)||
 |8033898|803AA70|803A5BC|803F4AC|803F51C||||
 |8042018|804B2DC|804AB00|80503C0|804F64C|StartSemiCenteredOrphanMenu|[    const struct MenuDef* def, int xSubject, int xTileLeft, int xTileRight)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L652)||
-|801F444|8022288|8021E10|8022EFC|8022F34||||
+|801F444|8022288|8021E10|8022EFC|8022F34|func_fe6_0801F444|[int func_fe6_0801F444(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L670)||
 |0|80948CC|8093FE4|809D82C|809B564||||
 |0|80AB3AC|80AA4E4|80B2F94|80AE518||||
 |0|807B578|807AB04|80878E4|8085618||||
 |0|80A5C60|80A4F74|80AF034|80AA550||||
 |0|80AFA70|80AEB38|80B7220|80B2608||||
-|801AE60|801C108|801BD64|801C0D4|801C448|DebugMenu_FogIdle|int DebugMenu_FogIdle(int a1, int a2)||
+|801AE60|801C108|801BD64|801C0D4|801C448|func_fe6_0801AE60|[int func_fe6_0801AE60(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L579)||
 |0|809FB70|809F134|80A8338|80A38F4|LoadBonusContentData|signed int LoadBonusContentData(unsigned __int16 *a1)||
 |0|8099DC8|8099408|80A2DF8|0||||
 |8084A10|80A07C8|809FDFC|80A8FD8|80A4594||||
@@ -3577,12 +3577,12 @@
 |0|808A604|8089CA8|8093560|8091288||||
 |802AD28|8030448|802FF80|8032DCC|8032EB4|UpdatePathArrowWithCursor|[void UpdatePathArrowWithCursor(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L191)||
 |8006514|8005A60|8005B9C|800443C|8004504|Text_AppendCharAscii|int Text_AppendCharAscii(int a1, unsigned __int8 *a2)||
-|803212C|8039318|8038E64|803DD14|803DD84||||
+|803212C|8039318|8038E64|803DD14|803DD84|AiSimulateBestBallistaBattleAgainstTarget|[bool AiSimulateBestBallistaBattleAgainstTarget(struct AiCombatSimulationSt* st, u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L414)||
 |80216B8|8024A98|802460C|8025F3C|8025F98|TryAddUnitToRestoreTargetList|int TryAddUnitToRestoreTargetList(int a1)||
-|80312A8|803802C|8037B78|803CA14|803CA84|AiScriptCmd_07_DoStandardActionNoMove|int AiScriptCmd_07_DoStandardActionNoMove(_BYTE *a1)||
+|80312A8|803802C|8037B78|803CA14|803CA84|AiCmd_ActionInPlace|[void AiCmd_ActionInPlace(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L368)||
 |803CCD4|804551C|8044D2C|804A2EC|80494F0||||
 |8036078|803D594|803D0E4|80424EC|8042568||||
-|802C058|8031FD0|8031A98|8034B44|8034C3C||||
+|802C058|8031FD0|8031A98|8034B44|8034C3C|RefreshUnitInventoryPanel|[void RefreshUnitInventoryPanel(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L228)||
 |8072C30|8085DF4|80853F8|808EBE8|808C8EC||||
 |803858C|803FCAC|0|8044BF0|8044C54|NameSelect_8044C54|int NameSelect_8044C54(int a1, int a2)||
 |8022E3C|8026EA4|8026A18|8028544|80285B0|GetUnitSupportBonuses|[int GetUnitSupportBonuses(struct Unit* unit, struct SupportBonuses* bonuses)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L274)||
@@ -3592,28 +3592,28 @@
 |8041DA8|804AFFC|804A820|80500E8|804F374|ProcessMenuSelectInput|[int ProcessMenuSelectInput(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L483)||
 |80266A4|802B6D0|802B220|802D850|802D918|TradeMenu_OnInitSelected|[void TradeMenu_OnInitSelected(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L539)||
 |0|80643DC|8063BF4|807054C|806E290||||
-|8015BA0|8015A68|80155EC|8015730|8015714|HandleCursorMovement|int HandleCursorMovement(int a1)||
-|801C070|801D6E8|801D2E4|801D740|801DADC||||
+|8015BA0|8015A68|80155EC|8015730|8015714|HandleMapCursorInput|[void HandleMapCursorInput(u16 keys)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L502)||
+|801C070|801D6E8|801D2E4|801D740|801DADC|TrySetCursorOn|[static bool TrySetCursorOn(int uid)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L987)||
 |0|8080724|807F96C|8088F0C|8086C50||||
-|8021B98|8025124|8024C98|80265CC|8026628|LoadMapSpritePalettes|int LoadMapSpritePalettes()||
+|8021B98|8025124|8024C98|80265CC|8026628|ApplyUnitSpritePalettes|[void ApplyUnitSpritePalettes(void)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L355)||
 |0|802E3AC|802DEEC|8030C10|8030CC0|IsFirstPlaythrough|[int IsFirstPlaythrough(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L925)||
 |80415CC|804A740|8049F58|804F528|804E79C|DisplayUiHand|[void DisplayUiHand(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L1068)||
 |0|80AF984|80AEA4C|80B7134|80B251C||||
 |803D2CC|8045B40|8045354|804A920|8049B24||||
-|801ED7C|8021D10|8021898|8022954|802298C|TakeUsability|signed int TakeUsability()||
-|801EDE4|8021D78|8021900|80229BC|80229F4|GiveUsability|signed int GiveUsability()||
+|801ED7C|8021D10|8021898|8022954|802298C|func_fe6_0801ED7C|[int func_fe6_0801ED7C(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L318)||
+|801EDE4|8021D78|8021900|80229BC|80229F4|func_fe6_0801EDE4|[int func_fe6_0801EDE4(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L345)||
 |80879C0|80A3CF4|80A3080|80ACFFC|80A85E4||||
 |0|802F154|802EC88|80319D0|8031A84|LoadArenaOpponentStruct|int LoadArenaOpponentStruct()||
 |0|802250C|8022094|8023198|80231D0||||
 |8083378|809E6C0|809DCA8|80A6F1C|0||||
 |8039580|8040D4C|8040640|8045C8C|8045CEC||||
-|801CA50|801E364|801DFC0|801E3A4|801E748|UpdateMenuItemPanel|int UpdateMenuItemPanel(signed int a1)||
+|801CA50|801E364|801DFC0|801E3A4|801E748|UpdateEquipInfoWindow|[void UpdateEquipInfoWindow(int item_slot)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L942)||
 |8046DA0|804FE74|804F698|8055704|8054A1C|StartEfxStatusUnit|int StartEfxStatusUnit(int a1)||
 |802111C|80244D8|802404C|8025578|80255C8||||
-|8032A60|8039C10|803975C|803E628|803E698|AiUnitUpdateGetHealMode|signed int AiUnitUpdateGetHealMode(int a1)||
+|8032A60|8039C10|803975C|803E628|803E698|AiUpdateGetUnitIsHealing|[bool AiUpdateGetUnitIsHealing(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L232)||
 |0|802BB28|802B678|802DCA4|802DD6C|StartTradeMenu|[struct Proc* StartTradeMenu(struct Unit* lUnit, struct Unit* rUnit, int unused)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L720)||
 |0|8094EC0|8094630|809DDF8|809BB34||||
-|801FFD8|8022FAC|8022B34|8023C44|8023C80||||
+|801FFD8|8022FAC|8022B34|8023C44|8023C80|func_fe6_0801FFD8|[int func_fe6_0801FFD8(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1240)||
 |0|8004404|8004528|8002C60|8002D10|EndProc_Private|int EndProc_Private(int a1)||
 |803BA64|8043290|8042BB8|80480F8|80481E0||||
 |804BAF0|8055274|8054A8C|805B34C|805A5A8||||
@@ -3640,22 +3640,22 @@
 |8036E50|803E394|803DEE4|80432E0|804335C||||
 |0|80A517C|80A4504|80AE508|80A9AF4||||
 |803848C|803FBD0|0|8044B14|8044B78||||
-|801B49C|801CA28|801C624|801C8E4|801CC7C|DisplayActiveUnitEffectRange|int DisplayActiveUnitEffectRange()||
+|801B49C|801CA28|801C624|801C8E4|801CC7C|PlayerPhase_BeginSeeActionRange|[void PlayerPhase_BeginSeeActionRange(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L421)||
 |802B784|8031664|803117C|803411C|8034214|ShrinkPlayerUnits|[void ShrinkPlayerUnits() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1090)||
 |8092E68|809F9D0|809EF94|80A82B4|80A3870||||
 |804FB6C|80596E0|8058EF8|805F794|805E694||||
 |8075D34|808AF78|808A61C|8093EF8|8091C00||||
 |8048574|8051A50|8051274|8057424|805649C|loadBaseKaiten|int loadBaseKaiten(int a1)||
-|801E5A4|802037C|801FF14|8020BA4|8020EAC||||
+|801E5A4|802037C|801FF14|8020BA4|8020EAC|ChapterIntro_LoopFadeOut|[static void ChapterIntro_LoopFadeOut(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2107)||
 |0|80A51CC|80A4554|80AE558|80A9B44||||
 |8055134|805DDC0|805D5D8|8062C14|8061B14||||
 |8026928|802B9C4|802B514|802DB3C|802DC04|TradeMenu_HelpBox_OnLoop|[void TradeMenu_HelpBox_OnLoop(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L665)||
 |8007140|8006148|80062B8|8004B70|8004C68||||
 |0|809EC74|809E25C|80A74D4|0||||
 |0|8034BE8|8034710|8037A6C|80379D4|GetSomeBallistaItemAt|int GetSomeBallistaItemAt(int a1, int a2)||
-|801E938|80207FC|8020394|802112C|8021434||||
-|801FCB4|8022C80|8022808|8023914|8023950||||
-|801E52C|80A5058|80A43E0|80AE3D4|80A99C0||||
+|801E938|80207FC|8020394|802112C|8021434|GameOverScreen_LoopIdle|[static void GameOverScreen_LoopIdle(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2278)||
+|801FCB4|8022C80|8022808|8023914|8023950|func_fe6_0801FCB4|[int func_fe6_0801FCB4(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1088)||
+|801E52C|80A5058|80A43E0|80AE3D4|80A99C0|ChapterIntro_LoopFastCloseText|[static void ChapterIntro_LoopFastCloseText(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2087)||
 |0|8092420|8091AD8|809B118|8098E40||||
 |0|8099534|8098C78|80A26C0|80A0424||||
 |0|803FA90|803F5DC|80449D4|8044A40||||
@@ -3674,23 +3674,23 @@
 |0|80B0BF4|80AFDC0|80B87C0|80B3C14||||
 |0|8093F10|8093618|809CF0C|809AC40||||
 |8057FE8|80648BC|80640D4|8070F94|806E9E4||||
-|801BD38|801D47C|801D078|801D500|801D89C|Load6CRangeDisplaySquareGfx|int Load6CRangeDisplaySquareGfx(int a1)||
+|801BD38|801D47C|801D078|801D500|801D89C|OpenLimitView_Init|[static void OpenLimitView_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L870)||
 |8029764|802ECAC|802E7E0|8031530|80315E4|GetConvoyItemSlot|[int GetConvoyItemSlot(int r0) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L75)||
 |0|80A5138|80A44C0|80AE4C4|80A9AB0||||
 |0|8026434|8025FA8|80279E0|8027A4C|HandleMapSpriteCursorHover|int HandleMapSpriteCursorHover()||
 |0|8043EDC|8043700|8048CD8|0||||
-|8022A38|8026A00|8026574|80280A0|802810C|HideUnitSMS|int HideUnitSMS(int a1)||
+|8022A38|8026A00|8026574|80280A0|802810C|HideUnitSprite|[void HideUnitSprite(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L1001)||
 |806C608|807AEC8|807A454|8087654|8085388||||
 |0|808A7CC|8089E70|8093744|809144C||||
 |803B9F0|804321C|8042B44|8048080|8048168|SioMenu_8048168|int SioMenu_8048168(int a1)||
-|8030E74|8037BF8|8037744|803C5D8|803C648|AiScriptCmd_00_ConditionalGoto|int AiScriptCmd_00_ConditionalGoto(_BYTE *a1)||
+|8030E74|8037BF8|8037744|803C5D8|803C648|AiCmd_Conditional|[void AiCmd_Conditional(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L155)||
 |8045998|804EAE8|804E30C|8053E34|8053144||||
 |0|801CACC|801C6C8|801C984|801CD1C|PlayerPhase_RangeDisplayIdle|int PlayerPhase_RangeDisplayIdle(unsigned __int16 **a1)||
 |0|8098D04|8098418|80A1EC4|809FC24||||
 |8041F54|804B1C0|804A9E4|80502A4|804F530|Menu_FrozenHelpBox_OnLoop|[void Menu_FrozenHelpBox_OnLoop(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L590)||
 |8037878|803EDC4|803E930|8043D0C|8043D8C||||
 |0|809D850|809CE38|80A6214|80A2448||||
-|8015D18|8015BE4|8015768|80158A8|801588C||||
+|8015D18|8015BE4|8015768|80158A8|801588C|HandleMoveCameraWithMapCursor|[void HandleMoveCameraWithMapCursor(int step)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L565)||
 |0|8095B64|8095324|809EAC4|809C820||||
 |8086AAC|80A2C10|0|80AB764|80A6D4C||||
 |803BEE0|8043794|804307C|8048600|80486E8||||
@@ -3698,7 +3698,7 @@
 |802AF44|8030664|803019C|8032FE8|80330D4|GetDirectionOfPathAfterIndex|[u8 GetDirectionOfPathAfterIndex(u8 i) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L252)||
 |8044D4C|804E048|804D86C|80532DC|80525E8|StartEfxHpBarResire|int StartEfxHpBarResire(int a1)||
 |0|80288B0|8028424|802A324|802A398||||
-|801D920|801F350|801EFCC|801F520|801F8C8||||
+|801D920|801F350|801EFCC|801F520|801F8C8|func_fe6_0801D920|[void func_fe6_0801D920(ProcPtr parent, int unused, int trapid)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1580)||
 |80422DC|804B6DC|804AF00|805082C|804FAB8|EndTargetSelection|[ProcPtr EndTargetSelection(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L229)||
 |802AEE0|8030600|8030138|8032F80|803306C|GetDirectionOfPathBeforeIndex|[u8 GetDirectionOfPathBeforeIndex(u8 i) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L239)||
 |0|809FB14|809F0D8|80A82DC|80A3898||||
@@ -3722,15 +3722,15 @@
 |8039CFC|80414CC|8040DCC|80463F4|8046478||||
 |0|80884A8|8087B20|8091320|808F04C||||
 |0|8007C88|8007DF8|8006710|800680C|Dialogue_InitGfx|int Dialogue_InitGfx(__int16 a1, int a2, unsigned __int8 a3)||
-|801E244|801FF3C|801FAD4|8020784|8020A8C||||
+|801E244|801FF3C|801FAD4|8020784|8020A8C|ChapterIntro_Loop_0801E244|[static void ChapterIntro_Loop_0801E244(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1958)||
 |805C738|80688C8|80680DC|8074D78|807289C||||
 |802B6CC|8031318|8030E2C|8033D10|8033E08|sub_8033E08|[void sub_8033E08(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L900)||
 |0|80A4B10|80A3E98|80ADEA8|80A9494||||
 |8039A1C|80411E8|8040AE0|8046114|804619C||||
 |802619C|802B164|802ACB4|802D2F8|802D3C0|TradeMenu_HighlightUpdater_OnLoop|[void TradeMenu_HighlightUpdater_OnLoop(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L291)||
-|801DA24|801F454|801F0D0|801F624|801F9CC||||
+|801DA24|801F454|801F0D0|801F624|801F9CC|func_fe6_0801DA24|[static void func_fe6_0801DA24(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1645)||
 |8084908|80A05A0|809FBD4|80A8D94|80A4350|RegisterChapterTimeAndTurnCount|int RegisterChapterTimeAndTurnCount(int a1)||
-|802F2E8|8035D10|8035838|803A794|803A71C|AiScriptCompare|signed int AiScriptCompare(unsigned __int8 *a1, char a2, unsigned int a3)||
+|802F2E8|8035D10|8035838|803A794|803A71C|AiCompare|[bool AiCompare(u8 const* left, u8 cond, u32 right)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L30)||
 |0|8004510|8004634|8002D78|8002E28|ExecProc_Private|int ExecProc_Private(int a1)||
 |804312C|804C4AC|804BCD0|80516DC|80509A8|ekrBattle_80509A8|int ekrBattle_80509A8(int a1)||
 |0|804A95C|804A174|804F844|804EAB8|DisplayUiHandExt|[void DisplayUiHandExt(int x, int y, unsigned objTileOffset)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L1198)||
@@ -3747,16 +3747,16 @@
 |0|80A053C|809FB70|80A8D30|80A42EC|GetWonChapterCount|int GetWonChapterCount()||
 |0|801B5C4|801B1E4|801B6B8|801B9EC|Return2or3BySecondParity|[int Return2or3BySecondParity(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L8)||
 |0|801B5F4|801B214|801B6E8|801BA1C|Return3or2BySecondParity|[int Return3or2BySecondParity(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L26)||
-|802D4A8|80336E0|80331B0|8036434|8036334||||
+|802D4A8|80336E0|80331B0|8036434|8036334|TrapDamageDisplay_Watch|[static void TrapDamageDisplay_Watch(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L623)||
 |803E1B0|8046A90|80462A4|804B844|804AAA4||||
 |0|808AB70|808A214|8093AD0|80917D8||||
 |8005E78|8005650|800578C|8003F98|8004074|Text_AppendDecNumber|int Text_AppendDecNumber(int a1, int a2)||
-|8025940|802A4A8|8029FF8|802C570|802C638|GetBattleUnitStaffExp|signed int GetBattleUnitStaffExp(int a1)||
+|8025940|802A4A8|8029FF8|802C570|802C638|GetBattleUnitStaffExp|[int GetBattleUnitStaffExp(struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1343)||
 |8074558|808989C|8088F3C|80926F8|8090418||||
 |0|8049C0C|8049424|804E790|804DA00||||
 |0|801D270|801CE6C|801D180|801D51C|GetUnitSelectionValueThing|signed int GetUnitSelectionValueThing(int a1)||
 |8032DF4|8039FB8|8039B04|803E9E8|803EA58||||
-|802C160|80320D8|8031BA8|8034C54|8034D48||||
+|802C160|80320D8|8031BA8|8034C54|8034D48|RefreshUnitStealInventoryPanel|[void RefreshUnitStealInventoryPanel(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L270)||
 |8039084|8040850|8040144|8045798|80457F8||||
 |802EB20|8035418|8034F40|8039D88|8039D10|DecideHealOrEscape|[void DecideHealOrEscape(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_decide.c#L313)||
 |0|802A42C|8029F7C|802C4F0|802C5B8|HandleItemExpGain|int HandleItemExpGain()||
@@ -3764,21 +3764,21 @@
 |80435AC|804C8AC|804C0D0|8051B34|8050E00||||
 |80064B4|8005A24|8005B60|8004400|80044C8|Text_AppendStringAscii|int Text_AppendStringAscii(int a1, unsigned __int8 *a2)||
 |804E2F8|8057E34|805764C|805DE74|0||||
-|801BAF0|801D1C0|801CDBC|801D0D4|801D470|PlayerPhase_ApplyUnitMovement|int PlayerPhase_ApplyUnitMovement(int a1)||
-|8025748|802A1E8|8029D38|802C248|802C300|UpdateBallistaUsesFromBattle|int UpdateBallistaUsesFromBattle()||
+|801BAF0|801D1C0|801CDBC|801D0D4|801D470|PlayerPhase_BeginActionSelect|[static void PlayerPhase_BeginActionSelect(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L765)||
+|8025748|802A1E8|8029D38|802C248|802C300|BattleApplyBallistaUpdates|[void BattleApplyBallistaUpdates(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1215)||
 |803C390|8044BD8|80443DC|8049988|8048B78||||
 |0|8093014|8092708|809BF50|8099C70||||
 |80828B8|809145C|8090B18|8099E70|8097B98||||
-|8030CBC|8037A40|803758C|803C420|803C490|AiFillMovementMapForUnit|int AiFillMovementMapForUnit(int a1)||
+|8030CBC|8037A40|803758C|803C420|803C490|func_fe6_08030CBC|[void func_fe6_08030CBC(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1351)||
 |8039C30|80413FC|8040CFC|8046324|80463A8||||
-|80203EC|8023398|8022F20|8024100|8024144|ArenaCommandEffect|signed int ArenaCommandEffect(int a1, int a2)||
+|80203EC|8023398|8022F20|8024100|8024144|func_fe6_080203EC|[u8 func_fe6_080203EC(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1460)||
 |0|8004370|8004494|8002BCC|8002C7C|StartProc|int StartProc(int a1, signed int a2)||
 |0|802B5E4|802B134|802D76C|802D834|TradeMenu_OnLoopUnselected|[void TradeMenu_OnLoopUnselected(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L506)||
 |0|802C140|802BC80|802E3A8|802E470|RefreshAllLightRunes|[void RefreshAllLightRunes(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L209)||
 |80362B0|803D7CC|803D31C|8042720|804279C||||
 |0|80620FC|8061914|8067040|0||||
 |80832A0|809E5F0|809DBD8|80A6E4C|0|modifyPassword|void modifyPassword(int (*a1)(void))||
-|80313AC|8038130|8037C7C|803CB18|803CB88|AiScriptCmd_0C_MoveTowardsSetPoint|int AiScriptCmd_0C_MoveTowardsSetPoint(_BYTE *a1)||
+|80313AC|8038130|8037C7C|803CB18|803CB88|AiCmd_MoveTowards|[void AiCmd_MoveTowards(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L422)||
 |806F594|8081458|80806FC|8089D64|8087AD8|StartPageSlide|[void StartPageSlide(u16 key, int newPage, struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1181)||
 |0|80A067C|809FCB0|80A8E8C|80A4448|GetGameTotalTime|int GetGameTotalTime()||
 |802AA0C|803012C|802FC64|8032AB8|8032B88|GetPathFromMovementScript|[void GetPathFromMovementScript(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L57)||
@@ -3786,11 +3786,11 @@
 |0|809997C|8098FC4|80A2AFC|80A0860||||
 |0|8099CB4|80992F4|80A2CE8|80A0A34||||
 |803D6EC|8045F7C|8045790|804AD38|8049F44||||
-|8030FB8|8037D3C|8037888|803C71C|803C78C|AiScriptCmd_03_Goto|int AiScriptCmd_03_Goto(_BYTE *a1)||
-|8025ED0|802AA9C|802A5EC|802CB8C|802CC54|FinishUpItemBattle|int FinishUpItemBattle(signed int a1)||
-|8014DCC|8014BD4|8014758|8014510|80144FC||||
+|8030FB8|8037D3C|8037888|803C71C|803C78C|AiCmd_Goto|[void AiCmd_Goto(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L224)||
+|8025ED0|802AA9C|802A5EC|802CB8C|802CC54|BattleApplyItemEffect|[void BattleApplyItemEffect(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1685)||
+|8014DCC|8014BD4|8014758|8014510|80144FC|func_fe6_08014DCC|[void func_fe6_08014DCC(struct UnkProc_085C4E64* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1504)||
 |0|8081EF8|808119C|808A8FC|8088670|StatScreen_Display|[void StatScreen_Display(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1760)||
-|801B9CC|801D06C|801CC68|801CF80|801D31C|EnsureCameraOntoActiveUnitPosition|signed int EnsureCameraOntoActiveUnitPosition(signed int a1)||
+|801B9CC|801D06C|801CC68|801CF80|801D31C|PlayerPhase_WatchActiveUnit|[static bool PlayerPhase_WatchActiveUnit(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L701)||
 |0|80BAA54|80B9F4C|80BCE68|0||||
 |805E2E8|806A38C|8069BAC|8076A74|8074638||||
 |0|8044750|8043F50|80494FC|0||||
@@ -3817,25 +3817,25 @@
 |0|8012808|8012174|8009320|8009430|AP_QueueObjRotScale|[void AP_QueueObjRotScale(struct APHandle* handle) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L172)||
 |0|80904D8|808FB98|8098FF4|8096D10||||
 |0|8023A84|80235F8|80249D8|8024A28|AttackBallistaCommandUsability|signed int AttackBallistaCommandUsability()||
-|801FB00|8022A9C|8022624|8023734|8023770||||
+|801FB00|8022A9C|8022624|8023734|8023770|func_fe6_0801FB00|[u8 func_fe6_0801FB00(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1010)||
 |0|8056FD0|80567E8|805D038|805C29C|Arrow|void Arrow(_6CStruct *ctx)||
 |8053E04|805CA74|805C28C|80619E0|80608E0||||
-|801CDE4|801E6E4|801E360|801E740|801EAE8||||
+|801CDE4|801E6E4|801E360|801E740|801EAE8|func_fe6_0801CDE4|[static void func_fe6_0801CDE4(struct UnkProc2* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1077)||
 |0|805FAB8|805F2D0|8064940|8063840||||
 |8053CFC|805C96C|805C184|80618D8|80607D8||||
-|801501C|8014E24|80149A8|8014760|801474C||||
+|801501C|8014E24|80149A8|8014760|801474C|func_fe6_0801501C|[void func_fe6_0801501C(u16* tm, int x, int y, u16 tileref, int width, int height, u16 const* src, int arg_7)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1870)||
 |0|80955D0|8094D74|809E51C|809C254||||
-|80253CC|8029E20|8029970|802BE6C|802BF24|CheckForLevelUpCaps|int CheckForLevelUpCaps(int a1, char *a2)||
+|80253CC|8029E20|8029970|802BE6C|802BF24|CheckBattleUnitStatCaps|[void CheckBattleUnitStatCaps(struct Unit* unit, struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1069)||
 |804DAFC|8057514|8056D2C|805D580|805C7E4||||
-|801A9A8|801BBC4|801B814|801BBFC|801BF6C|DebugMenu_ClearIdle|int DebugMenu_ClearIdle(int a1, int a2)||
+|801A9A8|801BBC4|801B814|801BBFC|801BF6C|func_fe6_0801A9A8|[int func_fe6_0801A9A8(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L307)||
 |8016D08|8017160|8016D0C|8016DD4|801702C|GetUnitItemSlot|[int GetUnitItemSlot(struct Unit* unit, int itemIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L812)||
-|802BBF4|8031B6C|8031600|8034624|803471C||||
+|802BBF4|8031B6C|8031600|8034624|803471C|UnitPanel_OnLoop|[static void UnitPanel_OnLoop(struct UnitPanelProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L45)||
 |0|804EE24|804E648|8054270|8053584||||
 |0|80128F0|801225C|8009408|8009518|AP_SwitchAnimation|[void AP_SwitchAnimation(struct APHandle* handle, int index) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L197)||
 |0|8005EBC|8006028|80048E8|80049E0||||
 |0|80044CC|80045F0|8002D30|8002DE0|_IsolateProc|int IsolateProc(_DWORD *a1)||
-|802E224|80343F0|8033FFC|803720C|803710C||||
-|802E140|80344D4|8033F18|80372F0|80371F0||||
+|802E224|80343F0|8033FFC|803720C|803710C|BattlePreview_LoopSlideOut|[static void BattlePreview_LoopSlideOut(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L557)||
+|802E140|80344D4|8033F18|80372F0|80371F0|BattlePreview_LoopSlideIn|[static void BattlePreview_LoopSlideIn(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L521)||
 |0|8032C40|8032710|80357BC|0||||
 |804EA4C|80585BC|8057DD4|805E608|805D508|Loop6C_efxDarkbreath|int Loop6C_efxDarkbreath(int a1)||
 |8006E74|8005FEC|800615C|8004A14|8004B0C|DrawSpecialUiChar|int DrawSpecialUiChar(_WORD *a1, int a2, int a3)||
@@ -3844,7 +3844,7 @@
 |0|80A6E44|80A6184|80B04B4|80AB9FC||||
 |8050C30|805A45C|8059C74|80607FC|805F6FC||||
 |0|806B984|806B1A4|80780DC|0||||
-|8008B28|8006F8C|80070FC|8005A08|8005B04||||
+|8008B28|8006F8C|80070FC|8005A08|8005B04|StartFaceChibiStr|[void StartFaceChibiStr(int x, int y, int fid, int chr, int pal, i8 is_flipped, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/face.c#L602)||
 |0|8098B60|8098274|80A1D28|809FA88||||
 |8041EC4|804B130|804A954|8050214|804F4A0|Menu_AutoHelpBox_OnLoop|[void Menu_AutoHelpBox_OnLoop(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L560)||
 |0|80AABE4|0|80B27C4|80ADD24||||
@@ -3861,26 +3861,26 @@
 |0|8013050|8012998|808767C|80853B0||||
 |0|80A5AD8|80A4DEC|80AEFDC|80AA4F8||||
 |804AFFC|80547C0|8053FD8|805A740|805999C|getAnimationIDForPaletteGroup|signed int getAnimationIDForPaletteGroup(int animationID, int RightOrLeft)|返回用那个动画ID的调色板|
-|802EEE0|80357E4|803530C|803A16C|803A0F4|CpPerform_PerformEscape|int CpPerform_PerformEscape(int a1)||
-|8011A90|80043D4|80044F8|8002C30|8002CE0|StartBlockingProc|int StartBlockingProc(int a1, signed int a2)||
+|802EEE0|80357E4|803530C|803A16C|803A0F4|AiStartEscapeAction|[void AiStartEscapeAction(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L216)||
+|8011A90|80043D4|80044F8|8002C30|8002CE0|EventWmRemoveHighlightWait|[static void EventWmRemoveHighlightWait(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3267)||
 |806BE00|80056A4|80057D8|800407C|8004144|Text_AppendNumberOr2Dashes|int Text_AppendNumberOr2Dashes(int a1, int a2)||
 |806FDB4|8081CB0|8080F54|808A610|8088384|PageNumCtrl_DisplayBlinkIcons|[void PageNumCtrl_DisplayBlinkIcons(struct StatScreenPageNameProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1606)||
 |804610C|804F0DC|804E900|8054518|805382C||||
 |0|800BF1C|800C00C|800FE0C|800FC90|TryPrepareEventUnitMovement|bool TryPrepareEventUnitMovement(int a1, int a2, int a3)||
-|801C160|801D7E0|801D3DC|801D838|801DBD4|GetSomeFacingDirection|signed int GetSomeFacingDirection(int a1, int a2, int a3, int a4)||
-|802DE60|8034110|8033C38|8036F2C|8036E2C|BKSEL_Display|int BKSEL_Display(int a1)||
+|801C160|801D7E0|801D3DC|801D838|801DBD4|func_fe6_0801C160|[int func_fe6_0801C160(int xa, int ya, int xb, int yb)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L522)||
+|802DE60|8034110|8033C38|8036F2C|8036E2C|PutBattlePreviewTilemaps|[static void PutBattlePreviewTilemaps(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L369)||
 |0|802FE90|802F9C4|803281C|80328D0|BATTLE_HandleItemDrop|[bool8 BATTLE_HandleItemDrop(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L653)||
 |0|8099764|8098EA8|80A28E8|80A064C||||
 |0|8053BD4|80533EC|8059954|8058B24||||
 |805DC2C|8069DDC|80695FC|80764C8|8074040||||
 |80462BC|804F284|804EAA8|80546C8|80539DC|StartEfxHitQuake|int StartEfxHitQuake(int a1, int a2, int a3)||
-|80159F0|8015818|801539C|8015434|8015410|MapMain_SwitchPhases|bool MapMain_SwitchPhases()||
+|80159F0|8015818|801539C|8015434|8015410|BmMain_ChangePhase|[int BmMain_ChangePhase(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L407)||
 |80754F4|808A730|8089DD4|80936B0|0||||
 |0|8031198|8030CAC|8033B9C|8033C90|sub_8033C90|[void sub_8033C90(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L849)||
 |0|80182A8|8017EB8|8018144|8018430|UnitChangeFaction|[void UnitChangeFaction(struct Unit* unit, int faction) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L963)||
 |8016B24|8016DA4|8016948|8016B04|8016D5C|GetWeaponLevelFromExp|[int GetWeaponLevelFromExp(int wexp) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L630)||
 |80179EC|8018054|8017C64|8017EDC|80181C8|UnitCheckStatCaps|[void UnitCheckStatCaps(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L843)||
-|803239C|8039548|8039094|803DF4C|803DFBC|AiBattleGetAlliesAroundWeight|int AiBattleGetAlliesAroundWeight()||
+|803239C|8039548|8039094|803DF4C|803DFBC|AiGetFriendZoneCombatScoreComponent|[int AiGetFriendZoneCombatScoreComponent(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L546)||
 |0|80961B8|80959B0|809F06C|809CDD4||||
 |0|8006C48|8006DB8|80056C8|80057C0|ApplyFaceDisplayBitChange|int ApplyFaceDisplayBitChange(int a1)||
 |0|8004B38|8004C5C|80033B8|800346C||||
@@ -3888,7 +3888,7 @@
 |0|80A2984|0|80AB4B8|80A6AA0||||
 |0|80A9D58|80A8E44|80B18F4|80ACE54||||
 |0|806A4F8|8069D18|8076BDC|80747A4||||
-|802D438|809A294|80998D8|80A3274|0||||
+|802D438|809A294|80998D8|80A3274|0|TrapDamageDisplay_Check|[static void TrapDamageDisplay_Check(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L606)||
 |8059B78|8043E7C|80436A0|8048C7C|0||||
 |0|80316C8|80311E0|8034180|8034278|sub_8034278|[void sub_8034278() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1114)||
 |0|8087EEC|8087534|8090D6C|808EA98||||
@@ -3898,13 +3898,13 @@
 |804363C|804C944|804C168|8051BC4|8050E90||||
 |0|8094714|8093E2C|809D67C|809B3B4||||
 |0|8093E9C|80935A4|809CE9C|809ABD0||||
-|8013CA4|8013688|8013168|8013008|8012F50|Decompress|int Decompress(_BYTE *a1, int a2)||
-|8015344|801514C|8014CD0|8014AA0|8014A78||||
+|8013CA4|8013688|8013168|8013008|8012F50|Decompress|[void Decompress(u8 const* src, void* dst)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L208)||
+|8015344|801514C|8014CD0|8014AA0|8014A78|func_fe6_08015344|[void func_fe6_08015344(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2281)||
 |0|802C75C|802C29C|802EA48|802EB10|DisableAllLightRunes|[void DisableAllLightRunes(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L704)||
 |0|802C79C|802C2DC|802EA88|802EB50|EnableAllLightRunes|[void EnableAllLightRunes(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L721)||
-|802ECC8|80355FC|8035124|8039F84|8039F0C|CpPerform_MoveCameraOntoUnit|int CpPerform_MoveCameraOntoUnit(signed int a1)||
-|8022724|80264F0|8026064|8027AA0|8027B0C||||
-|8016140|8016000|8015B84|8015CBC|8015CB0|Loop6C_GENS|int Loop6C_GENS(int a1)||
+|802ECC8|80355FC|8035124|8039F84|8039F0C|AiPerform_WatchUnit|[void AiPerform_WatchUnit(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L113)||
+|8022724|80264F0|8026064|8027AA0|8027B0C|IsUnitSpriteHoverEnabledAt|[bool IsUnitSpriteHoverEnabledAt(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L887)||
+|8016140|8016000|8015B84|8015CBC|8015CB0|CamMove_OnLoop|[static void CamMove_OnLoop(struct CamMoveProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L847)||
 |804D5E4|8056F50|8056768|805CFB8|805C21C||||
 |8028460|802D948|802D488|80301A8|8030258|WfxSnow_Init|[void WfxSnow_Init(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L353)||
 |8022AA8|8026AD8|802664C|8028188|80281F4|GetUnitSupporterUnit|[struct Unit* GetUnitSupporterUnit(struct Unit* unit, int num)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L38)||
@@ -3913,7 +3913,7 @@
 |806F470|8081334|80805D8|8089C68|80879DC|PageSlide_OnLoop|[void PageSlide_OnLoop(struct StatScreenEffectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1112)||
 |0|8098754|8097E68|80A1928|809F688||||
 |809AC94|8032AD0|80325A0|8035650|0||||
-|8032CE8|8039EAC|80399F8|803E8CC|803E93C||||
+|8032CE8|8039EAC|80399F8|803E8CC|803E93C|func_fe6_08032CE8|[bool func_fe6_08032CE8(u16* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L444)||
 |8076448|808B654|808AD00|80945E8|80922F0||||
 |80361A4|803D6C0|803D210|8042618|8042694||||
 |0|801D66C|801D268|801D6C4|801DA60|DestructMoveLimitView|int DestructMoveLimitView(int a1)||
@@ -3930,13 +3930,13 @@
 |0|809754C|8096DC0|80A06C0|809E420||||
 |803FE64|8048794|8047FA8|804D344|804C5A4||||
 |0|80B5330|80B4510|80BD218|80B8350||||
-|801BF68|801D5E8|801D1E4|801D640|801D9DC|Loop6C_MoveLimitView|int Loop6C_MoveLimitView(int a1)||
+|801BF68|801D5E8|801D1E4|801D640|801D9DC|LimitView_Loop|[void LimitView_Loop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L937)||
 |8072AD0|8085C8C|8085290|808EA4C|808C750||||
 |8057BB0|8063E4C|8063664|806FED4|806DBBC||||
 |8045EE8|804EEB8|804E6DC|8054304|8053618||||
 |80504F0|8059D20|8059538|8060104|805F004||||
 |8042194|804B588|804ADAC|80506E0|804F96C|TargetSelection_Loop|[void TargetSelection_Loop(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiselecttarget.c#L150)||
-|801D234|801EB48|801E7C4|801ED1C|801F0C4||||
+|801D234|801EB48|801E7C4|801ED1C|801F0C4|PhaseIntroSquares_OutLoop|[static void PhaseIntroSquares_OutLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1271)||
 |80412B0|804A2AC|8049AC4|804EE8C|804E108|UnpackUiFrameImage|[void UnpackUiFrameImage(void* dest)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L202)||
 |803F8E0|80481EC|8047A00|804CFA8|804C208||||
 |0|806221C|8061A34|8067160|0||||
@@ -3947,7 +3947,7 @@
 |0|80B1110|80B02E4|80B8C9C|0||||
 |8023A08|8027C58|80277CC|8029644|802969C|WarpSelect_OnIdle|[void WarpSelect_OnIdle(struct WarpSelectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L746)||
 |805BD64|8067E78|806768C|8073F38|8071A54||||
-|80259A0|802A50C|802A05C|802C5D8|802C6A0|ActiveBattleUnitAdd10Exp|int ActiveBattleUnitAdd10Exp()||
+|80259A0|802A50C|802A05C|802C5D8|802C6A0|BattleApplyMiscActionExpGains|[void BattleApplyMiscActionExpGains(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1364)||
 |803DAE8|80463B4|8045BC8|804B164|804A3A8||||
 |801A3C0|801B1F0|801AE10|801B2F4|801B618|GenerateUnitCompleteStaffRange|[void GenerateUnitCompleteStaffRange(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L714)||
 |8044EEC|804E1E8|804DA0C|8053478|8052788||||
@@ -3956,23 +3956,23 @@
 |80849BC|80A0768|809FD9C|80A8F78|80A4534||||
 |8054580|805D200|805CA18|806214C|806104C||||
 |805D154|8069314|8068B28|8075A08|807352C||||
-|8029FE0|802F624|802F158|8031E9C|8031F50|CouldUnitUseAnyWeapon|bool CouldUnitUseAnyWeapon(int a1)||
+|8029FE0|802F624|802F158|8031E9C|8031F50|ArenaIsUnitAllowed|[bool ArenaIsUnitAllowed(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L665)||
 |802A874|802FF94|802FACC|8032938|80329EC|CutOffPathLength|[void CutOffPathLength(s8 newIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L20)||
 |0|80AE33C|80AD414|80B5BB0|80B0F94||||
-|8016024|8015F24|8015AA8|8015BF0|8015BD4||||
+|8016024|8015F24|8015AA8|8015BF0|8015BD4|PutSysArrow|[void PutSysArrow(int x, int y, u8 isDown)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L785)||
 |0|806A7E0|806A000|8076ECC|8074A94||||
 |808344C|809E794|809DD7C|80A6FF0|0||||
 |80435EC|804C8F4|804C118|8051B74|8050E40||||
 |0|8062B9C|80623B4|8067AE4|8065724||||
-|8032440|80395EC|8039138|803DFF8|803E068|AiBattleGetWeight_803E068|int AiBattleGetWeight_803E068()||
+|8032440|80395EC|8039138|803DFF8|803E068|AiGetTargetJobCombatScoreComponent|[int AiGetTargetJobCombatScoreComponent(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L606)||
 |8048354|8051830|8051054|8057210|8056288|ekrBattleEnding_8056288|int ekrBattleEnding_8056288(int a1)||
 |0|800EE00|800EEF4|8011780|8011694|CreateItemStealingPopup|int CreateItemStealingPopup(__int16 a1, int a2)||
 |805089C|805A0CC|80598E4|8060490|805F390|EfxResire_Main|int EfxResire_Main(int a1)||
 |0|8029364|8028EB4|802AD00|802AD90|BattleComputeBuffStatus|int BattleComputeBuffStatus(int a1)||
 |8084E18|80A0D38|80A036C|80A95B0|80A4B6C|GetNewPlaythroughId|signed int GetNewPlaythroughId()||
-|8025D7C|802A964|802A4B4|802CA5C|802CB24|SetupSubjectBattleUnitForStaff|int SetupSubjectBattleUnitForStaff(_DWORD *a1, int a2)||
+|8025D7C|802A964|802A4B4|802CA5C|802CB24|BattleInitItemEffect|[void BattleInitItemEffect(struct Unit* unit, int item_slot)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1617)||
 |804D280|8056BEC|8056404|805CC50|805BEB4|Loop6C_efxDummymagic|int Loop6C_efxDummymagic(int a1)||
-|802FF20|8036A88|80365B0|803B4C8|803B4B8||||
+|802FF20|8036A88|80365B0|803B4C8|803B4B8|AiCountNearbyAlliedUnits|[int AiCountNearbyAlliedUnits(short x, short y)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L653)||
 |803784C|803ED98|803E904|8043CDC|8043D5C||||
 |0|809AC5C|809A280|80A3B70|0||||
 |808A658|80A6DD4|80A6114|80B0444|80AB98C||||
@@ -3991,17 +3991,17 @@
 |80859E0|80A1D18|80A1384|80AA7C0|80A5DA8||||
 |0|809EFC4|809E5AC|80A7828|80A2DE4||||
 |8016694|80168EC|8016470|80165F0|8016848|DrawItemMenuLine|[void DrawItemMenuLine(struct TextHandle* text, int item, s8 isUsable, u16* mapOut) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L411)||
-|802CC1C|8032DD0|80328A0|803594C|803584C||||
+|802CC1C|8032DD0|80328A0|803594C|803584C|BeginUnitDamageAnim|[void BeginUnitDamageAnim(struct Unit* unit, int damage)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L60)||
 |8058A80|8012F6C|80128F0|8009BBC|8009C5C||||
 |8018688|8019170|8018D88|8019194|80194BC|InitChapterMap|[void InitChapterMap(int chapterId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmap.c#L56)||
 |0|808E81C|808DEF0|8097740|8095460|IsUnitInCurrentRoster|signed int IsUnitInCurrentRoster(_DWORD *a1)||
-|801B04C|801C584|801C194|801C514|801C8AC|HandlePlayerCursorMovement|int HandlePlayerCursorMovement()||
-|802FE84|80369EC|8036514|803B434|803B41C|AiAreEnemiesWithin3Tiles|int AiAreEnemiesWithin3Tiles(__int16 a1, __int16 a2)||
+|801B04C|801C584|801C194|801C514|801C8AC|HandlePlayerMapCursor|[void HandlePlayerMapCursor(void)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L204)||
+|802FE84|80369EC|8036514|803B434|803B41C|AiCountNearbyEnemyUnits|[int AiCountNearbyEnemyUnits(short x, short y)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L623)||
 |0|8018BC4|80187D4|8018A60|8018D4C|GetUnitMovementCost|[const s8* GetUnitMovementCost(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1371)||
 |80392F4|8040AC0|80403B0|8045A04|8045A64||||
 |0|8083950|8082F50|808C5E0|808A2D0||||
 |0|8060EAC|80606C4|8065E44|0||||
-|801AB64|801BD40|801B990|801BD8C|801C0FC||||
+|801AB64|801BD40|801B990|801BD8C|801C0FC|func_fe6_0801AB64|[int func_fe6_0801AB64(struct MenuProc* menu)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L414)||
 |804D088|80569FC|8056214|805CA64|805BCC4|Loop6C_efxMagicQUAKE|int Loop6C_efxMagicQUAKE(int a1)||
 |8017854|8017EB0|8017AC0|8017CE4|8017FC4|UnitAutolevelCore|[void UnitAutolevelCore(struct Unit* unit, u8 classId, int levelCount) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L769)||
 |0|80046E8|800480C|8002F64|8003014|ResumeEachProcMarked|int ResumeEachProcMarked(int a1)||
@@ -4013,7 +4013,7 @@
 |8057C94|8063F30|8063748|806FFBC|806DCA4||||
 |0|8005460|8005590|8003DA0|8003E70|Text_Draw|int Text_Draw(unsigned __int8 *a1, _WORD *a2)||
 |0|8097990|8097204|80A0AFC|809E85C||||
-|801C3E0|801DA50|801D64C|801DA8C|801DE30|GetPlayerStartCursorPosition|int GetPlayerStartCursorPosition(_DWORD *a1, _DWORD *a2)||
+|801C3E0|801DA50|801D64C|801DA8C|801DE30|GetPlayerInitialCursorPosition|[static void GetPlayerInitialCursorPosition(int* xOut, int* yOut)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L663)||
 |8087CB0|80A4054|80A33E0|80AD2D0|80A88B8||||
 |8016644|8016850|80163D4|801654C|80167A4|CanUnitUseStaff|[s8 CanUnitUseStaff(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L371)||
 |0|8069830|8069050|8075F34|0||||
@@ -4028,7 +4028,7 @@
 |80218B8|8024C98|802480C|802613C|8026198|TryAddUnitToBerzerkTargetList|int TryAddUnitToBerzerkTargetList(char *a1)||
 |804695C|804F9D8|804F1FC|8055128|8054440|StartEfxFlashHPBar|int StartEfxFlashHPBar(int a1, unsigned __int16 a2, __int16 a3)||
 |80174AC|8017A44|8017654|80176F0|8017948|UnitAddItem|[s8 UnitAddItem(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L414)||
-|801A7D4|801B9E4|801B61C|801BA20|801BD58|DebugMapMenu_DisplayInfoIdle|int DebugMapMenu_DisplayInfoIdle(int a1, int a2)||
+|801A7D4|801B9E4|801B61C|801BA20|801BD58|func_fe6_0801A7D4|[int func_fe6_0801A7D4(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L205)||
 |8055294|805DF20|805D738|8062D78|8061C78||||
 |0|8061C1C|8061434|8066B7C|0||||
 |804CAD8|8056314|8055B2C|805C414|805B670||||
@@ -4036,11 +4036,11 @@
 |8092854|8006A08|8006B78|8005478|8005570|FindFreeFaceSlot|signed int FindFreeFaceSlot()||
 |0|8012AD0|801243C|80095E0|80096F0|AP_Find|[struct APHandle* AP_Find(const u16* definition) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L325)||
 |8017520|8017ACC|80176DC|8017780|80179D8|GetUnitItemCount|[int GetUnitItemCount(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L464)||
-|802FDF8|8036960|8036488|803B3B0|803B390||||
+|802FDF8|8036960|8036488|803B3B0|803B390|AiCountNearbyUnits|[int AiCountNearbyUnits(short x, short y)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L596)||
 |8023C50|8027EBC|8027A30|8029890|80298F0|DoUsePutTrap|[void DoUsePutTrap(struct Unit* unit, void(*func)(struct Unit*), int msgHelp)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L866)||
 |8041BD8|804AE18|804A63C|804FED8|804F164|Menu_OnIdle|[void Menu_OnIdle(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L376)||
 |8054A10|805D698|805CEB0|8062548|8061448||||
-|8024BBC|8029568|80290B8|802AF88|802B018|MakeBattleRound|signed int MakeBattleRound(int a1, int a2)||
+|8024BBC|8029568|80290B8|802AF88|802B018|BattleGenerateRoundHits|[bool BattleGenerateRoundHits(struct BattleUnit* attacker, struct BattleUnit* defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L639)||
 |0|80B7448|80B663C|80BAC4C|80B60C8||||
 |8023BE0|8027E44|80279B8|802981C|802987C|DoUseWarpStaff|[void DoUseWarpStaff(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L843)||
 |8047620|805093C|8050160|8056240|8055298|StartBattleAnimHitEffects|int StartBattleAnimHitEffects(int a1, int a2, int a3, int a4)||
@@ -4049,8 +4049,8 @@
 |0|8009310|8009480|8007D98|8007E9C|DialogueTextChoice_OnLoop|int DialogueTextChoice_OnLoop(int a1)||
 |804DC8C|805769C|8056EB4|805D708|805C96C||||
 |804DE84|805795C|8057174|805D9B0|805CC14||||
-|802F77C|80362E4|8035E0C|803AD18|803ACF8||||
-|802F798|8036300|8035E28|803AD38|803AD18|IsTerrainIdInList|signed int IsTerrainIdInList(_BYTE *a1, int a2)||
+|802F77C|80362E4|8035E0C|803AD18|803ACF8|AiIsInShortList|[bool AiIsInShortList(u16 const* list, u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L283)||
+|802F798|8036300|8035E28|803AD38|803AD18|AiIsInByteList|[bool AiIsInByteList(u8 const* list, u8 item)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L296)||
 |804574C|804E944|804E168|8053C14|8052F24||||
 |0|8055474|8054C8C|805B558|805A7B4||||
 |8033AA4|803AC7C|803A7C8|803F6BC|803F72C||||
@@ -4066,7 +4066,7 @@
 |804C928|80560F8|8055910|805C1F8|805B454||||
 |0|808940C|8088AA8|80922F4|8090014||||
 |8086D04|80A2FE0|80A236C|80AC314|80A78FC||||
-|8025A90|802A620|802A170|802C6F8|802C7C0|BattleApplyWeaponTriangle|int BattleApplyWeaponTriangle(int a1, unsigned __int8 *a2)||
+|8025A90|802A620|802A170|802C6F8|802C7C0|BattleApplyWeaponTriangleEffect|[void BattleApplyWeaponTriangleEffect(struct BattleUnit* attacker, struct BattleUnit* defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1428)||
 |0|8018B7C|801878C|8018A1C|8018D08|IsUnitMagicSealed|[s8 IsUnitMagicSealed(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1357)||
 |80505A0|8059DD0|80595E8|80601B0|805F0B0||||
 |8038AA4|8040270|803FB64|80451D4|8045234||||
@@ -4074,12 +4074,12 @@
 |0|80B4A90|80B3C58|80C8348|80C3590||||
 |0|8004E4C|8004F70|8003750|8003804|DBG_BG_Print|int DBG_BG_Print(_WORD *a1, _BYTE *a2)||
 |0|8028EA0|8028A24|802A93C|802A9D0|BattleApplyMiscBonuses|int BattleApplyMiscBonuses(char *a1)||
-|8032CB4|8039E78|80399C4|803E890|803E900||||
+|8032CB4|8039E78|80399C4|803E890|803E900|func_fe6_08032CB4|[bool func_fe6_08032CB4(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L372)||
 |0|803AD78|803A8C4|803F7BC|803F82C||||
 |8035EC0|803D3DC|803CF2C|8042330|80423B0||||
 |8084D64|80A0C84|80A02B8|80A94E8|80A4AA4||||
 |0|8086288|8085888|808F070|808CD74|Loop6CUI1_Displayed|int Loop6CUI1_Displayed(int a1)||
-|8029A88|802F0B0|802EBE4|8031924|80319D8|IsWeaponMagic|signed int IsWeaponMagic(signed int result)||
+|8029A88|802F0B0|802EBE4|8031924|80319D8|ArenaIsMagicWeaponKind|[static bool ArenaIsMagicWeaponKind(int weapon_kind)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L329)||
 |0|80046C4|80047E8|8002F3C|8002FEC|HaltEachProcMarked|int HaltEachProcMarked(int a1)||
 |0|80069E0|8006B50|800544C|8005544|SetFaceGfxConfig|int SetFaceGfxConfig(int *a1)||
 |0|8040230|803FB24|8045190|80451F0|NameSelect_80451F0|int NameSelect_80451F0()||
@@ -4087,9 +4087,9 @@
 |8037EA0|803F3F0|803EF60|8044340|80443B0||||
 |0|8078C48|8078478|8085C34|80838FC|EvCheck04_CHARASM|signed int EvCheck04_CHARASM(int *a1)||
 |802E8E0|80351D4|8034CFC|8039B40|8039AC8|CpDecide_Suspend|[void CpDecide_Suspend(ProcPtr proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/cp_decide.c#L56)||
-|800C184|8009D70|8009EE0|8008808|800890C||||
+|800C184|8009D70|8009EE0|8008808|800890C|TalkHasCorrectBubble|[static bool TalkHasCorrectBubble(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1680)||
 |80702BC|80821F8|808149C|808ABD8|808894C|StartStatScreen|[void StartStatScreen(struct Unit* unit, struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1903)||
-|801D160|801EA74|801E6F0|801EC48|801EFF0||||
+|801D160|801EA74|801E6F0|801EC48|801EFF0|PhaseIntroSquares_InLoop|[static void PhaseIntroSquares_InLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1235)||
 |803B5A0|8042DCC|8042728|8047CA0|8047D88|SioMenu_8047D88|int SioMenu_8047D88(int a1)||
 |803B31C|8042B48|80424A4|8047A4C|8047B34|SioMenu_8047B34|int SioMenu_8047B34(int a1)||
 |0|809A47C|8099AC0|80A3458|0||||
@@ -4108,7 +4108,7 @@
 |804F354|8061B7C|805E5D0|80633F4|80622F4||||
 |8053A98|805A530|805DD7C|8063C48|8062B48||||
 |8055870|805E564|805F078|80646E8|80635E8||||
-|802E43C|803471C|8034244|803752C|803746C||||
+|802E43C|803471C|8034244|803752C|803746C|func_fe6_0802E43C|[static int func_fe6_0802E43C(int wt, bool isEffective)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L711)||
 |0|80AB054|80AA18C|80B2C1C|80AE1A0|FadeIn_Loop|int FadeIn_Loop(int a1)||
 |808C58C|80AECCC|80ADDB4|80B6470|80B1850||||
 |802AFB4|80306D4|803020C|803305C|8033148|PointInCameraBounds|[u8 PointInCameraBounds(s16 x, s16 y, u8 xBound, u8 yBound) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L265)||
@@ -4118,7 +4118,7 @@
 |0|8062940|8062158|8067884|0||||
 |80995B0|8097D1C|809759C|80A0ED8|809EC38||||
 |0|80BA15C|80B9654|80BC590|80B7B30||||
-|802CC80|8032E34|8032904|8035A2C|803592C|ExecSelfDamage|int ExecSelfDamage(_DWORD *a1, int a2)||
+|802CC80|8032E34|8032904|8035A2C|803592C|BeginUnitCritDamageAnim|[void BeginUnitCritDamageAnim(struct Unit* unit, int damage)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L81)||
 |803AED0|80426F8|804203C|80475F0|80476CC||||
 |80987E8|80BCF98|0|80CB650|80C6704||||
 |8054870|805D350|805CB68|8062280|8061180||||
@@ -4142,8 +4142,8 @@
 |0|80A119C|80A0810|80A9A28|80A5010|SaveGame|int SaveGame(int a1)||
 |8072EAC|8086110|8085710|808EEFC|808CC00||||
 |0|8054F4C|8054764|805B00C|805A268|checkIfCritical|signed int checkIfCritical(void *AIS)||
-|801D5E4|801EEF8|801EB74|801F0E8|801F490||||
-|8013E10|80137F4|80132D4|8013174|80130BC||||
+|801D5E4|801EEF8|801EB74|801F0E8|801F490|PhaseIntro_WaitForEnd|[static void PhaseIntro_WaitForEnd(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1415)||
+|8013E10|80137F4|80132D4|8013174|80130BC|func_fe6_08013E10|[static void func_fe6_08013E10(u8 const* src, u32* dst, int width)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L353)||
 |8092854|8004584|80046A8|8002DEC|8002E9C|FindProc|int *FindProc(int a1)||
 |806AA40|8078C90|80784C0|8085C70|8083938|EvCheck05_LOCA|signed int EvCheck05_LOCA(int *a1)||
 |806C000|807A6D8|8079C64|8086E98|8084BCC||||
@@ -4155,28 +4155,28 @@
 |805B4D8|80675E4|8066DF8|80736C4|80711C0||||
 |0|80175CC|8017178|8017254|80174AC|IsItemUnsealedForUnit|[s8 IsItemUnsealedForUnit(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L1023)||
 |0|80B8C14|80B7EB0|80BB1F8|80B6720||||
-|803081C|803757C|80370C8|803BF60|803BFD0|AiArePointsWithinDistance|bool AiArePointsWithinDistance(int a1, __int16 a2, int a3, int a4, unsigned __int8 a5)||
+|803081C|803757C|80370C8|803BF60|803BFD0|AiIsWithinRectDistance|[bool AiIsWithinRectDistance(short x, short y, u8 x2, u8 y2, u8 maxDistance)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1086)||
 |0|8009FAC|800A11C|8008A40|8008B44|GetStringTextWidthWithDialogueCodes|signed int GetStringTextWidthWithDialogueCodes(unsigned __int8 *a1, unsigned __int8 a2)||
 |8084CD8|80A0AF0|80A0124|80A9348|80A4904|BWL_GetTotalBattles|int BWL_GetTotalBattles()||
-|8025CD8|802A8BC|802A40C|802C9A8|802CA70||||
-|801FE30|8022DFC|8022984|8023A90|8023ACC|StaffCommandEffect|signed int StaffCommandEffect(int a1, int a2)||
+|8025CD8|802A8BC|802A40C|802C9A8|802CA70|GetUnitSoloBattleAnimType|[int GetUnitSoloBattleAnimType(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1560)||
+|801FE30|8022DFC|8022984|8023A90|8023ACC|func_fe6_0801FE30|[u8 func_fe6_0801FE30(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1147)||
 |0|8055624|8054E3C|805B710|805A96C||||
 |0|8091628|8090CE4|809A040|8097D68||||
 |0|809A9FC|809A024|80A390C|0||||
 |0|80057C4|8005900|80041A0|8004268|DrawGlyph1DTileNoClear|int DrawGlyph1DTileNoClear(int a1, int a2)||
 |8047C28|8050F54|8050778|8056920|805598C|GetSpellAnimationStartFrame|signed int GetSpellAnimationStartFrame()||
-|8024DF0|80297D4|8029324|802B4CC|802B578|UpdateBattleTriangleAttackData|int UpdateBattleTriangleAttackData(int a1, int a2)||
-|80152E8|80150F0|8014C74|8014A3C|8014A14||||
+|8024DF0|80297D4|8029324|802B4CC|802B578|BattleGenerateHitTriangleAttack|[void BattleGenerateHitTriangleAttack(struct BattleUnit* attacker, struct BattleUnit* defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L768)||
+|80152E8|80150F0|8014C74|8014A3C|8014A14|GetTmOffsetById|[u16* GetTmOffsetById(int bgid, int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2258)||
 |8018500|8018FE4|8018BF4|8018FEC|80192F4|GetUnitMiniPortraitId|[inline int GetUnitMiniPortraitId(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L324)||
 |0|8093540|8092C34|809C4EC|809A21C||||
-|8020488|8023454|8022FC8|8024198|80241DC|StealCommandEffect|signed int StealCommandEffect(int a1, int a2)||
+|8020488|8023454|8022FC8|8024198|80241DC|func_fe6_08020488|[u8 func_fe6_08020488(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1495)||
 |0|8030958|8030490|803333C|803342C|SALLYCURSOR_RemoveSupplyUnit|[void SALLYCURSOR_RemoveSupplyUnit() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L472)||
 |0|801D50C|801D108|801D590|801D92C|Setup6CRangeDisplayGfx|int Setup6CRangeDisplayGfx()||
 |80419CC|804AC0C|804A424|804FC34|804EEA8|EndMenu|[struct Proc* EndMenu(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L247)||
 |0|80B73FC|80B65F0|80BABF4|80B6070|GetOverallRank|signed int GetOverallRank(int a1, int a2, int a3, int a4, int a5)||
 |0|80211D8|8020D6C|8021D68|8021F08||||
 |807090C|8082914|8081BB4|808B314|8089088|HbMoveCtrl_OnIdle|[void HbMoveCtrl_OnIdle(struct HelpBoxProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2313)||
-|802001C|8022FF0|8022B78|8023C88|8023CC4||||
+|802001C|8022FF0|8022B78|8023C88|8023CC4|func_fe6_0802001C|[u8 func_fe6_0802001C(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1256)||
 |80848DC|80A0510|809FB44|80A8D00|80A42BC|GetNextChapterWinDataEntryIndex|int GetNextChapterWinDataEntryIndex()||
 |805B20C|8067318|8066B2C|8073418|8070EF4||||
 |8016928|8016B90|8016730|8016894|8016AEC|GetItemAfterUse|[u16 GetItemAfterUse(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L468)||
@@ -4192,7 +4192,7 @@
 |8016494|801656C|80160F0|8016258|80164B0|GetItemDefBonus|[int GetItemDefBonus(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L258)||
 |80164BC|8016598|801611C|8016288|80164E0|GetItemResBonus|[int GetItemResBonus(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L271)||
 |80164E4|80165C4|8016148|80162B8|8016510|GetItemLckBonus|[int GetItemLckBonus(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L284)||
-|802D638|8033884|8033354|80365D8|80364D8||||
+|802D638|8033884|8033354|80365D8|80364D8|GetBattlePreviewPanelSide|[static int GetBattlePreviewPanelSide(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L63)||
 |0|8006398|8006508|8004DC0|8004EB8|ClearAISs|int ClearAISs()||
 |803F5C8|8047ED0|80476E4|804CCEC|804BF4C||||
 |8019528|801A164|8019D84|801A23C|801A570|sub_801A570|[void sub_801A570(int connexion, int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L111)||
@@ -4203,15 +4203,15 @@
 |0|80054B0|80055E0|8003DEC|8003EBC|Text_DrawBlank|int Text_DrawBlank(int a1, _WORD *a2)||
 |807CAD4|80ABB50|80AAC74|80B37C4|80AEB8C||||
 |80400FC|8048A2C|8048240|804D5DC|804C83C||||
-|801EA6C|80219D4|802155C|802259C|80225D0||||
+|801EA6C|80219D4|802155C|802259C|80225D0|func_fe6_0801EA6C|[u8 func_fe6_0801EA6C(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L110)||
 |806F324|808116C|0|8089AC4|8095A44||||
 |804B6D8|8054E74|805468C|805AF28|805A184|IsBatteRoundTypeAMiss|signed int IsBatteRoundTypeAMiss(__int16 a1)||
 |0|8086C68|8086278|808FA6C|808D784|Loop36CPI|int Loop36CPI(_BYTE *a1)||
-|801AF78|801C224|801BE84|801C1F0|801C588|DebugChargeMenu_Idle|int DebugChargeMenu_Idle(int a1, int a2)||
+|801AF78|801C224|801BE84|801C1F0|801C588|func_fe6_0801AF78|[int func_fe6_0801AF78(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L640)||
 |0|803F788|0|80446FC|8044768|NameSelect_8044768|int NameSelect_8044768(int a1)||
 |8073FE0|80A6BD8|80A5F18|80B0278|80AB7BC||||
 |0|800EF98|800F08C|800D474|800D1B0|BattleEventEngineExists|[int BattleEventEngineExists(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/event.c#L370)||
-|8025A38|802A5A8|802A0F8|802C678|802C740||||
+|8025A38|802A5A8|802A0F8|802C678|802C740|BattleUnitTargetCheckCanCounter|[void BattleUnitTargetCheckCanCounter(struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1406)||
 |0|80931F8|80928EC|809C178|8099E98||||
 |0|80B4B08|80B3CD0|80C83A4|80C35EC||||
 |0|80313E8|8030EFC|8033DDC|8033ED4|CallCursorShop|[void CallCursorShop(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L934)||
@@ -4224,23 +4224,23 @@
 |0|8009C8C|8009DFC|800873C|8008840||||
 |806D8B0|80B9DAC|80B924C|80BC1B8|80B770C||||
 |80858E4|80A1BEC|80A1258|80AA62C|80A5C14|LoadSuspendedGame|int LoadSuspendedGame(int a1)||
-|800D928|800F4C0|800F5B4|800CFB4|800CCF0|EventC5_|int EventC5_(int a1)||
+|800D928|800F4C0|800F5B4|800CFB4|800CCF0|FadeFromSkip_Start|[static void FadeFromSkip_Start(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L781)||
 |804B37C|8054B18|8054330|805ABBC|8059E18|InitLeftAIS|void InitLeftAIS(int x)|左侧AIS初始化<br>x控制近接还是远程|
 |8039650|8040E1C|8040714|8045D60|8045DC0||||
 |0|80335D8|80330A8|80362AC|80361AC||||
 |0|809F88C|809EE50|80A8168|80A3724||||
 |804B4C0|8054C5C|8054474|805AD00|8059F5C|InitRightAIS|void InitRightAIS(int x)|右侧AIS初始化<br>x控制近接还是远程|
 |0|8059330|8059698|806E374|806C050||||
-|80200B4|8023088|8022C10|8023D24|8023D64||||
+|80200B4|8023088|8022C10|8023D24|8023D64|func_fe6_080200B4|[u8 func_fe6_080200B4(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1299)||
 |0|801B630|804408C|8049638|8052DB8||||
 |803CAAC|80452F8|8044B08|804A0B4|80492B8||||
 |0|804488C|0|804A73C|801BA58|Loop6C_WaitForSelectPress|[void Loop6C_WaitForSelectPress(struct Proc *proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmdebug.c#L61)||
 |80449C4|804DD50|804D574|8052FC4|80522CC||||
 |0|80BB528|80BA9B0|80CB2A0|80C6354||||
-|8031118|8037E9C|80379E8|803C884|803C8F4|AiIsUnitScriptCharAndEnemyWithActiveUnit|bool AiIsUnitScriptCharAndEnemyWithActiveUnit(char *a1)||
-|8031158|8037EDC|8037A28|803C8C4|803C934|AiIsUnitScriptClassAndEnemyWithActiveUnit|bool AiIsUnitScriptClassAndEnemyWithActiveUnit(int a1)||
+|8031118|8037E9C|80379E8|803C884|803C8F4|AiIsUnitEnemyAndScrPid|[bool AiIsUnitEnemyAndScrPid(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L287)||
+|8031158|8037EDC|8037A28|803C8C4|803C934|AiIsUnitEnemyAndScrJid|[bool AiIsUnitEnemyAndScrJid(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L295)||
 |0|8034D14|803483C|8037BA8|8037B10|GetBallistaItemUses|int GetBallistaItemUses(int a1)||
-|8015504|801530C|8014E90|8014C60|8014C38||||
+|8015504|801530C|8014E90|8014C60|8014C38|func_fe6_08015504|[void func_fe6_08015504(u8 const* src, u8* dst, int size)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2357)||
 |0|8097E64|80976F0|80A102C|809ED8C||||
 |0|801D844|801D440|801D8A0|801DC3C|Loop6C_KOIDO|int Loop6C_KOIDO(int a1)||
 |80197B4|801A3F0|801A010|801A4D0|801A7F4|RevertMovementScript|[void RevertMovementScript(u8* begin, u8* end)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L262)||
@@ -4255,16 +4255,16 @@
 |0|80799C0|80791F0|8085658|8083320|GetCurrentChapterBallistae2Ptr|int GetCurrentChapterBallistae2Ptr()||
 |8022DB4|8026E1C|8026990|80284C0|802852C|GetAffinityBonuses|[static const struct SupportBonuses* GetAffinityBonuses(int affinity)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L239)||
 |8083180|809E4D0|809DAB8|80A6D34|0||||
-|801E7B8|8020674|802020C|8020FB8|80212C0||||
-|8030230|8036D98|80368C0|803B7D0|803B7C8|AiGetBestItemSlotIndexToSteal|int AiGetBestItemSlotIndexToSteal(int a1)||
+|801E7B8|8020674|802020C|8020FB8|80212C0|GameOverScreen_Init|[static void GameOverScreen_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2210)||
+|8030230|8036D98|80368C0|803B7D0|803B7C8|AiGetUnitStealItemSlot|[i8 AiGetUnitStealItemSlot(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L797)||
 |8037E14|803F364|803EED4|804421C|8044324||||
 |8089684|80A5EFC|80A5214|80AF2CC|80AA7EC||||
 |0|80875FC|8086C10|8090474|808E19C||||
 |808665C|80A2AC0|80820CC|80AB610|80A6BF8||||
 |0|802BD6C|802B8AC|802DE40|802DF08|TradeMenu_UpdateTutorial|[s8 TradeMenu_UpdateTutorial(struct TradeMenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrade.c#L813)||
 |8040154|8048A84|8048298|804D634|804C894||||
-|80243CC|8028A34|80285A8|802A4C0|802A558|Roll2RNIfBattleStarted|int Roll2RNIfBattleStarted(unsigned __int16 a1, unsigned __int8 a2)||
-|8015AD0|8015998|801551C|8015624|8015608|SetupBackgroundForWeatherMaybe|int SetupBackgroundForWeatherMaybe()||
+|80243CC|8028A34|80285A8|802A4C0|802A558|BattleRandRoll2Rn|[bool BattleRandRoll2Rn(u16 threshold, bool simulationResult)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L232)||
+|8015AD0|8015998|801551C|8015624|8015608|InitBmBgLayers|[void InitBmBgLayers(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L466)||
 |803F224|8047B2C|8047340|804C940|804BBA0||||
 |803F3BC|8047CC4|80474D8|804CADC|804BD3C||||
 |0|8012680|8011FEC|8009194|80092A4|AP_Delete|[void AP_Delete(struct APHandle* handle) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L75)||
@@ -4275,7 +4275,7 @@
 |8040C90|80495DC|8048DF4|804E184|804D3F0||||
 |803CB94|80453E0|8044BF0|804A1A4|80493A8||||
 |806F824|80816F8|808099C|808A0B4|8087E28|ClearSlide|[void ClearSlide(struct Proc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1350)||
-|8025880|802A3C0|8029F10|802C46C|802C534|ComputeExpFromBattle|signed int ComputeExpFromBattle(int a1, _DWORD *a2)||
+|8025880|802A3C0|8029F10|802C46C|802C534|GetBattleUnitExpGain|[int GetBattleUnitExpGain(struct BattleUnit* bu, struct BattleUnit* other)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1307)||
 |0|809DFE8|809D5D0|80A6878|80A2AAC||||
 |804CF34|805689C|80560B4|805C934|805BB84||||
 |803CCBC|8045504|8044D14|804A2D0|80494D4||||
@@ -4285,22 +4285,22 @@
 |802AFF8|8030718|8030250|803309C|803318C|DrawPathArrow|[void DrawPathArrow(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L278)||
 |8047ED4|80513B0|8050BD4|8056D7C|8055DF4|ekrBattleStarting_8055DF4|int ekrBattleStarting_8055DF4(signed __int16 *a1)||
 |0|8018C04|8018814|8018AA4|8018D90|GetClassSMSId|[int GetClassSMSId(int classId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1390)||
-|802FA58|80365C0|80360E8|803AFFC|803AFDC|AiSomethingCheckPick|signed int AiSomethingCheckPick(int a1, _DWORD *a2, _WORD *a3)||
+|802FA58|80365C0|80360E8|803AFFC|803AFDC|AiFindClosestUnlockPosition|[bool AiFindClosestUnlockPosition(int flags, struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L411)||
 |0|8093DC8|80934BC|809CDBC|809AAF0||||
-|8015208|8015010|8014B94|8014958|8014930||||
+|8015208|8015010|8014B94|8014958|8014930|func_fe6_08015208|[void func_fe6_08015208(u16* out, int size, int value)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2170)||
 |80791A0|808E5C8|808DC9C|80975B4|80952D4||||
 |0|804A068|8049880|804EBF0|804DE60||||
 |801C5B0|8082D48|8081FE8|808B7AC|808953C|StartHelpPromptSprite_Unused2|[struct Proc* StartHelpPromptSprite_Unused2(int x, int y, struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2593)||
 |0|802E3E0|802DF20|8030C44|8030CF4|InitPlaythroughState|[void InitPlaythroughState(int isDifficult, s8 unk) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L935)||
 |8038EC0|804068C|803FF80|80455E0|8045640||||
-|8029DE4|802F428|802EF5C|8031CA4|8031D58|AdjustArenaOpponentPower|signed int AdjustArenaOpponentPower()||
+|8029DE4|802F428|802EF5C|8031CA4|8031D58|ArenaAdjustOpponentPowerRanking|[static bool ArenaAdjustOpponentPowerRanking(void)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L545)||
 |8019600|801A23C|8019E5C|801A304|801A640|GenerateBestMovementScript|[void GenerateBestMovementScript(int x, int y, u8 output[])](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmidoten.c#L144)||
 |0|80A0B14|80A0148|80A936C|80A4928|BWL_GetTotalWins|int BWL_GetTotalWins()||
 |0|8013488|8012F14|800A118|800A3B8|FilterSomeTextFromStandardBuffer|[char *FilterSomeTextFromStandardBuffer(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/messdecode.c#L195)||
 |0|807CE00|807C38C|80BA8CC|80B5D48||||
 |80630C8|8070338|806FB4C|807E114|807BDD0||||
 |0|804FA30|804F254|8055180|8054498||||
-|8031AD8|8038C64|80387B0|803D648|803D6B8||||
+|8031AD8|8038C64|80387B0|803D648|803D6B8|AiAttemptCombatWithinMovement|[bool AiAttemptCombatWithinMovement(bool(*is_enemy)(struct Unit* unit))](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L119)||
 |0|806BBF8|806B40C|8078338|8075F18|StartAnimsOnPopups|int StartAnimsOnPopups()||
 |0|807A22C|8079A5C|8085B30|80837F8||||
 |804B930|80550B4|80548CC|805B180|805A3DC||||
@@ -4308,27 +4308,27 @@
 |0|8029AE4|8029634|802B93C|802B9F4|CanUnitNotLevelUp|bool CanUnitNotLevelUp(int a1)||
 |0|80991C4|8098908|80A2378|80A00DC||||
 |0|8025FE0|8025B54|802758C|80275E8|DisplayUnitAdditionalBlinkingIcons|int DisplayUnitAdditionalBlinkingIcons()||
-|802DD38|8033FE8|8033B10|8036E0C|8036D0C||||
+|802DD38|8033FE8|8033B10|8036E0C|8036D0C|GetFactionBattlePreviewFramePalette|[static u16 const* GetFactionBattlePreviewFramePalette(int faction)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L318)||
 |8034AC8|803BECC|803BA18|80407C4|8040844|AiTryDoSpecialItems|signed int AiTryDoSpecialItems()||
 |0|800F568|800F65C|800D04C|800CD88|EventC7_|signed int EventC7_(int a1)||
 |0|800F588|800F67C|800D06C|800CDA8|EventC8_|signed int EventC8_(int a1)||
 |0|800507C|80051A0|8003988|8003A3C|FlushDBGToBG2|int FlushDBGToBG2()||
-|80243A0|8028A08|802857C|802A490|802A52C|RollRNIfBattleStarted|int RollRNIfBattleStarted(unsigned __int16 a1, unsigned __int8 a2)||
+|80243A0|8028A08|802857C|802A490|802A52C|BattleRandRoll|[bool BattleRandRoll(u16 threshold, bool simulationResult)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L224)||
 |806A8CC|80788FC|807812C|80851FC|8082EC4|CheckEventDefinition|unsigned __int16 **CheckEventDefinition(unsigned __int16 **a1)||
-|8015EF4|8015DC0|8015944|8015A5C|8015A40||||
-|8015ECC|8015D98|801591C|8015A88|8015A6C||||
+|8015EF4|8015DC0|8015944|8015A5C|8015A40|GetCameraCenteredY|[u16 GetCameraCenteredY(int y)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L707)||
+|8015ECC|8015D98|801591C|8015A88|8015A6C|GetCameraCenteredX|[u16 GetCameraCenteredX(int x)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L694)||
 |8056470|8069118|806892C|807571C|8076934||||
 |8046880|804F8FC|804F120|8072BC0|8070618||||
 |8070D08|8082E2C|0|808B894|8089624|LoadChapterTitleGfx|int LoadChapterTitleGfx(int a1, unsigned int a2)||
 |80400A0|80489D0|80481E4|804D584|804C7E4||||
 |80172D8|8017808|8017400|80174A8|8017700|GetItemIconId|[inline int GetItemIconId(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L179)||
-|80260B0|802ACC4|802A814|802CDD4|802CE9C|BattleUnit_DidWeaponBreak|int BattleUnit_DidWeaponBreak(int a1)||
+|80260B0|802ACC4|802A814|802CDD4|802CE9C|DidBattleUnitBreakWeapon|[bool DidBattleUnitBreakWeapon(struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1774)||
 |80368DC|803DDF8|803D948|8042D4C|8042DC8||||
 |0|8008ECC|800903C|800795C|8007A58||||
 |0|80AACB0|80A9DE8|80B289C|80ADDFC||||
 |8056C9C|8062EFC|8062714|8070B68|806E58C||||
 |8040AEC|8049438|8048C50|804DFE4|804D24C||||
-|8022A5C|8026A24|8026598|80280C4|8028130|ShowUnitSMS|int ShowUnitSMS(int a1)||
+|8022A5C|8026A24|8026598|80280C4|8028130|ShowUnitSprite|[void ShowUnitSprite(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L1012)||
 |0|80052E0|8005410|8003C24|8003CF4|Font_SetGlyphSet|int Font_SetGlyphSet(int a1)||
 |8022C10|8026C80|80267F4|8028320|802838C|GetUnitSupporterInitialExp|[int GetUnitSupporterInitialExp(struct Unit* unit, int num)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L140)||
 |0|80AA470|80A9594|80B3220|80AE7A4||||
@@ -4359,13 +4359,13 @@
 |0|80B84A4|80B76F8|80D2728|80CDA38||||
 |806B8FC|8079F68|8079798|8085F88|8083C60|CheckLocalEventId|bool CheckLocalEventId(int a1)||
 |806B970|8079FDC|807980C|8085F70|8083C48|ClearLocalEvents|int ClearLocalEvents()||
-|8022064|8025B80|80256F4|802710C|8027168|GetUnitMapSpritePaletteIndex|signed int GetUnitMapSpritePaletteIndex(signed int result)||
+|8022064|8025B80|80256F4|802710C|8027168|GetUnitSpritePalette|[int GetUnitSpritePalette(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L539)||
 |8037D8C|803F2DC|803EE4C|80442A8|804429C||||
 |0|80034C8|80035EC|800226C|800231C|Sound_FadeOutBGM|[void Sound_FadeOutBGM(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L67)||
 |0|80055DC|8005718|8003F28|8004004|Text_AppendString|int Text_AppendString(int a1, unsigned __int8 *a2)||
 |806C998|8031114|8030C28|8033B20|8033C10|SALLYCURSOR6C_StartUnitSwap|[void SALLYCURSOR6C_StartUnitSwap(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L831)||
 |80603C4|806CF4C|806C760|807AFE0|8078BCC|MU_FogBumpFx_DisplayLoop|[static void MU_FogBumpFx_DisplayLoop(struct MUFogBumpFxProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1049)||
-|8031900|8038A0C|8038558|803D3E0|803D450|AiTryDoOffensiveAction|int AiTryDoOffensiveAction(int a1)||
+|8031900|8038A0C|8038558|803D3E0|803D450|AiAttemptOffensiveAction|[bool AiAttemptOffensiveAction(bool(*is_enemy)(struct Unit* unit))](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L29)||
 |8071B44|807E3E8|807D6B4|808C4C8|808A1B8||||
 |806BA34|807A0A0|80798D0|8086040|8083D18|ClearGlobalTriggerState|int ClearGlobalTriggerState()||
 |0|8095430|8094BD4|809E37C|809C0B4||||
@@ -4377,7 +4377,7 @@
 |0|8025D9C|8025910|8027348|80273A4|SMS_DisplayAllFromInfoStructs|int SMS_DisplayAllFromInfoStructs()||
 |0|809402C|8093734|80D2E44|80CE148||||
 |0|8003550|8003674|80022CC|800237C|Sound_FadeOutBGMAlt|[void Sound_FadeOutBGMAlt(int speed)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L86)||
-|802F4C8|8035F10|8035A38|803A99C|803A924|AiGetClosestUnitPosition|signed int AiGetClosestUnitPosition(int a1, _WORD *a2)||
+|802F4C8|8035F10|8035A38|803A99C|803A924|AiFindTargetInReachByFunc|[bool AiFindTargetInReachByFunc(bool(*func)(struct Unit* unit), struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L174)||
 |8054EDC|8004960|8004A84|80C6C10|80C1E54|SleepCallback6C|int SleepCallback6C(_6CStruct *_6C)|sleepTimer--,减到0则跳出睡眠循环|
 |8058720|8064FF4|806480C|80C7F60|80C31A8||||
 |0|809F70C|809ECD0|80A7FC8|80A3584||||
@@ -4387,10 +4387,10 @@
 |808D938|8047E3C|803E8E4|80C801C|80C3264||||
 |80213B0|8024774|80242E8|80258B4|8025904|MakeTerrainHealTargetList|void MakeTerrainHealTargetList(int phase)||
 |0|80AD100|80AC21C|80B4AA4|80AFE8C||||
-|8030654|80373B0|8036ED8|803BD70|803BDE0|FindClosestBestPosition|signed int FindClosestBestPosition(int a1, int a2, int a3, signed __int16 *a4)||
+|8030654|80373B0|8036ED8|803BD70|803BDE0|AiGetUnitClosestValidPosition|[bool AiGetUnitClosestValidPosition(struct Unit* unit, short x, short y, struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L989)||
 |0|809F770|809ED34|80A8030|80A35EC||||
 |0|80B4BB0|80B3D78|80C8418|80C3660||||
-|8024B40|80294EC|802903C|802AF00|802AF90|BattleCheckDoubling|signed int BattleCheckDoubling(int a1, _DWORD *a2)||
+|8024B40|80294EC|802903C|802AF00|802AF90|BattleGetFollowUpOrder|[bool BattleGetFollowUpOrder(struct BattleUnit** attacker, struct BattleUnit** defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L614)||
 |0|803602C|8035B54|803AA9C|803AA40||||
 |0|800F070|800F164|80124DC|801240C||||
 |0|8000E08|8000E30|8000C58|8000C80|NextRN_N|[int NextRN_N(int max) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L80)||
@@ -4407,12 +4407,12 @@
 |8070668|80040C0|80041E4|80029D8|8002A88|sub_8002A88|[void sub_8002A88(int songId)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L451)||
 |0|800EA10|800EB04|8010C84|8010B48||||
 |8068628|80759E8|8075218|8081970|807F630|BG0Shaker_Loop|int BG0Shaker_Loop(int a1)||
-|8025104|8029B10|8029660|802B970|802BA28|CheckForLevelUp|int CheckForLevelUp(int a1)||
+|8025104|8029B10|8029660|802B970|802BA28|CheckBattleUnitLevelUp|[void CheckBattleUnitLevelUp(struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L924)||
 |0|8051020|8050844|8056A08|8055A64||||
 |80619B0|806EC60|806E474|807CBC4|807A80C|MapAnim_Cleanup|[void MapAnim_Cleanup(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mapanim.c#L71)||
 |8070DA8|8082ECC|8082440|808B99C|80896D8||||
 |805FE9C|806CA1C|806C230|807AC48|8078824|MU_StepSound_OnSecondSound|[static void MU_StepSound_OnSecondSound(struct MUStepSoundProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L878)||
-|800DB38|800ED58|800EE4C|8011730|8011644|NewGoldGotPopup|int NewGoldGotPopup(int a1, int a2, int a3)||
+|800DB38|800ED58|800EE4C|8011730|8011644|Event_ResetText|[static void Event_ResetText(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L878)||
 |0|809B214|809A83C|80A40A0|0||||
 |0|805B2C0|805AAD8|806C32C|806A008||||
 |0|80ADAA0|80ACBC8|80B5378|80B0760|InitBonusContentClaimList|bool InitBonusContentClaimList()||
@@ -4425,7 +4425,7 @@
 |0|807B2DC|807A868|8018CD4|8018FC0|sub_8018FC0|[void sub_8018FC0(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1511)||
 |0|805E158|805D970|8062F8C|8061E8C||||
 |805B2BC|80673C8|8066BDC|80734BC|8070FA4||||
-|8013C18|80135FC|80130DC|8012F78|8012EC0|String_CopyTo|int String_CopyTo(_BYTE *a1, _BYTE *a2)||
+|8013C18|80135FC|80130DC|8012F78|8012EC0|StringCopy|[void StringCopy(char* dst, char const* src)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L182)||
 |808B9B4|803F774|803F2E4|80446E4|8044750||||
 |808B9B4|80ABC60|80AAD7C|80B38B4|80AEC94||||
 |0|8082D1C|8081FBC|808B750|80894E0|StartHelpPromptSprite|[struct Proc* StartHelpPromptSprite(int x, int y, int palid, struct Proc* parent)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L2577)||
@@ -4439,18 +4439,18 @@
 |8060408|806CF90|806C7A4|807B010|8078BFC|MU_IsFogBumpFxActive|[u8 MU_IsFogBumpFxActive(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1061)||
 |0|80A4320|80A36AC|80AD6EC|80A8CD4||||
 |0|809DAD4|809D0BC|80A6474|80A26A8||||
-|8029F34|802F578|802F0AC|8031DEC|8031EA0||||
+|8029F34|802F578|802F0AC|8031DEC|8031EA0|ArenaGenMatchupGoldValue|[static void ArenaGenMatchupGoldValue(void)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L618)||
 |80176E4|8017D20|8017930|8017B54|8017E34|UnitLoadStatsFromChracter|[void UnitLoadStatsFromChracter(struct Unit* unit, const struct CharacterData* character) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L698)||
-|802F5E0|8036148|8035C70|803AB9C|803AB5C||||
+|802F5E0|8036148|8035C70|803AB9C|803AB5C|AiRandomMove|[void AiRandomMove(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L223)||
 |804119C|8049AE8|8049300|804E670|804D8DC||||
 |808B40C|8060D2C|8060BB0|807F784|0||||
 |0|8008DFC|8008F6C|8007890|800798C||||
-|8025790|802A22C|8029D7C|802C28C|802C344|GetUnitEffectiveLevel|int GetUnitEffectiveLevel(int a1)||
+|8025790|802A22C|8029D7C|802C28C|802C344|GetUnitExpLevel|[int GetUnitExpLevel(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1240)||
 |8017174|8017664|801725C|80172F0|8017548|GetItemType|[inline int GetItemType(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L107)||
 |8001434|80014F0|8001518|800101C|800106C|BG_SetColorBpp|[void BG_SetColorBpp(int bg, int bitsPerPixel)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L140)||
 |80449F4|804DD80|804D5A4|8052FFC|8052304|StartEfxHpBar|int StartEfxHpBar(int a1)||
 |802BB0C|8031A5C|0|8034520|8034618|GetROMChapterStruct|[const struct ROMChapterData* GetROMChapterStruct(unsigned chIndex) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/chapterdata.c#L5)||
-|80093AC|8007F68|80080D8|80069F4|8006AF0|Dialogue_SetCharacterDisplayDelay|int Dialogue_SetCharacterDisplayDelay(char a1)||
+|80093AC|8007F68|80080D8|80069F4|8006AF0|SetTalkPrintDelay|[void SetTalkPrintDelay(int print_delay)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L457)||
 |0|80A5920|80A4C34|80AED2C|80AA248||||
 |801863C|8019120|8018D38|801913C|8019464|GetCharacterData|[inline const struct CharacterData* GetCharacterData(int charId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L202)||
 |8020A18|8023D50|80238C4|8024D54|8024DA4|IsSameAllegiance|[int IsSameAllegiance(int left, int right) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L56)||
@@ -4463,16 +4463,16 @@
 |8000E5C|8000E5C|8000E84|8000C90|8000CB8|Roll2RN|[s8 Roll2RN(int threshold) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L89)||
 |0|8028C08|802877C|802A69C|802A730|SetupBattleWeaponData|int SetupBattleWeaponData(_DWORD *a1, signed int a2)||
 |0|806C738|806BF4C|807AAB8|8078694|MU_SetFacing|[void MU_SetFacing(struct MUProc* proc, int facingId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L738)||
-|80249D0|80291F8|8028D48|802ABD0|802AC60|ComputeHit|int ComputeHit(int a1, int a2)||
+|80249D0|80291F8|8028D48|802ABD0|802AC60|ComputeBattleUnitEffectiveHitRate|[void ComputeBattleUnitEffectiveHitRate(struct BattleUnit* attacker, struct BattleUnit* defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L515)||
 |803AF7C|80427A4|80420F0|80476A4|8047780||||
-|801FFC0|8022F94|8022B1C|80463D8|804645C||||
+|801FFC0|8022F94|8022B1C|80463D8|804645C|func_fe6_0801FFC0|[int func_fe6_0801FFC0(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1232)||
 |0|80AD704|80AC82C|80BBD30|80B7274||||
 |0|809BA38|809B064|80A48A8|80A0AC0||||
 |0|8064330|8063B48|80704AC|806E1F0|StartEfxChillAnime|int StartEfxChillAnime(int a1, int a2)||
 |0|80A7A60|80A6D68|8009C7C|8009D1C||||
 |806042C|806CFB4|806C7C8|807B028|8078C14|MU_State_WaitForFogBump|[static void MU_State_WaitForFogBump(struct MUProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1065)||
 |808CA14|80AF194|80AE27C|80B6934|80B1D14||||
-|8022A6C|8026A34|80265A8|80280D8|8028144|GetUnitStandingSpriteDataFlagThing|int GetUnitStandingSpriteDataFlagThing(int a1)||
+|8022A6C|8026A34|80265A8|80280D8|8028144|GetUnitSpriteHiddenFlag|[u8 GetUnitSpriteHiddenFlag(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unitsprite.c#L1020)||
 |0|800E36C|800E460|800CCEC|800CA18|EventB8_|int EventB8_(int a1)||
 |0|809BF40|809B568|80A4DD0|80A0FE8||||
 |0|8002BE4|0|8001BD0|8001C78|SoftResetIfKeyComboPressed|[void SoftResetIfKeyComboPressed(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L937)||
@@ -4480,15 +4480,15 @@
 |8017FAC|80186F0|8018300|801856C|8018858|TickActiveFactionTurn|[void TickActiveFactionTurn(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L1131)||
 |803D0EC|8045960|8045170|80536E0|8038ED0||||
 |8071714|80839A4|801B250|806F4BC|808A320||||
-|801F310|800F8A4|800F998|800D0BC|800CDF8|EventCC_|int EventCC_(int a1)||
-|8031F24|80390F8|8038C44|803DAF0|803DB60|AiTryDoSteal|signed int AiTryDoSteal()||
+|801F310|800F8A4|800F998|800D0BC|800CDF8|func_fe6_0801F310|[u8 func_fe6_0801F310(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L592)||
+|8031F24|80390F8|8038C44|803DAF0|803DB60|AiAttemptStealActionWithinMovement|[bool AiAttemptStealActionWithinMovement(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L314)||
 |805F198|806B8A0|806B0C0|8077FAC|8075B78|MakeBattlePopupTileMapFromTSA|int MakeBattlePopupTileMapFromTSA(_WORD *a1, unsigned __int16 a2)||
-|802D3B0|80335B4|8033084|80361B8|80360B8||||
+|802D3B0|80335B4|8033084|80361B8|80360B8|StatusDecayDisplay_Init|[static void StatusDecayDisplay_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L555)||
 |8058720|805DB68|805D380|80C6E4C|80C2094||||
 |0|80284C8|802803C|8029E8C|8029F00|CanUnitUseItemPrepScreen|[s8 CanUnitUseItemPrepScreen(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L1151)||
 |8016F00|8017364|8016F10|8016FE4|801723C|GetUnitItemUseReachBits|[int GetUnitItemUseReachBits(struct Unit* unit, int itemSlot) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L891)||
 |0|800844C|80085BC|8006ED4|8006FD0||||
-|802D6F4|8033940|0|8036694|8036594|BattleForecase_SetupLabelText|int BattleForecase_SetupLabelText()||
+|802D6F4|8033940|0|8036694|8036594|InitBattlePreviewLabels|[static void InitBattlePreviewLabels(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L106)||
 |0|8003DF0|8003F14|80027E0|8002890|PlaySong|[void PlaySong(int songId, struct MusicPlayerInfo *player)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/soundwrapper.c#L330)||
 |8061B30|806EDE0|806E5F4|807CCBC|807A904|MapAnim_ShowPoisonEffectIfAny|[void MapAnim_ShowPoisonEffectIfAny(ProcPtr p) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mapanim.c#L118)||
 |0|8097BBC|8097430|80D27C8|80CDAD8||||
@@ -4497,19 +4497,19 @@
 |8000F20|8000F20|8000F48|8000CF0|8000D40|IncrementGameClock|[void IncrementGameClock() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/time.c#L26)||
 |80618D4|806EB84|806E398|807CB28|807A770|BattleUnit_ShouldDisplayWpnBroke|[s8 BattleUnit_ShouldDisplayWpnBroke(struct BattleUnit *u) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mapanim.c#L36)||
 |0|8009BE8|8009D58|80086A4|80087A8||||
-|802039C|8023348|8022ED0|80240A8|80240EC|ArenaCommandUsability|signed int ArenaCommandUsability()||
+|802039C|8023348|8022ED0|80240A8|80240EC|func_fe6_0802039C|[int func_fe6_0802039C(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1448)||
 |809773C|80B2D50|80B1F2C|80B9F08|80B5384||||
-|8024C50|80295FC|802914C|802B03C|802B0CC|CheckForTriangleAttack|signed int CheckForTriangleAttack(int a1, int a2)||
+|8024C50|80295FC|802914C|802B03C|802B0CC|BattleCheckTriangleAttack|[bool BattleCheckTriangleAttack(struct BattleUnit* attacker, struct BattleUnit* defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L679)||
 |8061964|806EC14|806E428|807CB90|807A7D8|BattleUnit_ShouldDisplayWRankUp|[s8 BattleUnit_ShouldDisplayWRankUp(struct BattleUnit *u) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mapanim.c#L58)||
 |8066094|80732FC|8072B10|807FFE8|807DCA8||||
 |80483E0|80518BC|80510E0|8057298|8056310|ekrBattleEnding_8056310|int ekrBattleEnding_8056310(int a1)||
-|801B90C|801CF9C|801CB98|801CEA8|801D244|TryMakeCantoUnit|signed int TryMakeCantoUnit(unsigned __int16 **a1)||
+|801B90C|801CF9C|801CB98|801CEA8|801D244|PlayerPhase_AttemptReMove|[static bool PlayerPhase_AttemptReMove(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L658)||
 |8016BD8|8016F04|8016AB0|8016C8C|8016EE4|IsItemDisplayUsable|[s8 IsItemDisplayUsable(struct Unit* unit, int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L747)||
 |0|809CB24|8041C5C|809D144|809AE7C||||
 |0|8082D74|8082014|801DA28|801DDC4|StartBMXFADE|int StartBMXFADE(char a1)||
 |0|80A8AC8|80A7BB4|80C33E4|80BE5F8||||
 |80670B8|8074300|8073B14|8080B20|807E7E0||||
-|8024AB4|8029460|8028FB0|802AE40|802AED0|MakeBattle|int MakeBattle()||
+|8024AB4|8029460|8028FB0|802AE40|802AED0|BattleUnwind|[void BattleUnwind(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L575)||
 |8061014|806DEC4|806D6D8|807BA2C|8079618|MU_DeathFade_OnLoop|[static void MU_DeathFade_OnLoop(struct MUEffectProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1538)||
 |80742D0|8089638|8088CD4|8092518|8090238||||
 |802368C|80277A8|802731C|8029060|80290B8|CanUnitUseTorchItem|[s8 CanUnitUseTorchItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L471)||
@@ -4526,14 +4526,14 @@
 |806BF14|80652AC|807D424|80976D0|80953F0|IsCharacterForceDeployed|int IsCharacterForceDeployed(unsigned __int16 a1)||
 |0|8086748|0|808F4FC|808D200||||
 |80019DC|8001D64|8001D8C|8001448|800148C|BG_SetPosition|[void BG_SetPosition(u16 a, u16 b, u16 c)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L386)||
-|802A68C|802FCD4|802F808|8086288|8083FB0|RunCharacterEvents|int RunCharacterEvents(int a1, char a2)||
+|802A68C|802FCD4|802F808|8086288|8083FB0|KillUnitOnCombatDeath|[void KillUnitOnCombatDeath(struct Unit* unit, struct Unit* opponent)](https://github.com/StanHash/fe6/blob/0b25087/src/action.c#L402)||
 |80635E0|8070858|807006C|807E43C|807C0F8|MapAnimExpBar_FillLoop|int MapAnimExpBar_FillLoop(int a1)||
-|801C39C|801DA0C|801D608|805587C|8054BA4||||
+|801C39C|801DA0C|801D608|805587C|8054BA4|StartMapFade|[void StartMapFade(bool locksGame)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L647)||
 |0|80A7D9C|80A6E78|80AF4B8|80AA9D8||||
-|8011EC8|800EBBC|800ECB0|800E854|800E640||||
+|8011EC8|800EBBC|800ECB0|800E854|800E640|EventClearTalkDisplayed|[static void EventClearTalkDisplayed(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3411)||
 |8011F70|8001BA0|8001BC8|800139C|80013E0|UpdateKeyStatus|[void UpdateKeyStatus(struct KeyStatusBuffer *keyStatus)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L324)||
 |0|807E4C0|807D78C|803618C|803608C||||
-|800DD08|800B15C|800B220|80C77B0|80C29F8||||
+|800DD08|800B15C|800B220|80C77B0|80C29F8|DarkenThenFunc_OnLoop|[static void DarkenThenFunc_OnLoop(struct DarkenFuncProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L970)||
 |0|800790C|8007A7C|8006374|8006470|GetFaceBlinkProcUnk8006470|signed int GetFaceBlinkProcUnk8006470(int a1)||
 |8065F9C|8073204|8072A18|808004C|807DD0C||||
 |80012E8|80013A4|80013CC|8000F54|8000FA4|GetTileIndex|[int GetTileIndex(int bg, int offset)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L108)||
@@ -4549,15 +4549,15 @@
 |803F6C8|8047FD4|80477E8|80B1D48|80AD2A8||||
 |8068338|80756F0|8074F20|80817CC|807F48C|MapAnimLevelUpProc_DisplayLevelUpSmallText|int MapAnimLevelUpProc_DisplayLevelUpSmallText(int a1)||
 |0|806E154|806D968|807BB44|8079730|MU_PixelEffect_OnLoop|[static void MU_PixelEffect_OnLoop(struct MUEffectProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1602)||
-|801D43C|801ED50|801E9CC|801EF24|801F2CC|LoadPhaseIntroGraphics|int LoadPhaseIntroGraphics()||
+|801D43C|801ED50|801E9CC|801EF24|801F2CC|PhaseIntro_InitGraphics|[static void PhaseIntro_InitGraphics(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1356)||
 |0|80A79C8|80A6CD0|808CD7C|808AA6C||||
 |0|801140C|8010FBC|80D1F10|80CD218||||
 |0|807E658|807D908|80332E4|80333D4|SALLYCURSOR_DeploySupplyUnit|[void SALLYCURSOR_DeploySupplyUnit() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L452)||
 |0|800BE6C|800BF5C|803633C|803623C||||
 |806B43C|80798D4|8079104|8086240|8083F68|CheckForCharacterEvents|bool CheckForCharacterEvents(int a1, char a2)||
-|8031088|8037E0C|8037958|8085CC4|808398C|EvCheck07_CHES|signed int EvCheck07_CHES(int a1)||
-|801C2E8|801D958|801D554|801D9B8|801DD54||||
-|80324EC|8039698|80391E4|803E0A4|803E114|AiBattleGetTileDangerWeight|signed int AiBattleGetTileDangerWeight()||
+|8031088|8037E0C|8037958|8085CC4|808398C|AiIsUnitEnemyAndNotInScrList|[bool AiIsUnitEnemyAndNotInScrList(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L271)||
+|801C2E8|801D958|801D554|801D9B8|801DD54|MapFade_Loop|[static void MapFade_Loop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L620)||
+|80324EC|8039698|80391E4|803E0A4|803E114|AiGetDangerScoreComponent|[int AiGetDangerScoreComponent(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L648)||
 |0|8099FE8|8099628|80CB8BC|80C69B0||||
 |8066C70|8073ED8|80736EC|80808C4|807E584||||
 |8017410|80179AC|80175BC|8017650|80178A8|GetUnitFogViewRange|[int GetUnitFogViewRange(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L363)||
@@ -4565,19 +4565,19 @@
 |806C750|802C68C|802C1CC|809A02C|8097D54||||
 |806CC80|8031B40|0|80C5314|80C0530||||
 |0|8007254|80073C4|8005C9C|8005D98||||
-|8032378|8039524|8039070|803DF24|803DF94|AiBattleGetTargetHpWeight|int AiBattleGetTargetHpWeight()||
-|8032524|80396D0|803921C|803E0E0|803E150|AiBattleGetSubjectHpWeight|int AiBattleGetSubjectHpWeight()||
+|8032378|8039524|8039070|803DF24|803DF94|AiGetOpponentLowHpScoreComponent|[int AiGetOpponentLowHpScoreComponent(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L533)||
+|8032524|80396D0|803921C|803E0E0|803E150|AiGetLowHpScoreComponent|[int AiGetLowHpScoreComponent(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L661)||
 |802156C|8024938|80244AC|8025B44|8025BA0|AddAsTarget_IfCanStealFrom|int AddAsTarget_IfCanStealFrom(int a1)||
-|8003CA8|8004498|80045BC|8002CF4|8002DA4|_InsertMainProc|int InsertMainProc(int a1, int a2)||
+|8003CA8|8004498|80045BC|8002CF4|8002DA4|InsertRootProc|[static void InsertRootProc(struct ProcDummy* proc, int treenum)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L160)||
 |0|807D248|807C7D4|80BB864|80B6D24|IceCrystal4|void IceCrystal4(_6CStruct *a1)||
 |803FD40|8048670|8047E84|80331E0|80332D0|sub_80332D0|[void sub_80332D0() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L391)||
-|8003CF4|80044B8|80045DC|8002D18|8002DC8|_InsertChildProc|int InsertChildProc(int a1, int a2)||
+|8003CF4|80044B8|80045DC|8002D18|8002DC8|InsertProc|[static void InsertProc(struct ProcDummy* proc, struct ProcDummy* parent)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L176)||
 |8061878|806EB28|806E33C|807CAE4|807A72C|DisplayWpnBrokePopup|[void DisplayWpnBrokePopup(u32 a) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mapanim.c#L23)||
 |8061908|806EBB8|806E3CC|807CB4C|807A794|DisplayWRankUpPopup|[void DisplayWRankUpPopup(u32 a) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mapanim.c#L45)||
 |80837C8|80BC240|0|80B6628|80B1A08||||
 |8020A04|8023D3C|80238B0|8024D3C|8024D8C|AreUnitsAllied|[int AreUnitsAllied(int left, int right) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmphase.c#L50)||
 |0|803FF30|803F828|8044E74|8044ED8|NameSelect_8044ED8|int NameSelect_8044ED8(int a1)||
-|801BC68|801D39C|801CF98|80DC020|80D73E4|__negsf2|unsigned int _negsf2(int a1)||
+|801BC68|801D39C|801CF98|80DC020|80D73E4|PlayerPhase_WaitForMove|[static void PlayerPhase_WaitForMove(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L834)||
 |802CB78|8032D2C|80327FC|807B9B0|807959C|MU_StartDeathFade|[void MU_StartDeathFade(struct MUProc* muProc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1511)||
 |0|809CDD0|809C44C|80C5CCC|80C0F00||||
 |80935A0|8065E38|8065648|8089F4C|8087CC0|UnitSlide_FadeOutLoop|[void UnitSlide_FadeOutLoop(struct StatScreenEffectProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L1284)||
@@ -4597,7 +4597,7 @@
 |0|800B04C|800B110|80B8FA0|80B4418||||
 |0|8002E30|8002F54|8001D50|8001E00|GetBackgroundFromBufferPointer|[int GetBackgroundFromBufferPointer(u16 *ptr)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L1010)||
 |807226C|80851C4|80847C8|808DF74|808BC68||||
-|80269FC|802BA98|802B5E8|80D10E0|80CC13C||||
+|80269FC|802BA98|802B5E8|80D10E0|80CC13C|TradeMenu_HelpBox_OnEnd|[static void TradeMenu_HelpBox_OnEnd(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/trademenu.c#L582)||
 |8084AEC|80A08B4|809FEE8|80851B8|8082E80|CallEventDefinition|int CallEventDefinition(int a1, unsigned __int8 a2)||
 |0|80B68A4|80B5A84|8082108|807FDC8||||
 |0|80BAF34|80BA42C|804CDCC|804C02C||||
@@ -4606,7 +4606,7 @@
 |0|8020478|8020010|8020CF0|8020FF8||||
 |8072218|8085170|8084774|808DF20|808BC10||||
 |8041A88|804ACC8|804A4E0|804FCFC|804EF70|RedrawMenu|[void RedrawMenu(struct MenuProc* proc)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uimenu.c#L305)||
-|8024A88|8029434|8028F84|802AE00|802AE90|ClearRounds|int ClearRounds()||
+|8024A88|8029434|8028F84|802AE00|802AE90|ClearBattleHits|[void ClearBattleHits(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L561)||
 |8088B40|800CC28|800CD18|8033780|8033870|InitPrepScreenUnitsAndCamera|[void InitPrepScreenUnitsAndCamera() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L679)||
 |80857B0|80A1A88|80A1100|80AA460|80A5A48|SaveSuspendedGame|int SaveSuspendedGame(int a1)||
 |8074EF0|808A0F4|8089794|8093058|8090D80||||
@@ -4624,7 +4624,7 @@
 |803703C|803E580|803E0D4|80434CC|8043548||||
 |0|809B798|809ADC0|80AEF3C|80AA458||||
 |8000E38|8000E38|8000E60|8000C78|8000CA0|Roll1RN|[s8 Roll1RN(int threshold) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L85)||
-|803046C|8036FD8|8036B00|803BA10|803BA08|AiTryMoveTowards|int AiTryMoveTowards(int xPos, int yPos, int actionId, int safetyThreshold, int idkFlag)||
+|803046C|8036FD8|8036B00|803BA10|803BA08|AiTryMoveTowards|[void AiTryMoveTowards(short x, short y, u8 action, u8 maxDanger, u8 arg_4)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L926)||
 |0|8099BB0|80991F8|80A2C10|80A095C||||
 |0|80A7778|80A6A90|80CC754|80C7844||||
 |8002C04|8003054|8003178|8001FD8|8002088|FlushTiles|[void FlushTiles(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L1144)||
@@ -4643,7 +4643,7 @@
 |8057B4C|8063DE8|8063600|8080C74|807E934||||
 |804FEB8|8059A2C|8059244|806AA60|8068738||||
 |8053340|80203D0|801FF68|8072974|80703C4||||
-|801E144|801FE3C|801F9D4|8066FD4|80664A8||||
+|801E144|801FE3C|801F9D4|8066FD4|80664A8|ChapterIntro_LoopVOpenText|[static void ChapterIntro_LoopVOpenText(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1918)||
 |8023620|802775C|80272D0|80294AC|8029504|CanUnitUseFruitItem|[s8 CanUnitUseFruitItem(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L663)||
 |8094460|807C080|807B60C|80D11C8|80CC4AC||||
 |0|801C624|0|801C5A8|801C940|PlayerPhase_MainIdle|int PlayerPhase_MainIdle(unsigned __int16 **a1)||
@@ -4658,7 +4658,7 @@
 |8048BF0|80520C4|80518E8|8057AF4|8056B70|UnitKakudai2|void UnitKakudai2(_6CStruct *ctx)||
 |0|8012944|80122B0|8009458|8009568|AP_QueueObjGraphics|[void AP_QueueObjGraphics(struct APHandle* handle) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L221)||
 |804A5DC|8053C3C|8053454|80599F8|8058BC8|BattleAIS_ExecCommands|int BattleAIS_ExecCommands()||
-|802A718|806DD98|806D5AC|80358A8|80357A8||||
+|802A718|806DD98|806D5AC|80358A8|80357A8|CombatAction_PostBanimDeathFades|[static void CombatAction_PostBanimDeathFades(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/action.c#L426)||
 |8000BC0|8000BB8|8000BE0|8000B60|8000B88|NextRN|[int NextRN(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L7)||
 |8017654|8017C58|8017868|8017A5C|8017D3C|UnitInitFromDefinition|[void UnitInitFromDefinition(struct Unit* unit, const struct UnitDefinition* uDef) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L657)||
 |8047BA4|8050EC0|80506E4|8056890|80558F4|SpellFx_InterpretBgAnimScript|signed int SpellFx_InterpretBgAnimScript(unsigned __int16 *a1, unsigned __int16 *a2, __int16 *a3)||
@@ -4666,11 +4666,11 @@
 |0|80564B8|8055CD0|805C5D8|805B828|loadRestWINH|void loadRestWINH(int a1, int a2, __int16 a3, unsigned int a4)||
 |8002EDC|800332C|8003450|80D3658|80CE95C||||
 |0|809CEA8|809C524|80A5944|80A1B6C||||
-|802430C|80ACFC8|80AC0E4|80B4974|80AFD5C||||
+|802430C|80ACFC8|80AC0E4|80B4974|80AFD5C|BattleGenerateDisplayStats|[void BattleGenerateDisplayStats(struct Unit* unit, i8 item_slot)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L193)||
 |8043288|804C608|804BE2C|805183C|8050B08|ekrBattle_8050B08|int ekrBattle_8050B08(int a1)||
 |805C840|8068A0C|8068220|8074EBC|80729E0|EkrClasschgFinished|bool EkrClasschgFinished()||
 |805D128|80692E8|8068AFC|80759D4|80734F8|DoesEkrLevelUpSomething|bool DoesEkrLevelUpSomething()||
-|801D0DC|801E9F0|801E66C|8054E9C|80540B0||||
+|801D0DC|801E9F0|801E66C|8054E9C|80540B0|PhaseIntroText_OutLoop|[static void PhaseIntroText_OutLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1208)||
 |8066F34|8073648|80739B0|808021C|807E054||||
 |80663E0|80738E0|8072E5C|8080394|807E6E0||||
 |8066678|807419C|80730F4|8080A20|807DEDC||||
@@ -4713,28 +4713,28 @@
 |802AB0C|803022C|802FD64|8032BB0|8032C88|GetMovementScriptFromPath|[void GetMovementScriptFromPath(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmpatharrowdisp.c#L102)||
 |0|8062094|80618AC|8077AF4|80756BC||||
 |0|8029CC8|8029818|802BB48|802BC00||||
-|8020640|802360C|8023180|8023830|802386C||||
+|8020640|802360C|8023180|8023830|802386C|func_fe6_08020640|[u8 func_fe6_08020640(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1567)||
 |0|80BD904|0|80D1040|80CC074||||
 |0|8065BC0|80653D0|8078BB8|8076798|FireDragonBGAnimation11|void FireDragonBGAnimation11(_6CStruct *ctx)||
 |80171A4|801769C|8017294|801732C|8017584|GetItemUses|[inline int GetItemUses(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L118)||
 |806210C|806F30C|806EB20|80395CC|8039554||||
 |80171C8|80176C4|80172BC|8017358|80175B0|GetItemMaxUses|[inline int GetItemMaxUses(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L125)||
-|802BE24|8031D9C|8031830|80348DC|80349D4|GetUnitInfoWindowX|int GetUnitInfoWindowX(int a1, int a2)||
-|8032814|80399C4|8039510|803E3D8|803E448|IsAiTileSafe|int IsAiTileSafe(int x, int y, int threshold)||
+|802BE24|8031D9C|8031830|80348DC|80349D4|GetUnitPanelXForUnit|[static int GetUnitPanelXForUnit(struct Unit* unit, int width)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L141)||
+|8032814|80399C4|8039510|803E3D8|803E448|AiCheckDangerAt|[bool AiCheckDangerAt(int x, int y, u8 threshold)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-080326C4.c#L123)||
 |0|80ABCB0|80AADCC|80B390C|80AECEC||||
 |805ECC4|806B3E8|806AC08|805C060|805B2BC||||
 |8087AE4|80A3E18|80A31A4|80AD120|80A8708||||
 |804BE80|80866DC|8085CDC|808F48C|808D190||||
 |0|808E84C|808DF20|8097778|8095498||||
 |8082DA4|80AD2D0|80AC3F8|80B4CA0|80B0088||||
-|8024C2C|80295D8|8029128|802B004|802B094|BattleCheckBrave|signed int BattleCheckBrave(int a1)||
+|8024C2C|80295D8|8029128|802B004|802B094|BattleCheckBraveEffect|[int BattleCheckBraveEffect(struct BattleUnit* attacker)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L670)||
 |0|809BA20|809B04C|80A4888|80A0AA0||||
 |8035CD4|803D1F0|803CD40|804213C|80421BC||||
 |8022F44|8026FB0|8026B24|8028650|80286BC|GetUnitAffinityIcon|[int GetUnitAffinityIcon(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmreliance.c#L324)||
 |8048DF4|80522C8|8051AEC|8057CFC|8056D74||||
 |8048ED8|80523AC|8051BD0|8057DE8|8056E60|HasEkrNamewinAppearEnded|bool HasEkrNamewinAppearEnded()||
 |805F148|806B848|806B068|8077F54|8075B20|DoesBattlePopupExist|bool DoesBattlePopupExist()||
-|80160AC|8015F6C|8015AF0|8015C38|8015C1C|Init6C_GENS|int Init6C_GENS(int a1)||
+|80160AC|8015F6C|8015AF0|8015C38|8015C1C|CamMove_OnInit|[static void CamMove_OnInit(struct CamMoveProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L803)||
 |0|802AB1C|802A66C|802CC14|802CCDC|GetStaffAccuracy|int GetStaffAccuracy(_DWORD *a1, int a2)||
 |0|80669A4|80661B8|8079BB4|8077790||||
 |8053BFC|805C8C8|805C0E0|8070E58|806E8A4||||
@@ -4755,7 +4755,7 @@
 |0|80B07EC|80AF99C|80B83A8|80B37FC||||
 |8036E88|803E3CC|803DF1C|80BB21C|80B6744||||
 |0|80A940C|80A84F8|8020270|8020578||||
-|80257E0|802A27C|8029DCC|802C2E0|802C398|GetUnitEffectivePowerLevel|int GetUnitEffectivePowerLevel(int a1)||
+|80257E0|802A27C|8029DCC|802C2E0|802C398|GetUnitPowerLevel|[int GetUnitPowerLevel(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1264)||
 |805F680|806BD80|806B5F4|806DA60|806B73C||||
 |0|802A7C4|802A314|802C8BC|802C984|SaveSnagWallFromBattle|int SaveSnagWallFromBattle(int a1)||
 |0|8012BC0|801252C|8009840|8009950||||
@@ -4773,7 +4773,7 @@
 |805EA10|806B134|806A954|806A608|8068A28||||
 |0|806EAA4|806E2B8|807BFCC|8079BB8|MU_GetByUnit|[struct MUProc* MU_GetByUnit(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/mu.c#L1871)||
 |803B830|804305C|0|8047F10|8047FF8|SioMenu_8047FF8|int SioMenu_8047FF8(int a1)||
-|8024FA8|8029988|80294D8|802B784|802B83C|MakeNextBattleHitRound|signed int MakeNextBattleHitRound(BattleUnitStruct *a1, int a2)||
+|8024FA8|8029988|80294D8|802B784|802B83C|BattleGenerateHit|[bool BattleGenerateHit(struct BattleUnit* attacker, struct BattleUnit* defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L857)||
 |0|8091D38|80913FC|809A8F8|8098620||||
 |0|807F758|807E99C|807D028|807ACEC||||
 |8053BA0|805C86C|805C084|806D4B8|806B194||||
@@ -4883,7 +4883,7 @@
 |0|0|0|801FD08|8020010||||
 |0|0|0|801FFF0|80202F8||||
 |0|0|0|8020DC0|80210C8||||
-|801EA54|80219BC|8021544|802257C|80225B0||||
+|801EA54|80219BC|8021544|802257C|80225B0|func_fe6_0801EA54|[int func_fe6_0801EA54(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L102)||
 |0|0|0|802262C|8022660||||
 |0|0|0|8023280|80232B8||||
 |0|0|0|8023EAC|8023EF0||||
@@ -4918,7 +4918,7 @@
 |0|0|0|80332B4|80333A4|sub_80333A4|[bool8 sub_80333A4(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L439)||
 |0|802FD68|802F89C|803365C|803374C|CanCharacterBePrepMoved|[bool8 CanCharacterBePrepMoved(int unitId) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L591)||
 |0|0|0|803409C|8034194|sub_8034194|[void sub_8034194() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1053)||
-|802B8A0|80317EC|8031304|80342B0|80343A8|CanUnitUseSeize|signed int CanUnitUseSeize()||
+|802B8A0|80317EC|8031304|80342B0|80343A8|func_fe6_0802B8A0|[bool func_fe6_0802B8A0(void)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L40)||
 |0|0|0|80346DC|80347D4|UnitInfoWindow_PositionUnitName|int UnitInfoWindow_PositionUnitName(int a1)||
 |0|0|0|80354B4|80355AC||||
 |0|0|0|8035538|8035630||||
@@ -5006,7 +5006,7 @@
 |0|0|0|806E0B8|806BD94||||
 |0|0|0|8070918|806E310||||
 |0|0|0|8070E1C|806E868||||
-|806A8AC|80788D0|8078100|8072060|806FAB0||||
+|806A8AC|80788D0|8078100|8072060|806FAB0|func_fe6_0806A8AC|[void func_fe6_0806A8AC(struct EventInfo const* info)](https://github.com/StanHash/fe6/blob/0b25087/src/event-trigger.c#L15)||
 |0|0|0|807267C|80700CC||||
 |0|0|0|80727E4|8070234||||
 |0|0|0|8072804|8070254||||
@@ -5825,10 +5825,10 @@
 |0|0|0|80315AC|8031660|sub_8031660|[bool8 sub_8031660() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmcontainer.c#L112)||
 |0|0|0|8032700|80327B4|DidUnitDie|[bool8 DidUnitDie(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmmind.c#L583)||
 |0|0|0|8034014|803410C|sub_803410C|[void sub_803410C(ProcPtr proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1033)||
-|802D2C8|8033494|8032F64|803606C|8035F6C||||
+|802D2C8|8033494|8032F64|803606C|8035F6C|TerrainHealDisplay_Next|[static void TerrainHealDisplay_Next(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L460)||
 |0|0|0|8038574|8038448||||
 |0|0|0|80396B4|803963C||||
-|802F244|8035C6C|8035794|803A6F0|803A678|CpPerform_EscapeWait|signed int CpPerform_EscapeWait()||
+|802F244|8035C6C|8035794|803A6F0|803A678|AiEscapeAction|[bool AiEscapeAction(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L465)||
 |0|0|0|804532C|804538C||||
 |0|0|0|804F098|804E314|ClearUiFrame|[void ClearUiFrame(u16* tilemap, int x, int y, int width, int height)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/uiutils.c#L300)||
 |0|0|0|80556A4|80549BC||||
@@ -5872,7 +5872,7 @@
 |0|0|0|80B8088|80B3498||||
 |0|0|0|80B9D44|80B51C0||||
 |0|0|0|80BD56C|80B86A4||||
-|800F644|8010440|800FFD0|80BDEB4|80B8FEC||||
+|800F644|8010440|800FFD0|80BDEB4|80B8FEC|EvtCmd_Func|[static int EvtCmd_Func(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L1846)||
 |0|0|0|80BE9D4|80B9B38|WorldMap_InitChapterTransition|int WorldMap_InitChapterTransition(int a1)||
 |0|800FCBC|0|80BF5B4|80BA718|StartGMapScreenVSync|int StartGMapScreenVSync(int a1, int a2, int a3, int a4, int a5)||
 |0|0|0|80BF6B4|80BA818||||
@@ -6193,7 +6193,7 @@
 |0|0|0|80014D8|800151C|sub_800151C|[void sub_800151C(u8 a, u8 b)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L416)||
 |0|0|0|8001DDC|8001E8C|BG_GetPriority|[int BG_GetPriority(int bg)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L1036)||
 |0|0|0|8001F20|8001FD0|sub_8001FD0|[void sub_8001FD0(int a)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/hardware.c#L1096)||
-|8004230|800473C|8004860|8002FBC|800306C|_EndProc|int EndProc(int a1)||
+|8004230|800473C|8004860|8002FBC|800306C|EndProc|[static void EndProc(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/proc.c#L400)||
 |0|8004A48|8004B6C|80032C8|800337C|ProcInst12_SetBit4|signed int ProcInst12_SetBit4(int a1)||
 |0|0|0|8003D70|8003E40||||
 |0|8013228|8012B70|8009ED8|8009F78||||
@@ -6215,7 +6215,7 @@
 |0|0|0|8023E94|8023ED8||||
 |0|0|0|8037CD8|8037C40||||
 |0|0|0|8039248|80391D0||||
-|8031764|80384E4|8038030|803CECC|803CF3C|AiScriptCmd_17_DoEscape|int AiScriptCmd_17_DoEscape(_BYTE *a1)||
+|8031764|80384E4|8038030|803CECC|803CF3C|AiCmd_Escape|[void AiCmd_Escape(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L605)||
 |8035880|803CD9C|803C8E8|8041CE8|8041D68|SioReady|int SioReady()||
 |0|0|0|80432A0|804331C||||
 |803BF8C|8043840|8043130|80486B0|804879C||||
@@ -6390,7 +6390,7 @@
 |0|0|0|8003798|800384C||||
 |0|0|0|8003D30|8003E00||||
 |0|0|0|8004150|8004218|DrawGlyph1DTile|int DrawGlyph1DTile(int a1, int a2)||
-|800AC30|8009080|80091F0|8007B08|8007C0C|DialogueMain_OnEnd|int DialogueMain_OnEnd()||
+|800AC30|8009080|80091F0|8007B08|8007C0C|Talk_OnEnd|[static void Talk_OnEnd(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1162)||
 |0|0|0|80089A4|8008AA8||||
 |8013428|8012CA4|8012610|8009914|8009A24||||
 |0|8012FCC|0|8009C20|8009CC0||||
@@ -6438,7 +6438,7 @@
 |0|0|0|801BCC0|801C030||||
 |0|0|0|801BCEC|801C05C||||
 |0|801BCD4|0|801BD20|801C090|DEBUGONLY_Startup|int DEBUGONLY_Startup()||
-|801ABE8|801BDC0|801BA10|801BE28|801C198||||
+|801ABE8|801BDC0|801BA10|801BE28|801C198|func_fe6_0801ABE8|[int func_fe6_0801ABE8(struct MenuProc* menu)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L438)||
 |0|0|0|801BE6C|801C1DC|UNUSED_StartupDebugMenu_WorldMapEffect|signed int UNUSED_StartupDebugMenu_WorldMapEffect()||
 |0|0|0|801BEB4|801C224|UNUSED_StartupDebugMenu_ChapterSelectIdle|int UNUSED_StartupDebugMenu_ChapterSelectIdle(int a1, int a2)||
 |0|0|0|801D47C|801D818|PlayerPhase_RangeDisplayIdle_ForceAPress|int PlayerPhase_RangeDisplayIdle_ForceAPress(unsigned __int16 **a1)||
@@ -6456,7 +6456,7 @@
 |0|0|0|8020828|8020B30||||
 |0|0|0|8020B40|8020E48||||
 |0|0|0|8020F00|8021208||||
-|801E9D8|802089C|8020434|80211CC|80214D4||||
+|801E9D8|802089C|8020434|80211CC|80214D4|GameOverScreen_End|[static void GameOverScreen_End(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2309)||
 |0|0|0|8021234|802153C||||
 |0|0|0|80213C8|80216D0||||
 |0|0|0|80216A4|80219AC||||
@@ -6492,7 +6492,7 @@
 |0|0|0|8035E9C|8035D9C||||
 |0|0|0|80361E8|80360E8||||
 |0|0|0|8036E9C|8036D9C|BKSEL_InitGfx|int BKSEL_InitGfx(int a1)||
-|800D85C|802BC98|0|803830C|80381E0||||
+|800D85C|802BC98|0|803830C|80381E0|Event_FadeOutOfSkip|[static void Event_FadeOutOfSkip(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L745)||
 |0|0|0|8038334|8038208|PushGlobalTimer|int PushGlobalTimer()||
 |0|0|0|803835C|8038230||||
 |0|0|0|8038F68|8038EF0||||
@@ -6938,8 +6938,8 @@
 |0|0|0|808DE68|8097340||||
 |0|0|0|8099624|808A4FC||||
 |0|0|0|809F1E0|809D17C||||
-|8012120|809B598|809AC9C|80CD54C|80C85B0||||
-|8012178|809B5F8|809AC20|80CD5D4|80C8638||||
+|8012120|809B598|809AC9C|80CD54C|80C85B0|StartPopup_08012120|[void StartPopup_08012120(u16 item, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3514)||
+|8012178|809B5F8|809AC20|80CD5D4|80C8638|StartPopup_08012178|[void StartPopup_08012178(u16 item, ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3524)||
 |0|0|0|8000B50|8000B78|SetIRQHandler|[void SetIRQHandler(int index, void *irq)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/irq.c#L24)||
 |0|0|0|8000C0C|8000C34|LoadRNState|[void LoadRNState(const u16* seeds) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L56)||
 |0|0|0|8000C24|8000C4C|StoreRNState|[void StoreRNState(u16* seeds) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/rng.c#L62)||
@@ -7001,7 +7001,7 @@
 |0|0|0|802A60C|802A6A0|WriteBattleStructTerrainBonuses|_BYTE *WriteBattleStructTerrainBonuses(int a1, char a2)||
 |0|0|0|802A648|802A6DC|BattleSetupTerrainData|_BYTE *BattleSetupTerrainData(int a1)||
 |0|0|0|802CDC0|802CE88|IsCurrentBattleTriangleAttack|unsigned int IsCurrentBattleTriangleAttack()||
-|80260CC|802B040|802AB90|802D1EC|802D2B4||||
+|80260CC|802B040|802AB90|802D1EC|802D2B4|BattleHitAdvance|[void BattleHitAdvance(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1782)||
 |0|0|0|802D1FC|802D2C4||||
 |0|0|0|802E24C|802E314|AddFireTile|[void AddFireTile(int x, int y, int turnCountdown, int turnInterval)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L127)||
 |0|802C058|802BB98|802E2C0|802E388|AddTrap8|[void AddTrap8(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmtrick.c#L147)||
@@ -7013,8 +7013,8 @@
 |0|0|0|8037F78|8037E4C||||
 |0|0|0|8037F90|8037E64||||
 |0|0|0|803C1E8|803C258|SetUnitAiFromDefinition|int SetUnitAiFromDefinition(int a1, _BYTE *a2)||
-|8030CE8|8037A6C|80375B8|803C44C|803C4BC|AiExecAi1|int AiExecAi1()||
-|8030D78|8037AFC|8037648|803C4DC|803C54C|AiExecAi2|int AiExecAi2()||
+|8030CE8|8037A6C|80375B8|803C44C|803C4BC|AiTryExecScriptA|[bool AiTryExecScriptA(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L57)||
+|8030D78|8037AFC|8037648|803C4DC|803C54C|AiTryExecScriptB|[bool AiTryExecScriptB(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L82)||
 |0|0|0|803E02C|803E09C|AiBattleGetTurnNumberWeight|int AiBattleGetTurnNumberWeight()||
 |0|0|0|8042DFC|8042E78|SetGameLinkArenaBit|int SetGameLinkArenaBit()||
 |8036974|803DEB4|803DA04|8042E0C|8042E88|ClearGameLinkArenaBit|int ClearGameLinkArenaBit()||
@@ -7123,7 +7123,7 @@
 |0|0|0|8024C90|8024CE0||||
 |0|8024A18|0|8025C48|8025CA4|ListSummonTargets|int ListSummonTargets(int a1)||
 |0|0|0|8034108|8034200|sub_8034200|[void sub_8034200() ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L1081)||
-|802C4A8|8032420|8031EF0|8034F98|8035090||||
+|802C4A8|8032420|8031EF0|8034F98|8035090|StartUnitResChangePanel|[void StartUnitResChangePanel(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L388)||
 |0|0|0|80373D4|80372D4|MapEventEngineExists_|bool MapEventEngineExists_()||
 |0|80A79B8|8066544|8037DF0|8037D58||||
 |0|0|0|8038348|803821C|PopGlobalTimer|int PopGlobalTimer()||
@@ -7279,7 +7279,7 @@
 |0|0|0|8005EA0|8005F9C|LoadGenericMiniMugPalette|int LoadGenericMiniMugPalette(int a1, int a2)||
 |0|0|0|8006600|80066FC||||
 |0|0|0|8006620|800671C||||
-|800D7F0|800836C|80084DC|8006DF4|8006EF0||||
+|800D7F0|800836C|80084DC|8006DF4|8006EF0|EndPopup|[void EndPopup(void)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L723)||
 |0|80095E4|8009754|80080A4|80081A8||||
 |0|0|0|80096B0|80097C0|APProc_DeleteAll|[void APProc_DeleteAll(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/ap.c#L386)||
 |0|0|0|800BCF4|800BA04||||
@@ -7327,7 +7327,7 @@
 |0|0|0|804A4A0|80496A4||||
 |0|0|0|804CC78|804BED8||||
 |0|0|0|804D0DC|804C33C||||
-|80608D4|8048494|8047CA8|804D298|804C4F8||||
+|80608D4|8048494|8047CA8|804D298|804C4F8|EndAllMus|[void EndAllMus(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L826)||
 |0|0|0|804D2A8|804C508||||
 |0|0|0|804D2F8|804C558||||
 |0|0|0|804D330|804C590||||
@@ -7705,18 +7705,18 @@
 |0|0|0|80DA764|80D5B28|_kill|int kill()||
 |0|0|0|8029150|80291A8|CanUnitUsePromotionItem|[s8 CanUnitUsePromotionItem(struct Unit* unit, int item)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L521)||
 |0|0|0|80D2824|80CDB34|PromotionCommand_OnSelect|int PromotionCommand_OnSelect(int a1, int a2)||
-|8009958|8006FF0|0|8005A6C|8004974||||
+|8009958|8006FF0|0|8005A6C|8004974|ResumeTalk|[void ResumeTalk(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L660)||
 |0|0|0|8009E5C|8009EFC||||
 |0|0|0|800C834|800C55C|Event9E_PUTSPRITE|int Event9E_PUTSPRITE(int a1)||
 |0|0|0|800C84C|800C574|Event9F_|int Event9F_(int a1)||
 |0|0|0|800D104|800CE40|_MarkSomethingInMenu|[void _MarkSomethingInMenu(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/event.c#L154)||
 |0|0|0|8011B2C|8011AF4||||
 |0|0|0|8011BD8|8011A48||||
-|8014D50|8012B98|8012504|801419C|8013988||||
+|8014D50|8012B98|8012504|801419C|8013988|func_fe6_08014D50|[void func_fe6_08014D50(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1472)||
 |0|0|0|80142C4|8009E28||||
-|8015AB8|8015900|8015484|8015518|80154F4|MapMain_Suspend|int MapMain_Suspend()||
-|801B034|801C56C|801C17C|801C4FC|801C894|PlayerPhase_Suspend|int PlayerPhase_Suspend()||
-|801CF48|801E858|801E4D4|801E8BC|801EC64||||
+|8015AB8|8015900|8015484|8015518|80154F4|BmMain_SuspendBeforePhase|[void BmMain_SuspendBeforePhase(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L460)||
+|801B034|801C56C|801C17C|801C4FC|801C894|PlayerPhase_Suspend|[static void PlayerPhase_Suspend(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L198)||
+|801CF48|801E858|801E4D4|801E8BC|801EC64|PhaseIntroVMatchHi|[static void PhaseIntroVMatchHi(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1132)||
 |0|0|0|801EC40|8008FAC||||
 |0|0|0|8021C10|8081008||||
 |0|0|0|8022130|80140E4||||
@@ -7727,7 +7727,7 @@
 |0|0|0|8024468|80244B8||||
 |0|0|0|8024514|80244D8||||
 |0|0|0|80247A4|8024724||||
-|8020928|8023900|0|80247F4|8024658||||
+|8020928|8023900|0|80247F4|8024658|func_fe6_08020928|[int func_fe6_08020928(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1708)||
 |0|0|0|8024C6C|8024CBC||||
 |0|0|0|8025CEC|8025D48||||
 |0|0|0|8025D24|8025D80||||
@@ -7753,7 +7753,7 @@
 |0|0|0|8054F0C|805401C||||
 |80709D4|80829E0|8081C80|8055010|8054120||||
 |0|0|0|8055024|805433C||||
-|805F8DC|8063C14|0|8057CA0|8056D18||||
+|805F8DC|8063C14|0|8057CA0|8056D18|UpdateMu|[void UpdateMu(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L275)||
 |804C7EC|8055FC4|80557DC|805C0C4|8076514||||
 |0|0|0|805C6FC|805B94C||||
 |0|0|0|805CCA4|8068B80||||
@@ -7821,7 +7821,7 @@
 |0|0|0|80752A4|806F4B4||||
 |807AD6C|806C398|806BBAC|8076774|80742EC||||
 |0|806CAD0|806C2E4|8076BD0|8074798||||
-|80608EC|806D4BC|806CCD0|8078884|8076464||||
+|80608EC|806D4BC|806CCD0|8078884|8076464|EndMu|[void EndMu(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L833)||
 |0|806C0E8|806B8FC|80788A4|8076484||||
 |8098478|806D4D4|0|8078DBC|807699C||||
 |80684A4|80733F8|806CCE8|8078E98|8076A78||||
@@ -8198,28 +8198,28 @@
 |0|0|0|8065A44|809656C||||
 |8000B38|8000B30|8000B58|0|0||||
 |0|80010CC|80010F4|0|0||||
-|8001394|8001450|8001478|0|0||||
-|80015A4|800183C|8001864|0|0||||
-|8001610|80018A8|80018D0|0|0||||
-|8001714|80019AC|80019D4|0|0||||
-|8001734|80019CC|80019F4|0|0|_UpdateKeyStatus|int UpdateKeyStatus(int a1, __int16 a2)||
-|8001B4C|8001ED4|8001EFC|0|0||||
-|8001B8C|8001F14|8001F3C|0|0||||
-|8001C68|8001FF0|8002018|0|0||||
-|8001D0C|8002094|80020BC|0|0||||
-|8001D44|80020CC|80020F4|0|0||||
-|8001E68|80021F0|8002218|0|0||||
-|8001F88|8002310|8002338|0|0||||
-|800210C|8002494|80024BC|0|0||||
-|8001FD4|80025BC|80025E4|0|0||||
-|800236C|80026F4|800271C|0|0||||
-|80024A4|800282C|8002854|0|0||||
-|8002A68|8002EB8|8002FDC|0|0||||
-|800319C|80036F0|8003814|0|0||||
+|8001394|8001450|8001478|0|0|SetBgTilemapOffset|[void SetBgTilemapOffset(int bg, int offset)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L205)||
+|80015A4|800183C|8001864|0|0|SetOnVBlank|[void SetOnVBlank(IrqFunc func)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L262)||
+|8001610|80018A8|80018D0|0|0|SetOnVMatch|[void SetOnVMatch(IrqFunc func)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L278)||
+|8001714|80019AC|80019D4|0|0|RunMainFunc|[void RunMainFunc(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L317)||
+|8001734|80019CC|80019F4|0|0|RefreshKeyStFromKeys|[void RefreshKeyStFromKeys(struct KeySt* keySt, short keys)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L323)||
+|8001B4C|8001ED4|8001EFC|0|0|func_fe6_08001B4C|[void func_fe6_08001B4C(u16* a, u16* b)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L434)||
+|8001B8C|8001F14|8001F3C|0|0|func_fe6_08001B8C|[void func_fe6_08001B8C(void* outTm, void const* inData, u8 base, u8 linebits)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L442)||
+|8001C68|8001FF0|8002018|0|0|func_fe6_08001C68|[void func_fe6_08001C68(u16* outTm, short const* inData, int unused)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L461)||
+|8001D0C|8002094|80020BC|0|0|func_fe6_08001D0C|[void func_fe6_08001D0C(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L484)||
+|8001D44|80020CC|80020F4|0|0|func_fe6_08001D44|[void func_fe6_08001D44(u16 const* inPal, int bank, int count, int unk)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L492)||
+|8001E68|80021F0|8002218|0|0|func_fe6_08001E68|[void func_fe6_08001E68(int a, int b, int c, int d)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L514)||
+|8001F88|8002310|8002338|0|0|func_fe6_08001F88|[void func_fe6_08001F88(int a, int b, int c)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L537)||
+|800210C|8002494|80024BC|0|0|func_fe6_0800210C|[void func_fe6_0800210C(i8 a)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L562)||
+|8001FD4|80025BC|80025E4|0|0|func_fe6_08001FD4|[void func_fe6_08001FD4(i8 a)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L545)||
+|800236C|80026F4|800271C|0|0|func_fe6_0800236C|[void func_fe6_0800236C(i8 a)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L596)||
+|80024A4|800282C|8002854|0|0|func_fe6_080024A4|[void func_fe6_080024A4(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L613)||
+|8002A68|8002EB8|8002FDC|0|0|ClearMoveList|[static void ClearMoveList(void)](https://github.com/StanHash/fe6/blob/0b25087/src/move.c#L30)||
+|800319C|80036F0|8003814|0|0|StartOrChangeBgm|[void StartOrChangeBgm(int songId, int speed, struct MusicPlayerInfo* mpi)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L124)||
 |0|800394C|8003A70|0|0||||
-|80034B8|8003B04|8003C28|0|0||||
-|800361C|8003CE8|8003E0C|0|0||||
-|80036B0|8003D7C|8003EA0|0|0||||
+|80034B8|8003B04|8003C28|0|0|MakeBgmOverridePersist|[void MakeBgmOverridePersist(void)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L225)||
+|800361C|8003CE8|8003E0C|0|0|DelaySong_OnLoop|[void DelaySong_OnLoop(struct MusicProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L262)||
+|80036B0|8003D7C|8003EA0|0|0|PlaySongDelayed|[static void PlaySongDelayed(int songId, int delay, struct MusicPlayerInfo* mpi)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L276)||
 |0|8003F28|800404C|0|0||||
 |0|8003F94|80040B8|0|0||||
 |0|80045A4|80046C8|0|0||||
@@ -8268,13 +8268,13 @@
 |0|800D8DC|800D9D0|0|0||||
 |0|800DA9C|800DB90|0|0||||
 |0|800DB8C|800DC80|0|0||||
-|800FF18|800DC44|800DD38|0|0||||
+|800FF18|800DC44|800DD38|0|0|EvtCmd_FlashCursorPid|[static int EvtCmd_FlashCursorPid(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2271)||
 |0|800DC94|800DD88|0|0||||
 |0|800DDD4|800DEC8|0|0||||
-|8010244|800E120|800E214|0|0||||
+|8010244|800E120|800E214|0|0|SetUnitAi|[static void SetUnitAi(struct Unit* unit, u8 ai_a, u8 ai_b, u8 unused)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2401)||
 |0|800E160|800E254|0|0||||
 |0|800E1C4|800E2B8|0|0||||
-|8010530|800E32C|800E420|0|0||||
+|8010530|800E32C|800E420|0|0|EvtCmd_OverrideBgm|[static int EvtCmd_OverrideBgm(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2501)||
 |0|800E570|800E664|0|0||||
 |0|800E598|800E68C|0|0||||
 |0|800E5C0|800E6B4|0|0||||
@@ -8297,7 +8297,7 @@
 |0|8011038|8010BE8|0|0||||
 |0|8011214|8010DC4|0|0||||
 |0|8011248|8010DF8|0|0||||
-|800D928|8011508|80110B8|0|0||||
+|800D928|8011508|80110B8|0|0|FadeFromSkip_Start|[static void FadeFromSkip_Start(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L781)||
 |0|8011C5C|80115C4|0|0||||
 |0|8011CBC|8011624|0|0||||
 |0|801206C|80119D4|0|0||||
@@ -8307,61 +8307,61 @@
 |0|80124BC|8011E28|0|0||||
 |0|80125EC|8011F58|0|0||||
 |0|8012640|8011FAC|0|0||||
-|80150DC|8014EE4|8014A68|0|0||||
-|80151E4|8014FEC|8014B70|0|0||||
-|80151F8|8015000|8014B84|0|0||||
+|80150DC|8014EE4|8014A68|0|0|func_fe6_080150DC|[void func_fe6_080150DC(u16* tm, int x, int y, u16 const* arg_3, u16 arg_4)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2010)||
+|80151E4|8014FEC|8014B70|0|0|func_fe6_080151E4|[void func_fe6_080151E4(u8* out, int size)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2152)||
+|80151F8|8015000|8014B84|0|0|func_fe6_080151F8|[void func_fe6_080151F8(u8* out, int size, int value)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2161)||
 |0|8015918|801549C|0|0||||
-|8016A10|8016C80|8016820|0|0||||
+|8016A10|8016C80|8016820|0|0|IsItemEffectiveAgainst|[bool IsItemEffectiveAgainst(u16 item, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/item.c#L447)||
 |0|801759C|8017148|0|0||||
 |0|8017748|8017340|0|0||||
 |0|8017874|801746C|0|0||||
-|8017578|8017B24|8017734|0|0||||
+|8017578|8017B24|8017734|0|0|BatchCreateUnits|[int BatchCreateUnits(struct UnitInfo const* info)](https://github.com/StanHash/fe6/blob/0b25087/src/unit.c#L361)||
 |0|8017B44|8017754|0|0||||
-|8017764|8017DAC|80179BC|0|0||||
+|8017764|8017DAC|80179BC|0|0|func_fe6_08017764|[void func_fe6_08017764(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit.c#L483)||
 |0|8018C20|8018830|0|0||||
 |0|8018C78|8018888|0|0||||
 |0|8018CC4|80188D4|0|0||||
-|801A698|801B718|801B338|0|0||||
+|801A698|801B718|801B338|0|0|func_fe6_0801A698|[int func_fe6_0801A698(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L143)||
 |0|801E7E0|801E45C|0|0||||
 |0|801FDB8|801F950|0|0||||
 |0|80214E8|802107C|0|0||||
 |0|80217EC|8021374|0|0||||
-|801EA54|80219BC|8021544|0|0||||
-|801F534|8022394|8021F1C|0|0||||
-|801F688|80225F4|802217C|0|0||||
-|801FBDC|8022B9C|8022724|0|0||||
+|801EA54|80219BC|8021544|0|0|func_fe6_0801EA54|[int func_fe6_0801EA54(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L102)||
+|801F534|8022394|8021F1C|0|0|func_fe6_0801F534|[int func_fe6_0801F534(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L722)||
+|801F688|80225F4|802217C|0|0|func_fe6_0801F688|[int func_fe6_0801F688(struct MenuEntInfo const* info, int id)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L802)||
+|801FBDC|8022B9C|8022724|0|0|func_fe6_0801FBDC|[u8 func_fe6_0801FBDC(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1049)||
 |0|8023198|8022D20|0|0||||
 |0|80239AC|8023520|0|0||||
-|8020A64|8023D9C|8023910|0|0||||
-|8022A84|8026AB4|8026628|0|0||||
-|8022A94|8026AC4|8026638|0|0||||
+|8020A64|8023D9C|8023910|0|0|SetGold|[void SetGold(int amount)](https://github.com/StanHash/fe6/blob/0b25087/src/gold.c#L13)||
+|8022A84|8026AB4|8026628|0|0|GetUnitSupportCount|[int GetUnitSupportCount(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/support.c#L30)||
+|8022A94|8026AC4|8026638|0|0|GetUnitSupportPid|[u8 GetUnitSupportPid(struct Unit* unit, int num)](https://github.com/StanHash/fe6/blob/0b25087/src/support.c#L38)||
 |0|8026B70|80266E4|0|0||||
 |0|80270C0|8026C38|0|0||||
-|8023678|8027794|8027308|0|0||||
-|80236B0|80277CC|8027340|0|0||||
-|802581C|802A2B8|8029E08|0|0||||
-|8025B1C|802A6A4|802A1F4|0|0||||
-|8025D5C|802A944|802A494|0|0||||
+|8023678|8027794|8027308|0|0|CanUnitUsePureWaterItem|[bool CanUnitUsePureWaterItem(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/item-use.c#L328)||
+|80236B0|80277CC|8027340|0|0|CanUnitUseAntitoxinItem|[bool CanUnitUseAntitoxinItem(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/item-use.c#L344)||
+|802581C|802A2B8|8029E08|0|0|GetUnitClassKillExpBonus|[int GetUnitClassKillExpBonus(struct Unit* unit, struct Unit* defeated)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1274)||
+|8025B1C|802A6A4|802A1F4|0|0|BattleInitTargetCanCounter|[void BattleInitTargetCanCounter(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1453)||
+|8025D5C|802A944|802A494|0|0|BattlePrintDebugHitInfo|[void BattlePrintDebugHitInfo(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1607)||
 |0|802AD58|802A8A8|0|0||||
 |0|802BD14|802B854|0|0||||
 |0|802C17C|802BCBC|0|0||||
-|8026F30|802C2D4|802BE14|0|0||||
-|8027220|802C63C|802C17C|0|0||||
-|802887C|802DD64|802D8A4|0|0||||
-|8029370|802E8A0|802E3D4|0|0||||
+|8026F30|802C2D4|802BE14|0|0|UnitHideIfUnderRoof|[void UnitHideIfUnderRoof(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/trap.c#L412)||
+|8027220|802C63C|802C17C|0|0|UpdateTraps_ResetCountedDownTraps|[static void UpdateTraps_ResetCountedDownTraps(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/trap.c#L623)||
+|802887C|802DD64|802D8A4|0|0|BlueWeatherHBlank|[static void BlueWeatherHBlank(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmio.c#L568)||
+|8029370|802E8A0|802E3D4|0|0|CleanupUnitsBeforeChapter|[void CleanupUnitsBeforeChapter(void)](https://github.com/StanHash/fe6/blob/0b25087/src/chapter.c#L349)||
 |806C310|802ECE4|802E818|0|0||||
-|802AC20|8030340|802FE78|0|0|MoveCursor_8032DA0|signed int MoveCursor_8032DA0()||
-|801E674|80309BC|80304D0|0|0||||
+|802AC20|8030340|802FE78|0|0|MovePathIsValid|[static bool MovePathIsValid(void)](https://github.com/StanHash/fe6/blob/0b25087/src/movepath.c#L189)||
+|801E674|80309BC|80304D0|0|0|ChapterIntro_LoopFastFadeToMap|[static void ChapterIntro_LoopFastFadeToMap(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2143)||
 |0|8030C68|803077C|0|0||||
-|802B8A0|80317EC|8031304|0|0||||
-|802C9C0|803293C|803240C|0|0||||
-|802CA40|80329BC|803248C|0|0||||
+|802B8A0|80317EC|8031304|0|0|func_fe6_0802B8A0|[bool func_fe6_0802B8A0(void)](https://github.com/StanHash/fe6/blob/0b25087/src/code_0802B814.c#L40)||
+|802C9C0|803293C|803240C|0|0|SubtitleHelpDarkenerOnHBlank|[static void SubtitleHelpDarkenerOnHBlank(void)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L94)||
+|802CA40|80329BC|803248C|0|0|SubtitleHelpDarkener_FadeIn|[static void SubtitleHelpDarkener_FadeIn(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/subtitle-help.c#L133)||
 |0|8033D60|8033888|0|0||||
 |0|8034AC4|80345EC|0|0||||
 |0|8034CD0|80347F8|0|0||||
 |0|8034CF8|8034820|0|0||||
-|802F244|8035C6C|8035794|0|0||||
-|8031074|8037DF8|8037944|0|0||||
+|802F244|8035C6C|8035794|0|0|AiEscapeAction|[bool AiEscapeAction(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L465)||
+|8031074|8037DF8|8037944|0|0|AiIsUnitNonActive|[bool AiIsUnitNonActive(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L263)||
 |8033824|803A9FC|803A548|0|0||||
 |80347A4|803BBB0|803B6FC|0|0||||
 |8034DFC|803C218|803BD64|0|0||||
@@ -8420,19 +8420,19 @@
 |805BB24|8067C30|8067444|0|0|battleAnimationOAMInfoHandler|void battleAnimationOAMInfoHandler(void *battleAnimationOAMInfoBuffer, int a2, unsigned __int16 a3, int a4)|读取并处理解压到内存中的战斗动画OAM信息|
 |805C3FC|80685A8|8067DBC|0|0||||
 |805C89C|8068A68|806827C|0|0||||
-|805F7E4|806C238|806BA4C|0|0||||
-|805F93C|806C3F8|806BC0C|0|0||||
-|805FD40|806C8B8|806C0CC|0|0||||
-|805FD78|806C8F0|806C104|0|0||||
-|805FDEC|806C964|806C178|0|0||||
-|8060488|806D010|806C824|0|0||||
-|8060840|806D3F8|806CC0C|0|0||||
-|806096C|806D53C|806CD50|0|0||||
-|8060A1C|806D5EC|806CE00|0|0||||
-|8060A5C|806D62C|806CE40|0|0||||
-|8060B68|806D7E8|806CFFC|0|0||||
-|800E4C0|806D934|806D148|0|0||||
-|8060CB4|806DA3C|806D250|0|0||||
+|805F7E4|806C238|806BA4C|0|0|InitMus|[void InitMus(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L243)||
+|805F93C|806C3F8|806BC0C|0|0|StartUiMu|[struct MuProc* StartUiMu(struct Unit* unit, int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L290)||
+|805FD40|806C8B8|806C0CC|0|0|IsMuActive|[bool IsMuActive(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L434)||
+|805FD78|806C8F0|806C104|0|0|SetMuMoveScript|[void SetMuMoveScript(struct MuProc* mu, u8 const* movescr)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L453)||
+|805FDEC|806C964|806C178|0|0|StartMuScripted|[struct MuProc* StartMuScripted(u16 x, u16 y, u16 jid, int pal, u8 const* movescr)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L466)||
+|8060488|806D010|806C824|0|0|Mu_OnStateSleeping|[void Mu_OnStateSleeping(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L689)||
+|8060840|806D3F8|806CC0C|0|0|Mu_OnLoop|[void Mu_OnLoop(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L804)||
+|806096C|806D53C|806CD50|0|0|ApplyMoveScriptToCoordinates|[void ApplyMoveScriptToCoordinates(int* x, int* y, u8 const* movescr)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L859)||
+|8060A1C|806D5EC|806CE00|0|0|CanStartMu|[bool CanStartMu(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L897)||
+|8060A5C|806D62C|806CE40|0|0|ResetMuAnims|[void ResetMuAnims(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L910)||
+|8060B68|806D7E8|806CFFC|0|0|GetMuDisplayPosition|[bool GetMuDisplayPosition(struct MuProc* mu, struct Vec2* out)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L941)||
+|800E4C0|806D934|806D148|0|0|EvtCmd_TalkMore|[static int EvtCmd_TalkMore(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L1226)||
+|8060CB4|806DA3C|806D250|0|0|PutMu|[void PutMu(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L969)||
 |0|806DCB8|806D4CC|0|0||||
 |0|806E07C|806D890|0|0||||
 |0|806EA64|806E278|0|0||||
@@ -8505,9 +8505,9 @@
 |806B9F8|807A064|8079894|0|0||||
 |806BA48|807A0B4|80798E4|0|0||||
 |806BA74|807A0E0|8079910|0|0||||
-|806BAA0|807A10C|807993C|0|0||||
-|806BAB8|807A160|8079990|0|0||||
-|806BAF0|807A198|80799C8|0|0||||
+|806BAA0|807A10C|807993C|0|0|EvtCheck_IsHard|[bool EvtCheck_IsHard(void)](https://github.com/StanHash/fe6/blob/0b25087/src/event-functions.c#L18)||
+|806BAB8|807A160|8079990|0|0|func_fe6_0806BAB8|[int func_fe6_0806BAB8(u8 arg_00)](https://github.com/StanHash/fe6/blob/0b25087/src/event-functions.c#L26)||
+|806BAF0|807A198|80799C8|0|0|func_fe6_0806BAF0|[void func_fe6_0806BAF0(void)](https://github.com/StanHash/fe6/blob/0b25087/src/event-functions.c#L41)||
 |0|807A568|8079AF4|0|0||||
 |0|807A5D0|8079B5C|0|0||||
 |806BFA4|807A67C|8079C08|0|0||||
@@ -8525,7 +8525,7 @@
 |0|807DAF4|807CFF4|0|0||||
 |0|807DB8C|807D094|0|0||||
 |0|807DD0C|807D1C8|0|0||||
-|801ADB4|807DD24|807D1E0|0|0||||
+|801ADB4|807DD24|807D1E0|0|0|func_fe6_0801ADB4|[bool func_fe6_0801ADB4(void)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L547)||
 |0|807DD3C|807D1F8|0|0||||
 |0|807DDDC|807D240|0|0||||
 |0|807DF0C|807D2EC|0|0||||
@@ -8659,7 +8659,7 @@
 |0|80B7E60|80B70B4|0|0||||
 |0|80B812C|80B7380|0|0||||
 |0|80B81B4|80B7408|0|0||||
-|8017C04|80B8808|80B7A24|0|0||||
+|8017C04|80B8808|80B7A24|0|0|UnitChangeFaction|[void UnitChangeFaction(struct Unit* unit, int faction)](https://github.com/StanHash/fe6/blob/0b25087/src/unit.c#L700)||
 |0|80B8A20|80B7C3C|0|0||||
 |0|80B8FF4|80B8358|0|0||||
 |0|80B9038|80B839C|0|0||||
@@ -8686,7 +8686,7 @@
 |0|80BE0B4|80BD570|0|0||||
 |0|80BE1DC|80BD698|0|0||||
 |0|80BE2A8|80BD764|0|0||||
-|8019B38|801A8B4|801A4D4|0|0||||
+|8019B38|801A8B4|801A4D4|0|0|BuildUnitCompleteAttackRange|[void BuildUnitCompleteAttackRange(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/mapwork.c#L459)||
 |0|80A9090|80A817C|0|0||||
 |0|800D044|800D134|0|0||||
 |0|8030E80|8030994|0|0||||
@@ -8717,8 +8717,8 @@
 |0|80A88B8|80A79A4|0|0||||
 |0|80A8B98|80A7C84|0|0||||
 |0|80B1ED4|80B10AC|0|0||||
-|801A210|801B040|801AC60|0|0||||
-|801B7D0|801CE3C|801CA38|0|0||||
+|801A210|801B040|801AC60|0|0|BuildUnitStandingRangeForReach|[void BuildUnitStandingRangeForReach(struct Unit* unit, int reach)](https://github.com/StanHash/fe6/blob/0b25087/src/mapwork.c#L583)||
+|801B7D0|801CE3C|801CA38|0|0|PlayerPhase_BeginAction|[static bool PlayerPhase_BeginAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L604)||
 |0|807AFCC|807A558|0|0||||
 |0|809C0C8|809B700|0|0||||
 |0|80B7A74|80B6C8C|0|0||||
@@ -8761,12 +8761,12 @@
 |80640D0|807134C|8070B60|0|0||||
 |0|800D8FC|800D9F0|0|0||||
 |0|800F188|800F27C|0|0||||
-|801B3FC|801C980|801C57C|0|0||||
+|801B3FC|801C980|801C57C|0|0|PlayerPhase_BeginMoveSelect|[static void PlayerPhase_BeginMoveSelect(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L391)||
 |0|804BD8C|804B5B0|0|0||||
 |0|804C7C4|804BFE8|0|0||||
 |0|805AC14|805A42C|0|0||||
 |0|80656D8|8064EE8|0|0|FireDragonBGAnimation5|void FireDragonBGAnimation5(_6CStruct *ctx)||
-|805F9B8|806C4A0|806BCB4|0|0||||
+|805F9B8|806C4A0|806BCB4|0|0|StartMuInternal|[struct MuProc* StartMuInternal(u16 x, u16 y, u16 jid, int pal)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L306)||
 |0|80873B4|80869C8|0|0||||
 |0|80ACEE4|80AC000|0|0||||
 |0|80AEDC0|80ADEA8|0|0||||
@@ -8786,9 +8786,9 @@
 |0|800F3A0|800F494|0|0||||
 |0|800FEC8|800FE80|0|0||||
 |0|8010BF4|80107A4|0|0||||
-|8024E68|802984C|802939C|0|0|handleWeaponEffect|void handleWeaponEffect(u8 dataAttacker[], u8 dataDefender[])||
+|8024E68|802984C|802939C|0|0|BattleGenerateHitEffects|[void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L794)||
 |0|80387D0|803831C|0|0||||
-|8060748|806D2E4|806CAF8|0|0||||
+|8060748|806D2E4|806CAF8|0|0|UpdateMuStepSounds|[void UpdateMuStepSounds(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L739)||
 |0|807F104|807E348|0|0||||
 |807B90C|80897E0|8088E80|0|0||||
 |0|8096708|8095F14|0|0||||
@@ -8803,19 +8803,19 @@
 |0|80185C0|80181D0|0|0||||
 |0|801FBD8|801F770|0|0||||
 |0|801FCD0|801F868|0|0||||
-|802BCF4|8031C6C|8031700|0|0||||
+|802BCF4|8031C6C|8031700|0|0|InitUnitPanel|[static struct UnitPanelProc* InitUnitPanel(struct UnitPanelProc* proc, struct Unit* unit, int x, int y, int width, int lines)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L101)||
 |0|8043F74|8043798|0|0||||
 |0|80582B8|8057AD0|0|0||||
 |0|805B09C|805A8B4|0|0||||
 |0|805B384|805AB9C|0|0||||
-|8060504|806D08C|806C8A0|0|0||||
+|8060504|806D08C|806C8A0|0|0|Mu_OnStateMovement|[void Mu_OnStateMovement(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L708)||
 |0|807D370|807C8FC|0|0||||
 |8073688|8087230|8086844|0|0||||
 |0|80872A4|80868B8|0|0||||
 |0|80BCEBC|80BC494|0|0||||
 |0|80BDBE4|80BD08C|0|0||||
 |0|8017B78|8017788|0|0||||
-|8002234|800235C|8002384|0|0||||
+|8002234|800235C|8002384|0|0|func_fe6_08002234|[void func_fe6_08002234(i8 a)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L579)||
 |0|800B63C|800B700|0|0||||
 |0|800C4C0|800C5B0|0|0||||
 |0|800CF2C|800D01C|0|0||||
@@ -8844,26 +8844,26 @@
 |0|80B4B58|80B3D20|0|0||||
 |0|8077E50|8077680|0|0||||
 |0|807E854|807DAC4|0|0||||
-|80026BC|8002A44|8002A6C|0|0||||
-|8003434|80039D4|8003AF8|0|0||||
+|80026BC|8002A44|8002A6C|0|0|InitBgs|[void InitBgs(u16 const* config)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L662)||
+|8003434|80039D4|8003AF8|0|0|RestoreBgm|[void RestoreBgm(void)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L208)||
 |0|8003A68|8003B8C|0|0||||
 |0|8003BFC|8003D20|0|0||||
-|800DE3C|800B200|800B2C4|0|0||||
+|800DE3C|800B200|800B2C4|0|0|DarkenThenFunc_StepDarken|[static void DarkenThenFunc_StepDarken(struct DarkenFuncProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L999)||
 |0|800B494|800B558|0|0||||
 |0|800B5AC|800B670|0|0||||
 |0|800D22C|800D31C|0|0||||
 |0|800D2E4|800D3D4|0|0||||
 |0|800DB18|800DC0C|0|0||||
 |0|800E71C|800E810|0|0||||
-|800E120|80104D4|8010064|0|0||||
+|800E120|80104D4|8010064|0|0|EvtCmd_Background|[static int EvtCmd_Background(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L1107)||
 |0|802ED30|802E864|0|0||||
-|802B1D4|8030D88|803089C|0|0||||
+|802B1D4|8030D88|803089C|0|0|PrepPhase_Init|[static void PrepPhase_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/prep-phase.c#L218)||
 |0|804EA54|804E278|0|0||||
 |80481CC|80516A8|8050ECC|0|0||||
 |805238C|805BD74|805B58C|0|0||||
 |0|8066640|8065E54|0|0||||
 |0|8066D40|8066554|0|0||||
-|8061554|806E76C|806DF80|0|0||||
+|8061554|806E76C|806DF80|0|0|func_fe6_08061554|[void func_fe6_08061554(struct MuFadeProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1194)||
 |0|807C384|807B910|0|0||||
 |0|807E340|807D60C|0|0||||
 |8058F00|807E908|807DB74|0|0||||
@@ -8875,11 +8875,11 @@
 |0|80B4C58|80B3E20|0|0||||
 |0|80B916C|80B84D0|0|0||||
 |0|80BD48C|80BCA94|0|0||||
-|8002910|8002CD8|8002DFC|0|0||||
+|8002910|8002CD8|8002DFC|0|0|RefreshOnHBlank|[void RefreshOnHBlank(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L766)||
 |0|8029224|8028D74|0|0||||
 |0|80ACA44|80ABB60|0|0||||
 |0|8079C34|8079464|0|0||||
-|80028DC|8002CA4|8002DC8|0|0||||
+|80028DC|8002CA4|8002DC8|0|0|OnHBlankBoth|[void OnHBlankBoth(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L757)||
 |0|800AE34|800AE8C|0|0||||
 |0|800B9B8|800BA60|0|0||||
 |0|800BC98|800BDD4|0|0||||
@@ -8892,13 +8892,13 @@
 |0|80116F0|80112A0|0|0|fubuki4|void fubuki4(_6CStruct *ctx)||
 |0|8011E48|80117B0|0|0||||
 |0|801B8FC|801B528|0|0||||
-|801D03C|801E94C|801E5C8|0|0||||
+|801D03C|801E94C|801E5C8|0|0|PhaseIntroText_Init|[static void PhaseIntroText_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1182)||
 |0|8020CB0|8020848|0|0||||
-|8024D60|8029714|8029264|0|0|calculateBattleDamage|void calculateBattleDamage(u8 battleData[])|战斗中计算实际伤害<br>addr=战斗数据基址<br>203A3EC 我方<br>203A46C 对方|
+|8024D60|8029714|8029264|0|0|BattleGenerateHitAttributes|[void BattleGenerateHitAttributes(struct BattleUnit* attacker)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L740)|战斗中计算实际伤害<br>addr=战斗数据基址<br>203A3EC 我方<br>203A46C 对方|
 |0|802FD68|802F89C|0|0||||
 |8048244|8051720|8050F44|0|0||||
 |8050A70|805A29C|8059AB4|0|0||||
-|8025C18|805AE68|805A680|0|0||||
+|8025C18|805AE68|805A680|0|0|UpdateObstacleFromBattle|[void UpdateObstacleFromBattle(struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1503)||
 |0|805B52C|805AD44|0|0||||
 |8052878|805C260|805BA78|0|0||||
 |0|806037C|805FB94|0|0||||
@@ -8912,7 +8912,7 @@
 |0|806DF58|806D76C|0|0||||
 |8065830|8072AAC|80722C0|0|0||||
 |8065994|8072C10|8072424|0|0||||
-|802D1A8|807B158|807A6E4|0|0||||
+|802D1A8|807B158|807A6E4|0|0|MassEffectDisplay_Check|[static void MassEffectDisplay_Check(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L404)||
 |806C950|807B1E0|807A76C|0|0||||
 |0|807BC9C|807B228|0|0||||
 |8074084|807BDC8|807B354|0|0||||
@@ -8944,28 +8944,28 @@
 |8041358|804A4CC|8049CE4|0|0||||
 |806B650|8079A94|80792C4|0|0||||
 |0|8066AE0|80662F4|0|0||||
-|80278A0|802CC2C|802C76C|0|0||||
+|80278A0|802CC2C|802C76C|0|0|DoItemAttackStaffAction|[void DoItemAttackStaffAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/item-action.c#L189)||
 |0|807E0D4|807D448|0|0||||
-|8000C88|8000C80|8000CA8|0|0||||
+|8000C88|8000C80|8000CA8|0|0|RandInit|[void RandInit(int seed)](https://github.com/StanHash/fe6/blob/0b25087/src/random.c#L32)||
 |8002DC4|8003214|8003338|0|0||||
-|80032F0|8003858|800397C|0|0||||
-|800E088|800B3DC|800B4A0|0|0||||
-|800E200|800B5F0|800B6B4|0|0||||
+|80032F0|8003858|800397C|0|0|StartBgmFadeIn|[void StartBgmFadeIn(int songId, int duration, struct MusicPlayerInfo* mpi)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L166)||
+|800E088|800B3DC|800B4A0|0|0|Event_WaitForFaceEnd|[static void Event_WaitForFaceEnd(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L1082)||
+|800E200|800B5F0|800B6B4|0|0|EvtCmd_ClearTalk|[static int EvtCmd_ClearTalk(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L1145)||
 |8013754|800B8CC|800B974|0|0||||
 |0|800BA34|800BADC|0|0||||
-|800E5A8|800BA5C|800BB04|0|0||||
-|8024844|800BA8C|800BB34|0|0||||
+|800E5A8|800BA5C|800BB04|0|0|EvtCmd_TalkContinue|[static int EvtCmd_TalkContinue(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L1262)||
+|8024844|800BA8C|800BB34|0|0|ComputeBattleUnitDefense|[void ComputeBattleUnitDefense(struct BattleUnit* attacker, struct BattleUnit* defender)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L451)||
 |0|800BC48|800BD84|0|0||||
 |806B500|800CC74|800CD64|0|0||||
 |8071BC0|800CCB8|800CDA8|0|0||||
 |80815E4|800CD90|800CE80|0|0||||
 |0|800D28C|800D37C|0|0||||
-|801F5A0|800D7CC|800D8C0|0|0||||
+|801F5A0|800D7CC|800D8C0|0|0|func_fe6_0801F5A0|[u8 func_fe6_0801F5A0(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L739)||
 |0|800DE5C|800DF50|0|0||||
-|80104F0|800E25C|800E350|0|0||||
+|80104F0|800E25C|800E350|0|0|EvtCmd_PlayBgm|[static int EvtCmd_PlayBgm(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2489)||
 |0|800E390|800E484|0|0||||
 |0|800E3B4|800E4A8|0|0||||
-|8010608|800E3DC|800E4D0|0|0||||
+|8010608|800E3DC|800E4D0|0|0|EvtCmd_RestoreBgmVolume|[static int EvtCmd_RestoreBgmVolume(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2543)||
 |0|800E40C|800E500|0|0||||
 |8071B80|800EA9C|800EB90|0|0||||
 |0|800EAE4|800EBD8|0|0||||
@@ -8981,7 +8981,7 @@
 |0|80117AC|801135C|0|0|eventCodeFunc_DF|signed int eventCodeFunc_DF(_6CStruct *parent)|parent = 0x2025330|
 |0|8011AFC|8011464|0|0||||
 |0|8011EC0|8011828|0|0||||
-|8012428|8012378|8011CE0|0|0||||
+|8012428|8012378|8011CE0|0|0|SetEventTalkSkipped|[void SetEventTalkSkipped(void)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3606)||
 |0|8012440|8011DAC|0|0||||
 |0|8015840|80153C4|0|0||||
 |0|8015940|80154C4|0|0||||
@@ -8989,8 +8989,8 @@
 |0|8021820|80213A8|0|0||||
 |0|8030814|803034C|0|0||||
 |0|8030DFC|8030910|0|0||||
-|802BCAC|8031C24|80316B8|0|0||||
-|802D2C8|8033494|8032F64|0|0||||
+|802BCAC|8031C24|80316B8|0|0|InitUnitPanelSpriteTextPositions|[static void InitUnitPanelSpriteTextPositions(struct UnitPanelProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L84)||
+|802D2C8|8033494|8032F64|0|0|TerrainHealDisplay_Next|[static void TerrainHealDisplay_Next(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L460)||
 |8038C04|80403D0|803FCC4|0|0||||
 |803C060|8043918|8043170|0|0||||
 |803F938|8048244|8047A58|0|0||||
@@ -9002,7 +9002,7 @@
 |804EC04|8058778|8057F90|0|0||||
 |80558D4|805E5C8|805DDE0|0|0||||
 |8057F60|8064834|806404C|0|0||||
-|805FC54|806C7CC|806BFE0|0|0||||
+|805FC54|806C7CC|806BFE0|0|0|SetAutoMuDefaultFacing|[void SetAutoMuDefaultFacing(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L379)||
 |8061838|806EAE8|806E2FC|0|0||||
 |8063848|8070AC4|80702D8|0|0||||
 |8067E84|8075224|8074A28|0|0||||
@@ -9058,12 +9058,12 @@
 |806B6F8|8079BC8|80793F8|0|0||||
 |0|80AB8FC|80AAA34|0|0||||
 |0|800B06C|800B130|0|0||||
-|800DBF4|800B0BC|800B180|0|0||||
+|800DBF4|800B0BC|800B180|0|0|Event_MaybeEndMapMain|[static void Event_MaybeEndMapMain(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L906)||
 |0|800B0D4|800B198|0|0||||
 |0|800D894|800D988|0|0||||
 |0|800DA64|800DB58|0|0||||
 |0|800DAF4|800DBE8|0|0||||
-|800FFEC|800DCD4|800DDC8|0|0||||
+|800FFEC|800DCD4|800DDC8|0|0|FlashCursor_OnLoop|[static void FlashCursor_OnLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2305)||
 |0|800EC40|800ED34|0|0||||
 |0|800FC40|800FD34|0|0||||
 |0|8010A70|801060C|0|0||||
@@ -9078,16 +9078,16 @@
 |0|8011DD8|8011740|0|0||||
 |0|8012D4C|80126D0|0|0||||
 |806E714|80130C0|8012A08|0|0||||
-|801D078|801E98C|801E608|0|0||||
+|801D078|801E98C|801E608|0|0|PhaseIntroText_InLoop|[static void PhaseIntroText_InLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1192)||
 |0|801FC6C|801F804|0|0||||
 |806D000|801FD78|801F910|0|0||||
-|801E1F8|801FEF0|801FA88|0|0||||
+|801E1F8|801FEF0|801FA88|0|0|ChapterIntro_Loop_0801E1F8|[static void ChapterIntro_Loop_0801E1F8(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1939)||
 |0|8020BF4|802078C|0|0||||
-|801F328|802216C|8021CF4|0|0||||
-|8028E28|802E310|802DE50|0|0||||
-|802B768|80313B8|8030ECC|0|0||||
+|801F328|802216C|8021CF4|0|0|func_fe6_0801F328|[u8 func_fe6_0801F328(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L600)||
+|8028E28|802E310|802DE50|0|0|DisableTilesetPalAnim|[void DisableTilesetPalAnim(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmio.c#L942)||
+|802B768|80313B8|8030ECC|0|0|PrepPhase_MapSwapSelectFogFadeB|[static void PrepPhase_MapSwapSelectFogFadeB(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/prep-phase.c#L480)||
 |0|8032CDC|80327AC|0|0||||
-|802CFB8|8033170|8032C40|0|0||||
+|802CFB8|8033170|8032C40|0|0|StatusHealEffect_BlendSpriteAnim_Loop|[static void StatusHealEffect_BlendSpriteAnim_Loop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L265)||
 |803F714|8048020|8047834|0|0||||
 |803FBC4|80484E4|8047CF8|0|0||||
 |8046810|804F88C|804F0B0|0|0||||
@@ -9113,7 +9113,7 @@
 |805D0E0|80692A0|8068AB4|0|0||||
 |0|806B5F8|806AE18|0|0||||
 |0|806BF10|806B724|0|0||||
-|805FCB4|806C82C|806C040|0|0||||
+|805FCB4|806C82C|806C040|0|0|MuExists|[bool MuExists(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L399)||
 |0|806DFF0|806D804|0|0||||
 |0|806E204|806DA18|0|0||||
 |8061D00|806EFB0|806E7C4|0|0||||
@@ -9203,7 +9203,7 @@
 |0|80B8010|80B7264|0|0||||
 |0|80B80E0|80B7334|0|0||||
 |0|80B8418|80B766C|0|0||||
-|800AEA0|80B88FC|80B7B18|0|0||||
+|800AEA0|80B88FC|80B7B18|0|0|TalkShiftClearAll_OnIdle|[static void TalkShiftClearAll_OnIdle(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1235)||
 |0|80B97A0|80B8C40|0|0||||
 |0|80B9B80|80B9020|0|0||||
 |0|80BAEFC|80BA3F4|0|0||||
@@ -9222,10 +9222,10 @@
 |0|8017FB0|8017BC0|0|0||||
 |0|8053B98|80533B0|0|0||||
 |0|8060C2C|8060444|0|0||||
-|805FEC8|806CA48|806C25C|0|0||||
+|805FEC8|806CA48|806C25C|0|0|StartPlayMuStepSe|[void StartPlayMuStepSe(int song, int alt_offset, int x)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L500)||
 |0|80B49A8|80B3B70|0|0||||
 |8095E90|80B127C|80B0454|0|0||||
-|8026AE0|802BF30|802BA70|0|0||||
+|8026AE0|802BF30|802BA70|0|0|GetTrapAt|[struct Trap* GetTrapAt(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/trap.c#L104)||
 |0|808FDE8|808F4A8|0|0||||
 |0|809BB30|809B15C|0|0||||
 |0|80A1050|80A06C4|0|0||||
@@ -9235,7 +9235,7 @@
 |0|800E698|800E78C|0|0||||
 |0|800EE60|800EF54|0|0||||
 |0|8017974|8017584|0|0||||
-|802A30C|802F92C|802F460|0|0||||
+|802A30C|802F92C|802F460|0|0|DoCombatAction|[static bool DoCombatAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/action.c#L246)||
 |0|80654C8|8064CD8|0|0||||
 |0|80B69A0|80B5B80|0|0||||
 |8097354|80B29AC|80B1B80|0|0||||
@@ -9261,16 +9261,16 @@
 |0|807DCD0|807D18C|0|0||||
 |0|809F4C8|809EAB8|0|0||||
 |0|80B6250|80B5430|0|0||||
-|8011F64|8000B88|8000BB0|0|0||||
-|8000E98|8000E98|8000EC0|0|0||||
-|8001010|8001010|8001038|0|0||||
-|8001688|8001920|8001948|0|0||||
-|80016D0|8001968|8001990|0|0||||
-|8001934|8001BF4|8001C1C|0|0||||
-|8001968|8001C28|8001C50|0|0||||
+|8011F64|8000B88|8000BB0|0|0|func_fe6_08011F64|[void func_fe6_08011F64(void)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3442)||
+|8000E98|8000E98|8000EC0|0|0|RandInitB|[void RandInitB(int seed)](https://github.com/StanHash/fe6/blob/0b25087/src/random.c#L104)||
+|8001010|8001010|8001038|0|0|DisableBgSync|[inline void DisableBgSync(int bits)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L95)||
+|8001688|8001920|8001948|0|0|SetNextVCount|[void SetNextVCount(int vcount)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L296)||
+|80016D0|8001968|8001990|0|0|SetVCount|[void SetVCount(int vcount)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L307)||
+|8001934|8001BF4|8001C1C|0|0|ClearKeySt|[void ClearKeySt(struct KeySt* keySt)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L372)||
+|8001968|8001C28|8001C50|0|0|InitKeySt|[void InitKeySt(struct KeySt* keySt)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L379)||
 |0|8001CC4|8001CEC|0|0||||
-|8001AE4|8001E6C|8001E94|0|0||||
-|8001B18|8001EA0|8001EC8|0|0||||
+|8001AE4|8001E6C|8001E94|0|0|func_fe6_08001AE4|[void func_fe6_08001AE4(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L420)||
+|8001B18|8001EA0|8001EC8|0|0|func_fe6_08001B18|[void func_fe6_08001B18(u8 a, u8 b)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L428)||
 |0|800473C|8004860|0|0||||
 |0|8004A48|8004B6C|0|0||||
 |0|800542C|800555C|0|0||||
@@ -9290,16 +9290,16 @@
 |0|8013228|8012B70|0|0||||
 |0|80132AC|8012BF4|0|0||||
 |0|80132C8|8012C10|0|0||||
-|80144A0|80142A8|8013D88|0|0||||
-|801456C|8014374|8013E54|0|0||||
-|801459C|80143A4|8013E84|0|0||||
-|8014B68|8014970|8014450|0|0||||
-|801577C|8015584|8015108|0|0||||
-|8017BDC|8018280|8017E90|0|0||||
-|801E1A0|801FE98|801FA30|0|0||||
+|80144A0|80142A8|8013D88|0|0|FadeFromBlack_OnInit|[static void FadeFromBlack_OnInit(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L793)||
+|801456C|8014374|8013E54|0|0|FadeToWhite_OnInit|[static void FadeToWhite_OnInit(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L826)||
+|801459C|80143A4|8013E84|0|0|FadeFromWhite_OnInit|[static void FadeFromWhite_OnInit(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L832)||
+|8014B68|8014970|8014450|0|0|func_fe6_08014B68|[void func_fe6_08014B68(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1327)||
+|801577C|8015584|8015108|0|0|MatRotA|[void MatRotA(int* mat, short angle)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2458)||
+|8017BDC|8018280|8017E90|0|0|KillUnit|[void KillUnit(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit.c#L686)||
+|801E1A0|801FE98|801FA30|0|0|ChapterIntro_Begin_0801E1A0|[static void ChapterIntro_Begin_0801E1A0(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1929)||
 |0|802C03C|802BB7C|0|0||||
-|8025E28|802FAB4|802F5E8|0|0||||
-|8031764|80384E4|8038030|0|0||||
+|8025E28|802FAB4|802F5E8|0|0|BattleInitItemEffectTarget|[void BattleInitItemEffectTarget(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1651)||
+|8031764|80384E4|8038030|0|0|AiCmd_Escape|[void AiCmd_Escape(u8* pc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L605)||
 |8035880|803CD9C|803C8E8|0|0||||
 |80369A0|803DEE0|803DA30|0|0||||
 |8036E14|803E358|803DEA8|0|0||||
@@ -9315,13 +9315,13 @@
 |804A5C0|8053B40|8053358|0|0||||
 |8055434|805E0C4|805D8DC|0|0||||
 |0|8065288|8064ABC|0|0|getSpecialAnimationEffectInfoType|int getSpecialAnimationEffectInfoType(AnimationInterpreter *AIS)||
-|805FC18|806C790|806BFA4|0|0||||
-|805FC80|806C7F8|806C00C|0|0||||
-|805FE3C|806C9BC|806C1D0|0|0||||
-|806113C|806E334|806DB48|0|0||||
+|805FC18|806C790|806BFA4|0|0|SetMuDefaultFacing|[void SetMuDefaultFacing(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L371)||
+|805FC80|806C7F8|806C00C|0|0|SetAutoMuMoveScript|[void SetAutoMuMoveScript(u8 const* movescr)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L389)||
+|805FE3C|806C9BC|806C1D0|0|0|MuStepSe_Init|[void MuStepSe_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L480)||
+|806113C|806E334|806DB48|0|0|SetMuScreenOffset|[void SetMuScreenOffset(struct MuProc* mu, int x_offset, int y_offset)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1089)||
 |0|806E450|806DC64|0|0||||
-|8061360|806E564|806DD78|0|0||||
-|8061474|806E678|806DE8C|0|0||||
+|8061360|806E564|806DD78|0|0|MuDelayedFaceTargetFunc|[static void MuDelayedFaceTargetFunc(int arg)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1143)||
+|8061474|806E678|806DE8C|0|0|func_fe6_08061474|[void func_fe6_08061474(struct MuFadeProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1174)||
 |0|806E698|806DEAC|0|0||||
 |80627D0|806FA28|806F23C|0|0||||
 |80632C4|8070534|806FD48|0|0||||
@@ -9334,7 +9334,7 @@
 |806A770|8077BE0|8077410|0|0||||
 |0|8077E1C|807764C|0|0||||
 |0|8078894|80780C4|0|0||||
-|806A8AC|80788D0|8078100|0|0||||
+|806A8AC|80788D0|8078100|0|0|func_fe6_0806A8AC|[void func_fe6_0806A8AC(struct EventInfo const* info)](https://github.com/StanHash/fe6/blob/0b25087/src/event-trigger.c#L15)||
 |806AF08|8079188|80789B8|0|0||||
 |806B254|80795CC|8078DFC|0|0||||
 |0|807AE2C|807A3B8|0|0||||
@@ -9394,7 +9394,7 @@
 |0|80BCFEC|80BC5E0|0|0||||
 |8049F1C|8053484|8052C9C|0|0||||
 |0|8012150|8011AB8|0|0||||
-|8010804|8079210|8078A40|0|0||||
+|8010804|8079210|8078A40|0|0|EvtCmd_NoSkip|[static int EvtCmd_NoSkip(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2628)||
 |0|80907C8|808FE88|0|0||||
 |0|80B5A48|80B4C28|0|0||||
 |0|80B5B34|80B4D14|0|0||||
@@ -9419,7 +9419,7 @@
 |0|807B304|807A890|0|0||||
 |0|80A466C|80A39F8|0|0||||
 |0|8001D2C|8001D54|0|0||||
-|800285C|8002C24|8002D48|0|0||||
+|800285C|8002C24|8002D48|0|0|func_fe6_0800285C|[void func_fe6_0800285C(int unk)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L741)||
 |0|8004110|8004234|0|0||||
 |8003764|8004158|800427C|0|0||||
 |8003820|8004214|8004338|0|0||||
@@ -9433,7 +9433,7 @@
 |0|8007A00|8007B70|0|0||||
 |0|800836C|80084DC|0|0||||
 |8092E94|8009080|80091F0|0|0||||
-|800B3F8|8009564|80096D4|0|0||||
+|800B3F8|8009564|80096D4|0|0|func_fe6_0800B3F8|[static void func_fe6_0800B3F8(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1368)||
 |0|800A9F4|800AA4C|0|0||||
 |0|800AC6C|800ACC4|0|0||||
 |0|800ADF8|800AE50|0|0||||
@@ -9443,7 +9443,7 @@
 |0|800D168|800D258|0|0||||
 |0|800D3E0|800D4D0|0|0||||
 |0|800D8BC|800D9B0|0|0||||
-|8010104|800DD70|800DE64|0|0||||
+|8010104|800DD70|800DE64|0|0|EventCursor_OnLoop|[static void EventCursor_OnLoop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2334)||
 |0|800DFE0|800E0D4|0|0||||
 |0|800E078|800E16C|0|0||||
 |0|800E098|800E18C|0|0||||
@@ -9455,7 +9455,7 @@
 |0|800EA44|800EB38|0|0||||
 |0|800EA68|800EB5C|0|0||||
 |0|800EA7C|800EB70|0|0||||
-|8010D70|800EAD4|800EBC8|0|0||||
+|8010D70|800EAD4|800EBC8|0|0|DoChangeWeather|[static void DoChangeWeather(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2875)||
 |0|800EB1C|800EC10|0|0||||
 |0|800ED10|800EE04|0|0||||
 |0|800EED8|800EFCC|0|0||||
@@ -9478,47 +9478,47 @@
 |0|8012CA4|8012610|0|0||||
 |0|801309C|80129E4|0|0||||
 |0|80157F8|801537C|0|0||||
-|801A724|801B7A4|801B3C4|0|0||||
+|801A724|801B7A4|801B3C4|0|0|func_fe6_0801A724|[int func_fe6_0801A724(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L166)||
 |0|801BC84|801B8D4|0|0||||
-|801AABC|801BCB0|801B900|0|0||||
+|801AABC|801BCB0|801B900|0|0|func_fe6_0801AABC|[int func_fe6_0801AABC(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L390)||
 |0|801BCD4|801B924|0|0||||
-|801ABE8|801BDC0|801BA10|0|0||||
-|801B018|801C2D8|801BF38|0|0||||
-|801BD08|801D44C|801D048|0|0||||
-|801C2B0|801D920|801D51C|0|0||||
-|801D4E8|801EDFC|801EA78|0|0||||
+|801ABE8|801BDC0|801BA10|0|0|func_fe6_0801ABE8|[int func_fe6_0801ABE8(struct MenuProc* menu)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L438)||
+|801B018|801C2D8|801BF38|0|0|func_fe6_0801B018|[int func_fe6_0801B018(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L674)||
+|801BD08|801D44C|801D048|0|0|PlayerPhase_0801BD08|[static void PlayerPhase_0801BD08(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L864)||
+|801C2B0|801D920|801D51C|0|0|MapFade_Init|[static void MapFade_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L610)||
+|801D4E8|801EDFC|801EA78|0|0|PhaseIntro_InitDisp|[static void PhaseIntro_InitDisp(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1388)||
 |0|801F9D8|801F570|0|0||||
-|801DF34|801FB94|801F72C|0|0||||
-|801E220|801FF18|801FAB0|0|0||||
-|801E2C0|801FFE0|801FB78|0|0||||
-|801E578|8020350|801FEE8|0|0||||
-|801E704|80205C0|8020158|0|0||||
-|801E9D8|802089C|8020434|0|0||||
+|801DF34|801FB94|801F72C|0|0|ChapterIntro_BeginFadeIn|[static void ChapterIntro_BeginFadeIn(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1846)||
+|801E220|801FF18|801FAB0|0|0|ChapterIntro_Begin_0801E220|[static void ChapterIntro_Begin_0801E220(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1950)||
+|801E2C0|801FFE0|801FB78|0|0|ChapterIntro_InitMapDisplay|[static void ChapterIntro_InitMapDisplay(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1986)||
+|801E578|8020350|801FEE8|0|0|ChapterIntro_BeginFadeOut|[static void ChapterIntro_BeginFadeOut(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2097)||
+|801E704|80205C0|8020158|0|0|GameOverScreen_RandomScroll_Loop|[static void GameOverScreen_RandomScroll_Loop(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2180)||
+|801E9D8|802089C|8020434|0|0|GameOverScreen_End|[static void GameOverScreen_End(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2309)||
 |0|8020ECC|8020A64|0|0||||
 |0|8021184|8020D18|0|0||||
 |0|8021678|802120C|80221D8|0||||
 |0|8021F5C|8021AE4|0|0||||
-|80205EC|80235B8|802312C|8024300|8024348|StealItemMenuCommand_Draw|int StealItemMenuCommand_Draw(int a1, int a2)||
-|80207D8|802377C|80232F0|0|0||||
-|8023954|8027BA4|8027718|0|0||||
+|80205EC|80235B8|802312C|8024300|8024348|func_fe6_080205EC|[int func_fe6_080205EC(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1559)||
+|80207D8|802377C|80232F0|0|0|func_fe6_080207D8|[void func_fe6_080207D8(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1645)||
+|8023954|8027BA4|8027718|0|0|WarpSelect_Init|[static void WarpSelect_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/item-use.c#L515)||
 |8023DC8|8028044|8027BB8|8029A10|8029A84|RepairMenuItemDraw|[int RepairMenuItemDraw(struct MenuProc* menu, struct MenuItemProc* menuItem)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitemuse.c#L946)||
 |0|802B064|802ABB4|0|0||||
 |0|802BBF8|802B738|0|0||||
 |0|802E4E8|802E028|0|0||||
 |0|802E5B4|802E0F4|0|0||||
-|8029240|802E768|802E29C|0|0||||
-|80294E0|802EA08|802E53C|0|0||||
-|802959C|802EAC4|802E5F8|0|0||||
+|8029240|802E768|802E29C|0|0|func_fe6_08029240|[void func_fe6_08029240(void)](https://github.com/StanHash/fe6/blob/0b25087/src/chapter.c#L218)||
+|80294E0|802EA08|802E53C|0|0|ResumeMapMainDuringAction|[static void ResumeMapMainDuringAction(ProcPtr mapmain)](https://github.com/StanHash/fe6/blob/0b25087/src/chapter.c#L517)||
+|802959C|802EAC4|802E5F8|0|0|ResumeMapMainDuringArena|[static void ResumeMapMainDuringArena(ProcPtr mapmain)](https://github.com/StanHash/fe6/blob/0b25087/src/chapter.c#L544)||
 |0|802EB7C|802E6B0|0|0||||
 |0|8030A04|8030518|0|0||||
 |0|8030A90|80305A4|0|0||||
 |0|8030AB8|80305CC|0|0||||
-|802C4A8|8032420|8031EF0|0|0||||
-|802CE40|8032FF8|8032AC8|0|0||||
-|802CE78|8033030|8032B00|0|0||||
-|802D0F4|80332AC|8032D7C|0|0||||
-|802D40C|8033624|80330F4|0|0||||
-|802DDC0|8034070|8033B98|0|0||||
+|802C4A8|8032420|8031EF0|0|0|StartUnitResChangePanel|[void StartUnitResChangePanel(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L388)||
+|802CE40|8032FF8|8032AC8|0|0|StatusHealEffect_OverlayBg_Loop|[static void StatusHealEffect_OverlayBg_Loop(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L191)||
+|802CE78|8033030|8032B00|0|0|StatusHealEffect_BlendedSprite_Init|[static void StatusHealEffect_BlendedSprite_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L205)||
+|802D0F4|80332AC|8032D7C|0|0|StatusHealEffect_Finish|[static void StatusHealEffect_Finish(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L357)||
+|802D40C|8033624|80330F4|0|0|StatusDecayDisplay_Next|[static void StatusDecayDisplay_Next(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L574)||
+|802DDC0|8034070|8033B98|0|0|BattlePreview_Init|[static void BattlePreview_Init(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L341)||
 |8035414|803C930|803C47C|0|0||||
 |8036D3C|803E280|803DDD0|0|0||||
 |80377E8|803ED34|803E8A0|0|0||||
@@ -9571,15 +9571,15 @@
 |805F5C0|806BDE0|806B654|0|0||||
 |805F620|806BE40|806B594|0|0||||
 |0|806C398|806BBAC|0|0||||
-|805FE78|806C9F8|806C20C|0|0||||
-|805FF78|806CAF8|806C30C|0|0||||
-|80608AC|806D47C|806CC90|0|0||||
+|805FE78|806C9F8|806C20C|0|0|MuStepSe_PlaySeA|[void MuStepSe_PlaySeA(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L489)||
+|805FF78|806CAF8|806C30C|0|0|RunMuMoveScript|[void RunMuMoveScript(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L534)||
+|80608AC|806D47C|806CC90|0|0|Mu_OnEnd|[void Mu_OnEnd(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L820)||
 |0|806E380|806DB94|0|0||||
-|80611FC|806E400|806DC14|0|0||||
-|806129C|806E4A0|806DCB4|0|0||||
-|8061318|806E51C|806DD30|0|0||||
-|8061518|806E730|806DF44|0|0||||
-|8061748|806E974|806E188|0|0||||
+|80611FC|806E400|806DC14|0|0|StartMuFadeFromFlash|[void StartMuFadeFromFlash(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1103)||
+|806129C|806E4A0|806DCB4|0|0|StartMuActionAnim|[void StartMuActionAnim(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1121)||
+|8061318|806E51C|806DD30|0|0|StartMuDelayedFaceTarget|[void StartMuDelayedFaceTarget(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1136)||
+|8061518|806E730|806DF44|0|0|func_fe6_08061518|[void func_fe6_08061518(struct MuFadeProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1189)||
+|8061748|806E974|806E188|0|0|SetMuSpecialSprite|[void SetMuSpecialSprite(struct MuProc* mu, int jid, u16 const* pal)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1243)||
 |806199C|806EC4C|806E460|0|0||||
 |8061B10|806EDC0|806E5D4|0|0||||
 |8061B80|806EE30|806E644|0|0||||
@@ -9832,10 +9832,10 @@
 |0|80BE0A0|80BD548|0|0||||
 |0|800D704|800D7F4|0|0||||
 |0|800D724|800D814|0|0||||
-|8010988|800E6D4|800E7C8|0|0||||
-|80109C4|800E6F8|800E7EC|0|0||||
-|8010A00|800E750|800E844|0|0||||
-|8010A3C|800E774|800E868|0|0||||
+|8010988|800E6D4|800E7C8|0|0|EvtCmd_FadeToBlack|[static int EvtCmd_FadeToBlack(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2679)||
+|80109C4|800E6F8|800E7EC|0|0|EvtCmd_FadeFromBlack|[static int EvtCmd_FadeFromBlack(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2691)||
+|8010A00|800E750|800E844|0|0|EvtCmd_FadeToWhite|[static int EvtCmd_FadeToWhite(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2703)||
+|8010A3C|800E774|800E868|0|0|EvtCmd_FadeFromWhite|[static int EvtCmd_FadeFromWhite(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2715)||
 |0|800E7B0|800E8A4|0|0||||
 |0|800E7D8|800E8CC|0|0||||
 |0|800F734|800F828|0|0||||
@@ -9862,63 +9862,63 @@
 |0|80B8B64|80B7D88|0|0||||
 |0|80BAA8C|80B9F84|0|0||||
 |8000B9C|8000B94|8000BBC|0|0||||
-|8000D54|8000D4C|8000D74|0|0|readRNFromWRAMToIRAM|void readRNFromWRAMToIRAM(int a1)||
-|8000DB0|8000DA8|8000DD0|0|0||||
-|8000EB4|8000EB4|8000EDC|0|0||||
-|8000EEC|8000EEC|8000F14|0|0|getPlayTime|int getPlayTime()||
-|8000F04|8000F04|8000F2C|0|0|setPlayTime|void setPlayTime(int time)||
-|8000FD4|8000FD4|8000FFC|0|0|SetBGMapSyncFlag|void SetBGMapSyncFlag(u8 flag)||
-|8000FF0|8000FF0|8001018|0|0|EnableBGMapSync|void EnableBGMapSync(u8 n)||
-|8001034|8001034|800105C|0|0|EnablePaletteSync|void EnablePaletteSync()||
-|8001048|8001048|8001070|0|0|DisablePaletteSync|void DisablePaletteSync()||
-|80010CC|8001188|80011B0|0|0||||
-|80012B4|8001370|8001398|0|0|GetBackgroundTileDataOffset|int GetBackgroundTileDataOffset(unsigned __int16 a1)||
-|800131C|80013D8|8001400|0|0||||
-|8001350|800140C|8001434|0|0||||
-|80013F8|80014B4|80014DC|0|0||||
-|80016F8|8001990|80019B8|0|0||||
-|800D6E4|8001CA8|8001CD0|0|0||||
-|8002818|8002BC0|8002BE8|0|0|BG_GetMapBuffer|__int16 (*BG_GetMapBuffer(int a1))[1024]||
-|8002A28|8002DF0|8002F14|0|0||||
-|8002A48|8002E10|8002F34|0|0||||
-|8002B88|8002FD8|80030FC|0|0|RegisterFillTile|int RegisterFillTile(int a1, int a2, int a3)||
+|8000D54|8000D4C|8000D74|0|0|RandSetSt|[void RandSetSt(u16 const* st)](https://github.com/StanHash/fe6/blob/0b25087/src/random.c#L57)||
+|8000DB0|8000DA8|8000DD0|0|0|RandGetSt|[void RandGetSt(u16* st)](https://github.com/StanHash/fe6/blob/0b25087/src/random.c#L64)||
+|8000EB4|8000EB4|8000EDC|0|0|RandNextB|[unsigned RandNextB(void)](https://github.com/StanHash/fe6/blob/0b25087/src/random.c#L110)||
+|8000EEC|8000EEC|8000F14|0|0|GetGameTime|[unsigned GetGameTime(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L55)||
+|8000F04|8000F04|8000F2C|0|0|SetGameTime|[void SetGameTime(unsigned time)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L60)||
+|8000FD4|8000FD4|8000FFC|0|0|EnableBgSync|[inline void EnableBgSync(int bits)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L85)||
+|8000FF0|8000FF0|8001018|0|0|EnableBgSyncById|[inline void EnableBgSyncById(int bgid)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L90)||
+|8001034|8001034|800105C|0|0|EnablePalSync|[inline void EnablePalSync(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L100)||
+|8001048|8001048|8001070|0|0|DisablePalSync|[inline void DisablePalSync(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L105)||
+|80010CC|8001188|80011B0|0|0|SyncDispIo|[void SyncDispIo(void)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L120)||
+|80012B4|8001370|8001398|0|0|GetBgChrOffset|[int GetBgChrOffset(int bg)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L180)||
+|800131C|80013D8|8001400|0|0|GetBgTilemapOffset|[int GetBgTilemapOffset(int bg)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L193)||
+|8001350|800140C|8001434|0|0|SetBgChrOffset|[void SetBgChrOffset(int bg, int offset)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L199)||
+|80013F8|80014B4|80014DC|0|0|SetBgScreenSize|[void SetBgScreenSize(int bg, int size)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L216)||
+|80016F8|8001990|80019B8|0|0|SetMainFunc|[void SetMainFunc(Func func)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L312)||
+|800D6E4|8001CA8|8001CD0|0|0|SetPopupItem|[void SetPopupItem(u16 item)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L690)||
+|8002818|8002BC0|8002BE8|0|0|GetBgTilemap|[u16* GetBgTilemap(int bg)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L722)||
+|8002A28|8002DF0|8002F14|0|0|SetOnHBlankA|[void SetOnHBlankA(Func func)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L820)||
+|8002A48|8002E10|8002F34|0|0|SetOnHBlankB|[void SetOnHBlankB(Func func)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L826)||
+|8002B88|8002FD8|80030FC|0|0|RegisterDataFill|[void RegisterDataFill(u32 value, void* dst, int size)](https://github.com/StanHash/fe6/blob/0b25087/src/move.c#L63)||
 |8002CB8|8003108|800322C|0|0||||
 |8002D54|80031A4|80032C8|0|0||||
 |8002E14|8003264|8003388|0|0|SetOBJAttribute|int SetOBJAttribute(int a1, __int16 a2, __int16 a3, __int16 a4, __int16 a5)||
-|8002F68|80033B8|80034DC|0|0||||
-|8002F80|80033D0|80034F4|0|0||||
-|8003210|800376C|8003890|0|0||||
-|800322C|8003788|80038AC|0|0||||
+|8002F68|80033B8|80034DC|0|0|GetCurrentBgmSong|[int GetCurrentBgmSong(void)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L63)||
+|8002F80|80033D0|80034F4|0|0|IsBgmPlaying|[bool IsBgmPlaying(void)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L68)||
+|8003210|800376C|8003890|0|0|StartBgm|[void StartBgm(int songId, struct MusicPlayerInfo* mpi)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L143)||
+|800322C|8003788|80038AC|0|0|StartBgmExt|[void StartBgmExt(int songId, int speed, struct MusicPlayerInfo* mpi)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L148)||
 |0|8003E48|8003F6C|0|0||||
 |0|80040F8|800421C|0|0||||
 |0|8006E10|8006F80|8005890|8005988|DrawMiniMug|int DrawMiniMug(int id, void *targetBg, int tileId, int palId)|r0 = minimug id, r1 = target bg, r2 = tile id, r3 = palid|
-|8008DB8|8007428|8007598|0|0||||
+|8008DB8|8007428|8007598|0|0|GetFactionFaceImg|[static u8 const* GetFactionFaceImg(int fid)](https://github.com/StanHash/fe6/blob/0b25087/src/face.c#L686)||
 |0|8007F44|80080B4|0|0||||
 |0|8007F58|80080C8|0|0||||
 |0|80098A0|8009A10|0|0||||
 |0|800AE98|800AF5C|0|0||||
-|80146F8|8014500|8013FE0|0|0||||
-|8014708|8014510|8013FF0|0|0||||
+|80146F8|8014500|8013FE0|0|0|StartMidLockingFadeToBlack|[void StartMidLockingFadeToBlack(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L953)||
+|8014708|8014510|8013FF0|0|0|StartSlowLockingFadeToBlack|[void StartSlowLockingFadeToBlack(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L958)||
 |0|801778C|8017384|0|0||||
-|8018188|80188CC|80184DC|0|0||||
-|801A564|801B57C|801B19C|0|0|FillRangeMap|int FillRangeMap(__int16 a1, __int16 a2, __int16 a3, __int16 a4)||
-|8020A2C|8023D64|80238D8|0|0||||
-|8020A40|8023D78|80238EC|0|0||||
-|8022DD4|8026E3C|80269B0|0|0||||
-|8024514|8028B7C|80286F0|0|0||||
-|802454C|8028BB4|8028728|0|0||||
-|8025360|8029DB4|8029904|0|0||||
-|80260A0|802ACB4|802A804|0|0||||
+|8018188|80188CC|80184DC|0|0|UnitKnowsMagic|[bool UnitKnowsMagic(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit.c#L948)||
+|801A564|801B57C|801B19C|0|0|MapIncInBoundedRange|[inline void MapIncInBoundedRange(short x, short y, short min_range, short max_range)](https://github.com/StanHash/fe6/blob/0b25087/src/mapwork.c#L453)||
+|8020A2C|8023D64|80238D8|0|0|GetActiveFactionAlliance|[int GetActiveFactionAlliance(void)](https://github.com/StanHash/fe6/blob/0b25087/src/faction.c#L73)||
+|8020A40|8023D78|80238EC|0|0|GetActiveFactionOpposingAlliance|[int GetActiveFactionOpposingAlliance(void)](https://github.com/StanHash/fe6/blob/0b25087/src/faction.c#L78)||
+|8022DD4|8026E3C|80269B0|0|0|ApplyAffinityBonuses|[static void ApplyAffinityBonuses(struct SupportBonuses* bonuses, int affinity, int level)](https://github.com/StanHash/fe6/blob/0b25087/src/support.c#L262)||
+|8024514|8028B7C|80286F0|0|0|SetBattleUnitTerrainBonuses|[void SetBattleUnitTerrainBonuses(struct BattleUnit* bu, int terrain)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L301)||
+|802454C|8028BB4|8028728|0|0|SetBattleUnitTerrainBonusesAuto|[void SetBattleUnitTerrainBonusesAuto(struct BattleUnit* bu)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L310)||
+|8025360|8029DB4|8029904|0|0|GenerateBattleUnitStatGainsComparatively|[void GenerateBattleUnitStatGainsComparatively(struct BattleUnit* bu, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1057)||
+|80260A0|802ACB4|802A804|0|0|BattleIsTriangleAttack|[bool BattleIsTriangleAttack(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1769)||
 |0|802B040|802AB90|0|0||||
-|80260DC|802B050|802ABA0|0|0||||
+|80260DC|802B050|802ABA0|0|0|BattleHitTerminate|[void BattleHitTerminate(void)](https://github.com/StanHash/fe6/blob/0b25087/src/battle.c#L1787)||
 |0|802C058|802BB98|0|0||||
 |0|802C068|802BBA8|0|0||||
 |0|802C6A8|802C1E8|0|0||||
 |0|8031B54|80315E8|0|0|GetSomethingRelatedToCurrentDifficulty|bool GetSomethingRelatedToCurrentDifficulty()||
-|8030A84|8037804|8037350|0|0||||
-|8030CE8|8037A6C|80375B8|0|0||||
-|8030D78|8037AFC|8037648|0|0||||
-|8032474|8039620|803916C|0|0||||
+|8030A84|8037804|8037350|0|0|UnitInitAiFromInfo|[void UnitInitAiFromInfo(struct Unit* unit, struct UnitInfo const* info)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-utility.c#L1234)||
+|8030CE8|8037A6C|80375B8|0|0|AiTryExecScriptA|[bool AiTryExecScriptA(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L57)||
+|8030D78|8037AFC|8037648|0|0|AiTryExecScriptB|[bool AiTryExecScriptB(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-script.c#L82)||
+|8032474|8039620|803916C|0|0|AiGetTurnCombatScoreComponent|[int AiGetTurnCombatScoreComponent(void)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-battle.c#L621)||
 |8036964|803DEA4|803D9F4|0|0||||
 |8036974|803DEB4|803DA04|0|0||||
 |803A680|8041EA8|80417BC|0|0||||
@@ -9933,18 +9933,18 @@
 |805F7B4|806C208|806BA1C|0|0||||
 |805F7D4|806C228|806BA3C|0|0||||
 |0|806C274|806BA88|0|0||||
-|805F8F4|806C3B0|806BBC4|0|0||||
-|805F91C|806C3D8|806BBEC|0|0||||
-|805FF50|806CAD0|806C2E4|0|0||||
-|805FF68|806CAE8|806C2FC|0|0||||
-|80608EC|806D4BC|806CCD0|0|0||||
-|806091C|806D4EC|806CD00|0|0||||
-|8060E88|806DD10|806D524|0|0||||
-|8060EB8|806DD40|806D554|0|0||||
-|8060EE4|806DD6C|806D580|0|0||||
-|80610A8|806E2A0|806DAB4|0|0||||
-|80610D0|806E2C8|806DADC|0|0||||
-|80610F0|806E2E8|806DAFC|0|0||||
+|805F8F4|806C3B0|806BBC4|0|0|EnableMuCamera|[void EnableMuCamera(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L280)||
+|805F91C|806C3D8|806BBEC|0|0|DisableMuCamera|[void DisableMuCamera(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L285)||
+|805FF50|806CAD0|806C2E4|0|0|PlayMuStepSe|[void PlayMuStepSe(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L525)||
+|805FF68|806CAE8|806C2FC|0|0|EndMuMovement|[void EndMuMovement(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L530)||
+|80608EC|806D4BC|806CCD0|0|0|EndMu|[void EndMu(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L833)||
+|806091C|806D4EC|806CD00|0|0|HaltMu|[void HaltMu(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L843)||
+|8060E88|806DD10|806D524|0|0|GetMuImgBufById|[u8* GetMuImgBufById(int id)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1025)||
+|8060EB8|806DD40|806D554|0|0|GetMuImg|[u8 const* GetMuImg(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1030)||
+|8060EE4|806DD6C|806D580|0|0|GetMuAnimForJid|[u16 const* GetMuAnimForJid(u16 jid)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1035)||
+|80610A8|806E2A0|806DAB4|0|0|HideMu|[void HideMu(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1073)||
+|80610D0|806E2C8|806DADC|0|0|ShowMu|[void ShowMu(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1078)||
+|80610F0|806E2E8|806DAFC|0|0|SetMuScreenPosition|[void SetMuScreenPosition(struct MuProc* mu, int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1083)||
 |0|806EA0C|806E220|0|0||||
 |0|806F2C8|806EADC|0|0||||
 |806283C|806FAA4|806F2B8|0|0||||
@@ -9997,7 +9997,7 @@
 |0|800E24C|800E340|0|0||||
 |0|800E35C|800E450|0|0||||
 |0|800EB0C|800EC00|0|0||||
-|8011FB0|800EC58|800ED4C|0|0||||
+|8011FB0|800EC58|800ED4C|0|0|KillTalkAndEvent|[void KillTalkAndEvent(void)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L3456)||
 |0|800ECD4|800EDC8|0|0||||
 |0|800EE48|800EF3C|0|0||||
 |0|800EF1C|800F010|0|0||||
@@ -10007,7 +10007,7 @@
 |0|800FC5C|800FD50|0|0||||
 |0|80121F0|8011B58|0|0||||
 |0|8015988|801550C|0|0||||
-|801EB14|8021AA8|8021630|0|0||||
+|801EB14|8021AA8|8021630|0|0|func_fe6_0801EB14|[u8 func_fe6_0801EB14(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L166)||
 |0|8030B74|8030688|0|0||||
 |0|8031610|8031124|0|0||||
 |0|804097C|8040270|0|0||||
@@ -10041,12 +10041,12 @@
 |0|800F93C|800FA30|0|0||||
 |0|800F9DC|800FAD0|0|0||||
 |0|8010EA0|8011008|0|0||||
-|801E4D8|80202B0|801FE48|0|0||||
+|801E4D8|80202B0|801FE48|0|0|ChapterIntro_LoopCloseText|[static void ChapterIntro_LoopCloseText(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L2072)||
 |0|8020304|801FE9C|0|0||||
 |0|8020AD0|8020AD0|0|0||||
 |0|8020F38|8020668|0|0||||
-|801EAF8|8021A8C|8021614|0|0||||
-|801F310|8022154|8021CDC|0|0||||
+|801EAF8|8021A8C|8021614|0|0|func_fe6_0801EAF8|[static void func_fe6_0801EAF8(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L160)||
+|801F310|8022154|8021CDC|0|0|func_fe6_0801F310|[u8 func_fe6_0801F310(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L592)||
 |8020D44|8024600|8024174|0|0|AddUnitToTargetListIfAllied|int AddUnitToTargetListIfAllied(char *a1)||
 |803C044|80438FC|8043154|0|0||||
 |803EFEC|80478F4|8047108|0|0||||
@@ -10094,27 +10094,27 @@
 |8087254|80A3580|80A290C|0|0||||
 |8098550|80B3B44|80B2D20|0|0||||
 |0|800AEB0|800AF74|0|0||||
-|805FCD8|806C850|806C064|0|0||||
+|805FCD8|806C850|806C064|0|0|MuExistsActive|[bool MuExistsActive(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L404)||
 |8098764|80B3D64|80B2F40|0|0||||
 |0|80858D8|8084EDC|0|0||||
 |0|80799E4|8079214|0|0||||
-|8000F58|8000F58|8000F80|0|0||||
-|8001550|80017E8|8001810|0|0||||
-|8001580|8001818|8001840|0|0||||
+|8000F58|8000F58|8000F80|0|0|FormatTime|[i8 FormatTime(unsigned time, u16* hours, u16* minutes, u16* seconds)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L76)||
+|8001550|80017E8|8001810|0|0|TmFill|[void TmFill(u16* dest, int tileref)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L251)||
+|8001580|8001818|8001840|0|0|SetBlankChr|[void SetBlankChr(int chr)](https://github.com/StanHash/fe6/blob/0b25087/src/hardware.c#L257)||
 |8002D6C|80031BC|80032E0|0|0||||
 |0|80033EC|8003510|0|0||||
-|8003028|800348C|80035B0|0|0||||
+|8003028|800348C|80035B0|0|0|SetBgmVolume|[void SetBgmVolume(int volume)](https://github.com/StanHash/fe6/blob/0b25087/src/sound.c#L83)||
 |0|8003684|80037A8|0|0||||
 |0|8003E68|8003F8C|0|0||||
 |800384C|8004240|8004364|0|0|huffmanDecompressText|void huffmanDecompressText(int a1, int a2)||
 |8003870|8004264|8004388|0|0||||
 |800389C|8004290|80043B4|0|0||||
 |80038F0|80042E4|8004408|0|0||||
-|8008E00|8007458|80075C8|0|0||||
+|8008E00|8007458|80075C8|0|0|ApplyFactionFacePal|[static void ApplyFactionFacePal(int fid, int pal)](https://github.com/StanHash/fe6/blob/0b25087/src/face.c#L704)||
 |0|80095E4|8009754|0|0||||
 |0|800A70C|800A708|0|0||||
 |0|800AD84|800ADDC|0|0||||
-|8009914|800AD98|800ADF0|0|0||||
+|8009914|800AD98|800ADF0|0|0|LockTalk|[static void LockTalk(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L650)||
 |0|800B12C|800B1F0|0|0||||
 |0|800B7BC|800B880|0|0||||
 |0|800E520|800E614|0|0||||
@@ -10131,29 +10131,29 @@
 |80139DC|8013240|8012B88|0|0||||
 |0|8013BAC|8013670|0|0||||
 |0|8013BBC|8013680|0|0||||
-|8014AF8|8014900|80143E0|0|0||||
-|8014D50|8014B58|80146DC|0|0||||
-|80178F4|8017F3C|8017B4C|0|0||||
-|80192E4|8019F20|8019B40|0|0||||
+|8014AF8|8014900|80143E0|0|0|func_fe6_08014AF8|[void func_fe6_08014AF8(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1314)||
+|8014D50|8014B58|80146DC|0|0|func_fe6_08014D50|[void func_fe6_08014D50(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L1472)||
+|80178F4|8017F3C|8017B4C|0|0|UnitApplyBonusLevels|[void UnitApplyBonusLevels(struct Unit* unit, int levelCount)](https://github.com/StanHash/fe6/blob/0b25087/src/unit.c#L544)||
+|80192E4|8019F20|8019B40|0|0|func_fe6_080192E4|[void func_fe6_080192E4(void)](https://github.com/StanHash/fe6/blob/0b25087/src/map.c#L638)||
 |0|8019FC0|8019BE0|0|0||||
 |0|8020E5C|80209F4|0|0||||
 |0|802196C|80214F4|0|0||||
-|801F26C|80220B0|8021C38|8022CFC|8022D34||||
+|801F26C|80220B0|8021C38|8022CFC|8022D34|func_fe6_0801F26C|[u8 func_fe6_0801F26C(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L565)||
 |0|802516C|8024CE0|0|0||||
-|8026504|802B4DC|802B02C|0|0||||
+|8026504|802B4DC|802B02C|0|0|TradeMenu_ApplyItemSwap|[static void TradeMenu_ApplyItemSwap(struct TradeMenuProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/trademenu.c#L373)||
 |806DC90|802BD30|802B870|0|0||||
 |0|802BD44|802B884|804328C|8043308||||
 |806DC24|802BD58|802B898|80A4868|0||||
 |0|802C6DC|802C21C|0|0||||
-|8027530|802C86C|802C3AC|0|0||||
-|802756C|802C8A8|802C3E8|0|0||||
-|8027B98|802CF24|802CA64|0|0||||
+|8027530|802C86C|802C3AC|0|0|DoItemRestoreStaffAction|[void DoItemRestoreStaffAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/item-action.c#L47)||
+|802756C|802C8A8|802C3E8|0|0|DoItemBarrierStaffAction|[void DoItemBarrierStaffAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/item-action.c#L58)||
+|8027B98|802CF24|802CA64|0|0|DoItemPureWaterAction|[void DoItemPureWaterAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/item-action.c#L319)||
 |0|802CF60|802CAA0|0|0||||
 |0|802D128|802CC68|0|0||||
 |0|802D148|802CC88|0|0||||
-|802A918|8030038|802FB70|0|0||||
+|802A918|8030038|802FB70|0|0|AddMovePathSquare|[static void AddMovePathSquare(i8 x, i8 y)](https://github.com/StanHash/fe6/blob/0b25087/src/movepath.c#L91)||
 |0|8030B60|8030674|0|0||||
-|802EF20|8035824|803534C|0|0||||
+|802EF20|8035824|803534C|0|0|AiStartStealAction|[void AiStartStealAction(struct AiPerformProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-perform.c#L230)||
 |8036FA8|803E4EC|803E040|0|0||||
 |0|80441D0|80439D0|0|0||||
 |0|80456C8|8044ED8|0|0||||
@@ -10217,15 +10217,15 @@
 |805CDCC|8068F8C|80687A0|0|0||||
 |805CF38|80690F8|806890C|0|0||||
 |0|806C474|806BC88|0|0||||
-|80601AC|806CD2C|806C540|0|0||||
-|80608D4|806D4A4|806CCB8|0|0||||
-|8060904|806D4D4|806CCE8|0|0||||
-|806094C|806D51C|806CD30|0|0||||
+|80601AC|806CD2C|806C540|0|0|StartMuFogBump|[void StartMuFogBump(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L621)||
+|80608D4|806D4A4|806CCB8|0|0|EndAllMus|[void EndAllMus(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L826)||
+|8060904|806D4D4|806CCE8|0|0|func_fe6_08060904|[static void func_fe6_08060904(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L838)||
+|806094C|806D51C|806CD30|0|0|LockMus|[void LockMus(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L849)||
 |0|806D52C|806CD40|0|0||||
-|80613BC|806E5C0|806DDD4|0|0||||
-|806142C|806E630|806DE44|0|0||||
+|80613BC|806E5C0|806DDD4|0|0|StartMuSlowDownAnim|[void StartMuSlowDownAnim(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1151)||
+|806142C|806E630|806DE44|0|0|func_fe6_0806142C|[void func_fe6_0806142C(struct MuProc* mu, int flash)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1164)||
 |0|806E840|806E054|0|0||||
-|8061704|806E930|806E144|0|0||||
+|8061704|806E930|806E144|0|0|SetMuMaxWalkSpeed|[void SetMuMaxWalkSpeed(void)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1233)||
 |0|806F7B0|806EFC4|0|0||||
 |0|806F83C|806F050|0|0||||
 |0|806F8C8|806F0DC|0|0||||
@@ -10243,7 +10243,7 @@
 |8064A8C|8071D08|807151C|0|0||||
 |80650A4|8072320|8071B34|0|0||||
 |8067A28|8074C70|8074474|0|0||||
-|80132C8|8074D38|807453C|0|0||||
+|80132C8|8074D38|807453C|0|0|EndEachSpriteAnimProc|[void EndEachSpriteAnimProc(void)](https://github.com/StanHash/fe6/blob/0b25087/src/sprite-anim.c#L393)||
 |80685F0|80759B0|80751E0|0|0||||
 |80686D8|8075A98|80752C8|0|0||||
 |8069C74|807706C|807689C|0|0||||
@@ -10342,40 +10342,40 @@
 |0|8034D5C|8034884|0|0||||
 |0|8004B1C|8004C40|0|0||||
 |0|8009E6C|8009FDC|0|0||||
-|8020A58|8023D90|8023904|0|0||||
-|8029F68|802F5AC|802F0E0|0|0||||
+|8020A58|8023D90|8023904|0|0|GetGold|[int GetGold(void)](https://github.com/StanHash/fe6/blob/0b25087/src/gold.c#L8)||
+|8029F68|802F5AC|802F0E0|0|0|ArenaGetResult|[int ArenaGetResult(void)](https://github.com/StanHash/fe6/blob/0b25087/src/arena.c#L635)||
 |0|80B3DE4|80B2FC0|0|0||||
 |0|80BE1CC|80BD688|0|0||||
 |0|80C0548|80BFA04|0|0|ArcTan2|u16 ArcTan2(u16 x, s16 y)||
 |0|801DC64|801D860|0|0||||
-|8023278|80273D4|8026F4C|0|0||||
+|8023278|80273D4|8026F4C|0|0|GetUnitItemCantUseMsg|[int GetUnitItemCantUseMsg(struct Unit* unit, int item)](https://github.com/StanHash/fe6/blob/0b25087/src/item-use.c#L176)||
 |80975C8|80B2BDC|80B1DB8|0|0||||
 |0|8005740|800587C|0|0||||
 |0|8005BB8|8005D24|0|0||||
 |0|800A604|800A608|0|0||||
-|80143E4|800B188|800B24C|0|0||||
+|80143E4|800B188|800B24C|0|0|FadeToBlack_OnInit|[static void FadeToBlack_OnInit(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L761)||
 |0|800D268|800D358|0|0||||
 |0|800D828|800D91C|0|0||||
 |0|800EA58|800EB4C|0|0||||
-|80143E4|80141EC|8013CCC|0|0||||
-|8014718|8014520|8014000|0|0||||
-|80157C8|80155D0|8015154|0|0||||
-|8015810|8015618|801519C|0|0||||
+|80143E4|80141EC|8013CCC|0|0|FadeToBlack_OnInit|[static void FadeToBlack_OnInit(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L761)||
+|8014718|8014520|8014000|0|0|StartFastLockingFadeToBlack|[void StartFastLockingFadeToBlack(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L963)||
+|80157C8|80155D0|8015154|0|0|MatRotB|[void MatRotB(int* mat, short angle)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2476)||
+|8015810|8015618|801519C|0|0|MatRotC|[void MatRotC(int* mat, short angle)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L2494)||
 |803FC70|80485A0|8047DB4|0|0||||
 |803FC70|8049960|8049178|0|0||||
 |80581FC|8064AD0|80642E8|0|0||||
 |8058392|8064C66|806447E|0|0||||
 |8058612|8064EE6|80646FE|0|0||||
 |0|806518E|80649A6|0|0||||
-|8060460|806CFE8|806C7FC|0|0||||
-|800F094|806D06C|806C880|0|0||||
-|80604E4|806D07C|806C890|0|0||||
-|80612F0|806E4F4|806DD08|0|0||||
-|8061404|806E608|806DE1C|0|0||||
+|8060460|806CFE8|806C7FC|0|0|Mu_OnState_08060460|[void Mu_OnState_08060460(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L684)||
+|800F094|806D06C|806C880|0|0|WaitForMu_0800F094|[static void WaitForMu_0800F094(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L1610)||
+|80604E4|806D07C|806C890|0|0|Mu_OnStateNone|[void Mu_OnStateNone(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L700)||
+|80612F0|806E4F4|806DD08|0|0|MuActionAnimFinishFunc|[static void MuActionAnimFinishFunc(int arg)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1129)||
+|8061404|806E608|806DE1C|0|0|MuSlowDownAnimFreezeFunc|[static void MuSlowDownAnimFreezeFunc(int arg)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1159)||
 |0|806E6DC|806DEF0|0|0||||
 |0|806E7EC|806E000|0|0||||
 |0|806E8DC|806E0F0|0|0||||
-|8061720|806E94C|806E160|0|0||||
+|8061720|806E94C|806E160|0|0|MuMaxWalkSpeedFunc|[static void MuMaxWalkSpeedFunc(ProcPtr mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L1238)||
 |8068608|80759C8|80751F8|0|0||||
 |8069C04|8076FFC|807682C|0|0||||
 |8069C1C|8077014|8076844|0|0||||
@@ -10412,7 +10412,7 @@
 |8074830|80AA4B4|80A95D8|0|0||||
 |8095DF0|80B11DC|80B03B4|0|0||||
 |8095E70|80B125C|80B0434|0|0||||
-|80604F4|80B1418|80B05F0|0|0||||
+|80604F4|80B1418|80B05F0|0|0|Mu_OnStateDoNothing|[void Mu_OnStateDoNothing(struct MuProc* mu)](https://github.com/StanHash/fe6/blob/0b25087/src/mu.c#L704)||
 |0|80B14B8|80B0690|0|0||||
 |0|80B1A0C|80B0BE4|0|0||||
 |0|80B1A44|80B0C1C|0|0||||
@@ -10428,14 +10428,14 @@
 |0|80B7084|80B6278|0|0||||
 |0|80B7094|80B6288|0|0||||
 |807B69C|80BCE9C|80BC474|0|0||||
-|8016FB4|8017420|8016FCC|0|0||||
+|8016FB4|8017420|8016FCC|0|0|GetUnitStaffReach|[int GetUnitStaffReach(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/item.c#L829)||
 |0|802788C|8027400|0|0||||
 |80982D8|80B3908|80B2AE4|0|0||||
 |8096944|80B1D44|80B0F1C|0|0||||
 |0|8006FF0|800A524|0|0||||
-|8014278|800AD50|8013B60|8008E44|8008F54||||
+|8014278|800AD50|8013B60|8008E44|8008F54|EndPalFade|[void EndPalFade(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L689)||
 |0|800DD90|800DE84|0|0||||
-|8010750|800E490|800E584|0|0||||
+|8010750|800E490|800E584|0|0|EvtCmd_EndGame|[static int EvtCmd_EndGame(struct EventProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/event.c#L2597)||
 |0|800E4A8|800E59C|0|0||||
 |0|800E7A4|800E88C|0|0||||
 |0|800F250|800F344|0|0||||
@@ -10449,27 +10449,27 @@
 |0|8011E8C|80117F4|0|0||||
 |0|8012F44|80128C8|8009B94|0||||
 |0|8014834|8021164|0|0||||
-|801B034|801C56C|8015484|0|0||||
-|801CF48|801E858|801E4D4|0|0||||
+|801B034|801C56C|8015484|0|0|PlayerPhase_Suspend|[static void PlayerPhase_Suspend(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/player-phase.c#L198)||
+|801CF48|801E858|801E4D4|0|0|PhaseIntroVMatchHi|[static void PhaseIntroVMatchHi(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bmfx.c#L1132)||
 |0|8020A48|80205E0|0|0||||
 |0|80219F8|8021580|0|0||||
 |0|8022014|8021B9C|0|0||||
 |0|80221CC|801C168|0|0||||
 |0|8022EB0|8022A38|0|0||||
 |0|802348C|80232AC|0|0||||
-|8020770|8023714|8023400|8024608|0||||
-|80207F8|8023824|80233E0|0|0||||
-|80208A0|802388C|8023444|8024780|80247D0||||
+|8020770|8023714|8023400|8024608|0|func_fe6_08020770|[int func_fe6_08020770(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1627)||
+|80207F8|8023824|80233E0|0|0|func_fe6_080207F8|[void func_fe6_080207F8(struct MapSelectProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1654)||
+|80208A0|802388C|8023444|8024780|80247D0|func_fe6_080208A0|[int func_fe6_080208A0(struct MapSelectProc* proc, struct SelectTarget* target)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L1684)||
 |80217F8|8024BD8|8024858|0|0||||
 |8021904|8024D0C|80248A8|0|0||||
 |0|802507C|8024BF0|0|0||||
 |8021638|80250E0|8024C54|0|0||||
 |8028354|802D834|802D374|8030094|8030144|BMapVSync_OnLoop|[void BMapVSync_OnLoop(struct BMVSyncProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L281)||
-|8029560|802EA88|802E500|0|0||||
-|8029618|802EB40|802E5BC|0|0||||
+|8029560|802EA88|802E500|0|0|ResumeMapMainDuringBerserk|[static void ResumeMapMainDuringBerserk(ProcPtr mapmain)](https://github.com/StanHash/fe6/blob/0b25087/src/chapter.c#L534)||
+|8029618|802EB40|802E5BC|0|0|ResumeMapMainDuringPhaseChange|[static void ResumeMapMainDuringPhaseChange(ProcPtr mapmain)](https://github.com/StanHash/fe6/blob/0b25087/src/chapter.c#L564)||
 |0|802FE20|802F954|0|0||||
 |0|8031634|8031148|0|0||||
-|802C798|8032710|803202C|8035288|8035380||||
+|802C798|8032710|803202C|8035288|8035380|StartUnitGiveRescuePanels|[void StartUnitGiveRescuePanels(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L506)||
 |0|803E068|807B178|8042FB0|804302C||||
 |803ED54|8047658|8046E70|0|0||||
 |804DE4C|8056F98|8056458|0|0|spellArrow|void spellArrow(void *AIS)||
@@ -10527,7 +10527,7 @@
 |8058310|8064BE4|8064938|80712BC|0||||
 |0|8065F8C|806579C|0|0||||
 |0|8066090|80658A0|0|0||||
-|802E8D4|8066634|8069D0C|0|0||||
+|802E8D4|8066634|8069D0C|0|0|AiOrder_End|[void AiOrder_End(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/ai-order.c#L231)||
 |0|806A7A0|8069FC0|8076E8C|0||||
 |804C7EC|806C178|80557DC|8078934|0||||
 |8064F28|80721A4|8071B88|807F3E0|0||||
@@ -10571,7 +10571,7 @@
 |80947AC|807DA3C|807CFBC|0|0||||
 |0|807F8DC|801E6D0|0|0||||
 |0|807F8F4|807ED2C|0|0||||
-|8014278|807F908|807EB4C|0|0||||
+|8014278|807F908|807EB4C|0|0|EndPalFade|[void EndPalFade(void)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L689)||
 |0|807FAE8|807F45C|0|0||||
 |0|807FB80|807EDB8|0|0||||
 |0|807FB98|807EDD0|0|0||||
@@ -10629,7 +10629,7 @@
 |0|808E8DC|808DF9C|0|0|displayMainPrepScreen|void displayMainPrepScreen(int a1)|显示出击准备菜单|
 |0|80A8140|80A722C|0|0||||
 |0|80A64E0|80A5818|0|0||||
-|80185C8|80190B0|8018CC0|0|0||||
+|80185C8|80190B0|8018CC0|0|0|GetUnitRescueName|[inline char const* GetUnitRescueName(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit.c#L678)||
 |0|8090F14|80905D4|0|0||||
 |0|808E344|808DA04|0|0||||
 |0|80BAAE0|80B9FD8|0|0||||
@@ -10646,7 +10646,7 @@
 |803A7E8|8042010|8041920|0|0||||
 |0|80A40E8|80A3474|0|0||||
 |0|800B994|800BA3C|0|0||||
-|801F5A0|8022404|8021F8C|0|0||||
+|801F5A0|8022404|8021F8C|0|0|func_fe6_0801F5A0|[u8 func_fe6_0801F5A0(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/map-menu.c#L739)||
 |0|809C448|809BA80|0|0||||
 |0|8092B30|8092220|0|0||||
 |0|80A0DFC|80A0458|0|0||||
@@ -10701,7 +10701,7 @@
 |0|80B9284|80B85E8|0|0||||
 |0|807DB3C|807D020|0|0||||
 |0|808341C|8082A10|0|0||||
-|802D7F0|8033A38|803351C|0|0||||
+|802D7F0|8033A38|803351C|0|0|InitBattlePreviewBattleStats|[static void InitBattlePreviewBattleStats(struct BattlePreviewProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/battle-preview.c#L163)||
 |806ED34|8080B5C|807FDF0|0|0||||
 |80865EC|80A2A50|0|0|0||||
 |8086608|80A2A6C|0|0|0||||
@@ -10709,15 +10709,15 @@
 |8086640|80A2AA4|0|0|0||||
 |80371B4|803E6F8|0|0|0||||
 |803A08C|8041864|0|0|0||||
-|8016BAC|8016E60|0|0|0||||
-|8022F94|8027000|0|0|0||||
-|802BE4C|8031DC4|0|0|0||||
-|802BEA0|8031E18|0|0|0||||
-|802BEE0|8031E58|0|0|0||||
-|802BF48|8031EC0|0|0|0||||
-|802BF7C|8031EF4|0|0|0||||
-|802BFD4|8031F4C|0|0|0||||
-|802C008|8031F80|0|0|0||||
+|8016BAC|8016E60|0|0|0|GetItemKindString|[char const* GetItemKindString(int kind)](https://github.com/StanHash/fe6/blob/0b25087/src/item.c#L597)||
+|8022F94|8027000|0|0|0|GetAffinityName|[char const* GetAffinityName(int affinity)](https://github.com/StanHash/fe6/blob/0b25087/src/support.c#L366)||
+|802BE4C|8031DC4|0|0|0|DrawUnitHpText|[static void DrawUnitHpText(struct Text* text, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L149)||
+|802BEA0|8031E18|0|0|0|DrawUnitConText|[static void DrawUnitConText(struct Text* text, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L160)||
+|802BEE0|8031E58|0|0|0|DrawUnitAidText|[static void DrawUnitAidText(struct Text* text, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L168)||
+|802BF48|8031EC0|0|0|0|DrawUnitStatusText|[static void DrawUnitStatusText(struct Text* text, struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L183)||
+|802BF7C|8031EF4|0|0|0|DrawUnitResChangeText|[static void DrawUnitResChangeText(struct Text* text, struct Unit* unit, int bonus)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L191)||
+|802BFD4|8031F4C|0|0|0|DrawUnitResUnkText|[static void DrawUnitResUnkText(struct Text* text, struct Unit* unit, int unused)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L202)||
+|802C008|8031F80|0|0|0|DrawAccuracyText|[static void DrawAccuracyText(struct Text* text, int accuracy)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L210)||
 |803A028|8041800|0|0|0||||
 |803BF28|80437DC|0|0|0||||
 |803C00C|80438C0|0|0|0||||
@@ -10730,10 +10730,10 @@
 |803AE90|80426B8|0|0|0||||
 |8059A28|8063460|0|0|0||||
 |805F5F8|806BD58|0|0|0|ekrPopup_DrawWRankUp|int ekrPopup_DrawWRankUp(int a1)||
-|80185F8|80190E0|0|0|0||||
-|80294A4|802E9CC|0|0|0||||
+|80185F8|80190E0|0|0|0|GetUnitStatusName|[inline char const* GetUnitStatusName(struct Unit* unit)](https://github.com/StanHash/fe6/blob/0b25087/src/unit.c#L255)||
+|80294A4|802E9CC|0|0|0|ResumeMapMainDuringPhase|[static void ResumeMapMainDuringPhase(ProcPtr mapmain)](https://github.com/StanHash/fe6/blob/0b25087/src/chapter.c#L507)||
 |803A6BC|8041EE4|0|0|0||||
-|8015AB8|8015900|0|0|0||||
+|8015AB8|8015900|0|0|0|BmMain_SuspendBeforePhase|[void BmMain_SuspendBeforePhase(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L460)||
 |804DAA0|80574B8|0|0|0||||
 |806511C|8072398|0|0|0||||
 |806DC24|807CD34|807C2C0|0|0||||
@@ -10743,21 +10743,21 @@
 |8073570|8083838|8082E38|0|0||||
 |8073BE8|80BD4F4|0|0|0||||
 |8066094|8010230|0|0|0||||
-|800CAD4|800A3C8|0|0|0||||
-|8013EBC|80138A0|8013380|8013260|80131A8||||
+|800CAD4|800A3C8|0|0|0|TalkDebug_OnIdle|[static void TalkDebug_OnIdle(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L2054)||
+|8013EBC|80138A0|8013380|8013260|80131A8|func_fe6_08013EBC|[void func_fe6_08013EBC(struct Unk_08013EBC* unk, int value)](https://github.com/StanHash/fe6/blob/0b25087/src/util.c#L418)||
 |809DD1C|80C059C|80BFA58|80D63C4|80D16C8|SoundBiasReset|int SoundBiasReset(void)||
 |809DD24|80C05A4|80BFA60|80D63CC|80D16D0|SoundBiasSet|int SoundBiasSet(void)||
 |809DF3C|80C07BC|80BFC78|80D65E8|80D18EC|BXR11|int BXR11()||
 |809DF40|80C07C0|80BFC7C|80D65EC|80D18F0|BXR12|int BXR12()||
-|800C49C|8009F8C|800A0FC|8008A20|8008B24||||
-|800CA70|800A390|0|8013990|80138D8||||
-|80159A8|80157B0|8015334|80153B0|801538C|SwitchGameplayPhase|int SwitchGameplayPhase()||
-|801A89C|801BAB4|801B6F8|801BAEC|801BE28|DebugMenu_WeatherIdle|int DebugMenu_WeatherIdle(int a1, int a2)||
+|800C49C|8009F8C|800A0FC|8008A20|8008B24|ClearHBlankA|[static void ClearHBlankA(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1795)||
+|800CA70|800A390|0|8013990|80138D8|StartTalkDebug|[void StartTalkDebug(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L2033)||
+|80159A8|80157B0|8015334|80153B0|801538C|HandleChangePhase|[static void HandleChangePhase(void)](https://github.com/StanHash/fe6/blob/0b25087/src/bm.c#L382)||
+|801A89C|801BAB4|801B6F8|801BAEC|801BE28|func_fe6_0801A89C|[int func_fe6_0801A89C(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L246)||
 |8028D38|802E220|802DD60|8030A84|8030B34|WfxInit|[void WfxInit(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L821)||
 |8028DA8|802E290|802DDD0|8030AF4|8030BA4|WfxVSync|[void WfxVSync(void) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmio.c#L859)||
 |0|8030948|8030480|803332C|803341C|sub_803341C|[void sub_803341C(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L466)||
 |0|8030988|80304C0|8033368|8033458|sub_8033458|[void sub_8033458(struct UnknownSALLYCURSORProc* proc) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/sallycursor.c#L486)||
-|802C5E4|803255C|0|80350D4|80351CC||||
+|802C5E4|803255C|0|80350D4|80351CC|RefreshUnitTakeRescuePanels|[void RefreshUnitTakeRescuePanels(ProcPtr parent)](https://github.com/StanHash/fe6/blob/0b25087/src/unit-panel.c#L443)||
 |80394A8|8040C74|8040568|8045BB4|0||||
 |804C75C|8055F34|805574C|805C034|805B290||||
 |804EFB4|8058B28|8058340|805EBD4|805DAD4|StartSpellAnimFire|int StartSpellAnimFire(int a1)||
@@ -10779,8 +10779,8 @@
 |8017454|8017A00|8017610|80176AC|8017904|GetUnitSMSId|[int GetUnitSMSId(struct Unit* unit) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmunit.c#L391)||
 |0|802D1E8|802CD28|802F728|802F808|ApplyStatBoostItem|[int ApplyStatBoostItem(struct Unit* unit, int itemIdx) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmusemind.c#L689)||
 |8016A90|8016D0C|80168AC|8016A68|8016CC0|GetItemDisplayRangeString|[char* GetItemDisplayRangeString(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L588)||
-|8026D88|80307E4|803031C|80C33A0|80BE5B4||||
-|801ADEC|801C094|0|801C064|0||||
+|8026D88|80307E4|803031C|80C33A0|80BE5B4|GetDummyBallistaItemAt|[int GetDummyBallistaItemAt(int x, int y)](https://github.com/StanHash/fe6/blob/0b25087/src/trap.c#L304)||
+|801ADEC|801C094|0|801C064|0|func_fe6_0801ADEC|[int func_fe6_0801ADEC(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L563)||
 |804A4B8|8053A38|8053250|8059790|8058960|SomethingFilterBattleAnimId|int *SomethingFilterBattleAnimId(signed int a1, int a2)||
 |0|0|0|80096D8|80097E8||||
 |0|0|0|8016E7C|80170D4|GetItemReachBits|[int GetItemReachBits(int item) ](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/bmitem.c#L842)||
@@ -10831,9 +10831,9 @@
 |0|0|0|80CDCCC|80C8D30||||
 |0|0|0|80CB114|80C6204||||
 |0|0|0|808941C|8087184|DisplayPage0|[void DisplayPage0(void)](https://github.com/laqieer/fireemblem8u/blob/remove_tools/src/statscreen.c#L677)||
-|800A82C|8003F04|8004028|0|0||||
+|800A82C|8003F04|8004028|0|0|IsTalkFaceMoving|[static i8 IsTalkFaceMoving(void)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L1067)||
 |0|800409C|80041C0|0|0||||
-|8016DA8|8017208|8016DB4|0|0|GetWeaponRangeMask|signed int GetWeaponRangeMask(unsigned __int8 a1)||
+|8016DA8|8017208|8016DB4|0|0|GetItemReach|[int GetItemReach(int item)](https://github.com/StanHash/fe6/blob/0b25087/src/item.c#L727)||
 |0|8035B0C|8035634|0|0||||
 |0|805313C|8052954|0|0||||
 |0|8053218|8052A30|0|0||||
@@ -10849,8 +10849,8 @@
 |0|8012FEC|8012934|0|0||||
 |0|8027158|8026CD0|0|0|CanUnitUseItem|unsigned int CanUnitUseItem(int a1, int a2)||
 |0|802D4CC|802D00C|0|0||||
-|802A028|802F6E4|802F218|0|0||||
-|802D010|80331C8|8032C98|0|0||||
+|802A028|802F6E4|802F218|0|0|DoAction|[bool DoAction(ProcPtr proc)](https://github.com/StanHash/fe6/blob/0b25087/src/action.c#L116)||
+|802D010|80331C8|8032C98|0|0|StatusHealEffect_PalSpriteAnim_Init|[static void StatusHealEffect_PalSpriteAnim_Init(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/mass-effect.c#L290)||
 |803F7E4|80480F0|8047904|0|0||||
 |80455A4|804E7D8|804DFFC|0|0||||
 |0|80532F0|8052B08|0|0||||
@@ -10871,7 +10871,7 @@
 |0|8067F90|80677A4|0|0|playBattleAnimationSFX|int playBattleAnimationSFX(int a1, int a2)|职业战斗动画音效播放|
 |0|809A560|8099BA4|0|0||||
 |0|80A5D24|80A503C|0|0||||
-|800CAB8|800A3B8|0|0|0||||
+|800CAB8|800A3B8|0|0|0|TalkDebug_OnInit|[static void TalkDebug_OnInit(struct GenericProc* proc)](https://github.com/StanHash/fe6/blob/0b25087/src/talk.c#L2048)||
 |8094228|80BD830|0|0|0||||
 |80599D0|80833B4|0|0|0||||
-|801A760|801B96C|0|0|0||||
+|801A760|801B96C|0|0|0|func_fe6_0801A760|[int func_fe6_0801A760(struct MenuProc* menu, struct MenuEntProc* ent)](https://github.com/StanHash/fe6/blob/0b25087/src/debug-menu.c#L187)||
