@@ -17,7 +17,7 @@ def read_decomp():
                     decl = src[linenum - 1].replace('\n', '')
                 else:
                     decl = decl.split('{')[0]
-            addr = format(int(l[0], 16) & 0x8FFFFFE, 'X')
+            addr = format(int(l[0], 16) & 0xFFFFFFE, 'X')
             functions[addr] = {'name': l[2], 'decl': decl, 'filename': filename, 'linenum': linenum}
 
 def improve_library():
