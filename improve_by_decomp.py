@@ -44,18 +44,25 @@ def improve_library():
             f_out.write(line)
         for line in lines[4:]:
             info = line.split('|')
-            function = {}
+            functionss = []
             for infile in infiles:
                 addr = info[columns[infile]]
                 if addr in functions[infile]:
                     function = functions[infile][addr]
                     function['infile'] = infile
-            if function:
+                    functionss.append(function)
+            for i, function in enumerate(functionss):
+                if i > 0:
+                    info[7] += '<br>'
+                else:
+                    info[7] = ''
+                info[7] += f"[{function['decl']}]({prefixs[function['infile']]}/src/{function['filename'].split('/src/')[1]}#L{function['linenum']})"
+                if i > 0:
+                    continue
                 if info[6].endswith('(ARM)'):
                     info[6] = f"{function['name']}(ARM)"
                 else:
                     info[6] = function['name']
-                info[7] = f"[{function['decl']}]({prefixs[function['infile']]}/src/{function['filename'].split('/src/')[1]}#L{function['linenum']})"
             f_out.write('|'.join(info))
 
 read_decomp()
