@@ -11,7 +11,7 @@ columns = {
         }
 
 prefixs = {
-        "fe6.txt": "https://github.com/StanHash/fe6/blob/0b25087",
+        "fe6.txt": "https://github.com/StanHash/fe6/blob/eff8f48",
         "fireemblem8u.txt": "https://github.com/laqieer/fireemblem8u/blob/remove_tools"
         }
 
@@ -32,9 +32,12 @@ def read_decomp():
                     decl = src[linenum - 1]
                     if decl[0] == '{':
                         linenum -= 1
-                        decl = src[linenum - 1].replace('\n', '')
+                        decl = src[linenum - 1]
                     else:
                         decl = decl.split('{')[0]
+                decl = decl.strip()
+                if decl.startswith('asm('):
+                    continue
                 addr = format(int(l[0], 16) & 0xFFFFFFE, 'X')
                 functions[infile][addr] = {'name': l[2], 'decl': decl, 'filename': filename, 'linenum': linenum}
 
