@@ -16,6 +16,7 @@ prefixs = {
         }
 
 functions = {}
+symbols = {}
 
 def read_decomp():
     for infile in infiles:
@@ -36,6 +37,14 @@ def read_decomp():
                         decl = decl.split('{')[0]
                 addr = format(int(l[0], 16) & 0xFFFFFFE, 'X')
                 functions[infile][addr] = {'name': l[2], 'decl': decl, 'filename': filename, 'linenum': linenum}
+
+def read_multisym():
+    with open('multisym.txt') as f:
+        lines = f.readlines()
+        for line in lines:
+            addr = format(int(line[:8], 16) & 0xFFFFFFE, 'X')
+            name = line[9:].strip().split(', ')
+            symbols[addr] = name
 
 def improve_library():
     with open('functions.md') as f_in, open('index.md', 'w') as f_out:
@@ -63,7 +72,18 @@ def improve_library():
                     info[6] = f"{function['name']}(ARM)"
                 else:
                     info[6] = function['name']
+            i = 0
+            for name in symbols.get(addr, []):
+                if name == info[6] or name + '(ARM)' == info[6]:
+                    continue
+                if i > 0:
+                    info[8] = ', ' + info[8]
+                elif info[8] != '':
+                    info[8] = '<br>' + info[8]
+                info[8] = name + info[8]
+                i += 1
             f_out.write('|'.join(info))
 
 read_decomp()
+read_multisym()
 improve_library()
