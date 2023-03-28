@@ -419,7 +419,7 @@
 |805B90C|8067A18|806722C|8073AE8|80715F4||||
 |805C2B0|8068458|8067C6C|8074888|80723A4||||
 |0|80688FC|8068110|8074DAC|80728D0|||GetUnitSpecialBattleSong|
-|0|80697C4|8068FE4|8075EC8|80739E0||||
+|0|80697C4|8068FE4|8075EC8|80739E0|EkrLvup_OnPrepare|[void EkrLvup_OnPrepare(struct ProcEkrLevelup *proc)](https://github.com/laqieer/fireemblem8u/blob/master/src/ekrlevelup.c#L294)||
 |805DBD4|8069D7C|806959C|8076468|8073FE0||||
 |805DEC8|806A098|80698B8|8076780|80742F8||||
 |805E248|806A2EC|8069B0C|80769D4|8074598||||
@@ -2041,7 +2041,7 @@
 |805C820|80689EC|8068200|8074E9C|80729C0||||
 |805C86C|8068A38|806824C|8074EF0|8072A14|NewEkrClassChg|int NewEkrClassChg(int a1)||
 |805D09C|806925C|8068A70|8075944|8073468||||
-|805D538|80696F8|8068F18|8075DF8|8073910||||
+|805D538|80696F8|8068F18|8075DF8|8073910|EkrLvup_DrawUnitName|[void EkrLvup_DrawUnitName(void)](https://github.com/laqieer/fireemblem8u/blob/master/src/ekrlevelup.c#L261)||
 |805DA08|8069BB4|80693D4|80762A0|8073E18||||
 |805E104|806A298|8069AB8|8076980|8074544||||
 |805E2C0|806A364|8069B84|8076A4C|8074610||||
@@ -2833,9 +2833,9 @@
 |805B9E0|8067AEC|8067300|8073BBC|80716C8|StartEkrsubAnimeEmulator|int StartEkrsubAnimeEmulator(__int16 a1, __int16 a2, int a3, char a4, int a5, int a6, signed int a7)||
 |805C804|80689D0|80681E4|8074E80|80729A4|PlaySFX|void PlaySFX(int SFXID, int a2, int a3, int a4)||
 |805C858|8068A24|8068238|8074EDC|8072A00|EndEkrClasschg|int EndEkrClasschg()||
-|805D140|8069300|8068B14|80759F4|8073518|EndEkrLevelUp|int EndEkrLevelUp()||
-|805D4E0|80696A0|8068EC0|8075DA0|80738B8||||
-|805D570|8069730|8068F50|8075E30|8073948||||
+|805D140|8069300|8068B14|80759F4|8073518|EndEkrLevelUp|[void EndEkrLevelUp(void)](https://github.com/laqieer/fireemblem8u/blob/master/src/ekrlevelup.c#L130)||
+|805D4E0|80696A0|8068EC0|8075DA0|80738B8|EkrLvup_DrawUpdatedStatus|[void EkrLvup_DrawUpdatedStatus(struct ProcEkrLevelup *proc, int index)](https://github.com/laqieer/fireemblem8u/blob/master/src/ekrlevelup.c#L252)||
+|805D570|8069730|8068F50|8075E30|8073948|EkrLvup_DrawPreLevelValue|[void EkrLvup_DrawPreLevelValue(void)](https://github.com/laqieer/fireemblem8u/blob/master/src/ekrlevelup.c#L268)||
 |805E230|806A2D4|8069AF4|80769BC|8074580||||
 |805E2CC|806A370|8069B90|8076A58|807461C||||
 |0|806A610|8069E30|8076CFC|80748C4||||
@@ -3955,7 +3955,7 @@
 |80522D0|805BCB8|805B4D0|8067EA4|8065BB8|Loop6C_efxIvaldiBG3|int Loop6C_efxIvaldiBG3(int a1)||
 |80849BC|80A0768|809FD9C|80A8F78|80A4534|PidStatsAddWin|[void PidStatsAddWin(fu8 pid)](https://github.com/StanHash/fe6/blob/2b85d20/src/save_stats.c#L142)<br>[void PidStatsAddWinAmt(u8 pid)](https://github.com/laqieer/fireemblem8u/blob/master/src/bmsave-bwl.c#L247)|BWL_AddWin|
 |8054580|805D200|805CA18|806214C|806104C||||
-|805D154|8069314|8068B28|8075A08|807352C||||
+|805D154|8069314|8068B28|8075A08|807352C|EkrLvup_InitStatusText|[void EkrLvup_InitStatusText(struct ProcEkrLevelup *proc)](https://github.com/laqieer/fireemblem8u/blob/master/src/ekrlevelup.c#L135)||
 |8029FE0|802F624|802F158|8031E9C|8031F50|ArenaIsUnitAllowed|[bool ArenaIsUnitAllowed(struct Unit * unit)](https://github.com/StanHash/fe6/blob/2b85d20/src/arena.c#L676)<br>[s8 ArenaIsUnitAllowed(struct Unit* unit)](https://github.com/laqieer/fireemblem8u/blob/master/src/bmarena.c#L672)|CouldUnitUseAnyWeapon|
 |802A874|802FF94|802FACC|8032938|80329EC|CutMovePath|[static void CutMovePath(i8 path)](https://github.com/StanHash/fe6/blob/2b85d20/src/movepath.c#L73)<br>[void CutOffPathLength(s8 newIndex)](https://github.com/laqieer/fireemblem8u/blob/master/src/bmpatharrowdisp.c#L20)|CutOffPathLength, MoveCursor_CutPath|
 |0|80AE33C|80AD414|80B5BB0|80B0F94|BonusClaim_DrawTargetUnitSprites|[void BonusClaim_DrawTargetUnitSprites(struct BonusClaimProc* proc)](https://github.com/laqieer/fireemblem8u/blob/master/src/bonusclaim.c#L587)||
@@ -3977,7 +3977,7 @@
 |0|809AC5C|809A280|80A3B70|0||||
 |808A658|80A6DD4|80A6114|80B0444|80AB98C|sub_80AB98C|[u8 sub_80AB98C(u8 slot, int b, int c)](https://github.com/laqieer/fireemblem8u/blob/master/src/savedrawcursor.c#L496)||
 |0|8025024|8024B98|80264C8|8026524|TryAddToLightRuneTargetList|[void TryAddToLightRuneTargetList(int x, int y)](https://github.com/laqieer/fireemblem8u/blob/master/src/bmtarget.c#L1291)||
-|805D5B0|8069770|8068F90|8075E70|8073988|NewEkrLevelup|int NewEkrLevelup(int a1)||
+|805D5B0|8069770|8068F90|8075E70|8073988|NewEkrLevelup|[void NewEkrLevelup(void *ais)](https://github.com/laqieer/fireemblem8u/blob/master/src/ekrlevelup.c#L277)||
 |0|809CEC8|809C544|80A5968|80A1B90|DrawSupportSubScreenSprites|[void DrawSupportSubScreenSprites(struct SubScreenProc* proc)](https://github.com/laqieer/fireemblem8u/blob/master/src/uisupport.c#L1016)||
 |805C2E0|8068488|8067C9C|80748B8|80723D4||||
 |809331C|806A414|8069C34|8076AF8|80746C0||||
@@ -4669,7 +4669,7 @@
 |802430C|80ACFC8|80AC0E4|80B4974|80AFD5C|BattleGenerateDisplayStats|[void BattleGenerateDisplayStats(struct Unit * unit, i8 item_slot)](https://github.com/StanHash/fe6/blob/2b85d20/src/battle.c#L194)||
 |8043288|804C608|804BE2C|805183C|8050B08|ekrBattle_8050B08|int ekrBattle_8050B08(int a1)||
 |805C840|8068A0C|8068220|8074EBC|80729E0|EkrClasschgFinished|bool EkrClasschgFinished()||
-|805D128|80692E8|8068AFC|80759D4|80734F8|DoesEkrLevelUpSomething|bool DoesEkrLevelUpSomething()||
+|805D128|80692E8|8068AFC|80759D4|80734F8|DoesEkrLevelUpSomething|[bool DoesEkrLevelUpSomething(void)](https://github.com/laqieer/fireemblem8u/blob/master/src/ekrlevelup.c#L122)||
 |801D0DC|801E9F0|801E66C|8054E9C|80540B0|PhaseIntroText_OutLoop|[static void PhaseIntroText_OutLoop(struct GenericProc * proc)](https://github.com/StanHash/fe6/blob/2b85d20/src/bmfx.c#L1216)||
 |8066F34|8073648|80739B0|808021C|807E054|func_fe6_08066F34|[void func_fe6_08066F34(struct ManimSomethingProc_08066DFC * proc)](https://github.com/StanHash/fe6/blob/2b85d20/src/manim.c#L3103)||
 |80663E0|80738E0|8072E5C|8080394|807E6E0|func_fe6_080663E0|[void func_fe6_080663E0(struct ManimSomethingProc_08066294 * proc)](https://github.com/StanHash/fe6/blob/2b85d20/src/manim.c#L2739)||
