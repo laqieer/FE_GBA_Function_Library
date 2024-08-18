@@ -11,7 +11,7 @@ columns = {
         }
 
 prefixs = {
-        "fe6.txt": "https://github.com/StanHash/fe6/blob/5430c7e",
+        "fe6.txt": "https://github.com/FireEmblemUniverse/fireemblem6j/blob/15073c1",
         "fireemblem8u.txt": "https://github.com/laqieer/fireemblem8u/blob/master"
         }
 
