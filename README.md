@@ -20,6 +20,24 @@ It is obvious that they share some source code. Here is my analysis result:
 
 It can help hackers who does ASM/C hacking and make it easier to port engine hack between different games.
 
+## Updating from decomp projects
+
+`update.sh` refreshes the FE6 and FE8U decomp-derived function information from local ELF
+builds. By default it reads:
+
+- `../fireemblem6j/fe6.elf`
+- `../fireemblem8u/fireemblem8.elf`
+
+Override those paths when needed:
+
+```sh
+FE6_ELF=/path/to/fe6.elf FE8U_ELF=/path/to/fireemblem8.elf ./update.sh
+```
+
+For generated `lyn` reference assembly and Event Assembler symbol include files, use
+[`laqieer/FE-Clib-Decomp`](https://github.com/laqieer/FE-Clib-Decomp). This repository
+stays focused on cross-game function documentation.
+
 **Feel free to contribute**
 
 **Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://kcd.im/pull-request)
