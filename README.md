@@ -34,9 +34,9 @@ Override those paths when needed:
 FE6_ELF=/path/to/fe6.elf FE8U_ELF=/path/to/fireemblem8.elf ./update.sh
 ```
 
-For generated `lyn` reference assembly and Event Assembler symbol include files, use
-[`laqieer/FE-Clib-Decomp`](https://github.com/laqieer/FE-Clib-Decomp). This repository
-stays focused on cross-game function documentation.
+For generated linker scripts, `lyn` reference assembly, and Event Assembler symbol include
+files, use [`laqieer/FE-Clib-Decomp`](https://github.com/laqieer/FE-Clib-Decomp). This
+repository stays focused on cross-game function documentation.
 
 **Feel free to contribute**
 

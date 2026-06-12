@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import os
+
 infiles = (
         "fe6.txt",
         "fireemblem8u.txt"
@@ -11,8 +13,8 @@ columns = {
         }
 
 prefixs = {
-        "fe6.txt": "https://github.com/FireEmblemUniverse/fireemblem6j/blob/15073c1",
-        "fireemblem8u.txt": "https://github.com/laqieer/fireemblem8u/blob/master"
+        "fe6.txt": "https://github.com/FireEmblemUniverse/fireemblem6j/blob/" + os.environ.get("FE6_COMMIT", "16154bc"),
+        "fireemblem8u.txt": "https://github.com/laqieer/fireemblem8u/blob/" + os.environ.get("FE8U_COMMIT", "0578c6b8")
         }
 
 functions = {}
