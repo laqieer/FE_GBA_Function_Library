@@ -4,17 +4,30 @@ import os
 
 infiles = (
         "fe6.txt",
-        "fireemblem8u.txt"
+        "fireemblem8u.txt",
+        "fireemblem8j.txt"
         )
 
 columns = {
         "fe6.txt": 1,
-        "fireemblem8u.txt": 5
+        "fireemblem8u.txt": 5,
+        "fireemblem8j.txt": 4
         }
 
 prefixs = {
         "fe6.txt": "https://github.com/FireEmblemUniverse/fireemblem6j/blob/" + os.environ.get("FE6_COMMIT", "16154bc"),
-        "fireemblem8u.txt": "https://github.com/laqieer/fireemblem8u/blob/" + os.environ.get("FE8U_COMMIT", "0578c6b8")
+        "fireemblem8u.txt": "https://github.com/laqieer/fireemblem8u/blob/" + os.environ.get("FE8U_COMMIT", "0578c6b8"),
+        "fireemblem8j.txt": "https://github.com/laqieer/fireemblem8j/blob/" + os.environ.get("FE8J_COMMIT", "1afe4977")
+        }
+
+# How each source may set the Name column. Trusted decomps ("override") replace
+# the base name; a disassembly like FE8J ("fill_empty") only names rows that are
+# still unnamed, so its placeholder names (sub_XXXX, _call_via_rN, ...) never
+# clobber curated names. Every source still contributes Declaration links.
+name_policy = {
+        "fe6.txt": "override",
+        "fireemblem8u.txt": "override",
+        "fireemblem8j.txt": "fill_empty"
         }
 
 functions = {}
@@ -31,12 +44,31 @@ def read_decomp():
                 linenum = int(linenum)
                 with open(filename) as f_src:
                     src = f_src.readlines()
+                    name = l[2]
+                    # Some decomps (e.g. FE8J) map a function's entry address to
+                    # its first body statement instead of the signature line.
+                    # When the mapped line is neither the signature nor an
+                    # opening brace, scan upward to the line declaring "<name>("
+                    # so the declaration is recovered instead of a stray statement.
+                    if src[linenum - 1][:1] != '{' and (name + '(') not in src[linenum - 1]:
+                        i = linenum - 1
+                        limit = max(0, i - 20)
+                        while i > limit and (name + '(') not in src[i]:
+                            i -= 1
+                        if (name + '(') in src[i]:
+                            linenum = i + 1
                     decl = src[linenum - 1]
                     if decl[0] == '{':
                         linenum -= 1
                         decl = src[linenum - 1]
                     else:
                         decl = decl.split('{')[0]
+                    # Drop any leading forward declarations sharing the signature
+                    # line (e.g. "void Proc_Break(void *); void sub_X(int p)").
+                    if ';' in decl and (name + '(') in decl:
+                        segs = [s for s in decl.split(';') if (name + '(') in s]
+                        if segs:
+                            decl = segs[-1]
                 decl = decl.strip()
                 if decl.startswith('asm('):
                     continue
@@ -72,6 +104,11 @@ def improve_library():
                     info[7] = ''
                 info[7] += f"[{function['decl']}]({prefixs[function['infile']]}/src/{function['filename'].split('/src/')[1]}#L{function['linenum']})"
                 if i > 0:
+                    continue
+                policy = name_policy.get(function['infile'], "override")
+                if policy == "never":
+                    continue
+                if policy == "fill_empty" and info[6].strip() != '':
                     continue
                 if info[6].endswith('(ARM)'):
                     info[6] = f"{function['name']}(ARM)"

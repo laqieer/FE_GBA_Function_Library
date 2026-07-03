@@ -13,6 +13,7 @@ if [ ! -f "$FE6_ELF" ] && [ -f "../fe6/fe6.elf" ]; then
 fi
 
 FE8U_ELF="${FE8U_ELF:-../fireemblem8u/fireemblem8.elf}"
+FE8J_ELF="${FE8J_ELF:-../fireemblem8j/fireemblem8.elf}"
 
 decomp_commit()
 {
@@ -22,9 +23,29 @@ decomp_commit()
 	git -C "$repo_dir" rev-parse --short HEAD 2>/dev/null || printf '%s\n' "$fallback"
 }
 
+# Dump address/source-line symbols from a decomp ELF (needs debug info, i.e.
+# `nm -l`). Only overwrite the tracked list when the ELF actually yields
+# source-line symbols so a debug-stripped build cannot wipe committed data.
+dump_symbols()
+{
+	elf="$1"
+	out="$2"
+
+	tmp=$(mktemp)
+	"$NM" -l -n "$elf" | grep src | grep '^08' | grep -v gcc2_compiled > "$tmp" || true
+	if [ -s "$tmp" ]; then
+		mv "$tmp" "$out"
+	else
+		rm -f "$tmp"
+		printf 'warning: %s has no source-line symbols (missing debug info?); keeping existing %s\n' "$elf" "$out" >&2
+	fi
+}
+
 export FE6_COMMIT="${FE6_COMMIT:-$(decomp_commit "$FE6_ELF" 16154bc)}"
 export FE8U_COMMIT="${FE8U_COMMIT:-$(decomp_commit "$FE8U_ELF" 0578c6b8)}"
+export FE8J_COMMIT="${FE8J_COMMIT:-$(decomp_commit "$FE8J_ELF" 1afe4977)}"
 
-"$NM" -l -n "$FE6_ELF" | grep src | grep '^08' | grep -v gcc2_compiled > fe6.txt
-"$NM" -l -n "$FE8U_ELF" | grep src | grep '^08' | grep -v gcc2_compiled > fireemblem8u.txt
+dump_symbols "$FE6_ELF" fe6.txt
+dump_symbols "$FE8U_ELF" fireemblem8u.txt
+dump_symbols "$FE8J_ELF" fireemblem8j.txt
 ./improve_by_decomp.py

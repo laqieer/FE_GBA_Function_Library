@@ -22,17 +22,22 @@ It can help hackers who does ASM/C hacking and make it easier to port engine hac
 
 ## Updating from decomp projects
 
-`update.sh` refreshes the FE6 and FE8U decomp-derived function information from local ELF
-builds. By default it reads:
+`update.sh` refreshes the FE6, FE8U and FE8J decomp-derived function information from local
+ELF builds. By default it reads:
 
 - `../fireemblem6j/fe6.elf`
 - `../fireemblem8u/fireemblem8.elf`
+- `../fireemblem8j/fireemblem8.elf`
 
 Override those paths when needed:
 
 ```sh
-FE6_ELF=/path/to/fe6.elf FE8U_ELF=/path/to/fireemblem8.elf ./update.sh
+FE6_ELF=/path/to/fe6.elf FE8U_ELF=/path/to/fireemblem8.elf FE8J_ELF=/path/to/fireemblem8.elf ./update.sh
 ```
+
+Each ELF must retain debug info so `nm -l` can map symbols back to source files and line
+numbers. If an ELF has no source-line symbols (for example a debug-stripped build), that
+game's list is left untouched instead of being overwritten with an empty file.
 
 For generated linker scripts, `lyn` reference assembly, and Event Assembler symbol include
 files, use [`laqieer/FE-Clib-Decomp`](https://github.com/laqieer/FE-Clib-Decomp). This
