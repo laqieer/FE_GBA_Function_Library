@@ -20,6 +20,14 @@ It is obvious that they share some source code. Here is my analysis result:
 
 It can help hackers who does ASM/C hacking and make it easier to port engine hack between different games.
 
+## Powered by
+
+This library is powered by debug-info ELF builds from the GBAFE decompilation projects:
+
+- [FE6: The Binding Blade](https://github.com/FireEmblemUniverse/fireemblem6j) - `update.sh` reads `fireemblem6j/fe6.elf` with `nm -l` for declarations and source-line links.
+- [FE8U: The Sacred Stones](https://github.com/laqieer/fireemblem8u) - `update.sh` reads `fireemblem8u/fireemblem8.elf` for FE8U declarations and links.
+- [FE8J: 聖魔の光石 / Seima no Kouseki](https://github.com/laqieer/fireemblem8j) - `update.sh` reads `fireemblem8j/fireemblem8.elf` for FE8J declarations and links.
+
 ## Updating from decomp projects
 
 `update.sh` refreshes the FE6, FE8U and FE8J decomp-derived function information from local

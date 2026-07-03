@@ -1,5 +1,13 @@
 # Functions in GBAFE
 
+## Powered by
+
+This function index is powered by debug-info ELF builds from the GBAFE decompilation projects:
+
+- [FE6: The Binding Blade](https://github.com/FireEmblemUniverse/fireemblem6j) - `update.sh` reads `fireemblem6j/fe6.elf` with `nm -l` for declarations and source-line links.
+- [FE8U: The Sacred Stones](https://github.com/laqieer/fireemblem8u) - `update.sh` reads `fireemblem8u/fireemblem8.elf` for FE8U declarations and links.
+- [FE8J: 聖魔の光石 / Seima no Kouseki](https://github.com/laqieer/fireemblem8j) - `update.sh` reads `fireemblem8j/fireemblem8.elf` for FE8J declarations and links.
+
 |FE6|FE7J|FE7U|FE8J|FE8U|Name|Declaration|Comment|
 |----|----|----|----|----|----|----|----|
 |8000000|8000000|8000000|8000000|8000000|Init(ARM)|[b crt0](https://github.com/laqieer/fireemblem8u/blob/0578c6b8/src/rom_header.s#L6)<br>[b crt0](https://github.com/laqieer/fireemblem8j/blob/1afe4977/src/rom_header.s#L6)|ROM, _entry<br>Entry Point|
