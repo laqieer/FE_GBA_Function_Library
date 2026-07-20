@@ -47,6 +47,11 @@ Each ELF must retain debug info so `nm -l` can map symbols back to source files 
 numbers. If an ELF has no source-line symbols (for example a debug-stripped build), that
 game's list is left untouched instead of being overwritten with an empty file.
 
+The update is atomic per symbol list and runs `validate_library.py` after generation. The
+validator rejects malformed or ambiguous global symbols, confirms same-address aliases are
+resolved deterministically, reports duplicate cross-game mappings, and verifies that
+`index.md` is current.
+
 For generated linker scripts, `lyn` reference assembly, and Event Assembler symbol include
 files, use [`laqieer/FE-Clib-Decomp`](https://github.com/laqieer/FE-Clib-Decomp). This
 repository stays focused on cross-game function documentation.
