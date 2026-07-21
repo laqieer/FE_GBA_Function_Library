@@ -1,0 +1,83 @@
+name: Validate generated library
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  FE6_COMMIT: a845f4fe7015e49ed482fbbf482527176dd18b65
+  FE8U_COMMIT: 7b47dec8da6ff7c2ff9aad2bfa9bf40cc8b07b90
+  FE8J_COMMIT: e65d8408168928ae92682ce9dcec1a66b940d994
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out library
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Check out pinned FE6J source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          repository: FireEmblemUniverse/fireemblem6j
+          ref: a845f4fe7015e49ed482fbbf482527176dd18b65
+          path: sources/fireemblem6j
+          sparse-checkout: src
+
+      - name: Check out pinned FE8U source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          repository: laqieer/fireemblem8u
+          ref: 7b47dec8da6ff7c2ff9aad2bfa9bf40cc8b07b90
+          path: sources/fireemblem8u
+          sparse-checkout: src
+
+      - name: Check out pinned FE8J source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          repository: laqieer/fireemblem8j
+          ref: e65d8408168928ae92682ce9dcec1a66b940d994
+          path: sources/fireemblem8j
+          sparse-checkout: src
+
+      - name: Run generator regression tests
+        env:
+          FE6_SOURCE_ROOT: ${{ github.workspace }}/sources/fireemblem6j
+          FE8U_SOURCE_ROOT: ${{ github.workspace }}/sources/fireemblem8u
+          FE8J_SOURCE_ROOT: ${{ github.workspace }}/sources/fireemblem8j
+        run: python3 -m unittest discover -v
+
+      - name: Validate final generated output
+        env:
+          FE6_SOURCE_ROOT: ${{ github.workspace }}/sources/fireemblem6j
+          FE8U_SOURCE_ROOT: ${{ github.workspace }}/sources/fireemblem8u
+          FE8J_SOURCE_ROOT: ${{ github.workspace }}/sources/fireemblem8j
+        run: ./validate_library.py
+
+      - name: Verify deterministic index regeneration
+        env:
+          FE6_SOURCE_ROOT: ${{ github.workspace }}/sources/fireemblem6j
+          FE8U_SOURCE_ROOT: ${{ github.workspace }}/sources/fireemblem8u
+          FE8J_SOURCE_ROOT: ${{ github.workspace }}/sources/fireemblem8j
+        run: |
+          ./improve_by_decomp.py
+          git diff --exit-code -- index.md
+
+      - name: Verify headers and linker script generation
+        run: |
+          ./make_library.py functions
+          git diff --exit-code -- functions.h functions.ls
+
+      - name: Build Pages site without deployment
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site

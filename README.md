@@ -43,6 +43,21 @@ Override those paths when needed:
 FE6_ELF=/path/to/fe6.elf FE8U_ELF=/path/to/fireemblem8.elf FE8J_ELF=/path/to/fireemblem8.elf ./update.sh
 ```
 
+For a checkpointed serial refresh, extract one game at a time and finalize only
+after all intended symbol lists are ready:
+
+```sh
+./update.sh extract fe6
+./update.sh extract fe8u
+./update.sh extract fe8j
+./update.sh finalize
+```
+
+An `extract` command runs `nm` exactly once for that game and does not generate
+or validate the library. `finalize` performs generation, tests, and validation
+without reading an ELF or invoking `nm`. Running `./update.sh` without arguments
+retains the original behavior in strict FE6, FE8U, FE8J, finalize order.
+
 Each ELF must retain debug info so `nm -l` can map symbols back to source files and line
 numbers. If an ELF has no source-line symbols (for example a debug-stripped build), that
 game's list is left untouched instead of being overwritten with an empty file.
@@ -51,6 +66,31 @@ The update is atomic per symbol list and runs `validate_library.py` after genera
 validator rejects malformed or ambiguous global symbols, confirms same-address aliases are
 resolved deterministically, reports duplicate cross-game mappings, and verifies that
 `index.md` is current.
+
+### Address and alias normalization
+
+- Decomp function symbols must be in the canonical GBA ROM window
+  `0x08000000..0x09FFFFFF`. Their Thumb bit is cleared only after that range check, so an
+  invalid value such as `0x18000001` is rejected rather than coerced to `0x08000000`.
+- `multisym.txt` may also describe valid RAM, I/O, palette, VRAM, OAM, and SRAM addresses.
+  Non-ROM odd addresses are data addresses and are never rounded down.
+- Multiple `multisym.txt` records that identify the same normalized ROM address are merged
+  in file order. Alias order is stable, duplicate spellings are removed, and no earlier
+  aliases are overwritten.
+
+### Cross-game matching confidence
+
+`functions.md` contains legacy binary-match candidates. The generated `index.md` rejects
+an entire candidate row when a per-game address occurs in multiple rows, or when a pinned
+decomp identifies one of its symbols only with an address-derived placeholder (`func_*`,
+`sub_*`, `FUN_*`, `nullsub_*`, and equivalent compiler labels). Rejected addresses are
+retained exactly once as standalone rows; the generator never leaves the unverified
+remainder paired or chooses an arbitrary duplicate.
+
+The only automatic merge evidence is an exact, non-placeholder global name in the pinned
+FE6J, FE8U, or FE8J decomps. The final-output validator checks every generated row for
+balanced declaration links, unique names and per-game addresses, unique mappings, complete
+source links, placeholder-free cross-game mappings, and represented `multisym` aliases.
 
 For generated linker scripts, `lyn` reference assembly, and Event Assembler symbol include
 files, use [`laqieer/FE-Clib-Decomp`](https://github.com/laqieer/FE-Clib-Decomp). This

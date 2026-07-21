@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 
 # make library for hacking
@@ -9,14 +9,14 @@
 import sys
 
 if len(sys.argv) == 1:
-	input = 'functions'
+	input_name = 'functions'
 else:
-	input = sys.argv[1]
+	input_name = sys.argv[1]
 
 data = []
 
 # read data	
-with open(input+'.md', 'r') as f1:
+with open(input_name+'.md', 'r') as f1:
 	rows = f1.readlines()
 	for row in range(4,len(rows)):
 		col = rows[row].split("|")
@@ -40,7 +40,7 @@ with open(input+'.md', 'r') as f1:
 		data.append(item)
 
 # make C headers
-with open(input+'.h', 'w') as f2:
+with open(input_name+'.h', 'w') as f2:
 	f2.write("#pragma once\n\n")
 	
 	# add type definition
@@ -48,8 +48,8 @@ with open(input+'.h', 'w') as f2:
 	f2.write("#include \"FE7J.h\"\n\n")
 	
 	for item in data:
-		if item.has_key("decl"):
-			if item.has_key("comment"):
+		if "decl" in item:
+			if "comment" in item:
 				comment = item["comment"].replace("<br>", "\n")
 				f2.write("/* " + comment + "*/\n")
 			f2.write(item["decl"] + ";\n\n")
@@ -58,7 +58,7 @@ def make_macro(f, game):
 	"make macro for different games"
 	f.write("#ifdef " + game + "\n")
 	for item in data:
-		if item.has_key("name") and item.has_key(game):
+		if "name" in item and game in item:
 			name = item["name"].split("(")
 			if len(name) > 1 and name[-1] == "ARM)":
 				f.write("%s = 0x%s;\n" % (name[0], item[game]))
@@ -67,7 +67,7 @@ def make_macro(f, game):
 	f.write("#endif\n\n")
 			
 # make linker script
-with open(input+'.ls', 'w') as f3:
+with open(input_name+'.ls', 'w') as f3:
 	f3.write("/* Run C preprocessor and include to your linker script. */\n\n")
 	make_macro(f3, "FE6")
 	make_macro(f3, "FE7J")
