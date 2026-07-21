@@ -92,6 +92,11 @@ FE6J, FE8U, or FE8J decomps. The final-output validator checks every generated r
 balanced declaration links, unique names and per-game addresses, unique mappings, complete
 source links, placeholder-free cross-game mappings, and represented `multisym` aliases.
 
+Generated source paths are not accepted implicitly. The sole approved fallback is FE8U
+`src/data/chapter_settings.h` to its tracked Inja template
+`src/data/chapter_settings.json.txt`, which uniquely defines `gChapterDataTable`.
+`SOURCE_ROOT` inputs are authoritative, and every other missing path remains an error.
+
 For generated linker scripts, `lyn` reference assembly, and Event Assembler symbol include
 files, use [`laqieer/FE-Clib-Decomp`](https://github.com/laqieer/FE-Clib-Decomp). This
 repository stays focused on cross-game function documentation.

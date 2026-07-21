@@ -1,6 +1,7 @@
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from unittest.mock import patch
 
 from improve_by_decomp import (
     INFILES,
@@ -14,7 +15,9 @@ from improve_by_decomp import (
     primary_symbol,
     read_decomp,
     read_multisym,
+    render_index,
     resolve_function_rows,
+    source_filename,
 )
 
 
@@ -114,6 +117,84 @@ class DeclarationTests(unittest.TestCase):
 
             with self.assertRaisesRegex(ValueError, 'unbalanced declaration'):
                 extract_declaration(symbol)
+
+
+class GeneratedSourceFallbackTests(unittest.TestCase):
+    def _source_root(self, directory):
+        source_root = Path(directory)
+        template = source_root / 'src/data/chapter_settings.json.txt'
+        template.parent.mkdir(parents=True)
+        template.write_text(
+            '{{ generated file header }}\n'
+            '\n'
+            'struct ROMChapterData CONST_DATA gChapterDataTable[] =\n'
+            '{\n'
+            '};\n'
+        )
+        return source_root, template
+
+    @staticmethod
+    def _symbol(filename):
+        return {
+            'name': 'gChapterDataTable',
+            'address': '088b0890',
+            'type': 'T',
+            'filename': filename,
+            'linenum': 6,
+            'infile': 'fireemblem8u.txt',
+        }
+
+    def test_ci_source_root_fallback_is_deterministic(self):
+        with TemporaryDirectory() as directory:
+            source_root, template = self._source_root(directory)
+            symbol = self._symbol(
+                '/home/ci/fireemblem8u/./src/data/chapter_settings.h'
+            )
+            with patch.dict(
+                'os.environ',
+                {'FE8U_SOURCE_ROOT': str(source_root)},
+            ):
+                first = extract_declaration(symbol)
+                second = extract_declaration(symbol)
+
+            self.assertEqual(first, second)
+            self.assertEqual(first['filename'], str(template))
+            self.assertEqual(first['linenum'], 3)
+            self.assertEqual(
+                first['decl'],
+                'struct ROMChapterData CONST_DATA gChapterDataTable[] =',
+            )
+
+    def test_generated_header_maps_to_tracked_template(self):
+        with TemporaryDirectory() as directory:
+            source_root, template = self._source_root(directory)
+            generated = source_root / 'src/data/chapter_settings.h'
+            generated.write_text(
+                'struct ROMChapterData gChapterDataTable[] = {};\n'
+            )
+            symbol = self._symbol(str(generated))
+            with patch.dict(
+                'os.environ',
+                {'FE8U_SOURCE_ROOT': ''},
+            ):
+                self.assertEqual(source_filename(symbol), template)
+
+    def test_unknown_missing_generated_source_still_raises(self):
+        with TemporaryDirectory() as directory:
+            source_root = Path(directory)
+            (source_root / 'src/data').mkdir(parents=True)
+            symbol = self._symbol(
+                '/home/ci/fireemblem8u/src/data/unknown_generated.h'
+            )
+            with patch.dict(
+                'os.environ',
+                {'FE8U_SOURCE_ROOT': str(source_root)},
+            ):
+                with self.assertRaisesRegex(
+                    ValueError,
+                    'does not exist beneath',
+                ):
+                    source_filename(symbol)
 
 
 class AddressTests(unittest.TestCase):
@@ -334,6 +415,9 @@ class GeneratedSurfaceTests(unittest.TestCase):
         self.assertIn('fireemblem6j', preamble)
         self.assertIn('fireemblem8u', preamble)
         self.assertIn('fireemblem8j', preamble)
+
+    def test_current_index_matches_regeneration(self):
+        self.assertEqual(Path('index.md').read_text(), render_index())
 
 
 if __name__ == '__main__':

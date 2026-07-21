@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+import posixpath
 import re
 import subprocess
 from collections import defaultdict
@@ -68,6 +69,11 @@ SOURCE_ROOT_ENV = {
         "fe6.txt": "FE6_SOURCE_ROOT",
         "fireemblem8u.txt": "FE8U_SOURCE_ROOT",
         "fireemblem8j.txt": "FE8J_SOURCE_ROOT",
+        }
+
+GENERATED_SOURCE_FALLBACKS = {
+        ("fireemblem8u.txt", "src/data/chapter_settings.h"):
+            "src/data/chapter_settings.json.txt",
         }
 
 ROM_START = 0x08000000
@@ -168,21 +174,56 @@ def parse_symbol_line(line, infile, line_number):
     }
 
 
-def source_filename(symbol):
-    filename = Path(symbol['filename'])
-    if filename.exists():
-        return filename
+def source_relative_path(filename):
+    normalized = posixpath.normpath(str(filename))
+    marker = '/src/'
+    if marker not in normalized:
+        return None
+    return 'src/' + normalized.split(marker, 1)[1]
 
+
+def source_resolution(symbol):
     environment_name = SOURCE_ROOT_ENV.get(symbol.get('infile'))
     source_root = os.environ.get(environment_name, '') if environment_name else ''
-    marker = '/src/'
-    if source_root and marker in symbol['filename']:
-        relative = symbol['filename'].split(marker, 1)[1]
-        candidate = Path(source_root) / 'src' / relative
+    relative = source_relative_path(symbol['filename'])
+    fallback = GENERATED_SOURCE_FALLBACKS.get(
+        (symbol.get('infile'), relative)
+    )
+
+    if source_root and relative:
+        candidate_relative = fallback or relative
+        candidate = Path(source_root) / candidate_relative
         if candidate.exists():
-            return candidate
+            return candidate, fallback is not None
+        if fallback:
+            raise ValueError(
+                f"{symbol['filename']}: approved fallback {fallback!r} "
+                f"does not exist beneath {source_root}"
+            )
+        raise ValueError(
+            f"{symbol['filename']}: source file {relative!r} "
+            f"does not exist beneath {source_root}"
+        )
+
+    normalized_filename = Path(posixpath.normpath(symbol['filename']))
+    if fallback and relative:
+        repository_root = Path(str(normalized_filename).split('/src/', 1)[0])
+        candidate = repository_root / fallback
+        if candidate.exists():
+            return candidate, True
+        raise ValueError(
+            f"{symbol['filename']}: approved fallback {fallback!r} "
+            "does not exist"
+        )
+
+    if normalized_filename.exists():
+        return normalized_filename, False
 
     raise ValueError(f"{symbol['filename']}: source file does not exist")
+
+
+def source_filename(symbol):
+    return source_resolution(symbol)[0]
 
 
 def _declaration_start(src, source_index, name):
@@ -225,26 +266,48 @@ def _collect_declaration(src, declaration_index, name):
 
 
 def extract_declaration(symbol):
-    src = source_filename(symbol).read_text().splitlines()
+    source_path, used_fallback = source_resolution(symbol)
+    src = source_path.read_text().splitlines()
     source_index = symbol['linenum'] - 1
-    if source_index < 0 or source_index >= len(src):
+    if source_index < 0:
         raise ValueError(
             f"{symbol['filename']}:{symbol['linenum']}: source location is out of range"
         )
 
     name = symbol['name']
-    declaration_index = _declaration_start(src, source_index, name)
-    if declaration_index is None:
-        # Assembly labels and boundary symbols do not necessarily have a C
-        # prototype. Keep their mapped source line without pretending it is
-        # a parsed declaration.
-        declaration_index = source_index
+    if used_fallback:
+        name_pattern = re.compile(
+            rf"(?<![A-Za-z0-9_]){re.escape(name)}(?![A-Za-z0-9_])"
+        )
+        matches = [
+            index for index, line in enumerate(src) if name_pattern.search(line)
+        ]
+        if len(matches) != 1:
+            raise ValueError(
+                f"{source_path}: fallback source must contain exactly one "
+                f"declaration of {name}, found {len(matches)}"
+            )
+        declaration_index = matches[0]
         declaration = src[declaration_index].split('{', 1)[0].strip()
     else:
-        declaration = _collect_declaration(src, declaration_index, name)
+        if source_index >= len(src):
+            raise ValueError(
+                f"{symbol['filename']}:{symbol['linenum']}: "
+                "source location is out of range"
+            )
+        declaration_index = _declaration_start(src, source_index, name)
+        if declaration_index is None:
+            # Assembly labels and boundary symbols do not necessarily have a C
+            # prototype. Keep their mapped source line without pretending it
+            # is a parsed declaration.
+            declaration_index = source_index
+            declaration = src[declaration_index].split('{', 1)[0].strip()
+        else:
+            declaration = _collect_declaration(src, declaration_index, name)
 
     symbol = dict(symbol)
     symbol['decl'] = declaration
+    symbol['filename'] = str(source_path)
     symbol['linenum'] = declaration_index + 1
     return symbol
 

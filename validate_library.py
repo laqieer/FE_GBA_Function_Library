@@ -8,11 +8,13 @@ from improve_by_decomp import (
     COLUMNS,
     GAME_COLUMNS,
     INFILES,
+    PREFIXES,
     is_placeholder_name,
     normalize_address,
     read_decomp,
     read_multisym,
     render_index,
+    source_relative_path,
 )
 
 
@@ -127,19 +129,30 @@ def validate_source_link_coverage(rows, functions, path='index.md'):
     expected = 0
     for line_number, fields in rows:
         declaration = fields[7]
+        targets = {
+            match.group(2)
+            for value in declaration.split('<br>')
+            if (match := LINK.fullmatch(value))
+        }
         for infile, column in COLUMNS.items():
             symbol = functions.get(infile, {}).get(fields[column])
             if not symbol:
                 continue
             expected += 1
-            commit_url = {
-                "fe6.txt": "github.com/FireEmblemUniverse/fireemblem6j/blob/",
-                "fireemblem8u.txt": "github.com/laqieer/fireemblem8u/blob/",
-                "fireemblem8j.txt": "github.com/laqieer/fireemblem8j/blob/",
-            }[infile]
-            if commit_url not in declaration:
+            relative = source_relative_path(symbol['filename'])
+            if relative is None:
                 raise ValueError(
-                    f"{path}:{line_number}: missing {infile} declaration link"
+                    f"{path}:{line_number}: invalid {infile} source path "
+                    f"{symbol['filename']!r}"
+                )
+            expected_url = (
+                f"{PREFIXES[infile]}/{relative}"
+                f"#L{symbol['linenum']}"
+            )
+            if expected_url not in targets:
+                raise ValueError(
+                    f"{path}:{line_number}: missing exact {infile} "
+                    f"declaration link {expected_url}"
                 )
     return expected
 

@@ -1,12 +1,13 @@
 import unittest
 from pathlib import Path
 
-from improve_by_decomp import read_multisym
+from improve_by_decomp import PREFIXES, read_multisym
 from validate_library import (
     parse_index_rows,
     validate_declaration_links,
     validate_index_semantics,
     validate_index_text,
+    validate_source_link_coverage,
 )
 
 
@@ -125,6 +126,53 @@ class SyntheticFinalOutputTests(unittest.TestCase):
             path='synthetic',
         )
         self.assertEqual(stats['aliases'], 3)
+
+
+class SourceLinkTargetTests(unittest.TestCase):
+    @staticmethod
+    def _fixture(path):
+        fields = [
+            '',
+            '0',
+            '0',
+            '0',
+            '0',
+            '088b0890',
+            'gChapterDataTable',
+            f'[declaration]({path})',
+            '',
+        ]
+        functions = {
+            'fireemblem8u.txt': {
+                '088b0890': {
+                    'filename': (
+                        '/ci/root/src/data/chapter_settings.json.txt'
+                    ),
+                    'linenum': 3,
+                },
+            },
+        }
+        return [(4, fields)], functions
+
+    def test_accepts_exact_fallback_source_link(self):
+        target = (
+            f"{PREFIXES['fireemblem8u.txt']}/src/data/"
+            'chapter_settings.json.txt#L3'
+        )
+        rows, functions = self._fixture(target)
+        self.assertEqual(
+            validate_source_link_coverage(rows, functions, path='synthetic'),
+            1,
+        )
+
+    def test_rejects_stale_generated_header_link(self):
+        target = (
+            f"{PREFIXES['fireemblem8u.txt']}/src/data/"
+            'chapter_settings.h#L6'
+        )
+        rows, functions = self._fixture(target)
+        with self.assertRaisesRegex(ValueError, 'missing exact'):
+            validate_source_link_coverage(rows, functions, path='synthetic')
 
 
 class CurrentTextOutputTests(unittest.TestCase):
